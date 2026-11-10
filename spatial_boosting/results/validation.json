@@ -1,0 +1,17 @@
+[
+  {
+    "model": "extra_trees",
+    "accuracy": 0.9679432624113475,
+    "macro_f1": 0.9388290894967208
+  },
+  {
+    "model": "random_forest",
+    "accuracy": 0.9565957446808511,
+    "macro_f1": 0.9132017477148711
+  },
+  {
+    "model": "hist_gradient",
+    "accuracy": 0.969645390070922,
+    "macro_f1": 0.9393054038249703
+  }
+]

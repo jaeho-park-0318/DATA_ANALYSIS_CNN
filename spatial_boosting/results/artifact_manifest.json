@@ -1,0 +1,42 @@
+{
+  "description": "Published artifacts copied from the completed spatial-feature training run. Packaging changes did not retrain the model.",
+  "recorded_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.8.0"
+  },
+  "artifacts": {
+    "spatial_model.joblib": {
+      "bytes": 4707072,
+      "sha256": "d0efb264ec2911915672b5ea2ba55709b9386c4a3227769a159c29ff3d82469b"
+    },
+    "evaluation.json": {
+      "bytes": 3369,
+      "sha256": "c4c3ee61d67a8502f61116c1d104bba98768f5bb4dbee8166c46f0ab6e09d3fe"
+    },
+    "validation.json": {
+      "bytes": 329,
+      "sha256": "b8d77a17bd467b0c86934c7f0c20549e92cfd95b8a1e330c6b6b178eb679524f"
+    },
+    "test_predictions.csv": {
+      "bytes": 245561,
+      "sha256": "abc81f28a90811746c0aae662330fa707b723d7942f2ef5c148f2af3e52af63c"
+    },
+    "split_indices.npz": {
+      "bytes": 66403,
+      "sha256": "aee53e4783be03080d8bef58561aba0e5d70309d247ba76963fa7f8c255ff972"
+    },
+    "verification.txt": {
+      "bytes": 159,
+      "sha256": "c11ded840603b28e9a708ee147274994d2c2a4a213d69f1e68d216ffd8694a92"
+    },
+    "model_metadata.json": {
+      "bytes": 830,
+      "sha256": "be813fda7e4b145c483be434182055c95ad0934cd268d44547933e32cb3df13a"
+    }
+  }
+}

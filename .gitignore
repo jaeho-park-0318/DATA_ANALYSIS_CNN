@@ -1,0 +1,28 @@
+# Local environments and Python caches
+.venv/
+venv/
+.packages/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Dataset files and generated caches; trained model is intentionally included
+*.pkl
+*.pickle
+data/*.npy
+data/*.npz
+spatial_boosting/results/features.npz
+
+# Temporary authoring files
+.build/
+.chart-data-*/
+tmp/
+*.log
+~$*
+
+# Local credentials
+.env
+.env.*
+!.env.example
