@@ -1,0 +1,338 @@
+{
+  "tools": 20,
+  "checks": [
+    {
+      "check": "이벤트 ID 중복 없음",
+      "passed": true
+    },
+    {
+      "check": "원본 행 = 정규화 시각 + 합쳐진 중복 행",
+      "passed": true
+    },
+    {
+      "check": "01M01 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "01M01 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "01M01 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "01M02 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "01M02 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "01M02 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "02M01 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "02M01 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "02M01 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "02M02 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "02M02 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "02M02 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "03M01 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "03M01 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "03M01 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "03M02 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "03M02 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "03M02 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "04M01 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "04M01 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "04M01 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "04M02 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "04M02 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "04M02 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "05M01 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "05M01 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "05M01 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "05M02 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "05M02 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "05M02 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "06M01 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "06M01 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "06M01 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "06M02 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "06M02 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "06M02 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "07M01 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "07M01 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "07M01 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "07M02 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "07M02 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "07M02 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "08M01 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "08M01 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "08M01 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "08M02 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "08M02 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "08M02 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "09M01 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "09M01 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "09M01 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "09M02 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "09M02 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "09M02 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "10M01 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "10M01 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "10M01 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "10M02 원본 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "10M02 Anchor 라벨 합계",
+      "passed": true
+    },
+    {
+      "check": "10M02 TTF 원본 검증",
+      "passed": true
+    },
+    {
+      "check": "라벨 네 상태의 합",
+      "passed": true
+    },
+    {
+      "check": "특징 네 상태의 합",
+      "passed": true
+    },
+    {
+      "check": "공통 코호트는 A/B/C 분모 동일",
+      "passed": true
+    },
+    {
+      "check": "공통 코호트는 제외 사유 분모도 동일",
+      "passed": true
+    },
+    {
+      "check": "이벤트 보존은 양성 Anchor와 일치",
+      "passed": true
+    },
+    {
+      "check": "이벤트/정책/H/특징 중복 없음",
+      "passed": true
+    },
+    {
+      "check": "전처리 모든 단계에 입력 수와 제외 사유 기록",
+      "passed": true
+    },
+    {
+      "check": "같은 단위 단계의 입력-출력=제외",
+      "passed": true
+    },
+    {
+      "check": "단위 변경을 행 삭제로 계산하지 않음",
+      "passed": true
+    },
+    {
+      "check": "전처리 독립 분기별 가용 이벤트 단조 감소",
+      "passed": true
+    },
+    {
+      "check": "01M01 요청 범위만 반환",
+      "passed": true
+    },
+    {
+      "check": "01M01 관련 없는 파일 로딩 안 함",
+      "passed": true
+    },
+    {
+      "check": "01M01 큰 원시시간의 소수 경계 조회",
+      "passed": true
+    },
+    {
+      "check": "01M01 데이터 없는 범위",
+      "passed": true
+    },
+    {
+      "check": "03M02 요청 범위만 반환",
+      "passed": true
+    },
+    {
+      "check": "03M02 관련 없는 파일 로딩 안 함",
+      "passed": true
+    },
+    {
+      "check": "03M02 큰 원시시간의 소수 경계 조회",
+      "passed": true
+    },
+    {
+      "check": "03M02 데이터 없는 범위",
+      "passed": true
+    },
+    {
+      "check": "빈 상세 구간을 오류나 실제0 센서로 표시하지 않음",
+      "passed": true
+    },
+    {
+      "check": "빈 상세 구간이 표준 JSON으로 반환됨",
+      "passed": true
+    },
+    {
+      "check": "원본 65개 파일 크기/수정시각 보존",
+      "passed": true
+    }
+  ],
+  "full_file_content_hash_checked": false
+}

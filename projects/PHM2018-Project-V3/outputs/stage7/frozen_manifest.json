@@ -1,0 +1,61 @@
+{
+  "frozen_at_utc": "2026-11-05T09:02:20.136439+00:00",
+  "tools": [
+    "03M02"
+  ],
+  "points": [
+    {
+      "Tool": "03M02",
+      "method": "specialist",
+      "budget": 5,
+      "threshold": 0.0043878452852368355
+    },
+    {
+      "Tool": "03M02",
+      "method": "specialist",
+      "budget": 10,
+      "threshold": 0.0042405198328197
+    },
+    {
+      "Tool": "03M02",
+      "method": "global_tool_threshold",
+      "budget": 5,
+      "threshold": 0.0032673857640475035
+    },
+    {
+      "Tool": "03M02",
+      "method": "global_tool_threshold",
+      "budget": 10,
+      "threshold": 0.0032673857640475035
+    },
+    {
+      "Tool": "03M02",
+      "method": "global_frozen",
+      "budget": 5,
+      "threshold": 0.0032673857640475035
+    },
+    {
+      "Tool": "03M02",
+      "method": "global_frozen",
+      "budget": 10,
+      "threshold": 0.002999492222443223
+    }
+  ],
+  "sha256": {
+    "config/stage7_specialists.json": "9a2dbbf259be989703f076303580598062a7819bd4c7d3eff82b8c7730120bf7",
+    "outputs/stage7/selection.json": "c125c74e8ce270c56180b904f120e877c4d97fe434d51514a96cb1b72ecd9aac",
+    "outputs/tables/stage7_validation_points.parquet": "d60c0507c33a5cebddf31e4f0493b011c7aa3ec2df29073a24689e8a5beaeaa7",
+    "src/alarm_evaluation.py": "27f12ab27081d7eccc86128146485c33e8cf89b820b6ee8fdef0ec6e094a4527",
+    "src/pretraining.py": "227b6478c26211dedaaa21923ceebebea4687b6f7cb2bd47a49a784b20321972",
+    "outputs/stage7/03M02_model.joblib": "371d7b42e3914b74b31302648671cb91c3d2bb09b3b2816fec16c3994cc0bdf9",
+    "outputs/stage7/03M02_model.ubj": "fc0318adcabecabfac8ed4629b844f355e69d4ac1186cacc55eaf4ce846f5a8e",
+    "outputs/stage7/03M02_preprocessor.joblib": "3d3c9ea4be1ad244c3a36e0c3a1be2697db0a42fb364c3e86f3f85bba8da2b0b",
+    "outputs/stage7/03M02_train_ledger.parquet": "123965e4572fabb9a20ce0f0bb5e6aeff2b823dd3329286ed8adbe1f413c1d41",
+    "outputs/stage7/03M02_validation_ledger.parquet": "336b23bfedaf2e57cf32b47da19db679b22a92e60ac66c2db08ab4f7f9f9d9a6",
+    "outputs/stage7/03M02_validation_predictions.parquet": "552f2b20b941d5f50811b35a6e3597c99c3fc403250e712c2a31a11e69bd97c8"
+  },
+  "later_partition_scored": false,
+  "independent_final_test": false,
+  "seed": 42,
+  "refit_after_freeze": false
+}

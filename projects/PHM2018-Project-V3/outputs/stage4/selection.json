@@ -1,0 +1,44 @@
+{
+  "selected_by_budget": [
+    {
+      "selection_budget": 5,
+      "config_id": "B_d3_unit",
+      "feature_set": "B",
+      "depth": 3,
+      "weight_mode": "unit",
+      "run_id": "B_d3_unit_s42",
+      "threshold": 0.006749347783625126,
+      "detected_events": 13,
+      "actual_burden": 4.469619870966845
+    },
+    {
+      "selection_budget": 10,
+      "config_id": "A_d2_sqrt_train_neg_pos",
+      "feature_set": "A",
+      "depth": 2,
+      "weight_mode": "sqrt_train_neg_pos",
+      "run_id": "A_d2_sqrt_train_neg_pos_s42",
+      "threshold": 0.08915603160858154,
+      "detected_events": 21,
+      "actual_burden": 6.6043636899360845
+    }
+  ],
+  "selected_configs": [
+    {
+      "config_id": "B_d3_unit",
+      "feature_set": "B",
+      "depth": 3,
+      "weight_mode": "unit"
+    },
+    {
+      "config_id": "A_d2_sqrt_train_neg_pos",
+      "feature_set": "A",
+      "depth": 2,
+      "weight_mode": "sqrt_train_neg_pos"
+    }
+  ],
+  "rule": "seed42 grid 전체에서 각 상한별 검출 수 최대, 동률이면 실제 경보 부담 최소, 그 다음 낮은 깊이/단위 가중치/특징 A 순. 두 상한의 선택 설정 합집합(최대2)을 동결. 실제 운영 상한 아님.",
+  "source_grid_sha256": "acc71b8320696ed38c94a8d80518a4d414e527ed72653902a10b7537a549c333",
+  "seed42_only": true,
+  "holdout_scored": false
+}

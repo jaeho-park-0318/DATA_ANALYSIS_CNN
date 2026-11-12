@@ -1,0 +1,13 @@
+{
+  "method": "생성한 PNG 8개를 직접 열어 한글 글꼴, 축/범례/분모, 레이블 잘림, 공백 선 연결 여부를 확인",
+  "checks": [
+    {"check": "protected_split: 개념도 및 시간/장비 분리 설명", "passed": true},
+    {"check": "group_results: 최대가용/공통 분모와 검출 수", "passed": true},
+    {"check": "selection: 사전 규칙과 검증 성능만 표시", "passed": true},
+    {"check": "holdout_results: 두 고정 운영점, 두 분모와 조건부 구간", "passed": true},
+    {"check": "unknown_burden: 0 포함 로그 축과 NA 경보 분리", "passed": true},
+    {"check": "by_tool: 20대 표시 및 입력 없는 고장 보존", "passed": true},
+    {"check": "lead_resources: raw 선행시간과 표본 자원 기록 한계", "passed": true},
+    {"check": "event_cases: 실제 센서/저장 점수와 경보 시작, 세그먼트별 선", "passed": true}
+  ]
+}

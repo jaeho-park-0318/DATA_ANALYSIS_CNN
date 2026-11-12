@@ -1,0 +1,99 @@
+{
+  "tool": "01M01",
+  "raw_rows": 3124704,
+  "normalized_times": 3119431,
+  "anchors": 662570,
+  "feature_status": [
+    {
+      "feature_status": "history_lt900",
+      "len": 141800
+    },
+    {
+      "feature_status": "sensor_stale_or_gap",
+      "len": 452789
+    },
+    {
+      "feature_status": "history_span_available",
+      "len": 67981
+    }
+  ],
+  "candidate_counts": {
+    "candidate_f1_h300raw": {
+      "positive": 52,
+      "negative": 646160,
+      "NA": 16345,
+      "excluded_lt60": 13
+    },
+    "candidate_f1_h600raw": {
+      "positive": 117,
+      "negative": 646095,
+      "NA": 16345,
+      "excluded_lt60": 13
+    },
+    "candidate_f1_h1800raw": {
+      "positive": 376,
+      "negative": 645836,
+      "NA": 16345,
+      "excluded_lt60": 13
+    },
+    "candidate_f2_h300raw": {
+      "positive": 20,
+      "negative": 621374,
+      "NA": 41171,
+      "excluded_lt60": 5
+    },
+    "candidate_f2_h600raw": {
+      "positive": 45,
+      "negative": 621349,
+      "NA": 41171,
+      "excluded_lt60": 5
+    },
+    "candidate_f2_h1800raw": {
+      "positive": 145,
+      "negative": 621249,
+      "NA": 41171,
+      "excluded_lt60": 5
+    },
+    "candidate_f3_h300raw": {
+      "positive": 4,
+      "negative": 281525,
+      "NA": 381040,
+      "excluded_lt60": 1
+    },
+    "candidate_f3_h600raw": {
+      "positive": 9,
+      "negative": 281520,
+      "NA": 381040,
+      "excluded_lt60": 1
+    },
+    "candidate_f3_h1800raw": {
+      "positive": 29,
+      "negative": 281500,
+      "NA": 381040,
+      "excluded_lt60": 1
+    },
+    "candidate_any_h300raw": {
+      "positive": 76,
+      "negative": 281475,
+      "NA": 381000,
+      "excluded_lt60": 19
+    },
+    "candidate_any_h600raw": {
+      "positive": 171,
+      "negative": 281420,
+      "NA": 380960,
+      "excluded_lt60": 19
+    },
+    "candidate_any_h1800raw": {
+      "positive": 550,
+      "negative": 281200,
+      "NA": 380801,
+      "excluded_lt60": 19
+    }
+  },
+  "total_unique_events": 19,
+  "events_with_raw_window": 13,
+  "events_with_positive_anchor": 19,
+  "approved_training_rows": 0,
+  "parquet_sha256": "dee101094ea8990698e5ce69560ba0da1f98e13db73f3d4e73e1d17fc4a7babd"
+}

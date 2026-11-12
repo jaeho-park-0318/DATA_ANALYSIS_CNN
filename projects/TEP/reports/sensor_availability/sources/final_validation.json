@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "conditions_checked": [
+    {
+      "rate": 0.0,
+      "seed": 42,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.0,
+      "seed": 43,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.0,
+      "seed": 44,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.1,
+      "seed": 42,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.1,
+      "seed": 43,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.1,
+      "seed": 44,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.25,
+      "seed": 42,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.25,
+      "seed": 43,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.25,
+      "seed": 44,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.4,
+      "seed": 42,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.4,
+      "seed": 43,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.4,
+      "seed": 44,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.531,
+      "seed": 42,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.531,
+      "seed": 43,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    },
+    {
+      "rate": 0.531,
+      "seed": 44,
+      "event_rows": 10000,
+      "counts_balanced_and_verified": true,
+      "surviving_event_results_identical": true
+    }
+  ],
+  "existing_files_unchanged": true,
+  "models_retrained": false,
+  "threshold_changed": false,
+  "labels_changed": false,
+  "scope": "all15 condition-seed tables and event rows; partial control validated by pilot and mask checks"
+}

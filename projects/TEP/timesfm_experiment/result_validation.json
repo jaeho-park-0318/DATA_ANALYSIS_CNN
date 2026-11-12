@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "unique_target_keys": 9870,
+  "paired_predictions": true,
+  "all_52_variables": true,
+  "summary_and_variable_metrics_recomputed_from_predictions": true,
+  "actual_and_persistence_match_official_Test_cache": true,
+  "stratified_time_bins_verified": true,
+  "all_faults": 21,
+  "trajectories": 105,
+  "sample_only": true
+}

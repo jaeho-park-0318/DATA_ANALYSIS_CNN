@@ -1,0 +1,134 @@
+[
+  {
+    "role": "train",
+    "Tool": "04M01",
+    "rows": 106061,
+    "positive": 23,
+    "negative": 929,
+    "unknown": 105109,
+    "f1": 2,
+    "f2": 1,
+    "f3": 1
+  },
+  {
+    "role": "train",
+    "Tool": "04M02",
+    "rows": 247652,
+    "positive": 209,
+    "negative": 0,
+    "unknown": 247443,
+    "f1": 14,
+    "f2": 0,
+    "f3": 8
+  },
+  {
+    "role": "train",
+    "Tool": "05M02",
+    "rows": 27384,
+    "positive": 10,
+    "negative": 2553,
+    "unknown": 24821,
+    "f1": 0,
+    "f2": 1,
+    "f3": 0
+  },
+  {
+    "role": "train",
+    "Tool": "06M01",
+    "rows": 84308,
+    "positive": 10,
+    "negative": 13456,
+    "unknown": 70842,
+    "f1": 1,
+    "f2": 0,
+    "f3": 0
+  },
+  {
+    "role": "train",
+    "Tool": "06M02",
+    "rows": 287389,
+    "positive": 300,
+    "negative": 176268,
+    "unknown": 110821,
+    "f1": 12,
+    "f2": 3,
+    "f3": 18
+  },
+  {
+    "role": "early_stop",
+    "Tool": "01M02",
+    "rows": 284516,
+    "positive": 537,
+    "negative": 171276,
+    "unknown": 112703,
+    "f1": 43,
+    "f2": 5,
+    "f3": 12
+  },
+  {
+    "role": "early_stop",
+    "Tool": "02M01",
+    "rows": 96418,
+    "positive": 43,
+    "negative": 43586,
+    "unknown": 52789,
+    "f1": 3,
+    "f2": 3,
+    "f3": 0
+  },
+  {
+    "role": "calibration",
+    "Tool": "02M02",
+    "rows": 85672,
+    "positive": 30,
+    "negative": 0,
+    "unknown": 85642,
+    "f1": 0,
+    "f2": 3,
+    "f3": 0
+  },
+  {
+    "role": "calibration",
+    "Tool": "03M02",
+    "rows": 113367,
+    "positive": 246,
+    "negative": 22821,
+    "unknown": 90300,
+    "f1": 25,
+    "f2": 7,
+    "f3": 2
+  },
+  {
+    "role": "evaluation",
+    "Tool": "01M01",
+    "rows": 95813,
+    "positive": 23,
+    "negative": 25603,
+    "unknown": 70187,
+    "f1": 1,
+    "f2": 1,
+    "f3": 1
+  },
+  {
+    "role": "evaluation",
+    "Tool": "03M01",
+    "rows": 82739,
+    "positive": 88,
+    "negative": 0,
+    "unknown": 82651,
+    "f1": 5,
+    "f2": 6,
+    "f3": 0
+  },
+  {
+    "role": "evaluation",
+    "Tool": "05M01",
+    "rows": 84257,
+    "positive": 22,
+    "negative": 10929,
+    "unknown": 73306,
+    "f1": 2,
+    "f2": 0,
+    "f3": 1
+  }
+]

@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "window_mask_none",
+      "passed": true,
+      "valid_post_windows": 800
+    },
+    {
+      "check": "window_mask_short_gap",
+      "passed": true,
+      "valid_post_windows": 761
+    },
+    {
+      "check": "window_mask_full_censor",
+      "passed": true,
+      "valid_post_windows": 0
+    },
+    {
+      "check": "window_mask_one_window",
+      "passed": true,
+      "valid_post_windows": 1
+    },
+    {
+      "check": "window_mask_two_windows",
+      "passed": true,
+      "valid_post_windows": 2
+    },
+    {
+      "check": "missing_points_break_alarm_streaks",
+      "passed": true
+    },
+    {
+      "check": "no_future_dependency",
+      "passed": true
+    },
+    {
+      "check": "fault_balanced_exact_nested_reproducible_selection",
+      "passed": true
+    }
+  ],
+  "actual_input_inference_checks": [
+    {
+      "case": "none",
+      "fault": 1,
+      "run": 1,
+      "valid_post_windows": 800,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 0.0,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "none",
+      "fault": 9,
+      "run": 1,
+      "valid_post_windows": 800,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 0.0,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "none",
+      "fault": 15,
+      "run": 3,
+      "valid_post_windows": 800,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 0.0,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "short_gap",
+      "fault": 1,
+      "run": 1,
+      "valid_post_windows": 761,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 0.0,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "short_gap",
+      "fault": 9,
+      "run": 1,
+      "valid_post_windows": 761,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 0.0,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "short_gap",
+      "fault": 15,
+      "run": 3,
+      "valid_post_windows": 761,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 0.0,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "full_censor",
+      "fault": 1,
+      "run": 1,
+      "valid_post_windows": 0,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 1.8477439880371094e-06,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "full_censor",
+      "fault": 9,
+      "run": 1,
+      "valid_post_windows": 0,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 1.8477439880371094e-06,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "full_censor",
+      "fault": 15,
+      "run": 3,
+      "valid_post_windows": 0,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 4.649162292480469e-06,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "one_window",
+      "fault": 1,
+      "run": 1,
+      "valid_post_windows": 1,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 1.8477439880371094e-06,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "one_window",
+      "fault": 9,
+      "run": 1,
+      "valid_post_windows": 1,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 1.8477439880371094e-06,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "one_window",
+      "fault": 15,
+      "run": 3,
+      "valid_post_windows": 1,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 4.649162292480469e-06,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "two_windows",
+      "fault": 1,
+      "run": 1,
+      "valid_post_windows": 2,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 6.556510925292969e-07,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "two_windows",
+      "fault": 9,
+      "run": 1,
+      "valid_post_windows": 2,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 6.556510925292969e-07,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    },
+    {
+      "case": "two_windows",
+      "fault": 15,
+      "run": 3,
+      "valid_post_windows": 2,
+      "surviving_inputs_exactly_identical": true,
+      "same_batch_predictions_exactly_identical": true,
+      "cached_prediction_max_probability_error": 3.5762786865234375e-07,
+      "cache_error_note": "different GPU batch packing may cause small rounding; no input/model change"
+    }
+  ],
+  "equivalence_scope": "complete surviving20x52 inputs identical and stateless model; approximate cached equality only differs by GPU batch arithmetic",
+  "no_imputation": true,
+  "no_prediction_at_invalid_endpoints": true
+}

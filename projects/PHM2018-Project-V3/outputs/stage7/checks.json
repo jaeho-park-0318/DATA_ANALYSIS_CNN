@@ -1,0 +1,527 @@
+{
+  "checks": [
+    {
+      "check": "이전 최종 모델/예측/표/접근 기록 바이트 보존",
+      "passed": true
+    },
+    {
+      "check": "기준 변경 없음",
+      "passed": true
+    },
+    {
+      "check": "선정 표 보존",
+      "passed": true
+    },
+    {
+      "check": "01M01 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "01M02 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "02M01 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "02M02 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "03M01 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "03M02 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "04M01 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "04M02 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "05M01 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "05M02 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "06M01 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "06M02 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "07M01 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "07M02 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "08M01 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "08M02 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "09M01 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "09M02 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "10M01 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "10M02 최소 데이터 기준",
+      "passed": true
+    },
+    {
+      "check": "장비 수 제한 및 학습 데이터 기준 순위",
+      "passed": true
+    },
+    {
+      "check": "후반 예측 이전 동결",
+      "passed": true
+    },
+    {
+      "check": "후속 연구임을 명시",
+      "passed": true
+    },
+    {
+      "check": "동결 manifest 보존",
+      "passed": true
+    },
+    {
+      "check": "config/stage7_specialists.json 동결 해시",
+      "passed": true
+    },
+    {
+      "check": "outputs/stage7/selection.json 동결 해시",
+      "passed": true
+    },
+    {
+      "check": "outputs/tables/stage7_validation_points.parquet 동결 해시",
+      "passed": true
+    },
+    {
+      "check": "src/alarm_evaluation.py 동결 해시",
+      "passed": true
+    },
+    {
+      "check": "src/pretraining.py 동결 해시",
+      "passed": true
+    },
+    {
+      "check": "outputs/stage7/03M02_model.joblib 동결 해시",
+      "passed": true
+    },
+    {
+      "check": "outputs/stage7/03M02_model.ubj 동결 해시",
+      "passed": true
+    },
+    {
+      "check": "outputs/stage7/03M02_preprocessor.joblib 동결 해시",
+      "passed": true
+    },
+    {
+      "check": "outputs/stage7/03M02_train_ledger.parquet 동결 해시",
+      "passed": true
+    },
+    {
+      "check": "outputs/stage7/03M02_validation_ledger.parquet 동결 해시",
+      "passed": true
+    },
+    {
+      "check": "outputs/stage7/03M02_validation_predictions.parquet 동결 해시",
+      "passed": true
+    },
+    {
+      "check": "평가 결과 표 해시",
+      "passed": true
+    },
+    {
+      "check": "03M02 예측 보존/유한",
+      "passed": true
+    },
+    {
+      "check": "03M02 세 방식의 평가 입력/정답 동일",
+      "passed": true
+    },
+    {
+      "check": "03M02train 장비/시간 경계",
+      "passed": true
+    },
+    {
+      "check": "03M02 학습은 알려진 라벨만",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0000.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0001.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0002.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0003.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0004.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0005.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0006.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0007.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0008.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0009.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0010.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0011.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0012.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0013.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0014.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02traindata/cache/analysis/03M02/anchors-0015.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02validation 장비/시간 경계",
+      "passed": true
+    },
+    {
+      "check": "03M02validationdata/cache/analysis/03M02/anchors-0015.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02validationdata/cache/analysis/03M02/anchors-0016.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02validationdata/cache/analysis/03M02/anchors-0017.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02validationdata/cache/analysis/03M02/anchors-0018.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02validationdata/cache/analysis/03M02/anchors-0019.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02holdout 장비/시간 경계",
+      "passed": true
+    },
+    {
+      "check": "03M02holdoutdata/cache/analysis/03M02/anchors-0019.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02holdoutdata/cache/analysis/03M02/anchors-0020.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02holdoutdata/cache/analysis/03M02/anchors-0021.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02holdoutdata/cache/analysis/03M02/anchors-0022.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02holdoutdata/cache/analysis/03M02/anchors-0023.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02holdoutdata/cache/analysis/03M02/anchors-0024.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02holdoutdata/cache/analysis/03M02/anchors-0025.parquet 원장 시각/라벨/분할",
+      "passed": true
+    },
+    {
+      "check": "03M02 저장 모델 실제 validation 재현",
+      "passed": true
+    },
+    {
+      "check": "03M02 학습 CUDA",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/5 숫자 임계값 보존",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/5 validation 선택 재계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/5 이벤트 분모와 검출",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/5 입력 가용성 독립 계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/5 에피소드 분류/점수 발화 합계",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/5 부담 재계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/5 경보 시작점",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/5 연속 발화 중복 시작 없음",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/5 고장 매칭 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/10 숫자 임계값 보존",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/10 validation 선택 재계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/10 이벤트 분모와 검출",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/10 입력 가용성 독립 계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/10 에피소드 분류/점수 발화 합계",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/10 부담 재계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/10 경보 시작점",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/10 연속 발화 중복 시작 없음",
+      "passed": true
+    },
+    {
+      "check": "03M02/specialist/10 고장 매칭 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/5 숫자 임계값 보존",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/5 validation 선택 재계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/5 이벤트 분모와 검출",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/5 입력 가용성 독립 계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/5 에피소드 분류/점수 발화 합계",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/5 부담 재계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/5 경보 시작점",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/5 연속 발화 중복 시작 없음",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/5 고장 매칭 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/10 숫자 임계값 보존",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/10 validation 선택 재계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/10 이벤트 분모와 검출",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/10 입력 가용성 독립 계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/10 에피소드 분류/점수 발화 합계",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/10 부담 재계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/10 경보 시작점",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/10 연속 발화 중복 시작 없음",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_tool_threshold/10 고장 매칭 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/5 숫자 임계값 보존",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/5 이벤트 분모와 검출",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/5 입력 가용성 독립 계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/5 에피소드 분류/점수 발화 합계",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/5 부담 재계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/5 경보 시작점",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/5 연속 발화 중복 시작 없음",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/5 고장 매칭 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/10 숫자 임계값 보존",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/10 이벤트 분모와 검출",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/10 입력 가용성 독립 계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/10 에피소드 분류/점수 발화 합계",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/10 부담 재계산",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/10 경보 시작점",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/10 연속 발화 중복 시작 없음",
+      "passed": true
+    },
+    {
+      "check": "03M02/global_frozen/10 고장 매칭 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "03M02global 분류 지표 분모",
+      "passed": true
+    },
+    {
+      "check": "03M02specialist 분류 지표 분모",
+      "passed": true
+    },
+    {
+      "check": "원본 크기/수정시각 보존",
+      "passed": true
+    }
+  ],
+  "checked_at_utc": "2026-11-05T09:04:23.357715+00:00",
+  "additional_later_inference_during_validation": 0,
+  "independent_final_test": false
+}

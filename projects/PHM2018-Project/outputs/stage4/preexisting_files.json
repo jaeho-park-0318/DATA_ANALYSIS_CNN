@@ -1,0 +1,98 @@
+[
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\build_features.py",
+    "sha256": "8155c6c3155be0a101cd9b9dfea1609cf7fdac1417fa62bf191ccfd616ed00b8"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\build_labels.py",
+    "sha256": "9a6c35be04a437b586a580c7cfccb1ebe8e70215e6596818f388034d263571c3"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\dataset_common.py",
+    "sha256": "696dd8a0fdd26782af869f0c1455473ab803e2f10d93789ab6dee6f0f761fa14"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\dataset_loader.py",
+    "sha256": "2b843dacc3e05357c6f37a49b6b78af6b4b7d129d3af458b7d676457b9d99b97"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\eda_common.py",
+    "sha256": "403e3e01502fa222aa4e72afeb6678612a16d9e6b08b8ada85168a7bec4284cf"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\eda_detail.py",
+    "sha256": "3c8dd00a52d79c6ac9567eda1108e2dbb80873a98f47c7f27e4f740b3b0fecf3"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\eda_plots.py",
+    "sha256": "750d0adcb5f5151f40c1977c8b481d0a097d7b8b4c70aba09db98b382caa2330"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\inspect_data.py",
+    "sha256": "4fc088db88ad1793ce6e2592f0e065196b6476731fdb6388ba77bc861db8a553"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\validate_dataset.py",
+    "sha256": "d5ccd0b505a2bd284ed3e1576a29bd255bc41add3fa5a9504864297140dbc041"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\build_dataset_notebooks.py",
+    "sha256": "9b55f89aa67a38692da5c96a3614483625c57b1cf2a7607b20e932c7d390a705"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\build_eda_notebooks.py",
+    "sha256": "3b71dac6579329aebe7fd5326f307c09f1ca338c0cbc06e9b7d43b6b9e674487"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\build_ml_dataset.py",
+    "sha256": "db59ffefea3fe6a1fc71456e730a598624444013bc9e9b11a83e8a0826a5c590"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\check_environment.py",
+    "sha256": "1fdc65dc695ca629d5f06b48e7bdcbdc53d5922b65fb01d9d718678a94d8b82b"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\validate_eda.py",
+    "sha256": "96968c5e37b8fddd1716675bf665f95d34e518df98b485db2d01575e3e8de88f"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\write_dataset_report.py",
+    "sha256": "0341b742c5c36283360059cfea2060928b9c7acd849ce89f3e92fd21c70a8cfb"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\write_eda_report.py",
+    "sha256": "eed61200073a1ca7f6fd68411dd84ffaee47cfcc76c572ea4305a5d324e5f1be"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\01_data_overview.ipynb",
+    "sha256": "6c2a5c2a49665a6625b8fac593b03223448d8580170f5d83d8fe28d3602ead9e"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\02_EDA.ipynb",
+    "sha256": "7c0c962c17119be0f0d5b36bc80fd3de610efbeade8b2ed4e6dda5eaf77da765"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\03_fault_analysis.ipynb",
+    "sha256": "0504b9ed44b68536bde2493125a0261ac45252cf849cc5e8c78050d74d5a83f6"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\04_label_generation.ipynb",
+    "sha256": "2a1ad63b605061e37adb52e47a082153091994a10bafea248163e866461b20de"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\05_feature_engineering.ipynb",
+    "sha256": "3423e9c0375df66d43e1194073ecf6eabf5b09a30d16418e93c265326969b36e"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\02_EDA_summary.md",
+    "sha256": "cca5049af60117832d9bcd37d2ecfae94edf9ed32e0d14f20e94329767877084"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\03_dataset_summary.md",
+    "sha256": "cbc975db450efccef68eb424f48543a65b47559ddd9f99fb4aad9ce9fd4b731c"
+  },
+  {
+    "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\data_inventory.md",
+    "sha256": "6e2d1548f47f0a3dfda072aa17f153076eb707b209f447fcdefb767bd67cf2ec"
+  }
+]

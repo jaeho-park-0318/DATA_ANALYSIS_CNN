@@ -1,0 +1,958 @@
+{
+  "sources": {
+    "PHM2018-Project-V3/outputs/validation/actual_checks.json": "63c44b9691caa5545bac62128b1a00a79bdcceeec8d2d5d032681258fe317246",
+    "PHM2018-Project-V3/outputs/validation/alarm_independent_audit.json": "8205a3fb3ce7050921b515bb2894c12265172aba66b39064f3e95147102726d9",
+    "PHM2018-Project-V3/outputs/validation/alarm_stage1_checks.json": "999235f1d88251149cadb7a3a35d4c35beee3aa799648cf582e4970609343484",
+    "PHM2018-Project-V3/outputs/validation/alarm_stage1_notebook.json": "7d0d2d1528fd25023cc35d4442b6c679c992af6a774514e4af5f2586e013fc87",
+    "PHM2018-Project-V3/outputs/validation/alarm_stage1_output_checks.json": "9697f20475084ba0b6a3d29de65dc731f612491c76a486198703009851b25eed",
+    "PHM2018-Project-V3/outputs/validation/browser_checks.json": "7e0692575c1933610c3b09e008a5b5cc4e7c9b428001aeed8c7fe21fd3525e13",
+    "PHM2018-Project-V3/outputs/validation/completion.json": "0d5eb36c81df76683f495fe539a086bfe270d779d301f196ed5d76e992929fda",
+    "PHM2018-Project-V3/outputs/validation/final_notebook.json": "ad9c88d7bff147c6d3b6ba46c546265bb15a0462bc81754be3828a1be7302475",
+    "PHM2018-Project-V3/outputs/validation/final_visual_checks.json": "be2cd7f16504a1339f0fb99bbab9fdb0c8e4cd851936fb320b27104bc6c4a1c9",
+    "PHM2018-Project-V3/outputs/validation/local_compute_profile.json": "99bf796304517bd6b6a23e003d712c05ebe2c0b5c3ff86bb42b27e4c644479ac",
+    "PHM2018-Project-V3/outputs/validation/notebook_execution.json": "4340f697100409380efa408f30fe59b3cd5c9937a021be99e68b87306b33e2d7",
+    "PHM2018-Project-V3/outputs/validation/pretraining_checks.json": "d533f381bbd41742407c7981ed92abd7ee86596c6d8984c2d373ad2f0fc892bf",
+    "PHM2018-Project-V3/outputs/validation/pretraining_loader_checks.json": "f053e92b2ba5c64c36d4ef076ac7ac1932aeb2d6e492c9c9a33abdc038a1be50",
+    "PHM2018-Project-V3/outputs/validation/stage2_artifacts.json": "48db2f1fe6b1b21b7fcef958f2b848ad3a91c693eb47f60db192cea23408b399",
+    "PHM2018-Project-V3/outputs/validation/stage2_checks.json": "d342d8abb5c4a78c2d44f4e9ae008982f39b15bcdff5fcb8a9a8112bfcf41585",
+    "PHM2018-Project-V3/outputs/validation/stage2_evaluation.json": "613367124c96be1b37882f50a2e8487c7372defc9734ccd46daae40526bd175e",
+    "PHM2018-Project-V3/outputs/validation/stage2_notebook.json": "1d31d731ffe379e817ed0f89f9a5b1561c3419db373ac8ada2bcf6ee9de01e99",
+    "PHM2018-Project-V3/outputs/validation/stage2_visual_checks.json": "58dcd976feec26e4dac960442b3d8ecd48e8f61f3d85e113f432f8700acb5b3a",
+    "PHM2018-Project-V3/outputs/validation/stage3_artifacts.json": "97644be7af67fd929aae43e59c0389455dc19f9e52dfa1c6f21b1cc37663a309",
+    "PHM2018-Project-V3/outputs/validation/stage3_checks.json": "7114ee78b6d24774e22caebb4a94a731b3d516fddca4e1904e1ebceb261d7b07",
+    "PHM2018-Project-V3/outputs/validation/stage3_common_contract.json": "16acfe5c2c26b4a8a7027cfb805e22366aca94798ea6f7524e9a65197c5b1fa0",
+    "PHM2018-Project-V3/outputs/validation/stage3_evaluation.json": "deace22b8d9fc981d80a123d7db49492838f2f0e118fa4d262d68ac5dbae0d03",
+    "PHM2018-Project-V3/outputs/validation/stage3_notebook.json": "d46645405b12b0a58f142688ba4fba4311ccf6f09e473cba98e362d7f9b63bed",
+    "PHM2018-Project-V3/outputs/validation/stage3_visual_checks.json": "2832a70cebd4edc3db7fc730fbd43b09ec2a457134641a2e5bcdad65ff7b1316",
+    "PHM2018-Project-V3/outputs/validation/stage4_analysis_contract.json": "21ae2e8c28cb7717a8342be40bbac866c37af8e41990373b9cd8b4d1c4ccb1e0",
+    "PHM2018-Project-V3/outputs/validation/stage4_artifacts.json": "f92934e9e60623110a3216c50090629202241b988e0dee8d9e0082004ca6d388",
+    "PHM2018-Project-V3/outputs/validation/stage4_checks.json": "165c1905a0019e38dcacbef2fc640d0dbff04cc70913b3398b5af9d0f8402785",
+    "PHM2018-Project-V3/outputs/validation/stage4_notebook.json": "4046b3deca3f97d9635719e28c0b7cff7182cd8eb33269b013eb109094989c95",
+    "PHM2018-Project-V3/outputs/validation/stage4_visual_checks.json": "62429b30696d74ce370dbde160184beced1becfd1f5b4e1204ee372748c23a30",
+    "PHM2018-Project-V3/outputs/validation/stage5_checks.json": "1f9bc86c6854c56c109c50b811b86e7275ebac72b329e8212e569f44ce8399fd",
+    "PHM2018-Project-V3/outputs/validation/stage5_training_checks.json": "62fa5d28471593ae92914c0b77dbc98bee91bfa78645a7a314b50f43748672a1",
+    "PHM2018-Project-V3/outputs/validation/stage6_checks.json": "52ea94e2b64cf581f4445587e7ec98d98808c3f2eff2abaa06ba6861de638b54",
+    "PHM2018-Project-V3/outputs/validation/visual_checks.json": "62715f5aaaa59d819fbd5dbc9674a63a939fbda4fc4e792101a1cfa406407696",
+    "PHM2018-Project-V3/outputs/stage6/frozen_manifest.json": "c211518ae97a6dcc93aa0198caf8ea368fef85efac5386cb3eecaced5ee9b3c1",
+    "PHM2018-Project-V3/outputs/stage6/holdout_access.json": "a7c394f9ab97235a19c1585431cc308efbf918e6f2d5781c6c5a92b2e5fa9df4",
+    "PHM2018-Project-V3/outputs/stage6/holdout_classification.json": "039774bf7e435ca9bc4bf0504a46498c0b52202631f3c4cc4dee01808e5724b1",
+    "PHM2018-Project-V3/outputs/stage6/postprocessing_recovery.json": "80a6df93292dca4e2ec97c118254fcd50df9e5abc492601e480f7d6b1d577460",
+    "PHM2018-Project-V3/outputs/stage7/selection.json": "c125c74e8ce270c56180b904f120e877c4d97fe434d51514a96cb1b72ecd9aac",
+    "PHM2018-Project-V3/outputs/stage7/frozen_manifest.json": "26953e9a71e8f7c51da8047bf1e33d17e1cdfdbcbd5ea28ef1456ecda2e1d7c7",
+    "PHM2018-Project-V3/outputs/stage7/evaluation_access.json": "b3623398b937259cee673ba3823508ec4b65433e99c99b140c66a054141a5fe6",
+    "PHM2018-Project-V3/outputs/stage7/checks.json": "e85357d7cdc9e99c0cca83dc5cad5aa34bc6603d41a583f874020449f629ff13",
+    "PHM2018-Project-V3/outputs/stage7/completion.json": "83dbbb6474030f73bb88615e9e1ec2c26e5ec5a823593ed1897f92ed03c53287",
+    "PHM2018-Project-V3/config/local_compute.json": "9592e12202830a23efe5fb8972da603cb622834e37f06806e9c1383be0c240b1",
+    "PHM2018-Project-V3/config/preprocessing.json": "32d03ddf73d577724efec381492e60104b9d42fc7177dd1646230b88509c8be2",
+    "PHM2018-Project-V3/config/pretraining.json": "bc873ed1189eb3d4c0f0d09399718b57046a9e81de33fe20f68d3514ff712f12",
+    "PHM2018-Project-V3/config/stage3_experiment.json": "86687ac3b412f6dcbaaf4c6a0fe279de5ae2d78c75f6f1dc89eacf7244f6f103",
+    "PHM2018-Project-V3/config/stage4_experiment.json": "fba5836399b34531c05b45b938d4a5a1d10d50a7accb2ed93175d56321d1abbf",
+    "PHM2018-Project-V3/config/stage5_final_protocol.json": "2f082824a09563ef2a86c35b616f229f06b6b40f28cd429974733a2700b33576",
+    "PHM2018-Project-V3/config/stage7_specialists.json": "9a2dbbf259be989703f076303580598062a7819bd4c7d3eff82b8c7730120bf7",
+    "PHM2018-Project/outputs/stage4/summary.json": "95fe609641e7ed1c6df887c57421bfe99d610b910a4aba39e6bcf2a9a7a86c71",
+    "PHM2018-Project/outputs/stage4_5/summary.json": "d9480895ff1aca951f4b75d38e6539c518d7b4d837077dc05eaf3ecd468bb25f",
+    "PHM2018-Project/outputs/stage4_5/hardware.json": "d88aaa1c71578b8c2804ac377bcc9097802da70cb2d8381ed571ceae681948d0",
+    "PHM2018-Project/outputs/stage4_5/hardware_supplement.json": "106b0bbd1ef49bd24859fac2869e2c0dc456997eb751f7333b0ddd65740fce49",
+    "PHM2018-Project-V2/outputs/release_status.json": "19f8d3ec68f917ecd8117d661e33f8486961a683d8ebba3186d1cad4952323ac",
+    "PHM2018-Project-V2/outputs/pilot_summary.json": "13c555c1f22a54a2f2ed72c909706b8011b11f1cdba4677a90ab89dc7c555048",
+    "PHM2018-Project-V2/outputs/validation.json": "17f7566357ef08d3df10f8881894c68de0d65df984bd752be46ef980de5bd845",
+    "PHM2018-Project-V2/outputs/reproducibility.json": "7629450a40d7a7297ad00251d780fad661af3c22e53e29cd1b4a90e4468e7cf2",
+    "PHM2018-Project-V2/outputs/notebook_validation.json": "17da5a15ae2e7298b2c456b02734416f66149d8e53bdcda2a68765fbb6ae6a74",
+    "PHM2018-Project/reports/02_EDA_summary.md": "cca5049af60117832d9bcd37d2ecfae94edf9ed32e0d14f20e94329767877084",
+    "PHM2018-Project/reports/03_dataset_summary.md": "cbc975db450efccef68eb424f48543a65b47559ddd9f99fb4aad9ce9fd4b731c",
+    "PHM2018-Project/reports/04_5_hardware_benchmark.md": "6db3c3b022136e13267a07a0d6a67fdeb704c788c46d125a5efc31400254e44f",
+    "PHM2018-Project/reports/04_5_model_improvement_summary.md": "4e8db6a005944d64d3208899a3f78954870034630dc964b18cbe92791ed955fc",
+    "PHM2018-Project/reports/04_model_training_summary.md": "2ee0ccb5a64b11924255a1c864b756436f419a9ba80b86c718ebad277c0df4b8",
+    "PHM2018-Project/reports/data_inventory.md": "6e2d1548f47f0a3dfda072aa17f153076eb707b209f447fcdefb767bd67cf2ec",
+    "PHM2018-Project-V2/reports/00_preprocessing_spec.md": "2b692273feeec2e8ca0f61bb2ca1148c277ed11b7459e1d754d06041928ca57c",
+    "PHM2018-Project-V2/reports/01_raw_data_audit.md": "4f55f197ecc0ad88332e1ed4a13cd43161415afb6965b50dd368a9d071c0042e",
+    "PHM2018-Project-V2/reports/02_label_validation.md": "f3d1f6a2007e74268e0a3dcb819ea7bea9ed203c03be5e9abd9325e118d1d550",
+    "PHM2018-Project-V2/reports/03_dataset_validation.md": "69f9a00e1d62f09c7440aec2b8023ead565b1d05c4bbf9508fc2a26916543fbb",
+    "PHM2018-Project-V3/reports/00_preprocessing_spec.md": "f2aa1e788f318ae5eeb9de318e3d9846f0ce66ac93caeb68b60662b3cbc63968",
+    "PHM2018-Project-V3/reports/09_visual_diagnostics.md": "1113da376de1daaeb16c367730c6855ff1d54571a69ed490ca8ef369b6c23e79",
+    "PHM2018-Project-V3/reports/10_event_level_analysis.md": "0cae0f344c8a542838f3d0625c86929fe2149e05080c5eb99ac26e7d55ac43cb",
+    "PHM2018-Project-V3/reports/11_segment_quality_review.md": "4eec24e3148764e52af0670e82c1c7a95d8ad707652f4c18204d741a69019d94",
+    "PHM2018-Project-V3/reports/12_visualization_summary.md": "2e0854730dd531890510aecae42055e93ca42d70dba2355c6610b37b8ddee51a",
+    "PHM2018-Project-V3/reports/13_pretraining_readiness.md": "b6ab7e6529b5c3b941c899d327267358bf0d588193b689fb7a61880cff536460",
+    "PHM2018-Project-V3/reports/14_model_training_direction.md": "1cff273d5cb47b336a6a6d42af3bc51fb9fc4ae4381de00368f49032bdf0f07d",
+    "PHM2018-Project-V3/reports/15_alarm_evaluation_stage1.md": "2e5983d2f8fb63761e620ab16af0c660195fa7f48d9db088a94f749ef7756d23",
+    "PHM2018-Project-V3/reports/16_stage2_training_results.md": "2ba6982d47d1a2713e7a9f54188a7aa3bb8d690c2068a8e157776788692a8f26",
+    "PHM2018-Project-V3/reports/17_common_cohort_results.md": "e56e8e489b0aae8cc6c2642265af9164468868c2946d71156e70ad2413ab5185",
+    "PHM2018-Project-V3/reports/18_tuning_seed_results.md": "7def114faf38203392e28c70c73f087d83de5484f3d920cb61b9e94c2c1238ab",
+    "PHM2018-Project-V3/reports/19_group_and_holdout.md": "a5502ed69a95ba91eb00e755cce49461659248c8e204682cb1507b7ef672cfe7",
+    "PHM2018-Project-V3/reports/20_equipment_specialists.md": "a1448d9461a293af54a9d4e40b057c46f39c2496d4baed6822d1565bfaa148fd",
+    "PHM2018-Project/reanalysis_v2/README.md": "bc2c17b55cc2401f3325426e634f1e3eb53df57d3cf2fa222b9395c0680dc5cd",
+    "PHM2018-Project-V3/outputs/figures/tool_overview/raw_rows.png": "ed7d97906621171aa5bb809900f616db18f394ee108c6d8555d3050d68599350",
+    "PHM2018-Project-V3/outputs/figures/tool_overview/fault_types.png": "b31198b202cd5fc08a230b9c51e1309d4042cabf612a0a35b1f0659d72ee10d3",
+    "PHM2018-Project-V3/outputs/figures/tool_overview/ttf_null.png": "8656ce3a8298a0173383787e9748093429878157662803152f51a159d635ca14",
+    "PHM2018-Project-V3/outputs/figures/timeline/all_tools.png": "f7a7abbc84cee027667764636b414324d4b5cf386c5f3d2c33af3ce804d7d806",
+    "PHM2018-Project-V3/outputs/figures/timeline/density.png": "32265da9d09c776a839bf9e13450907057d379b8dd0b5a03167e70b605195383",
+    "PHM2018-Project-V3/outputs/figures/timeline/gap_distribution.png": "6b4a0b02ab1ebaf6693437d261973debdb16a1ca947f6f3b7586ca58f13fd558",
+    "PHM2018-Project-V3/outputs/figures/timeline/duplicates_conflicts.png": "7b5817e07604b62325b90f59a90d17ef504070b875f564494cbb0305d45185f4",
+    "PHM2018-Project-V3/outputs/figures/label_analysis/conservative.png": "da7276bac7afc4f57cefaf1e55ee43fed2fedaf07b3136085ee69ff558a5558c",
+    "PHM2018-Project-V3/outputs/figures/label_analysis/research.png": "9a50a041516b7629964cae1f2a24403f229de4f58d7271a6f0d6cbd925914a72",
+    "PHM2018-Project-V3/outputs/figures/label_analysis/sensitivity.png": "09aa8a9a5f49162516addafb1ef3b0354e260ef28117edb8ad38efaa9d89bdd2",
+    "PHM2018-Project-V3/outputs/figures/label_analysis/horizon_policies.png": "8cab8d0beeef3a773a95582de0ad9b8570b8ba6d24a7b043bef9db995ddd3fb0",
+    "PHM2018-Project-V3/outputs/figures/label_analysis/fault_types.png": "ac58ae32152a2d44b6d71c1ec4deae4e7243834ea9e90ad08a6a5041cd847b8e",
+    "PHM2018-Project-V3/outputs/figures/label_analysis/ttf_null_relation.png": "5d51e1e2d6e91d8af0ce481c768d799e46831b4cf1e750f370f1ddceed3ee75c",
+    "PHM2018-Project-V3/outputs/figures/feature_availability/tool_heatmap.png": "e94a7342e12cd8e4fdedf2e687269d039acc9d61728f5b1146020260502b5c2b",
+    "PHM2018-Project-V3/outputs/figures/feature_availability/cohorts.png": "202a53a9b125d1814911e2b4f78694853bd1834322fa01d1493e9819230c3117",
+    "PHM2018-Project-V3/outputs/figures/event_preservation/tool_policy_heatmap.png": "4bced559cc5bb4086318608dd50ba03e2a70ba29eafd48eced27380d7b0d4635",
+    "PHM2018-Project-V3/outputs/figures/event_preservation/exclusion_reasons.png": "1844e8a5d200893ef3df2ac7601a5c0cb68007987092bd25c95b5ea0721ec6cc",
+    "PHM2018-Project-V3/outputs/figures/feature_availability/process_conditions.png": "72bfe09e2ebf2ae7262b3155c1aff2fdf7e9808a5102843caf202b0fdf4a6f02",
+    "PHM2018-Project-V3/outputs/figures/event_preservation/stage_rows.png": "9096c5b96a93cc9843498c637e362bff0b066b879d24f73189e11dcf496b5b91",
+    "PHM2018-Project-V3/outputs/figures/event_preservation/stage_events.png": "eb0d73bcfd569a8e11bae1a79425f6d33aef326bb528bff678c3ffa849ddb138",
+    "PHM2018-Project-V3/outputs/figures/event_preservation/history_length.png": "758c9837867b2bcb0e1c2830c07478bf030505ea02768458697768c878cff448",
+    "PHM2018-Project-V3/outputs/figures/fault_events/01M01-01.png": "68700e8315354e8f20e9a23e9154d8f38bcfe5efee02b8a535687822560f87e0",
+    "PHM2018-Project-V3/outputs/figures/fault_events/01M01-02.png": "5cfc9257f39bb91db890adef8129e42d17449bde3bfb702a1aa2513e1e39c6dc",
+    "PHM2018-Project-V3/outputs/figures/fault_events/01M01-03.png": "a8e092bc42a9589c95814f9b0f42de55d486f0dddd63e89f5ee33555e4d487c1",
+    "PHM2018-Project-V3/outputs/figures/fault_events/01M01-03_changes.png": "21612192fb66723dbdf731f9e6b056c88bb0d612e597b9f41db170f0970f13f2",
+    "PHM2018-Project-V3/outputs/figures/fault_events/01M01-03_conditions.png": "950163ff4ecc4e6117e6106f97c99a8861f940ae74bf5a8b1b6d32ae064baa8b",
+    "PHM2018-Project-V3/outputs/figures/fault_events/01M01-04.png": "0757d569a83b4950d59d5d0dbd9cd197b2c03992fbe58144ba8c4c13dd4c9699",
+    "PHM2018-Project-V3/outputs/figures/fault_events/01M01-05.png": "67fdd7092ef6fe700dd55c112e8a7ec2abfa55d04c03b16456f6ab4c55eca2b6",
+    "PHM2018-Project-V3/outputs/figures/fault_events/01M01-05_changes.png": "a4755085c11652c6a70632351f577073a550f54ade299eb5336506d24f00178b",
+    "PHM2018-Project-V3/outputs/figures/fault_events/01M01-05_conditions.png": "211c3c4f32c9721f4c34f5dbd8a26bb9332d6a5cd9a3088f763c2a1c2f9140c0",
+    "PHM2018-Project-V3/outputs/figures/fault_events/01M01-06.png": "80ee4d3f03e8129ddccf7935c3ae2f6f691935ec4154985f1b0e9ce9d67138eb",
+    "PHM2018-Project-V3/outputs/figures/fault_events/03M02-07.png": "d50bc1458477b54cb83f56be8eeb42dc599fc3ccd46f782d715a129362e5a99e",
+    "PHM2018-Project-V3/outputs/figures/fault_events/03M02-08.png": "861da97c9924b3b77ea484ecb965e87c7562d816a2cd9f1b93e2e6dd3fa447e3",
+    "PHM2018-Project-V3/outputs/figures/fault_events/03M02-09.png": "8eacba153600480d312466fbb8f54f220e1c68a05a5858ae7a0bee1a16bdba15",
+    "PHM2018-Project-V3/outputs/figures/fault_events/03M02-09_changes.png": "01b17127e7ce625181fa7f4fe4c5abf726c9a1be84f791c4168c826526613d22",
+    "PHM2018-Project-V3/outputs/figures/fault_events/03M02-09_conditions.png": "0503c6fb37f448ee135d9b7a2b9c840e5600f9a444a17a94238ce44baccc137d",
+    "PHM2018-Project-V3/outputs/figures/fault_events/03M02-10.png": "50eeb8d16e5da2fb1b3cfbbd2a99bd83da27a2781003294216d432487bbdcf82",
+    "PHM2018-Project-V3/outputs/figures/fault_events/03M02-11.png": "bb8fc9b23456a990968bb76f73f6a7059ee889f5de3e51a0f29839ef65262776",
+    "PHM2018-Project-V3/outputs/figures/fault_events/03M02-11_changes.png": "54c77f6c46b2a718b54f15cb3525b8149323d3000ee83be31cf3d8a69e552149",
+    "PHM2018-Project-V3/outputs/figures/fault_events/03M02-11_conditions.png": "431cd2d4b05cd582af3c0675e9505da2583f834af4250f71b5001f1a98d3945d",
+    "PHM2018-Project-V3/outputs/figures/fault_events/03M02-12.png": "f84e8be90313ac600fd24d8c40a05879e956bd381cbcb1cc876f977fff4c7da3",
+    "PHM2018-Project-V3/outputs/figures/fault_events/relative_01M01_low_1_1_1.png": "ce0cfffdb8ac028f10d035d65303226e743fc029abcbbfccb85358c8e0ac9467",
+    "PHM2018-Project-V3/outputs/figures/fault_events/relative_03M02_low_143_14_3.png": "294a72962316f49da347db1ffd99321f30ba0cb434c4efa05d40cdc129e26ae4",
+    "PHM2018-Project-V3/outputs/figures/fault_events/relative_03M02_low_255_264_11.png": "e64cb0b449b9b8ec319aeca111fbc248897666de834368de55c135b4581794a1",
+    "PHM2018-Project-V3/outputs/figures/fault_events/relative_03M02_high_249_1_1.png": "da535619bb5b0f419a6c0dc7f184b6c9b2b694c4040d8068f7be3a7bc1b091eb",
+    "PHM2018-Project-V3/outputs/figures/alarm_stage1/event_coverage.png": "0c7e957ae01360d1bffceb2da09ab416cc8dd18afe068025768976f66e7206ea",
+    "PHM2018-Project-V3/outputs/figures/alarm_stage1/scoring_population.png": "54087d091dbab56c140b378c07f8793225e663e04f9d604fdd177af61e1b44f5",
+    "PHM2018-Project-V3/outputs/figures/alarm_stage1/baseline_checks.png": "e7626a68b13bddf2c68087e46a90c565cfb7d7014042254dd1fea70a94d21965",
+    "PHM2018-Project-V3/outputs/figures/alarm_stage1/alarm_categories.png": "a69a7da55c99c2706c360c2131139030d274ba424479c7f5d7410d339dbad0cf",
+    "PHM2018-Project-V3/outputs/figures/alarm_stage1/actual_event.png": "c062abb10761b0f5c961ea5ad5d29d055dc5a4e564bd46556407cec872ae3ba8",
+    "PHM2018-Project-V3/outputs/figures/stage2/classification.png": "ae8327042649617ab79e3734725c7cffab8e41480a76b5447243af60b16e0007",
+    "PHM2018-Project-V3/outputs/figures/stage2/alarm_tradeoff.png": "c75477b1ca056bfc455b613b0fd1123c2b0ea9a5ad697016f019fdd50674e9fb",
+    "PHM2018-Project-V3/outputs/figures/stage2/alarm_uncertainty.png": "06689601e691ae503f745df145e2983e2de4289620fc76949154012532e1de3f",
+    "PHM2018-Project-V3/outputs/figures/stage2/learning_history.png": "b7147f23ac3cbe956b0524dfd61b2cdfe430b100d2f35b1d82a7fef9cb659067",
+    "PHM2018-Project-V3/outputs/figures/stage2/local_resources.png": "3109cb625c18827365f91f96de99cf4d038627bc9e8b8aab96ff59f76a4a1746",
+    "PHM2018-Project-V3/outputs/figures/stage2/event_examples.png": "1ff7ef56c9a2d70eef673974838e865b2433403d1d9f8f9e9d6278049a81391b",
+    "PHM2018-Project-V3/outputs/figures/stage3/common_cohort.png": "5b180d54cd4fed622cc3eb5e4f8473666816b9222302bae7a1cd0c0f81b32cbb",
+    "PHM2018-Project-V3/outputs/figures/stage3/classification.png": "32d0ecd3128a955eb99efb8910c5641b9176985392d646f7b98598648d1f13ea",
+    "PHM2018-Project-V3/outputs/figures/stage3/alarm_tradeoff.png": "173b8d28c546ff6bdb1d38d3357950617f7c69a6f89870c1aebd8a73543dae43",
+    "PHM2018-Project-V3/outputs/figures/stage3/joint_frontier.png": "c3b0746e96673652589611b496bf5856a8826400590e16d426bc7cf6f543618b",
+    "PHM2018-Project-V3/outputs/figures/stage3/budget_comparison.png": "a7347f9cdf48b6e8667d5ce28b86f7aa6e4b0943b631589be11741907e68bf20",
+    "PHM2018-Project-V3/outputs/figures/stage3/paired_differences.png": "8ae10b5cf26345bdb4595ecac2521aef69379d9f07719e66a995eb5179f29ae0",
+    "PHM2018-Project-V3/outputs/figures/stage3/training_resources.png": "e64ab2c455334de6601518d81b9a8655d9cf179e68b1a3cd135296e1bcf394a4",
+    "PHM2018-Project-V3/outputs/figures/stage3/event_matrix.png": "c61983f339a261120b7258255ded3ccb32c87de7b7ed6b94b1b4c54bb900f31e",
+    "PHM2018-Project-V3/outputs/figures/stage4/search_grid.png": "ef364d9773bd431d3b62491ca2dbe9f8d60894eeb03f710a670a2c6a8e9b2e60",
+    "PHM2018-Project-V3/outputs/figures/stage4/retuned_seed.png": "cb89da6d8d10e054dd9cbf125fad9ff7e35b900fcf8004d3370ba57340faaee3",
+    "PHM2018-Project-V3/outputs/figures/stage4/fixed_threshold.png": "cd26b180cbd0dfc32255a396c257f8e2b085c08a82ba74249d5b3986f0c18bac",
+    "PHM2018-Project-V3/outputs/figures/stage4/paired_gain.png": "a8804eda3c1bf342e3023c387768a7d5888f33beacf82172ad52dd6660609005",
+    "PHM2018-Project-V3/outputs/figures/stage4/joint_frontier.png": "61fafa1a9cdb737df8f884f1218fe9b37e1a1a50984608e229a74f42fbf56e7e",
+    "PHM2018-Project-V3/outputs/figures/stage4/unknown_alarms.png": "7be9b7f7c0043e78d92b8d36ff86382d16e51ce18e97f114aee9f0d4bfb131e9",
+    "PHM2018-Project-V3/outputs/figures/stage4/training_resources.png": "945bb6da78526a034d89426659e8617e780648ceffa687ed320cff9cf6a0e9d7",
+    "PHM2018-Project-V3/outputs/figures/stage4/event_matrix.png": "c8876efd5b5675ca4a4a4eeb9d1ff78f2396e3acea67df42d234905a48a3f6bb",
+    "PHM2018-Project-V3/outputs/figures/final_evaluation/protected_split.png": "5b55cea9419a74f353c88b8d582f36bc355a8822b86ebdf6c6344a39b17616b3",
+    "PHM2018-Project-V3/outputs/figures/final_evaluation/group_results.png": "ac1dd15328135e1dded1ea13f4080909240db8d87913dc062af3486a60aee517",
+    "PHM2018-Project-V3/outputs/figures/final_evaluation/selection.png": "9477e7e0408ecd76805c6e19ce490d2289685ecc1e64d8ec95ca5025c2bc98d8",
+    "PHM2018-Project-V3/outputs/figures/final_evaluation/holdout_results.png": "f6b9da663002d6ea97ac3a0a19866a82f949d75ce54b621088220debd6e0c04f",
+    "PHM2018-Project-V3/outputs/figures/final_evaluation/unknown_burden.png": "ab316c0a68e92c5da935e47e9fbbf9bcf31eaaad3dddfa6982cf126a0cf210ef",
+    "PHM2018-Project-V3/outputs/figures/final_evaluation/by_tool.png": "a570c95ee51d5ca44899c3b8701cebd41682b2046db4a321a3c306b3315bd311",
+    "PHM2018-Project-V3/outputs/figures/final_evaluation/lead_resources.png": "e90ffd23cacf5efad9aa1a6eed9822eb6e3e65bc5b00b6f58930394f429a7c91",
+    "PHM2018-Project-V3/outputs/figures/final_evaluation/event_cases.png": "fac6c76c81fbb923225aa1f18b209d0ebbdfbe3c4abb607b80481ccaa8dddffd",
+    "PHM2018-Project-V3/outputs/figures/stage7/eligibility.png": "75e830368cfbb8b22d1f594b5dcf4d17aa81449627f86f33fcc60676b50eceb7",
+    "PHM2018-Project-V3/outputs/figures/stage7/coverage.png": "35de2f42d79ff6a760a1125e36f28e4a13755a74120987dbd2743f0c56f139ee",
+    "PHM2018-Project-V3/outputs/figures/stage7/comparison.png": "ba08fbbf85230229a9cd0592410395966972521903dcc19cfd1b4358d14bf84f",
+    "PHM2018-Project-V3/outputs/figures/stage7/learning.png": "0bbe1e79fa43004f4f681799d23d217d27d6619bc56d629a7698c56886728761",
+    "PHM2018-Project-V3/outputs/figures/stage7/alarm_burden.png": "4c7579240a3ca88b2803d7ab18faee74719b4b275da39a2c81134964ab6e22c8",
+    "PHM2018-Project-V3/outputs/figures/stage7/event_cases.png": "d26bb4195b085fba4f929feec54bfd70b9f596e65f308d59466d5bbff1928984",
+    "PHM2018-Project/reports/local/eda/figures/event_process_conditions.png": "4505b2c310072f3d24fae198bd7e3d48092a93cde0957ee865cf793200282db9",
+    "PHM2018-Project/reports/local/eda/figures/fault_distribution.png": "9367bfdee0f870ae84263b6cd3c6d47bb01849f76aee32ee54694ba15decd70d",
+    "PHM2018-Project/reports/local/eda/figures/pre_event.png": "1c219dd76d17df181a36f4188ec1a10c7ee60b22dfb75804f66c2f59c196b193",
+    "PHM2018-Project/reports/local/eda/figures/process_sensor_means.png": "a471adff1825e5e97982c7b01e97d59e4b6b345fb264e0e546498f6b2dfe13fc",
+    "PHM2018-Project/reports/local/eda/figures/recipe_stage_distribution.png": "e3c5ee9a84b96be2f45a639d2a3abe59d5060d15c624fa3c99af29759ba63a6b",
+    "PHM2018-Project/reports/local/eda/figures/secondary_pre_event.png": "d0c6bba89212d8bae0e51d74ee4658fbfc122d0412dffbf5013f5d93d3b27d76",
+    "PHM2018-Project/reports/local/eda/figures/sensor_correlation.png": "ae216e26ae3ea5242f427bd686c4dee68601e51cb11287f5b9f89be70e014ddd",
+    "PHM2018-Project/reports/local/eda/figures/sensor_histograms.png": "239456eb0585c9e8de0a60791992cd4c95e0ac7511647956d598d0f8aac1c83c",
+    "PHM2018-Project/reports/local/eda/figures/sensor_timeline.png": "f4f19e9bf284f47160c1b468e6bfb7561c10aee7be42a8cfeeae22ae7962ecbc",
+    "PHM2018-Project/reports/local/eda/figures/tool_rows.png": "07d00cb18b727eb433cd6772068819077f3925c72f156c022854fab67efa47a3",
+    "PHM2018-Project/outputs/stage4/figures/baseline_comparison.png": "3de577422228517f0f4bac1304a769fd72c475f7576b41153be649933fbedb3e",
+    "PHM2018-Project/outputs/stage4/figures/split_time_confusion.png": "eac89e79e10081f67ac2e5fc501cba324a308d414e8f0389ad11e01f26870742",
+    "PHM2018-Project/outputs/stage4/figures/split_time_false_alarm_case.png": "380cd084fd7fdae067553b9d53e534e2c28afbc7c0283028e6ed082891b662af",
+    "PHM2018-Project/outputs/stage4/figures/split_time_importance.png": "773e954066c635ff5e0df110cfb3a8339e071ed5db9ecf1f3e36db7baf58b15a",
+    "PHM2018-Project/outputs/stage4/figures/split_time_metrics.png": "9a0b5022e2341da806cff92ab75f0dabf35330e0deff3ce8c5a5f7eb78c14687",
+    "PHM2018-Project/outputs/stage4/figures/split_time_pr_curves.png": "a7b3d7ec84a4bae677a1e1251f249b01b4dd1a4a274ac465b5900c0488b50618",
+    "PHM2018-Project/outputs/stage4/figures/split_time_pre_fault_scores.png": "7a5ff9e65f02c55480d698fd13a0c09eb50ab04e0292745a9cc4b217fb3cb524",
+    "PHM2018-Project/outputs/stage4/figures/split_time_score_distribution.png": "552cc59d069c121167b64a681d34f6bf207902012ff132c2f366c0d50c3b7926",
+    "PHM2018-Project/outputs/stage4/figures/split_tool_confusion.png": "f9ebc9e750b80d416eb3bdb8a047a7d8cf8c16d5472845f6b981c698ea2e761e",
+    "PHM2018-Project/outputs/stage4/figures/split_tool_false_alarm_case.png": "a763dfcdd6bf2881c9eb58a963fd54639047959e5ef329928115e020175b846a",
+    "PHM2018-Project/outputs/stage4/figures/split_tool_importance.png": "9b5251b75f67985d5839b5b4a21a4da9dab63062e1c73a511f4b2e2478e64044",
+    "PHM2018-Project/outputs/stage4/figures/split_tool_metrics.png": "1594ce19c85e24cea56b68870c1037350aef561d06a417845ef6e1cb05db18b4",
+    "PHM2018-Project/outputs/stage4/figures/split_tool_pr_curves.png": "676bf15faeff70061795886b7ce1c65ba4b622bdad0afcc75999b6c7226b1a3e",
+    "PHM2018-Project/outputs/stage4/figures/split_tool_pre_fault_scores.png": "da43aa1ed1a46ddd8bb74bbddee78159164a3e8d6f29d66fc08297d7462051a9",
+    "PHM2018-Project/outputs/stage4/figures/split_tool_score_distribution.png": "d4abf05904bd1125f360746deeafa3a5103565d4f9f7220fac7ead3c7daee855",
+    "PHM2018-Project/outputs/stage4/figures/xgboost_learning_curves.png": "4206a5337fc461dc97a6db372099da22a75ab2a48f39c3c8b5a5afb6b009fa9c",
+    "PHM2018-Project/outputs/stage4_5/figures/cv_comparison.png": "03d33b2eec5c68a9bf8727961b69de76c9f881cd2005802353a4bb2d77a2a70f",
+    "PHM2018-Project/outputs/stage4_5/figures/hardware.png": "464d6df384fe9beb6eb9d19af82aabfce490bd3572d71e078552ca7d8995d36a",
+    "PHM2018-Project/outputs/stage4_5/figures/na_reasons.png": "1aba1e242bde2cd14d335e4e27b5979ca6fa0d644a2a3db6de700f9e4beb9518",
+    "PHM2018-Project/outputs/stage4_5/figures/na_tools.png": "f75d1dcc6cfd51cf42367178c4caf59b7adff086d1077bd75fedb40dea9960d6",
+    "PHM2018-Project/outputs/stage4_5/figures/old_fault_scores.png": "fbf3cc7051d685096f71e29da6b5008204506e0f5f5682b4f859a211c9e3800e",
+    "PHM2018-Project/outputs/stage4_5/figures/thresholds.png": "84c3219c457fa2f723f90ac8505fc3e3ffbbde4cc57e454580b3476e2f0e08e0",
+    "PHM2018-Project/outputs/stage4_5/figures/tool_shift.png": "7443171ac5d72904c1a53f46429d64c469447c2666f973d672b9f89d6b4f9509",
+    "PHM2018-Project-V2/reports/figures/01_raw_rows.png": "7ddc205b89ad90ea0b895fb872e4e02844ce332126ccd015dc547a6425207188",
+    "PHM2018-Project-V2/reports/figures/02_seven_tools.png": "8f74a696e73a08e6e6c4043a2b63a540643d6c93801f250251416c4880922d1d",
+    "PHM2018-Project-V2/reports/figures/03_features.png": "f88e8a894f87e84f71bcd7d39e255016afd70f2cb2a5444e65d5f294df5c7108",
+    "PHM2018-Project-V2/reports/figures/04_event_preservation.png": "4f4254c120d89581f6bcf20e507cb9688a1671507c65c3d812c2cd999d52a189"
+  },
+  "table_sources": {
+    "V3/alarm_stage1_episodes": "fa575347a96edadbf251e72adafda1859d0b13efec1d50d2e6429e0f1e05fac1",
+    "V3/alarm_stage1_events": "5a404f71833346ea0fa01d3a4c4b07bf0e3dda5f8090aed753c4cd808222541b",
+    "V3/alarm_stage1_label_states": "43c8a96bded60273ce64fd20d11e86aa03c9225b2a0d071b5e10bd24fa604645",
+    "V3/alarm_stage1_matches": "fda614af232325347b201d12bf569bf2b0b0718de66dc7023ecd5cb9bc4f24d1",
+    "V3/alarm_stage1_overview": "fb6b904badaa0659a5354c7ba7e3451125a21b084ccf6bdee1b03eb9089a2576",
+    "V3/alarm_stage1_summary": "63818737a06f9c240d1d2e4fe083c4360d371228434da75a7c60a1a90b74f0f7",
+    "V3/case_catalog": "d9ec7a2a2e91c2aff2a31effb8a977862b630482e9da35832576bbe3d2567334",
+    "V3/case_sensor_changes": "308d05b491379f8d1b539576eee7607810a975229f600c64a08488063a6e9cd0",
+    "V3/event_exclusion_reasons": "0c208238d349a357c4aa06ef0a3ef19d5670f309ee2c3b43ab5bc5e4cd713a29",
+    "V3/events": "695ffd1b02a631166cba154316e7cc67ebb785cf75a6c501d27498bdaf053df5",
+    "V3/fault_event_summary": "3a58e747017c78a29791ca50a6fc3b363d4fbb32a0c6793948a68c15e5f9b8d5",
+    "V3/feature_availability_summary": "31c7d4586ae0a25aa9a9449f95137db7ed2c56fcfaeae607284a455f0dca39d2",
+    "V3/feature_unavailability_reasons": "b7e7cf13909102cfa7d5c9f7ca9a2ae34d07937e03695621aa2163c4cb223547",
+    "V3/gap_summary": "2a799bea7f8ae98bff4675cd0f7f9288afeb5215f30ff9c59f5957d6f0c69110",
+    "V3/label_status_summary": "6039bb531e5bbcfbcc5d74356d0601a7b8f45c6505bf73062e21f24f7b707b01",
+    "V3/preprocessing_preservation": "27dc50dd6318f284f8c6a3208119753bfad936d8de27378b3e01eef29b9989d6",
+    "V3/pretraining_candidates": "1c2c74c43332d88055481cb95074f3fecf9a64ee7d7142e9614908af1266d2ce",
+    "V3/pretraining_readiness": "a15f300a2c503b49cc5f31becfee066b0347d39d5652e1f9f099985df7f08498",
+    "V3/pretraining_split_boundaries": "2a7f4c514fc7dc351f09e725c7377b8a4d397bcb9b57657ce83169b2dae402dd",
+    "V3/pretraining_unseen_conditions": "103f057504cce84b766bebc4390301663e1cb505e5bf6c839b05b6b0ff12fca2",
+    "V3/process_feature_summary": "5647ac9c6dfa4170d20c62676359a29791abc477509bc1634b9c910b36fdd273",
+    "V3/relative_event_profiles": "c4d2dc7a1623fb30f7eddd8ce0d92cf8e97a2f1914bd72aab5c7e44e1ff12e75",
+    "V3/relative_event_quantiles": "dc667218201e4cf34cfc7b990910fecc168a436fc4bb2d7f57b0f4b587a598b4",
+    "V3/stage2_alarm_curve": "cb105c755667ee01a5e70037de76126640271cae94e975dbf7e2e689347d2504",
+    "V3/stage2_by_tool": "ec5e32aeafb8761ac5271e60f6201e5f087f85d64d4e576c20c2b3df47d5bb7b",
+    "V3/stage2_events": "98028123ee05297ca2d1eb44f56a7f865df166e877bcef64087fea00611bf0f3",
+    "V3/stage2_example_cases": "98c7637de5092b4da2131b034d16f2ab97001348f0c28b344d9d759376167e41",
+    "V3/stage2_operating_points": "5b077159d3822c53f0bcaf0c206ae8caf663a59d6ecf5c6374c41396aef52982",
+    "V3/stage2_resource_telemetry": "e2c2e617f742da28df629902b02be137a545ea9fbc266e05bce0ae127e2e4650",
+    "V3/stage2_score_states": "73a80f2b46eadab405040fe501be403acf39994689e8d7a0cd4338d6ec82a99a",
+    "V3/stage2_selected_episodes": "6872059c3a2ba4fca9657d126da1ad6cf0424cafaec8be1948089d9231613142",
+    "V3/stage2_selected_matches": "4cd09eb4c0e5c6bb46bfcb1df42498962ca8561bbdacc66972cde7f74f62f169",
+    "V3/stage2_tool_event_results": "1a4f0b172af1dc2590b07cfb133b254fabce65ee2316250d3019f45d23f5785c",
+    "V3/stage2_training_summary": "895798f4d7102d18bf8ac3829eae547b94bf784f1e736fa81ccb8a6daae2eea0",
+    "V3/stage2_uncertainty": "7d6be1989ad6795c1f91f8d434ccb4d98f06fa724af0f2e7064d8506e4d8a03d",
+    "V3/stage2_unseen_process": "8b81223ddbed2ed2b8f7fd485e664d065d4b22b94a9865c0662053046cf0655b",
+    "V3/stage3_alarm_curve": "9be7cd263f5b43817814ad26efe48296fd57fdbc6a5e1789dadb66bcdbf64e79",
+    "V3/stage3_budget_events": "42c31a052e2135f560eb10eb317ae0a3e4cc2b23f2e2c6648cbc9067095668e1",
+    "V3/stage3_budget_points": "abe083f35e268fb5ad2b570e1d91f92e36c1fff76f166344ab887e241c9400f5",
+    "V3/stage3_by_tool": "7aa52def192916c9bb076fc752784a2e339a4e763fa943503e36fc9e8e27203d",
+    "V3/stage3_cohort_counts": "dfe0f10de36b91eff16dc1b38ef6ba262963e16800f3946976c66d09317ba451",
+    "V3/stage3_events": "328d12d0dff809cc6b5ec4db92a8463010e8da8ae9831890cd0b6b0b288800a5",
+    "V3/stage3_joint_frontier": "1da58b39851ff64490ba58cebf3a262eb80268727aa3723cb136afbe6712416c",
+    "V3/stage3_operating_points": "917c725b6f5d9981fd65e5163f0c18c668022d48860d81988daf081028013004",
+    "V3/stage3_paired_deltas": "051f0bb56a097c44011e558ff1743cf6a3ef338b224a5ad151e0bf0fd2cbde36",
+    "V3/stage3_resource_telemetry": "b8b33f4b64b2be326450aba90c8b46b3daf2d01e3c3c3258a70f532816d76c54",
+    "V3/stage3_score_states": "302b22ed8582ddd06b6acec597dfbfc14ddc7b0b47b0a54eca7b217bae426001",
+    "V3/stage3_selected_episodes": "80b46d421cba06bd63e40067e97eef6693ec42597d91396db98b68982ac64156",
+    "V3/stage3_selected_matches": "dc78ba79d07e59297286d619c8ee35d29f99ed201f5ae5857221c82275ba2397",
+    "V3/stage3_training_summary": "b6d4894e8ba74a7c44935b1e2e1729e603de744e2494780558a917f26ce78698",
+    "V3/stage3_uncertainty": "858fd58327658d9e35c1765055c9a457358139d1697b7dfaa98b1b053f89142f",
+    "V3/stage4_alarm_curve": "393543231ea512736639cf49281c7d6422df63961cfcf7ce985295ada17b060d",
+    "V3/stage4_events": "e960b42b3e9dabd3171ee598353a9432392a232abd4b5b05bd154f91026d8aff",
+    "V3/stage4_fixed_events": "f5527d23788d74a1f63481a4bfa6e4106f3d0d57484b1d3bf8299563d99023a4",
+    "V3/stage4_fixed_points": "32684678e0bafd8c5005a035e09547ef5d115ccbd2f9b01ef110469498b5e647",
+    "V3/stage4_grid_budget_points": "acc71b8320696ed38c94a8d80518a4d414e527ed72653902a10b7537a549c333",
+    "V3/stage4_grid_resource_telemetry": "f8ab47d999ca3796b643a5a6b726e093e3b3f9f69f1665039ae0a023260a2fd8",
+    "V3/stage4_joint_frontier": "af89006750b822c795e3e706049bd624651c5de5b76e4bfce9e69b0e33f7e023",
+    "V3/stage4_paired_deltas": "9d2fa7c9074cbbc81383ff1e639efb703634ac061601ab1c9fc4d3325a062304",
+    "V3/stage4_retuned_events": "5e4d10e5d83b88253d08efaff655598503bf97d24ee663e0528aee571349681a",
+    "V3/stage4_retuned_points": "41bf5d5cf4bcd3357ee52b4494921b2282ead2b9ad723a2cca41b1584eaf5125",
+    "V3/stage4_seed_ranges": "0c732e4edad0f778654815c48d033a520bc902eb308bde21a3edc51ea9f0e7f8",
+    "V3/stage4_sensitivity_resource_telemetry": "45e679105a0603f4d200b2709427fd2cf2b71c1ce0e65eaa890beb3f0b9d52ba",
+    "V3/stage4_training_summary": "aeb2017c13a4a3bff7be8100f80ee05616c394b1a0cb294448faf7fb40653778",
+    "V3/stage5_alarm_curve": "d61d44f8f2e97f4f1e0e8302e94e4f25aae95d0e8b9155ac24cac4f160d307d1",
+    "V3/stage5_budget_points": "d7a091f0b9c3b68df91d6ee723825497d0db879ace01f2a1397f05c621920077",
+    "V3/stage5_events": "94dc1443317fff06c708233c02e2f1b0a568914552414df6d45b84d1a50352c6",
+    "V3/stage5_input_counts": "446ce3e82bd5103930b14939ff1835ae385234435193fbf7beccb5f5bd129236",
+    "V3/stage5_resource_telemetry": "c6b3f6b4007e7d4f7d1400c0fec134a5faf08b7448429dd5366af448572d62c1",
+    "V3/stage5_training_summary": "f8465f5c1d6d83593d6114ca99755746184404e9bd4e9c5865897791449a1a9e",
+    "V3/stage6_holdout_by_tool": "dd8c3b12f180b046b97825fc47312035eb2f4c3479c108000a75bfd3e98083e8",
+    "V3/stage6_holdout_episodes": "82ac66b781181b9be15d6ccdeed4844b8789d9b3a171994c8d6551eb064c993e",
+    "V3/stage6_holdout_events": "f5b4a931aae0d6a9fe7759bdd31f47beda9771264eebf6d966e71f1f4594ffd4",
+    "V3/stage6_holdout_matches": "3d5d614fe02a6242d0a7ff032ad10b4432707f8c6682b4f34e640a778ad98089",
+    "V3/stage6_holdout_summary": "28366a4173ec342a6b43ebff47d1375f4055d8137bd89350d2a8af152f3feb82",
+    "V3/stage6_holdout_uncertainty": "3bd59c88d109c7c33fc8403695fdc2cff4582624cf709259ad81df6d7ebd938c",
+    "V3/stage6_selection_evidence": "f9af1816b1ca40f9c525a888afe9ba84aaf1419b1fc800991326412dbc447bae",
+    "V3/stage6_selection_ranking": "fabefb74f76ce13481cbc6d2beb21dfa3b201c256f0966e0439ca910d923bcea",
+    "V3/stage7_comparison_display": "44ded2589b3ab5a01fe86b976de55a36ee542687a4794795fd55ae6c0419af15",
+    "V3/stage7_eligibility": "e07a5afefe170ded95277a204fa816389b09118adb318031aeef0fb1b3698733",
+    "V3/stage7_later_classification": "1d3470112d536b7934d26c59b84b00cdd127378424799a3f4235025c017032b0",
+    "V3/stage7_later_episodes": "e0bcfc2d9c9db9c295b10767b2f67010a8dec3b049c54b2154e4ef5727b05585",
+    "V3/stage7_later_events": "f0432cbda49e4a27fbb32326024d5d226244a89a6fb866d78ad509a3d495ea72",
+    "V3/stage7_later_matches": "c32eec5bb04c6bf24e88998dbbac3adf316ce9c9866e91071ff3ee6f01ba4b2b",
+    "V3/stage7_later_summary": "9e3ce56732121db9b965792233ed5f1bece3fc8576ec6a6c81b99e6127a867ed",
+    "V3/stage7_paired_events": "c7c94c6704b62d99663a091616a7aa59a2522d11b8b3f48ba5c94486212cc3ad",
+    "V3/stage7_resource_telemetry": "4ab75894e8d5d981268696f926780556e20bea5c0f6797af1c08950c7d407be8",
+    "V3/stage7_training_summary": "4df93f41a03217f56b2e1a2864b78b4aa8d43c33e45d6ed7dac20672939d0946",
+    "V3/stage7_validation_curve": "0a21f7bcd9841046dd3d913fb598bf958b1e655dd59d72c98f0c47597bee4bd8",
+    "V3/stage7_validation_points": "d60c0507c33a5cebddf31e4f0493b011c7aa3ec2df29073a24689e8a5beaeaa7",
+    "V3/time_segment_summary": "c9ac124fcd494021784047eb2296d8fea01f0045fcb3ac4bbf5b44ea986b26ef",
+    "V3/tool_summary": "964ab36cbbf368e85dc2f8abb0b1f03f60e1b4db072e64d8815b966b72e596ff",
+    "V3/ttf_label_relationship": "bc691f7c63583bf2fbb34499378710cd4caaaffdec5685f54dc056e0858a022c",
+    "V1/stage4/metrics": "5e96cb8a70423b15f7875ded9190ab808104161b7bf9235287c3f241660c596c",
+    "V1/stage4_5/cache_counts": "e7c7a77556deda590ce6fef28a0216a59add26a2872464896d86b0994e4f6291",
+    "V1/stage4_5/cv_fault_metrics": "f8854a3c9eac787429bc6d8edf68c572a2f8a4ae5d6a1771bbf84f300547c8c3",
+    "V1/stage4_5/cv_metrics": "35544790bea1eddf36193885ae6228322ed79c69111e97a01c3c755f9b7ea6f4",
+    "V1/stage4_5/cv_summary": "be6359f35d6b182e070202784e20ceb15051a630f63fd291775985183e8b8480",
+    "V1/stage4_5/fault_sensor_contrasts": "bc6657de5a85f211bf7243bde35f3c3c26ab21171082adbee787d907cfbe6602",
+    "V1/stage4_5/na_audit": "4cbe2174c465358d734b4dece9d5c75569b4ddab76ceb4e6fd29dcdc518c6f9e",
+    "V1/stage4_5/threshold_metrics": "c891a287b7088bdea22d662665d9a321409a70b4b62efc61148121f88c5b893c",
+    "V1/stage4_5/tool_state_distribution": "66a374a0da957379b1d0cfa5ba506bc79364b5b0df42c4d8010a16555fae457f",
+    "V3/최종_저장예측": "cc6cb44efcafb6441c677fff2f0abf8cf0348bf6fdd462ee10e04fee79565221",
+    "V3/전용_03M02_later_predictions": "756b210aed82375f33d162043bcfb4d02c286d77aada77cc650004358a8d92ff"
+  },
+  "reports": [
+    "PHM2018-Project/reports/02_EDA_summary.md",
+    "PHM2018-Project/reports/03_dataset_summary.md",
+    "PHM2018-Project/reports/04_5_hardware_benchmark.md",
+    "PHM2018-Project/reports/04_5_model_improvement_summary.md",
+    "PHM2018-Project/reports/04_model_training_summary.md",
+    "PHM2018-Project/reports/data_inventory.md",
+    "PHM2018-Project-V2/reports/00_preprocessing_spec.md",
+    "PHM2018-Project-V2/reports/01_raw_data_audit.md",
+    "PHM2018-Project-V2/reports/02_label_validation.md",
+    "PHM2018-Project-V2/reports/03_dataset_validation.md",
+    "PHM2018-Project-V3/reports/00_preprocessing_spec.md",
+    "PHM2018-Project-V3/reports/09_visual_diagnostics.md",
+    "PHM2018-Project-V3/reports/10_event_level_analysis.md",
+    "PHM2018-Project-V3/reports/11_segment_quality_review.md",
+    "PHM2018-Project-V3/reports/12_visualization_summary.md",
+    "PHM2018-Project-V3/reports/13_pretraining_readiness.md",
+    "PHM2018-Project-V3/reports/14_model_training_direction.md",
+    "PHM2018-Project-V3/reports/15_alarm_evaluation_stage1.md",
+    "PHM2018-Project-V3/reports/16_stage2_training_results.md",
+    "PHM2018-Project-V3/reports/17_common_cohort_results.md",
+    "PHM2018-Project-V3/reports/18_tuning_seed_results.md",
+    "PHM2018-Project-V3/reports/19_group_and_holdout.md",
+    "PHM2018-Project-V3/reports/20_equipment_specialists.md",
+    "PHM2018-Project/reanalysis_v2/README.md"
+  ],
+  "figures": [
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/tool_overview/raw_rows.png",
+      "sha256": "ed7d97906621171aa5bb809900f616db18f394ee108c6d8555d3050d68599350",
+      "anchor": "fig-001"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/tool_overview/fault_types.png",
+      "sha256": "b31198b202cd5fc08a230b9c51e1309d4042cabf612a0a35b1f0659d72ee10d3",
+      "anchor": "fig-002"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/tool_overview/ttf_null.png",
+      "sha256": "8656ce3a8298a0173383787e9748093429878157662803152f51a159d635ca14",
+      "anchor": "fig-003"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/timeline/all_tools.png",
+      "sha256": "f7a7abbc84cee027667764636b414324d4b5cf386c5f3d2c33af3ce804d7d806",
+      "anchor": "fig-004"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/timeline/density.png",
+      "sha256": "32265da9d09c776a839bf9e13450907057d379b8dd0b5a03167e70b605195383",
+      "anchor": "fig-005"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/timeline/gap_distribution.png",
+      "sha256": "6b4a0b02ab1ebaf6693437d261973debdb16a1ca947f6f3b7586ca58f13fd558",
+      "anchor": "fig-006"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/timeline/duplicates_conflicts.png",
+      "sha256": "7b5817e07604b62325b90f59a90d17ef504070b875f564494cbb0305d45185f4",
+      "anchor": "fig-007"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/label_analysis/conservative.png",
+      "sha256": "da7276bac7afc4f57cefaf1e55ee43fed2fedaf07b3136085ee69ff558a5558c",
+      "anchor": "fig-008"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/label_analysis/research.png",
+      "sha256": "9a50a041516b7629964cae1f2a24403f229de4f58d7271a6f0d6cbd925914a72",
+      "anchor": "fig-009"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/label_analysis/sensitivity.png",
+      "sha256": "09aa8a9a5f49162516addafb1ef3b0354e260ef28117edb8ad38efaa9d89bdd2",
+      "anchor": "fig-010"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/label_analysis/horizon_policies.png",
+      "sha256": "8cab8d0beeef3a773a95582de0ad9b8570b8ba6d24a7b043bef9db995ddd3fb0",
+      "anchor": "fig-011"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/label_analysis/fault_types.png",
+      "sha256": "ac58ae32152a2d44b6d71c1ec4deae4e7243834ea9e90ad08a6a5041cd847b8e",
+      "anchor": "fig-012"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/label_analysis/ttf_null_relation.png",
+      "sha256": "5d51e1e2d6e91d8af0ce481c768d799e46831b4cf1e750f370f1ddceed3ee75c",
+      "anchor": "fig-013"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/feature_availability/tool_heatmap.png",
+      "sha256": "e94a7342e12cd8e4fdedf2e687269d039acc9d61728f5b1146020260502b5c2b",
+      "anchor": "fig-014"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/feature_availability/cohorts.png",
+      "sha256": "202a53a9b125d1814911e2b4f78694853bd1834322fa01d1493e9819230c3117",
+      "anchor": "fig-015"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/event_preservation/tool_policy_heatmap.png",
+      "sha256": "4bced559cc5bb4086318608dd50ba03e2a70ba29eafd48eced27380d7b0d4635",
+      "anchor": "fig-016"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/event_preservation/exclusion_reasons.png",
+      "sha256": "1844e8a5d200893ef3df2ac7601a5c0cb68007987092bd25c95b5ea0721ec6cc",
+      "anchor": "fig-017"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/feature_availability/process_conditions.png",
+      "sha256": "72bfe09e2ebf2ae7262b3155c1aff2fdf7e9808a5102843caf202b0fdf4a6f02",
+      "anchor": "fig-018"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/event_preservation/stage_rows.png",
+      "sha256": "9096c5b96a93cc9843498c637e362bff0b066b879d24f73189e11dcf496b5b91",
+      "anchor": "fig-019"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/event_preservation/stage_events.png",
+      "sha256": "eb0d73bcfd569a8e11bae1a79425f6d33aef326bb528bff678c3ffa849ddb138",
+      "anchor": "fig-020"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/event_preservation/history_length.png",
+      "sha256": "758c9837867b2bcb0e1c2830c07478bf030505ea02768458697768c878cff448",
+      "anchor": "fig-021"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/01M01-01.png",
+      "sha256": "68700e8315354e8f20e9a23e9154d8f38bcfe5efee02b8a535687822560f87e0",
+      "anchor": "fig-022"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/01M01-02.png",
+      "sha256": "5cfc9257f39bb91db890adef8129e42d17449bde3bfb702a1aa2513e1e39c6dc",
+      "anchor": "fig-023"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/01M01-03.png",
+      "sha256": "a8e092bc42a9589c95814f9b0f42de55d486f0dddd63e89f5ee33555e4d487c1",
+      "anchor": "fig-024"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/01M01-03_changes.png",
+      "sha256": "21612192fb66723dbdf731f9e6b056c88bb0d612e597b9f41db170f0970f13f2",
+      "anchor": "fig-025"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/01M01-03_conditions.png",
+      "sha256": "950163ff4ecc4e6117e6106f97c99a8861f940ae74bf5a8b1b6d32ae064baa8b",
+      "anchor": "fig-026"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/01M01-04.png",
+      "sha256": "0757d569a83b4950d59d5d0dbd9cd197b2c03992fbe58144ba8c4c13dd4c9699",
+      "anchor": "fig-027"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/01M01-05.png",
+      "sha256": "67fdd7092ef6fe700dd55c112e8a7ec2abfa55d04c03b16456f6ab4c55eca2b6",
+      "anchor": "fig-028"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/01M01-05_changes.png",
+      "sha256": "a4755085c11652c6a70632351f577073a550f54ade299eb5336506d24f00178b",
+      "anchor": "fig-029"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/01M01-05_conditions.png",
+      "sha256": "211c3c4f32c9721f4c34f5dbd8a26bb9332d6a5cd9a3088f763c2a1c2f9140c0",
+      "anchor": "fig-030"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/01M01-06.png",
+      "sha256": "80ee4d3f03e8129ddccf7935c3ae2f6f691935ec4154985f1b0e9ce9d67138eb",
+      "anchor": "fig-031"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/03M02-07.png",
+      "sha256": "d50bc1458477b54cb83f56be8eeb42dc599fc3ccd46f782d715a129362e5a99e",
+      "anchor": "fig-032"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/03M02-08.png",
+      "sha256": "861da97c9924b3b77ea484ecb965e87c7562d816a2cd9f1b93e2e6dd3fa447e3",
+      "anchor": "fig-033"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/03M02-09.png",
+      "sha256": "8eacba153600480d312466fbb8f54f220e1c68a05a5858ae7a0bee1a16bdba15",
+      "anchor": "fig-034"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/03M02-09_changes.png",
+      "sha256": "01b17127e7ce625181fa7f4fe4c5abf726c9a1be84f791c4168c826526613d22",
+      "anchor": "fig-035"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/03M02-09_conditions.png",
+      "sha256": "0503c6fb37f448ee135d9b7a2b9c840e5600f9a444a17a94238ce44baccc137d",
+      "anchor": "fig-036"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/03M02-10.png",
+      "sha256": "50eeb8d16e5da2fb1b3cfbbd2a99bd83da27a2781003294216d432487bbdcf82",
+      "anchor": "fig-037"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/03M02-11.png",
+      "sha256": "bb8fc9b23456a990968bb76f73f6a7059ee889f5de3e51a0f29839ef65262776",
+      "anchor": "fig-038"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/03M02-11_changes.png",
+      "sha256": "54c77f6c46b2a718b54f15cb3525b8149323d3000ee83be31cf3d8a69e552149",
+      "anchor": "fig-039"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/03M02-11_conditions.png",
+      "sha256": "431cd2d4b05cd582af3c0675e9505da2583f834af4250f71b5001f1a98d3945d",
+      "anchor": "fig-040"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/03M02-12.png",
+      "sha256": "f84e8be90313ac600fd24d8c40a05879e956bd381cbcb1cc876f977fff4c7da3",
+      "anchor": "fig-041"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/relative_01M01_low_1_1_1.png",
+      "sha256": "ce0cfffdb8ac028f10d035d65303226e743fc029abcbbfccb85358c8e0ac9467",
+      "anchor": "fig-042"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/relative_03M02_low_143_14_3.png",
+      "sha256": "294a72962316f49da347db1ffd99321f30ba0cb434c4efa05d40cdc129e26ae4",
+      "anchor": "fig-043"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/relative_03M02_low_255_264_11.png",
+      "sha256": "e64cb0b449b9b8ec319aeca111fbc248897666de834368de55c135b4581794a1",
+      "anchor": "fig-044"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/fault_events/relative_03M02_high_249_1_1.png",
+      "sha256": "da535619bb5b0f419a6c0dc7f184b6c9b2b694c4040d8068f7be3a7bc1b091eb",
+      "anchor": "fig-045"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/alarm_stage1/event_coverage.png",
+      "sha256": "0c7e957ae01360d1bffceb2da09ab416cc8dd18afe068025768976f66e7206ea",
+      "anchor": "fig-046"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/alarm_stage1/scoring_population.png",
+      "sha256": "54087d091dbab56c140b378c07f8793225e663e04f9d604fdd177af61e1b44f5",
+      "anchor": "fig-047"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/alarm_stage1/baseline_checks.png",
+      "sha256": "e7626a68b13bddf2c68087e46a90c565cfb7d7014042254dd1fea70a94d21965",
+      "anchor": "fig-048"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/alarm_stage1/alarm_categories.png",
+      "sha256": "a69a7da55c99c2706c360c2131139030d274ba424479c7f5d7410d339dbad0cf",
+      "anchor": "fig-049"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/alarm_stage1/actual_event.png",
+      "sha256": "c062abb10761b0f5c961ea5ad5d29d055dc5a4e564bd46556407cec872ae3ba8",
+      "anchor": "fig-050"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage2/classification.png",
+      "sha256": "ae8327042649617ab79e3734725c7cffab8e41480a76b5447243af60b16e0007",
+      "anchor": "fig-051"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage2/alarm_tradeoff.png",
+      "sha256": "c75477b1ca056bfc455b613b0fd1123c2b0ea9a5ad697016f019fdd50674e9fb",
+      "anchor": "fig-052"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage2/alarm_uncertainty.png",
+      "sha256": "06689601e691ae503f745df145e2983e2de4289620fc76949154012532e1de3f",
+      "anchor": "fig-053"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage2/learning_history.png",
+      "sha256": "b7147f23ac3cbe956b0524dfd61b2cdfe430b100d2f35b1d82a7fef9cb659067",
+      "anchor": "fig-054"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage2/local_resources.png",
+      "sha256": "3109cb625c18827365f91f96de99cf4d038627bc9e8b8aab96ff59f76a4a1746",
+      "anchor": "fig-055"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage2/event_examples.png",
+      "sha256": "1ff7ef56c9a2d70eef673974838e865b2433403d1d9f8f9e9d6278049a81391b",
+      "anchor": "fig-056"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage3/common_cohort.png",
+      "sha256": "5b180d54cd4fed622cc3eb5e4f8473666816b9222302bae7a1cd0c0f81b32cbb",
+      "anchor": "fig-057"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage3/classification.png",
+      "sha256": "32d0ecd3128a955eb99efb8910c5641b9176985392d646f7b98598648d1f13ea",
+      "anchor": "fig-058"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage3/alarm_tradeoff.png",
+      "sha256": "173b8d28c546ff6bdb1d38d3357950617f7c69a6f89870c1aebd8a73543dae43",
+      "anchor": "fig-059"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage3/joint_frontier.png",
+      "sha256": "c3b0746e96673652589611b496bf5856a8826400590e16d426bc7cf6f543618b",
+      "anchor": "fig-060"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage3/budget_comparison.png",
+      "sha256": "a7347f9cdf48b6e8667d5ce28b86f7aa6e4b0943b631589be11741907e68bf20",
+      "anchor": "fig-061"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage3/paired_differences.png",
+      "sha256": "8ae10b5cf26345bdb4595ecac2521aef69379d9f07719e66a995eb5179f29ae0",
+      "anchor": "fig-062"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage3/training_resources.png",
+      "sha256": "e64ab2c455334de6601518d81b9a8655d9cf179e68b1a3cd135296e1bcf394a4",
+      "anchor": "fig-063"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage3/event_matrix.png",
+      "sha256": "c61983f339a261120b7258255ded3ccb32c87de7b7ed6b94b1b4c54bb900f31e",
+      "anchor": "fig-064"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage4/search_grid.png",
+      "sha256": "ef364d9773bd431d3b62491ca2dbe9f8d60894eeb03f710a670a2c6a8e9b2e60",
+      "anchor": "fig-065"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage4/retuned_seed.png",
+      "sha256": "cb89da6d8d10e054dd9cbf125fad9ff7e35b900fcf8004d3370ba57340faaee3",
+      "anchor": "fig-066"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage4/fixed_threshold.png",
+      "sha256": "cd26b180cbd0dfc32255a396c257f8e2b085c08a82ba74249d5b3986f0c18bac",
+      "anchor": "fig-067"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage4/paired_gain.png",
+      "sha256": "a8804eda3c1bf342e3023c387768a7d5888f33beacf82172ad52dd6660609005",
+      "anchor": "fig-068"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage4/joint_frontier.png",
+      "sha256": "61fafa1a9cdb737df8f884f1218fe9b37e1a1a50984608e229a74f42fbf56e7e",
+      "anchor": "fig-069"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage4/unknown_alarms.png",
+      "sha256": "7be9b7f7c0043e78d92b8d36ff86382d16e51ce18e97f114aee9f0d4bfb131e9",
+      "anchor": "fig-070"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage4/training_resources.png",
+      "sha256": "945bb6da78526a034d89426659e8617e780648ceffa687ed320cff9cf6a0e9d7",
+      "anchor": "fig-071"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage4/event_matrix.png",
+      "sha256": "c8876efd5b5675ca4a4a4eeb9d1ff78f2396e3acea67df42d234905a48a3f6bb",
+      "anchor": "fig-072"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/final_evaluation/protected_split.png",
+      "sha256": "5b55cea9419a74f353c88b8d582f36bc355a8822b86ebdf6c6344a39b17616b3",
+      "anchor": "fig-073"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/final_evaluation/group_results.png",
+      "sha256": "ac1dd15328135e1dded1ea13f4080909240db8d87913dc062af3486a60aee517",
+      "anchor": "fig-074"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/final_evaluation/selection.png",
+      "sha256": "9477e7e0408ecd76805c6e19ce490d2289685ecc1e64d8ec95ca5025c2bc98d8",
+      "anchor": "fig-075"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/final_evaluation/holdout_results.png",
+      "sha256": "f6b9da663002d6ea97ac3a0a19866a82f949d75ce54b621088220debd6e0c04f",
+      "anchor": "fig-076"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/final_evaluation/unknown_burden.png",
+      "sha256": "ab316c0a68e92c5da935e47e9fbbf9bcf31eaaad3dddfa6982cf126a0cf210ef",
+      "anchor": "fig-077"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/final_evaluation/by_tool.png",
+      "sha256": "a570c95ee51d5ca44899c3b8701cebd41682b2046db4a321a3c306b3315bd311",
+      "anchor": "fig-078"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/final_evaluation/lead_resources.png",
+      "sha256": "e90ffd23cacf5efad9aa1a6eed9822eb6e3e65bc5b00b6f58930394f429a7c91",
+      "anchor": "fig-079"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/final_evaluation/event_cases.png",
+      "sha256": "fac6c76c81fbb923225aa1f18b209d0ebbdfbe3c4abb607b80481ccaa8dddffd",
+      "anchor": "fig-080"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage7/eligibility.png",
+      "sha256": "75e830368cfbb8b22d1f594b5dcf4d17aa81449627f86f33fcc60676b50eceb7",
+      "anchor": "fig-081"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage7/coverage.png",
+      "sha256": "35de2f42d79ff6a760a1125e36f28e4a13755a74120987dbd2743f0c56f139ee",
+      "anchor": "fig-082"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage7/comparison.png",
+      "sha256": "ba08fbbf85230229a9cd0592410395966972521903dcc19cfd1b4358d14bf84f",
+      "anchor": "fig-083"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage7/learning.png",
+      "sha256": "0bbe1e79fa43004f4f681799d23d217d27d6619bc56d629a7698c56886728761",
+      "anchor": "fig-084"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage7/alarm_burden.png",
+      "sha256": "4c7579240a3ca88b2803d7ab18faee74719b4b275da39a2c81134964ab6e22c8",
+      "anchor": "fig-085"
+    },
+    {
+      "file": "PHM2018-Project-V3/outputs/figures/stage7/event_cases.png",
+      "sha256": "d26bb4195b085fba4f929feec54bfd70b9f596e65f308d59466d5bbff1928984",
+      "anchor": "fig-086"
+    },
+    {
+      "file": "PHM2018-Project/reports/local/eda/figures/event_process_conditions.png",
+      "sha256": "4505b2c310072f3d24fae198bd7e3d48092a93cde0957ee865cf793200282db9",
+      "anchor": "fig-087"
+    },
+    {
+      "file": "PHM2018-Project/reports/local/eda/figures/fault_distribution.png",
+      "sha256": "9367bfdee0f870ae84263b6cd3c6d47bb01849f76aee32ee54694ba15decd70d",
+      "anchor": "fig-088"
+    },
+    {
+      "file": "PHM2018-Project/reports/local/eda/figures/pre_event.png",
+      "sha256": "1c219dd76d17df181a36f4188ec1a10c7ee60b22dfb75804f66c2f59c196b193",
+      "anchor": "fig-089"
+    },
+    {
+      "file": "PHM2018-Project/reports/local/eda/figures/process_sensor_means.png",
+      "sha256": "a471adff1825e5e97982c7b01e97d59e4b6b345fb264e0e546498f6b2dfe13fc",
+      "anchor": "fig-090"
+    },
+    {
+      "file": "PHM2018-Project/reports/local/eda/figures/recipe_stage_distribution.png",
+      "sha256": "e3c5ee9a84b96be2f45a639d2a3abe59d5060d15c624fa3c99af29759ba63a6b",
+      "anchor": "fig-091"
+    },
+    {
+      "file": "PHM2018-Project/reports/local/eda/figures/secondary_pre_event.png",
+      "sha256": "d0c6bba89212d8bae0e51d74ee4658fbfc122d0412dffbf5013f5d93d3b27d76",
+      "anchor": "fig-092"
+    },
+    {
+      "file": "PHM2018-Project/reports/local/eda/figures/sensor_correlation.png",
+      "sha256": "ae216e26ae3ea5242f427bd686c4dee68601e51cb11287f5b9f89be70e014ddd",
+      "anchor": "fig-093"
+    },
+    {
+      "file": "PHM2018-Project/reports/local/eda/figures/sensor_histograms.png",
+      "sha256": "239456eb0585c9e8de0a60791992cd4c95e0ac7511647956d598d0f8aac1c83c",
+      "anchor": "fig-094"
+    },
+    {
+      "file": "PHM2018-Project/reports/local/eda/figures/sensor_timeline.png",
+      "sha256": "f4f19e9bf284f47160c1b468e6bfb7561c10aee7be42a8cfeeae22ae7962ecbc",
+      "anchor": "fig-095"
+    },
+    {
+      "file": "PHM2018-Project/reports/local/eda/figures/tool_rows.png",
+      "sha256": "07d00cb18b727eb433cd6772068819077f3925c72f156c022854fab67efa47a3",
+      "anchor": "fig-096"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/baseline_comparison.png",
+      "sha256": "3de577422228517f0f4bac1304a769fd72c475f7576b41153be649933fbedb3e",
+      "anchor": "fig-097"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_time_confusion.png",
+      "sha256": "eac89e79e10081f67ac2e5fc501cba324a308d414e8f0389ad11e01f26870742",
+      "anchor": "fig-098"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_time_false_alarm_case.png",
+      "sha256": "380cd084fd7fdae067553b9d53e534e2c28afbc7c0283028e6ed082891b662af",
+      "anchor": "fig-099"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_time_importance.png",
+      "sha256": "773e954066c635ff5e0df110cfb3a8339e071ed5db9ecf1f3e36db7baf58b15a",
+      "anchor": "fig-100"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_time_metrics.png",
+      "sha256": "9a0b5022e2341da806cff92ab75f0dabf35330e0deff3ce8c5a5f7eb78c14687",
+      "anchor": "fig-101"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_time_pr_curves.png",
+      "sha256": "a7b3d7ec84a4bae677a1e1251f249b01b4dd1a4a274ac465b5900c0488b50618",
+      "anchor": "fig-102"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_time_pre_fault_scores.png",
+      "sha256": "7a5ff9e65f02c55480d698fd13a0c09eb50ab04e0292745a9cc4b217fb3cb524",
+      "anchor": "fig-103"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_time_score_distribution.png",
+      "sha256": "552cc59d069c121167b64a681d34f6bf207902012ff132c2f366c0d50c3b7926",
+      "anchor": "fig-104"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_tool_confusion.png",
+      "sha256": "f9ebc9e750b80d416eb3bdb8a047a7d8cf8c16d5472845f6b981c698ea2e761e",
+      "anchor": "fig-105"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_tool_false_alarm_case.png",
+      "sha256": "a763dfcdd6bf2881c9eb58a963fd54639047959e5ef329928115e020175b846a",
+      "anchor": "fig-106"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_tool_importance.png",
+      "sha256": "9b5251b75f67985d5839b5b4a21a4da9dab63062e1c73a511f4b2e2478e64044",
+      "anchor": "fig-107"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_tool_metrics.png",
+      "sha256": "1594ce19c85e24cea56b68870c1037350aef561d06a417845ef6e1cb05db18b4",
+      "anchor": "fig-108"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_tool_pr_curves.png",
+      "sha256": "676bf15faeff70061795886b7ce1c65ba4b622bdad0afcc75999b6c7226b1a3e",
+      "anchor": "fig-109"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_tool_pre_fault_scores.png",
+      "sha256": "da43aa1ed1a46ddd8bb74bbddee78159164a3e8d6f29d66fc08297d7462051a9",
+      "anchor": "fig-110"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/split_tool_score_distribution.png",
+      "sha256": "d4abf05904bd1125f360746deeafa3a5103565d4f9f7220fac7ead3c7daee855",
+      "anchor": "fig-111"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4/figures/xgboost_learning_curves.png",
+      "sha256": "4206a5337fc461dc97a6db372099da22a75ab2a48f39c3c8b5a5afb6b009fa9c",
+      "anchor": "fig-112"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4_5/figures/cv_comparison.png",
+      "sha256": "03d33b2eec5c68a9bf8727961b69de76c9f881cd2005802353a4bb2d77a2a70f",
+      "anchor": "fig-113"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4_5/figures/hardware.png",
+      "sha256": "464d6df384fe9beb6eb9d19af82aabfce490bd3572d71e078552ca7d8995d36a",
+      "anchor": "fig-114"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4_5/figures/na_reasons.png",
+      "sha256": "1aba1e242bde2cd14d335e4e27b5979ca6fa0d644a2a3db6de700f9e4beb9518",
+      "anchor": "fig-115"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4_5/figures/na_tools.png",
+      "sha256": "f75d1dcc6cfd51cf42367178c4caf59b7adff086d1077bd75fedb40dea9960d6",
+      "anchor": "fig-116"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4_5/figures/old_fault_scores.png",
+      "sha256": "fbf3cc7051d685096f71e29da6b5008204506e0f5f5682b4f859a211c9e3800e",
+      "anchor": "fig-117"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4_5/figures/thresholds.png",
+      "sha256": "84c3219c457fa2f723f90ac8505fc3e3ffbbde4cc57e454580b3476e2f0e08e0",
+      "anchor": "fig-118"
+    },
+    {
+      "file": "PHM2018-Project/outputs/stage4_5/figures/tool_shift.png",
+      "sha256": "7443171ac5d72904c1a53f46429d64c469447c2666f973d672b9f89d6b4f9509",
+      "anchor": "fig-119"
+    },
+    {
+      "file": "PHM2018-Project-V2/reports/figures/01_raw_rows.png",
+      "sha256": "7ddc205b89ad90ea0b895fb872e4e02844ce332126ccd015dc547a6425207188",
+      "anchor": "fig-120"
+    },
+    {
+      "file": "PHM2018-Project-V2/reports/figures/02_seven_tools.png",
+      "sha256": "8f74a696e73a08e6e6c4043a2b63a540643d6c93801f250251416c4880922d1d",
+      "anchor": "fig-121"
+    },
+    {
+      "file": "PHM2018-Project-V2/reports/figures/03_features.png",
+      "sha256": "f88e8a894f87e84f71bcd7d39e255016afd70f2cb2a5444e65d5f294df5c7108",
+      "anchor": "fig-122"
+    },
+    {
+      "file": "PHM2018-Project-V2/reports/figures/04_event_preservation.png",
+      "sha256": "4f4254c120d89581f6bcf20e507cb9688a1671507c65c3d812c2cd999d52a189",
+      "anchor": "fig-123"
+    }
+  ]
+}

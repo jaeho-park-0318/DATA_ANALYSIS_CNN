@@ -1,0 +1,31 @@
+{
+  "model_id": "UnknownBinaryXGBoost_Statistical_balanced_s7",
+  "seed": 7,
+  "unknown_faults": [
+    3,
+    9,
+    15
+  ],
+  "threshold": 0.4055139720439911,
+  "training_seconds": 2.129652800038457,
+  "training_fault_labels": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20
+  ]
+}

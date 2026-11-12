@@ -1,0 +1,730 @@
+[
+  {
+    "표": "V3/alarm_stage1_episodes",
+    "행": 343032,
+    "열": 15,
+    "출처": "PHM2018-Project-V3/outputs/tables/alarm_stage1_episodes.parquet",
+    "SHA256": "fa575347a96edadbf251e72adafda1859d0b13efec1d50d2e6429e0f1e05fac1"
+  },
+  {
+    "표": "V3/alarm_stage1_events",
+    "행": 2376,
+    "열": 16,
+    "출처": "PHM2018-Project-V3/outputs/tables/alarm_stage1_events.parquet",
+    "SHA256": "5a404f71833346ea0fa01d3a4c4b07bf0e3dda5f8090aed753c4cd808222541b"
+  },
+  {
+    "표": "V3/alarm_stage1_label_states",
+    "행": 288,
+    "열": 5,
+    "출처": "PHM2018-Project-V3/outputs/tables/alarm_stage1_label_states.parquet",
+    "SHA256": "43c8a96bded60273ce64fd20d11e86aa03c9225b2a0d071b5e10bd24fa604645"
+  },
+  {
+    "표": "V3/alarm_stage1_matches",
+    "행": 118,
+    "열": 8,
+    "출처": "PHM2018-Project-V3/outputs/tables/alarm_stage1_matches.parquet",
+    "SHA256": "fda614af232325347b201d12bf569bf2b0b0718de66dc7023ecd5cb9bc4f24d1"
+  },
+  {
+    "표": "V3/alarm_stage1_overview",
+    "행": 12,
+    "열": 18,
+    "출처": "PHM2018-Project-V3/outputs/tables/alarm_stage1_overview.parquet",
+    "SHA256": "fb6b904badaa0659a5354c7ba7e3451125a21b084ccf6bdee1b03eb9089a2576"
+  },
+  {
+    "표": "V3/alarm_stage1_summary",
+    "행": 144,
+    "열": 23,
+    "출처": "PHM2018-Project-V3/outputs/tables/alarm_stage1_summary.parquet",
+    "SHA256": "63818737a06f9c240d1d2e4fe083c4360d371228434da75a7c60a1a90b74f0f7"
+  },
+  {
+    "표": "V3/case_catalog",
+    "행": 12,
+    "열": 7,
+    "출처": "PHM2018-Project-V3/outputs/tables/case_catalog.parquet",
+    "SHA256": "d9ec7a2a2e91c2aff2a31effb8a977862b630482e9da35832576bbe3d2567334"
+  },
+  {
+    "표": "V3/case_sensor_changes",
+    "행": 72,
+    "열": 18,
+    "출처": "PHM2018-Project-V3/outputs/tables/case_sensor_changes.parquet",
+    "SHA256": "308d05b491379f8d1b539576eee7607810a975229f600c64a08488063a6e9cd0"
+  },
+  {
+    "표": "V3/event_exclusion_reasons",
+    "행": 32697,
+    "열": 17,
+    "출처": "PHM2018-Project-V3/outputs/tables/event_exclusion_reasons.parquet",
+    "SHA256": "0c208238d349a357c4aa06ef0a3ef19d5670f309ee2c3b43ab5bc5e4cd713a29"
+  },
+  {
+    "표": "V3/events",
+    "행": 1211,
+    "열": 8,
+    "출처": "PHM2018-Project-V3/outputs/tables/events.parquet",
+    "SHA256": "695ffd1b02a631166cba154316e7cc67ebb785cf75a6c501d27498bdaf053df5"
+  },
+  {
+    "표": "V3/fault_event_summary",
+    "행": 1211,
+    "열": 25,
+    "출처": "PHM2018-Project-V3/outputs/tables/fault_event_summary.parquet",
+    "SHA256": "3a58e747017c78a29791ca50a6fc3b363d4fbb32a0c6793948a68c15e5f9b8d5"
+  },
+  {
+    "표": "V3/feature_availability_summary",
+    "행": 4320,
+    "열": 17,
+    "출처": "PHM2018-Project-V3/outputs/tables/feature_availability_summary.parquet",
+    "SHA256": "31c7d4586ae0a25aa9a9449f95137db7ed2c56fcfaeae607284a455f0dca39d2"
+  },
+  {
+    "표": "V3/feature_unavailability_reasons",
+    "행": 80,
+    "열": 9,
+    "출처": "PHM2018-Project-V3/outputs/tables/feature_unavailability_reasons.parquet",
+    "SHA256": "b7e7cf13909102cfa7d5c9f7ca9a2ae34d07937e03695621aa2163c4cb223547"
+  },
+  {
+    "표": "V3/gap_summary",
+    "행": 20,
+    "열": 6,
+    "출처": "PHM2018-Project-V3/outputs/tables/gap_summary.parquet",
+    "SHA256": "2a799bea7f8ae98bff4675cd0f7f9288afeb5215f30ff9c59f5957d6f0c69110"
+  },
+  {
+    "표": "V3/label_status_summary",
+    "행": 1440,
+    "열": 13,
+    "출처": "PHM2018-Project-V3/outputs/tables/label_status_summary.parquet",
+    "SHA256": "6039bb531e5bbcfbcc5d74356d0601a7b8f45c6505bf73062e21f24f7b707b01"
+  },
+  {
+    "표": "V3/preprocessing_preservation",
+    "행": 4320,
+    "열": 18,
+    "출처": "PHM2018-Project-V3/outputs/tables/preprocessing_preservation.parquet",
+    "SHA256": "27dc50dd6318f284f8c6a3208119753bfad936d8de27378b3e01eef29b9989d6"
+  },
+  {
+    "표": "V3/pretraining_candidates",
+    "행": 2160,
+    "열": 12,
+    "출처": "PHM2018-Project-V3/outputs/tables/pretraining_candidates.parquet",
+    "SHA256": "1c2c74c43332d88055481cb95074f3fecf9a64ee7d7142e9614908af1266d2ce"
+  },
+  {
+    "표": "V3/pretraining_readiness",
+    "행": 108,
+    "열": 9,
+    "출처": "PHM2018-Project-V3/outputs/tables/pretraining_readiness.parquet",
+    "SHA256": "a15f300a2c503b49cc5f31becfee066b0347d39d5652e1f9f099985df7f08498"
+  },
+  {
+    "표": "V3/pretraining_split_boundaries",
+    "행": 80,
+    "열": 5,
+    "출처": "PHM2018-Project-V3/outputs/tables/pretraining_split_boundaries.parquet",
+    "SHA256": "2a7f4c514fc7dc351f09e725c7377b8a4d397bcb9b57657ce83169b2dae402dd"
+  },
+  {
+    "표": "V3/pretraining_unseen_conditions",
+    "행": 6,
+    "열": 5,
+    "출처": "PHM2018-Project-V3/outputs/tables/pretraining_unseen_conditions.parquet",
+    "SHA256": "103f057504cce84b766bebc4390301663e1cb505e5bf6c839b05b6b0ff12fca2"
+  },
+  {
+    "표": "V3/process_feature_summary",
+    "행": 3283,
+    "열": 7,
+    "출처": "PHM2018-Project-V3/outputs/tables/process_feature_summary.parquet",
+    "SHA256": "5647ac9c6dfa4170d20c62676359a29791abc477509bc1634b9c910b36fdd273"
+  },
+  {
+    "표": "V3/relative_event_profiles",
+    "행": 856,
+    "열": 13,
+    "출처": "PHM2018-Project-V3/outputs/tables/relative_event_profiles.parquet",
+    "SHA256": "c4d2dc7a1623fb30f7eddd8ce0d92cf8e97a2f1914bd72aab5c7e44e1ff12e75"
+  },
+  {
+    "표": "V3/relative_event_quantiles",
+    "행": 432,
+    "열": 11,
+    "출처": "PHM2018-Project-V3/outputs/tables/relative_event_quantiles.parquet",
+    "SHA256": "dc667218201e4cf34cfc7b990910fecc168a436fc4bb2d7f57b0f4b587a598b4"
+  },
+  {
+    "표": "V3/stage2_alarm_curve",
+    "행": 99,
+    "열": 22,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_alarm_curve.parquet",
+    "SHA256": "cb105c755667ee01a5e70037de76126640271cae94e975dbf7e2e689347d2504"
+  },
+  {
+    "표": "V3/stage2_by_tool",
+    "행": 1980,
+    "열": 20,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_by_tool.parquet",
+    "SHA256": "ec5e32aeafb8761ac5271e60f6201e5f087f85d64d4e576c20c2b3df47d5bb7b"
+  },
+  {
+    "표": "V3/stage2_events",
+    "행": 22968,
+    "열": 14,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_events.parquet",
+    "SHA256": "98028123ee05297ca2d1eb44f56a7f865df166e877bcef64087fea00611bf0f3"
+  },
+  {
+    "표": "V3/stage2_example_cases",
+    "행": 2,
+    "열": 10,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_example_cases.parquet",
+    "SHA256": "98c7637de5092b4da2131b034d16f2ab97001348f0c28b344d9d759376167e41"
+  },
+  {
+    "표": "V3/stage2_operating_points",
+    "행": 12,
+    "열": 24,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_operating_points.parquet",
+    "SHA256": "5b077159d3822c53f0bcaf0c206ae8caf663a59d6ecf5c6374c41396aef52982"
+  },
+  {
+    "표": "V3/stage2_resource_telemetry",
+    "행": 16,
+    "열": 6,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_resource_telemetry.parquet",
+    "SHA256": "e2c2e617f742da28df629902b02be137a545ea9fbc266e05bce0ae127e2e4650"
+  },
+  {
+    "표": "V3/stage2_score_states",
+    "행": 16,
+    "열": 8,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_score_states.parquet",
+    "SHA256": "73a80f2b46eadab405040fe501be403acf39994689e8d7a0cd4338d6ec82a99a"
+  },
+  {
+    "표": "V3/stage2_selected_episodes",
+    "행": 554913,
+    "열": 13,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_selected_episodes.parquet",
+    "SHA256": "6872059c3a2ba4fca9657d126da1ad6cf0424cafaec8be1948089d9231613142"
+  },
+  {
+    "표": "V3/stage2_selected_matches",
+    "행": 301,
+    "열": 5,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_selected_matches.parquet",
+    "SHA256": "4cd09eb4c0e5c6bb46bfcb1df42498962ca8561bbdacc66972cde7f74f62f169"
+  },
+  {
+    "표": "V3/stage2_tool_event_results",
+    "행": 204,
+    "열": 6,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_tool_event_results.parquet",
+    "SHA256": "1a4f0b172af1dc2590b07cfb133b254fabce65ee2316250d3019f45d23f5785c"
+  },
+  {
+    "표": "V3/stage2_training_summary",
+    "행": 4,
+    "열": 16,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_training_summary.parquet",
+    "SHA256": "895798f4d7102d18bf8ac3829eae547b94bf784f1e736fa81ccb8a6daae2eea0"
+  },
+  {
+    "표": "V3/stage2_uncertainty",
+    "행": 24,
+    "열": 11,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_uncertainty.parquet",
+    "SHA256": "7d6be1989ad6795c1f91f8d434ccb4d98f06fa724af0f2e7064d8506e4d8a03d"
+  },
+  {
+    "표": "V3/stage2_unseen_process",
+    "행": 40,
+    "열": 6,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage2_unseen_process.parquet",
+    "SHA256": "8b81223ddbed2ed2b8f7fd485e664d065d4b22b94a9865c0662053046cf0655b"
+  },
+  {
+    "표": "V3/stage3_alarm_curve",
+    "행": 160,
+    "열": 22,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_alarm_curve.parquet",
+    "SHA256": "9be7cd263f5b43817814ad26efe48296fd57fdbc6a5e1789dadb66bcdbf64e79"
+  },
+  {
+    "표": "V3/stage3_budget_events",
+    "행": 4176,
+    "열": 15,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_budget_events.parquet",
+    "SHA256": "42c31a052e2135f560eb10eb317ae0a3e4cc2b23f2e2c6648cbc9067095668e1"
+  },
+  {
+    "표": "V3/stage3_budget_points",
+    "행": 18,
+    "열": 23,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_budget_points.parquet",
+    "SHA256": "abe083f35e268fb5ad2b570e1d91f92e36c1fff76f166344ab887e241c9400f5"
+  },
+  {
+    "표": "V3/stage3_by_tool",
+    "행": 3200,
+    "열": 20,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_by_tool.parquet",
+    "SHA256": "7aa52def192916c9bb076fc752784a2e339a4e763fa943503e36fc9e8e27203d"
+  },
+  {
+    "표": "V3/stage3_cohort_counts",
+    "행": 2,
+    "열": 6,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_cohort_counts.parquet",
+    "SHA256": "dfe0f10de36b91eff16dc1b38ef6ba262963e16800f3946976c66d09317ba451"
+  },
+  {
+    "표": "V3/stage3_events",
+    "행": 37120,
+    "열": 14,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_events.parquet",
+    "SHA256": "328d12d0dff809cc6b5ec4db92a8463010e8da8ae9831890cd0b6b0b288800a5"
+  },
+  {
+    "표": "V3/stage3_joint_frontier",
+    "행": 9,
+    "열": 22,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_joint_frontier.parquet",
+    "SHA256": "1da58b39851ff64490ba58cebf3a262eb80268727aa3723cb136afbe6712416c"
+  },
+  {
+    "표": "V3/stage3_operating_points",
+    "행": 18,
+    "열": 24,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_operating_points.parquet",
+    "SHA256": "917c725b6f5d9981fd65e5163f0c18c668022d48860d81988daf081028013004"
+  },
+  {
+    "표": "V3/stage3_paired_deltas",
+    "행": 18,
+    "열": 11,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_paired_deltas.parquet",
+    "SHA256": "051f0bb56a097c44011e558ff1743cf6a3ef338b224a5ad151e0bf0fd2cbde36"
+  },
+  {
+    "표": "V3/stage3_resource_telemetry",
+    "행": 19,
+    "열": 6,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_resource_telemetry.parquet",
+    "SHA256": "b8b33f4b64b2be326450aba90c8b46b3daf2d01e3c3c3258a70f532816d76c54"
+  },
+  {
+    "표": "V3/stage3_score_states",
+    "행": 24,
+    "열": 7,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_score_states.parquet",
+    "SHA256": "302b22ed8582ddd06b6acec597dfbfc14ddc7b0b47b0a54eca7b217bae426001"
+  },
+  {
+    "표": "V3/stage3_selected_episodes",
+    "행": 159667,
+    "열": 13,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_selected_episodes.parquet",
+    "SHA256": "80b46d421cba06bd63e40067e97eef6693ec42597d91396db98b68982ac64156"
+  },
+  {
+    "표": "V3/stage3_selected_matches",
+    "행": 165,
+    "열": 5,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_selected_matches.parquet",
+    "SHA256": "dc78ba79d07e59297286d619c8ee35d29f99ed201f5ae5857221c82275ba2397"
+  },
+  {
+    "표": "V3/stage3_training_summary",
+    "행": 6,
+    "열": 16,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_training_summary.parquet",
+    "SHA256": "b6d4894e8ba74a7c44935b1e2e1729e603de744e2494780558a917f26ce78698"
+  },
+  {
+    "표": "V3/stage3_uncertainty",
+    "행": 36,
+    "열": 9,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage3_uncertainty.parquet",
+    "SHA256": "858fd58327658d9e35c1765055c9a457358139d1697b7dfaa98b1b053f89142f"
+  },
+  {
+    "표": "V3/stage4_alarm_curve",
+    "행": 491,
+    "열": 22,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_alarm_curve.parquet",
+    "SHA256": "393543231ea512736639cf49281c7d6422df63961cfcf7ce985295ada17b060d"
+  },
+  {
+    "표": "V3/stage4_events",
+    "행": 113912,
+    "열": 14,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_events.parquet",
+    "SHA256": "e960b42b3e9dabd3171ee598353a9432392a232abd4b5b05bd154f91026d8aff"
+  },
+  {
+    "표": "V3/stage4_fixed_events",
+    "행": 11136,
+    "열": 17,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_fixed_events.parquet",
+    "SHA256": "f5527d23788d74a1f63481a4bfa6e4106f3d0d57484b1d3bf8299563d99023a4"
+  },
+  {
+    "표": "V3/stage4_fixed_points",
+    "행": 48,
+    "열": 27,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_fixed_points.parquet",
+    "SHA256": "32684678e0bafd8c5005a035e09547ef5d115ccbd2f9b01ef110469498b5e647"
+  },
+  {
+    "표": "V3/stage4_grid_budget_points",
+    "행": 48,
+    "열": 27,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_grid_budget_points.parquet",
+    "SHA256": "acc71b8320696ed38c94a8d80518a4d414e527ed72653902a10b7537a549c333"
+  },
+  {
+    "표": "V3/stage4_grid_resource_telemetry",
+    "행": 12,
+    "열": 6,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_grid_resource_telemetry.parquet",
+    "SHA256": "f8ab47d999ca3796b643a5a6b726e093e3b3f9f69f1665039ae0a023260a2fd8"
+  },
+  {
+    "표": "V3/stage4_joint_frontier",
+    "행": 10,
+    "열": 24,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_joint_frontier.parquet",
+    "SHA256": "af89006750b822c795e3e706049bd624651c5de5b76e4bfce9e69b0e33f7e023"
+  },
+  {
+    "표": "V3/stage4_paired_deltas",
+    "행": 6,
+    "열": 11,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_paired_deltas.parquet",
+    "SHA256": "9d2fa7c9074cbbc81383ff1e639efb703634ac061601ab1c9fc4d3325a062304"
+  },
+  {
+    "표": "V3/stage4_retuned_events",
+    "행": 11136,
+    "열": 17,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_retuned_events.parquet",
+    "SHA256": "5e4d10e5d83b88253d08efaff655598503bf97d24ee663e0528aee571349681a"
+  },
+  {
+    "표": "V3/stage4_retuned_points",
+    "행": 48,
+    "열": 25,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_retuned_points.parquet",
+    "SHA256": "41bf5d5cf4bcd3357ee52b4494921b2282ead2b9ad723a2cca41b1584eaf5125"
+  },
+  {
+    "표": "V3/stage4_seed_ranges",
+    "행": 32,
+    "열": 9,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_seed_ranges.parquet",
+    "SHA256": "0c732e4edad0f778654815c48d033a520bc902eb308bde21a3edc51ea9f0e7f8"
+  },
+  {
+    "표": "V3/stage4_sensitivity_resource_telemetry",
+    "행": 16,
+    "열": 6,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_sensitivity_resource_telemetry.parquet",
+    "SHA256": "45e679105a0603f4d200b2709427fd2cf2b71c1ce0e65eaa890beb3f0b9d52ba"
+  },
+  {
+    "표": "V3/stage4_training_summary",
+    "행": 21,
+    "열": 23,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage4_training_summary.parquet",
+    "SHA256": "aeb2017c13a4a3bff7be8100f80ee05616c394b1a0cb294448faf7fb40653778"
+  },
+  {
+    "표": "V3/stage5_alarm_curve",
+    "행": 147,
+    "열": 23,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage5_alarm_curve.parquet",
+    "SHA256": "d61d44f8f2e97f4f1e0e8302e94e4f25aae95d0e8b9155ac24cac4f160d307d1"
+  },
+  {
+    "표": "V3/stage5_budget_points",
+    "행": 24,
+    "열": 24,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage5_budget_points.parquet",
+    "SHA256": "d7a091f0b9c3b68df91d6ee723825497d0db879ace01f2a1397f05c621920077"
+  },
+  {
+    "표": "V3/stage5_events",
+    "행": 17787,
+    "열": 14,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage5_events.parquet",
+    "SHA256": "94dc1443317fff06c708233c02e2f1b0a568914552414df6d45b84d1a50352c6"
+  },
+  {
+    "표": "V3/stage5_input_counts",
+    "행": 96,
+    "열": 10,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage5_input_counts.parquet",
+    "SHA256": "446ce3e82bd5103930b14939ff1835ae385234435193fbf7beccb5f5bd129236"
+  },
+  {
+    "표": "V3/stage5_resource_telemetry",
+    "행": 28,
+    "열": 6,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage5_resource_telemetry.parquet",
+    "SHA256": "c6b3f6b4007e7d4f7d1400c0fec134a5faf08b7448429dd5366af448572d62c1"
+  },
+  {
+    "표": "V3/stage5_training_summary",
+    "행": 6,
+    "열": 18,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage5_training_summary.parquet",
+    "SHA256": "f8465f5c1d6d83593d6114ca99755746184404e9bd4e9c5865897791449a1a9e"
+  },
+  {
+    "표": "V3/stage6_holdout_by_tool",
+    "행": 40,
+    "열": 18,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage6_holdout_by_tool.parquet",
+    "SHA256": "dd8c3b12f180b046b97825fc47312035eb2f4c3479c108000a75bfd3e98083e8"
+  },
+  {
+    "표": "V3/stage6_holdout_episodes",
+    "행": 44551,
+    "열": 12,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage6_holdout_episodes.parquet",
+    "SHA256": "82ac66b781181b9be15d6ccdeed4844b8789d9b3a171994c8d6551eb064c993e"
+  },
+  {
+    "표": "V3/stage6_holdout_events",
+    "행": 388,
+    "열": 13,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage6_holdout_events.parquet",
+    "SHA256": "f5b4a931aae0d6a9fe7759bdd31f47beda9771264eebf6d966e71f1f4594ffd4"
+  },
+  {
+    "표": "V3/stage6_holdout_matches",
+    "행": 42,
+    "열": 4,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage6_holdout_matches.parquet",
+    "SHA256": "3d5d614fe02a6242d0a7ff032ad10b4432707f8c6682b4f34e640a778ad98089"
+  },
+  {
+    "표": "V3/stage6_holdout_summary",
+    "행": 2,
+    "열": 22,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage6_holdout_summary.parquet",
+    "SHA256": "28366a4173ec342a6b43ebff47d1375f4055d8137bd89350d2a8af152f3feb82"
+  },
+  {
+    "표": "V3/stage6_holdout_uncertainty",
+    "행": 4,
+    "열": 7,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage6_holdout_uncertainty.parquet",
+    "SHA256": "3bd59c88d109c7c33fc8403695fdc2cff4582624cf709259ad81df6d7ebd938c"
+  },
+  {
+    "표": "V3/stage6_selection_evidence",
+    "행": 8,
+    "열": 8,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage6_selection_evidence.parquet",
+    "SHA256": "f9af1816b1ca40f9c525a888afe9ba84aaf1419b1fc800991326412dbc447bae"
+  },
+  {
+    "표": "V3/stage6_selection_ranking",
+    "행": 2,
+    "열": 4,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage6_selection_ranking.parquet",
+    "SHA256": "fabefb74f76ce13481cbc6d2beb21dfa3b201c256f0966e0439ca910d923bcea"
+  },
+  {
+    "표": "V3/stage7_comparison_display",
+    "행": 6,
+    "열": 10,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_comparison_display.parquet",
+    "SHA256": "44ded2589b3ab5a01fe86b976de55a36ee542687a4794795fd55ae6c0419af15"
+  },
+  {
+    "표": "V3/stage7_eligibility",
+    "행": 20,
+    "열": 18,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_eligibility.parquet",
+    "SHA256": "e07a5afefe170ded95277a204fa816389b09118adb318031aeef0fb1b3698733"
+  },
+  {
+    "표": "V3/stage7_later_classification",
+    "행": 2,
+    "열": 7,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_later_classification.parquet",
+    "SHA256": "1d3470112d536b7934d26c59b84b00cdd127378424799a3f4235025c017032b0"
+  },
+  {
+    "표": "V3/stage7_later_episodes",
+    "행": 6351,
+    "열": 13,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_later_episodes.parquet",
+    "SHA256": "e0bcfc2d9c9db9c295b10767b2f67010a8dec3b049c54b2154e4ef5727b05585"
+  },
+  {
+    "표": "V3/stage7_later_events",
+    "행": 162,
+    "열": 14,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_later_events.parquet",
+    "SHA256": "f0432cbda49e4a27fbb32326024d5d226244a89a6fb866d78ad509a3d495ea72"
+  },
+  {
+    "표": "V3/stage7_later_matches",
+    "행": 2,
+    "열": 6,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_later_matches.parquet",
+    "SHA256": "c32eec5bb04c6bf24e88998dbbac3adf316ce9c9866e91071ff3ee6f01ba4b2b"
+  },
+  {
+    "표": "V3/stage7_later_summary",
+    "행": 6,
+    "열": 22,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_later_summary.parquet",
+    "SHA256": "9e3ce56732121db9b965792233ed5f1bece3fc8576ec6a6c81b99e6127a867ed"
+  },
+  {
+    "표": "V3/stage7_paired_events",
+    "행": 4,
+    "열": 9,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_paired_events.parquet",
+    "SHA256": "c7c94c6704b62d99663a091616a7aa59a2522d11b8b3f48ba5c94486212cc3ad"
+  },
+  {
+    "표": "V3/stage7_resource_telemetry",
+    "행": 5,
+    "열": 6,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_resource_telemetry.parquet",
+    "SHA256": "4ab75894e8d5d981268696f926780556e20bea5c0f6797af1c08950c7d407be8"
+  },
+  {
+    "표": "V3/stage7_training_summary",
+    "행": 1,
+    "열": 12,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_training_summary.parquet",
+    "SHA256": "4df93f41a03217f56b2e1a2864b78b4aa8d43c33e45d6ed7dac20672939d0946"
+  },
+  {
+    "표": "V3/stage7_validation_curve",
+    "행": 35,
+    "열": 21,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_validation_curve.parquet",
+    "SHA256": "0a21f7bcd9841046dd3d913fb598bf958b1e655dd59d72c98f0c47597bee4bd8"
+  },
+  {
+    "표": "V3/stage7_validation_points",
+    "행": 6,
+    "열": 22,
+    "출처": "PHM2018-Project-V3/outputs/tables/stage7_validation_points.parquet",
+    "SHA256": "d60c0507c33a5cebddf31e4f0493b011c7aa3ec2df29073a24689e8a5beaeaa7"
+  },
+  {
+    "표": "V3/time_segment_summary",
+    "행": 343337,
+    "열": 21,
+    "출처": "PHM2018-Project-V3/outputs/tables/time_segment_summary.parquet",
+    "SHA256": "c9ac124fcd494021784047eb2296d8fea01f0045fcb3ac4bbf5b44ea986b26ef"
+  },
+  {
+    "표": "V3/tool_summary",
+    "행": 20,
+    "열": 23,
+    "출처": "PHM2018-Project-V3/outputs/tables/tool_summary.parquet",
+    "SHA256": "964ab36cbbf368e85dc2f8abb0b1f03f60e1b4db072e64d8815b966b72e596ff"
+  },
+  {
+    "표": "V3/ttf_label_relationship",
+    "행": 480,
+    "열": 5,
+    "출처": "PHM2018-Project-V3/outputs/tables/ttf_label_relationship.parquet",
+    "SHA256": "bc691f7c63583bf2fbb34499378710cd4caaaffdec5685f54dc056e0858a022c"
+  },
+  {
+    "표": "V1/stage4/metrics",
+    "행": 174,
+    "열": 39,
+    "출처": "PHM2018-Project/outputs/stage4/metrics.parquet",
+    "SHA256": "5e96cb8a70423b15f7875ded9190ab808104161b7bf9235287c3f241660c596c"
+  },
+  {
+    "표": "V1/stage4_5/cache_counts",
+    "행": 20,
+    "열": 5,
+    "출처": "PHM2018-Project/outputs/stage4_5/cache_counts.parquet",
+    "SHA256": "e7c7a77556deda590ce6fef28a0216a59add26a2872464896d86b0994e4f6291"
+  },
+  {
+    "표": "V1/stage4_5/cv_fault_metrics",
+    "행": 96,
+    "열": 7,
+    "출처": "PHM2018-Project/outputs/stage4_5/cv_fault_metrics.parquet",
+    "SHA256": "f8854a3c9eac787429bc6d8edf68c572a2f8a4ae5d6a1771bbf84f300547c8c3"
+  },
+  {
+    "표": "V1/stage4_5/cv_metrics",
+    "행": 32,
+    "열": 32,
+    "출처": "PHM2018-Project/outputs/stage4_5/cv_metrics.parquet",
+    "SHA256": "35544790bea1eddf36193885ae6228322ed79c69111e97a01c3c755f9b7ea6f4"
+  },
+  {
+    "표": "V1/stage4_5/cv_summary",
+    "행": 8,
+    "열": 16,
+    "출처": "PHM2018-Project/outputs/stage4_5/cv_summary.parquet",
+    "SHA256": "be6359f35d6b182e070202784e20ceb15051a630f63fd291775985183e8b8480"
+  },
+  {
+    "표": "V1/stage4_5/fault_sensor_contrasts",
+    "행": 360,
+    "열": 8,
+    "출처": "PHM2018-Project/outputs/stage4_5/fault_sensor_contrasts.parquet",
+    "SHA256": "bc6657de5a85f211bf7243bde35f3c3c26ab21171082adbee787d907cfbe6602"
+  },
+  {
+    "표": "V1/stage4_5/na_audit",
+    "행": 463,
+    "열": 8,
+    "출처": "PHM2018-Project/outputs/stage4_5/na_audit.parquet",
+    "SHA256": "4cbe2174c465358d734b4dece9d5c75569b4ddab76ceb4e6fd29dcdc518c6f9e"
+  },
+  {
+    "표": "V1/stage4_5/threshold_metrics",
+    "행": 216,
+    "열": 27,
+    "출처": "PHM2018-Project/outputs/stage4_5/threshold_metrics.parquet",
+    "SHA256": "c891a287b7088bdea22d662665d9a321409a70b4b62efc61148121f88c5b893c"
+  },
+  {
+    "표": "V1/stage4_5/tool_state_distribution",
+    "행": 33,
+    "열": 13,
+    "출처": "PHM2018-Project/outputs/stage4_5/tool_state_distribution.parquet",
+    "SHA256": "66a374a0da957379b1d0cfa5ba506bc79364b5b0df42c4d8010a16555fae457f"
+  },
+  {
+    "표": "V3/최종_저장예측",
+    "행": 736646,
+    "열": 7,
+    "출처": "PHM2018-Project-V3/outputs/stage6/holdout_predictions.parquet",
+    "SHA256": "cc6cb44efcafb6441c677fff2f0abf8cf0348bf6fdd462ee10e04fee79565221"
+  },
+  {
+    "표": "V3/전용_03M02_later_predictions",
+    "행": 48164,
+    "열": 7,
+    "출처": "PHM2018-Project-V3/outputs/stage7/03M02_later_predictions.parquet",
+    "SHA256": "756b210aed82375f33d162043bcfb4d02c286d77aada77cc650004358a8d92ff"
+  }
+]

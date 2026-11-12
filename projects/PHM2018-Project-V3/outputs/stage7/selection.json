@@ -1,0 +1,20 @@
+{
+  "selected_at_utc": "2026-11-05T08:59:10.434202+00:00",
+  "selected_tools": [
+    "03M02"
+  ],
+  "eligible_tools": [
+    "03M02"
+  ],
+  "criteria": {
+    "train_positive_clusters": 8,
+    "validation_positive_clusters": 3,
+    "train_positive_rows": 100,
+    "validation_positive_rows": 20,
+    "train_negative_rows": 1000,
+    "validation_negative_rows": 1000
+  },
+  "protocol_sha256": "9a2dbbf259be989703f076303580598062a7819bd4c7d3eff82b8c7730120bf7",
+  "eligibility_table_sha256": "e07a5afefe170ded95277a204fa816389b09118adb318031aeef0fb1b3698733",
+  "later_partition_used_for_selection": false
+}

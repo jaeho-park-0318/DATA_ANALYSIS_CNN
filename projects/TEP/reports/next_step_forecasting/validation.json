@@ -1,0 +1,13 @@
+{
+  "fit_run_families": 400,
+  "validation_run_families": 100,
+  "test_run_families": 500,
+  "same_original_split": true,
+  "future_target_not_input": true,
+  "input_window": 20,
+  "horizon_samples": 1,
+  "scaler_fit_normal_training_rows": 200000,
+  "cnn_modified": false,
+  "forecast_values_fed_to_CNN": false,
+  "test_selection_or_tuning": false
+}

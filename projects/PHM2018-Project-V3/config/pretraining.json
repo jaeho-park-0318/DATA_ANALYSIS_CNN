@@ -1,0 +1,15 @@
+{
+  "policy": "conservative",
+  "target": "any",
+  "default_horizon": 600,
+  "temporal_fractions": [0.6, 0.2, 0.2],
+  "group_train": ["01", "02", "03", "04", "05", "06"],
+  "group_validation": ["07", "08"],
+  "group_holdout": ["09", "10"],
+  "history_guard": 900,
+  "future_guard": 1800,
+  "categorical_features": ["recipe", "stage"],
+  "scaling_fit_partition": "train_only",
+  "resampling_partition": "train_only",
+  "status": "RESEARCH_PREPARATION_ONLY"
+}

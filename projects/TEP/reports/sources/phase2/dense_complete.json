@@ -1,0 +1,6 @@
+{
+  "primary": "CNN1D_Temporal_balanced_s42",
+  "binary": "BinaryXGBoost_Statistical_balanced_s42",
+  "rows": 9880500,
+  "inference_seconds": 168.60483040008694
+}

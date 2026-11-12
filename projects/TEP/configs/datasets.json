@@ -1,0 +1,5 @@
+{
+  "dataset_a": {"supplied_checkout": "tennessee-eastman-dataset-main", "resolved_data": "data/raw/github", "source": "https://github.com/Blound04/tennessee-eastman-dataset", "license": "MIT"},
+  "dataset_b": {"path": ".", "pattern": "TEP_*.RData", "doi": "10.7910/DVN/6C3JR1", "version": "1.0"},
+  "phase2_training_authorized": true
+}

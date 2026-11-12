@@ -1,0 +1,34 @@
+# 선택 모델 성능 및 특징
+
+모델: **CNN1D_Temporal_balanced_s42**,21상태 joint CNN. 별도 이진 탐지기: **BinaryXGBoost_Statistical_balanced_s42**.
+
+| 항목 | 주 모델 전체 Test 결과 |
+| --- | --- |
+| 입력 |52개 공정 변수의 과거20개 관측,3분 간격 |
+| 평가 |500개 공식 Test RNG family,10,500개 궤적,유효9,880,500개 시점 |
+| 탐지 Precision / Recall | 99.70% / 86.74% |
+| 탐지 F1 | 0.9277 |
+| 탐지 ROC-AUC / PR-AUC(AP) | 0.9539 / 0.9901 |
+| 정상 샘플 FAR | 1.11% |
+|20종 고장 조건부 Macro F1 | 0.9115 |
+| 탐지+분류21상태 Macro F1 | 0.8558 |
+|3연속 경보 실행 검출률 | 98.51% |
+| 검출된 실행 지연 중앙값 | 48.0분,명목 주입 기준 |
+| 파라미터 / checkpoint | 37,909개 / 152.2KiB |
+| warm-up | 최초19개 관측,57분 |
+
+CNN은 국소 시계열 패턴과 현재값을 함께 사용한다. 작은 checkpoint는 추론용 패키지가 작다는 의미이며 Python/PyTorch 런타임 크기를 포함하지 않는다. 단일 창 CPU/GPU 지연은 별도 latency_benchmark.csv를 참조한다. 전체 dense 추론 시간은 특징 계산과 두 모델 실행을 함께 포함하므로 단일 모델 지연으로 환산하면 안 된다.
+
+중요한 약점은 Fault9/15다. Fault9의 샘플 탐지 Recall은16.49%, 탐지와 정확한 고장 ID를 함께 맞춘 Recall은0.04%다. Fault15는 각각1.40%와0.00%다. Fault15에서 검출된 실행의 지연 중앙값도858분이었다. 따라서98.51% 실행 검출률을 조기·정확 진단률로 해석하면 안 된다. 학습에서 제외한 Fault3/9/15의 별도 미지 고장 탐지 Recall은 평균약2.60%로 낮았다.
+
+CPU 추론과 GPU dense 평가를181개 창에서 대조한 최대 확률 차이는 약0.000552였고 해당 창의 경보 판정은100% 일치했다. 이는 전체 Test의 CPU/GPU 판정 동일성을 보장하지 않는다. 수치 정밀도·커널 차이로 임계값 근처에서는 판정이 달라질 수 있다.
+
+약한 고장과 검출 지연의 차이가 커서 전체F1 하나로 적합성을 판단하면 안 된다.3개 seed 평균 비교와 고장별 결과는08~09 보고서, 물리 해석 범위와 미지 고장은10 보고서, 전체 연구 서술은11 보고서에 있다. 모델은 시뮬레이션 조건에 한해 검증했다. 실제 원인 식별기 또는 실제 설비 검증 모델로 표현하지 않는다.
+
+
+## 출처 및 재현
+
+- 데이터: Harvard Dataverse V1.0, https://doi.org/10.7910/DVN/6C3JR1 . RData 4개의 공식 MD5 일치를 Phase 1에서 확인했다.
+- 공정·공개 고장 참조: https://github.com/Blound04/tennessee-eastman-dataset . Dataset A는 학습에 사용하지 않았다. A의 물리 정의를 B 구현과 완전히 동일하다고 가정하지 않았다.
+- API: [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html), [XGBoost](https://xgboost.readthedocs.io/en/stable/gpu/index.html), [PyTorch](https://docs.pytorch.org/docs/stable/generated/torch.nn.modules.rnn.LSTM.html).
+- 실제 설정: configs/phase2.json, 모델 선택 기록: models/phase2/selection_lock.json. 표·그림은 reports/tables/phase2, reports/figures/phase2에 있다.

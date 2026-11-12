@@ -1,0 +1,40 @@
+{
+  "mode": "representative",
+  "seed": 20261112,
+  "simulationRuns": [
+    50,
+    214,
+    435,
+    489,
+    497
+  ],
+  "faultNumbers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "trajectories": 105,
+  "targets_per_trajectory": 94,
+  "expected_target_rows": 9870,
+  "full_dense_target_rows": 9870000,
+  "time_sampling": "one uniformly random endpoint within each consecutive 10-endpoint bin, independently per trajectory",
+  "selection_independent_of_values_and_errors": true
+}

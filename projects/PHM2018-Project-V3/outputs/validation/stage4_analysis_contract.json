@@ -1,0 +1,18 @@
+{
+  "sensitivity_configs": [
+    "A_d2_sqrt_train_neg_pos",
+    "A_d3_unit",
+    "B_d3_unit",
+    "C_d3_unit"
+  ],
+  "selection_sha256": "3d2493d64b8aff4a0cdd0bc5827f83efa99d4ae041eae2b7b6b19a3cd6b0dc6c",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "events_are_not_tripled": true,
+  "holdout_scored": false,
+  "bootstrap": "10 장비 번호 군집 2000회; 고정 선택 조건부이며 validation 선택 낙관/다중 비교 미보정",
+  "reference_preprocessor": "stage3의 동일 train 전용 추정기 재사용; validation fit 없음"
+}

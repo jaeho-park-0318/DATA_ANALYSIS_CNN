@@ -1,0 +1,22 @@
+[
+  {
+    "notebook": "notebooks\\01_raw_data_validation.ipynb",
+    "errors": 0,
+    "executed_code_cells": 2
+  },
+  {
+    "notebook": "notebooks\\02_fault_label_generation.ipynb",
+    "errors": 0,
+    "executed_code_cells": 2
+  },
+  {
+    "notebook": "notebooks\\03_feature_engineering.ipynb",
+    "errors": 0,
+    "executed_code_cells": 2
+  },
+  {
+    "notebook": "notebooks\\04_dataset_validation.ipynb",
+    "errors": 0,
+    "executed_code_cells": 2
+  }
+]

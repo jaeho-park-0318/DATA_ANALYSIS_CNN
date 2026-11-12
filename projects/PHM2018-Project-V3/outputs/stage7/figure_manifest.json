@@ -1,0 +1,44 @@
+[
+  {
+    "file": "outputs/figures/stage7/eligibility.png",
+    "title": "20대 중 최소 학습·검증 조건을 충족한 장비는03M02",
+    "source": "stage7_eligibility.csv / stage7_specialists.json",
+    "context": "군집: 양성 입력이 있는 고장의 인접 간격600 raw 초과 시 분리 · 독립 표본 보장은 아님\n08M01 검증 음성984개는 사전 기준1,000개 미달로 제외 · 선정 수를 늘리기 위해 기준을 변경하지 않음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage7/coverage.png",
+    "title": "학습 데이터가 충분해도 후반 평가 입력은 부족할 수 있다",
+    "source": "stage7_eligibility.csv / stage7_later_summary.csv / stage7_later_classification.csv",
+    "context": "03M02 · B32 · H600/L60 · 기존 후반20% 재사용 연구 · 독립 최종 시험 아님 · 시간 단위 raw\n후반27개 고장 중 입력 가용3개 · 알려진 정답21행이 모두 양성 → AP/ROC-AUC 계산하지 않음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage7/comparison.png",
+    "title": "전용 모델 학습 효과와 장비별 임계값 조정 효과의 비교",
+    "source": "stage7_validation_points.csv / stage7_later_summary.csv",
+    "context": "03M02 · B32 · H600/L60 · 기존 후반20% 재사용 연구 · 독립 최종 시험 아님 · 시간 단위 raw\n기존 공통 임계값은 전체 장비 기준으로 선정되어03M02의 상한10을 보장하지 않음 · 점선=비교 상한",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage7/learning.png",
+    "title": "전용 모델의 조기 종료와 시점별 점수 분포",
+    "source": "03M02_history.json / 저장 validation·후반 예측",
+    "context": "03M02 · B32 · H600/L60 · 기존 후반20% 재사용 연구 · 독립 최종 시험 아님 · 시간 단위 raw\n선택 트리1개 · 더 깊은 모델로 결과를 사후 교체하지 않음 · 학습 aucpr와 sklearn AP는 계산 방식이 다름",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage7/alarm_burden.png",
+    "title": "공통 모델의 두 고장 검출에는 높은 미확인 경보 부담이 동반됐다",
+    "source": "stage7_later_summary.csv",
+    "context": "03M02 · B32 · H600/L60 · 기존 후반20% 재사용 연구 · 독립 최종 시험 아님 · 시간 단위 raw\n전용 모델 경보228/289개 모두 미확인 시작 · 공통 기존 상한10 기준은5,411개 중5,409개 미확인 시작 · 확정 오경보가 아님",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage7/event_cases.png",
+    "title": "동일 센서 구간에서 공통·전용 모델의 점수 비교",
+    "source": "정규화 센서 / 저장 점수 / stage7_later_episodes.csv",
+    "context": "03M02 · B32 · H600/L60 · 기존 후반20% 재사용 연구 · 독립 최종 시험 아님 · 시간 단위 raw\n초록=유효 사전 예측창[-600,-60] · 공백과 세그먼트 경계 선 연결 금지 · 사례는 사후 설명용으로만 선정",
+    "plot_values": null
+  }
+]

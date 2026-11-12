@@ -1,0 +1,33 @@
+"""제한 튜닝·seed 민감도 결과와 실제 저장 예측 재현 Notebook."""
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+import os,time
+import nbformat as nb
+from nbclient import NotebookClient
+from src.common import *
+
+def main():
+    os.environ['JUPYTER_PATH']=str(ROOT/'outputs/jupyter');os.environ['JUPYTER_RUNTIME_DIR']=str(ROOT/'outputs/jupyter/runtime');os.environ['IPYTHONDIR']=str(ROOT/'outputs/ipython');os.environ['MPLCONFIGDIR']=str(ROOT/'outputs/.mplconfig')
+    book=nb.v4.new_notebook();book.metadata['kernelspec']={'name':'phm2018-v3','display_name':'PHM2018 V3 (로컬)','language':'python'}
+    blocks=[
+      ('markdown','# 14 제한 튜닝과 seed 민감도\n\nA/B XGBoost의 깊이2/3/4와 양성 가중치1/약15.77을 비교했습니다. seed42에서 설정을 동결한 뒤43/44 민감도를 확인하고 C 기준도 유지했습니다. 새 CUDA 학습18개와 이전 기준3개 재사용으로 총21개 실행 결과입니다. holdout은 사용하지 않았습니다. 이 Notebook은 저장 결과와 실제 모델을 재검증하며 전체 재학습을 자동 실행하지 않습니다.'),
+      ('code',"from pathlib import Path\nimport sys,json,hashlib\nROOT=Path.cwd()\nif ROOT.name=='notebooks': ROOT=ROOT.parent\nsys.path.insert(0,str(ROOT))\nimport numpy as np,pandas as pd\nfrom IPython.display import display,Image\nfrom src.common import TABLES,CFG\nassert Path(sys.executable).resolve()==Path(CFG['python']).resolve()\nOUT=ROOT/'outputs/stage4'\ndef table(n):return pd.read_parquet(TABLES/('stage4_'+n+'.parquet'))\ndef figure(n):display(Image(filename=str(ROOT/('outputs/figures/stage4/'+n+'.png'))))\nruns=table('training_summary')\nassert runs.train_rows.nunique()==runs.validation_all_rows.nunique()==1\nassert runs.device.eq('cuda:0').all()\nprint('실제 실행:',sys.executable,'새 학습:',int((~runs.reused_stage3).sum()),'재사용:',int(runs.reused_stage3.sum()))\ndisplay(json.loads((ROOT/'config/stage4_experiment.json').read_text(encoding='utf-8')))"),
+      ('markdown','## 1. seed42 제한 탐색과 설정 동결\n\n동일 train309,273행, 검증 입력309,203행입니다. 상한5/10에서 설정을 고른 뒤 동결했으며 최고 seed로 사후 교체하지 않았습니다. 양성 가중치는 train의 NEG/POS에서만 계산했습니다.'),
+      ('code',"frozen=json.loads((OUT/'selection.json').read_text(encoding='utf-8'))\nassert frozen['seed42_only'] and not frozen['holdout_scored']\nassert hashlib.sha256((TABLES/'stage4_grid_budget_points.parquet').read_bytes()).hexdigest()==frozen['source_grid_sha256']\ndisplay(pd.DataFrame(frozen['selected_by_budget']))\ndisplay(runs)\nfigure('search_grid')\nfigure('joint_frontier')"),
+      ('markdown','## 2. seed마다 임계값을 다시 고른 결과\n\n경보 상한은0.5/5/10/20회/10,000 raw입니다. 실제 운영 허용치가 아니라 비교용 상한입니다. 3seed는 독립 고장 표본 수를 늘리지 않으며 표본은 가용53개/기록232개 그대로입니다.'),
+      ('code',"retuned=table('retuned_points')\nassert retuned.alarm_episodes_per_10000_raw.le(retuned.budget_per_10000_raw).all()\ndisplay(retuned[['config_id','seed','budget_per_10000_raw','threshold','detected_events','recall_available','recall_recorded','alarm_episodes_per_10000_raw']])\nfigure('retuned_seed')\ndisplay(table('seed_ranges'))"),
+      ('markdown','## 3. seed42 임계값을 그대로 옮긴 결과\n\n43/44에 같은 숫자 임계값을 적용한 뒤 상한 초과나 검출 소실을 그대로 기록했습니다. 상한을 넘지 않는 것만으로 안정적이라고 판단하지 않습니다. B seed43은 상한5/10 기준 이전 시 경보와 검출이0이었습니다.'),
+      ('code',"fixed=table('fixed_points')\nfor r in fixed.itertuples():\n    ref=retuned[retuned.config_id.eq(r.config_id)&retuned.seed.eq(42)&retuned.budget_per_10000_raw.eq(r.budget_per_10000_raw)].iloc[0]\n    assert ref.threshold==r.threshold\ndisplay(fixed[['config_id','seed','budget_per_10000_raw','threshold','detected_events','alarm_episodes_per_10000_raw','exceeds_budget']])\nfigure('fixed_threshold')\nfigure('paired_gain')\ndisplay(table('paired_deltas'))"),
+      ('markdown','## 4. 실제 이벤트·미확인 경보·로컬 자원\n\n원래의53개 이벤트를 seed별로 대조합니다. NA에서 시작한 경보는 확정 오경보로 해석하지 않습니다. GPU 학습은 순차, CPU 경보 평가는3프로세스를 사용했습니다. 메모리 표본은 약2초 간격으로 순간 최고치를 보장하지 않습니다.'),
+      ('code',"figure('event_matrix')\nfigure('unknown_alarms')\nfigure('training_resources')\nfor r in runs.itertuples():\n    cfg=json.loads((OUT/(r.run_id+'_booster_config.json')).read_text(encoding='utf-8'))\n    assert cfg['learner']['generic_param']['device']=='cuda:0'\nprint('모든 학습 실행의 CUDA 설정 확인:',len(runs))"),
+      ('markdown','## 5. 모든 저장 모델의 실제 입력 예측 재현\n\n각 특징의 공통 검증 첫 배치128행을 다시 읽습니다. 저장된 train 전용 전처리의 transform만 사용하고 모든21개 모델의 재계산 점수를 원래 저장 점수와 대조합니다.'),
+      ('code',"import joblib,xgboost as xgb\nfrom src.pretraining import iter_scoring_batches\nfrom src.features import schema\nreference=None\nfor f in 'ABC':\n    X,meta=next(iter_scoring_batches('temporal','validation',f,600,'common'))\n    X=X.iloc[:128];meta=meta.iloc[:128]\n    assert list(X)==schema()[f] and not {'time','Tool','audit_label','TTF'} & set(X)\n    if reference is None:reference=meta\n    else:pd.testing.assert_frame_equal(reference,meta)\n    prep=joblib.load(OUT/f'{f}_preprocessor.joblib')\n    transformed=prep.transform(X).astype('float32')\n    for r in runs[runs.feature_set.eq(f)].itertuples():\n        model=joblib.load(OUT/(r.run_id+'.joblib'))\n        score=model.get_booster().predict(xgb.DMatrix(transformed),iteration_range=(0,model.best_iteration+1))\n        saved=pd.read_parquet(OUT/(r.run_id+'_validation.parquet'),columns=['Tool','time','score'])\n        expected=meta[['Tool','time']].merge(saved,on=['Tool','time'],how='left',validate='one_to_one')\n        np.testing.assert_allclose(score,expected.score,rtol=1e-6,atol=1e-7)\n        print(r.run_id,': 실제 재계산 일치',len(score),'행')"),
+      ('markdown','## 6. 산출물 검사와 해석\n\n상한10에서 기존 A는17/19/19개, 조정 A는21/17/15개로 개선이 seed43/44에 유지되지 않았습니다. 기존 A/B를 주 기준으로 유지하고 조정 A는 보조 연구 비교로 둡니다. C는 매우 낮은 부담의 참조입니다. 다음은 설정과 임계값 선택 절차를 고정한 장비 그룹 일반화 검증입니다.\n\n현재 validation은 조기 종료/설정/임계값에 재사용했으므로 독립 성능이 아닙니다. 장비쌍 군집 부트스트랩도 선택 낙관과 다중 비교를 보정하지 않습니다. 시간 단위·정비 종료·고장 이력 완전성·확률 보정은 미검증입니다.'),
+      ('code',"checks=json.loads((ROOT/'outputs/validation/stage4_checks.json').read_text(encoding='utf-8'))\nassert all(c['passed'] for c in checks['checks'])\nassert checks['holdout_scored'] is False\nprint('실제 산출물 검사 통과:',len(checks['checks']))\nprint('holdout 점수화:',checks['holdout_scored'])")
+    ]
+    book.cells=[nb.v4.new_code_cell(t) if k=='code' else nb.v4.new_markdown_cell(t) for k,t in blocks]
+    path=ROOT/'notebooks/14_tuning_seed_sensitivity.ipynb';nb.write(book,path);started=time.monotonic();NotebookClient(book,timeout=300,kernel_name='phm2018-v3',resources={'metadata':{'path':str(ROOT)}}).execute();nb.write(book,path)
+    cells=[c for c in book.cells if c.cell_type=='code'];errors=[o for c in cells for o in c.outputs if o.output_type=='error'];result={'notebook':'14_tuning_seed_sensitivity','code_cells':len(cells),'executed':sum(c.execution_count is not None for c in cells),'errors':len(errors),'elapsed_seconds':time.monotonic()-started,'python':CFG['python']};dump_json(ROOT/'outputs/validation/stage4_notebook.json',result);print(result)
+
+if __name__=='__main__':main()

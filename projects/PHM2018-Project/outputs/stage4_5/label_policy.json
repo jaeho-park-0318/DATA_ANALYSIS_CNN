@@ -1,0 +1,38 @@
+{
+  "old": "ml_v1",
+  "labels_changed": 0,
+  "new_dataset_created": false,
+  "reason": "TTF Null은 이후 동일 유형 기록이 없다는 뜻이며 고장 부재의 충분한 증거가 아니다. 공백을 건넌 양성·음성 확대도 근거 부족으로 보류한다.",
+  "improvement": "라벨은 보존하고 NA 사유를 분리한다. 기존 training의 다른 타깃 알려짐 필터를 제거한 모든 feature_ready anchor를 추론 캐시에 보존한다. NA는 학습 제외, 경보량은 별도 측정한다.",
+  "full_counts": [
+    {
+      "fault_code": "any",
+      "rows": 82071907,
+      "positive": 49268,
+      "negative": 14377472,
+      "unknown": 67645167
+    },
+    {
+      "fault_code": "f1",
+      "rows": 82071907,
+      "positive": 30026,
+      "negative": 27822831,
+      "unknown": 54219050
+    },
+    {
+      "fault_code": "f2",
+      "rows": 82071907,
+      "positive": 10827,
+      "negative": 23882260,
+      "unknown": 58178820
+    },
+    {
+      "fault_code": "f3",
+      "rows": 82071907,
+      "positive": 9088,
+      "negative": 19563070,
+      "unknown": 62499749
+    }
+  ],
+  "cache_rows": 2331977
+}

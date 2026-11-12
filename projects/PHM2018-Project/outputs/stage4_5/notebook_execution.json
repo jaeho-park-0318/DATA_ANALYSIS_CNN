@@ -1,0 +1,23 @@
+[
+  {
+    "notebook": "09_dataset_audit.ipynb",
+    "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe",
+    "code_cells": 4,
+    "errors": 0,
+    "seconds": 2.577999999979511
+  },
+  {
+    "notebook": "10_group_cross_validation.ipynb",
+    "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe",
+    "code_cells": 4,
+    "errors": 0,
+    "seconds": 2.4689999998081475
+  },
+  {
+    "notebook": "11_threshold_analysis.ipynb",
+    "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe",
+    "code_cells": 4,
+    "errors": 0,
+    "seconds": 2.4530000002123415
+  }
+]

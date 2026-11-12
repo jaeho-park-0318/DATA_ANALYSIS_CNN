@@ -1,0 +1,17 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "torch": "2.5.1+cu121",
+    "shap": "0.54.1",
+    "pyreadr": "0.5.9",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  },
+  "torch_cuda": "12.1",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU"
+}

@@ -1,0 +1,15 @@
+numpy
+pandas
+python-calamine
+pyreadr
+matplotlib
+scipy
+narwhals
+nbformat
+nbclient
+ipykernel
+scikit-learn
+xgboost
+torch
+shap
+joblib

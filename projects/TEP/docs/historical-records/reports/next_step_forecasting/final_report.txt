@@ -1,0 +1,68 @@
+# 별도 LSTM 다음 시점 공정 변수 예측
+
+## 구성과 기존 CNN의 분리
+
+사용자 요청에 따라 기존 CNN 유형 분류 검증을 먼저 수행한 뒤, **과거20×52→다음3분의52개 변수**를 예측하는 별도 LSTM을 추가했다. 기존 CNN은 재학습하지 않았고 LSTM 예측값을 CNN 입력에 넣지 않았다. 따라서 이 예측기가 CNN 분류를 개선했다고 주장하지 않는다.
+
+LSTM은 hidden64·2layers·dropout0.1이고, 현재값에 학습한 변화량을 더하는 residual 출력이다. zero-initialized 출력층은 Persistence를 출발점으로 삼는다. Huber loss와 AdamW lr0.001, 최대12epoch·patience3을 사용했다. 원래 실행 family 분할400/100/500을 유지했으며 scaler와 학습은 **정상 Training400개 실행**에서만 구성했다. 각실행20관측창의다음target을쓰되실행경계를넘지않고미래target을입력에넣지않았다.
+
+학습48,000창, 정상Validation48,000창, seed42/7/2026이다. 이3개 seed는LSTM가중치학습변동이며가용성실험의누락seed와다르다. epoch는정상Validation MSE로선택했고대표seed42는사전지정했다. Test를보고재선택하지않았다. 정상기준예측이라는아이디어는[참고GitHub](https://github.com/min3237/tep-fault-diagnosis-dl)를참고했지만10관측/하이브리드분류구조의동일재현은아니다.
+
+| seed | epoch | validation_normalized_mse | persistence_validation_mse | train_windows | validation_windows | training_seconds | device |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 42 | 12 | 0.57570 | 0.99501 | 48000 | 48000 | 14.07334 | cuda |
+| 7 | 12 | 0.57229 | 0.99501 | 48000 | 48000 | 12.98693 | cuda |
+| 2026 | 12 | 0.57642 | 0.99501 | 48000 | 48000 | 11.66094 | cuda |
+
+![학습](figures/validation_learning.png)
+
+## 실측 성능: Persistence와 비교
+
+Persistence는다음값을현재값그대로예측하는기준선이다. 정규화오차는정상Train채널별표준편차단위이며, 서로단위가다른52개를이단위로평균했다. 원래열단위RMSE/MAE도변수별표에기록했으나B의독립단위검증이없어단위표시는UNKNOWN이다.
+
+전체시점평가는9,870,000개의target이며마지막관측에서한칸뒤정답이없는창을제외했다. 원래분류평가9,880,500시점과분모가다르다. 대표seed42의전체평가결과는다음과같다.
+
+| model | cohort | target_rows | normalized_rmse | normalized_mae |
+| --- | --- | --- | --- | --- |
+| LSTM | all | 9870000 | 1.49432 | 0.73783 |
+| LSTM | healthy_context | 1870000 | 0.75780 | 0.53381 |
+| LSTM | post_fault | 8000000 | 1.61886 | 0.78552 |
+| LSTM | faultfree_only | 470000 | 0.75806 | 0.53401 |
+| Persistence | all | 9870000 | 1.63014 | 0.69053 |
+| Persistence | healthy_context | 1870000 | 0.99630 | 0.63653 |
+| Persistence | post_fault | 8000000 | 1.74542 | 0.70315 |
+| Persistence | faultfree_only | 470000 | 0.99628 | 0.63668 |
+
+**전체RMSE는1.6301→1.4943로8.33%감소했지만, MAE는0.6905→0.7378로6.85%증가했다.** 큰오차의제곱평균관점과평균절대오차관점의판단이다르므로전반적으로항상우수한예측기라고결론내리지않는다. 정상전용실행에서는두오차가개선됐으나고장후MAE는더나빴다. 정상만학습했으므로고장구간은범위밖외삽성격이있다.
+
+![예측기준비교](figures/lstm_vs_persistence.png)
+![변수별오차](figures/per_variable_forecast_error.png)
+
+## 동일 공통 시점의3개 seed 비교
+
+| model | cohort | rmse_mean | rmse_sd | mae_mean | mae_sd |
+| --- | --- | --- | --- | --- | --- |
+| LSTM | all | 1.56857 | 0.00958 | 0.83815 | 0.00298 |
+| LSTM | faultfree_only | 0.82710 | 0.00055 | 0.59325 | 0.00028 |
+| LSTM | healthy_context | 0.82638 | 0.00054 | 0.59272 | 0.00026 |
+| LSTM | post_fault | 1.69585 | 0.01089 | 0.89551 | 0.00362 |
+| Persistence | all | 1.77009 | 0.00000 | 0.96151 | 0.00000 |
+| Persistence | faultfree_only | 1.19691 | 0.00000 | 0.89893 | 0.00000 |
+| Persistence | healthy_context | 1.19541 | 0.00000 | 0.89762 | 0.00000 |
+| Persistence | post_fault | 1.87925 | 0.00000 | 0.97644 | 0.00000 |
+
+공통비교는987,000개target, 전체평가는9,870,000개target이다.10샘플간격의고정위상표본과전체시점에서오차분포가달라MAE개선방향도달라졌다. 표본과지표를선택해우수성을주장하지않고전체시점을주결과로제시한다. 서로다른공통/전체점수를같은평가집합으로섞지않는다.
+
+![예측사례](figures/forecast_examples.png)
+
+## 한계와 실행
+
+이모델은다음3분변수회귀예측기이며고장유형분류나RUL예측기가아니다. 잔차로새경보임계값을학습하거나기존CNN에연결하지않았다. 센서결측이있으면추론API는입력을거부하며미래값보간을하지않는다. 여러장비/운전모드·실제설비일반화는미검증이다. 기존Test의후속연구평가이지완전히미노출인새Test가아니다.
+
+모델·scaler는`experiments/next_step_forecasting/models/`에저장했다. 입력은한실행의52개정규센서열과연속관측이다.
+
+```powershell
+python experiments/next_step_forecasting/predict.py --input one_run.csv --output next_step_predictions.csv
+```
+
+출력`target_sample`은입력종료의다음시점이며`predicted_xmeas_*`/`predicted_xmv_*`는원래열단위예측이다. API는마지막관측의다음값도반환하되그정답이없는경우실측오차를만들지않는다. 검증노트북은`16_next_step_forecasting.ipynb`이다.

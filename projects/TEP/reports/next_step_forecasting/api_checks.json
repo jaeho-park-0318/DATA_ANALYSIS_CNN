@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "scaler_normal_train_rows": 200000,
+  "same_original_split": true,
+  "target_first_sample": 21,
+  "single_step_horizon_verified": true,
+  "future_perturbation_leaves_past_forecasts_unchanged": true,
+  "bad_history_schema_nonconsecutive_rejected": true,
+  "persistence_common_results_identical_across_seeds": true,
+  "existing_CNN_models_and_notebooks_unchanged": true
+}

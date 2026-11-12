@@ -1,0 +1,12 @@
+{
+  "01M01": {
+    "before_sha256": "dee101094ea8990698e5ce69560ba0da1f98e13db73f3d4e73e1d17fc4a7babd",
+    "after_sha256": "dee101094ea8990698e5ce69560ba0da1f98e13db73f3d4e73e1d17fc4a7babd",
+    "identical": true
+  },
+  "03M02": {
+    "before_sha256": "74b078341ae9b58ab0ee8a0ae2924018f817dce2dc7dc4cbeeb278d3940561b8",
+    "after_sha256": "74b078341ae9b58ab0ee8a0ae2924018f817dce2dc7dc4cbeeb278d3940561b8",
+    "identical": true
+  }
+}

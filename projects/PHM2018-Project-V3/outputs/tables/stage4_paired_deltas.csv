@@ -1,0 +1,7 @@
+﻿config_id,baseline_config,seed,budget_per_10000_raw,detected_baseline,detected_tuned,gained_events,lost_events,recall_delta,ci_low,ci_high
+B_d3_unit,B_d3_unit,42,5,13,13,0,0,0.0,0.0,0.0
+B_d3_unit,B_d3_unit,43,5,8,8,0,0,0.0,0.0,0.0
+B_d3_unit,B_d3_unit,44,5,10,10,0,0,0.0,0.0,0.0
+A_d2_sqrt_train_neg_pos,A_d3_unit,42,10,17,21,8,4,0.07547169811320754,-0.06581140350877193,0.25
+A_d2_sqrt_train_neg_pos,A_d3_unit,43,10,19,17,3,5,-0.03773584905660377,-0.16129032258064516,0.1111111111111111
+A_d2_sqrt_train_neg_pos,A_d3_unit,44,10,19,15,0,4,-0.07547169811320754,-0.1470708775313404,0.0

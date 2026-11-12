@@ -1,0 +1,13 @@
+model,cohort,mode,status,target_rows,expected_target_rows,normalized_rmse,normalized_mae,unit
+LSTM,all,representative,sample_complete,9870,9870.0,1.4687930388980912,0.7338849581119125,normal Training standard deviations
+LSTM,faultfree_only,representative,sample_complete,470,,0.7552585256602589,0.531907601982636,normal Training standard deviations
+LSTM,healthy_context,representative,sample_complete,1870,,0.757883526444515,0.5344742316874714,normal Training standard deviations
+LSTM,post_fault,representative,sample_complete,8000,,1.589770797558299,0.7804972154136256,normal Training standard deviations
+Persistence,all,representative,sample_complete,9870,9870.0,1.6061100094284129,0.6883975405713649,normal Training standard deviations
+Persistence,faultfree_only,representative,sample_complete,470,,1.0150899374738285,0.6530671245201092,normal Training standard deviations
+Persistence,healthy_context,representative,sample_complete,1870,,0.9987761797660251,0.6359600497949685,normal Training standard deviations
+Persistence,post_fault,representative,sample_complete,8000,,1.7173788637652139,0.7006548040403476,normal Training standard deviations
+TimesFM,all,representative,sample_complete,9870,9870.0,0.9636266605937808,0.5962479116701344,normal Training standard deviations
+TimesFM,faultfree_only,representative,sample_complete,470,,0.8370349187668035,0.5808319607647313,normal Training standard deviations
+TimesFM,healthy_context,representative,sample_complete,1870,,0.824790722644107,0.571842420281752,normal Training standard deviations
+TimesFM,post_fault,representative,sample_complete,8000,,0.9932852925470032,0.6019526952821688,normal Training standard deviations

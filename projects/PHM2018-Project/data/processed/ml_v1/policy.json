@@ -1,0 +1,25 @@
+{
+  "time_unit": "raw_unverified",
+  "physical_minutes_verified": false,
+  "horizons_raw": [
+    300,
+    600,
+    1800
+  ],
+  "feature_windows_raw": [
+    60,
+    300
+  ],
+  "max_feature_lookback_raw": 600,
+  "max_continuity_gap_raw": 12,
+  "feature_anchor_stride_raw": 60,
+  "default_event_policy": "deduplicate_Tool_time_raw_type_then_exclude_NoWaferID",
+  "negative_evidence": "finite_TTF_matches_next_same_type_event_and_full_horizon_continuous",
+  "missing_ttf": "NA",
+  "at_any_fault_timestamp": "NA",
+  "duplicate_sensor_time": "same_time_batch_sensor_mean; ambiguous_recipe_stage_quarantined",
+  "combined_label": "any_positive=1; all_three_negative=0; otherwise_NA",
+  "tool_split": "prefix01-06=train,07-08=validation,09-10=evaluation",
+  "time_split": "per_tool_raw_time_60/20/20; purge_full_history_and_1800_future_crossing_boundary",
+  "official_test": "local_unlabelled; never_used_for_label_or_feature_selection"
+}

@@ -1,0 +1,10 @@
+{
+  "binary_detector.joblib": "868e40a4c772fda469b04d11b8184fd2f7efa2781e4f69ee7ca2552aec16e3d4",
+  "inference.py": "8d4213651b8d9a4c1009fd327bc8445df76f529b6783ea085d7752ed442646bf",
+  "model.pt": "b3d001199d2ca91aad9c1f55a7ae1cb19edca6aab94986133f49e3413a926fe4",
+  "README.md": "6c485572f6b2796c089a4296f5724b032943f18344636304375dfb4450a776c8",
+  "scaler.joblib": "1f6850a41e2540e19257c0659bd3f9b3983d34ba9df2d85ee295e1f5d69cc5d4",
+  "selection_lock.json": "512b78543ca3dfd30955b064981303157a4cfd0a23f4fbbe51433a3fe5d9e535",
+  "sensor_names.json": "70470b282cbf2dc9588bb6afeaa32d2e53033ec8fa139f07748b98f948fb6322",
+  "training_config.json": "d3d8bf3942caf2895d405cf2cd5b9c51aeb2ac946249bc6c02d8c5d4d386ce90"
+}

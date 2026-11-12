@@ -1,0 +1,45 @@
+{
+  "model": "CNN1D_Temporal_balanced_s42",
+  "threshold": 0.9671916365623474,
+  "checkpoint_sha256": "b3d001199d2ca91aad9c1f55a7ae1cb19edca6aab94986133f49e3413a926fe4",
+  "samples": 9880500,
+  "post_fault_samples": 8000000,
+  "detection_run_rate": 0.9851,
+  "correct_diagnosis_run_rate": 0.9015,
+  "diagnosis_delay_median": 69.0,
+  "additional_diagnosis_delay_median": 12.0,
+  "first_confirmed_type_accuracy": 0.4485174654752234,
+  "all_reference_results_match": true,
+  "no_retraining": true,
+  "no_threshold_selection": true,
+  "unchanged_protected_files": 59,
+  "changed_files": [],
+  "rules": {
+    "detection": "3 consecutive fixed-threshold positives, post-fault reset",
+    "diagnosis": "3 consecutive identical nonzero gated predicted IDs, post-fault reset",
+    "correct_diagnosis": "first confirmed predicted ID equal to true Fault; true ID used only in evaluation"
+  },
+  "classification_metrics": {
+    "argmax21": {
+      "mode": "argmax21",
+      "accuracy": 0.8310686706138354,
+      "macro_precision": 0.8792183188888514,
+      "macro_recall": 0.876685660475304,
+      "macro_f1": 0.870031284944952
+    },
+    "gated21": {
+      "mode": "gated21",
+      "accuracy": 0.8732495319062801,
+      "macro_precision": 0.8698163317779732,
+      "macro_recall": 0.8528660853559716,
+      "macro_f1": 0.8558453059030707
+    },
+    "conditional20": {
+      "mode": "conditional20",
+      "accuracy": 0.91362825,
+      "macro_precision": 0.9235703692290913,
+      "macro_recall": 0.91362825,
+      "macro_f1": 0.9115305213006835
+    }
+  }
+}

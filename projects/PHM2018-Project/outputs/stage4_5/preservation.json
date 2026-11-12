@@ -1,0 +1,2006 @@
+{
+  "files": [
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\build_features.py",
+      "sha256": "8155c6c3155be0a101cd9b9dfea1609cf7fdac1417fa62bf191ccfd616ed00b8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\build_labels.py",
+      "sha256": "9a6c35be04a437b586a580c7cfccb1ebe8e70215e6596818f388034d263571c3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\dataset_common.py",
+      "sha256": "696dd8a0fdd26782af869f0c1455473ab803e2f10d93789ab6dee6f0f761fa14"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\dataset_loader.py",
+      "sha256": "2b843dacc3e05357c6f37a49b6b78af6b4b7d129d3af458b7d676457b9d99b97"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\eda_common.py",
+      "sha256": "403e3e01502fa222aa4e72afeb6678612a16d9e6b08b8ada85168a7bec4284cf"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\eda_detail.py",
+      "sha256": "3c8dd00a52d79c6ac9567eda1108e2dbb80873a98f47c7f27e4f740b3b0fecf3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\eda_plots.py",
+      "sha256": "750d0adcb5f5151f40c1977c8b481d0a097d7b8b4c70aba09db98b382caa2330"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\evaluate_models.py",
+      "sha256": "719f78aeb96ce215cefda1bf4aa6062a3f97dd175535ea8b5bc8f3d6ab5e88df"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\hardware_benchmark.py",
+      "sha256": "6248cc1b62238ec08605e0ba675e19d8bb2e616d3ceb87cfaff8d43e7120c031"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\improvement_common.py",
+      "sha256": "6b061f4a40b0e48b145cdb58716f435e0a38ab227a31c7e892ede477c0c2a157"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\inspect_data.py",
+      "sha256": "4fc088db88ad1793ce6e2592f0e065196b6476731fdb6388ba77bc861db8a553"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\model_audit.py",
+      "sha256": "1b696effd8b095c573adc36f5068a9138a36c9b7d45018b0773e9969c695be79"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\model_common.py",
+      "sha256": "05e3647fd4b062cb01e8f6caae95885c7e64ca3775bc3e1a681f8cf036882e06"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\model_plots.py",
+      "sha256": "3e7bf7680a947957fc2bd9e0b5f9c29c1d8fa74e15dc2fc83dd70c5edcc5c530"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\model_summary.py",
+      "sha256": "570146d8e34e3c02bc8530562ef90abaf36082c5376bc1f4b9231511ce70d671"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\train_baseline.py",
+      "sha256": "b0e69875d7d382370d650d94b463cfc0b6e39d70c4dc6caf0393890eba75d459"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\train_xgboost.py",
+      "sha256": "b994430973013ec73b8a47799d347000e41d9437cbfeefac8f55454eee0b7f19"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\src\\validate_dataset.py",
+      "sha256": "d5ccd0b505a2bd284ed3e1576a29bd255bc41add3fa5a9504864297140dbc041"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\build_dataset_notebooks.py",
+      "sha256": "9b55f89aa67a38692da5c96a3614483625c57b1cf2a7607b20e932c7d390a705"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\build_eda_notebooks.py",
+      "sha256": "3b71dac6579329aebe7fd5326f307c09f1ca338c0cbc06e9b7d43b6b9e674487"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\build_ml_dataset.py",
+      "sha256": "db59ffefea3fe6a1fc71456e730a598624444013bc9e9b11a83e8a0826a5c590"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\build_model_notebooks.py",
+      "sha256": "f170fadc13e02df61f5eb8d61f1b3f1133563bc1ac801036c98786b75435e43c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\check_environment.py",
+      "sha256": "1fdc65dc695ca629d5f06b48e7bdcbdc53d5922b65fb01d9d718678a94d8b82b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\refresh_model_metrics.py",
+      "sha256": "a50e5bc9083113887a250eabca084dbb9d72a9e8aed130aacb530fbea8f13049"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\run_model_experiments.py",
+      "sha256": "40226f68fd39262e36cebba8f7fca22703faeac40225425fb366b984ea7295e7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\validate_eda.py",
+      "sha256": "96968c5e37b8fddd1716675bf665f95d34e518df98b485db2d01575e3e8de88f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\write_dataset_report.py",
+      "sha256": "0341b742c5c36283360059cfea2060928b9c7acd849ce89f3e92fd21c70a8cfb"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\write_eda_report.py",
+      "sha256": "eed61200073a1ca7f6fd68411dd84ffaee47cfcc76c572ea4305a5d324e5f1be"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\scripts\\write_model_report.py",
+      "sha256": "4efe131565946afa4d80e786555bdc760db6576e2040cbb6f2cc7f3831ae63f6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\01_data_overview.ipynb",
+      "sha256": "6c2a5c2a49665a6625b8fac593b03223448d8580170f5d83d8fe28d3602ead9e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\02_EDA.ipynb",
+      "sha256": "7c0c962c17119be0f0d5b36bc80fd3de610efbeade8b2ed4e6dda5eaf77da765"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\03_fault_analysis.ipynb",
+      "sha256": "0504b9ed44b68536bde2493125a0261ac45252cf849cc5e8c78050d74d5a83f6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\04_label_generation.ipynb",
+      "sha256": "2a1ad63b605061e37adb52e47a082153091994a10bafea248163e866461b20de"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\05_feature_engineering.ipynb",
+      "sha256": "3423e9c0375df66d43e1194073ecf6eabf5b09a30d16418e93c265326969b36e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\06_baseline_models.ipynb",
+      "sha256": "dd6afe8049581ef832eae31169d81bd1e53218ed6142287a44c80d720584c17e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\07_xgboost_training.ipynb",
+      "sha256": "60d4323e6260b016eca921b91453892347534209a87ccf12b87547e0052cb022"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\notebooks\\08_model_comparison.ipynb",
+      "sha256": "7e5d878f9e624941b534539785b67a2ed2d3f4af552f1d12b69fc1a7ed9b3b50"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\02_EDA_summary.md",
+      "sha256": "cca5049af60117832d9bcd37d2ecfae94edf9ed32e0d14f20e94329767877084"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\03_dataset_summary.md",
+      "sha256": "cbc975db450efccef68eb424f48543a65b47559ddd9f99fb4aad9ce9fd4b731c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\04_model_training_summary.md",
+      "sha256": "2ee0ccb5a64b11924255a1c864b756436f419a9ba80b86c718ebad277c0df4b8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\data_inventory.md",
+      "sha256": "6e2d1548f47f0a3dfda072aa17f153076eb707b209f447fcdefb767bd67cf2ec"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\environment.json",
+      "sha256": "482b239b66ec5243e1242ab48dec802282a66aedd2a84f1c2606b78c926ddb2a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\inspection.json",
+      "sha256": "e076d5d723c5db15dd30ab58ac75331c26b29dde0ea6cf6609e250ea6a9b52f2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\dataset_summary.json",
+      "sha256": "83ba9ddfece23e98477033f9a88d96e355070df7c0de143f403d53912208d339"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_01M01.json",
+      "sha256": "019673ab99d86bcc9d58db2e0f5e5ffa0d9ecaf905fa31c7270ce027dfab8b6b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_01M02.json",
+      "sha256": "5befb71d419e7fe17933200776f26d68f41ce57de18fe94fb338be7c27af06c6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_02M01.json",
+      "sha256": "ef840aec9c1e08f8f67cc1b9286307e064f708922d28dc6bf3337f3605db420d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_02M02.json",
+      "sha256": "5b773a0a63ea681f6ac6ce8313b6ef40b64c21c33d3d44b607d297c07eed09fd"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_03M01.json",
+      "sha256": "88ce04d7ae822734c9a1c616d61c9d9784c98cb329dbf23938e0800bb49bfb1d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_03M02.json",
+      "sha256": "931cddaa2a44ef528d5e44dfd2dbf5696743dba6b943430a8b94136d86449dc9"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_04M01.json",
+      "sha256": "9393adb562130ad1f99ad307c312ca8dc5a4470daf59e25a1431017211d01d55"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_04M02.json",
+      "sha256": "87892f13dd18d3818e36064b306bcad4fcdb644e2f756cc72c3f49515a0b2211"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_05M01.json",
+      "sha256": "7b10cab82345431fe304e6f505cfd060de92bb039be70966b1eda4b571301321"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_05M02.json",
+      "sha256": "9a4d17fda9a7d20d5dacb57ffeb5032e38c1e7349b2854f03047d565edd4bd56"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_06M01.json",
+      "sha256": "28ce3fab83ebfbaa88f66dd653c16348107a7b860b94c4fb10b67da3bcdfbea6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_06M02.json",
+      "sha256": "59adf4b651f81cd4913b7178fa2f3fddd4c428389f436ffebf184ef0f6539b46"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_07M01.json",
+      "sha256": "19c87eb94d3b20b17f2ea6d01ab92dd1cc133d78a77a929dd4d791159aeea17e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_07M02.json",
+      "sha256": "2250d33bd4be67388d0d5defb694d9a2328d170fc1682d98ec97644170ecc1b8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_08M01.json",
+      "sha256": "1621453e98111bd2a64556cc1220e3524cda94bc6fc71b1f3b4627b1e2549c9f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_08M02.json",
+      "sha256": "9d5d2fb97543835a8a87c6c7e1b3579a5bc3cfcff5d2af9f3fd3e5ebc9c88325"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_09M01.json",
+      "sha256": "dc11c660e2278e6cf993ce743d58d89b056ac765ee9b8d3624f93c1bda08ad92"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_09M02.json",
+      "sha256": "ba4a906c3e6859e792902c429a7f613de364245fb74c2de30d4973115d6b12bc"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_10M01.json",
+      "sha256": "4e06e23dfa328c1728e3bc934e722f162b7496f37ffe7118522dea310db8282c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\features_10M02.json",
+      "sha256": "f49d0b19e1cb34514145ad1898050f8cdd61ad2e9b762867e254f39bf9c2e94c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\feature_build.json",
+      "sha256": "0a39e297c13dcd287b8a094eb60da1f2870bb590456aae40cf8277b935baa127"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_01M01.json",
+      "sha256": "659e0040b3c8c39e29ce21f86bc5fe60180d753c80f3868b0cb505976ed3000b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_01M02.json",
+      "sha256": "66ee3875ce0694dc1c5f7bd7326a79afec61274727cd364a9254a0a2380864cb"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_02M01.json",
+      "sha256": "0f160421c0043cf609a9ad4be31672615bca7e9971d731c47a5ab46e48543b54"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_02M02.json",
+      "sha256": "c7724e7f385ec662bbe20d12588e9d5b719bc953e27edbecdeb09df663947ceb"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_03M01.json",
+      "sha256": "dc6a3c4f0cbf7bfef8cb499add4da2aaa1f06e4acbbb9a0adab0602408919b2c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_03M02.json",
+      "sha256": "dcafd76f5b0705be771d7a7fac6a5d0356d235609c822e8b9b4e8325d240da8c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_04M01.json",
+      "sha256": "14289360432e9f704e98c2791faec1624044a072c38d972b548007295e4c4eed"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_04M02.json",
+      "sha256": "390422abb2d299329bcd1df80f2eff54de3594d6c5d1b4ca783ffd0003c3908b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_05M01.json",
+      "sha256": "7082530e4665d241965934e7201473aa71637e203781c156d20d433eb0fdd54f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_05M02.json",
+      "sha256": "9e68502c36056250ef5ed4710acc0cf0341b2a09fad5ca0ce231a211ae1d02ab"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_06M01.json",
+      "sha256": "88502d48d2ea6e367b95f6d264e1ec10a85c65202b1d905c709cb421fdf6d138"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_06M02.json",
+      "sha256": "a8f3fd1abae9555189efa9ecfed59e9704e988756d4052cd09b92f87671906cf"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_07M01.json",
+      "sha256": "fd4e09cc5ad52d3aea29b96a74bffb5b70a4b3658c0b21eff502b5a3a085684f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_07M02.json",
+      "sha256": "93789e976093f41f51a80331177fe28d21537ba88130af963c2669119311518f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_08M01.json",
+      "sha256": "c281fdb38683a8a8f140ebdbe40f1454883eb70528131c3fe8bec5a00a507722"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_08M02.json",
+      "sha256": "5ca64dfbcf4e7957344a4a4a5969cd669ba8ff8dc2350ee4b8c8ce5168634c87"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_09M01.json",
+      "sha256": "64b19f4d15c86e9e3d4ecc097553cb78691ca8ce0e9f9e34ae58007199094867"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_09M02.json",
+      "sha256": "2d74de7096891f49ceb306e708fa63cb50c993b917d705063659e967918f7dff"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_10M01.json",
+      "sha256": "05a9b4eac8283c6af2dc799d10aa48438c5f655ee0bb460c893f40949a319046"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\labels_10M02.json",
+      "sha256": "ee07ca586619a1eca050277746de110b450423aff4b8ffeab2169a61baa8faac"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\label_build.json",
+      "sha256": "21042b49780693a96312c5faae43ccd6dd590b267fe47ae5ea6601a1d6a6cefd"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\notebook_execution.json",
+      "sha256": "15a91c3f0ad86b329e3d831cf68a86de9d4d48306930bdb607dd09804b67017d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\provenance.json",
+      "sha256": "eae7049013431f7340590441619b129e0ddc548e88a2d5e35b8e9e9394763318"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\source_snapshot.json",
+      "sha256": "93e3febe08434203d71d5dfe79582887093d97cbf0b2ac8c6c12965919a5b09c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\jupyter\\kernels\\phm2018\\kernel.json",
+      "sha256": "635914a5aafcc875830f7ba78a6d58caa00ad25bd97e6770e9650a964caf9400"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\dataset_v1\\matplotlib\\fontlist-v3.11.0.json",
+      "sha256": "eae6fec3c09f44ee5a5ecddc7b7aa5a8a6f473415f8e6be9ca101e0a52bfbc53"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\active_control.json",
+      "sha256": "a56253054d6959caa12ad2b34d85ffcbe8048ff88c1e88a7e04f17b89f492816"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\control.json",
+      "sha256": "41d256488fe20e30068cb4512767494f7d0ae70ee577dbe1a49e7357261d45bd"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\detail.json",
+      "sha256": "4f55aaf747be505e638313a311c67a7e0c59b35e008d9cb7eb0e5f533cd2985a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\notebook_execution.json",
+      "sha256": "3cb25d2289593cf24c9a245bdce4591c3e446923df04d1607210d10fcc27467a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\overview.json",
+      "sha256": "c609bda4f26249fd56b512a9f82601842444ecab4ac7e56b9c4c277ac288732a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\pre_event.json",
+      "sha256": "0ee782d0ba9309c7dfe7811f4c9a17a3240c4a457692d5b9760ea8150688ff57"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\secondary_pre.json",
+      "sha256": "732fb84262dd779b3357ce9b63dbf0655d5e63e8949d6289aad085c1e05ad3f0"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\tagged_ttf.json",
+      "sha256": "01bd0023365e26d0d5efb45572fb1cea7a921984b6b259ae06a340b629ac3738"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\time_keys.json",
+      "sha256": "4e78d6573b6e11055c8948afd801404d1fc81fdfba478744895a3017d2bc43d8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\validation.json",
+      "sha256": "522f785d31bda7a4cda646714b4190d4a7a7998af2c9380fde3cd8472c57b3ad"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\jupyter\\kernels\\phm2018\\kernel.json",
+      "sha256": "635914a5aafcc875830f7ba78a6d58caa00ad25bd97e6770e9650a964caf9400"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\reports\\local\\eda\\matplotlib\\fontlist-v3.11.0.json",
+      "sha256": "b2fe73c37a2efdcbfe8676f6eab5eb60fc52e908bc62a14a2aa4809e4f12da6f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\delivery_checks.json",
+      "sha256": "666e7b768648c2d9606144566620a0d0fac68a33bc7116c5fd168ddf249798cc"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\final_checks.json",
+      "sha256": "c2fe669784fa18ab9de033dc02030563e7eb6a3d7483e7bf721a79e550990757"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\metrics.parquet",
+      "sha256": "5e96cb8a70423b15f7875ded9190ab808104161b7bf9235287c3f241660c596c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\notebook_execution.json",
+      "sha256": "df17f92d89412cc0d7ffba544f9c16344ffdbc2c0a1d729105a410968b87b36c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\preexisting_files.json",
+      "sha256": "df2de0a3ce0f444e455611522099195fee43e7efdb719a73ef6e8e42f2b629cb"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\preflight.json",
+      "sha256": "fe0667519399291872dddd67390a89794eaf78a655374453cf30b76696f8c32e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\primary_gate.json",
+      "sha256": "0992ae25c10e5640214c19853332f984318865813eceaf348ea49980b1a8cca4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\run_status.json",
+      "sha256": "6f540ff70b93f13c0d307a171a73e3e83e3684a29f5324ef508ab71cb10ae626"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\smoke.json",
+      "sha256": "a3538305f2965707adb77f1dd5a3f14f6f072052117a9fdc5d4bc33581af7ed9"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\summary.json",
+      "sha256": "95fe609641e7ed1c6df887c57421bfe99d610b910a4aba39e6bcf2a9a7a86c71"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\Dummy\\evaluation_predictions.parquet",
+      "sha256": "e94b751fd22616b96dbac201c854ee66cbedbb38b2f972220a3ef0b94a14322f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\Dummy\\model.joblib",
+      "sha256": "735d1ccfe02f9b5ca4e2c5ae8cfe0f8cb7c6f8034aa6b454d7d9c33526b24aca"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\Dummy\\result.json",
+      "sha256": "ff54fdbcf16e1320b58dc727444e56a9b0ff915c4c6c2cd7e457a28466622d81"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\Dummy\\validation_predictions.parquet",
+      "sha256": "30281c934e33702ea8030d4a84b1f11739877b170270b4210f50d4f01c0bec8a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\Pressure\\evaluation_predictions.parquet",
+      "sha256": "43153fa2788ac2fcb2b82120705efad2d890341517a669ce7ca4401bbbbe4d5a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\Pressure\\model.joblib",
+      "sha256": "298287ae530a526b70d3df1921e7372599915a7893cca909dac5fad955f24f29"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\Pressure\\result.json",
+      "sha256": "84f98db163b3af0b4d7362e0ac8546c9df01b7fb68820501e4e1bbeb154da9a7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\Pressure\\validation_predictions.parquet",
+      "sha256": "29501db656250813ad21b3d23b2557bfb536b1720a5c2072a92c601750f9ffb7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_A\\evaluation_predictions.parquet",
+      "sha256": "2d7fd4aa89c1036c86a102a0afe95eea085e82ab57df5e4d3e0efaa4c32788f2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_A\\importance.json",
+      "sha256": "d8e83d495a8cb11fcf6a5b83bf44f0f0853a41788085ff4613523690e44d5a11"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_A\\model.joblib",
+      "sha256": "16d54622cce019cece3fe4db93cde63061c228e7017e900e7d301705574672e0"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_A\\result.json",
+      "sha256": "f2ded9558a92a749260c690e23bd8acb2bcc29428a4f33c032615dd8f5f95d90"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_A\\validation_predictions.parquet",
+      "sha256": "c0512878ced155047457603165ff8ba0e875834c380a4d47b65b640245e9cf66"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_B\\evaluation_predictions.parquet",
+      "sha256": "6071abdc84d2e29cf5c5c2019c2835a8663f2c235af27acf815f6301df0b466a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_B\\importance.json",
+      "sha256": "7162b71525a5233fc6a1a1b635d1f59a4d862f408b04b1b8097a05c5bf4f6e54"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_B\\model.joblib",
+      "sha256": "4099400b78a9313ee58c217853ba59a3853ed32a63845c7449cf760b1c45ba44"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_B\\result.json",
+      "sha256": "d2de96b643bdfb2b1e57117c4b464ed0cffe683af90860271a0c529dbff794b9"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_B\\validation_predictions.parquet",
+      "sha256": "cadaba81816928b0ff1eaa64edaa52720335393988b2a5bc6f4b0941542fb75a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_C\\evaluation_predictions.parquet",
+      "sha256": "4e4f0c5b5bc127b573abd60786ef89088b1b7b1705e91b31551c2e7deff6dc46"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_C\\importance.json",
+      "sha256": "680fb211ae7333f4ac3e6ff902872a170db56aff887c441d2ee210355dd6b8e7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_C\\model.joblib",
+      "sha256": "9b7ea533e0453b2483468c69c44780a012b5784900ac1c63e4657078676efb23"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_C\\result.json",
+      "sha256": "52c1db3babff8e6edf2dddd59fef023c0cd0d4c01d97c28caba67a19631ec3f8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\RF_C\\validation_predictions.parquet",
+      "sha256": "11e485ccff5604747d63986e3d45eb2c95dafb937658b497dd6f520725318fcd"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_A\\evaluation_predictions.parquet",
+      "sha256": "1567b82a70a3a60d42e8c6aa507e9d86927b914849a9aa52cc4343204c29f194"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_A\\importance.json",
+      "sha256": "55bcc8e2bdeaa9260f36d059e925d11d9e2a632bd14e420bfee943a8bd934cd0"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_A\\learning_curve.json",
+      "sha256": "47a69614bab753c491659d2661746c3f9366278d33c3c1e00cdc3d332ef80b0c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_A\\model.ubj",
+      "sha256": "04938af571af3c6e0b5299976ae637e9f0a184b538c8d76d4003d31bc5215550"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_A\\result.json",
+      "sha256": "aa08875ae0502b024c2cd82fcd8be992d051f368379f698671b70d415f9e049a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_A\\validation_predictions.parquet",
+      "sha256": "ec68640d49132f5d4a5c41bd0f34ac4027978d499f6ae11c766f7d3ec6653120"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_B\\evaluation_predictions.parquet",
+      "sha256": "d00b214b2732e3cf02b510a38715aabfd428427cc3a8eb8af86c9f8dd5d12291"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_B\\importance.json",
+      "sha256": "42547e945fb8fd4c99a213f46ad4ce5fde8ecb5e977e9a97a2d79257e580c505"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_B\\learning_curve.json",
+      "sha256": "4df689c4182028e44232611856a612a2cce9d8bc51336f6844a2474636a59d9d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_B\\model.ubj",
+      "sha256": "982787c14d3ab6593ac2012ad36ef7f1c9469509e9f9199d4b0b4dae8ebf5c05"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_B\\result.json",
+      "sha256": "7c6e3a64d18bceb7ea68d229b4ad9e0b37044f42489010cb63a1eb7f1f741162"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_B\\validation_predictions.parquet",
+      "sha256": "fceda76052bdaa9d9f387397f4b7318d049a65b87c818a488e8db9f723142207"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_C\\evaluation_predictions.parquet",
+      "sha256": "0bdc900d5bcc77adea37808de8962207589562876b78ecedf5d1933ed4580e86"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_C\\importance.json",
+      "sha256": "6f2f0c03c4ebe0414293a2a7218b6c4f70128ae3ac7cab6ba318ae5dde1f41fd"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_C\\learning_curve.json",
+      "sha256": "5567de92d61b6c18d977ef34c143ed1ff9c0df27b16f83c66c3c1827d92c14c7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_C\\model.ubj",
+      "sha256": "b6f0b1a0a30e52e08e535005b3ede9c29ad45fba2593dac9b088a7d7c5fb7fe2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_C\\result.json",
+      "sha256": "709e4a240b381d9b51ea7df2580d2aab17b6aefc66698ebb89d823598f6a2b2e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h1800\\XGB_C\\validation_predictions.parquet",
+      "sha256": "de397497ad599f32c42494e2e8540a344b1705185fd0d88acef90d782a94ddd6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\Dummy\\evaluation_predictions.parquet",
+      "sha256": "0ae83026c96ef34aa1e2fd53df252c90fef16118b99658d558657d1759e575d7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\Dummy\\model.joblib",
+      "sha256": "10bbe14805d30030ef9b55ce491b64969e2864a15ee0b4430c247ce64575f209"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\Dummy\\result.json",
+      "sha256": "12895a2a8b8a19a926ecd0e5b3d847b711a069039099fe7b7bb15820b2cab2c8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\Dummy\\validation_predictions.parquet",
+      "sha256": "18f06e93145558c413764dade3ce9060d68e27dbe67f11216f2e2b10dd5976de"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\Pressure\\evaluation_predictions.parquet",
+      "sha256": "482e66a3ac71403fbedccc2e43c1162dfc7396c7d6d3a1e98743cec38f515052"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\Pressure\\model.joblib",
+      "sha256": "e81bd4376e3b0715b54cb362264c63a20d610c920c625060cc6e5bcffc67344a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\Pressure\\result.json",
+      "sha256": "8708338dce76704c35ff9535bdbe3a9365454f4ac566693910999006034e88c0"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\Pressure\\validation_predictions.parquet",
+      "sha256": "49586f941dc93f9510b51b95f51eccb052af0d7edde410b20d9ba20ae11f1316"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_A\\evaluation_predictions.parquet",
+      "sha256": "f687584ff3285ece3a575998862858f278b3c146157e733444855f984f6fc92d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_A\\importance.json",
+      "sha256": "72a95ba27409c7e3d4e01c74f0e631cfcb8761c11df489e9da81b15dd890e02d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_A\\model.joblib",
+      "sha256": "d70f7e8352fe274b28f2ec90a06ba34ca0e22c47ad68b2276780064a1a5cad1c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_A\\result.json",
+      "sha256": "423c58f9823a3460d5220d22add3cd188725381238ea363bf9182e47dc50c85f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_A\\validation_predictions.parquet",
+      "sha256": "53ee054f3e77820dff0e4ab9b82f71239261e3d59d8dc41972be4780a0f0011c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_B\\evaluation_predictions.parquet",
+      "sha256": "c9187d25d94ba8389fcc3a4fcc6da2c0c92be8fb8087388785d66f688382da8f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_B\\importance.json",
+      "sha256": "31cad496a1cd2fabd74709e77491def3e537784c3a2429209940a6ba3e2b6ab3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_B\\model.joblib",
+      "sha256": "9ad18c14432d9370a16eaf6593d61f5113307781e2da9f4c0f0547b01e94f8cd"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_B\\result.json",
+      "sha256": "fd967ae94a86c14af2683c4251b068f54b416ea47f38c52915442673ba3df6b7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_B\\validation_predictions.parquet",
+      "sha256": "98b0882c9d3a2e975b000a16847765b5d50730c17f8709bd3c5ce799ed150e4b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_C\\evaluation_predictions.parquet",
+      "sha256": "722be84b50a2bc03545f8b5870974bb3bf121cd48597a6e1298da94febf3bfa1"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_C\\importance.json",
+      "sha256": "e20a8f21fcd859742c07a424460d9459d26930325bf13f06088c80070cd6e4fb"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_C\\model.joblib",
+      "sha256": "39d5fc9cf2dce2aaf42b69396b699a96e837d891732cadf5b0f770640d478335"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_C\\result.json",
+      "sha256": "ccf9df514bac04b6384c442f2e7d1f9b163283ef81c1b2b38c76511eb7acf84b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\RF_C\\validation_predictions.parquet",
+      "sha256": "f96e6ebec5f13ba0ba94ab540edad22e2bddbf800d0e11eeb308e45b4155e63c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_A\\evaluation_predictions.parquet",
+      "sha256": "8e1ce5a6fa922c21b95fa1f87468962c2bf71ac0bb32cfaf89eb78d1e1bddbba"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_A\\importance.json",
+      "sha256": "bbfffa07f7108817588e31d4499852675ba0257256f5e8aefb776443ea55de1d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_A\\learning_curve.json",
+      "sha256": "51b37d6b55f0cdb907d661850ab427f179cded614148b94c1a3eff09fee8a976"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_A\\model.ubj",
+      "sha256": "d9d54b544989fab4b3bd1cc80017ed715a0337e70725242030dce48f84f4b3e2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_A\\result.json",
+      "sha256": "7323a7434c550941f0533467fe0f1befbbb9c097aa1b2ad72b195e0300abc729"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_A\\validation_predictions.parquet",
+      "sha256": "019f4734cd0f25f27a7248b0fd6ff4fff65a0d4e736a9eed10e00c7521f7ef4a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_B\\evaluation_predictions.parquet",
+      "sha256": "17c5da11aa2ac34020bef384da44c4adb2c82977269c8ccece0530cc9d40a718"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_B\\importance.json",
+      "sha256": "1811304c59de804a8f1cefc65b6a53473a094789ebc5153c8f64b9d37eb30a23"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_B\\learning_curve.json",
+      "sha256": "716190d9403ed265d96f980a2774fa11815ce6f421c0825b1288be7cb98ab368"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_B\\model.ubj",
+      "sha256": "cec4e39cf29bbf9f2417b9e2c9915b30730cdc2930e41d66b024ddec35df9008"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_B\\result.json",
+      "sha256": "f8935b35cf25ea7276133489403759a485665497ad2da537ccb0a90ea0c80638"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_B\\validation_predictions.parquet",
+      "sha256": "9e6944a2c0b62899d25818acc0a73b916e1a5a6ce3967d3d0e37ebbe20d9f160"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_C\\evaluation_predictions.parquet",
+      "sha256": "a6d11670e1dbad7efde1f54bbc518c439912c8a68674a2cd30806a6cbe8f416c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_C\\importance.json",
+      "sha256": "54b875df5c8eb8dc6bd12ac96c327c85668d5407b04a580e8f9fb964d67882bc"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_C\\learning_curve.json",
+      "sha256": "1b4fc63b370bde5090ca29281a18122e8504a9434af073192b326a70d6ea4f72"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_C\\model.ubj",
+      "sha256": "cbfa132cca3abeea2273f79425e9a6258658aa94e729d9443db11bafbf350182"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_C\\result.json",
+      "sha256": "397562933e3041b77150cedea73b2b12efdc4026bb9ab2b4c5c288f795f7fafc"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h300\\XGB_C\\validation_predictions.parquet",
+      "sha256": "22b03fb07e733f1149a3f3e71b4e34dd04036dd4f56f3de924a260db73947137"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\Dummy\\evaluation_predictions.parquet",
+      "sha256": "f1dc0bf7b0b210c4c2f4e833523f04236ca58fe04af0e2e370d37286a11497dd"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\Dummy\\model.joblib",
+      "sha256": "0f3c5b5efcf6903fd07c80e2801c61f3e499ba30c5c41fe69509a0bdb021995e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\Dummy\\result.json",
+      "sha256": "8fce2e749e4429abce3089a7dba337c0cc88e8e32be65ed1d415301b87af92d6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\Dummy\\validation_predictions.parquet",
+      "sha256": "a2cb46157452b82ebe2a2ba91c8f2c3d1251e967a4a343cd309c0556382f4299"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\Pressure\\evaluation_predictions.parquet",
+      "sha256": "e136a8dea9933b0c106412c0e3beb4fda9cd066905763999e59faaba66227459"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\Pressure\\model.joblib",
+      "sha256": "1d57285ad4e9ac166930d19cb4db1fb1cbd5ab7b57b89418ae5cb60aff7e9b5f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\Pressure\\result.json",
+      "sha256": "b6d05ae3f5ad98ff8300f20dcf9617abbf485773ec5b1b3a763bfafc38f0d1e4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\Pressure\\validation_predictions.parquet",
+      "sha256": "1911c1eba6075a89c8b354ee5effe70ae0278983c4b7a06f54279f84a4b8ec75"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_A\\evaluation_predictions.parquet",
+      "sha256": "d5da0f21abb910a22afcc8622adb3336d8bb905c33b3b2196b38e3d13d7e8979"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_A\\importance.json",
+      "sha256": "f92be54ac3c31b8bc3202503df516e4926e93ebe2abdef90677277e33746ac22"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_A\\model.joblib",
+      "sha256": "3e3c6f4fd441228292509721e15663def5ea14b2abe864c8fac384e2fec7db00"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_A\\result.json",
+      "sha256": "24c4239fda00d63763fe85d31679e3990ca30d13864639200b85b162c871aae6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_A\\validation_predictions.parquet",
+      "sha256": "5b10ee75f01a0904d59f8db935cb980f304b453d53f15645b125137ee43d7fd5"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_B\\evaluation_predictions.parquet",
+      "sha256": "b6ded30b6ff7144f064e432669e4790659c524b4670178ffa50003c1dfbd3009"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_B\\importance.json",
+      "sha256": "32c33252d0d4b37e4e663dac5bf8e456a52b42933458caec51e878ad11ba125e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_B\\model.joblib",
+      "sha256": "9a8fee88a1ad3565ee108428abfcd4a3d6c4a25843a34299dc628450707a9fcb"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_B\\result.json",
+      "sha256": "fad39eea4eabd47d2e2294aa89ee9dd22d52691009406801393915e719336896"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_B\\validation_predictions.parquet",
+      "sha256": "bf3e7f23dcb67a252071471ad0a40495bc199f6bf7e5dabd41fbb46fa4e2f5d6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_C\\evaluation_predictions.parquet",
+      "sha256": "5fe9387fc2fda358d3272b4db0015f5cb66ec056782b6b45392df288a61bf4b9"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_C\\importance.json",
+      "sha256": "61c1b6907a678367090a11641161b923805893d9aa7a7402b3c46c02bd2128a6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_C\\model.joblib",
+      "sha256": "374b8d9e7c330c08bfcb64301df933876ab19d22a78c5fbabc8722fb485a9ba7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_C\\result.json",
+      "sha256": "5451b63b69c856df882a51ed3f741e261ab7ec6fe21f47edae134737ee6cc95d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\RF_C\\validation_predictions.parquet",
+      "sha256": "c34dba48adb7d1cf286796228a157eb1f1985b9de3eb48ed0ab58cbb0ebd836e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_A\\evaluation_predictions.parquet",
+      "sha256": "10540d55b9dacbf5571eff9a345f61d45e8bcd74660e38b040d4b772d8b46255"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_A\\importance.json",
+      "sha256": "737d9dc10fdaf6a258e5153bd630246b60c26d9da05d5f20bd1d069975612836"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_A\\learning_curve.json",
+      "sha256": "c65b4926c6a8adfb8058be64d3bb309cd6184294fe045117a8c4742c15389a4f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_A\\model.ubj",
+      "sha256": "e9902f403d849da565df32f8f733b30fc44290716bc4677358fc5c0fa4b4543b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_A\\result.json",
+      "sha256": "ee28dc8ba984b3f7da133518a1ea81a25ad123130c6eef3de47bc50cad8b372d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_A\\validation_predictions.parquet",
+      "sha256": "d24f6dbb890d00ab9a960ba7350ac50eb8737d27fca5b6ef1aeaf5413e70f8b1"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_B\\evaluation_predictions.parquet",
+      "sha256": "b1b9efec5329486fe1c177e1ae08b8abc3a87af34ad14193ae1fc64145c4a2a4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_B\\importance.json",
+      "sha256": "4e96ae67d71d1cfbe2c89fd911c3cc9bc4d123b5b461886bf828a21592f109b2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_B\\learning_curve.json",
+      "sha256": "bd0d792a57ba702015094a7abb869e80ccb2f1bdd674a5131001d1cf3ab21264"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_B\\model.ubj",
+      "sha256": "3581d9f192651587f34199df95942b36d6c30094386793fb73db6b2834ab0eb2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_B\\result.json",
+      "sha256": "14b6a80ebd780a29a640df670aa10837c3b4afb08217fdef7fa020f6b1670aac"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_B\\validation_predictions.parquet",
+      "sha256": "8c89a02c403d987e347ea94b541277d518afba75fcb204384b0a14e876041b89"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C\\evaluation_predictions.parquet",
+      "sha256": "acb109e4e01a4a17e7d932c4d5178b8ce8db5871ee3b8b7a7c7f70b4806ab2a9"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C\\importance.json",
+      "sha256": "6a33be4011cd0c3c65fb510a4b77338b97012d9ef40ece8e90a9c3e313ed0627"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C\\learning_curve.json",
+      "sha256": "ebbcb9a25539067bf09f013508d32a955f9ab6442e730c5251bbedeef2bf55b1"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C\\model.ubj",
+      "sha256": "d5ce0c5145936e95ab958bd687476c08bf50e536165fac917630f3865ef5ba68"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C\\result.json",
+      "sha256": "0e75115fef454d54d8a35ecd5d98b3d378338a42efa1e6d2686cef0dbc40af45"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C\\validation_predictions.parquet",
+      "sha256": "f31295258a49d1366195401e21691fa655e2c576b0f4e48b468912eee68a1b76"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_All\\encoders.joblib",
+      "sha256": "58520310a158e2926ca545aac5001e75f38c8742940f377e51a8ae292c2a00c2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_All\\evaluation_predictions.parquet",
+      "sha256": "c49d09ea883edfc3d0a79129ab04e082065efdea7de7f4caaa00b209bae2487d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_All\\model.ubj",
+      "sha256": "248ef5b848a874ea4b27ec0f79e1b0f31823d484e306edd7bc830cfdda0e602e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_All\\result.json",
+      "sha256": "2e8fd798c1aa7563e965ee4b6b9a4889e5215a19370d79abe9ca6d3288b707af"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_All\\validation_predictions.parquet",
+      "sha256": "5218d4a5fbb2ab324c79c80854c92c4ab48082d96ea69f95b08f02644a33e268"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Lot\\encoders.joblib",
+      "sha256": "a0f8eea5bda6aa67f69e0c6709824d22566129cfbdd2a982c035d666cf2d2266"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Lot\\evaluation_predictions.parquet",
+      "sha256": "95348b206579789a06455de4310e47df3397fe89d350b4682c8b650ba907ef60"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Lot\\model.ubj",
+      "sha256": "b397507324d6fc6aa953674c1553c7cc140ef1af802e6d3b179775c6db9d88b5"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Lot\\result.json",
+      "sha256": "a749444dd0ba7bad5366bf74ce372939937071cb41297fba863ce87291840cb3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Lot\\validation_predictions.parquet",
+      "sha256": "d744e4f4f30bc3d4e8345490a73582e52cb8393d72cf49b97f01870d4ed59e1c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Time\\encoders.joblib",
+      "sha256": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Time\\evaluation_predictions.parquet",
+      "sha256": "f088094ba13a691ab0ad930e33839947d976df3a929606e0f8b0ee25a3582efc"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Time\\model.ubj",
+      "sha256": "849761db611dde0a8406f5b75fdedd035da1f51400e65abae6ca42df5b46dd55"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Time\\result.json",
+      "sha256": "3e477c26262d033a17c429e8bf235468d9857f47b4536147c657077655050461"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Time\\validation_predictions.parquet",
+      "sha256": "5fae508d7ab0828a784926ccc39a8eb38da9f8d28a98c336e4af049e700f4e44"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Tool\\encoders.joblib",
+      "sha256": "e50552791db2af29e888a77843b0411dd37e49e2b6e2421ffcb380218bf012dc"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Tool\\evaluation_predictions.parquet",
+      "sha256": "a53c5312b497b50f5fcbf840b7e76ee16bc24430f5699a93c6b73584740d2014"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Tool\\model.ubj",
+      "sha256": "1d37292e7ea50b4e51e08cdf0cf3423562c0be9d61480a30525eebc78ed6a40d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Tool\\result.json",
+      "sha256": "c321a2142da10a8e53d034aa675596b8807d95eb9561ca5f28984465395f32ce"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Tool\\validation_predictions.parquet",
+      "sha256": "76561854e550e0b79a853b82a268cdcb8069729d0da97cedfe29015a92679003"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Usage\\encoders.joblib",
+      "sha256": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Usage\\evaluation_predictions.parquet",
+      "sha256": "f784a34c6dd54b7ffe946a610f63dcb0ed261490f022cd71d453d449508f420a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Usage\\model.ubj",
+      "sha256": "642eb671e92402415daa3c6d83f75e958373529dc6a26e2766b645e98f896ad5"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Usage\\result.json",
+      "sha256": "342b52026b7bd25b33c774e11770bf2eaf02e5c86f189d517ab7173cf24aa9de"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_time_h600\\XGB_C_ID_Usage\\validation_predictions.parquet",
+      "sha256": "f9cf6f47ffb110f0f389e1f125fe4a15ec397a12648b6d05785b3883d183c552"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\Dummy\\evaluation_predictions.parquet",
+      "sha256": "f3370ad3854c77adfc98ec1d1682889ac66fc064da183a82efafa457f4bfc10e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\Dummy\\model.joblib",
+      "sha256": "7df4fc55f91edfe6ab9edbba76ded4bfe7feab60892d71013dc469475788df7e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\Dummy\\result.json",
+      "sha256": "8f0e4921f39c14f79cd271355494d3f11955e2d4566d20a9c0e30e996b8b8f52"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\Dummy\\validation_predictions.parquet",
+      "sha256": "1dc5ad8b1915582714dcce10afc417128e7309f7d5ae676e99396cad87db3ab0"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\Pressure\\evaluation_predictions.parquet",
+      "sha256": "206f76dd4b6af98f0ecdf1e9c312711d84317de096d0f1ced7085c9ce33b77a8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\Pressure\\model.joblib",
+      "sha256": "dc62af82ed34caccae2df0d839419619aff42300e168bf5fbca2870d29ee83d1"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\Pressure\\result.json",
+      "sha256": "605963a5ab851e6fb6a481ec4c17b15331de0f19ed0b0b289da44de9597f3975"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\Pressure\\validation_predictions.parquet",
+      "sha256": "e8634d91e5520accd48711d33cc945a0ed4977f1df441ce24ac1ecd1f1caae48"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_A\\evaluation_predictions.parquet",
+      "sha256": "ca7697c8827a3550ebe4c5349817bb448e15cfadee3da3f5cfa28ca1083e1258"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_A\\importance.json",
+      "sha256": "6f5b18286e361c5204edf201ccfa38b35575ee807f85cb5de9d71403dc8c69a5"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_A\\model.joblib",
+      "sha256": "87f5c55a3c1d358a1cb1e1634300030393981e6b06be5f9a1af109cd25811e11"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_A\\result.json",
+      "sha256": "4d1a305555e169a94cd156efff2305d53d932c936ef74e53212c52b193f440e7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_A\\validation_predictions.parquet",
+      "sha256": "7d354ba3ad33e48e80b61ad6ca853ad8478a066c99125e81b5a8814f7a9db457"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_B\\evaluation_predictions.parquet",
+      "sha256": "5b631eeabfd9ad9b288ed5997e535f3c9d7ba7f9d86731e29ab37565209a7ed8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_B\\importance.json",
+      "sha256": "e86f62e4b89383ec5188ac00eda97cfab5ad2e488d89d2eff5ddbbae93a2b404"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_B\\model.joblib",
+      "sha256": "03e2de6aba89330c7fa864e566d9a1ffec6f45b6fd3f9391fdb70aeac30ac996"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_B\\result.json",
+      "sha256": "6ac38727091c772b59f92a11b6ca6d2c0372e0beaef7ba05cf80c1c6c58a0221"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_B\\validation_predictions.parquet",
+      "sha256": "736d3c683a995d538d392d2b61d171782ee754fd1a3ec6ff77a9da68931d05fa"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_C\\evaluation_predictions.parquet",
+      "sha256": "7cd90e4d0f544632a5b1e958c80b7bf6f36938f7b37d8333ed2a224bd0567dc4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_C\\importance.json",
+      "sha256": "a9c259b929f5dce6c280f9521e491566ae2ebc26c5958c53020e3da1c460591f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_C\\model.joblib",
+      "sha256": "a30633a58033ffe4ef0d49b6a922d2b467ae07c223c2be22734843a07e84bec4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_C\\result.json",
+      "sha256": "f819dbfac6b1289f367362194c07d8443863377f59c218ea9803ba9b58f05213"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\RF_C\\validation_predictions.parquet",
+      "sha256": "7bc2e271aed19b5446655fb9b5913da103c9b08cd3573e9d95c67d8898ab4e69"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_A\\evaluation_predictions.parquet",
+      "sha256": "3a80d3e51c833981e597a6b9c17d38b6f1ce18f0a33c85e2a63821764dd5f667"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_A\\importance.json",
+      "sha256": "f3250019b402010641b62e8fd18589ec017c37131a5c0eb40818060f36d723d3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_A\\learning_curve.json",
+      "sha256": "d0f42ff076fd2ae727bbdaa0a4ff07a4fdb57cf30f97f57abc42e61848e3546a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_A\\model.ubj",
+      "sha256": "6a324431f395ef2e98bcdd5fb3712360de291bfbea2ab438d355412de943fe30"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_A\\result.json",
+      "sha256": "53f4abd6842c8bc0919f3d54f60b07770e84acfae35e317de264b951ebcceb20"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_A\\validation_predictions.parquet",
+      "sha256": "62ee27cf13813bcddfa6fcc90b4419acb657e4494fe441e3159fbf6cdeba1b0e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_B\\evaluation_predictions.parquet",
+      "sha256": "2d002b3e391a959e28806f38f59a91fd7455bd64c8c83c1051285f55b82a0b02"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_B\\importance.json",
+      "sha256": "e1f213f0d6d131ad0bc2d5b8589fa684b2a77e40704659f8e2aa22943e3f20e4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_B\\learning_curve.json",
+      "sha256": "383b271c9a79fac2a7ee4353038062af6eedcc163a1062cdb19b177611124373"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_B\\model.ubj",
+      "sha256": "353323fd45e57c921988b5074c93848c6c854019e78dd6cdc867207980428d7d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_B\\result.json",
+      "sha256": "089964277cb688cea6813c1b147b4bffcc9e5c6625d4207ef3b784ab891727e2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_B\\validation_predictions.parquet",
+      "sha256": "2afdfdca910dce17d6a02b0f5de73ead4a1c9864acd74661d5a92792819e030e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_C\\evaluation_predictions.parquet",
+      "sha256": "24b4f2bfd623e72563d180d08ee6bc3dbdecf8fc23c3ae5e1ec07339161d91cc"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_C\\importance.json",
+      "sha256": "f0e3a20c770ec9bcdea0c3646496b7a3017089fac544402bcb25b096032855a4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_C\\learning_curve.json",
+      "sha256": "4ca66044d7f54aabdb9bbba71970498a786376cb94b8fd5ad291138acea1571f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_C\\model.ubj",
+      "sha256": "e112f637d3a081943181618f654e092b43fd3295ecf173c670c3feaab87388c8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_C\\result.json",
+      "sha256": "8c76d708c2e8ec3106e3172a4b4bf7e99c1e636f39902a069b679018787dc7f1"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h1800\\XGB_C\\validation_predictions.parquet",
+      "sha256": "808aea12b3b8253f480033d63ac4e99c034865502ae6656aa0f676980ba56b60"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\Dummy\\evaluation_predictions.parquet",
+      "sha256": "4367a437c22cbadd3363d68a4b21460925e7afcf58adcf11beb8ade99ec101de"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\Dummy\\model.joblib",
+      "sha256": "740c7465b76ff525f8b347bf0e5a44925c20d7e978e6a3aea883a45ac33f45b2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\Dummy\\result.json",
+      "sha256": "fc578b0dfe11cbbe6fcb6d048855ce577d832906d00ea6fbdd518bab23be4c57"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\Dummy\\validation_predictions.parquet",
+      "sha256": "7052956171455e100514a08a891656428509d8b337265c7342863818aeffd4a6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\Pressure\\evaluation_predictions.parquet",
+      "sha256": "b58b4d12b94492802c15831e1e2ae211116510fb5a03df18b8ca574f48a6f0b0"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\Pressure\\model.joblib",
+      "sha256": "1120c9414acc03ff16a98ceeaf5b09b9232a5b888fe66003141681f7987072cb"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\Pressure\\result.json",
+      "sha256": "2530c97b3ee39af4dc431f118d0c6d3caada70ce665431a2ada49a09e3ffca7e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\Pressure\\validation_predictions.parquet",
+      "sha256": "5bef92a0bee5fa21267e20b446b994478fe1c9f761ba0dbadcf8452e9c82740d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_A\\evaluation_predictions.parquet",
+      "sha256": "3ee7b8bbb71ac12391d9bff3b8ab903306d1d1e4c32b9449930b9a6214321d0c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_A\\importance.json",
+      "sha256": "1d8328394f3b7f5c2342e94ce295a5fb812bb11f924e47850876b0c62dbc81d9"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_A\\model.joblib",
+      "sha256": "e79c5763f33bf017be93caab32648a30b9710723bb24b56ef877225f1ccba2d3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_A\\result.json",
+      "sha256": "317edc30fcc1ac0f16fc8d72050d24dbc9623c9ebb60df57f5d19c17f73cc0e3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_A\\validation_predictions.parquet",
+      "sha256": "5c495cf732f42cf074780dfedb009b130cc1f10687618e178c14be59e08fb60d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_B\\evaluation_predictions.parquet",
+      "sha256": "6bc5e88311d44c11dd623060ab1b5b60f9f93c5a12750845def63d761442b452"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_B\\importance.json",
+      "sha256": "64816727cb913b31b83c89743b82f75df14716117c0f3df485fd8f7e55d165b3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_B\\model.joblib",
+      "sha256": "16d6b4081d7d2e058dbd7282b8b37ad62a9afbebf689d09558dfe824165b6ca9"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_B\\result.json",
+      "sha256": "dffc55ee29700f315ede2908eca73ce4544c0d4eb77b5ddead96401fba830e5a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_B\\validation_predictions.parquet",
+      "sha256": "80799e915e232855637877e090dd321042e8f24594f90f582ab9002f07562db1"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_C\\evaluation_predictions.parquet",
+      "sha256": "d9a4be76bdb87bb82cfad29f0d6a8b34d898fdd18ce97e8f8600b300d76379d7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_C\\importance.json",
+      "sha256": "f9d6ce46bda8e545abc593d8d87085b94641b5349f1130f69bfe92a9982507ef"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_C\\model.joblib",
+      "sha256": "9626251218841a4c10cc82cfd29a9636106fd6c11d73ffa8af4359da081a096d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_C\\result.json",
+      "sha256": "293b05cd6774d279c787cef8b881284127213fc3ed2dc92056327e4c99504879"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\RF_C\\validation_predictions.parquet",
+      "sha256": "e6a6d92f51084e71c38ce9b85078822be1bc025221a4bb578fd9010e3ce5adce"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_A\\evaluation_predictions.parquet",
+      "sha256": "4e86267afa95abb9828b8714b6fc423c307930ff143f4da4b22937301f78a1ae"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_A\\importance.json",
+      "sha256": "0e1bfcfccdaac45e70975ed6c24d75f72d045bda0b1c27af2f52f91192e052e5"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_A\\learning_curve.json",
+      "sha256": "4d8164937712b98f231bf4fcad2a6d5710c6e285026aa7d78a3fd1328c310bce"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_A\\model.ubj",
+      "sha256": "cf1f082d8cd71ede52f4c258875ae33f90bc8fc5ff3efef992a012341ec28e64"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_A\\result.json",
+      "sha256": "ff88a6e02285c5584ddf212009b0c2c753f40e332deb34b47070ccc61153d39d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_A\\validation_predictions.parquet",
+      "sha256": "b173d2a1f4d5ece8239ae185e6d27365a1fa3d941f50ba4282835ebf1b948d00"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_B\\evaluation_predictions.parquet",
+      "sha256": "0edcd33b9f79ab61822c86b25ee09e04ddbc967c0aaceff82ea591a009e9ba10"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_B\\importance.json",
+      "sha256": "a27212ea3af61c5f5aab1cc098800d88810ca131150a451cd3a71b29eb4086ad"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_B\\learning_curve.json",
+      "sha256": "8c370ec51b85149eabe180be7ab1b21c47168dce8ad58ba4c1d4a8bac20ed536"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_B\\model.ubj",
+      "sha256": "df39e938cc588fb9aed5227a442bbde513e9bd948eec5f7b0f7c05e2d5d43492"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_B\\result.json",
+      "sha256": "e67fda7eb1ddaadb4df8eabf1dc89b773bd72cfb9064b86567f10a420c07b00d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_B\\validation_predictions.parquet",
+      "sha256": "0581676bf0308440659e6b86bb0c89236ffc876b4388bf8f9f38733038826ac6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_C\\evaluation_predictions.parquet",
+      "sha256": "482daa2b60970bbbcec639ad9f07e8264c963eccbd031adb79b5c883962fec7d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_C\\importance.json",
+      "sha256": "60a77be36155b78c0f7260c5db59ff7b8adce02bb5196ffde7b5521d883cdb4b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_C\\learning_curve.json",
+      "sha256": "c02f8e091641df764e585d331a05ce81c66269bcb7a4a177fd14dc11c5799971"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_C\\model.ubj",
+      "sha256": "42bd69ef295f1135abb7fd0aaf97b9c0975e9d4a76af46214d7d3072b1f3b972"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_C\\result.json",
+      "sha256": "989ba2d223c315ff7892bd269e7019829284901fa53c1dcae7d757c2425a5155"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h300\\XGB_C\\validation_predictions.parquet",
+      "sha256": "ac32f2e11bb3ef99ac95db78467e1037e3e54736f98509fdf8a591b7bcfe9956"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\Dummy\\evaluation_predictions.parquet",
+      "sha256": "fd64a890cecfe116025cf5849893d520073253ddb2062c4fd9abe4f73393f1b1"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\Dummy\\model.joblib",
+      "sha256": "b76edd96e635ec01a0e9a14fb5bd496f9c959fecec9494ed56ada07ba46738f4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\Dummy\\result.json",
+      "sha256": "50775fd637d565c1a8f626c6ac1cfa91f5ce4243aeae5fa614b5a06b5d5c3230"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\Dummy\\validation_predictions.parquet",
+      "sha256": "f9e94b1be0ec2bd7df4f0297505479782671217d730940b7519a88b90490ec9a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\Pressure\\evaluation_predictions.parquet",
+      "sha256": "f14940fdae05bdcc77930106e9e5b39e422a04cb1bcd3b3bffcf4105a786396a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\Pressure\\model.joblib",
+      "sha256": "5c98673c05a4c39b9a411882ede5229130a7c423724247f228ae75d6a6634231"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\Pressure\\result.json",
+      "sha256": "f03741c3a6de73a69f616ea436935bc5a1501bb84c9f06889ba65950061d2c05"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\Pressure\\validation_predictions.parquet",
+      "sha256": "b008c6154de42637547a397b0916b815b07d3463fe559def3e74d0578667554c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_A\\evaluation_predictions.parquet",
+      "sha256": "70457f2b218367685dcdffe7868729ee6339bce69c8234090fc3f3ff63686ad1"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_A\\importance.json",
+      "sha256": "e2f7465aa51399cc860b6447c76872116d4fc37b0dba2d072f9ad0c1ef49bd90"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_A\\model.joblib",
+      "sha256": "1d5fdbd80687e0aef7db3651774b6c6a955cb0e760e5c98d6434d802df49e648"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_A\\result.json",
+      "sha256": "af758cfbed37caadce6552b6db2086bf9c04b93e5df9c995119e02860ef73567"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_A\\validation_predictions.parquet",
+      "sha256": "ecef33e97675ecc839a9e209536f782b12cdab44db8746172b4d5a7bb9d0a0ed"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_B\\evaluation_predictions.parquet",
+      "sha256": "c146cc8c54d6a16875abc447470f0261039a25f21362a04ff1d44f28d8799dd5"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_B\\importance.json",
+      "sha256": "7787d70b7701882deb1468873779a4d68cbee3981a793b988077bb4d526296ec"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_B\\model.joblib",
+      "sha256": "ff7edab5c9a416c3192ee4e9c50e9f77de2055ecee568d2a01631e37643ad5d8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_B\\result.json",
+      "sha256": "b3d3a2eb16fd644691961e9827795360ff0d5ec48380d557af225b08b3046ae3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_B\\validation_predictions.parquet",
+      "sha256": "7d60266826830cb8b31df176f3840f362164e5a28f045d133e0c8195bd4823e8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_C\\evaluation_predictions.parquet",
+      "sha256": "45bcb1082e456706bc06584db3ea9d203a6d92659655089957d3ee48659a1642"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_C\\importance.json",
+      "sha256": "4fcc2a37604003684fa958acb9136044a1a8200f5908b19d7e8f54c9171ae1fe"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_C\\model.joblib",
+      "sha256": "99420d66fe0477f3160f00d01bf81ad267e928293172d57af6b57011c9759881"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_C\\result.json",
+      "sha256": "c70f25cd6df450c7909aab1e3370a61ace2f446a4ceaec18f9b1929c35fda3a7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\RF_C\\validation_predictions.parquet",
+      "sha256": "c0f1300b1dd02c02b1b49641c969bb760d9fd2fcd590c21b4f8b688e274fa05c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_A\\evaluation_predictions.parquet",
+      "sha256": "9ea57f7ea64dedf96020aa237679e07b1bc0ead7e2fc712657fb9444b80adb2c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_A\\importance.json",
+      "sha256": "c3c4945435d9f488bf67dc5c5e1f7f9cb5581a4d812d86eaf25aaf8ba3e54d16"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_A\\learning_curve.json",
+      "sha256": "e4b1d051536bcb88099b022dc7073ad3aeec7a39a762d2b11f486ca5de7173e4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_A\\model.ubj",
+      "sha256": "0edfdf2ff4e6291593f636636daafa1ed5533b14d984a039821b9162a4314a05"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_A\\result.json",
+      "sha256": "c1a008fb54eaaea28fdd7b30b52fab940d6e743710129f06946dba2c877a048e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_A\\validation_predictions.parquet",
+      "sha256": "7f72765fbac126ccfbad42521fc8e1e883b84fcd044df2b65a3467fc6325ab21"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_B\\evaluation_predictions.parquet",
+      "sha256": "0446479c010b7055e75a800f6032946bac5d879c772fa88d9f784ddb293d00ff"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_B\\importance.json",
+      "sha256": "960012c5575432c3c123ad96a382e9f3895f308bfe007a59194eae52a4d649dc"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_B\\learning_curve.json",
+      "sha256": "0e253f57d2ae5053ba1f3f890340b6e638092760159d1f60824b6c2b0027bf99"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_B\\model.ubj",
+      "sha256": "e9f8bcec216314d6b21fd3dfb0e690490b3033d5642113aa42e38e4dea35f873"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_B\\result.json",
+      "sha256": "2440214975c1b6e8b01254feb79e135b753d0a61fcc8aff70a51659b3149e079"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_B\\validation_predictions.parquet",
+      "sha256": "630d755b63be484f70edfa6826cb0a91c64d125d61d2387c22a5a8fe37f25d0c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C\\evaluation_predictions.parquet",
+      "sha256": "e7d9a8fb9d2ca66660aec5f5285a90db7b486e54a7ac3e4bb8f9af30383a10ba"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C\\importance.json",
+      "sha256": "ec2c7b66962b7955add07c38bfe93bd38babcec315a2e94d17bc32d3e06c35e6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C\\learning_curve.json",
+      "sha256": "c27c7775e3e3ece016c84d1f6afd48a9c49f161a0d2d94e53db2cb7bf97f2724"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C\\model.ubj",
+      "sha256": "b62732c7006256dafd38b417a47390cffdf145edb645ed156bbcc0453555ff36"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C\\result.json",
+      "sha256": "0ac6ba89ab2604202ea7d6859848717eb28f35ab6723fdd08a9f29d6b4f581ef"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C\\validation_predictions.parquet",
+      "sha256": "2e59ecce4dffbe2c11c0c666001343ec3d55928f6c9ea8d82639d0ce5b536e23"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_All\\encoders.joblib",
+      "sha256": "0e290e2725db8a95e6b01026ab489e73cd792042b1ffee7c725494d094950d55"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_All\\evaluation_predictions.parquet",
+      "sha256": "33c87e6fed2f5736108fa6a163b5bffc8017b82196e0d8d1c2b77ab96f0ef429"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_All\\model.ubj",
+      "sha256": "947805c35d6c60c2dbfb56e60dc4e9c240163908bd9ad51d4ad0b65c206e9e14"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_All\\result.json",
+      "sha256": "5f795797570cd8dc05f190464d49e89489dd10121b07baf0a0423d778b6ff17c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_All\\validation_predictions.parquet",
+      "sha256": "c7dfed98e57fb096f83441a020986bcd4ce945c48121a72fa6ed9675e82bb7e7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Lot\\encoders.joblib",
+      "sha256": "684d3a4be4d33ec40e8632832d244a2c191231672593631ecb1cfa152eb43a5b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Lot\\evaluation_predictions.parquet",
+      "sha256": "db73d62d0bf45af7903a5085dffc8caddb98e12a4935d3ea95b703986aad82bb"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Lot\\model.ubj",
+      "sha256": "7f786522bfeab9f70a7095ef63ae16e1b825353bccb83ab7f7a2e0cf5644baa0"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Lot\\result.json",
+      "sha256": "70c93703f5532e2cfd0e7a82024c969b05be3eadaca76541b9ff612e650f28cd"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Lot\\validation_predictions.parquet",
+      "sha256": "341f5f15c2e76b0abbf704e52de30a7278032c10613365fe4fd553fe95dd99b0"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Time\\encoders.joblib",
+      "sha256": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Time\\evaluation_predictions.parquet",
+      "sha256": "bc761d176fdb32f64b289324a8ef557c6149f6350216a49378b1bb18bbe54449"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Time\\model.ubj",
+      "sha256": "4feb6f4452b9527bd6a955f9ab982cacd1075dac7897cdf04de187233bb57500"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Time\\result.json",
+      "sha256": "830b9b45277d738e52a8d1c14180d333182e471f57ae8f697b4d0dbe3b457ef3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Time\\validation_predictions.parquet",
+      "sha256": "5389a7d855ba527860139a82ea0406cc92a37a5ee6f34b33c44f41aff7732164"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Tool\\encoders.joblib",
+      "sha256": "308724651994ac0379a669f9b9b088fcc38f0f0fb43292203b8e0631a8e8ca26"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Tool\\evaluation_predictions.parquet",
+      "sha256": "303c9ed8c74b56d7b2279e10f4c365af6e1b57af93dc20c05c67549f3e5536ea"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Tool\\model.ubj",
+      "sha256": "0e14e7d0e519b52bd5eecbab3561b907d55ddca39644638a5601c3f9f32a684b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Tool\\result.json",
+      "sha256": "2ded52be7d74b85ad663fd88b72bbcb0dd85c999836a3de83a2365c9d2c21476"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Tool\\validation_predictions.parquet",
+      "sha256": "33f40cb5cf0e2df3cc00bc5e01701ced034f1e71ec288c9ee64c1b3cf3c61bee"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Usage\\encoders.joblib",
+      "sha256": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Usage\\evaluation_predictions.parquet",
+      "sha256": "fe39d75cfb6dee6b53c5699fba40f16c372cbe1fd7048a709301f71cfb475fb9"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Usage\\model.ubj",
+      "sha256": "d6200aae6334eeec457396e7bdcfa25d2a9db2b8182bb1785922e53872b5b7ac"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Usage\\result.json",
+      "sha256": "50552779afceb492989c3c320fe9e111ac32cc5f50ec1236612dd2431595b0c1"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\experiments\\split_tool_h600\\XGB_C_ID_Usage\\validation_predictions.parquet",
+      "sha256": "82ca8390a3d43ab009e239c34f9cd6c424d2c5f9609d06c20179f26f1dcb0243"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\figures\\split_time_cases.json",
+      "sha256": "549a64a1f0fedd2b2db0f2168d0e994adf9c03d8f7517bfa105a4554389b86a6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\figures\\split_tool_cases.json",
+      "sha256": "ad6a9b4c432a5184fe54fce7371d91c19b096d15c96781cd7034d662f5c654e2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\01M01.parquet",
+      "sha256": "48ddf8ab4914fb3e47f76ecdf9eea87b7770442dcc3981d0d939b67d4eec9be8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\01M02.parquet",
+      "sha256": "14ea58ad49084958a3e7bf74258db65e331acac668b62cb370f3ec609eeea95c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\02M01.parquet",
+      "sha256": "c9dc8030f65b9beafcc979e95926135492c61d9b554ddfe4f109b89340677a62"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\02M02.parquet",
+      "sha256": "b4970eb1be6f45e8cde3d0e5bfa553698da55f6c51448a463e296e00fca3c27f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\03M01.parquet",
+      "sha256": "c4d0ccdfa94b40d0d94cadba580dfa347190eca434623c9f4fa6d638222894dc"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\03M02.parquet",
+      "sha256": "ce1e7977a73b16a2b6b3fcf718e4cc950b3e0401854ba0c056cc7390df8d4594"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\04M01.parquet",
+      "sha256": "5e5861fca97ccb4191f5da7ec04efc56c3d1d21e276c59559d8f88dcaccc32f7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\04M02.parquet",
+      "sha256": "52272ad387aa5691e79a244a71240c20f8fe688dd6c314aa36ce55348ecbbc18"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\05M01.parquet",
+      "sha256": "29e1ab72de4b502d0604333d5af85cd48d9cb047a69d1675bf69a2a69fa71bba"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\05M02.parquet",
+      "sha256": "dc54cc7b89caf051b29563f5da3b7ada9ea8aec39a0fdb9ca431cdde9884d1c0"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\06M01.parquet",
+      "sha256": "52b40b3775a23fb27639452b2bc2ca190148d287e4651ee7033d6deaa3343718"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\06M02.parquet",
+      "sha256": "6e9c8b6fc12b3e533aa3c69bba78678edd2e6136ac7873d794d833ba1af451f8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\07M01.parquet",
+      "sha256": "28bbb78aba8f1934f9330d91869ffd2aff74c4facfa867e3ec1323c91803b890"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\08M01.parquet",
+      "sha256": "2a2a7e192a28a942fff24f513b5b5047df37e004715fe19b19493089362dcad5"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\08M02.parquet",
+      "sha256": "cb4cc3d2bf8954ed03a91c039155f9b9d42fab36536b1896773394007ddfbc32"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\09M01.parquet",
+      "sha256": "85a9f3f0288e072c2ff134d498afded72cb11fd6ac7e867ab033a5d0dbd4a5df"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\09M02.parquet",
+      "sha256": "cb9be29978ac74cc7f5f3c8c810d152e9242871c4ae3bda0356f6d9d51e6eb18"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\identity_aux\\10M01.parquet",
+      "sha256": "bfec2b2a9b29554854dc2dcf0815752ef35a179c8cf8ee421ca917335a426019"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\jupyter\\kernels\\phm2018\\kernel.json",
+      "sha256": "635914a5aafcc875830f7ba78a6d58caa00ad25bd97e6770e9650a964caf9400"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\matplotlib\\fontlist-v3.11.0.json",
+      "sha256": "2a6e4adc01e9793fbc59fedd088c767514c4b719578c0fd8e8057a9b73d389dc"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\prospective\\split_time\\predictions.parquet",
+      "sha256": "ce61e1b73d1c9b776827e665985480d86a1f28de9d073d7baa7b1edde7cb4a58"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\prospective\\split_time\\result.json",
+      "sha256": "a8cf914a42751c8f183780f2468338fffccbdbc4084892e80d060ebaf5e15067"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\prospective\\split_tool\\predictions.parquet",
+      "sha256": "e395c15b3229cd93f7f082bf804c8db8c6faddecaa3cb67b193e596805ff1cf8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\prospective\\split_tool\\result.json",
+      "sha256": "6cd656b5b31647ff78e8219e3f577f980ef29fa0a800acc3bdbb8e5bcc858ef5"
+    }
+  ],
+  "raw": {
+    "test/01_M02_DC_test.csv": [
+      612811738,
+      1523233840000000000
+    ],
+    "test/02_M02_DC_test.csv": [
+      496104815,
+      1523239072000000000
+    ],
+    "test/03_M01_DC_test.csv": [
+      405758865,
+      1523241806000000000
+    ],
+    "test/04_M01_DC_test.csv": [
+      601247123,
+      1523251169000000000
+    ],
+    "test/06_M01_DC_test.csv": [
+      451894228,
+      1523265255000000000
+    ],
+    "train/01_M01_DC_train.csv": [
+      1107918027,
+      1523229102000000000
+    ],
+    "train/01_M02_DC_train.csv": [
+      1834454670,
+      1523233781000000000
+    ],
+    "train/02_M01_DC_train.csv": [
+      1012645089,
+      1523235836000000000
+    ],
+    "train/02_M02_DC_train.csv": [
+      1487585817,
+      1523239027000000000
+    ],
+    "train/03_M01_DC_train.csv": [
+      1210432632,
+      1523241766000000000
+    ],
+    "train/03_M02_DC_train.csv": [
+      1805953355,
+      1523246568000000000
+    ],
+    "train/04_M01_DC_train.csv": [
+      1799780895,
+      1523251110000000000
+    ],
+    "train/04_M02_DC_train.csv": [
+      1590098143,
+      1523255243000000000
+    ],
+    "train/05_M01_DC_train.csv": [
+      1709211881,
+      1523260133000000000
+    ],
+    "train/05_M02_DC_train.csv": [
+      680662513,
+      1523261764000000000
+    ],
+    "train/06_M01_DC_train.csv": [
+      1357815302,
+      1523265210000000000
+    ],
+    "train/06_M02_DC_train.csv": [
+      1817138050,
+      1523270003000000000
+    ],
+    "train/07_M01_DC_train.csv": [
+      1872457925,
+      1523275468000000000
+    ],
+    "train/07_M02_DC_train.csv": [
+      1799051413,
+      1523280940000000000
+    ],
+    "train/08_M01_DC_train.csv": [
+      1332300485,
+      1523284942000000000
+    ],
+    "train/08_M02_DC_train.csv": [
+      1796850928,
+      1523289954000000000
+    ],
+    "train/09_M01_DC_train.csv": [
+      1615745448,
+      1523294260000000000
+    ],
+    "train/09_M02_DC_train.csv": [
+      970614936,
+      1523296340000000000
+    ],
+    "train/10_M01_DC_train.csv": [
+      1128599570,
+      1523300052000000000
+    ],
+    "train/10_M02_DC_train.csv": [
+      1332680366,
+      1523303205000000000
+    ],
+    "train/train_faults/01_M01_train_fault_data.csv": [
+      1044,
+      1524067509000000000
+    ],
+    "train/train_faults/01_M02_train_fault_data.csv": [
+      5748,
+      1524067524000000000
+    ],
+    "train/train_faults/02_M01_train_fault_data.csv": [
+      960,
+      1524067684000000000
+    ],
+    "train/train_faults/02_M02_train_fault_data.csv": [
+      2014,
+      1524067697000000000
+    ],
+    "train/train_faults/03_M01_train_fault_data.csv": [
+      5375,
+      1524067716000000000
+    ],
+    "train/train_faults/03_M02_train_fault_data.csv": [
+      19366,
+      1524067729000000000
+    ],
+    "train/train_faults/04_M01_train_fault_data.csv": [
+      477,
+      1524067740000000000
+    ],
+    "train/train_faults/04_M02_train_fault_data.csv": [
+      1630,
+      1524067753000000000
+    ],
+    "train/train_faults/05_M01_train_fault_data.csv": [
+      1390,
+      1524067763000000000
+    ],
+    "train/train_faults/05_M02_train_fault_data.csv": [
+      1534,
+      1524067803000000000
+    ],
+    "train/train_faults/06_M01_train_fault_data.csv": [
+      824,
+      1524067816000000000
+    ],
+    "train/train_faults/06_M02_train_fault_data.csv": [
+      2585,
+      1524067826000000000
+    ],
+    "train/train_faults/07_M01_train_fault_data.csv": [
+      1462,
+      1524067891000000000
+    ],
+    "train/train_faults/07_M02_train_fault_data.csv": [
+      363,
+      1524067904000000000
+    ],
+    "train/train_faults/08_M01_train_fault_data.csv": [
+      6097,
+      1524067916000000000
+    ],
+    "train/train_faults/08_M02_train_fault_data.csv": [
+      393,
+      1524067926000000000
+    ],
+    "train/train_faults/09_M01_train_fault_data.csv": [
+      8234,
+      1524067938000000000
+    ],
+    "train/train_faults/09_M02_train_fault_data.csv": [
+      4324,
+      1524067947000000000
+    ],
+    "train/train_faults/10_M01_train_fault_data.csv": [
+      1467,
+      1524067958000000000
+    ],
+    "train/train_faults/10_M02_train_fault_data.csv": [
+      127,
+      1524067969000000000
+    ],
+    "train/train_ttf/01_M01_DC_train.csv": [
+      103340393,
+      1524152291000000000
+    ],
+    "train/train_ttf/01_M02_DC_train.csv": [
+      173837858,
+      1524152402000000000
+    ],
+    "train/train_ttf/02_M01_DC_train.csv": [
+      100217241,
+      1524151950000000000
+    ],
+    "train/train_ttf/02_M02_DC_train.csv": [
+      96459019,
+      1524152666000000000
+    ],
+    "train/train_ttf/03_M01_DC_train.csv": [
+      92642912,
+      1524152622000000000
+    ],
+    "train/train_ttf/03_M02_DC_train.csv": [
+      161695393,
+      1524151687000000000
+    ],
+    "train/train_ttf/04_M01_DC_train.csv": [
+      98515587,
+      1524151821000000000
+    ],
+    "train/train_ttf/04_M02_DC_train.csv": [
+      131165327,
+      1524152021000000000
+    ],
+    "train/train_ttf/05_M01_DC_train.csv": [
+      156993904,
+      1524152130000000000
+    ],
+    "train/train_ttf/05_M02_DC_train.csv": [
+      55753903,
+      1524151346000000000
+    ],
+    "train/train_ttf/06_M01_DC_train.csv": [
+      128541508,
+      1524152082000000000
+    ],
+    "train/train_ttf/06_M02_DC_train.csv": [
+      176828689,
+      1524151744000000000
+    ],
+    "train/train_ttf/07_M01_DC_train.csv": [
+      183148620,
+      1524151924000000000
+    ],
+    "train/train_ttf/07_M02_DC_train.csv": [
+      106390751,
+      1524151324000000000
+    ],
+    "train/train_ttf/08_M01_DC_train.csv": [
+      139530057,
+      1524152263000000000
+    ],
+    "train/train_ttf/08_M02_DC_train.csv": [
+      97089417,
+      1524151856000000000
+    ],
+    "train/train_ttf/09_M01_DC_train.csv": [
+      150798038,
+      1524152562000000000
+    ],
+    "train/train_ttf/09_M02_DC_train.csv": [
+      69837686,
+      1524151788000000000
+    ],
+    "train/train_ttf/10_M01_DC_train.csv": [
+      70499383,
+      1524152154000000000
+    ],
+    "train/train_ttf/10_M02_DC_train.csv": [
+      68390226,
+      1524152044000000000
+    ]
+  }
+}

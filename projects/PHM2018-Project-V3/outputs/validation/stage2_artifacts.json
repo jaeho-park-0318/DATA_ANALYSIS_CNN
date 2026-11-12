@@ -1,0 +1,39 @@
+{
+  "sha256": {
+    "outputs/stage2/A_input_contract.json": "f34210cdc5b3a3aff83ec1769e0909f76254d0e5b66d481c6bd75f3ba885df78",
+    "outputs/stage2/A_logistic.joblib": "0befcbba61894f4f4594c60f30d2647f45a5c57d1839742bb7b46dcf25d51648",
+    "outputs/stage2/A_logistic_validation.parquet": "dd07ce5cd5a2ac15b5b98a01d93748687ec178fd701b2741f5d30a94e262cb58",
+    "outputs/stage2/A_preprocessor.joblib": "2ca58a4f5cfbb22758c17bc959d4bde948e9bef89f0ae41d27ea3b858ead7249",
+    "outputs/stage2/A_training_process_combinations.json": "859afa73d0c1684f1fcd3e13ed1ae55f2470537b9f3ac86f1da92b176e0334ee",
+    "outputs/stage2/A_xgboost.joblib": "10dcaf75080aa0b4089379fbdb53f37d9d44aed515d67dfcc957b5d98034da67",
+    "outputs/stage2/A_xgboost.ubj": "ba2d351e9536fb0e1b04393babbb4888413e6f521033a5f824856baeb9051b91",
+    "outputs/stage2/A_xgboost_history.json": "9292b22119f9729eba0867c70733ebf1cf2f56de30a300c9ca754d49a8b9f9bd",
+    "outputs/stage2/A_xgboost_validation.parquet": "3fe6c1445784552b7fa475f31220fa7a8ed6eb8efaece62c376ec483cf7fc85c",
+    "outputs/stage2/B_input_contract.json": "4ca8850dbd3f3bfd38ba31a8f2e57686f01392421793b4fc02f605d1cd8cc2a7",
+    "outputs/stage2/B_logistic.joblib": "de47faeeb06fd195826ddc27867cf304964b705c69673ec1071269bff35f0990",
+    "outputs/stage2/B_logistic_validation.parquet": "890e03ec04633fd9ca9c1d678470096d19391d4017af8761698c2414fa2d5216",
+    "outputs/stage2/B_preprocessor.joblib": "b994d4979ebb9e8bca5c2da0c85da16792697c40253b9ec5410bf4217208287d",
+    "outputs/stage2/B_training_process_combinations.json": "696309c0b2f6d16d0ddf524e2f93d88b1434f7587d2fabaa02e2ab39d211255d",
+    "outputs/stage2/B_xgboost.joblib": "7603601d4549d8b6b16c24a315525e7e791717c5b2db889d209e7ed27553f979",
+    "outputs/stage2/B_xgboost.ubj": "371689f6cbee6eb4090916cc97bf850676a1ad495a215250d7e40c4df57c06f7",
+    "outputs/stage2/B_xgboost_history.json": "8c88c594ae8670c66224a05aa3a43d7a5b0f676245ce7a3cfb2f306ee2c57d26",
+    "outputs/stage2/B_xgboost_validation.parquet": "1b04d21707dde669bd32d8368739b115cad76052e8babb18361ded5840d7fce7",
+    "outputs/stage2/cuda_training_smoke.json": "da4111e570bb5e52094e830c6a07418e30fbd4965b1093e296dc219286fc417e",
+    "outputs/stage2/model_parameters.json": "9c9939d978149ddecca1382f722677e8b4bc738004db58df344518524f75c4d7",
+    "outputs/stage2/source_contract.json": "18c51ca1cedf8c854d991a56383f66f7f513677f3752b7ee292f19a0f122e2d6",
+    "outputs/stage2/training_runs.json": "ccca40ef830322497f0da8f047819159c8be0977e51f3f17c1ee0c3eaab3242e"
+  },
+  "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.2.0",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0",
+    "psutil": "7.2.2"
+  },
+  "holdout_scored": false,
+  "bootstrap": "20 Tool 군집 재표집 2000회 seed42; 임계값 고정 조건부 95% 구간, 선택 낙관/이력 불완전/장비쌍 의존성 보정 아님"
+}

@@ -1,0 +1,98 @@
+{
+  "experiment.py": {
+    "sha256": "5e664d4bbae7deec7b47b44fde16973b4565ab999e1be841c1c6beedbb5a4b89",
+    "bytes": 13685
+  },
+  "audit.py": {
+    "sha256": "45f5a35aece9e77383be88c0e8cb43032c0b1d4fe2a62bee367e587375f35405",
+    "bytes": 2543
+  },
+  "report.py": {
+    "sha256": "59b640ad485600d5aa7b1f7982092194be2fac04946d32912a3c750d24965221",
+    "bytes": 27872
+  },
+  "finalize.py": {
+    "sha256": "3ca12f246c9239540d9f789d0ccaf9955058051bb6de0c049eccd2f89c2cf5e5",
+    "bytes": 4110
+  },
+  "download_model.py": {
+    "sha256": "7d96925260ddbfebf67b2a3d6ade009c83727a110e0c4b2d3c05721926c5b2fd",
+    "bytes": 1576
+  },
+  "README.md": {
+    "sha256": "f6470d4c9fc720511799e269ced0d4e6ae0c802f3a2094e1ab7354109781c8f4",
+    "bytes": 4825
+  },
+  "requirements.txt": {
+    "sha256": "d306a5da61d31897f98255da4c9e413dc402e853a1dfbb91c55b83d5c1068451",
+    "bytes": 1401
+  },
+  "TimesFM_TEP_실험.ipynb": {
+    "sha256": "1e6d73925107d43b2099dd22886e4af4bded1d1e05b28eba0275e4bcfc2da473",
+    "bytes": 4705078
+  },
+  "experiment_summary.md": {
+    "sha256": "e32ee65df5fbb85a137d6d3dae676c371f0f9dac5d5f1b74fd0f8349a777182f",
+    "bytes": 13970
+  },
+  "model_comparison.csv": {
+    "sha256": "b03457a52d9369f84c613edcf1000e0a91aa73f76a39fee9d265d4492a8890b7",
+    "bytes": 1687
+  },
+  "variable_metrics.csv": {
+    "sha256": "87783da1e4da6d5cfa8a08495875fa2af416f5d1939d17e25e2c33e41be45153",
+    "bytes": 121037
+  },
+  "sampling_manifest.json": {
+    "sha256": "5276f167a6ca69059ebcc021cf7dd04b29c3a2e5a487ad9fcc1b19cbf0a43087",
+    "bytes": 641
+  },
+  "environment.json": {
+    "sha256": "7b1190effb9adc25abb8536fd82ebe26fb638ea28b302a04954320a2689a580e",
+    "bytes": 769
+  },
+  "result_validation.json": {
+    "sha256": "f41f0af3706ecc0b43bf7a1fbcfef9c94a328f2e44c6c3236261777cf2602b97",
+    "bytes": 354
+  },
+  "preservation_check.json": {
+    "sha256": "68caeee577ad297ff7a955d4cd0c2e88c4c1391fb9e080986faada99ed3fd7d5",
+    "bytes": 65
+  },
+  "notebook_execution.json": {
+    "sha256": "4ee7b57dc54422d3ef9d2ee0d463fde77ca52dff8436ee9622d9d2b8751c8587",
+    "bytes": 186
+  },
+  "checkpoint/config.json": {
+    "sha256": "ff17bbc07b792c5a904cca265b8468579d736a4fe84981da25eb871b0a125bc6",
+    "bytes": 1273
+  },
+  "checkpoint/model.safetensors": {
+    "sha256": "a7592b0a8432baee54483254e5647856911ce69e09d09a9bb65904b2d98f17da",
+    "bytes": 1322898824
+  },
+  "figures/actual_predictions_fault_onset.png": {
+    "sha256": "46c1dc14143a1e822cf63ed69dcae625420055c0227942e49d6ee3afa8fd6a2e",
+    "bytes": 1169844
+  },
+  "figures/forecast_error_fault_onset.png": {
+    "sha256": "ef3482e029af325cad102cdf0f5fc76525075222b5523e276f53e1805363c109",
+    "bytes": 1159981
+  },
+  "figures/model_mae_comparison.png": {
+    "sha256": "84a317bdb03afa0523cb109b4e411c95cecf08994c306c1515013d5f725c7a70",
+    "bytes": 87169
+  },
+  "figures/model_rmse_comparison.png": {
+    "sha256": "37f7329e1a406c4816d5d978599dfa652ea649653db898b3b89de263615978fa",
+    "bytes": 84674
+  },
+  "figures/normal_fault_errors.png": {
+    "sha256": "6c2da4a5a65fd54367f442cb8919013e3f54529bdd3a3445544f313dbffb4af8",
+    "bytes": 136665
+  },
+  "figures/variable_metrics_heatmap.png": {
+    "sha256": "88c5c204736d201c4a756b46058690fe2fb5b4781a5181882205d3ebd9032e1c",
+    "bytes": 855162
+  }
+}

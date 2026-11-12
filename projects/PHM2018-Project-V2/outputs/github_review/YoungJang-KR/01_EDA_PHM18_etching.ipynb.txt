@@ -1,0 +1,220 @@
+
+# ===== CELL 0 (markdown) =====
+<a href="https://colab.research.google.com/github/YoungJang-KR/semiconductor-fault-detection/blob/main/01_EDA_PHM18_etching.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+# ===== CELL 1 (markdown) =====
+1단계
+
+# ===== CELL 2 (code) =====
+from google.colab import drive
+drive.mount('/content/drive')
+
+# ===== CELL 3 (code) =====
+import pandas as pd
+
+# ===== CELL 4 (code) =====
+# train 폴더의 01_M01_DC_train.csv 파일 분석하기
+
+path_train_01 = '/content/drive/MyDrive/phm18/train/01_M01_DC_train.csv'
+
+df_train_01 = pd.read_csv(path_train_01)
+
+print("행, 렬:", df_train_01.shape)
+print("열 항목:", df_train_01.columns.tolist())
+
+# ===== CELL 5 (code) =====
+# 이번에는 train_ttf 폴더의 01_M01_DC_train.csv 파일 분석하기
+
+path_ttf_01 = '/content/drive/MyDrive/phm18/train_ttf/01_M01_DC_train.csv'
+
+df_ttf_01 = pd.read_csv(path_ttf_01)
+
+print("행, 렬:", df_ttf_01.shape)
+print("열 항목:", df_ttf_01.columns.tolist())
+
+# ===== CELL 6 (code) =====
+# train_ttf 폴더에 있는 파일의 열 이름이 너무 긺으로 수정하기
+
+df_ttf_01 = df_ttf_01.rename( columns={'TTF_FlowCool Pressure Dropped Below Limit': 'TTF_pressure_drop',
+                                       'TTF_Flowcool Pressure Too High Check Flowcool Pump': 'TTF_pressure_high',
+                                       'TTF_Flowcool leak': 'TTF_leak'})
+
+# 변경이 잘 되었나 확인
+print("열 항목:", df_ttf_01.columns.tolist())
+
+# ===== CELL 7 (code) =====
+# 시각화를 위해서 train 폴더의 01 파일과 train_ttf 폴더의 01 파일을 시간에 대해 merge
+df_01 = df_train_01.merge(df_ttf_01, on='time')
+
+# merge가 잘 되었나 확인
+print("행, 렬:", df_01.shape)
+print("열 항목:", df_01.columns.tolist())
+
+# ===== CELL 8 (code) =====
+# 센서값에 대한 칼럼을 따로 만들어서 시각화 해보기
+sensor_cols = [ 'IONGAUGEPRESSURE',     # 챔버 내부 압력(진공도)
+               'ETCHSUPPRESSORCURRENT', # 억제 그리드 전류 - 이상적으로는 0이어야 함
+                'FLOWCOOLPRESSURE',     # 기체 헬륨이 든 냉각관의 압력
+                'ACTUALROTATIONANGLE',  # 웨이퍼가 실제 회전한 각도
+                'ACTUALSTEPDURATION'    # 특정 공정이 실제로 진행된 시간
+                ]
+
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots( len(sensor_cols), 1, figsize=(15, len(sensor_cols)*2) ) # 여러 그래프를 그릴 때
+
+for i, col in enumerate(sensor_cols):
+  axes[i].plot(df_01['time'], df_01[col], linewidth=0.3)
+  axes[i].set_ylabel(col, fontsize=9)
+  axes[i].tick_params(labelsize=8)
+
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 9 (markdown) =====
+그림이 다소 복잡하지만, 확실한 건 IONGAUGEPRESSURE와 FLOWCOOLPRESSURE 값이 시간이 2.6e7 부근에서 팍 튀는 것(spike)을 확인할 수 있다.
+
+# ===== CELL 10 (code) =====
+# 고장 변수들(TTF)도 함께 시각화 해보자
+
+for col in sensor_cols:
+  fig, ax1 = plt.subplots( figsize=(15, 3) )
+  ax1.plot( df_01['time'], df_01[col], linewidth=0.3 )
+  ax1.set_ylabel(col, fontsize=9)
+  ax1.tick_params(labelsize=8)
+
+  ax2 = ax1.twinx()
+  ax2.plot( df_01['time'], df_01['TTF_pressure_drop'], linewidth=0.3,
+           color='tab:red', label='TTF_pressure_drop')
+  ax2.plot( df_01['time'], df_01['TTF_pressure_high'], linewidth=0.3,
+           color='tab:orange', label='TTF_pressure_high')
+  ax2.plot( df_01['time'], df_01['TTF_leak'], linewidth=0.3,
+           color='tab:green', label='TTF_leak')
+
+  ax2.legend(fontsize=8, loc='upper right')
+
+  plt.tight_layout()
+  plt.show()
+
+# ===== CELL 11 (markdown) =====
+고장 변수를 같이 그려보면, 확실히 아까 의심했던 2.6e7 부근에서 'TTF_pressure_high' 고장이 났음을 알 수 있다.
+
+# ===== CELL 12 (code) =====
+# 시각화만으로는 한계가 있으므로, 상관관계 분석을 해보자.
+
+ttf_cols = [ 'TTF_pressure_drop', 'TTF_pressure_high', 'TTF_leak' ]
+
+corr_01 = df_01[ sensor_cols + ttf_cols ].corr()
+corr_01_sensor_ttf = corr_01.loc[ sensor_cols, ttf_cols ]
+print(corr_01_sensor_ttf)
+
+# ===== CELL 13 (code) =====
+# 수치로 보면 감이 안오니 히트맵을 그리자
+import seaborn as sns
+
+sns.heatmap(corr_01_sensor_ttf,
+            annot = True,
+            fmt = '.3f',
+            cmap = 'coolwarm', #cbar 아님
+            center = 0)
+
+plt.figure(figsize=(15, 3))
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 14 (markdown) =====
+센서값과 고장 변수 간에는 큰 상관관계를 찾을 수 없다. 아마 시간 축은 백만 단위로 긴데 비해 고장이 일어나는 순간은 아주 짧으니 상관관계에 반영이 안된 것일 수 있다.
+
+# ===== CELL 15 (code) =====
+control_cols = [ 'ETCHBEAMVOLTAGE', 'ETCHBEAMCURRENT','ETCHSUPPRESSORVOLTAGE',
+                'FLOWCOOLFLOWRATE', 'ETCHGASCHANNEL1READBACK', 'ETCHPBNGASREADBACK',
+              'FIXTURETILTANGLE', 'ROTATIONSPEED', 'FIXTURESHUTTERPOSITION',
+              'ETCHSOURCEUSAGE', 'ETCHAUXSOURCETIMER', 'ETCHAUX2SOURCETIMER' ]
+
+
+corr_01_control = df_01[ control_cols + ttf_cols ].corr()
+corr_01_control_ttf = corr_01_control.loc[control_cols, ttf_cols]
+print(corr_01_control_ttf)
+
+sns.heatmap(corr_01_control_ttf,
+            annot = True,
+            fmt = '.3f',
+            cmap = 'coolwarm',
+            center = 0)
+
+plt.figure(figsize=(15,3))
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 16 (markdown) =====
+ETCHAUXSOURCETIMER 및 ETCHAUX2SOURCETIMER 두 가지 변수가 TTF_pressure_high와 강한 음의 상관관계를 보임을 알 수 있다. 이는 챔버 쉴드 소모품의 사용 시간이 늘어날수록 냉각관 압력 과다 고장(TTF_pressure_high)이 임박했다는 것으로 해석할 수 있다.
+
+# ===== CELL 17 (code) =====
+# 이제 라벨링을 통해 고장이 임박했을 때 각 변수들의 분포가 어떻게 변하는지 탐색해보자
+
+print( df_01[ ['TTF_pressure_drop', 'TTF_pressure_high', 'TTF_leak'] ].describe() )
+
+# ===== CELL 18 (code) =====
+# 우리의 현재 관심사는 'TTF_pressure_high' 고장이므로, 고장과 가까운 하위 25%의 값을 쓰자
+threshold = 1839644
+
+df_01['label_pressure_high'] = ( df_01['TTF_pressure_high'] <= threshold ).astype(int)
+print( df_01['label_pressure_high'].value_counts() )
+
+df_01_normal = df_01[ df_01['label_pressure_high']==0 ]
+df_01_prefault = df_01[ df_01['label_pressure_high']==1 ]
+
+print(f"정상 구간 {len(df_01_normal):,}")
+print(f"고장 임박 {len(df_01_prefault):,}")
+
+# ===== CELL 19 (code) =====
+# 나뉘어진(라벨링 된) 구간에서 평균값 비교해보기
+
+train_cols = sensor_cols + control_cols
+
+print("=== 정상 구간 평균값 ===")
+print( df_01_normal[train_cols].mean() )
+print("=== 고장 임박 시 평균값 ===")
+print( df_01_prefault[train_cols].mean())
+
+# ===== CELL 20 (markdown) =====
+한 눈에 잘 보이지 않으니 분포를 그려서 보자
+
+# ===== CELL 21 (code) =====
+fig, axes = plt.subplots(len(train_cols), 1, figsize=(15, len(train_cols)*2))
+
+for i, col in enumerate(train_cols):
+  axes[i].hist( df_01_normal[col].dropna(),     # 히스토그램을 그릴 때 결측값이 있으면 오류가 나므로 제거
+               bins=200,                        # 막대 개수
+               alpha=0.3,                       # 투명도
+               color='steelblue',
+               label='normal',
+               density=True                     # y축을 비율로
+  )
+  axes[i].hist( df_01_prefault[col].dropna(), bins=200, alpha=0.3,
+               color = 'crimson', label='prefault', density=True)
+  axes[i].set_title(col, fontsize=9)
+  axes[i].legend(fontsize=8)
+
+
+plt.suptitle("Distribution Comparion: normal vs prefault")
+plt.tight_layout() # fig라는 도화지가 반복문 바깥에 있으므로
+plt.show()
+
+# ===== CELL 22 (markdown) =====
+앞선 상관관계 분석 결과와 비슷하게, ETCHSOURCEUSAGE와 ETCHAUXSOURCETIMER, ETCHAUX2SOURCETIMER 변수가 정상 구간과 고장 임박 구간에서 상당히 다른 분포를 보인다.이는 챔버 쉴드 소모품의 누적 사용 시간이 길어질수록 냉각관 압력 과다 고장이 임박할 가능성이 커짐을 의미한다고 볼 수 있다.
+
+# ===== CELL 23 (code) =====
+# .dropna() 정당화
+
+for col in train_cols:
+  total = len(df_01_normal)
+  missing = df_01_normal[col].isna().sum()
+  print(f"{col}: 결측값 {missing:,} {missing/total*100: .2f}%")
+
+print("===")
+
+for col in train_cols:
+  total = len(df_01_prefault)
+  missing = df_01_prefault[col].isna().sum()
+  print(f"{col}: 결측값 {missing:,} {missing/total*100: .2f}%")

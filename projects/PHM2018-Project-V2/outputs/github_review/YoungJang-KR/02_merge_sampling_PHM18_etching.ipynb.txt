@@ -1,0 +1,113 @@
+
+# ===== CELL 0 (markdown) =====
+<a href="https://colab.research.google.com/github/YoungJang-KR/semiconductor-fault-detection/blob/main/02_merge_sampling_PHM18_etching.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+# ===== CELL 1 (code) =====
+from google.colab import drive
+drive.mount('/content/drive')
+
+# ===== CELL 2 (code) =====
+# 라이브러리 불러오기
+
+import pandas as pd
+import os
+import numpy as np
+import glob
+
+# ===== CELL 3 (code) =====
+dir_train = '/content/drive/MyDrive/phm18/train'
+dir_ttf = '/content/drive/MyDrive/phm18/train_ttf'
+
+files_train = sorted( glob.glob(os.path.join(dir_train, '*csv')) ) # '*csv'를 통해 확장자가 .csv인 파일만 골라내기
+files_ttf = sorted( glob.glob(os.path.join(dir_ttf, '*csv')) )
+
+print(f"train 파일 개수: {len(files_train)}")
+print(files_train)
+print()
+print(f"train_ttf 파일 개수: {len(files_ttf)}")
+print(files_ttf)
+
+# ===== CELL 4 (code) =====
+# 컬럼 정의하기
+sensor_cols = [
+    'IONGAUGEPRESSURE', 'ETCHSUPPRESSORCURRENT', 'FLOWCOOLPRESSURE',
+    'ACTUALROTATIONANGLE', 'ACTUALSTEPDURATION'
+]
+
+control_cols = [
+    'ETCHBEAMVOLTAGE', 'ETCHBEAMCURRENT', 'ETCHSUPPRESSORVOLTAGE',
+    'FLOWCOOLFLOWRATE', 'ETCHGASCHANNEL1READBACK', 'ETCHPBNGASREADBACK',
+    'FIXTURETILTANGLE', 'ROTATIONSPEED', 'FIXTURESHUTTERPOSITION',
+    'ETCHSOURCEUSAGE', 'ETCHAUXSOURCETIMER', 'ETCHAUX2SOURCETIMER'
+]
+
+ttf_cols = [
+    'TTF_pressure_drop', 'TTF_pressure_high', 'TTF_leak'
+]
+
+# ===== CELL 5 (code) =====
+# 데이터 확인
+
+df_01 = pd.read_csv(files_train[0])
+print(df_01.shape)
+print(df_01.columns.tolist())
+
+# ===== CELL 6 (code) =====
+dfs = [] # 총 20개의 데이터를 담을 바구니 만들기
+
+for file_train, file_ttf in zip(files_train, files_ttf):
+  df_train = pd.read_csv(file_train)
+  df_ttf = pd.read_csv(file_ttf)
+  df_merged = df_train.merge(df_ttf, on='time')
+  df_sampled = df_merged.sample(frac=0.01, random_state=42) # 합친 데이터에서 1%만 랜덤 추출, random_state (중요)
+  dfs.append(df_sampled) # sampled 결과를 바구니에 넣기
+  print(f"{file_train} 처리 완료: {df_sampled.shape}")
+
+df_all_1pct = pd.concat(dfs, axis=0, ignore_index=True) # ignore_index=True는 행 번호를 0부터 새로 매겨줌
+print(df_all_1pct.shape)
+
+# ===== CELL 7 (code) =====
+# 매번 샘플링하기 번거로우므로, 샘플링 된 결과를 저장해두자
+
+df_all_1pct.to_csv('/content/drive/MyDrive/phm18/df_all_sampled_1pct.csv', index=False)
+# index=False는 나중에 데이터를 불러올 때 불필요한 컬럼이 생기지 않게 해줌
+print("저장 완료!", df_all_1pct.shape)
+
+# ===== CELL 8 (code) =====
+# 불러오기
+df_all_1pct = pd.read_csv('/content/drive/MyDrive/phm18/df_all_sampled_1pct.csv')
+print("행, 렬:", df_all_1pct.shape)
+print("열 항목:", df_all_1pct.columns.tolist())
+
+# ===== CELL 9 (code) =====
+# 열 항목 이름 줄이기
+df_all_1pct = df_all_1pct.rename( columns={'TTF_FlowCool Pressure Dropped Below Limit': 'TTF_pressure_drop',
+                                           'TTF_Flowcool Pressure Too High Check Flowcool Pump': 'TTF_pressure_high',
+                                           'TTF_Flowcool leak': 'TTF_leak'
+
+})
+
+# 확인
+print("열 항목 확인:", df_all_1pct.columns.tolist())
+
+# ===== CELL 10 (code) =====
+# 바뀐 이름으로 새로이 저장
+df_all_1pct.to_csv('/content/drive/MyDrive/phm18/df_all_sampled_1pct.csv', index=False)
+print("저장 완료!")
+
+# ===== CELL 11 (code) =====
+# 결측값 확인
+df_all_1pct = pd.read_csv('/content/drive/MyDrive/phm18/df_all_sampled_1pct.csv')
+
+print("행, 렬:", df_all_1pct.shape)
+print("열 항목:", df_all_1pct.columns.tolist())
+print("결측값", df_all_1pct.isna().sum())
+
+# ===== CELL 12 (code) =====
+threshold = 1839644 # 01_M01_DC_train.csv 파일 분석 때와 동일한 threshold 사용
+
+df_all_1pct['label_pressure_high'] = ( df_all_1pct['TTF_pressure_high'] <= threshold ).astype(int)
+print(df_all_1pct['label_pressure_high'].value_counts(normalize=True)) # 수치로 보여줌
+
+# ===== CELL 13 (markdown) =====
+20개 파일 전체를 합친 뒤 1%만 샘플링한 결과에서도 고장 임박 구간의 비율이 대략 23.7% 정도로 일관되게 유지된다. 이는 샘플링이 편향 없이 이루어졌음을 뒷받침 한다.

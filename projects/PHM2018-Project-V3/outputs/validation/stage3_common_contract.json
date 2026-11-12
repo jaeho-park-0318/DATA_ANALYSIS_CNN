@@ -1,0 +1,51 @@
+{
+  "checks": [
+    {
+      "check": "A train/validation 행·라벨·순서 및 공유 전처리 일치",
+      "passed": true
+    },
+    {
+      "check": "B train/validation 행·라벨·순서 및 공유 전처리 일치",
+      "passed": true
+    },
+    {
+      "check": "C train/validation 행·라벨·순서 및 공유 전처리 일치",
+      "passed": true
+    },
+    {
+      "check": "A_logistic 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    },
+    {
+      "check": "B_logistic 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    },
+    {
+      "check": "C_logistic 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    }
+  ],
+  "row_label_order_sha256": {
+    "train": "5f30167a646655b378d2c6fe54368afa9200f7007fcc64ffa3abf11819d45365",
+    "validation": "aaaef5b878cef93f9f8671e5937ad0ff3c57af8c7735053d7a95b0c5e022fd63"
+  },
+  "paired_bootstrap": "10 장비 번호 군집(각 M01/M02를 함께) 2000회 seed42. 임계값 고정 조건부이며 선택 낙관/이력 불완전성 미보정.",
+  "comparison_budgets": [
+    5,
+    10,
+    20
+  ],
+  "holdout_scored": false
+}

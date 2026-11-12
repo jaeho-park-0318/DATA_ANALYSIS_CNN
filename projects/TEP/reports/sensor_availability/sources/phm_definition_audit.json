@@ -1,0 +1,58 @@
+{
+  "source_project": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3",
+  "files": {
+    "src/alarm_evaluation.py": {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\src\\alarm_evaluation.py",
+      "sha256": "27f12ab27081d7eccc86128146485c33e8cf89b820b6ee8fdef0ec6e094a4527"
+    },
+    "src/final_evaluation.py": {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\src\\final_evaluation.py",
+      "sha256": "4042f45bdd7bd15ccb1f54a558d4abaf0861daf6fc76b0163bb90c3099fc102f"
+    },
+    "src/features.py": {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\src\\features.py",
+      "sha256": "8365e66a464fb222892f9583f756489d60a5c8252cc1a8c33b9d1de2d82043b7"
+    },
+    "config/preprocessing.json": {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\config\\preprocessing.json",
+      "sha256": "32d03ddf73d577724efec381492e60104b9d42fc7177dd1646230b88509c8be2"
+    },
+    "outputs/tables/stage6_holdout_summary.csv": {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage6_holdout_summary.csv",
+      "sha256": "308b0422dd4c0de568f7ed4450f382c477ebac9a4d95e44efd3f18618845305f"
+    },
+    "outputs/tables/stage6_holdout_events.csv": {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage6_holdout_events.csv",
+      "sha256": "b86edc44b6dcd18468b2738c4dd7e1fc5e7c89155d2b35f7d19e2dbef22c83ac"
+    },
+    "reports/19_group_and_holdout.md": {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\reports\\19_group_and_holdout.md",
+      "sha256": "a5502ed69a95ba91eb00e755cce49461659248c8e204682cb1507b7ef672cfe7"
+    }
+  },
+  "operating_point": "validation_budget_10",
+  "total_events": 194,
+  "available_events": 91,
+  "unavailable_events": 103,
+  "detected_events": 33,
+  "conditional_detection_rate": 0.3626373626373626,
+  "overall_detection_rate": 0.17010309278350516,
+  "unavailable_fraction": 0.5309278350515464,
+  "event_available_exactly_eligible_anchors_gt_zero": true,
+  "prediction_interval": "[fault_time-600, fault_time-60] inclusive",
+  "unit": "raw; not verified as seconds/minutes",
+  "feature_family": "B: current + 300raw mean/std/min/max",
+  "feature_requirements": {
+    "current_lag_max_raw": 12,
+    "nominal_interval_raw": 4,
+    "history_raw": 300,
+    "minimum_coverage": 0.9,
+    "same_segment_required": true
+  },
+  "anchor_stride_raw": 60,
+  "event_rule_source": "src/alarm_evaluation.py evaluate(): valid=q.time.between(tf-h,tf-lead); available=bool(valid.any())",
+  "caveat": "PHM uses usable pre-fault anchors, not the TEP20x52 rule; reproduce zero-opportunity semantics, not identical physical time/feature rules",
+  "phm_alarm_burden": 9.898564840361171,
+  "phm_alarm_burden_unit": "all alarms per10000 observed-support raw; NOT verified false alarm rate",
+  "primary_public_source": "https://phmsociety.org/conference/annual-conference-of-the-phm-society/annual-conference-of-the-prognostics-and-health-management-society-2018-b/phm-data-challenge-6/"
+}

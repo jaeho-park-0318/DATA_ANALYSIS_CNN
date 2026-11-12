@@ -1,0 +1,205 @@
+{
+  "name": "RF_A",
+  "scheme": "split_time",
+  "horizon": 600,
+  "config": "A",
+  "threshold": 0.7380557132591115,
+  "details": {
+    "columns": [
+      "recipe",
+      "stage",
+      "FLOWCOOLPRESSURE__current",
+      "FLOWCOOLFLOWRATE__current",
+      "IONGAUGEPRESSURE__current",
+      "ETCHBEAMCURRENT__current",
+      "ETCHBEAMVOLTAGE__current",
+      "ETCHSUPPRESSORCURRENT__current"
+    ],
+    "parameters": {
+      "n_estimators": 64,
+      "max_depth": 10,
+      "min_samples_leaf": 20,
+      "max_features": "sqrt",
+      "class_weight": "balanced_subsample",
+      "max_samples": 0.5,
+      "n_jobs": 4,
+      "random_state": 42
+    },
+    "fit_seconds": 5.6100000001024455,
+    "threshold_policy": "검증 F1 최대화",
+    "preprocessing": "대치/스케일링 없음"
+  },
+  "metrics": {
+    "train": {
+      "n": 480367,
+      "positive": 1332,
+      "negative": 479035,
+      "precision": 0.11285859909713121,
+      "recall": 0.5818318318318318,
+      "f1": 0.18904744481034272,
+      "pr_auc_ap": 0.2240856907115173,
+      "roc_auc": 0.9821587606791193,
+      "accuracy": 0.9861584996471447,
+      "tn": 472943,
+      "fp": 6092,
+      "fn": 557,
+      "tp": 775
+    },
+    "validation": {
+      "n": 84124,
+      "positive": 442,
+      "negative": 83682,
+      "precision": 0.041666666666666664,
+      "recall": 0.04524886877828054,
+      "f1": 0.04338394793926247,
+      "pr_auc_ap": 0.014737911090713117,
+      "roc_auc": 0.6956067577959699,
+      "accuracy": 0.9895154771527744,
+      "tn": 83222,
+      "fp": 460,
+      "fn": 422,
+      "tp": 20,
+      "evaluable_events": 56,
+      "detected_events": 6,
+      "event_recall": 0.10714285714285714,
+      "recorded_events": 232,
+      "recorded_events_hit": 6,
+      "recorded_recall_with_observation_limit": 0.02586206896551724,
+      "event_coverage": 0.2413793103448276,
+      "alarm_episodes": 106,
+      "false_alarm_episodes": 99,
+      "unknown_alarm_episodes": 0,
+      "negative_exposure_raw": 4858814.0,
+      "false_alarms_per_3600raw": 0.07335123344915034,
+      "false_alarm_time_fraction": 0.006359165014343006,
+      "active_negative_exposure_raw": 4818974.0,
+      "active_false_alarm_episodes": 99,
+      "false_alarms_per_active_hour_seconds_interpretation": 0.07395765156649528,
+      "lead_time_median_raw": 423.0,
+      "lead_time_min_raw": 60.0,
+      "lead_time_max_raw": 574.0,
+      "lead_times": {
+        "01M02:25637472:f1": 550.0,
+        "01M02:28029182:f1": 122.0,
+        "01M02:28126778:f1": 338.0,
+        "03M01:30703620:f2": 60.0,
+        "04M02:31685914:f3": 574.0,
+        "06M02:30863910:f3": 508.0
+      },
+      "per_type": {
+        "f1": {
+          "events": 36,
+          "detected": 3,
+          "recall": 0.08333333333333333
+        },
+        "f2": {
+          "events": 13,
+          "detected": 1,
+          "recall": 0.07692307692307693
+        },
+        "f3": {
+          "events": 7,
+          "detected": 2,
+          "recall": 0.2857142857142857
+        }
+      },
+      "false_episode_ids": [
+        3528,
+        4971,
+        4975,
+        4976,
+        4977,
+        6957,
+        10087,
+        10088,
+        10089,
+        10090,
+        10092,
+        10093,
+        10094,
+        10095,
+        10096,
+        10097,
+        10098,
+        10099,
+        10100,
+        10101,
+        10102,
+        10103,
+        10104,
+        10105,
+        10106,
+        10107,
+        10108,
+        10109,
+        10110,
+        10112
+      ]
+    },
+    "evaluation": {
+      "n": 10365,
+      "positive": 475,
+      "negative": 9890,
+      "precision": 0.9473684210526315,
+      "recall": 0.11368421052631579,
+      "f1": 0.20300751879699247,
+      "pr_auc_ap": 0.2670839667873516,
+      "roc_auc": 0.714508754190836,
+      "accuracy": 0.9590931017848529,
+      "tn": 9887,
+      "fp": 3,
+      "fn": 421,
+      "tp": 54,
+      "evaluable_events": 56,
+      "detected_events": 6,
+      "event_recall": 0.10714285714285714,
+      "recorded_events": 194,
+      "recorded_events_hit": 6,
+      "recorded_recall_with_observation_limit": 0.030927835051546393,
+      "event_coverage": 0.28865979381443296,
+      "alarm_episodes": 9,
+      "false_alarm_episodes": 2,
+      "unknown_alarm_episodes": 0,
+      "negative_exposure_raw": 546000.0,
+      "false_alarms_per_3600raw": 0.013186813186813187,
+      "false_alarm_time_fraction": 0.0005494505494505495,
+      "active_negative_exposure_raw": 546000.0,
+      "active_false_alarm_episodes": 2,
+      "false_alarms_per_active_hour_seconds_interpretation": 0.013186813186813187,
+      "lead_time_median_raw": 559.0,
+      "lead_time_min_raw": 542.0,
+      "lead_time_max_raw": 580.0,
+      "lead_times": {
+        "01M02:35339442:f3": 580.0,
+        "01M02:36138198:f3": 558.0,
+        "01M02:36408260:f3": 560.0,
+        "01M02:36767406:f3": 546.0,
+        "09M02:45669182:f2": 542.0,
+        "09M02:45670356:f2": 576.0
+      },
+      "per_type": {
+        "f1": {
+          "events": 35,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "events": 12,
+          "detected": 2,
+          "recall": 0.16666666666666666
+        },
+        "f3": {
+          "events": 9,
+          "detected": 4,
+          "recall": 0.4444444444444444
+        }
+      },
+      "false_episode_ids": [
+        3597,
+        3598
+      ]
+    }
+  },
+  "completed": true,
+  "alarm_policy": "동일 Tool·관측 세그먼트·Stage=0/>0 상태의 연속 양성; 72 초과 간격/음성에서 분리; H마다 재발행"
+}

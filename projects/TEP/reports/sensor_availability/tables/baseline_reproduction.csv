@@ -1,0 +1,12 @@
+metric,expected,reproduced,absolute_error,passed
+detection_roc_auc,0.9539266359692902,0.9539266359692902,0.0,True
+detection_f1,0.9276972980979862,0.9276972980979862,0.0,True
+detection_precision,0.9970010449576019,0.9970010449576019,0.0,True
+detection_recall,0.86740225,0.86740225,0.0,True
+sample_false_alarm_rate,0.011099707524594523,0.011099707524594523,0.0,True
+per_event_detected,10000 original records,10000 fresh records,0.0,True
+per_event_first_detection_sample,10000 original records,10000 fresh records,0.0,True
+per_event_delay_minutes,10000 original records,10000 fresh records,0.0,True
+normal_alarm_episodes,705.0,705,0.0,True
+normal_exposure_hours,23525.0,23525.0,0.0,True
+normal_sample_false_alarm_rate,0.012397449521785335,0.012397449521785335,0.0,True

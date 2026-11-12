@@ -1,0 +1,54 @@
+variable,A_header,meaning,unit,device,expected_response,evidence
+xmeas_1,xmv-1,A Feed,kscmh,Feed,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_2,xmv-2,D Feed,kg/hr,Feed,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_3,xmv-3,E Feed,kg/hr,Feed,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_4,xmv-4,A and C Feed,kscmh,Feed,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_5,xmv-5,Recycle Flow,kscmh,Feed,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_6,xmv-6,Reactor Feed Rate,kscmh,Feed,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_7,xmv-7,Reactor Pressure,kPa gauge,Reactor,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_8,xmv-8,Reactor Level,%,Reactor,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_9,xmv-9,Reactor Temperature,Deg C,Reactor,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_10,xmv-10,Purge Rate,kscmh,Purge,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_11,xmv-11,Product Sep Temp,Deg C,Separator,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_12,xmv-12,Product Sep Level,%,Separator,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_13,xmv-13,Product Sep Pressure,kPa gauge,Separator,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_14,xmv-14,Product Sep Underflow,m3/hr,Separator,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_15,xmv-15,Stripper Level,%,Stripper,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_16,xmv-16,Stripper Pressure,kPa gauge,Stripper,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_17,xmv-17,Stripper Underflow,m3/hr,Stripper,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_18,xmv-18,Stripper Temp,Deg C,Stripper,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_19,xmv-19,Stripper Steam Flow,kg/h,Stripper,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_20,xmv-20,Compressor Work,kW,Compressor,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_21,xmv-21,Reactor Coolant Temp,Deg C,Reactor cooling,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_22,xmv-22,Separator Coolant Temp,Deg C,Condenser cooling,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_23,xmv-23,Component A to Reactor,mol %,Reactor feed analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_24,xmv-24,Component B to Reactor,mol %,Reactor feed analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_25,xmv-25,Component C to Reactor,mol %,Reactor feed analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_26,xmv-26,Component D to Reactor,mol %,Reactor feed analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_27,xmv-27,Component E to Reactor,mol %,Reactor feed analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_28,xmv-28,Component F to Reactor,mol %,Reactor feed analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_29,xmv-29,Component A in Purge,mol %,Purge analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_30,xmv-30,Component B in Purge,mol %,Purge analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_31,xmv-31,Component C in Purge,mol %,Purge analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_32,xmv-32,Component D in Purge,mol %,Purge analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_33,xmv-33,Component E in Purge,mol %,Purge analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_34,xmv-34,Component F in Purge,mol %,Purge analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_35,xmv-35,Component G in Purge,mol %,Purge analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_36,xmv-36,Component H in Purge,mol %,Purge analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_37,xmv-37,Component D in Product,mol %,Product analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_38,xmv-38,Component E in Product,mol %,Product analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_39,xmv-39,Component F in Product,mol %,Product analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_40,xmv-40,Component G in Product,mol %,Product analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmeas_41,xmv-41,Component H in Product,mol %,Product analyzer,관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설),TEplot.m; temexd_mod.c Output 1
+xmv_1,미포함,D feed,%,제어 밸브,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공
+xmv_2,미포함,E Feed,%,제어 밸브,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공
+xmv_3,미포함,A Feed,%,제어 밸브,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공
+xmv_4,미포함,A and C Feed,%,제어 밸브,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공
+xmv_5,미포함,Recycle,%,제어 밸브,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공
+xmv_6,미포함,Purge,%,제어 밸브,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공
+xmv_7,미포함,Separator,%,제어 밸브,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공
+xmv_8,미포함,Stripper,%,제어 밸브,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공
+xmv_9,미포함,Steam,%,제어 밸브,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공
+xmv_10,미포함,Reactor Coolant,%,제어 밸브,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공
+xmv_11,미포함,Condenser Coolant,%,제어 밸브,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공
+xmv_12,미포함,Agitator,%,Reactor agitator,제어기 보상으로 변화 가능(가설),TEplot.m; B는 xmv_1~11만 제공

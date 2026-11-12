@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "file": "outputs/figures/stage4/search_grid.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/seed별 비교/고정 임계값 이전/동일 이벤트 행을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage4/retuned_seed.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/seed별 비교/고정 임계값 이전/동일 이벤트 행을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage4/fixed_threshold.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/seed별 비교/고정 임계값 이전/동일 이벤트 행을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage4/paired_gain.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/seed별 비교/고정 임계값 이전/동일 이벤트 행을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage4/joint_frontier.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/seed별 비교/고정 임계값 이전/동일 이벤트 행을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage4/unknown_alarms.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/seed별 비교/고정 임계값 이전/동일 이벤트 행을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage4/training_resources.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/seed별 비교/고정 임계값 이전/동일 이벤트 행을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage4/event_matrix.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/seed별 비교/고정 임계값 이전/동일 이벤트 행을 직접 확인"
+    }
+  ],
+  "figure_count": 8
+}

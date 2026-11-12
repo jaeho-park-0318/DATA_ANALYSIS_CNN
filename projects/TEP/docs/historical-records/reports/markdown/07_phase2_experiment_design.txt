@@ -1,0 +1,47 @@
+# Phase 2 실험 설계와 누수 방지
+
+사용자 승인: 2026-11-10. Dataset B만 모델 학습에 사용했다. 52개 공정 변수 외 faultNumber/simulationRun/sample은 입력에 넣지 않았다.
+
+## 분할과 라벨
+
+공식 Training 500개 simulationRun을 seed2026으로 학습400·검증100개로 나눴다. 같은 run 번호의 모든 Fault와 정상 실행을 함께 묶었다. 공식 Test 500개 RNG family는 최종 평가에 보존했다. 정확한 목록은 phase2_split_manifest.json에 있다. 공유 초기20샘플 해시가 Train/Validation/Test 사이에 겹치지 않는지 자동 검사했다.
+
+학습용 전체 Training 실행은 8,400개 궤적(21상태×400), Validation은 2,100개 궤적, Test는 10,500개 궤적이다. 궤적 수와 독립 난수 family 수(각400/100/500)를 구분한다. 원 seed 자체는 제공되지 않아 해시/공식 seed 설명을 근거로 삼았다.
+
+명목 라벨은 Training sample≤20 및 Test sample≤160을 정상0으로, 이후는 해당 Fault ID1~20으로 처리했다. 실제 센서 반응이 늦게 시작해도 라벨은 주입 기준을 유지했다. 조기 반응이 없는 구간도 평가에서 제외하지 않았다. 관측시간은 sample×3분, 주입시각은 Training1h/Test8h로 정의했다. 첫 기록의 실제 0/3분 관례 미확인에 따른 최대 한 샘플 시간 해석 불확실성이 있다.
+
+## 공정 특징과 표본
+
+- Current: 현재 52개 값.
+- Statistical: Current + 과거20개 관측의 평균·표준편차·최소·최대·변화율로 총312개 값. 변화율 분모는 첫/끝 관측 간57분이다.
+- Temporal: 과거20×52 배열, 인과적 창. 시간 순서는 유지하고 실행 경계를 넘지 않는다.
+
+세 집합의 비교 관측 시점은 동일하다. 처음19개 샘플은 warm-up으로 제외하며 Test에서199,500개 샘플이 제외된다. Training은 sample20,60,…,500을 추출하고 고장 궤적의 정상 prefix는 정상 실행과 중복되지 않도록 제거했다. 결과 학습 창은101,200개, Validation 비교 창102,900개다. 모든8400개 학습 궤적을 포함하지만 모든 행을 학습한 것은 아니다.
+
+**학습 stride40(120분)은 이번 실험의 제한이다.** Training 주입 직후 sample21~59의 창을 직접 학습하지 않아 첫 약2시간의 초기 과도 사례가 충분하지 않다. Test에서는 이 구간을 포함하여 평가했다. 향후 초기 구간을 촘촘하게 학습하려면 새로운 미사용 평가 실행으로 재검증해야 한다.
+
+전 모델의 공통 Test 비교는 sample20부터10개 간격으로997,500개 시점을 사용했다. 선택한 주 모델과 별도 이진 탐지기는 매 샘플의 유효9,880,500개 시점에서도 평가했다. 비교 표와 dense 결과는 같은 지표 이름이라도 표본 집합이 다르므로 구분해서 읽는다.
+
+## 모델·선택·실행 환경
+
+Logistic Regression, Random Forest, XGBoost는 Current/Statistical을 비교했다. natural/balanced를 seed42로 먼저 비교한 후 검증 우수 설정을 seed7/2026으로 반복했다. Logistic Regression은 lbfgs 결정적 해법이어서 seed 반복값이 같을 수 있다. LSTM·GRU·1D-CNN은 동일 창·동일 정규화로 각각3개 seed를 사용했다. 최대8 epoch, patience2, hidden64, Adam lr0.001이다. Transformer는 이번 규모에서 추가하지 않았다.
+
+정규화는 Train 선택 관측으로만 fit했다. 시계열 모델은 채널별 Train 평균·표준편차를 공유한다. Random Forest/XGBoost는 원 특징을 사용했다. 클래스 가중치 및 over/under sampling은 Train에서만 계산했다. SMOTE는 사용하지 않았다.
+
+RTX3060 Laptop6GB에서 PyTorch2.5.1+cu121을 실행했다. 설치된 XGBoost3.4.1의 실제 GPU probe는 CPU로 fallback했으므로 XGBoost는 CPU8 threads로 명시했다. 기존 Conda 환경을 변경하지 않고 프로젝트 .deps에 설치했다. GPU 연산은 seed를 고정했지만 비트 단위 재현까지 보장하도록 deterministic 옵션을 강제하지는 않았다.
+
+주 모델은 검증 탐지F1과 고장분류Macro F1 평균을3개 seed에 걸쳐 평균해 선택했다. 주 모델: `CNN1D_Temporal_balanced_s42`. 대표 seed42는 사전 지정했으며3개 모델의 ensemble이 아니다. 별도 이진 탐지기: `BinaryXGBoost_Statistical_balanced_s42`. 모델·임계값 고정시각(UTC): 2026-11-10T07:20:48.200692+00:00. 이후 Test 수치로 설정을 바꾸지 않았다.
+
+## 경보와 통계
+
+검증에서 정상 샘플 FAR≤1%를 만족하는 후보 중 탐지F1 최대 임계값을 정했다. Test FAR1%를 보장하는 규칙은 아니다. 연속3개 임계값 초과를 경보 확인으로 정의하고, 연속 초과 묶음을1 episode로 센다. 정상 판정1개가 나오면 episode가 끊긴다. 이벤트 지연은 주입 경계에서 카운터를 초기화한 후 post-fault3개 연속 경보의 확인시각과 명목 주입시각 차이다. 주입 전 경보가 이후로 이어지는 경우도3개 post 샘플이 있어야 검출로 센다. 최소 지연은9분이며 warm-up은 별도다.
+
+지연 통계는 검출된 실행만 포함하며 미검출률과 함께 보고한다. 500개 Test run family 전체(모든 Fault 포함)를 단위로500회 cluster bootstrap하여95% 구간을 계산했다. 동일 실행의 행을 독립 표본으로 bootstrap하지 않았다. 일반 Test 지표는 서로 같은 정상 prefix도 각 시나리오의 관측으로 포함하며, 정상 전용 실행 FAR와 주입 전 FAR도 따로 제공한다.
+
+
+## 출처 및 재현
+
+- 데이터: Harvard Dataverse V1.0, https://doi.org/10.7910/DVN/6C3JR1 . RData 4개의 공식 MD5 일치를 Phase 1에서 확인했다.
+- 공정·공개 고장 참조: https://github.com/Blound04/tennessee-eastman-dataset . Dataset A는 학습에 사용하지 않았다. A의 물리 정의를 B 구현과 완전히 동일하다고 가정하지 않았다.
+- API: [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html), [XGBoost](https://xgboost.readthedocs.io/en/stable/gpu/index.html), [PyTorch](https://docs.pytorch.org/docs/stable/generated/torch.nn.modules.rnn.LSTM.html).
+- 실제 설정: configs/phase2.json, 모델 선택 기록: models/phase2/selection_lock.json. 표·그림은 reports/tables/phase2, reports/figures/phase2에 있다.

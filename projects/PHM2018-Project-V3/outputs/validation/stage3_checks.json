@@ -1,0 +1,3154 @@
+{
+  "checks": [
+    {
+      "check": "A_logistic 예측 분모·유한 점수",
+      "passed": true
+    },
+    {
+      "check": "A_logistic 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic 저장 모델",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 1",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 1.0000000000000002",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.90000000000000002",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.83442432386875154",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.83381318181753183",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.83326300835609435",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.5",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.69999999999999996",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.29999999999999999",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.6098869174718855",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.10000000000000001",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.092539986968040472",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.029999999999999999",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.014653331413864998",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.01",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.010030714794993401",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.0052432864904403687",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.0034036135766655207",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.0030000000000000001",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.0013660170952789485",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.001",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.00014963784700375982",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.00023395982061629183",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.0007090094150044024",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.00096056510228663687",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.00033279574243351819",
+      "passed": true
+    },
+    {
+      "check": "A_logistic Pareto 0.00053155418718233707",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost 예측 분모·유한 점수",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost 저장 모델",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost 실제 CUDA 학습",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.10000000000000001",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.29999999999999999",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.5",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.69999999999999996",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.90000000000000002",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 1",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 1.0000000000000002",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.0405135378241539",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.040987536311149597",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.032221682369709015",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.029999999999999999",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.025851907208561897",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.019167358055710793",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.013406799174845219",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.01",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.0069070328027009964",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.001",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.0010509314015507698",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.0014076150255277753",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.0018521256279200315",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.0030000000000000001",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.0029374829027801752",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost Pareto 0.0045553417876362801",
+      "passed": true
+    },
+    {
+      "check": "B_logistic 예측 분모·유한 점수",
+      "passed": true
+    },
+    {
+      "check": "B_logistic 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic 저장 모델",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 1",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 1.0000000000000002",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.90000000000000002",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.88186933851242078",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.88673752233982084",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.88649465793371207",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.72627026498317582",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.5",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.69999999999999996",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.29999999999999999",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.10677356749773022",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.10000000000000001",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.029999999999999999",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.016446030139923094",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.011103160306811331",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.01",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.0054286809172481298",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.0030000000000000001",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.0028381487354636192",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.0010065324022434652",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.001",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 3.2870015151274856e-05",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.00026823642547242345",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.00039387907600030303",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.00057533329818397765",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.00016304741831845603",
+      "passed": true
+    },
+    {
+      "check": "B_logistic Pareto 0.0001867093169130385",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost 예측 분모·유한 점수",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost 저장 모델",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost 실제 CUDA 학습",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.10000000000000001",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.29999999999999999",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.5",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.69999999999999996",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.90000000000000002",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 1",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 1.0000000000000002",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.045467879623174667",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.038316071033477783",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.036124680191278458",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.029999999999999999",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.027236634865403175",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.02351006492972374",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.016344083473086357",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.012543928809463978",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.01",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.0067493477836251259",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.0047024255618453026",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.001",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.0013084722450003028",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.00141893420368433",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.0018087814096361399",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.0021881339605897667",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.0030000000000000001",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost Pareto 0.0031031228136271238",
+      "passed": true
+    },
+    {
+      "check": "C_logistic 예측 분모·유한 점수",
+      "passed": true
+    },
+    {
+      "check": "C_logistic 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic 저장 모델",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 1",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 1.0000000000000002",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.90999502938990084",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.90000000000000002",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.91115873204469688",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.88264723300933889",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.74868232369422816",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.5",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.29999999999999999",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.69999999999999996",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.1140373449027538",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.10000000000000001",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.029999999999999999",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.01678861957043409",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.012647905573248863",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.01",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.0053949430584907532",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.0030000000000000001",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.0023606284521520138",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.001",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.00098802323918789625",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 4.2205096389807296e-05",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 9.0037254267372191e-05",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.00011695940789650194",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.00034919173922389748",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.00016807250358397141",
+      "passed": true
+    },
+    {
+      "check": "C_logistic Pareto 0.00022813797695562244",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost 예측 분모·유한 점수",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost 저장 모델",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost 실제 CUDA 학습",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.10000000000000001",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.29999999999999999",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.5",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.69999999999999996",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.90000000000000002",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 1",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 1.0000000000000002",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.033449672162532806",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.029999999999999999",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.024640552699565887",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.021731011569499969",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.017239497974514961",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.014470826834440231",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.01",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.0093173431232571602",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.0080158291384577751",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.0052526313811540604",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.0043511711992323399",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.0034220288507640362",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.001",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.0026062054093927145",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.0030000000000000001",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.002759566530585289",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.0027776290662586689",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost Pareto 0.00285868882201612",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00014963784700375982 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00014963784700375982 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00014963784700375982 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00023395982061629183 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00023395982061629183 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00023395982061629183 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00033279574243351819 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00033279574243351819 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00033279574243351819 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00053155418718233707 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00053155418718233707 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00053155418718233707 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0007090094150044024 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0007090094150044024 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0007090094150044024 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00096056510228663687 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00096056510228663687 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00096056510228663687 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0013660170952789485 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0013660170952789485 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0013660170952789485 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0030000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0030000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0030000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0034036135766655207 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0034036135766655207 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0034036135766655207 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0052432864904403687 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0052432864904403687 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.0052432864904403687 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.01 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.01 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.01 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.010030714794993401 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.010030714794993401 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.010030714794993401 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.014653331413864998 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.014653331413864998 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.014653331413864998 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.029999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.029999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.029999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.092539986968040472 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.092539986968040472 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.092539986968040472 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.10000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.10000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.10000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.29999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.29999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.29999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.5 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.5 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.5 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.6098869174718855 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.6098869174718855 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.6098869174718855 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.69999999999999996 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.69999999999999996 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.69999999999999996 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.83326300835609435 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.83326300835609435 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.83326300835609435 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.83381318181753183 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.83381318181753183 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.83381318181753183 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.83442432386875154 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.83442432386875154 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.83442432386875154 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.90000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.90000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.90000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/1 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/1 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/1 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/1.0000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/1.0000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/1.0000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0010509314015507698 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0010509314015507698 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0010509314015507698 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0014076150255277753 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0014076150255277753 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0014076150255277753 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0018521256279200315 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0018521256279200315 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0018521256279200315 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0029374829027801752 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0029374829027801752 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0029374829027801752 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0030000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0030000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0030000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0045553417876362801 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0045553417876362801 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0045553417876362801 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0069070328027009964 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0069070328027009964 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0069070328027009964 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.01 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.01 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.01 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.013406799174845219 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.013406799174845219 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.013406799174845219 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.019167358055710793 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.019167358055710793 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.019167358055710793 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.025851907208561897 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.025851907208561897 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.025851907208561897 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.029999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.029999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.029999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.032221682369709015 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.032221682369709015 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.032221682369709015 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0405135378241539 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0405135378241539 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0405135378241539 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.040987536311149597 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.040987536311149597 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.040987536311149597 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.10000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.10000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.10000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.29999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.29999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.29999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.5 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.5 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.5 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.69999999999999996 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.69999999999999996 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.69999999999999996 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.90000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.90000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.90000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/1 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/1 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/1 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/1.0000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/1.0000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/1.0000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/3.2870015151274856e-05 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/3.2870015151274856e-05 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/3.2870015151274856e-05 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00016304741831845603 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00016304741831845603 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00016304741831845603 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0001867093169130385 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0001867093169130385 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0001867093169130385 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00026823642547242345 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00026823642547242345 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00026823642547242345 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00039387907600030303 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00039387907600030303 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00039387907600030303 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00057533329818397765 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00057533329818397765 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00057533329818397765 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0010065324022434652 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0010065324022434652 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0010065324022434652 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0028381487354636192 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0028381487354636192 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0028381487354636192 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0030000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0030000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0030000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0054286809172481298 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0054286809172481298 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0054286809172481298 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.01 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.01 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.01 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.011103160306811331 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.011103160306811331 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.011103160306811331 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.016446030139923094 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.016446030139923094 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.016446030139923094 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.029999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.029999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.029999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.10000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.10000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.10000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.10677356749773022 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.10677356749773022 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.10677356749773022 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.29999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.29999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.29999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.5 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.5 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.5 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.69999999999999996 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.69999999999999996 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.69999999999999996 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.72627026498317582 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.72627026498317582 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.72627026498317582 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.88186933851242078 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.88186933851242078 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.88186933851242078 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.88649465793371207 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.88649465793371207 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.88649465793371207 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.88673752233982084 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.88673752233982084 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.88673752233982084 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.90000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.90000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.90000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/1 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/1 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/1 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/1.0000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/1.0000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/1.0000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0013084722450003028 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0013084722450003028 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0013084722450003028 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.00141893420368433 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.00141893420368433 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.00141893420368433 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0018087814096361399 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0018087814096361399 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0018087814096361399 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0021881339605897667 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0021881339605897667 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0021881339605897667 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0030000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0030000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0030000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0031031228136271238 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0031031228136271238 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0031031228136271238 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0047024255618453026 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0047024255618453026 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0047024255618453026 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0067493477836251259 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0067493477836251259 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0067493477836251259 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.01 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.01 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.01 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.012543928809463978 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.012543928809463978 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.012543928809463978 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.016344083473086357 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.016344083473086357 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.016344083473086357 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.02351006492972374 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.02351006492972374 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.02351006492972374 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.027236634865403175 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.027236634865403175 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.027236634865403175 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.029999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.029999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.029999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.036124680191278458 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.036124680191278458 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.036124680191278458 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.038316071033477783 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.038316071033477783 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.038316071033477783 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.045467879623174667 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.045467879623174667 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.045467879623174667 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.10000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.10000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.10000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.29999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.29999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.29999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.5 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.5 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.5 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.69999999999999996 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.69999999999999996 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.69999999999999996 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.90000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.90000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.90000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/1 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/1 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/1 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/1.0000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/1.0000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/1.0000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/4.2205096389807296e-05 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/4.2205096389807296e-05 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/4.2205096389807296e-05 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/9.0037254267372191e-05 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/9.0037254267372191e-05 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/9.0037254267372191e-05 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00011695940789650194 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00011695940789650194 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00011695940789650194 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00016807250358397141 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00016807250358397141 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00016807250358397141 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00022813797695562244 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00022813797695562244 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00022813797695562244 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00034919173922389748 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00034919173922389748 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00034919173922389748 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00098802323918789625 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00098802323918789625 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.00098802323918789625 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.0023606284521520138 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.0023606284521520138 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.0023606284521520138 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.0030000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.0030000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.0030000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.0053949430584907532 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.0053949430584907532 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.0053949430584907532 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.01 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.01 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.01 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.012647905573248863 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.012647905573248863 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.012647905573248863 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.01678861957043409 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.01678861957043409 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.01678861957043409 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.029999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.029999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.029999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.10000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.10000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.10000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.1140373449027538 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.1140373449027538 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.1140373449027538 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.29999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.29999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.29999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.5 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.5 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.5 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.69999999999999996 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.69999999999999996 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.69999999999999996 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.74868232369422816 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.74868232369422816 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.74868232369422816 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.88264723300933889 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.88264723300933889 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.88264723300933889 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.90000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.90000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.90000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.90999502938990084 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.90999502938990084 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.90999502938990084 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.91115873204469688 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.91115873204469688 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.91115873204469688 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/1 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/1 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/1 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/1.0000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/1.0000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/1.0000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0026062054093927145 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0026062054093927145 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0026062054093927145 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.002759566530585289 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.002759566530585289 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.002759566530585289 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0027776290662586689 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0027776290662586689 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0027776290662586689 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.00285868882201612 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.00285868882201612 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.00285868882201612 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0030000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0030000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0030000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0034220288507640362 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0034220288507640362 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0034220288507640362 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0043511711992323399 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0043511711992323399 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0043511711992323399 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0052526313811540604 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0052526313811540604 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0052526313811540604 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0080158291384577751 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0080158291384577751 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0080158291384577751 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0093173431232571602 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0093173431232571602 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0093173431232571602 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.01 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.01 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.01 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.014470826834440231 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.014470826834440231 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.014470826834440231 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.017239497974514961 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.017239497974514961 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.017239497974514961 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.021731011569499969 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.021731011569499969 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.021731011569499969 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.024640552699565887 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.024640552699565887 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.024640552699565887 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.029999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.029999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.029999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.033449672162532806 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.033449672162532806 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.033449672162532806 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.10000000000000001 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.10000000000000001 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.10000000000000001 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.29999999999999999 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.29999999999999999 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.29999999999999999 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.5 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.5 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.5 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.69999999999999996 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.69999999999999996 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.69999999999999996 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.90000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.90000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.90000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/1 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/1 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/1 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/1.0000000000000002 이벤트 분모/검출 재집계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/1.0000000000000002 검출 시간 경계",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/1.0000000000000002 부담 계산",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.01 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.01 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.01 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.01 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00014963784700375982 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00014963784700375982 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00014963784700375982 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "A_logistic/0.00014963784700375982 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0069070328027009964 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0069070328027009964 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0069070328027009964 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0069070328027009964 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0045553417876362801 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0045553417876362801 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0045553417876362801 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost/0.0045553417876362801 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.011103160306811331 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.011103160306811331 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.011103160306811331 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.011103160306811331 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0054286809172481298 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0054286809172481298 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0054286809172481298 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.0054286809172481298 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00016304741831845603 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00016304741831845603 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00016304741831845603 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "B_logistic/0.00016304741831845603 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.012543928809463978 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.012543928809463978 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.012543928809463978 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.012543928809463978 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0067493477836251259 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0067493477836251259 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0067493477836251259 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost/0.0067493477836251259 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.012647905573248863 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.012647905573248863 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.012647905573248863 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0.012647905573248863 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/0 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/9.0037254267372191e-05 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/9.0037254267372191e-05 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/9.0037254267372191e-05 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "C_logistic/9.0037254267372191e-05 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0080158291384577751 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0080158291384577751 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0080158291384577751 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0080158291384577751 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0034220288507640362 저장 경보 횟수/ID",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0034220288507640362 매칭 고유 이벤트",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0034220288507640362 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost/0.0034220288507640362 경보 시작 실제 점수/라벨",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/A_cohort_contract.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/A_input_contract.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/A_logistic.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/A_logistic_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/A_preprocessor.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/A_xgboost.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/A_xgboost.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/A_xgboost_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/A_xgboost_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/A_xgboost_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/B_cohort_contract.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/B_input_contract.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/B_logistic.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/B_logistic_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/B_preprocessor.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/B_xgboost.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/B_xgboost.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/B_xgboost_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/B_xgboost_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/B_xgboost_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/common_train_ledger.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/common_validation_ledger.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/cuda_training_smoke.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/C_cohort_contract.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/C_input_contract.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/C_logistic.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/C_logistic_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/C_preprocessor.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/C_xgboost.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/C_xgboost.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/C_xgboost_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/C_xgboost_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/C_xgboost_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/model_parameters.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/source_contract.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage3/training_runs.json",
+      "passed": true
+    },
+    {
+      "check": "원본 크기/mtime 보존",
+      "passed": true
+    },
+    {
+      "check": "holdout 미점수화 계약",
+      "passed": true
+    },
+    {
+      "check": "A train/validation 행·라벨·순서 및 공유 전처리 일치",
+      "passed": true
+    },
+    {
+      "check": "B train/validation 행·라벨·순서 및 공유 전처리 일치",
+      "passed": true
+    },
+    {
+      "check": "C train/validation 행·라벨·순서 및 공유 전처리 일치",
+      "passed": true
+    },
+    {
+      "check": "A_logistic 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    },
+    {
+      "check": "B_logistic 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    },
+    {
+      "check": "C_logistic 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost 저장 예측 전체 행·라벨 일치",
+      "passed": true
+    },
+    {
+      "check": "A_logistic 경보 상한 5에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "A_logistic 경보 상한 10에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "A_logistic 경보 상한 20에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost 경보 상한 5에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost 경보 상한 10에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "A_xgboost 경보 상한 20에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "B_logistic 경보 상한 5에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "B_logistic 경보 상한 10에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "B_logistic 경보 상한 20에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost 경보 상한 5에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost 경보 상한 10에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "B_xgboost 경보 상한 20에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "C_logistic 경보 상한 5에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "C_logistic 경보 상한 10에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "C_logistic 경보 상한 20에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost 경보 상한 5에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost 경보 상한 10에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "C_xgboost 경보 상한 20에서 최대 검출·동률 최소 부담",
+      "passed": true
+    },
+    {
+      "check": "대응 비교 검출 증감·같은 이벤트 분모",
+      "passed": true
+    }
+  ],
+  "training_performed": true,
+  "holdout_scored": false
+}

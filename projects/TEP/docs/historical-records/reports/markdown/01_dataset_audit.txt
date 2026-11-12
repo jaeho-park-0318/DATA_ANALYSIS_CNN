@@ -1,0 +1,66 @@
+# Phase 1 데이터 감사
+
+검사 기준일: 2026-11-10 (Asia/Seoul). 폴더는 Dataset A, 프로젝트 루트 RData는 Dataset B다. 원본을 이동하거나 수정하지 않았다.
+
+## Dataset A 확보와 구조
+
+사용자 폴더의 Excel 214개는 모두 Git LFS 포인터였다. 공식 media.githubusercontent.com에서 실제 데이터를 data/raw/github에 복원했고 모든 포인터 SHA256을 대조했다. reports/sources/github_download.json에 결과를 남겼다. 재다운로드: `python tools/fetch_dataset_a.py`. 수동 경로는 공식 GitHub 각 파일의 Raw 다운로드 또는 Git LFS가 설치된 환경에서 `git lfs pull`이다.
+
+전체 649,479행, 42열(Time (h) + 41 측정값), 시각 0부터 시작, 실제 저장 주기 1분이다. 원본 헤더 xmv-1~41은 auto_run.m의 잘못된 명명이며 simout 측정 출력이다. 별도 조작변수 xmv와 교란 플래그 idv는 Excel에 없다. 파일 경로에서 mode/fault/run을 추출했다. 공식 Train/Test 분할은 없다.
+
+| mode | fault | files | samples | unique_series |
+| --- | --- | --- | --- | --- |
+| 1 | 0 | 2 | 33002 | 2 |
+| 1 | 1 | 10 | 30010 | 6 |
+| 1 | 2 | 10 | 30010 | 6 |
+| 1 | 3 | 10 | 30010 | 6 |
+| 1 | 4 | 10 | 30010 | 6 |
+| 1 | 5 | 10 | 30010 | 6 |
+| 1 | 6 | 10 | 10275 | 7 |
+| 1 | 7 | 10 | 30010 | 7 |
+| 1 | 8 | 10 | 30010 | 7 |
+| 1 | 9 | 10 | 30010 | 7 |
+| 1 | 10 | 10 | 30010 | 9 |
+| 1 | 11 | 10 | 30010 | 9 |
+| 1 | 12 | 10 | 30010 | 9 |
+| 1 | 13 | 10 | 30010 | 9 |
+| 1 | 14 | 10 | 30010 | 9 |
+| 1 | 15 | 10 | 30010 | 9 |
+| 1 | 16 | 10 | 30010 | 9 |
+| 1 | 17 | 10 | 30010 | 9 |
+| 1 | 18 | 10 | 30010 | 9 |
+| 1 | 19 | 10 | 30010 | 9 |
+| 1 | 20 | 10 | 30010 | 8 |
+| 1 | 21 | 10 | 30010 | 8 |
+| 3 | 0 | 1 | 3001 | 1 |
+| 4 | 0 | 1 | 3001 | 1 |
+
+README의 고장별 5개/105개 설명과 달리 실제 고장 파일은 210개(21×10)다. Fault 6은 약 17.05~17.15h에 끝나며 종료 이유는 파일만으로 미확인이다. 정상 500h 파일은 30,001행이며 나머지 완전한 50h 파일은 3,001행이다.
+
+## 품질과 독립성
+
+결측 0개, 비유한값 0개, 시간 역전/중복 0개, 파일 내부 전체 측정값 동일 중복행 0개다. 상수 변수와 음수값은 a_inventory.csv, a_variable_statistics.csv에 기록했다. 물리적 범위 위반은 확정하지 않았으며 음수만으로 제거하지 않았다. 예를 들어 steam flow의 음수 측정은 잡음 또는 측정 정의 확인이 필요하다.
+
+전체 측정 시계열 SHA256 고유 수는 168개로, 파일 수 214와 다르다. 중복 추가 파일은 46개다. 이번 정확 일치 중복은 모두 같은 Fault 내부에서 발견됐으며 서로 다른 Fault 간 전체 시계열 일치는 없었다. 길이가 다른 파일의 짧은 쪽 전체가 긴 쪽 선두와 일치하는 쌍은 0개다(a_partial_overlaps.csv). 고유 시계열 수도 난수 독립성을 보장하는 실험 횟수는 아니다. 원래 seed 로그가 없어 진정한 독립 실행 수는 UNKNOWN이다. 모델 분할 전 중복/공유 구간 그룹을 통째로 묶어야 한다.
+
+## Dataset B 원본 검증
+
+| file | rows | columns | run_groups | md5_verified | missing |
+| --- | --- | --- | --- | --- | --- |
+| TEP_FaultFree_Testing.RData | 480000 | 55 | 500 | True | 0 |
+| TEP_FaultFree_Training.RData | 250000 | 55 | 500 | True | 0 |
+| TEP_Faulty_Testing.RData | 9600000 | 55 | 10000 | True | 0 |
+| TEP_Faulty_Training.RData | 5000000 | 55 | 10000 | True | 0 |
+
+공식 배포는 faultNumber, simulationRun, sample과 52개 공정 변수(41 xmeas + 11 xmv)다. 공식 설명에 따르면 각 고장/분할에 500개 RNG 상태가 있고 Train/Test seed는 겹치지 않는다. simulationRun 숫자 자체는 분할별로 재사용된다. 또한 서로 다른 고장 사이의 같은 번호가 독립 seed라는 증거는 없다. 파일/고장/실행별 샘플 수와 해시는 b_all_runs.csv에 있다.
+
+전체 B 실행 그룹 21,000개, 전체 15,330,000행. 실행별 비유한값 합 0, sample 연속성 오류 0, 중복 sample 키 0다. 전체 52변수 동일 시계열의 추가 중복 수 0개. 공식 seed 설명과 실측 중복 검사는 독립성의 서로 다른 증거다.
+
+B의 선두 20개 샘플 전체 52변수 해시는 1000개뿐이며 추가 중복은 20,000개다. Train/Test 간 공유 prefix 해시는 0개다. 동일 분할의 같은 simulationRun은 정상 및 여러 Fault에서 동일한 주입 전 궤적을 공유하므로 21,000개 궤적을 모두 독립 실험으로 취급하면 안 된다. 실행 분할은 같은 분할의 simulationRun 전체를 함께 묶어야 한다. 이 해시 결과는 난수 seed 원값을 복원한 것이 아니다.
+
+
+## 출처와 검증 범위
+
+- Dataset A: https://github.com/Blound04/tennessee-eastman-dataset (MIT). 로컬 README, simulator/auto_run.m, Mode_1_Init.m, MultiLoop_mode1.mdl, TEplot.m, temexd_mod.c를 대조했다. 로컬 checkout의 commit은 미확인이다. 다운로드한 Excel은 원래 LFS 포인터의 SHA256과 일치한다.
+- Dataset B: https://doi.org/10.7910/DVN/6C3JR1 . 공식 API의 V1.0 메타데이터를 reports/sources/harvard_metadata.json에 보존했다. 배포 설명은 public-domain dedication과 면책 조건을 포함한다. 로컬 파일의 공식 MD5 일치 여부는 감사 표에 기록했다.
+- 수치 결과는 로컬 원본의 재현 가능한 기술통계다. Phase 1에서 모델을 학습하거나 Test로 모델을 선택하지 않았다. 자료는 화학공정 시뮬레이션이며 실제 반도체 공정 검증 결과가 아니다.

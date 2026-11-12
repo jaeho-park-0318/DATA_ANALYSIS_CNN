@@ -1,0 +1,173 @@
+
+# ===== CELL 0 (markdown) =====
+<a href="https://colab.research.google.com/github/YoungJang-KR/semiconductor-fault-detection/blob/main/01_practice02.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+# ===== CELL 1 (code) =====
+# 코랩-드라이브 연동
+from google.colab import drive
+drive.mount('/content/drive')
+
+# ===== CELL 2 (code) =====
+# pandas 라이브러리
+import pandas as pd
+
+# train 폴더의 01_M01_DC_train.csv 파일 살펴보기
+path_train = '/content/drive/MyDrive/phm18/train/01_M01_DC_train.csv'
+
+df_train = pd.read_csv(path_train)
+print("행, 렬:", df_train.shape)
+print("열 항목:", df_train.columns.tolist())
+
+# ===== CELL 3 (code) =====
+path_ttf = '/content/drive/MyDrive/phm18/train_ttf/01_M01_DC_train.csv'
+
+df_ttf = pd.read_csv(path_ttf)
+print("행, 렬:", df_ttf.shape)
+print("열 항목:", df_ttf.columns.tolist())
+
+# ===== CELL 4 (code) =====
+# column index 이름 변경
+df_ttf = df_ttf.rename( columns={
+    'TTF_FlowCool Pressure Dropped Below Limit': 'TTF_pressure_drop',
+    'TTF_Flowcool Pressure Too High Check Flowcool Pump': 'TTF_pressure_high',
+    'TTF_Flowcool leak': 'TTF_leak'})
+
+# 이름 변경이 잘 되었는지 확인
+print("열 항목:", df_ttf.columns.tolist())
+
+# ===== CELL 5 (code) =====
+# 시간 기준으로 merge
+df = df_train.merge(df_ttf, on='time')
+
+# merge가 잘 되었나 확인
+print("행, 렬:", df.shape)
+print("열 항목:", df.columns.tolist())
+
+# ===== CELL 6 (code) =====
+# 시간 기준 시각화
+import matplotlib.pyplot as plt
+
+sensor_cols = ['IONGAUGEPRESSURE', 'ETCHSUPPRESSORCURRENT',
+              'FLOWCOOLPRESSURE', 'ACTUALROTATIONANGLE', 'ACTUALSTEPDURATION']
+
+# 복습
+fig, axes = plt.subplots( len(sensor_cols), 1, figsize=(15, len(sensor_cols)*2) )
+
+for i, col in enumerate(sensor_cols):
+  axes[i].plot( df['time'], df[col], linewidth=0.3 )
+  axes[i].set_ylabel(col, fontsize=9)
+  axes[i].tick_params(labelsize=8)
+
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 7 (code) =====
+for sensor in sensor_cols:
+  fig, ax1 = plt.subplots(figsize=(15, 3))
+  ax1.plot( df['time'], df[sensor], linewidth=0.3 )
+  ax1.set_ylabel(sensor, fontsize=9)
+  ax1.tick_params(labelsize=8)
+
+  ax2 = ax1.twinx()
+  ax2.plot( df['time'], df['TTF_pressure_drop'], color='tab:red')
+  ax2.plot( df['time'], df['TTF_pressure_high'], color='tab:orange')
+  ax2.plot( df['time'], df['TTF_leak'], color='tab:green')
+
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 8 (code) =====
+window = df[ (df['time'] > 2.5e7) & (df['time'] < 2.7e7) ]
+
+ttf_cols = [ 'TTF_pressure_drop', 'TTF_pressure_high'] # TTF_leak 제외
+
+for sensor in sensor_cols:
+  fig, ax1 = plt.subplots(figsize=(15, 3))
+  ax1.plot( window['time'], window[sensor], linewidth=0.3 )
+  ax1.set_ylabel(sensor, fontsize=9)
+  ax1.tick_params(labelsize=8)
+
+  ax2 = ax1.twinx()
+  ax2.plot( window['time'], window['TTF_pressure_drop'], color='tab:red' )
+  ax2.plot( window['time'], window['TTF_pressure_high'], color='tab:orange')
+  ax2.plot( window['time'], window['TTF_leak'], color='tab:green')
+  ax2.set_ylabel('ttf', fontsize=9)
+  ax2.tick_params(labelsize=8)
+
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 9 (code) =====
+# 상관관계 파악
+
+train_cols = [ 'IONGAUGEPRESSURE', 'ETCHBEAMVOLTAGE', 'ETCHBEAMCURRENT',
+              'ETCHSUPPRESSORVOLTAGE', 'ETCHSUPPRESSORCURRENT', 'FLOWCOOLFLOWRATE',
+               'FLOWCOOLPRESSURE', 'ETCHGASCHANNEL1READBACK', 'ETCHPBNGASREADBACK',
+               'FIXTURETILTANGLE', 'ROTATIONSPEED', 'ACTUALROTATIONANGLE',
+               'FIXTURESHUTTERPOSITION', 'ETCHSOURCEUSAGE', 'ETCHAUXSOURCETIMER',
+               'ETCHAUX2SOURCETIMER', 'ACTUALSTEPDURATION' ]
+
+corr = df[ train_cols + ttf_cols ].corr()
+corr_ttf = corr.loc[train_cols, ttf_cols]
+print(corr_ttf)
+
+# ===== CELL 10 (code) =====
+import seaborn as sns
+
+sns.heatmap(corr_ttf,
+            annot=True,
+            fmt = '.3f',
+            cmap = 'coolwarm',
+            center = 0)
+
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 11 (code) =====
+# describe로 정보 파악하기
+print(df[ ['TTF_pressure_drop', 'TTF_pressure_high', 'TTF_leak'] ].describe())
+
+# ===== CELL 12 (code) =====
+# TTF_pressure_high 고장 예측을 위한 threshold 설정
+threshold = 1839644
+
+df['label_pressure_high'] = (df['TTF_pressure_high'] <= threshold).astype(int)
+
+print(df['label_pressure_high'].value_counts())
+
+# ===== CELL 13 (code) =====
+# 복습
+df_normal = df[ df['label_pressure_high'] == 0 ]
+df_prefault = df[ df['label_pressure_high'] == 1 ]
+
+print(f"정상구간: {len(df_normal):,}행")
+print(f"고장 직전: {len(df_prefault):,}행")
+
+# ===== CELL 14 (code) =====
+print("=== 정상 구간에서 센서값 평균 ===")
+print( df_normal[train_cols].mean() )
+print("=== 고장 직전에서 센서값 평균 ===")
+print( df_prefault[train_cols].mean() )
+
+# ===== CELL 15 (code) =====
+fig, axes = plt.subplots(len(train_cols), 1, figsize=(15, len(train_cols)*2))
+axes = axes.flatten()
+
+for i, col in enumerate(train_cols):
+    axes[i].hist(df_normal[col].dropna(), bins=50, alpha=0.5,
+                 color='steelblue', label='normal', density=True)
+    axes[i].hist(df_prefault[col].dropna(), bins=50, alpha=0.5,
+                 color='crimson', label='prefault', density=True)
+    axes[i].set_title(col, fontsize=10)
+    axes[i].legend(fontsize=8)
+
+plt.suptitle("sensor distribution: normal vs prefault (TTF_pressure_high)", fontsize=13)
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 16 (code) =====
+# 결측값 정당화
+for col in ['ETCHSOURCEUSAGE', 'ETCHAUXSOURCETIMER', 'ETCHAUX2SOURCETIMER']:
+  total = len(df_normal)
+  missing = df_normal[col].isna().sum()
+  print(f"{col}: 결측값 {missing:,}{missing/total*100: .2f}%")

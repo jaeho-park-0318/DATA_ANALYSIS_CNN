@@ -1,0 +1,966 @@
+{
+  "scope": "각 장비의 처음·마지막 최대 4096 정규화 시각. 전체 검증은 기존 3단계 증거를 재사용하며 이번 대조는 독립 표본 검사다.",
+  "rows": [
+    {
+      "Tool": "01M01",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "01M01",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "01M01",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "01M01",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "01M01",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "01M01",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "01M02",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "01M02",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "01M02",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "01M02",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "01M02",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "01M02",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M01",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M01",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M01",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M01",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M01",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M01",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M02",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M02",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M02",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 4096,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M02",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M02",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "02M02",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M01",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M01",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M01",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 4096,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M01",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M01",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M01",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M02",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M02",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M02",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M02",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M02",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "03M02",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M01",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M01",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M01",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M01",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M01",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M01",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M02",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M02",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 4096,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M02",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M02",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M02",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "04M02",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M01",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M01",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M01",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M01",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M01",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M01",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M02",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M02",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M02",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M02",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M02",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "05M02",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M01",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M01",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M01",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M01",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M01",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M01",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M02",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M02",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M02",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M02",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M02",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "06M02",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M01",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M01",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M01",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M01",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M01",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M01",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M02",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M02",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M02",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 4096,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M02",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M02",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "07M02",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M01",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M01",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M01",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M01",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M01",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M01",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M02",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 4096,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M02",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M02",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 4096,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M02",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M02",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "08M02",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M01",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M01",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M01",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M01",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M01",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M01",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M02",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M02",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M02",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 4096,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M02",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M02",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "09M02",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M01",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M01",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M01",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M01",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M01",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M01",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M02",
+      "location": "first",
+      "fault_code": "f1",
+      "rows": 4096,
+      "nulls": 0,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M02",
+      "location": "first",
+      "fault_code": "f2",
+      "rows": 4096,
+      "nulls": 4096,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M02",
+      "location": "first",
+      "fault_code": "f3",
+      "rows": 4096,
+      "nulls": 4096,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M02",
+      "location": "last",
+      "fault_code": "f1",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M02",
+      "location": "last",
+      "fault_code": "f2",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    },
+    {
+      "Tool": "10M02",
+      "location": "last",
+      "fault_code": "f3",
+      "rows": 1,
+      "nulls": 1,
+      "mismatches": 0
+    }
+  ],
+  "mismatches": 0
+}

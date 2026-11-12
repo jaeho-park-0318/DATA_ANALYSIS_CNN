@@ -1,0 +1,11 @@
+{
+  "primary": "CNN1D_Temporal_balanced_s42",
+  "tree_model": "XGBoost_Statistical_balanced_s42",
+  "background": "64 training windows, RNG42",
+  "cohort": "Test runs1-5; samples240,480,960; 15 windows per fault",
+  "output": "known fault class raw logit, not physical causal effect",
+  "gradient_samples": 64,
+  "units": "logit contribution",
+  "aggregation": "sum absolute contributions across derived summaries or temporal lags",
+  "cause_accuracy": "not computed: direct cause-to-measurement mapping and B simulator fault implementation not fully verified"
+}

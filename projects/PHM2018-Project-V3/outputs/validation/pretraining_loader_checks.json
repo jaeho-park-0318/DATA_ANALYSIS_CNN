@@ -1,0 +1,48 @@
+{
+  "full_loader_checks": [
+    {
+      "scheme": "temporal",
+      "split": "train",
+      "rows": 916051,
+      "positive": 2332,
+      "passed": true
+    },
+    {
+      "scheme": "temporal",
+      "split": "validation",
+      "rows": 25266,
+      "positive": 776,
+      "passed": true
+    },
+    {
+      "scheme": "temporal",
+      "split": "holdout",
+      "rows": 45664,
+      "positive": 760,
+      "passed": true
+    },
+    {
+      "scheme": "group",
+      "split": "train",
+      "rows": 1305580,
+      "positive": 2484,
+      "passed": true
+    },
+    {
+      "scheme": "group",
+      "split": "validation",
+      "rows": 489332,
+      "positive": 565,
+      "passed": true
+    },
+    {
+      "scheme": "group",
+      "split": "holdout",
+      "rows": 210096,
+      "positive": 819,
+      "passed": true
+    }
+  ],
+  "common_feature_schemas_checked": 6,
+  "raw_metadata_unchanged": true
+}

@@ -1,0 +1,134 @@
+{
+  "sha": "c735bffe77d05746d77439571260330ada06d936",
+  "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/trees/c735bffe77d05746d77439571260330ada06d936",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83972fadc2724842e111d0d3e2829a59ae3d3f45",
+      "size": 4628,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/83972fadc2724842e111d0d3e2829a59ae3d3f45"
+    },
+    {
+      "path": "01_EDA_PHM18_etching.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d31275b5ef7b5b2c8e74645b3dc940496f33a0eb",
+      "size": 1029535,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/d31275b5ef7b5b2c8e74645b3dc940496f33a0eb"
+    },
+    {
+      "path": "02_merge_sampling_5pct_PHM18_etching.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9af7c509147f9c951d1bf3978a3e101b9ac404b5",
+      "size": 17770,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/9af7c509147f9c951d1bf3978a3e101b9ac404b5"
+    },
+    {
+      "path": "02_merge_sampling_PHM18_etching.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c9f016da3cf9f34e861237810d56ff64b5e034b",
+      "size": 18784,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/5c9f016da3cf9f34e861237810d56ff64b5e034b"
+    },
+    {
+      "path": "03_modelling_PHM18_etching.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "690b3ec988043d92fad5a7f6a034d340fc446cbc",
+      "size": 125006,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/690b3ec988043d92fad5a7f6a034d340fc446cbc"
+    },
+    {
+      "path": "04_practice.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c072a8e9b4176a59b7afd14f0332bc18dcfedf15",
+      "size": 17276,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/c072a8e9b4176a59b7afd14f0332bc18dcfedf15"
+    },
+    {
+      "path": "EDA_PHM18_etching.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bbd3aaa1bce7ea7292d413fcec70552cf3a27b4",
+      "size": 1090371,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/1bbd3aaa1bce7ea7292d413fcec70552cf3a27b4"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81da0dc4a1e398cb153637de01c7ec3ad773e3fc",
+      "size": 1069,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/81da0dc4a1e398cb153637de01c7ec3ad773e3fc"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e33c65d79662aaf3070954d2f526de4f7fc58152",
+      "size": 7156,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/e33c65d79662aaf3070954d2f526de4f7fc58152"
+    },
+    {
+      "path": "from_scratch_02_PHM18_etching.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41d43f4b4f55c0a66f68ba63fb7556bc7776a947",
+      "size": 343085,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/41d43f4b4f55c0a66f68ba63fb7556bc7776a947"
+    },
+    {
+      "path": "from_scratch_03_PHM18_etching.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10a873bace3ba654e5faa3a380bb23cdafcfd750",
+      "size": 23512,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/10a873bace3ba654e5faa3a380bb23cdafcfd750"
+    },
+    {
+      "path": "from_scratch_PHM18_etching.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84efb1ca3bdf2c27222ba553cfa5074f0b0fbd5a",
+      "size": 1340040,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/84efb1ca3bdf2c27222ba553cfa5074f0b0fbd5a"
+    },
+    {
+      "path": "practice",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0c4d4002d00a171faea08d90dbfd3b8d33f8d701",
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/trees/0c4d4002d00a171faea08d90dbfd3b8d33f8d701"
+    },
+    {
+      "path": "practice/01_practice.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5382d5bb5400caf04928c5160a41133d4e06cd8e",
+      "size": 257714,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/5382d5bb5400caf04928c5160a41133d4e06cd8e"
+    },
+    {
+      "path": "practice/01_practice02.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fbc56f6e193e8fb8adc6f31f375e86f2b375cea",
+      "size": 1318186,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/4fbc56f6e193e8fb8adc6f31f375e86f2b375cea"
+    },
+    {
+      "path": "practice/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f95df3521c9a68b073f867d6b9c09f3e21064bf6",
+      "size": 15,
+      "url": "https://api.github.com/repos/YoungJang-KR/semiconductor-fault-detection/git/blobs/f95df3521c9a68b073f867d6b9c09f3e21064bf6"
+    }
+  ],
+  "truncated": false
+}

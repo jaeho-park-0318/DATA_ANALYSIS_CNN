@@ -1,0 +1,167 @@
+
+# ===== CELL 0 (markdown) =====
+<a href="https://colab.research.google.com/github/YoungJang-KR/semiconductor-fault-detection/blob/main/from_scratch_03_PHM18_etching.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+# ===== CELL 1 (code) =====
+from google.colab import drive
+drive.mount('/content/drive')
+
+# ===== CELL 2 (code) =====
+import pandas as pd
+import os
+import glob
+
+# ===== CELL 3 (code) =====
+dir_train = '/content/drive/MyDrive/phm18/train'
+dir_ttf = '/content/drive/MyDrive/phm18/train_ttf'
+
+files_train = sorted( glob.glob(os.path.join(dir_train, '*csv')) )
+files_ttf = sorted( glob.glob(os.path.join(dir_ttf, '*csv')) )
+
+exclude_tools = ['04_M02', '10_M02']
+
+files_train = [ f for f in files_train if not any(tool in f for tool in exclude_tools) ]
+files_ttf = [f for f in files_ttf if not any(tool in f for tool in exclude_tools) ]
+
+print(f"04_M02 및 10_M02 제외 후 train 파일 개수 {len(files_train)}개")
+print("04_M02 및 10_M02 제외 후 train 파일 목록:", files_train)
+print(f"04_M02 및 10_M02 제외 후 train_ttf 파일 개수 {len(files_ttf)}개")
+print("04_M02 및 10_M02 제외 후 train_ttf 파일 목록", files_ttf)
+
+# ===== CELL 4 (code) =====
+# 샘플링
+
+dfs = []
+
+for file_train, file_ttf in zip(files_train, files_ttf):
+  df_train = pd.read_csv(file_train)
+  df_ttf = pd.read_csv(file_ttf)
+  df_merged = df_train.merge(df_ttf, on='time')
+  df_sampled = df_merged.sample(frac=0.05, random_state=42)
+  dfs.append(df_sampled)
+  print(f"{file_train} 처리 완료, {df_sampled.shape}")
+
+df_sampled_5pct = pd.concat(dfs, axis=0, ignore_index=True)
+print(df_sampled_5pct.shape)
+
+# ===== CELL 5 (code) =====
+df_sampled_5pct.to_csv('/content/drive/MyDrive/phm18/df_sampled_5pct.csv', index=False)
+# index=False 빼먹지 않기
+
+print("저장 완료!")
+
+# ===== CELL 6 (code) =====
+df_sampled_5pct = pd.read_csv('/content/drive/MyDrive/phm18/df_sampled_5pct.csv')
+
+print("행, 렬:", df_sampled_5pct.shape)
+print("열 항목:", df_sampled_5pct.columns.tolist())
+
+# ===== CELL 7 (code) =====
+df_sampled_5pct = df_sampled_5pct.rename( columns={
+    'TTF_FlowCool Pressure Dropped Below Limit': 'TTF_pressure_drop',
+    'TTF_Flowcool Pressure Too High Check Flowcool Pump': 'TTF_pressure_high',
+    'TTF_Flowcool leak': 'TTF_leak'
+})
+
+print("축약된 열 항목:", df_sampled_5pct.columns.tolist())
+
+# ===== CELL 8 (code) =====
+# 바뀐 이름으로 저장
+
+df_sampled_5pct.to_csv('/content/drive/MyDrive/phm18/df_ex_5pct', index=False)
+print("저장 완료!")
+
+# ===== CELL 9 (code) =====
+df_ex_5pct = pd.read_csv('/content/drive/MyDrive/phm18/df_ex_5pct')
+
+print("행, 렬:", df_ex_5pct.shape)
+print("열 항목:", df_ex_5pct.columns.tolist())
+
+# ===== CELL 10 (code) =====
+thresholds_by_tool = df_ex_5pct.groupby('Tool')['TTF_pressure_high'].quantile(0.25)
+print(thresholds_by_tool)
+
+# ===== CELL 11 (code) =====
+results = []
+
+col = 'TTF_Flowcool Pressure Too High Check Flowcool Pump'
+
+for file_train, file_ttf in zip(files_train, files_ttf):
+  df_train = pd.read_csv(file_train)
+  df_ttf = pd.read_csv(file_ttf)
+  df_merged = df_train.merge(df_ttf, on='time')
+
+  t_min = df_merged['time'].min()
+  t_max = df_merged['time'].max()
+  full_range = t_max - t_min
+
+  df_real = df_merged[ df_merged[col].notna() ] # 결측값이 아닌 값만 넣기
+
+  if len(df_real) == 0:
+    real_range = 0
+    ratio = 0
+  else:
+    real_t_min = df_real['time'].min()
+    real_t_max = df_real['time'].max()
+    real_range = real_t_max - real_t_min
+    ratio = real_range / full_range
+
+    tool_name = df_merged['Tool'].iloc[0]
+
+    results.append({
+        '장비': tool_name,
+        '실제값 개수': len(df_real),
+        '전체 범위': full_range,
+        '실제값 범위': real_range,
+        '비율(%)': ratio*100
+    })
+    print(f"{tool_name} 처리 완료")
+
+df_results = pd.DataFrame(results)
+print(df_results)
+
+# ===== CELL 12 (markdown) =====
+04M01(1.52%), 07M02(11.6%), 10M01(13.3%) 등 샘플링 시 주의 필요
+
+# ===== CELL 13 (code) =====
+# 01M01 장비 파일 다시 읽어오기 (전체 데이터, 샘플링 전)
+df_train_test = pd.read_csv(files_train[0])
+df_ttf_test = pd.read_csv(files_ttf[0])
+
+df_merged_test = df_train_test.merge(df_ttf_test, on='time')
+
+# 이 장비만의 threshold 계산 (하위 25%)
+col = 'TTF_Flowcool Pressure Too High Check Flowcool Pump'
+threshold_test = df_merged_test[col].quantile(0.25)
+
+print("01M01 장비의 threshold:", threshold_test)
+
+# 라벨링: threshold 이하면 1(고장 임박), 아니면 0(정상)
+df_merged_test['label_pressure_high'] = (df_merged_test[col] <= threshold_test).astype(int)
+
+print(df_merged_test['label_pressure_high'].value_counts(normalize=True))
+
+# ===== CELL 14 (code) =====
+# 19개 장비 전체에 대해 threshold 계산 + 라벨링
+
+col = 'TTF_Flowcool Pressure Too High Check Flowcool Pump'
+
+labeled_dfs = []  # 라벨링된 장비별 데이터를 담을 리스트
+
+for file_train, file_ttf in zip(files_train, files_ttf):
+  df_train = pd.read_csv(file_train)
+  df_ttf = pd.read_csv(file_ttf)
+  df_merged = df_train.merge(df_ttf, on='time')
+
+  # 이 장비만의 threshold 계산 (하위 25%)
+  threshold = df_merged[col].quantile(0.25)
+
+  # 라벨링
+  df_merged['label_pressure_high'] = (df_merged[col] <= threshold).astype(int)
+
+  tool_name = df_merged['Tool'].iloc[0]
+  print(f"{tool_name} 처리 완료, threshold={threshold:.1f}, 고장임박 비율={df_merged['label_pressure_high'].mean()*100:.2f}%")
+
+  labeled_dfs.append(df_merged)
+
+print("전체 완료")

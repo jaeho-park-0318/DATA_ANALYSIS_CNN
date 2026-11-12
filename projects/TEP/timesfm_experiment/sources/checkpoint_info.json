@@ -1,0 +1,12 @@
+{
+  "id": "google/timesfm-3.0-pytorch",
+  "sha": "43046b85ec22d584a13f8098c2ed39c889e129c2",
+  "license": "other",
+  "files": [
+    ".gitattributes",
+    "LICENSE",
+    "README.md",
+    "config.json",
+    "model.safetensors"
+  ]
+}

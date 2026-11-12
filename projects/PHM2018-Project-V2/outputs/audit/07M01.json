@@ -1,0 +1,477 @@
+{
+  "tool": "07M01",
+  "raw_rows": 5301166,
+  "unique_times": 5290282,
+  "time_min": 3282508,
+  "time_max": 42453882,
+  "time_reversals": 0,
+  "duplicate_extra_rows": 10884,
+  "exact_duplicate_extra_rows": 230,
+  "duplicate_sensor_or_state_conflict_times": 10523,
+  "interval_counts": {
+    "0": 10884,
+    "2": 52666,
+    "4": 5173320,
+    "6": 37602,
+    "8": 148,
+    "10": 19,
+    "120": 16,
+    "124": 39,
+    "128": 20,
+    "132": 11,
+    "136": 12,
+    "144": 136,
+    "146": 18,
+    "148": 1042,
+    "150": 44,
+    "152": 643,
+    "154": 32,
+    "156": 376,
+    "158": 16,
+    "160": 380,
+    "164": 104,
+    "168": 82,
+    "170": 38,
+    "172": 2709,
+    "174": 257,
+    "176": 5988,
+    "178": 182,
+    "180": 2703,
+    "182": 101,
+    "184": 2409,
+    "186": 91,
+    "188": 1487,
+    "190": 19,
+    "192": 231,
+    "196": 130,
+    "198": 17,
+    "200": 510,
+    "202": 21,
+    "204": 374,
+    "206": 12,
+    "208": 189,
+    "210": 11,
+    "212": 196,
+    "216": 69,
+    "220": 60,
+    "224": 32,
+    "228": 23,
+    "232": 18,
+    "240": 12,
+    "244": 137,
+    "246": 17,
+    "248": 202,
+    "252": 116,
+    "256": 162,
+    "260": 86,
+    "264": 52,
+    "268": 31,
+    "272": 44,
+    "276": 20,
+    "366": 17,
+    "368": 24,
+    "370": 28,
+    "372": 23,
+    "374": 22,
+    "376": 22,
+    "692": 14,
+    "700": 12,
+    "704": 15,
+    "708": 12,
+    "712": 14,
+    "716": 17,
+    "720": 18,
+    "724": 15,
+    "728": 19,
+    "732": 20,
+    "736": 20,
+    "740": 24,
+    "744": 25,
+    "748": 22,
+    "752": 14,
+    "756": 17,
+    "760": 15,
+    "764": 25,
+    "768": 18,
+    "772": 25,
+    "776": 13,
+    "780": 19,
+    "784": 17,
+    "788": 18,
+    "792": 16,
+    "796": 14,
+    "800": 19,
+    "804": 14,
+    "808": 15,
+    "812": 19,
+    "820": 19,
+    "824": 11,
+    "828": 14,
+    "832": 15,
+    "836": 15,
+    "840": 11,
+    "844": 17,
+    "848": 14,
+    "856": 11,
+    "860": 15,
+    "868": 18,
+    "876": 18,
+    "880": 15,
+    "892": 17,
+    "896": 16,
+    "900": 15,
+    "912": 12,
+    "916": 13,
+    "932": 19,
+    "936": 14,
+    "940": 11,
+    "948": 11,
+    "952": 16,
+    "960": 16,
+    "968": 11,
+    "972": 11,
+    "988": 11,
+    "1012": 15,
+    "1040": 11,
+    "1060": 16,
+    "1072": 13,
+    "1092": 11,
+    "1128": 19,
+    "1148": 12,
+    "1176": 11,
+    "1184": 12,
+    "1216": 11,
+    "1240": 11,
+    "1252": 11,
+    "1256": 16,
+    "1264": 11,
+    "1268": 12,
+    "1308": 12,
+    "1328": 11,
+    "1468": 11,
+    "1508": 11
+  },
+  "interval_quantiles": [
+    2.0,
+    4.0,
+    4.0,
+    6.0,
+    952548.0
+  ],
+  "long_gap_count": 26521,
+  "long_gap_total_raw": 18145716,
+  "largest_gaps": [
+    {
+      "start": 36066952,
+      "end": 36115344,
+      "gap": 48392
+    },
+    {
+      "start": 14627418,
+      "end": 14675934,
+      "gap": 48516
+    },
+    {
+      "start": 25264090,
+      "end": 25313362,
+      "gap": 49272
+    },
+    {
+      "start": 36006668,
+      "end": 36058240,
+      "gap": 51572
+    },
+    {
+      "start": 29639416,
+      "end": 29692644,
+      "gap": 53228
+    },
+    {
+      "start": 30173778,
+      "end": 30228708,
+      "gap": 54930
+    },
+    {
+      "start": 3590880,
+      "end": 3647048,
+      "gap": 56168
+    },
+    {
+      "start": 30327922,
+      "end": 30386160,
+      "gap": 58238
+    },
+    {
+      "start": 31330392,
+      "end": 31389164,
+      "gap": 58772
+    },
+    {
+      "start": 33922678,
+      "end": 33986266,
+      "gap": 63588
+    },
+    {
+      "start": 26992978,
+      "end": 27064246,
+      "gap": 71268
+    },
+    {
+      "start": 40217752,
+      "end": 40293768,
+      "gap": 76016
+    },
+    {
+      "start": 20698604,
+      "end": 20795896,
+      "gap": 97292
+    },
+    {
+      "start": 4027702,
+      "end": 4126340,
+      "gap": 98638
+    },
+    {
+      "start": 10354122,
+      "end": 10482760,
+      "gap": 128638
+    },
+    {
+      "start": 35694206,
+      "end": 35992244,
+      "gap": 298038
+    },
+    {
+      "start": 22794870,
+      "end": 23119408,
+      "gap": 324538
+    },
+    {
+      "start": 20303544,
+      "end": 20631730,
+      "gap": 328186
+    },
+    {
+      "start": 23142970,
+      "end": 23484234,
+      "gap": 341264
+    },
+    {
+      "start": 21010236,
+      "end": 21962784,
+      "gap": 952548
+    }
+  ],
+  "null_counts_all_columns": {
+    "time": 0,
+    "Tool": 0,
+    "stage": 0,
+    "Lot": 0,
+    "runnum": 0,
+    "recipe": 0,
+    "recipe_step": 0,
+    "IONGAUGEPRESSURE": 0,
+    "ETCHBEAMVOLTAGE": 0,
+    "ETCHBEAMCURRENT": 0,
+    "ETCHSUPPRESSORVOLTAGE": 0,
+    "ETCHSUPPRESSORCURRENT": 0,
+    "FLOWCOOLFLOWRATE": 0,
+    "FLOWCOOLPRESSURE": 0,
+    "ETCHGASCHANNEL1READBACK": 0,
+    "ETCHPBNGASREADBACK": 0,
+    "FIXTURETILTANGLE": 0,
+    "ROTATIONSPEED": 0,
+    "ACTUALROTATIONANGLE": 0,
+    "FIXTURESHUTTERPOSITION": 0,
+    "ETCHSOURCEUSAGE": 0,
+    "ETCHAUXSOURCETIMER": 0,
+    "ETCHAUX2SOURCETIMER": 0,
+    "ACTUALSTEPDURATION": 0
+  },
+  "nonfinite_sensor_counts": {
+    "FLOWCOOLPRESSURE": 0,
+    "FLOWCOOLFLOWRATE": 0,
+    "IONGAUGEPRESSURE": 0,
+    "ETCHBEAMCURRENT": 0,
+    "ETCHBEAMVOLTAGE": 0,
+    "ETCHSUPPRESSORCURRENT": 0
+  },
+  "fault_raw_rows": 35,
+  "fault_unique_events": 35,
+  "fault_duplicate_extra_rows": 0,
+  "tagged_unique_events": 0,
+  "event_counts": {
+    "f1": 15,
+    "f2": 2,
+    "f3": 18
+  },
+  "ttf": {
+    "f1": {
+      "null": 509068,
+      "finite": 4792098,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    },
+    "f2": {
+      "null": 1669284,
+      "finite": 3631882,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    },
+    "f3": {
+      "null": 289586,
+      "finite": 5011580,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    }
+  },
+  "distributions_raw": {
+    "f1_h300": {
+      "positive": 319,
+      "negative": 4791700,
+      "NA": 509068,
+      "excluded_lt60": 79
+    },
+    "f1_h600": {
+      "positive": 674,
+      "negative": 4791345,
+      "NA": 509068,
+      "excluded_lt60": 79
+    },
+    "f1_h1800": {
+      "positive": 2174,
+      "negative": 4789845,
+      "NA": 509068,
+      "excluded_lt60": 79
+    },
+    "f2_h300": {
+      "positive": 80,
+      "negative": 3631775,
+      "NA": 1669284,
+      "excluded_lt60": 27
+    },
+    "f2_h600": {
+      "positive": 230,
+      "negative": 3631625,
+      "NA": 1669284,
+      "excluded_lt60": 27
+    },
+    "f2_h1800": {
+      "positive": 825,
+      "negative": 3631030,
+      "NA": 1669284,
+      "excluded_lt60": 27
+    },
+    "f3_h300": {
+      "positive": 121,
+      "negative": 5011429,
+      "NA": 289586,
+      "excluded_lt60": 30
+    },
+    "f3_h600": {
+      "positive": 461,
+      "negative": 5011089,
+      "NA": 289586,
+      "excluded_lt60": 30
+    },
+    "f3_h1800": {
+      "positive": 2462,
+      "negative": 5009088,
+      "NA": 289586,
+      "excluded_lt60": 30
+    },
+    "any_h300": {
+      "positive": 520,
+      "negative": 3631226,
+      "NA": 1669284,
+      "excluded_lt60": 136
+    },
+    "any_h600": {
+      "positive": 1365,
+      "negative": 3630381,
+      "NA": 1669284,
+      "excluded_lt60": 136
+    },
+    "any_h1800": {
+      "positive": 5299,
+      "negative": 3626447,
+      "NA": 1669284,
+      "excluded_lt60": 136
+    }
+  },
+  "sensitivity_any": {
+    "h300": {
+      "positive": 520,
+      "negative": 5300435,
+      "NA": 75,
+      "excluded_lt60": 136
+    },
+    "h600": {
+      "positive": 1365,
+      "negative": 5299565,
+      "NA": 100,
+      "excluded_lt60": 136
+    },
+    "h1800": {
+      "positive": 5299,
+      "negative": 5295330,
+      "NA": 401,
+      "excluded_lt60": 136
+    }
+  },
+  "v1_policy_recomputed": {
+    "h300": {
+      "positive": 533,
+      "negative": 2262474,
+      "NA": 3038159,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 1369001
+    },
+    "h600": {
+      "positive": 896,
+      "negative": 988960,
+      "NA": 4311310,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 2642152
+    },
+    "h1800": {
+      "positive": 1475,
+      "negative": 126409,
+      "NA": 5173282,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 3504124
+    }
+  },
+  "duplicate_state_conflict_times": 0,
+  "sha256": {
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\07_M01_DC_train.csv": "bf841c08c84c73cf712ab19fa68800b8959a7207339e9572cd3e5c393695a699",
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_ttf\\07_M01_DC_train.csv": "0589b1d4f417805b5e41a3bc7e5187880cb4d60831b94dfbfad3a83e99649f9f",
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_faults\\07_M01_train_fault_data.csv": "ae2caf017bee4083f7769be5d34f3d8a5481c819b7663dfd909697da23598410"
+  },
+  "source_signature": {
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\07_M01_DC_train.csv": {
+      "bytes": 1872457925,
+      "mtime_ns": 1523275468000000000
+    },
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_ttf\\07_M01_DC_train.csv": {
+      "bytes": 183148620,
+      "mtime_ns": 1524151924000000000
+    },
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_faults\\07_M01_train_fault_data.csv": {
+      "bytes": 1462,
+      "mtime_ns": 1524067891000000000
+    }
+  },
+  "elapsed_seconds": 7.672,
+  "config_hash": "539f0e58b6c4c2db2b3d6f15bea4eee3e62d4aa69f087ad41b7ae86352b694e2",
+  "code_hash": "cad97b5e820e2855b6f83650ed1b99c305a6885a21aae321b4924e5ebb9d25f6b6b7b0383914d091dd265deea33fb76cf6daaeff2603a583f0068fe80644f991"
+}

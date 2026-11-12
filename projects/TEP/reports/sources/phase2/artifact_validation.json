@@ -1,0 +1,10 @@
+{
+  "manifest_files_verified": 8,
+  "portable_cpu_dense_gpu_max_probability_error": 0.0005519390106201172,
+  "cpu_gpu_probability_absolute_tolerance": 0.001,
+  "cpu_gpu_threshold_decision_agreement_in_checked_181_windows": 1.0,
+  "precision_note": "cuDNN TF32 vs CPU float32; threshold-adjacent decisions may differ on other inputs",
+  "no_future_reference": true,
+  "warmup_verified": true,
+  "schema_and_run_boundary_errors_rejected": true
+}

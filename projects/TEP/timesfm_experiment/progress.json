@@ -1,0 +1,39 @@
+{
+  "config": {
+    "mode": "representative",
+    "batch": 128,
+    "precision": "fp32",
+    "baseline_only": false,
+    "max_runs": null,
+    "runs_per_fault": 5,
+    "window": 20,
+    "horizon": 1,
+    "seed_lstm": 42,
+    "inference_flags": {
+      "symmetric_averaging": false,
+      "make_positive": false,
+      "sort_quantiles": true,
+      "use_znorm": false,
+      "padding_mode": "none"
+    }
+  },
+  "completed_trajectories": 105,
+  "total_trajectories": 105,
+  "seconds": 414.85414350009523,
+  "keys": [
+    "Persistence|all",
+    "Persistence|healthy_context",
+    "Persistence|faultfree_only",
+    "LSTM|all",
+    "LSTM|healthy_context",
+    "LSTM|faultfree_only",
+    "TimesFM|all",
+    "TimesFM|healthy_context",
+    "TimesFM|faultfree_only",
+    "Persistence|post_fault",
+    "LSTM|post_fault",
+    "TimesFM|post_fault"
+  ],
+  "status": "sample_complete",
+  "expected_target_rows": 9870
+}

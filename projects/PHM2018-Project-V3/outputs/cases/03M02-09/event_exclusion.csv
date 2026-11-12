@@ -1,0 +1,2 @@
+﻿event_id,Tool,fault_type,fault_time,policy,H,feature_set,warning_anchors,label_positive_anchors,usable_positive_anchors,current_available,history_60,history_300,history_900,imminent_excluded,preserved,reason
+03M02-high-30905f1e029f,03M02,high,5128078.0,conservative,600,C,9,9,9,9,9,9,9,0,True,보존됨

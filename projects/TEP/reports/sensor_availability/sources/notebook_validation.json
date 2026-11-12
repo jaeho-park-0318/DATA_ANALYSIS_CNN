@@ -1,0 +1,20 @@
+[
+  {
+    "notebook": "11_availability_baseline.ipynb",
+    "executed_cells": 5,
+    "error_outputs": 0,
+    "embedded_images": 1
+  },
+  {
+    "notebook": "12_availability_degradation.ipynb",
+    "executed_cells": 5,
+    "error_outputs": 0,
+    "embedded_images": 3
+  },
+  {
+    "notebook": "13_phm_comparison.ipynb",
+    "executed_cells": 4,
+    "error_outputs": 0,
+    "embedded_images": 1
+  }
+]

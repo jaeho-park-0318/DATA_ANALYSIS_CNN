@@ -1,0 +1,2 @@
+﻿Tool,device,train_rows,train_positive,validation_all_rows,validation_known_rows,validation_positive,iterations,train_seconds,AP_known,ROC_AUC_known,log_loss_known
+03M02,cuda:0,123796,500,41467,6115,133,1,0.5184288024902344,0.0349113717050513,0.5488149913399346,0.1236390024423599

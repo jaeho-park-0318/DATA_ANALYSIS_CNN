@@ -1,0 +1,199 @@
+
+# ===== CELL 0 (markdown) =====
+<a href="https://colab.research.google.com/github/YoungJang-KR/semiconductor-fault-detection/blob/main/from_scratch_02_PHM18_etching.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+# ===== CELL 1 (code) =====
+from google.colab import drive
+drive.mount('/content/drive')
+
+# ===== CELL 2 (code) =====
+# 10_M02 장비 제외하기
+
+import pandas as pd
+import os
+import glob
+
+dir_train = '/content/drive/MyDrive/phm18/train'
+dir_ttf = '/content/drive/MyDrive/phm18/train_ttf'
+
+files_train = sorted( glob.glob(os.path.join(dir_train, '*csv')) )
+files_ttf = sorted( glob.glob(os.path.join(dir_ttf, '*csv')) )
+
+exclude_tools = ['10_M02']
+files_train = [ f for f in files_train if not any(tool in f for tool in exclude_tools) ]
+files_ttf = [ f for f in files_ttf if not any(tool in f for tool in exclude_tools) ]
+
+print(f"10_M02 제외 후 train 파일 개수 {len(files_train)}개")
+print("10_M02 제외 후 train 파일 목록:", files_train)
+print(f"10_M02 제외 후 train_ttf 파일 개수 {len(files_ttf)}개")
+print("10_M02 제외 후 train_ttf 파일 목록", files_ttf)
+
+# ===== CELL 3 (code) =====
+# 10_M02 장비를 제외하고, 5% 샘플링 진행
+
+dfs = []
+
+for file_train, file_ttf in zip(files_train, files_ttf):
+  df_train = pd.read_csv(file_train)
+  df_ttf = pd.read_csv(file_ttf)
+  df_merged = df_train.merge(df_ttf, on='time')
+  df_sampled = df_merged.sample(frac=0.05, random_state=42)
+  dfs.append(df_sampled)
+  print(f"{file_train} 처리 완료, {df_sampled.shape}")
+
+df_sampled_5pct = pd.concat(dfs, axis=0, ignore_index=True)
+print(df_sampled_5pct.shape)
+
+# ===== CELL 4 (code) =====
+df_sampled_5pct.to_csv('/content/drive/MyDrive/phm18/df_sampled_5pct', index=False)
+# index=False는 항상 빼먹지 않기
+print("저장 완료!")
+
+# ===== CELL 5 (code) =====
+# 불러와보기
+
+df_ex_5pct = pd.read_csv('/content/drive/MyDrive/phm18/df_sampled_5pct')
+print("행, 렬:", df_ex_5pct.shape)
+print("열 항목:", df_ex_5pct.columns.tolist())
+
+# ===== CELL 6 (code) =====
+# 열 항목 이름 축약
+
+df_ex_5pct = df_ex_5pct.rename( columns={
+    'TTF_FlowCool Pressure Dropped Below Limit': 'TTF_pressure_drop',
+    'TTF_Flowcool Pressure Too High Check Flowcool Pump': 'TTF_pressure_high',
+    'TTF_Flowcool leak': 'TTF_leak'
+})
+
+print("열 항목:", df_ex_5pct.columns.tolist())
+
+# ===== CELL 7 (code) =====
+df_ex_5pct.to_csv('/content/drive/MyDrive/phm18/df_ex_5pct.csv', index=False)
+print("저장 완료!")
+
+# ===== CELL 8 (code) =====
+df_ex_5pct = pd.read_csv('/content/drive/MyDrive/phm18/df_ex_5pct.csv')
+print("열 항목:", df_ex_5pct.columns.tolist())
+
+# ===== CELL 9 (code) =====
+# 샘플링이 잘 되었는지 확인
+thresholds_by_tool = df_ex_5pct.groupby('Tool')['TTF_pressure_high'].quantile(0.25)
+print(thresholds_by_tool)
+
+# ===== CELL 10 (markdown) =====
+04M02 장비를 제외(NaN)하고는 1% 샘플링 때와 큰 차이가 없다.
+
+
+# ===== CELL 11 (code) =====
+# 샘플링된 04M02 장비 데이터 확인하기
+
+print( df_ex_5pct[df_ex_5pct['Tool']=='04M02'].isna().sum() )
+print( df_ex_5pct[df_ex_5pct['Tool']=='04M02'].count() )
+
+# ===== CELL 12 (code) =====
+# 04M02 장비의 전체 데이터 확인하기
+
+df_04M02_full = pd.read_csv(files_ttf[7])
+print("04M02 장비의 전체 행과 열:", df_04M02_full.shape)
+
+print("04M02 장비 데이터의 전체 행:", len(df_04M02_full))
+print("04M02 장비 데이터의 결측값:", df_04M02_full['TTF_Flowcool Pressure Too High Check Flowcool Pump'].isna().sum())
+print("04M02 장비 데이터에 존재하는 TTF_pressure_high 값:", df_04M02_full['TTF_Flowcool Pressure Too High Check Flowcool Pump'].count())
+
+# ===== CELL 13 (markdown) =====
+고장 데이터가 1%가 넘는데, 5% 랜덤 샘플링에서 샘플링이 안 됐다. 고장 데이터가 한 곳에 몰려있어서 랜덤 샘플링으로는 정확한 분석이 어려운 경우일 수 있다.
+
+# ===== CELL 14 (code) =====
+sensor_cols = ['IONGAUGEPRESSURE', 'ETCHSUPPRESSORCURRENT', 'FLOWCOOLPRESSURE',
+               'ACTUALROTATIONANGLE', 'ACTUALSTEPDURATION']
+
+control_cols = ['ETCHBEAMVOLTAGE', 'ETCHBEAMCURRENT', 'ETCHSUPPRESSORVOLTAGE',
+                'FLOWCOOLFLOWRATE', 'ETCHGASCHANNEL1READBACK', 'ETCHPBNGASREADBACK',
+                'FIXTURETILTANGLE', 'ROTATIONSPEED', 'FIXTURESHUTTERPOSITION',
+                'ETCHSOURCEUSAGE', 'ETCHAUXSOURCETIMER', 'ETCHAUX2SOURCETIMER']
+
+train_cols = ['TTF_pressure_drop', 'TTF_pressure_high', 'TTF_leak']
+
+# ===== CELL 15 (code) =====
+df_04M02_train = pd.read_csv(files_train[6])
+df_04M02_ttf = pd.read_csv(files_ttf[6])
+
+df_04M02_merged = df_04M02_train.merge(df_04M02_ttf, on='time')
+
+# ===== CELL 16 (code) =====
+df_04M02_merged = df_04M02_merged.rename( columns={
+    'TTF_FlowCool Pressure Dropped Below Limit': 'TTF_pressure_drop',
+    'TTF_Flowcool Pressure Too High Check Flowcool Pump': 'TTF_pressure_high',
+    'TTF_Flowcool leak': 'TTF_leak'
+})
+
+# ===== CELL 17 (code) =====
+import matplotlib.pyplot as plt
+
+for col in sensor_cols:
+  fig, ax1 = plt.subplots(figsize=(15, 3))
+  ax1.plot( df_04M02_merged['time'], df_04M02_merged[col], linewidth=0.3,
+           color='tab:blue', label=col)
+  ax1.set_ylabel(col, fontsize=9)
+
+  ax2 = ax1.twinx()
+  ax2.plot( df_04M02_merged['time'], df_04M02_merged['TTF_pressure_drop'], linewidth=0.3,
+           color='tab:red', label='TTF_pressure_drop')
+  ax2.plot( df_04M02_merged['time'], df_04M02_merged['TTF_pressure_high'], linewidth=0.3,
+           color='tab:orange', label='TTF_pressure_high')
+  ax2.plot( df_04M02_merged['time'], df_04M02_merged['TTF_leak'], linewidth=0.3,
+           color='tab:green', label='TTF_leak')
+  ax2.legend(fontsize=8, loc='upper right')
+
+  plt.tight_layout()
+  plt.show()
+
+# ===== CELL 18 (code) =====
+results = []
+
+col = 'TTF_Flowcool Pressure Too High Check Flowcool Pump'
+
+for file_train, file_ttf in zip(files_train, files_ttf):
+  df_train = pd.read_csv(file_train)
+  df_ttf = pd.read_csv(file_ttf)
+  df_merged = df_train.merge(df_ttf, on='time')
+
+  t_min = df_merged['time'].min()
+  t_max = df_merged['time'].max()
+  full_range = t_max - t_min
+
+  df_real = df_merged[ df_merged[col].notna() ]
+
+# 실제값이 하나도 없는 장비는 따로 처리
+  if len(df_real) == 0:
+    real_range = 0
+    ratio = 0
+  else:
+    real_t_min = df_real['time'].min()
+    real_t_max = df_real['time'].max()
+    real_range = real_t_max - real_t_min
+    ratio = real_range / full_range
+
+  tool_name = df_merged['Tool'].iloc[0]
+
+  results.append({
+      '장비': tool_name,
+      '실제값개수': len(df_real),
+      '전체 범위': full_range,
+      '실제값범위': real_range,
+      '비율(%)': ratio*100
+      })
+  print(f"{tool_name} 처리 완료")
+
+# ===== CELL 19 (code) =====
+df_results = pd.DataFrame(results)
+print(df_results)
+
+df_results.to_csv('/content/drive/MyDrive/phm18/df_results.csv')
+print("저장 완료!")
+
+# ===== CELL 20 (code) =====
+# files_train에서 실제로 04M01, 04M02가 몇 번째 인덱스인지 확인
+for i, f in enumerate(files_train):
+    if '04' in f:
+        print(i, f)

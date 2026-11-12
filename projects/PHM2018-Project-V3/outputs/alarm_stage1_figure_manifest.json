@@ -1,0 +1,37 @@
+[
+  {
+    "file": "outputs/figures/alarm_stage1/event_coverage.png",
+    "title": "학습 전에 확인한 이벤트 관측 커버리지",
+    "source": "alarm_stage1_overview.csv",
+    "context": "실제 validation 분할 · H600/L60 · 최대 가용 코호트 · 모델 학습 없음 · holdout 점수화 없음 · 입력 존재는 검출 성공과 다름",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/alarm_stage1/scoring_population.png",
+    "title": "분류 후보와 전체 점수화 대상의 차이",
+    "source": "alarm_stage1_label_states.csv",
+    "context": "실제 validation 분할 · H600/L60 · 최대 가용 코호트 · 모델 학습 없음 · holdout 점수화 없음 · NA/EXCLUDE도 점수화하며 정상으로 변경하지 않음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/alarm_stage1/baseline_checks.png",
+    "title": "고정 기준으로 확인한 경보 집계 동작",
+    "source": "alarm_stage1_overview.csv",
+    "context": "실제 validation 분할 · H600/L60 · 최대 가용 코호트 · 모델 학습 없음 · holdout 점수화 없음 · 고정 점수0/1의 시험 기준, 학습 성능·최적 임계값 곡선이 아님",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/alarm_stage1/alarm_categories.png",
+    "title": "항상 경보 기준의 시작 시점별 분류",
+    "source": "alarm_stage1_overview.csv",
+    "context": "실제 validation 분할 · H600/L60 · 최대 가용 코호트 · 모델 학습 없음 · holdout 점수화 없음 · 시작 라벨 기준 배타 분류; 전체 에피소드의 미확인 포함 여부는 별도 열 보존",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/alarm_stage1/actual_event.png",
+    "title": "03M02 실제 구간에서 경보 시작 시점 확인",
+    "source": "원본 선택 구간 / alarm_stage1_events.csv / alarm_stage1_episodes.csv",
+    "context": "03M02-low-9bef5552950a · 유형=low · 27952478~27954398 raw · 원본 480행 · 선택 이벤트1개 · 100% 해상도\n주황 음영=예측 구간 · 삼각형=새 경보 발행 · 보라=경보 유지 · 상태=MISSED · 학습 모델 아님",
+    "plot_values": null
+  }
+]

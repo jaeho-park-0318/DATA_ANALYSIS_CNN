@@ -1,0 +1,11 @@
+{
+  "method": "생성 PNG 6개 직접 확인: 한글/축/분모/범례/값/공백 선 연결 여부",
+  "checks": [
+    {"check": "eligibility: 20대 실제 기준값과 선정1대", "passed": true},
+    {"check": "coverage: 모든 분할의 기록/가용 고장 및 라벨 행", "passed": true},
+    {"check": "comparison: 동일 세 방식, 검증/후반 분리, 상한 초과 표시", "passed": true},
+    {"check": "learning: 선택1트리와 저장 점수 분포", "passed": true},
+    {"check": "alarm_burden: 미확인 경보와 매칭 경보 분리", "passed": true},
+    {"check": "event_cases: 센서/모델 점수 축 분리, 공백/세그먼트별 선", "passed": true}
+  ]
+}

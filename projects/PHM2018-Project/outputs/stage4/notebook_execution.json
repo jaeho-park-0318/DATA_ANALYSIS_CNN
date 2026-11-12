@@ -1,0 +1,26 @@
+[
+  {
+    "notebook": "06_baseline_models.ipynb",
+    "code_cells": 4,
+    "executed": 4,
+    "errors": 0,
+    "elapsed_seconds": 7.530999999959022,
+    "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe"
+  },
+  {
+    "notebook": "07_xgboost_training.ipynb",
+    "code_cells": 4,
+    "executed": 4,
+    "errors": 0,
+    "elapsed_seconds": 7.109000000171363,
+    "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe"
+  },
+  {
+    "notebook": "08_model_comparison.ipynb",
+    "code_cells": 6,
+    "executed": 6,
+    "errors": 0,
+    "elapsed_seconds": 29.812000000150874,
+    "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe"
+  }
+]

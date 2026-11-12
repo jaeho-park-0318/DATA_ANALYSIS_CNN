@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "precision": "fp32",
+  "batch": 32,
+  "pilot_windows": 8,
+  "first_call_seconds": 0.7959449000190943,
+  "steady_windows": 32,
+  "steady_seconds": 1.5918898000381887,
+  "windows_per_second": 20.10189398740562,
+  "estimated_dense_hours": 136.38847505535523,
+  "batch_independence_checked": true,
+  "future_perturbation_checked": true,
+  "scaler_train_only_verified": true,
+  "train_validation_family_disjoint": true,
+  "official_test_separate_rng_family": true,
+  "input_shape": [
+    20,
+    52
+  ],
+  "horizon": 1,
+  "timesfm_native_multivariate": true,
+  "official_evaluator_chunks": [
+    32,
+    20
+  ],
+  "checkpoint_sha": "43046b85ec22d584a13f8098c2ed39c889e129c2"
+}

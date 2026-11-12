@@ -1,0 +1,18 @@
+{
+  "experiment": "장비별 전용 모델 후속 연구",
+  "maximum_tools": 3,
+  "family": "B",
+  "cohort": "maximum",
+  "H": 600,
+  "L": 60,
+  "seed": 42,
+  "eligibility": {"train_positive_clusters": 8, "validation_positive_clusters": 3, "train_positive_rows": 100, "validation_positive_rows": 20, "train_negative_rows": 1000, "validation_negative_rows": 1000},
+  "cluster_rule": "양성 입력이 존재하는 비태그 고장을 시각순 정렬하여 인접 고장 간격이600 raw 초과일 때 새 군집. 독립 고장 표본임을 보장하지 않음",
+  "ranking": "자격 충족 장비 중 train_positive_clusters 내림차순, train_positive_rows 내림차순, Tool 오름차순으로 최대3대. 후반 구간 결과는 선정에 사용하지 않음",
+  "training": "기존 시간 train60%의 해당 장비 알려진 라벨만 fit. validation20%로 조기 종료. B 특징, 깊이3, 양성가중1, eta0.05, 최대1000, earlystop50, seed42. CUDA 순차, CPU12",
+  "budgets": [5, 10],
+  "comparators": ["global_frozen", "global_tool_threshold", "specialist"],
+  "threshold_rule": "global_frozen은 stage6 숫자 임계값 그대로. 나머지는 장비 validation의 고정12개+점수분위수16개 후보에서 상한 내 검출 최대, 부담 최소, 높은 임계값 순. 후반 예측 전에 숫자 동결",
+  "evaluation": "기존 마지막20%를 후속 연구 비교에 사용. 이전 연구에서 이미 확인한 구간이므로 독립 Holdout 성능이라 부르지 않음. 기존 공통 예측은 저장값 재사용; 전용 모델만 추가 예측. 결과로 재학습/임계값 재선택 없음",
+  "adequacy_caveat": "위 기준은20분 내 수행하는 탐색적 파일럿의 최소 데이터 조건이며 통계적 충분성/운영 적합성 보장이 아님"
+}

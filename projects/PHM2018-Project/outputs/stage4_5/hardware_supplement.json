@@ -1,0 +1,6 @@
+{
+  "cpu_name": "AMD Ryzen 7 6800H with Radeon Graphics",
+  "peak_system_gpu_mib": 1306.0,
+  "min_available_ram_gib": 17.341529846191406,
+  "note": "GPU 사용량은 다른 화면·프로세스를 포함한 장치 전체 값이다. CPU 모델명 조회 CIM은 권한 제한으로 실패했고 레지스트리 읽기로 확인했다."
+}

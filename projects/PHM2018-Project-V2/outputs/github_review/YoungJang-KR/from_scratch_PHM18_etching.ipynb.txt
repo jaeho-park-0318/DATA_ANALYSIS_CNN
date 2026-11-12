@@ -1,0 +1,475 @@
+
+# ===== CELL 0 (markdown) =====
+<a href="https://colab.research.google.com/github/YoungJang-KR/semiconductor-fault-detection/blob/main/from_scratch_PHM18_etching.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+# ===== CELL 1 (markdown) =====
+# 1단계: 데이터셋 파악 및 시각화
+
+# ===== CELL 2 (code) =====
+# 드라이브 마운트
+
+from google.colab import drive
+drive.mount('/content/drive') # 많이 하는 실수: content 앞에도 / 붙이기
+
+# ===== CELL 3 (code) =====
+# pandas 라이브러리 불러오기
+
+import pandas as pd
+
+# ===== CELL 4 (markdown) =====
+
+
+# ===== CELL 5 (code) =====
+# train 폴더의 '01_M01_DC_train.csv 파일 분석해보기
+
+dir_train_01 = '/content/drive/MyDrive/phm18/train/01_M01_DC_train.csv'
+
+df_train_01 = pd.read_csv(dir_train_01)
+
+print("행, 렬:", df_train_01.shape)
+print("열 항목:", df_train_01.columns.tolist())
+
+# ===== CELL 6 (code) =====
+# train_ttf 폴더의 '01_M01_DC_train.csv' 파일 분석해보기
+
+dir_ttf_01 = '/content/drive/MyDrive/phm18/train_ttf/01_M01_DC_train.csv'
+
+df_ttf_01 = pd.read_csv(dir_ttf_01)
+
+print("행, 렬:", df_ttf_01.shape)
+print("열 항목:", df_ttf_01.columns.tolist())
+
+# ===== CELL 7 (code) =====
+# train_ttf 폴더 속 파일의 열 항목 이름이 너무 긺으로 축약
+
+df_ttf_01 = df_ttf_01.rename( columns={
+    'TTF_FlowCool Pressure Dropped Below Limit': 'TTF_pressure_drop',
+    'TTF_Flowcool Pressure Too High Check Flowcool Pump': 'TTF_pressure_high',
+    'TTF_Flowcool leak': 'TTF_leak'
+})
+
+# 항목 이름이 잘 변경 되었나 확인해보기
+print("변경된 열 항목:", df_ttf_01.columns.tolist())
+
+# ===== CELL 8 (code) =====
+# train_failure 폴더 속 '01_M01_train_fault_data.csv' 분석해보기
+
+dir_failure_01 = '/content/drive/MyDrive/phm18/train_faults/01_M01_train_fault_data.csv'
+
+df_failure_01 = pd.read_csv(dir_failure_01)
+
+print("행, 렬:", df_failure_01.shape)
+print("열 항목:", df_failure_01.columns.tolist())
+
+# 열 항목의 이름으로 보아, 해당 데이터는 고장이 발생했을 때를 기록한 파일로 추측된다.
+
+# ===== CELL 9 (code) =====
+# 시각화를 위해 df_train_01과 df_ttf_01을 'time'에 대해 merge
+
+df_merged_01 = df_train_01.merge(df_ttf_01, on='time')
+
+# merge가 잘 되었는지 확인해보기
+
+print("행, 렬", df_merged_01.shape)
+print("열 항목:", df_merged_01.columns.tolist())
+
+# ===== CELL 10 (code) =====
+from matplotlib.axes import Axes
+# 우선 센서값들에 대해 시각화 해보기
+sensor_cols = ['IONGAUGEPRESSURE',
+               'ETCHSUPPRESSORCURRENT',
+               'FLOWCOOLPRESSURE',
+               'ACTUALROTATIONANGLE',
+               'ACTUALSTEPDURATION']
+
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots(len(sensor_cols), 1, figsize=(15, len(sensor_cols)*2)) # 도화지부터 준비하기
+# plt.figure, plt.subplots
+
+for i, col in enumerate(sensor_cols):
+  axes[i].plot( df_merged_01['time'], df_merged_01[col], linewidth=0.3 )
+  axes[i].set_ylabel(col, fontsize=9)
+
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 11 (markdown) =====
+IONGAUGEPRESSURE 변수가 2.5e7 ~ 2.7e7 부근에서 확 튀는 것(spike)을 확인할 수 있다. 해당 시간대를 유심히 살펴보자.
+
+# ===== CELL 12 (code) =====
+###
+# ttf 파일의 변수도 함께 그려보자.
+
+ttf_cols = ['TTF_pressure_drop', 'TTF_pressure_high', 'TTF_leak']
+
+
+for col in sensor_cols:
+  # FIXME: figzise라고 씀
+  fig, ax1 = plt.subplots(figsize=(15, 3)) # FIXME: 도화지를 다섯 장 준비해야 하므로 for문 안에 넣기
+  ax1.plot( df_merged_01['time'], df_merged_01[col], linewidth=0.3,
+           color='tab:blue', label=col )
+  ax1.set_ylabel(col, fontsize=8)
+
+  ax2 = ax1.twinx()
+  ax2.plot( df_merged_01['time'], df_merged_01['TTF_pressure_drop'], linewidth=0.3,
+           color='tab:red', label='TTF_pressure_drop')
+  ax2.plot( df_merged_01['time'], df_merged_01['TTF_pressure_high'], linewidth=0.3,
+           color='tab:orange', label='TTF_pressure_high')
+  ax2.plot( df_merged_01['time'], df_merged_01['TTF_leak'], linewidth=0.3,
+           color='tab:green', label='TTF_leak')
+
+  ax2.legend(fontsize=8, loc='upper right')
+
+  plt.tight_layout() # 여기서는 for문 안에 넣어야 크기가 들쭉날쭉 안 하더라
+  plt.show()
+
+# ===== CELL 13 (markdown) =====
+ttf 변수도 함께 그려보면 2.5e7 ~ 2.7e7 구간에서 'TTF_pressure_high' 고장이 발생했음을 알 수 있다.
+
+# ===== CELL 14 (code) =====
+# 시각화만으로는 분석에 한계가 있으므로, 센서값과 ttf 변수 간 상관관계도 알아보자
+
+corr_01 = df_merged_01[sensor_cols + ttf_cols].corr()
+corr_01_sensor_ttf = corr_01.loc[sensor_cols, ttf_cols]
+
+print(corr_01_sensor_ttf)
+
+# ===== CELL 15 (code) =====
+# 이대로는 알아보기가 힘드니 heatmap을 그리자
+
+import seaborn as sns
+
+sns.heatmap(corr_01_sensor_ttf,
+            fmt = '.3f',
+            annot = True,
+            cmap = 'coolwarm',
+            center = 0)
+
+plt.figure(figsize=(15, 3))
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 16 (markdown) =====
+센서값과 ttf 변수 사이에는 상관관계가 약한 편이다. 전체 데이터 중 센서값의 스파이크가 나타나는 구간이 극히 짧아서, 평균적인 상관관계 계산에서는 잘 드러나지 않는 것으로 보인다.
+
+# ===== CELL 17 (code) =====
+# 다른 변수(설정값)와 ttf 변수 간의 상관관계도 살펴보자
+
+control_cols = ['ETCHBEAMVOLTAGE', 'ETCHBEAMCURRENT', 'ETCHSUPPRESSORVOLTAGE',
+                'FLOWCOOLFLOWRATE', 'ETCHGASCHANNEL1READBACK', 'ETCHPBNGASREADBACK',
+                'FIXTURETILTANGLE', 'ROTATIONSPEED', 'FIXTURESHUTTERPOSITION',
+                'ETCHSOURCEUSAGE', 'ETCHAUXSOURCETIMER', 'ETCHAUX2SOURCETIMER']
+
+corr_01 = df_merged_01[sensor_cols + control_cols + ttf_cols].corr() # corr_01 재정의
+corr_01_control_ttf = corr_01.loc[control_cols, ttf_cols]
+print(corr_01_control_ttf)
+
+# ===== CELL 18 (code) =====
+sns.heatmap(corr_01_control_ttf, # FIXME: = 쓰는 거 아님
+            fmt = '.3f',
+            annot = True,
+            cmap = 'coolwarm',
+            center = 0)
+
+plt.figure(figsize=(15, 3))
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 19 (markdown) =====
+특이점:
+*   ETCHAUXSOURCEUSAGE - TTF_leak           : 음의 상관관계(-0.273)
+*   ETCHAUXSOURCETIMER - TTF_pressure_drop  : 양의 상관관계(+0.314)
+*   ETCHAUXSOURCETIMER - TTF_pressure_high  : 음의 상관관계(-0.440)
+*   ETCHAUX2SOURCETIMER - TTF_pressure_high : 양의 상관관계(-0.466)
+
+ETCHAUXSOURCETIMER 값이 커질수록 TTF_pressure_high 고장 발생까지 남은 시간이 줄어드는 경향이 있다. 흥미로운 점은 ETCHAUXSOURCETIMER 값이 커질수록 TTF_pressure_drop 고장 발생까지 남은 시간이 되려 늘어나는 경향성이 있다는 것이다.
+
+쉴드가 새것일 때(즉, 사용시간이 짧을 때)는 밀폐가 덜 되어 압력 저하 고장이 잘 발생하고, 반대로 쉴드가 오래 쓰여 마모되면 가스 흐름이 막혀 압력 과다 고장이 발생할 수 있다는 가설을 세워볼 수 있겠다.
+
+# ===== CELL 20 (markdown) =====
+# 2단계: 라벨링 및 히스토그램 그려보기
+
+# ===== CELL 21 (code) =====
+# 라벨링을 위해서는 우선 데이터값에 대한 정보가 필요하다
+
+print( df_merged_01[ ['TTF_pressure_drop', 'TTF_pressure_high', 'TTF_leak'] ].describe() )
+
+# ===== CELL 22 (markdown) =====
+우선 하위 25%일 때를 threshold로 삼고, 나중에 50%와 10%도 성능평가를 해보자.
+
+# ===== CELL 23 (code) =====
+# 'TTF_pressure_high' 고장부터 분석해보자
+
+threshold = 1839644
+
+df_merged_01['label_pressure_high'] = ( df_merged_01['TTF_pressure_high'] <= threshold ).astype(int)
+# threshold보다 값이 작으면 1을 반환하고, 그게 아니면 0을 반환
+
+print(df_merged_01['label_pressure_high'].value_counts())
+print("확률(%)로 보기:", df_merged_01['label_pressure_high'].value_counts(normalize=True))
+
+# ===== CELL 24 (code) =====
+# 앞서 0이 반환된 행들로 df_01_normal을, 1이 반환된 행들로 df_01_prefault를 만들자
+
+df_01_normal = df_merged_01[ df_merged_01['label_pressure_high']==0 ]
+df_01_prefault = df_merged_01[ df_merged_01['label_pressure_high']==1 ]
+
+print(f"정상 구간: {len(df_01_normal):,}")
+print(f"고장 임박: {len(df_01_prefault):,}")
+
+# ===== CELL 25 (code) =====
+# 라벨링되어 나누어진 구간에서 평균값이 어떻게 다른지 비교해보자
+
+train_cols = sensor_cols + control_cols
+
+print("=== 정상 구간 평균값 ===")
+print(df_01_normal[train_cols].mean())
+print("=== 고장 임박 구간 평균값 ===")
+print(df_01_prefault[train_cols].mean())
+
+# ===== CELL 26 (code) =====
+# 이대로는 뭐가 잘 보이지 않으므로, 히스토그램을 그려 분포를 알아보자
+
+fig, axes = plt.subplots(len(train_cols), 1, figsize=(15, len(train_cols)*2))
+
+for i, col in enumerate(train_cols):
+  axes[i].hist(df_01_normal[col].dropna(),         # 결측값이 있으면 히스토그램이 그려지지 않으므로, 미리 제거 후 정당화
+               bins=200,                           # 막대 수는 200개
+               alpha=0.3,                          # 겹치는 구간을 비교해야 하므로, 투명도는 0.3
+               color='steelblue',
+               label = 'normal',
+               density= True                       # 숫자로 비교하면 왜곡될 수 있으므로 비율로 비교하기
+               )
+  axes[i].hist(df_01_prefault[col].dropna(),
+               bins=200, alpha=0.3, color = 'crimson', label = 'prefault', density=True)
+  axes[i].set_title(col, fontsize=9)
+  axes[i].legend(fontsize=9)
+
+plt.suptitle("Distribution comparison: normal vs prefault")
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 27 (markdown) =====
+앞서 수행한 상관관계 분석과 유사하게, ETCHSOURCEUSAGE와 ETCHAUXSOURCETIMER, ETCHAUX2SOURCETIMER 변수가 정상 구간과 고장 임박 구간에서 상당히 다른 분포를 보임을 확인할 수 있다.
+
+# ===== CELL 28 (code) =====
+# .dropna() 정당화
+
+for col in train_cols:
+  normal = len(df_01_normal)
+  missing = df_01_normal[col].isna().sum()
+  print(f"결측값 {missing:,}, 비율 {missing/normal*100: .3f}%")
+
+print("===")
+
+for col in train_cols:
+  normal = len(df_01_prefault)
+  missing = df_01_prefault[col].isna().sum()
+  print(f"결측값 {missing}, 비율 {missing/normal*100: .3f}%")
+
+# ===== CELL 29 (markdown) =====
+# 3단계: 전체 데이터 분석
+
+# ===== CELL 30 (code) =====
+import os
+import glob
+
+dir_train = '/content/drive/MyDrive/phm18/train'
+dir_ttf = '/content/drive/MyDrive/phm18/train_ttf'
+
+# sorting이 잘 되어야 엉뚱한 파일끼리 merge 되지 않는다
+files_train = sorted( glob.glob( os.path.join(dir_train, '*csv')) )
+files_ttf = sorted( glob.glob( os.path.join(dir_ttf, '*csv')) )
+
+print(f"train 파일 개수: {len(files_train)}개")
+print(f"train 파일 목록: {files_train}")
+print(f"train_ttf 파일 개수: {len(files_ttf)}개")
+print(f"train_ttf 파일 목록: {files_ttf}")
+
+# ===== CELL 31 (code) =====
+# 파일 확인
+
+df_01 = pd.read_csv(files_train[0])
+
+print("행, 렬:", df_01.shape)
+print("열 목록:", df_01.columns.tolist())
+
+# ===== CELL 32 (code) =====
+# 샘플링
+
+dfs = [] # 데이터를 담을 바구니 준비
+
+for file_train, file_ttf in zip(files_train, files_ttf):
+  df_train = pd.read_csv(file_train)
+  df_ttf = pd.read_csv(file_ttf)
+  df_merged = df_train.merge(df_ttf, on='time')
+  df_sampled = df_merged.sample(frac=0.01, random_state=42)
+  dfs.append(df_sampled)
+  print(f"{file_train} 처리 완료, {df_sampled.shape}")
+
+df_sampled_1pct = pd.concat(dfs, axis=0, ignore_index=True)
+print(df_sampled_1pct.shape)
+
+# ===== CELL 33 (code) =====
+# 매번 샘플링하기 번거로우니 drive에 저장해두기
+
+df_sampled_1pct.to_csv('/content/drive/MyDrive/phm18/df_sampled_1pct.csv', index=False)
+# 저장 시 index=False 필수! 그래야 잉여 컬럼이 안생김
+print("저장 완료!")
+
+# ===== CELL 34 (code) =====
+# 불러오기
+
+df_sampled_1pct = pd.read_csv('/content/drive/MyDrive/phm18/df_sampled_1pct.csv')
+
+print("행, 렬:", df_sampled_1pct.shape)
+print("열 항목:", df_sampled_1pct.columns.tolist())
+
+# ===== CELL 35 (code) =====
+# ttf 열의 인덱스 이름 축약하기
+
+df_sampled_1pct = df_sampled_1pct.rename( columns={
+    'TTF_FlowCool Pressure Dropped Below Limit': 'TTF_pressure_drop',
+    'TTF_Flowcool Pressure Too High Check Flowcool Pump': 'TTF_pressure_high',
+    'TTF_Flowcool leak': 'TTF_leak'
+})
+
+# 잘 바뀌었는지 확인해보기
+
+print("열 항목:", df_sampled_1pct.columns.tolist())
+
+# ===== CELL 36 (code) =====
+# 바뀐 상태로 다시 저장
+
+df_sampled_1pct.to_csv('/content/drive/MyDrive/phm18/df_1pct.csv', index=False)
+# index=False 필수!
+print("저장 완료!")
+
+# ===== CELL 37 (code) =====
+df_1pct = pd.read_csv('/content/drive/MyDrive/phm18/df_1pct.csv')
+
+print("행, 렬:", df_1pct.shape)
+print("열 항목:", df_1pct.columns.tolist())
+
+# ===== CELL 38 (code) =====
+# 결측값도 확인
+
+print( df_1pct[train_cols].isna().sum() )
+
+# ===== CELL 39 (code) =====
+# 샘플링이 잘 되었는지도 확인해보기
+
+threshold = 1839644 # train_ttf 폴더 속 '01_M01_DC_train.csv'의 TTF_pressure_high 하위 25%값
+
+df_1pct['label_pressure_high'] = ( df_1pct['TTF_pressure_high'] <= threshold ).astype(int)
+print( df_1pct['label_pressure_high'].value_counts(normalize=True) )
+
+# ===== CELL 40 (markdown) =====
+앞서 분석한 '01_M01_DC_train.csv' 파일의 경우와 마찬가지로, prefault 영역의 값이 대략 23.7%가 된다.
+
+# ===== CELL 41 (code) =====
+normal_1pct = df_1pct[ df_1pct['label_pressure_high']==0 ]
+prefault_1pct = df_1pct[ df_1pct['label_pressure_high']==1 ]
+
+print(f"정상 구간: {len(normal_1pct):,}개")
+print(f"고장 임박 구간: {len(prefault_1pct):,}개")
+
+# ===== CELL 42 (code) =====
+# 비율을 보려면 density=True 까먹지 않기
+
+fig, axes = plt.subplots(len(train_cols), 1, figsize=(15, len(train_cols)*2))
+
+for i, col in enumerate(train_cols):
+  axes[i].hist( normal_1pct[col].dropna(), bins=200, alpha=0.3,
+               color='steelblue', label='normal_1pct', density=True)
+  axes[i].hist( prefault_1pct[col].dropna(), bins=200, alpha=0.3,
+               color='crimson', label='prefault_1pct', density=True)
+  axes[i].set_title(col, fontsize=9)
+  axes[i].legend(fontsize=9)
+
+plt.suptitle("1% sampling_Distribution comparison: normal vs prefault")
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 43 (markdown) =====
+1개 장비(01M01)에서는 뚜렷했던 패턴이, 20개 장비의 데이터를 합쳐 그린 히스토그램에서는 오히려 흐려졌다.
+
+
+
+
+*   가설 1-1: 01M01 장비에서 본 패턴은 그 장비만의 특징이었고, 다른 장비들은 각기 다른 패턴을 보일 수 있다.
+*   가설 1-2: 장비마다 정상치의 기준값이 달라서, 단순히 데이터를 합쳐 히스토그램을 그리면 패턴이 묻혀버릴 수 있다.
+
+
+
+
+# ===== CELL 44 (code) =====
+# 01M01 장비의 threshold를 일괄 적용하지 말고, 각기 다른 threshold를 적용하자
+
+thresholds_by_tool = df_1pct.groupby('Tool')['TTF_pressure_high'].quantile(0.25)
+print(thresholds_by_tool)
+
+# ===== CELL 45 (markdown) =====
+가설 1-2가 옳았다: 01M01 장비의 threshold를 일괄 적용했으면 04M01 장비같은 경우에는 거의 모든 행이 '고장 임박'으로, 06M02 장비같은 경우에는 거의 모든 행이 '정상 상태'로 분류되었을 것이다.
+
+04M02와 10M02가 NaN으로 뜨는 이유는 크게 두 가지를 의심해 볼 수가 있다.
+
+*   가설 2-1: 해당 장비에 'TTF_pressure_high' 고장이 단 한 번도 없었다.
+*   가설 2-2: 샘플링에 문제가 있다. (1% 샘플링이라 충분히 가능)
+
+
+
+# ===== CELL 46 (code) =====
+print( df_1pct[ df_1pct['Tool']=='04M02' ].isna().sum() )
+print( df_1pct[ df_1pct['Tool']=='04M02' ].count() ) # 결측값이 아닌 숫자의 개수를 알려준다.
+
+# ===== CELL 47 (markdown) =====
+TTF_pressure_high의 결측값은 44,529개, 결측값이 아닌 수는 0개이다.
+
+# ===== CELL 48 (code) =====
+df_04M02_full = pd.read_csv(files_ttf[6])
+print("행, 렬:", df_04M02_full.shape)
+print("열 목록:", df_04M02_full.columns.tolist())
+
+print("전체 행 수:", len(df_04M02_full))
+print(df_04M02_full['TTF_Flowcool Pressure Too High Check Flowcool Pump'].isna().sum())
+print(df_04M02_full['TTF_Flowcool Pressure Too High Check Flowcool Pump'].count())
+
+# ===== CELL 49 (markdown) =====
+결측값 5,044,087개 및 실제값 53,814개
+
+실제값은 엄연히 존재하지만, 샘플링 중에 다 뽑히지 않은 것이다.
+
+
+# ===== CELL 50 (code) =====
+# 10M02 장비도 살펴보자
+
+print(df_1pct[ df_1pct['Tool']=='10M02' ].isna().sum())
+print(df_1pct[ df_1pct['Tool']=='10M02' ].count() )
+
+# ===== CELL 51 (markdown) =====
+10M02 장비 역시 샘플링 된 데이터 한정으로는 전부 결측값이다.
+
+# ===== CELL 52 (code) =====
+df_10M02_full = pd.read_csv(files_ttf[-1])
+
+print("행 개수:", len(df_10M02_full))
+print(df_10M02_full['TTF_Flowcool Pressure Too High Check Flowcool Pump'].isna().sum())
+print(df_10M02_full['TTF_Flowcool Pressure Too High Check Flowcool Pump'].count())
+
+# ===== CELL 53 (markdown) =====
+또 중요한 발견을 했다. 10M02 장비는 실제로 고장을 겪은 적이 없었다!
+10M02 데이터는 TTF_pressure_high 고장을 분석하는 데 제외하는 게 타당하다고 생각한다.
+
+# ===== CELL 54 (markdown) =====
+**현재까지 진행 상황**
+
+
+1.   8200만 행 전부를 뜯어볼 수 없으니 01M01 장비 데이터만 따로 분석했다. 시간에 따른 그래프, 히스토그램 등
+2.   20개 장비 데이터 전부를 합쳐놓고 1%만 샘플링을 했다.
+
+1.   01M01 장비의 threshold를 적용하여 1% 샘플링 데이터 히스토그램을 그려보니, 01M01 장비 데이터의 히스토그램 모양과는 많이 달랐다.
+2.   이에 groupby를 가지고 각 장비의 하한선 25%(threshold)을 확인해보니 장비마다 큰 차이가 있었다. 어떤 장비는 NaN을 나타내기도 했다. 그 이유가 '고장을 겪지 않은 것인지' 아니면 '샘플링에 문제가 있었던 것인지'를 결정할 수가 없어서 해당 장비 데이터 전체를 보고 구분했다.
+
+

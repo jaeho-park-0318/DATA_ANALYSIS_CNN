@@ -1,0 +1,72 @@
+{
+  "scheme": "split_tool",
+  "selected_name": "RF_A",
+  "selection_rule": "검증 AP 최대; 평가 성능 미사용",
+  "threshold": 0.40857434633354467,
+  "metrics": {
+    "evaluable_events": 45,
+    "detected_events": 4,
+    "event_recall": 0.08888888888888889,
+    "recorded_events": 244,
+    "recorded_events_hit": 8,
+    "recorded_recall_with_observation_limit": 0.03278688524590164,
+    "event_coverage": 0.18442622950819673,
+    "alarm_episodes": 23770,
+    "false_alarm_episodes": 17,
+    "unknown_alarm_episodes": 23747,
+    "negative_exposure_raw": 1738814.0,
+    "false_alarms_per_3600raw": 0.0351964039857052,
+    "false_alarm_time_fraction": 0.004278778523752397,
+    "active_negative_exposure_raw": 1363578.0,
+    "active_false_alarm_episodes": 17,
+    "false_alarms_per_active_hour_seconds_interpretation": 0.0448819209462165,
+    "lead_time_median_raw": 344.0,
+    "lead_time_min_raw": 36.0,
+    "lead_time_max_raw": 566.0,
+    "lead_times": {
+      "09M02:36028038:f2": 138.0,
+      "09M02:36799210:f2": 550.0,
+      "09M02:37180898:f2": 36.0,
+      "09M02:45678266:f2": 566.0
+    },
+    "per_type": {
+      "f1": {
+        "events": 30,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "f2": {
+        "events": 11,
+        "detected": 4,
+        "recall": 0.36363636363636365
+      },
+      "f3": {
+        "events": 4,
+        "detected": 0,
+        "recall": 0.0
+      }
+    },
+    "false_episode_ids": [
+      6549,
+      6551,
+      6552,
+      6553,
+      7161,
+      7162,
+      7163,
+      7164,
+      7165,
+      7166,
+      7424,
+      7425,
+      7426,
+      7427,
+      7428,
+      7429,
+      30393
+    ],
+    "all_feature_ready_rows": 335124,
+    "unknown_label_rows": 304654,
+    "unknown_row_alarm_fraction": 0.2608598606944271
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "01M01": {
+    "fold_0": "evaluation",
+    "fold_1": "train",
+    "fold_2": "train",
+    "fold_3": "early_stopping",
+    "fold_4": "threshold_selection"
+  },
+  "01M02": {
+    "fold_0": "evaluation",
+    "fold_1": "train",
+    "fold_2": "train",
+    "fold_3": "early_stopping",
+    "fold_4": "threshold_selection"
+  },
+  "02M01": {
+    "fold_0": "evaluation",
+    "fold_1": "train",
+    "fold_2": "train",
+    "fold_3": "early_stopping",
+    "fold_4": "threshold_selection"
+  },
+  "02M02": {
+    "fold_0": "evaluation",
+    "fold_1": "train",
+    "fold_2": "train",
+    "fold_3": "early_stopping",
+    "fold_4": "threshold_selection"
+  },
+  "03M01": {
+    "fold_0": "threshold_selection",
+    "fold_1": "evaluation",
+    "fold_2": "train",
+    "fold_3": "train",
+    "fold_4": "early_stopping"
+  },
+  "03M02": {
+    "fold_0": "threshold_selection",
+    "fold_1": "evaluation",
+    "fold_2": "train",
+    "fold_3": "train",
+    "fold_4": "early_stopping"
+  },
+  "04M01": {
+    "fold_0": "threshold_selection",
+    "fold_1": "evaluation",
+    "fold_2": "train",
+    "fold_3": "train",
+    "fold_4": "early_stopping"
+  },
+  "04M02": {
+    "fold_0": "threshold_selection",
+    "fold_1": "evaluation",
+    "fold_2": "train",
+    "fold_3": "train",
+    "fold_4": "early_stopping"
+  },
+  "05M01": {
+    "fold_0": "early_stopping",
+    "fold_1": "threshold_selection",
+    "fold_2": "evaluation",
+    "fold_3": "train",
+    "fold_4": "train"
+  },
+  "05M02": {
+    "fold_0": "early_stopping",
+    "fold_1": "threshold_selection",
+    "fold_2": "evaluation",
+    "fold_3": "train",
+    "fold_4": "train"
+  },
+  "06M01": {
+    "fold_0": "early_stopping",
+    "fold_1": "threshold_selection",
+    "fold_2": "evaluation",
+    "fold_3": "train",
+    "fold_4": "train"
+  },
+  "06M02": {
+    "fold_0": "early_stopping",
+    "fold_1": "threshold_selection",
+    "fold_2": "evaluation",
+    "fold_3": "train",
+    "fold_4": "train"
+  },
+  "07M01": {
+    "fold_0": "train",
+    "fold_1": "early_stopping",
+    "fold_2": "threshold_selection",
+    "fold_3": "evaluation",
+    "fold_4": "train"
+  },
+  "07M02": {
+    "fold_0": "train",
+    "fold_1": "early_stopping",
+    "fold_2": "threshold_selection",
+    "fold_3": "evaluation",
+    "fold_4": "train"
+  },
+  "08M01": {
+    "fold_0": "train",
+    "fold_1": "early_stopping",
+    "fold_2": "threshold_selection",
+    "fold_3": "evaluation",
+    "fold_4": "train"
+  },
+  "08M02": {
+    "fold_0": "train",
+    "fold_1": "early_stopping",
+    "fold_2": "threshold_selection",
+    "fold_3": "evaluation",
+    "fold_4": "train"
+  },
+  "09M01": {
+    "fold_0": "train",
+    "fold_1": "train",
+    "fold_2": "early_stopping",
+    "fold_3": "threshold_selection",
+    "fold_4": "evaluation"
+  },
+  "09M02": {
+    "fold_0": "train",
+    "fold_1": "train",
+    "fold_2": "early_stopping",
+    "fold_3": "threshold_selection",
+    "fold_4": "evaluation"
+  },
+  "10M01": {
+    "fold_0": "train",
+    "fold_1": "train",
+    "fold_2": "early_stopping",
+    "fold_3": "threshold_selection",
+    "fold_4": "evaluation"
+  },
+  "10M02": {
+    "fold_0": "train",
+    "fold_1": "train",
+    "fold_2": "early_stopping",
+    "fold_3": "threshold_selection",
+    "fold_4": "evaluation"
+  }
+}

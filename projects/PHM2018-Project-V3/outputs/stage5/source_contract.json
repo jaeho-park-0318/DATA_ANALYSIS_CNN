@@ -1,0 +1,5 @@
+{
+  "protocol_sha256": "2f082824a09563ef2a86c35b616f229f06b6b40f28cd429974733a2700b33576",
+  "pretraining_manifest_sha256": "2d31bcaf67ba433c32682ca194b94ba41912b103d6253ab153c26bffe91301bd",
+  "protected_temporal_holdout_used": false
+}

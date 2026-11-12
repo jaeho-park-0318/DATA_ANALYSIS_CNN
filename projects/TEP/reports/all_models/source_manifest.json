@@ -1,0 +1,382 @@
+{
+  "sources": [
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\README.md",
+      "bytes": 10035,
+      "sha256": "beaeb068f14b96d591a2d5513a0b7388d928085758da6e20d7284db2eef37e1e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\AGENTS.md",
+      "bytes": 3450,
+      "sha256": "995efa61f59ef65a9a594d73c018cadb8c6c6b134832ce86fbfb2a87d99d62ac"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\README.md",
+      "bytes": 4873,
+      "sha256": "16b58fefc0870a35d632f04229c180282c95ea28b3fd94b3eeeb93844efd9574"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\AGENTS.md",
+      "bytes": 1379,
+      "sha256": "73694b44f53d28572dcb4b5d9b58765f8694c9599c550610a24841306ad9440b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\README.md",
+      "bytes": 14763,
+      "sha256": "16eea030033312ba954d0c3034c04caf71bfbc2345689cfd30da3c27c2fb59ef"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\AGENTS.md",
+      "bytes": 1441,
+      "sha256": "13c2f6d2a4c59ca4f47fa47d0abc2685756e52a2a1a155fa18616c52cff731fc"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\test_comparison.csv",
+      "bytes": 18882,
+      "sha256": "930b08709db410808ee67252e28d0aa96032304dc5fbc9d30b8c86b649146e11"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\model_performance_summary.csv",
+      "bytes": 2052,
+      "sha256": "0a848ec1ffb93152b041dcccb502255d38b2af4b0e3644ad936daf9dab8e9b4b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\imbalance_comparison.csv",
+      "bytes": 1031,
+      "sha256": "e99c8d6cb4d8ed933a6c730ba740ee07c53f846a98313613b41aa1ac8526feb0"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\model_extension_overview\\accuracy_model_summary.csv",
+      "bytes": 1124,
+      "sha256": "ca576585ae883aae97521d69489ed81cf40f37c424bdad3ed61a242b2536e95f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\fault_type_validation\\tables\\classification_summary.csv",
+      "bytes": 297,
+      "sha256": "47a9581b6c4bc321e296fe240b2120c899977487f7e2bad2dc598947ef69c24a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\fault_type_validation\\tables\\per_fault_diagnosis_time.csv",
+      "bytes": 1073,
+      "sha256": "387c7173583f4c7419c4da569c663afd2eca5058d9f60983e52770218ce51fc3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\fault_type_validation\\tables\\availability_mean.csv",
+      "bytes": 1101,
+      "sha256": "3d6a76746f2f2cafa3eca171aa4dd4313ee4a06d95a419cec78df79be2952e74"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\next_step_forecasting\\tables\\test_summary.csv",
+      "bytes": 3094,
+      "sha256": "c842e80f00f6d5411c5607c0c000a2892d1c35d10b743884088155e93576eebf"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\next_step_forecasting\\tables\\validation_summary.csv",
+      "bytes": 362,
+      "sha256": "be76ae4956b79fd068fb5f41554b547204a4aa5663cfe25c6c69496280d88a59"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\fault_type_validation\\validation.json",
+      "bytes": 1589,
+      "sha256": "03acb8f6458fc7662844e7c6edcda4faa58892c480aa304d81c3869515e44312"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\sources\\phase2\\dense_metrics.json",
+      "bytes": 1380,
+      "sha256": "8dc1bb1d2e2b442f5f1dcff2663e3f33ac698099c54084ec6431b71d1991e996"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\configs\\phase2.json",
+      "bytes": 1040,
+      "sha256": "d3d8bf3942caf2895d405cf2cd5b9c51aeb2ac946249bc6c02d8c5d4d386ce90"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\summary.json",
+      "bytes": 7572,
+      "sha256": "95fe609641e7ed1c6df887c57421bfe99d610b910a4aba39e6bcf2a9a7a86c71"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4_5\\summary.json",
+      "bytes": 5976,
+      "sha256": "d9480895ff1aca951f4b75d38e6539c518d7b4d837077dc05eaf3ecd468bb25f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\stage6\\holdout_classification.json",
+      "bytes": 284,
+      "sha256": "039774bf7e435ca9bc4bf0504a46498c0b52202631f3c4cc4dee01808e5724b1"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage2_training_summary.csv",
+      "bytes": 816,
+      "sha256": "596ad22df87591569a38898d3b604d475dcd86d5ef319eab4a6591fba31ab656"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage3_training_summary.csv",
+      "bytes": 1103,
+      "sha256": "2257822017cfc147d79282deca0787ae3915add7edbcde16efd69bedc21b3f0f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage4_training_summary.csv",
+      "bytes": 4628,
+      "sha256": "a092b0442536e53640d7126428a70360bf48d5ff10bfb08d017233c3fd9dbc3f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage5_training_summary.csv",
+      "bytes": 1215,
+      "sha256": "629a3172a29fe0168d0b86b91a306d78df82be78881ccfc397144ca7eb3a3f28"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage7_training_summary.csv",
+      "bytes": 288,
+      "sha256": "1624caacc4d13683859bcb43777a1432ac9a9a2feb69f023c93b5cc121c956bf"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage2_operating_points.csv",
+      "bytes": 3104,
+      "sha256": "947d38f04a77c7f5cce3cdccfddd537ebf7003471dbdacb7b15ed9233403dfc2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage3_budget_points.csv",
+      "bytes": 4069,
+      "sha256": "d2726ea1d0e11a0d5d7007f4d74785ec23c6edf054ad21bde400ea0b81c0ffe1"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage4_seed_ranges.csv",
+      "bytes": 3124,
+      "sha256": "831abee94f6a6ee859cbbd55a9fabe3c8cd5dc31fcc0cdc9b48c1bc924642b8e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage5_budget_points.csv",
+      "bytes": 5089,
+      "sha256": "e4305156df2d58cd2f2b2a3b9ca0c38bdaed144e06de93578fd66d55c3310a34"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage6_holdout_summary.csv",
+      "bytes": 833,
+      "sha256": "308b0422dd4c0de568f7ed4450f382c477ebac9a4d95e44efd3f18618845305f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\tables\\stage7_comparison_display.csv",
+      "bytes": 680,
+      "sha256": "bae0cd1cbf238c8924c1f3d504f70490b215376f9afb44712a25022727bca203"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4\\metrics.parquet",
+      "bytes": 42241,
+      "sha256": "5e96cb8a70423b15f7875ded9190ab808104161b7bf9235287c3f241660c596c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4_5\\cv_metrics.parquet",
+      "bytes": 22095,
+      "sha256": "35544790bea1eddf36193885ae6228322ed79c69111e97a01c3c755f9b7ea6f4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\outputs\\stage4_5\\cv_summary.parquet",
+      "bytes": 11283,
+      "sha256": "be6359f35d6b182e070202784e20ceb15051a630f63fd291775985183e8b8480"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\stage6\\holdout_predictions.parquet",
+      "bytes": 4748674,
+      "sha256": "cc6cb44efcafb6441c677fff2f0abf8cf0348bf6fdd462ee10e04fee79565221"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\LogisticRegression_Current_natural_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "a293c5e4fe72ac5941acc4ad34989c24086c4d4f66d8ccfe5edb5e7051da43d2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\LogisticRegression_Current_balanced_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "197198bd4cd0ab687432f5865152eefad4a4bd804f45f77c1a4ece063af7700a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\LogisticRegression_Current_natural_s7_confusion.npy",
+      "bytes": 3656,
+      "sha256": "a293c5e4fe72ac5941acc4ad34989c24086c4d4f66d8ccfe5edb5e7051da43d2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\LogisticRegression_Current_natural_s2026_confusion.npy",
+      "bytes": 3656,
+      "sha256": "a293c5e4fe72ac5941acc4ad34989c24086c4d4f66d8ccfe5edb5e7051da43d2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\LogisticRegression_Statistical_natural_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "3612cb3b8f7fb73cd75b12ab1973dbe49863d4004a2cf9873fb940f0172b5a9b"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\LogisticRegression_Statistical_balanced_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "032401c3beaaa4e2788bd3b6b97ae23c93ffe72c621df21e25dfcd74e8fcb978"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\LogisticRegression_Statistical_balanced_s7_confusion.npy",
+      "bytes": 3656,
+      "sha256": "032401c3beaaa4e2788bd3b6b97ae23c93ffe72c621df21e25dfcd74e8fcb978"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\LogisticRegression_Statistical_balanced_s2026_confusion.npy",
+      "bytes": 3656,
+      "sha256": "032401c3beaaa4e2788bd3b6b97ae23c93ffe72c621df21e25dfcd74e8fcb978"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\RandomForest_Current_natural_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "1bc6b67e98a579a401f729b3f950eb7d09d51747e5f482be4e4ed6dc052eb7b3"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\RandomForest_Current_balanced_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "1a8f010be0b79ffd8ecc3e58c4c04082ec5e22103cd16b4379dfaac494d65d45"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\RandomForest_Current_natural_s7_confusion.npy",
+      "bytes": 3656,
+      "sha256": "d8ca45c4d8c68fa9056d8d45bcb229fdc312062a4be76ff037704bc6c5a4be58"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\RandomForest_Current_natural_s2026_confusion.npy",
+      "bytes": 3656,
+      "sha256": "c1e6ae1e07a935cf724a8c8f2bc9931240e892ef908b735ae88d4b3d18c6fe6d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\RandomForest_Statistical_natural_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "3ae500d1a1f49e886c9bd8009855294fce0ccecd24ebb1acbc995feb0a02d88f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\RandomForest_Statistical_balanced_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "8c449dff29ef23d82d9cdd93729a801d7809d17ebf6a07b014afca78459fdfb2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\RandomForest_Statistical_natural_s7_confusion.npy",
+      "bytes": 3656,
+      "sha256": "cb8ca25f4a37882ecf4b4948b83c15e237e150d20e9b504264ed04094791561c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\RandomForest_Statistical_natural_s2026_confusion.npy",
+      "bytes": 3656,
+      "sha256": "b2427665ea187717c9534fca5ab415e6eb8272bf1ca8f7fce480eaad76d94cf4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\XGBoost_Current_natural_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "ea9ec85cee9c7c838766b52acea16098ced82490624473c125b3d42cdfc752c8"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\XGBoost_Current_balanced_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "2a326de7894c652fa432a12a8b4dcfa0c05e66e0391423e2d9e083dd129072e6"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\XGBoost_Current_balanced_s7_confusion.npy",
+      "bytes": 3656,
+      "sha256": "670ef589903ac180e372175502223d2f86aa536dbd7a11c8865a142ec2daaea4"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\XGBoost_Current_balanced_s2026_confusion.npy",
+      "bytes": 3656,
+      "sha256": "ba9325fcb002208062faef3183d4f3d67f3762507e0607c2db5884f891ea9a14"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\XGBoost_Statistical_natural_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "466a74d7c7443c0392fa5b60152dabb3fdc3578bf1ca67530c8e81950528f11a"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\XGBoost_Statistical_balanced_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "0e4e39fdac514815c8012776c3cbec17828a2673f72abff32c807e3c52fdc181"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\XGBoost_Statistical_natural_s7_confusion.npy",
+      "bytes": 3656,
+      "sha256": "ed088cd4dbdbe343e5e5b5fadfa6ea614cd1626ee423c5cb80ded7fb4887053d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\XGBoost_Statistical_natural_s2026_confusion.npy",
+      "bytes": 3656,
+      "sha256": "75475c2aa83722483299cdb7c2eb1c4c2b0f17aba576958cf782a3e6ef7ecfab"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\LSTM_Temporal_balanced_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "6a65afc29a6ccbdac3f180ec1e4d179dacd0b6d237b87d95dce60c565653809d"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\LSTM_Temporal_balanced_s7_confusion.npy",
+      "bytes": 3656,
+      "sha256": "05e79824d6d811440a4f312008cde23cbbaa3056894acd7f7ad7aa92025af029"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\LSTM_Temporal_balanced_s2026_confusion.npy",
+      "bytes": 3656,
+      "sha256": "2c4bc7bdd686139a690a918186959e7a84ef59e9f6556994d763d66114e78e12"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\GRU_Temporal_balanced_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "1d10e5c9e6840baa303c903c3466784fe46e442fa0d5620d576ce58bdf0e43b2"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\GRU_Temporal_balanced_s7_confusion.npy",
+      "bytes": 3656,
+      "sha256": "20db388b09335f632e1220d506b06ff501b4ab81aa5a7882e7cf74412c0e72e7"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\GRU_Temporal_balanced_s2026_confusion.npy",
+      "bytes": 3656,
+      "sha256": "71136766aaa43980eae76d113504719bc3639614c5ec91877257d4488947623c"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\CNN1D_Temporal_balanced_s42_confusion.npy",
+      "bytes": 3656,
+      "sha256": "71366108cc25ff2a109fde74f44fe96ffc77998a292bde4f29afadda43034a03"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\CNN1D_Temporal_balanced_s7_confusion.npy",
+      "bytes": 3656,
+      "sha256": "8e8f08ffb711ccad3e813938152dfbc71f6e959d71fce4adf47fd2478a984885"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\CNN1D_Temporal_balanced_s2026_confusion.npy",
+      "bytes": 3656,
+      "sha256": "161eb2f0ff052d992521fa7d522e6a960f99647d5ce1cbc5920bef93e00ffa07"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\tables\\phase2\\primary_dense_confusion.npy",
+      "bytes": 3656,
+      "sha256": "0fb4e9df12781567856c09b411cc36e623b30aea3f4dfebdee3f8579b07fb811"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\fault_type_validation\\figures\\detection_vs_diagnosis_time.png",
+      "bytes": 131782,
+      "sha256": "2b4d15f2934f40f827c60735812cfacce81cbae2736effdb79b13a85bc4b207e"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\fault_type_validation\\figures\\availability_detection_vs_diagnosis.png",
+      "bytes": 82204,
+      "sha256": "bb1c0729baef76fa76eb9ac8470d27685cfacf6cb6f7effcb474a72ae4ec8940"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\reports\\next_step_forecasting\\figures\\lstm_vs_persistence.png",
+      "bytes": 63305,
+      "sha256": "787bc4d8fc537f63fccf12c373d865613e556cdf56f6287dc5a3c225fb1d3c7f"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\figures\\final_evaluation\\group_results.png",
+      "bytes": 72583,
+      "sha256": "ac1dd15328135e1dded1ea13f4080909240db8d87913dc062af3486a60aee517"
+    },
+    {
+      "path": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V3\\outputs\\figures\\stage7\\comparison.png",
+      "bytes": 138014,
+      "sha256": "ba08fbbf85230229a9cd0592410395966972521903dcc19cfd1b4358d14bf84f"
+    }
+  ],
+  "changed": [],
+  "raw_sensor_files_read": false,
+  "phm_saved_predictions_read_only": true
+}

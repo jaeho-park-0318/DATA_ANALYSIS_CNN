@@ -1,0 +1,58 @@
+[
+  {
+    "file": "outputs/figures/final_evaluation/protected_split.png",
+    "title": "미래 Holdout을 보호한 장비 그룹 검증",
+    "source": "stage5_final_protocol.json / pretraining_split_boundaries.csv",
+    "context": "개념도(guard 폭은 생략) · 최종 모델은 이전 stage2의 전체20대 시간 train 모델 · 그룹 모델은 별도의 일반화 진단",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/final_evaluation/group_results.png",
+    "title": "다른 장비에서의 검출력은 여전히 제한적",
+    "source": "stage5_budget_points.csv",
+    "context": "장비07/08의4대 · 그룹 학습 장비와 분리 · validation 조기 종료/임계값 선택 포함 · 독립 최종 시험 아님",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/final_evaluation/selection.png",
+    "title": "Holdout을 열기 전에 선택한 모델과 기준",
+    "source": "stage6_selection_evidence.csv / stage6_selection_ranking.csv",
+    "context": "시간·그룹 검증 중 낮은 기록 검출률을 상한5/10에서 평균 · 최종 B stage2 저장 모델 그대로 사용 · 재학습 없음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/final_evaluation/holdout_results.png",
+    "title": "동결한 두 운영점의 최종 시간 Holdout 결과",
+    "source": "stage6_holdout_summary.csv / stage6_holdout_uncertainty.csv",
+    "context": "최종 시간 Holdout · B 최대가용 · seed42 · 고정 H600/L60 · 기록194개 / 입력 가용91개 · 시간 단위 raw\n오차막대: 장비쌍10개 군집 부트스트랩2,000회 조건부95% 구간 · 가용성/선택 편향을 보정한 외부 신뢰구간 아님",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/final_evaluation/unknown_burden.png",
+    "title": "경보 부담과 정답 불확실성을 함께 해석해야 한다",
+    "source": "stage6_holdout_summary.csv / holdout_classification.json",
+    "context": "최종 시간 Holdout · B 최대가용 · seed42 · 고정 H600/L60 · 기록194개 / 입력 가용91개 · 시간 단위 raw\n관측 지지길이는 명목4 raw 센서 지지와 점수 유지 구간의 교집합 · 실제 가동시간/시간당 오경보율 아님",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/final_evaluation/by_tool.png",
+    "title": "장비별 검출·미검출·입력 공백",
+    "source": "stage6_holdout_by_tool.csv",
+    "context": "최종 시간 Holdout · B 최대가용 · seed42 · 고정 H600/L60 · 기록194개 / 입력 가용91개 · 시간 단위 raw\n공통 B 모델을 모든 장비에 적용 · 장비별 임계값 조정 없음 · 무고장 장비의 경보 부담은 별도 표에 보존",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/final_evaluation/lead_resources.png",
+    "title": "선행시간과 로컬 CUDA 사용 기록",
+    "source": "stage6_holdout_events.csv / stage5_resource_telemetry.csv",
+    "context": "좌: 최종 Holdout 검출된 고장만 포함 · 우: 그룹 학습의 약2초 간격 표본, 순간 최대치 보장 없음\nGPU 전체 사용량은 다른 프로세스를 포함할 수 있음 · GPU 학습 순차, 경보 평가 CPU3프로세스",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/final_evaluation/event_cases.png",
+    "title": "실제 센서와 저장 예측으로 확인한 검출·미검출 사례",
+    "source": "normalized 센서 / holdout_predictions.parquet / stage6_holdout_episodes.csv",
+    "context": "최종 시간 Holdout · B 최대가용 · seed42 · 고정 H600/L60 · 기록194개 / 입력 가용91개 · 시간 단위 raw\n초록: 유효 사전 예측창 [-600,-60] · 공백/세그먼트 경계에서 선 끊음 · 두 센서만 표시 · 사례 선정은 사후 설명용",
+    "plot_values": null
+  }
+]

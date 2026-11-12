@@ -1,0 +1,9 @@
+{
+  "cohort": "common",
+  "row_label_order_sha256": {
+    "train": "5f30167a646655b378d2c6fe54368afa9200f7007fcc64ffa3abf11819d45365",
+    "validation": "aaaef5b878cef93f9f8671e5937ad0ff3c57af8c7735053d7a95b0c5e022fd63"
+  },
+  "train_rows": 309273,
+  "validation_rows": 309203
+}

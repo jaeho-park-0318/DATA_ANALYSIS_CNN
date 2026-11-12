@@ -1,12 +1,13 @@
 * text=auto
 *.md text eol=lf
-spatial_boosting/*.py text eol=lf
-spatial_boosting/*.txt text eol=lf
-spatial_boosting/*.ipynb text eol=lf
-spatial_boosting/results/*.json text eol=lf
-spatial_boosting/results/*.csv text eol=lf
-spatial_boosting/results/*.txt text eol=lf
+*.py text eol=lf
+*.ipynb text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.png -text
+*.jpg -text
+*.pdf -text
+*.pptx -text
 *.joblib -text
 *.npz -text
-*.pptx -text
-*.pdf -text

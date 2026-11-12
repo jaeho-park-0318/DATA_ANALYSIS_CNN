@@ -1,0 +1,22 @@
+{
+  "raw_root": "C:/Users/fl27/Documents/ChatGPT/PHM2018-Project/phm_data_challenge_2018",
+  "requested_raw_root": "C:/Users/fl27/Documents/ChatGPT/PHM2018-Project/data/raw",
+  "raw_path_note": "요청 경로가 실제로 없어 원본 실재 위치를 읽기 전용으로 참조. 복사/링크 생성 없음.",
+  "python": "C:/Users/fl27/anaconda3/envs/phm2018/python.exe",
+  "threads": 4,
+  "pilot_tools": ["01M01", "03M02"],
+  "horizons": [300, 600, 1800],
+  "minimum_lead": 60,
+  "anchor_stride": 60,
+  "anchor_origin": 0,
+  "gap_threshold": 12,
+  "feature_windows": [300, 900],
+  "time_unit": "raw_unverified",
+  "seconds_per_raw_unit": null,
+  "history_completeness_verified": false,
+  "maintenance_intervals_verified": false,
+  "no_wafer_policy": "quarantine_disagreement_between_include_and_exclude",
+  "max_rss_gib": 12,
+  "min_available_ram_gib": 4,
+  "seed": 42
+}

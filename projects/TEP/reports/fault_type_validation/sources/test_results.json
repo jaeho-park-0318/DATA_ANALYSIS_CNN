@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "wrong first type followed by later correct diagnosis",
+    "mixed types detect a fault but cannot form3 identical diagnoses",
+    "unavailable inputs do not produce diagnoses",
+    "all21 existing class precision/recall/F1/support reproduced",
+    "correct diagnosis requires detection and cannot precede detection",
+    "all protected existing notebooks/model/checkpoint/config files unchanged"
+  ],
+  "synthetic_inputs_used_only_for_logic_tests": true,
+  "changed_files": []
+}

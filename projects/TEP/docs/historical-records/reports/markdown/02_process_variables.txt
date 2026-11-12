@@ -1,0 +1,80 @@
+# 공정과 변수 사전
+
+원료 A/C/D/E가 Reactor로 들어가고 반응 혼합물은 Condenser에서 냉각된다. Separator가 기상과 액상을 나누며, 기상은 purge 및 Compressor recycle 경로로 이어진다. 액상은 Stripper에서 분리되어 제품으로 나간다. 냉각수와 steam, 각 유량 제어 밸브가 온도·압력·수위·조성을 조절한다. 아래 도식은 배포 시뮬레이터의 장치/stream 정의를 요약한 개념도이며 상세 배관도는 아니다.
+
+```mermaid
+flowchart LR
+ Feed[원료 공급] --> Reactor
+ Reactor --> Condenser --> Separator
+ Separator --> Compressor --> Reactor
+ Separator --> Purge
+ Separator --> Stripper --> Product
+ Cooling[냉각수] -.-> Reactor
+ Cooling -.-> Condenser
+ Steam -.-> Stripper
+```
+
+| variable | A_header | meaning | unit | device | expected_response | evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| xmeas_1 | xmv-1 | A Feed | kscmh | Feed | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_2 | xmv-2 | D Feed | kg/hr | Feed | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_3 | xmv-3 | E Feed | kg/hr | Feed | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_4 | xmv-4 | A and C Feed | kscmh | Feed | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_5 | xmv-5 | Recycle Flow | kscmh | Feed | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_6 | xmv-6 | Reactor Feed Rate | kscmh | Feed | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_7 | xmv-7 | Reactor Pressure | kPa gauge | Reactor | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_8 | xmv-8 | Reactor Level | % | Reactor | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_9 | xmv-9 | Reactor Temperature | Deg C | Reactor | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_10 | xmv-10 | Purge Rate | kscmh | Purge | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_11 | xmv-11 | Product Sep Temp | Deg C | Separator | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_12 | xmv-12 | Product Sep Level | % | Separator | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_13 | xmv-13 | Product Sep Pressure | kPa gauge | Separator | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_14 | xmv-14 | Product Sep Underflow | m3/hr | Separator | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_15 | xmv-15 | Stripper Level | % | Stripper | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_16 | xmv-16 | Stripper Pressure | kPa gauge | Stripper | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_17 | xmv-17 | Stripper Underflow | m3/hr | Stripper | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_18 | xmv-18 | Stripper Temp | Deg C | Stripper | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_19 | xmv-19 | Stripper Steam Flow | kg/h | Stripper | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_20 | xmv-20 | Compressor Work | kW | Compressor | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_21 | xmv-21 | Reactor Coolant Temp | Deg C | Reactor cooling | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_22 | xmv-22 | Separator Coolant Temp | Deg C | Condenser cooling | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_23 | xmv-23 | Component A to Reactor | mol % | Reactor feed analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_24 | xmv-24 | Component B to Reactor | mol % | Reactor feed analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_25 | xmv-25 | Component C to Reactor | mol % | Reactor feed analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_26 | xmv-26 | Component D to Reactor | mol % | Reactor feed analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_27 | xmv-27 | Component E to Reactor | mol % | Reactor feed analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_28 | xmv-28 | Component F to Reactor | mol % | Reactor feed analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_29 | xmv-29 | Component A in Purge | mol % | Purge analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_30 | xmv-30 | Component B in Purge | mol % | Purge analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_31 | xmv-31 | Component C in Purge | mol % | Purge analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_32 | xmv-32 | Component D in Purge | mol % | Purge analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_33 | xmv-33 | Component E in Purge | mol % | Purge analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_34 | xmv-34 | Component F in Purge | mol % | Purge analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_35 | xmv-35 | Component G in Purge | mol % | Purge analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_36 | xmv-36 | Component H in Purge | mol % | Purge analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_37 | xmv-37 | Component D in Product | mol % | Product analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_38 | xmv-38 | Component E in Product | mol % | Product analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_39 | xmv-39 | Component F in Product | mol % | Product analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_40 | xmv-40 | Component G in Product | mol % | Product analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmeas_41 | xmv-41 | Component H in Product | mol % | Product analyzer | 관련 유량·온도·압력·조성 교란 및 제어 보상에 반응 가능(가설) | TEplot.m; temexd_mod.c Output 1 |
+| xmv_1 | 미포함 | D feed | % | 제어 밸브 | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+| xmv_2 | 미포함 | E Feed | % | 제어 밸브 | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+| xmv_3 | 미포함 | A Feed | % | 제어 밸브 | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+| xmv_4 | 미포함 | A and C Feed | % | 제어 밸브 | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+| xmv_5 | 미포함 | Recycle | % | 제어 밸브 | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+| xmv_6 | 미포함 | Purge | % | 제어 밸브 | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+| xmv_7 | 미포함 | Separator | % | 제어 밸브 | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+| xmv_8 | 미포함 | Stripper | % | 제어 밸브 | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+| xmv_9 | 미포함 | Steam | % | 제어 밸브 | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+| xmv_10 | 미포함 | Reactor Coolant | % | 제어 밸브 | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+| xmv_11 | 미포함 | Condenser Coolant | % | 제어 밸브 | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+| xmv_12 | 미포함 | Agitator | % | Reactor agitator | 제어기 보상으로 변화 가능(가설) | TEplot.m; B는 xmv_1~11만 제공 |
+
+kscmh는 원문 표기를 보존했다. xmv_12는 로컬 시뮬레이터에 있지만 Harvard에는 없다. 변수 사전은 Dataset A 배포 소스의 정의이며 Harvard의 동일 단위·보정·운전 조건을 자동 확정하지 않는다. 예상 반응은 관측 결과와 별개의 물리적 가설이다.
+
+
+## 출처와 검증 범위
+
+- Dataset A: https://github.com/Blound04/tennessee-eastman-dataset (MIT). 로컬 README, simulator/auto_run.m, Mode_1_Init.m, MultiLoop_mode1.mdl, TEplot.m, temexd_mod.c를 대조했다. 로컬 checkout의 commit은 미확인이다. 다운로드한 Excel은 원래 LFS 포인터의 SHA256과 일치한다.
+- Dataset B: https://doi.org/10.7910/DVN/6C3JR1 . 공식 API의 V1.0 메타데이터를 reports/sources/harvard_metadata.json에 보존했다. 배포 설명은 public-domain dedication과 면책 조건을 포함한다. 로컬 파일의 공식 MD5 일치 여부는 감사 표에 기록했다.
+- 수치 결과는 로컬 원본의 재현 가능한 기술통계다. Phase 1에서 모델을 학습하거나 Test로 모델을 선택하지 않았다. 자료는 화학공정 시뮬레이션이며 실제 반도체 공정 검증 결과가 아니다.

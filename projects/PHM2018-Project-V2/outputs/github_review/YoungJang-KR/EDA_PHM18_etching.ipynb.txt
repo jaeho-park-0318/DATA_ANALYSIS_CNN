@@ -1,0 +1,267 @@
+
+# ===== CELL 0 (markdown) =====
+<a href="https://colab.research.google.com/github/YoungJang-KR/semiconductor-fault-detection/blob/main/EDA_PHM18_etching.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+# ===== CELL 1 (code) =====
+# 구글 드라이브-코랩 연동
+from google.colab import drive
+drive.mount('/content/drive')
+
+# ===== CELL 2 (code) =====
+import pandas as pd
+
+# ===== CELL 3 (code) =====
+# pandas를 가지고 train 폴더의 01_M01_DC_train.csv 파일 분석하기
+
+path_train = '/content/drive/MyDrive/phm18/train/01_M01_DC_train.csv'
+
+df_train = pd.read_csv(path_train)
+print("행, 렬:", df_train.shape)
+print("열 항목:", df_train.columns.tolist())
+
+# ===== CELL 4 (code) =====
+# 마찬가지로 train_ttf 폴더의 01_M01_DC_train.csv 파일 분석하기
+path_ttf = '/content/drive/MyDrive/phm18/train_ttf/01_M01_DC_train.csv'
+
+df_ttf = pd.read_csv(path_ttf)
+print("행, 렬:", df_ttf.shape)
+print("열 항목:", df_ttf.columns.tolist())
+
+# ===== CELL 5 (code) =====
+# train_ttf 파일의 열 항목 이름이 너무 긺으로 수정하기
+df_ttf = df_ttf.rename( columns={
+    'TTF_FlowCool Pressure Dropped Below Limit': 'TTF_pressure_drop',
+    'TTF_Flowcool Pressure Too High Check Flowcool Pump': 'TTF_pressure_high',
+    'TTF_Flowcool leak': 'TTF_leak'
+})
+
+# 변경이 잘 되었나 확인
+print("열 항목:", df_ttf.columns.tolist())
+
+# ===== CELL 6 (code) =====
+# 분석을 위해서 train 파일과 train_ttf 파일을 시간에 대해 merge
+df = df_train.merge( df_ttf, on='time' )
+
+# merge가 잘 되었나 확인, 열의 개수는 27이 되어야 함
+print("행, 렬:", df.shape)
+
+# ===== CELL 7 (code) =====
+# 센서값(측정값)들을 시간에 대해 시각화 해보기
+
+sensor_cols = [ 'IONGAUGEPRESSURE',     # 챔버 내부 압력
+               'ETCHSUPPRESSORCURRENT', # 억제 그리드 전류 - 이상적으로는 0이어야 함
+                'FLOWCOOLPRESSURE',     # 기체 헬륨이 든 냉각관의 압력
+                'ACTUALROTATIONANGLE',  # 웨이퍼가 실제 회전한 각도
+                'ACTUALSTEPDURATION'    # 특정 공정이 실제로 진행된 시간
+                ]
+
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots( len(sensor_cols), 1, figsize=(15, len(sensor_cols)*2) )
+
+for i, col in enumerate(sensor_cols):
+  axes[i].plot( df['time'], df[col], linewidth=0.3 )
+  axes[i].set_xlabel('time',fontsize=9)
+  axes[i].set_ylabel(col, fontsize=9)
+  axes[i].tick_params(labelsize=8)
+
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 8 (code) =====
+# 고장(TTF) 변수들 역시 시간에 대해 시각화 해보자
+
+for col in sensor_cols:
+  fig, ax1 = plt.subplots(figsize=(15, 3))
+  ax1.plot( df['time'], df[col], linewidth=0.3, color='tab:blue' )
+  ax1.set_ylabel(col, fontsize=9)
+  ax1.tick_params(labelsize=8)
+
+  ax2 = ax1.twinx()
+  ax2.plot( df['time'], df['TTF_pressure_drop'], linewidth=0.3,
+           color='tab:red', label='TTF_pressure_drop' )
+  ax2.plot( df['time'], df['TTF_pressure_high'], linewidth=0.3,
+           color='tab:orange', label='TTF_pressure_high')
+  ax2.plot( df['time'], df['TTF_leak'], linewidth=0.3,
+           color='tab:green', label='TTF_leak')
+
+  ax2.legend(fontsize=8, loc='upper right')
+
+plt.tight_layout()
+plt.show()
+
+
+# ===== CELL 9 (code) =====
+# 이대로는 무언가를 알기 힘듦으로 상관관계 분석해보기
+
+ttf_cols = [ 'TTF_pressure_drop', 'TTF_pressure_high', 'TTF_leak' ]
+train_cols = [ 'IONGAUGEPRESSURE', 'ETCHBEAMVOLTAGE', 'ETCHBEAMCURRENT',
+             'ETCHSUPPRESSORVOLTAGE', 'ETCHSUPPRESSORCURRENT', 'FLOWCOOLFLOWRATE',
+              'FLOWCOOLPRESSURE', 'ETCHGASCHANNEL1READBACK', 'ETCHPBNGASREADBACK',
+              'FIXTURETILTANGLE', 'ROTATIONSPEED', 'ACTUALROTATIONANGLE', 'FIXTURESHUTTERPOSITION',
+              'ETCHSOURCEUSAGE', 'ETCHAUXSOURCETIMER', 'ETCHAUX2SOURCETIMER', 'ACTUALSTEPDURATION' ]
+
+corr = df[ train_cols + ttf_cols ].corr() # ()
+corr_ttf = corr.loc[ train_cols, ttf_cols ]
+print( corr_ttf )
+
+# ===== CELL 10 (code) =====
+# 히트맵으로 상관관계 시각화
+import seaborn as sns
+
+sns.heatmap( corr_ttf,
+            fmt = '.3f',
+            annot = True,
+            cmap = 'coolwarm',
+            center = 0)
+
+plt.figure(figsize=(15,5))
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 11 (code) =====
+# 다섯 개 센서값에 대해서만 상관관계 및 시각화
+corr_sensor = df[ sensor_cols + ttf_cols ].corr()
+corr_sensor_loc = corr_sensor.loc[sensor_cols, ttf_cols]
+print(corr_sensor_loc)
+
+sns.heatmap( corr_sensor_loc,
+            fmt = '.3f',
+            annot = True,
+            cmap = 'coolwarm',
+            center=0 )
+
+plt.figure(figsize=(15, 5))
+plt.tight_layout()
+plt.show()
+
+# ===== CELL 12 (markdown) =====
+복습
+
+# ===== CELL 13 (code) =====
+# 상관관계가 약하므로, 임계값을 정하여 그 구간에서 분포 확인하기
+
+print( df[ ['TTF_pressure_drop', 'TTF_pressure_high', 'TTF_leak'] ].describe() )
+
+# ===== CELL 14 (code) =====
+# TTF_pressure_high 고장 분석
+threshold = 1839644 # 고장에 가까운 하위 25% TTF_pressure_high값 이용
+
+df['label_pressure_high'] = (df['TTF_pressure_high'] <= threshold).astype(int)
+print(df['label_pressure_high'].value_counts())
+
+df_normal = df[ df['label_pressure_high'] == 0 ]
+df_prefault = df[ df['label_pressure_high'] == 1 ]
+
+print(f"정상 구간 {len(df_normal):,}행")
+print(f"고장 임박 {len(df_prefault):,}행")
+
+
+# ===== CELL 15 (code) =====
+print("=== 정상 구간 평균값 ===")
+print(df_normal[train_cols].mean())
+print(df_prefault[train_cols].mean())
+
+# ===== CELL 16 (code) =====
+fig, axes = plt.subplots(len(train_cols), 1, figsize=(15, len(train_cols)*2))
+
+for i, col in enumerate(train_cols):
+  axes[i].hist( df_normal[col].dropna(), bins=300, alpha=0.3,
+               color='steelblue', label='normal', density=True)
+  axes[i].hist( df_prefault[col].dropna(), bins=300, alpha=0.3,
+               color='crimson', label='prefault', density=True)
+  axes[i].set_title(col, fontsize=10)
+  axes[i].legend(fontsize=8)
+
+plt.suptitle("Distribution Comparison: normal vs prefault")
+plt.tight_layout()
+plt.show()
+
+
+
+# ===== CELL 17 (code) =====
+# dropna() 정당화
+for col in train_cols:
+  total = len(df_normal)
+  missing = df_normal[col].isna().sum()
+  print(f"{col}: 결측값 {missing:,}{missing/total*100: .2f}%")
+
+# ===== CELL 18 (markdown) =====
+3단계
+
+# ===== CELL 19 (code) =====
+import os
+
+train_dir = '/content/drive/MyDrive/phm18/train'
+ttf_dir = '/content/drive/MyDrive/phm18/train_ttf'
+
+# 리스트를 순서대로 정렬
+train_files = sorted(os.listdir(train_dir))
+ttf_files = sorted(os.listdir(ttf_dir))
+
+print(f"train 파일 개수: {len(train_files)}")
+print(train_files)
+print()
+print(f"train_ttf 파일 개수 {len(ttf_files)}")
+print(ttf_files)
+
+# ===== CELL 20 (code) =====
+sample_fraction = 0.1
+df_list = []
+
+for train_file, ttf_file in zip(train_files, ttf_files):
+  train_path = os.path.join(train_dir, train_file)
+  ttf_path = os.path.join(ttf_dir, ttf_file)
+
+  df_train_all = pd.read_csv(train_path)
+  df_ttf_all = pd.read_csv(ttf_path)
+
+  df_merged = df_train_all.merge(df_ttf_all, on='time')
+
+  # 합친 것 중에 10%만 뽑기
+  df_sampled = df_merged.sample(frac = sample_fraction, random_state=42) # random_state를 42로 고정
+
+  # 뽑은 것을 df_list 바구니에 넣기
+  df_list.append(df_sampled)
+  print(f"{train_file} 처리 완료: {df_sampled.shape}")
+
+# 바구니에 모인 20 조각을 하나로 이어붙이기
+df_all = pd.concat(df_list, ignore_index=True)
+print("\n전체 합친 결과", df_all.shape)
+
+# ===== CELL 21 (code) =====
+# 다운샘플링 왜곡 여부 체크
+
+threshold_high = 1839644
+
+df_all['label_pressure_high'] = (df_all['TTF_Flowcool Pressure Too High Check Flowcool Pump'] <= threshold_high).astype(int)
+
+print(df_all['label_pressure_high'].value_counts(normalize=True))
+
+# ===== CELL 22 (code) =====
+df_mini_list = []
+
+for train_file, ttf_file in zip(train_files, ttf_files):
+  train_mini_path = os.path.join(train_dir, train_file)
+  ttf_mini_path = os.path.join(ttf_dir, ttf_file)
+
+  df_mini_train = pd.read_csv(train_mini_path)
+  df_mini_ttf = pd.read_csv(ttf_mini_path)
+
+  df_mini_merged = df_mini_train.merge(df_mini_ttf, on='time')
+
+  df_mini_sampled = df_mini_merged.sample(frac=0.01, random_state=42)
+
+  df_mini_list.append(df_mini_sampled)
+  print(f"{train_file} 처리 완료: {df_mini_sampled.shape}")
+
+df_mini_all = pd.concat(df_mini_list, ignore_index=True)
+print("\n전체 합친 결과:", df_mini_all.shape)
+
+
+# ===== CELL 23 (code) =====
+threshold_high = 1839644
+
+df_mini_all['label_pressure_high'] = (df_mini_all['TTF_Flowcool Pressure Too High Check Flowcool Pump'] <= threshold_high).astype(int)
+
+print(df_mini_all['label_pressure_high'].value_counts(normalize=True))

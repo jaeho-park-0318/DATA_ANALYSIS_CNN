@@ -1,0 +1,13 @@
+{
+  "schema_valid": true,
+  "internal_links": 103,
+  "anchors": 141,
+  "figure_attachments": 123,
+  "code_cells": 18,
+  "all_code_executed": true,
+  "errors": 0,
+  "archived_reports": 24,
+  "notebook_MB": 50.55,
+  "notebook_sha256": "54d4567da8aa5915f210948576743aa44e0e42ff68b2b38803c942b4967bc42a",
+  "prior_artifacts_unchanged": true
+}

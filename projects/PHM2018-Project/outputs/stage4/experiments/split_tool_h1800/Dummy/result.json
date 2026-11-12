@@ -1,0 +1,136 @@
+{
+  "name": "Dummy",
+  "scheme": "split_tool",
+  "horizon": 1800,
+  "config": "none",
+  "threshold": 0.5,
+  "details": {
+    "strategy": "prior",
+    "threshold_policy": "고정 0.5"
+  },
+  "metrics": {
+    "train": {
+      "n": 289056,
+      "positive": 3787,
+      "negative": 285269,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_ap": 0.013101267574449241,
+      "roc_auc": 0.5,
+      "accuracy": 0.9868987324255507,
+      "tn": 285269,
+      "fp": 0,
+      "fn": 3787,
+      "tp": 0
+    },
+    "validation": {
+      "n": 39770,
+      "positive": 754,
+      "negative": 39016,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_ap": 0.018959014332411366,
+      "roc_auc": 0.5,
+      "accuracy": 0.9810409856675887,
+      "tn": 39016,
+      "fp": 0,
+      "fn": 754,
+      "tp": 0,
+      "evaluable_events": 43,
+      "detected_events": 0,
+      "event_recall": 0.0,
+      "recorded_events": 164,
+      "recorded_events_hit": 0,
+      "recorded_recall_with_observation_limit": 0.0,
+      "event_coverage": 0.2621951219512195,
+      "alarm_episodes": 0,
+      "false_alarm_episodes": 0,
+      "unknown_alarm_episodes": 0,
+      "negative_exposure_raw": 2290376.0,
+      "false_alarms_per_3600raw": 0.0,
+      "false_alarm_time_fraction": 0.0,
+      "active_negative_exposure_raw": 2187294.0,
+      "active_false_alarm_episodes": 0,
+      "false_alarms_per_active_hour_seconds_interpretation": 0.0,
+      "lead_time_median_raw": null,
+      "lead_time_min_raw": null,
+      "lead_time_max_raw": null,
+      "lead_times": {},
+      "per_type": {
+        "f1": {
+          "events": 18,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "events": 18,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f3": {
+          "events": 7,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "false_episode_ids": []
+    },
+    "evaluation": {
+      "n": 20219,
+      "positive": 789,
+      "negative": 19430,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_ap": 0.03902270141945695,
+      "roc_auc": 0.5,
+      "accuracy": 0.960977298580543,
+      "tn": 19430,
+      "fp": 0,
+      "fn": 789,
+      "tp": 0,
+      "evaluable_events": 45,
+      "detected_events": 0,
+      "event_recall": 0.0,
+      "recorded_events": 244,
+      "recorded_events_hit": 0,
+      "recorded_recall_with_observation_limit": 0.0,
+      "event_coverage": 0.18442622950819673,
+      "alarm_episodes": 0,
+      "false_alarm_episodes": 0,
+      "unknown_alarm_episodes": 0,
+      "negative_exposure_raw": 1149724.0,
+      "false_alarms_per_3600raw": 0.0,
+      "false_alarm_time_fraction": 0.0,
+      "active_negative_exposure_raw": 924608.0,
+      "active_false_alarm_episodes": 0,
+      "false_alarms_per_active_hour_seconds_interpretation": 0.0,
+      "lead_time_median_raw": null,
+      "lead_time_min_raw": null,
+      "lead_time_max_raw": null,
+      "lead_times": {},
+      "per_type": {
+        "f1": {
+          "events": 30,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "events": 11,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f3": {
+          "events": 4,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "false_episode_ids": []
+    }
+  },
+  "completed": true,
+  "alarm_policy": "동일 Tool·관측 세그먼트·Stage=0/>0 상태의 연속 양성; 72 초과 간격/음성에서 분리; H마다 재발행"
+}

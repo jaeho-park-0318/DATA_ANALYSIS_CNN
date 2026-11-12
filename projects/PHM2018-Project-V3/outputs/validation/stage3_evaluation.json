@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "check": "A_logistic 전체 입력·경계·매칭·분모·경보 분류",
+      "passed": true,
+      "thresholds": 28,
+      "rows": 309203
+    },
+    {
+      "check": "A_xgboost 전체 입력·경계·매칭·분모·경보 분류",
+      "passed": true,
+      "thresholds": 24,
+      "rows": 309203
+    },
+    {
+      "check": "B_logistic 전체 입력·경계·매칭·분모·경보 분류",
+      "passed": true,
+      "thresholds": 28,
+      "rows": 309203
+    },
+    {
+      "check": "B_xgboost 전체 입력·경계·매칭·분모·경보 분류",
+      "passed": true,
+      "thresholds": 26,
+      "rows": 309203
+    },
+    {
+      "check": "C_logistic 전체 입력·경계·매칭·분모·경보 분류",
+      "passed": true,
+      "thresholds": 28,
+      "rows": 309203
+    },
+    {
+      "check": "C_xgboost 전체 입력·경계·매칭·분모·경보 분류",
+      "passed": true,
+      "thresholds": 26,
+      "rows": 309203
+    }
+  ],
+  "holdout_scored": false,
+  "raw_metadata_unchanged": true,
+  "cohort": "common",
+  "threshold_grid": "고정 확률12개 + validation 전체 점수 분위수16개; 중복 제거. stage2에서 정한 규칙을 유지.",
+  "selection_rule": "각 모델의 탐색 격자 내 최대 검출수 50/80/100% 이상을 확보하는 Pareto 후보 중 최소 경보 부담. 최종 운영 임계값 아님.",
+  "evaluation_partition": "validation; early stopping과 임계값 탐색에 재사용하므로 독립 일반화 성능 아님"
+}

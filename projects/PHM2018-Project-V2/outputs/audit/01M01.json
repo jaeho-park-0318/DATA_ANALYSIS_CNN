@@ -1,0 +1,375 @@
+{
+  "tool": "01M01",
+  "raw_rows": 3124704,
+  "unique_times": 3119431,
+  "time_min": 3283106,
+  "time_max": 43037336,
+  "time_reversals": 0,
+  "duplicate_extra_rows": 5273,
+  "exact_duplicate_extra_rows": 878,
+  "duplicate_sensor_or_state_conflict_times": 4217,
+  "interval_counts": {
+    "0": 5273,
+    "2": 35779,
+    "4": 3041576,
+    "6": 29669,
+    "8": 297,
+    "10": 29,
+    "12": 23,
+    "14": 11,
+    "18": 11,
+    "64": 15,
+    "66": 49,
+    "68": 58,
+    "70": 73,
+    "72": 62,
+    "74": 85,
+    "76": 51,
+    "78": 19,
+    "104": 70,
+    "106": 14,
+    "108": 978,
+    "110": 61,
+    "112": 2020,
+    "114": 89,
+    "116": 2624,
+    "118": 76,
+    "120": 1254,
+    "122": 19,
+    "124": 258,
+    "128": 37,
+    "196": 26,
+    "200": 37,
+    "204": 33,
+    "208": 17,
+    "692": 12,
+    "744": 13,
+    "748": 13,
+    "776": 13,
+    "784": 11,
+    "912": 12
+  },
+  "interval_quantiles": [
+    2.0,
+    4.0,
+    4.0,
+    6.0,
+    794480.0
+  ],
+  "long_gap_count": 12057,
+  "long_gap_total_raw": 27335412,
+  "largest_gaps": [
+    {
+      "start": 16502738,
+      "end": 16565162,
+      "gap": 62424
+    },
+    {
+      "start": 17148558,
+      "end": 17213898,
+      "gap": 65340
+    },
+    {
+      "start": 36006482,
+      "end": 36077008,
+      "gap": 70526
+    },
+    {
+      "start": 6619068,
+      "end": 6696994,
+      "gap": 77926
+    },
+    {
+      "start": 30471096,
+      "end": 30549576,
+      "gap": 78480
+    },
+    {
+      "start": 33550530,
+      "end": 33630054,
+      "gap": 79524
+    },
+    {
+      "start": 16637406,
+      "end": 16723354,
+      "gap": 85948
+    },
+    {
+      "start": 40564654,
+      "end": 40663142,
+      "gap": 98488
+    },
+    {
+      "start": 17931574,
+      "end": 18038910,
+      "gap": 107336
+    },
+    {
+      "start": 26212192,
+      "end": 26322842,
+      "gap": 110650
+    },
+    {
+      "start": 12866918,
+      "end": 12984020,
+      "gap": 117102
+    },
+    {
+      "start": 36828656,
+      "end": 36952240,
+      "gap": 123584
+    },
+    {
+      "start": 9603368,
+      "end": 9759732,
+      "gap": 156364
+    },
+    {
+      "start": 9946658,
+      "end": 10122900,
+      "gap": 176242
+    },
+    {
+      "start": 23135848,
+      "end": 23442616,
+      "gap": 306768
+    },
+    {
+      "start": 19061782,
+      "end": 19380316,
+      "gap": 318534
+    },
+    {
+      "start": 22796750,
+      "end": 23132820,
+      "gap": 336070
+    },
+    {
+      "start": 35655318,
+      "end": 36003442,
+      "gap": 348124
+    },
+    {
+      "start": 4498432,
+      "end": 5087964,
+      "gap": 589532
+    },
+    {
+      "start": 5631444,
+      "end": 6425924,
+      "gap": 794480
+    }
+  ],
+  "null_counts_all_columns": {
+    "time": 0,
+    "Tool": 0,
+    "stage": 0,
+    "Lot": 0,
+    "runnum": 0,
+    "recipe": 0,
+    "recipe_step": 1,
+    "IONGAUGEPRESSURE": 0,
+    "ETCHBEAMVOLTAGE": 0,
+    "ETCHBEAMCURRENT": 0,
+    "ETCHSUPPRESSORVOLTAGE": 0,
+    "ETCHSUPPRESSORCURRENT": 0,
+    "FLOWCOOLFLOWRATE": 0,
+    "FLOWCOOLPRESSURE": 0,
+    "ETCHGASCHANNEL1READBACK": 0,
+    "ETCHPBNGASREADBACK": 0,
+    "FIXTURETILTANGLE": 0,
+    "ROTATIONSPEED": 0,
+    "ACTUALROTATIONANGLE": 0,
+    "FIXTURESHUTTERPOSITION": 6,
+    "ETCHSOURCEUSAGE": 0,
+    "ETCHAUXSOURCETIMER": 0,
+    "ETCHAUX2SOURCETIMER": 0,
+    "ACTUALSTEPDURATION": 0
+  },
+  "nonfinite_sensor_counts": {
+    "FLOWCOOLPRESSURE": 0,
+    "FLOWCOOLFLOWRATE": 0,
+    "IONGAUGEPRESSURE": 0,
+    "ETCHBEAMCURRENT": 0,
+    "ETCHBEAMVOLTAGE": 0,
+    "ETCHSUPPRESSORCURRENT": 0
+  },
+  "fault_raw_rows": 19,
+  "fault_unique_events": 19,
+  "fault_duplicate_extra_rows": 0,
+  "tagged_unique_events": 0,
+  "event_counts": {
+    "f1": 13,
+    "f2": 5,
+    "f3": 1
+  },
+  "ttf": {
+    "f1": {
+      "null": 71778,
+      "finite": 3052926,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    },
+    "f2": {
+      "null": 158534,
+      "finite": 2966170,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    },
+    "f3": {
+      "null": 1754796,
+      "finite": 1369908,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    }
+  },
+  "distributions_raw": {
+    "f1_h300": {
+      "positive": 370,
+      "negative": 3052425,
+      "NA": 71778,
+      "excluded_lt60": 131
+    },
+    "f1_h600": {
+      "positive": 680,
+      "negative": 3052115,
+      "NA": 71778,
+      "excluded_lt60": 131
+    },
+    "f1_h1800": {
+      "positive": 1935,
+      "negative": 3050860,
+      "NA": 71778,
+      "excluded_lt60": 131
+    },
+    "f2_h300": {
+      "positive": 121,
+      "negative": 2966019,
+      "NA": 158534,
+      "excluded_lt60": 30
+    },
+    "f2_h600": {
+      "positive": 211,
+      "negative": 2965929,
+      "NA": 158534,
+      "excluded_lt60": 30
+    },
+    "f2_h1800": {
+      "positive": 511,
+      "negative": 2965629,
+      "NA": 158534,
+      "excluded_lt60": 30
+    },
+    "f3_h300": {
+      "positive": 60,
+      "negative": 1369832,
+      "NA": 1754796,
+      "excluded_lt60": 16
+    },
+    "f3_h600": {
+      "positive": 135,
+      "negative": 1369757,
+      "NA": 1754796,
+      "excluded_lt60": 16
+    },
+    "f3_h1800": {
+      "positive": 435,
+      "negative": 1369457,
+      "NA": 1754796,
+      "excluded_lt60": 16
+    },
+    "any_h300": {
+      "positive": 551,
+      "negative": 1369432,
+      "NA": 1754544,
+      "excluded_lt60": 177
+    },
+    "any_h600": {
+      "positive": 1026,
+      "negative": 1369110,
+      "NA": 1754391,
+      "excluded_lt60": 177
+    },
+    "any_h1800": {
+      "positive": 2881,
+      "negative": 1367809,
+      "NA": 1753837,
+      "excluded_lt60": 177
+    }
+  },
+  "sensitivity_any": {
+    "h300": {
+      "positive": 551,
+      "negative": 3123901,
+      "NA": 75,
+      "excluded_lt60": 177
+    },
+    "h600": {
+      "positive": 1026,
+      "negative": 3123351,
+      "NA": 150,
+      "excluded_lt60": 177
+    },
+    "h1800": {
+      "positive": 2881,
+      "negative": 3121468,
+      "NA": 178,
+      "excluded_lt60": 177
+    }
+  },
+  "v1_policy_recomputed": {
+    "h300": {
+      "positive": 569,
+      "negative": 977495,
+      "NA": 2146640,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 392265
+    },
+    "h600": {
+      "positive": 872,
+      "negative": 632465,
+      "NA": 2491367,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 737145
+    },
+    "h1800": {
+      "positive": 1510,
+      "negative": 324521,
+      "NA": 2798673,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 1045005
+    }
+  },
+  "duplicate_state_conflict_times": 0,
+  "sha256": {
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\01_M01_DC_train.csv": "1cf12c07b07304bc7eb7607c925b7edb8c92bce2be65336ec29a4175fc16eae1",
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_ttf\\01_M01_DC_train.csv": "247296366c32515694e8fe600841e705515711723a9c3a04143446d5b6af2898",
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_faults\\01_M01_train_fault_data.csv": "1dd01da47438808135feeef49215f6ec494cc6d78e7d710dd3a7d0979a23b04c"
+  },
+  "source_signature": {
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\01_M01_DC_train.csv": {
+      "bytes": 1107918027,
+      "mtime_ns": 1523229102000000000
+    },
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_ttf\\01_M01_DC_train.csv": {
+      "bytes": 103340393,
+      "mtime_ns": 1524152291000000000
+    },
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_faults\\01_M01_train_fault_data.csv": {
+      "bytes": 1044,
+      "mtime_ns": 1524067509000000000
+    }
+  },
+  "elapsed_seconds": 4.406,
+  "config_hash": "539f0e58b6c4c2db2b3d6f15bea4eee3e62d4aa69f087ad41b7ae86352b694e2",
+  "code_hash": "cad97b5e820e2855b6f83650ed1b99c305a6885a21aae321b4924e5ebb9d25f6b6b7b0383914d091dd265deea33fb76cf6daaeff2603a583f0068fe80644f991"
+}

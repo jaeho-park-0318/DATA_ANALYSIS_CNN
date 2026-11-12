@@ -1,0 +1,21 @@
+fault,public_scenario_reference,scenario_source,observed_top3,shap_top3,interpretation
+1,A/C 원료 비율(B 일정),A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmeas_1, xmv_3, xmeas_4","xmeas_1, xmv_3, xmeas_18",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+2,B 조성(A/C 일정),A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmeas_34, xmeas_10, xmv_6","xmeas_10, xmeas_34, xmeas_28",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+3,D 원료 온도,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmeas_21, xmv_10, xmeas_20","xmeas_21, xmeas_18, xmv_9",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+4,Reactor 냉각수 입구 온도,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_10, xmeas_20, xmv_9","xmv_10, xmeas_21, xmv_11",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+5,Condenser/Separator 냉각수 입구 온도,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_11, xmeas_11, xmeas_19","xmv_11, xmeas_17, xmeas_21",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+6,A 원료 공급 손실,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmeas_16, xmeas_7, xmeas_31","xmv_11, xmv_3, xmeas_1",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+7,C header 압력 손실,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_4, xmv_9, xmeas_19","xmv_4, xmeas_18, xmeas_21",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+8,A/B/C 원료 조성,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmeas_29, xmeas_31, xmeas_25","xmv_9, xmeas_18, xmeas_1",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+9,D 원료 온도,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_9, xmeas_20, xmeas_19","xmeas_21, xmeas_22, xmeas_18",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+10,C 원료 온도,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_9, xmeas_19, xmeas_18","xmeas_21, xmeas_18, xmv_9",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+11,Reactor 냉각수 입구 온도,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_10, xmv_9, xmeas_19","xmeas_9, xmv_11, xmeas_17",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+12,Condenser 냉각수 입구 온도,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_2, xmv_5, xmeas_13","xmv_11, xmeas_19, xmeas_18",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+13,반응 동역학,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_9, xmeas_19, xmeas_16","xmv_9, xmeas_18, xmeas_21",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+14,Reactor 냉각수 밸브 고착,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_10, xmeas_34, xmeas_28","xmeas_21, xmeas_9, xmeas_18",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+15,Condenser 냉각수 밸브 고착,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_9, xmeas_19, xmeas_20","xmeas_21, xmeas_18, xmeas_9",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+16,UNKNOWN,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_9, xmeas_19, xmeas_18","xmeas_21, xmeas_18, xmv_9",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+17,UNKNOWN,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmeas_21, xmv_10, xmv_9","xmeas_21, xmeas_9, xmv_1",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+18,UNKNOWN,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_2, xmv_5, xmv_1","xmeas_22, xmeas_13, xmv_11",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+19,UNKNOWN,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_9, xmeas_19, xmv_5","xmeas_5, xmv_11, xmeas_17",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산
+20,UNKNOWN,A 공개 카탈로그; B 구현 동일성 별도 미확인,"xmv_5, xmeas_20, xmeas_13","xmeas_21, xmv_5, xmeas_13",변화·예측기여·원인은 서로 다름; 정량 원인 적중률 미계산

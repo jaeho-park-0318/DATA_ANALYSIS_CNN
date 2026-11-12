@@ -1,0 +1,2 @@
+﻿start,end,sensor_observations,raw_rows,max_gap,process_changes,conflicts,null_low,null_high,null_leak,Tool,kind,segment_id,ttf_null_ratio_low,ttf_null_ratio_high,ttf_null_ratio_leak,density,fault_count,fault_near,has_gap,states
+40800000,40899999,7176,7178,25712.0,154,0,0,7176,7176,01M01,fixed,-1,0.0,1.0,1.0,0.28703138905832826,0,False,True,OBSERVED|SPARSE|GAP

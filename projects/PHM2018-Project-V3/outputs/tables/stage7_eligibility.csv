@@ -1,0 +1,21 @@
+﻿Tool,train_recorded_events,train_available_events,train_positive_events,train_positive_clusters,train_positive_rows,train_negative_rows,train_all_input_rows,validation_recorded_events,validation_available_events,validation_positive_events,validation_positive_clusters,validation_positive_rows,validation_negative_rows,validation_all_input_rows,eligible,reason,selected
+01M01,12,6,6,6,37,49023,98447,3,0,0,0,0,0,28349,False,train_positive_clusters=6 < 8; validation_positive_clusters=0 < 3; train_positive_rows=37 < 100; validation_positive_rows=0 < 20; validation_negative_rows=0 < 1000,False
+01M02,81,41,41,37,338,169404,178892,8,7,7,6,58,0,64845,False,validation_negative_rows=0 < 1000,False
+02M01,5,4,4,4,20,0,92866,9,3,3,3,21,9805,25241,False,train_positive_clusters=4 < 8; train_positive_rows=20 < 100; train_negative_rows=0 < 1000,False
+02M02,23,6,6,6,35,0,110194,5,1,1,1,9,0,35341,False,train_positive_clusters=6 < 8; validation_positive_clusters=1 < 3; train_positive_rows=35 < 100; validation_positive_rows=9 < 20; train_negative_rows=0 < 1000; validation_negative_rows=0 < 1000,False
+03M01,76,14,14,14,90,0,97148,9,3,3,3,28,0,25366,False,train_positive_rows=90 < 100; train_negative_rows=0 < 1000; validation_negative_rows=0 < 1000,False
+03M02,238,83,83,83,500,123296,134198,91,23,23,23,133,5982,41467,True,조건 충족,True
+04M01,6,6,6,5,38,2490,134367,3,0,0,0,0,0,41601,False,train_positive_clusters=5 < 8; validation_positive_clusters=0 < 3; train_positive_rows=38 < 100; validation_positive_rows=0 < 20; validation_negative_rows=0 < 1000,False
+04M02,2,2,2,2,18,0,163360,16,10,10,10,87,0,57175,False,train_positive_clusters=2 < 8; train_positive_rows=18 < 100; train_negative_rows=0 < 1000; validation_negative_rows=0 < 1000,False
+05M01,22,10,10,10,52,10555,118175,1,1,1,1,2,0,42060,False,validation_positive_clusters=1 < 3; train_positive_rows=52 < 100; validation_positive_rows=2 < 20; validation_negative_rows=0 < 1000,False
+05M02,18,2,2,2,12,28051,50375,1,0,0,0,0,0,12904,False,train_positive_clusters=2 < 8; validation_positive_clusters=0 < 3; train_positive_rows=12 < 100; validation_positive_rows=0 < 20; validation_negative_rows=0 < 1000,False
+06M01,4,0,0,0,0,0,103411,2,1,1,1,9,0,32398,False,train_positive_clusters=0 < 8; validation_positive_clusters=1 < 3; train_positive_rows=0 < 100; validation_positive_rows=9 < 20; train_negative_rows=0 < 1000; validation_negative_rows=0 < 1000,False
+06M02,52,37,37,35,284,46311,197477,6,4,4,4,36,0,59225,False,validation_negative_rows=0 < 1000,False
+07M01,21,13,13,13,62,122295,135700,4,2,2,2,10,0,45912,False,validation_positive_clusters=2 < 3; train_positive_rows=62 < 100; validation_positive_rows=10 < 20; validation_negative_rows=0 < 1000,False
+07M02,4,2,2,2,10,0,129522,0,0,0,0,0,0,41809,False,train_positive_clusters=2 < 8; validation_positive_clusters=0 < 3; train_positive_rows=10 < 100; validation_positive_rows=0 < 20; train_negative_rows=0 < 1000; validation_negative_rows=0 < 1000,False
+08M01,72,31,31,29,231,89942,110977,15,6,6,6,40,984,34406,False,validation_negative_rows=984 < 1000,False
+08M02,5,2,2,2,18,0,125772,0,0,0,0,0,0,40197,False,train_positive_clusters=2 < 8; validation_positive_clusters=0 < 3; train_positive_rows=18 < 100; validation_positive_rows=0 < 20; train_negative_rows=0 < 1000; validation_negative_rows=0 < 1000,False
+09M01,68,20,20,20,105,0,116643,48,28,28,28,158,0,41276,False,train_negative_rows=0 < 1000; validation_negative_rows=0 < 1000,False
+09M02,43,10,10,9,39,0,85810,9,4,4,4,22,0,15900,False,train_positive_rows=39 < 100; train_negative_rows=0 < 1000; validation_negative_rows=0 < 1000,False
+10M01,29,13,13,12,92,20937,92191,0,0,0,0,0,0,26649,False,validation_positive_clusters=0 < 3; train_positive_rows=92 < 100; validation_positive_rows=0 < 20; validation_negative_rows=0 < 1000,False
+10M02,0,0,0,0,0,0,105349,2,2,2,2,14,0,33280,False,train_positive_clusters=0 < 8; validation_positive_clusters=2 < 3; train_positive_rows=0 < 100; validation_positive_rows=14 < 20; train_negative_rows=0 < 1000; validation_negative_rows=0 < 1000,False

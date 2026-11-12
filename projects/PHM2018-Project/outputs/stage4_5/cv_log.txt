@@ -1,0 +1,32 @@
+학습 시작 fold=0, A, cuda, 193,758행
+완료 fold=0, A: AP=0.0029, F1=0.0046, 학습 0.64초
+학습 시작 fold=0, B, cuda, 193,758행
+완료 fold=0, B: AP=0.0069, F1=0.0106, 학습 1.38초
+학습 시작 fold=0, C, cuda, 193,758행
+완료 fold=0, C: AP=0.0076, F1=0.0168, 학습 1.27초
+학습 시작 fold=0, C_regularized, cuda, 193,758행
+완료 fold=0, C_regularized: AP=0.0036, F1=0.0049, 학습 1.90초
+학습 시작 fold=1, A, cuda, 270,240행
+완료 fold=1, A: AP=0.0117, F1=0.0149, 학습 0.49초
+학습 시작 fold=1, B, cuda, 270,240행
+완료 fold=1, B: AP=0.0199, F1=0.0659, 학습 1.08초
+학습 시작 fold=1, C, cuda, 270,240행
+완료 fold=1, C: AP=0.0199, F1=0.0659, 학습 1.26초
+학습 시작 fold=1, C_regularized, cuda, 270,240행
+완료 fold=1, C_regularized: AP=0.0132, F1=0.0606, 학습 1.30초
+학습 시작 fold=2, A, cuda, 374,125행
+완료 fold=2, A: AP=0.0011, F1=0.0000, 학습 0.72초
+학습 시작 fold=2, B, cuda, 374,125행
+완료 fold=2, B: AP=0.0044, F1=0.0051, 학습 1.69초
+학습 시작 fold=2, C, cuda, 374,125행
+완료 fold=2, C: AP=0.0021, F1=0.0000, 학습 1.87초
+학습 시작 fold=2, C_regularized, cuda, 374,125행
+완료 fold=2, C_regularized: AP=0.0011, F1=0.0009, 학습 1.57초
+학습 시작 fold=3, A, cuda, 239,549행
+완료 fold=3, A: AP=0.0334, F1=0.0000, 학습 0.53초
+학습 시작 fold=3, B, cuda, 239,549행
+완료 fold=3, B: AP=0.0061, F1=0.0061, 학습 1.21초
+학습 시작 fold=3, C, cuda, 239,549행
+완료 fold=3, C: AP=0.0084, F1=0.0061, 학습 1.26초
+학습 시작 fold=3, C_regularized, cuda, 239,549행
+완료 fold=3, C_regularized: AP=0.0056, F1=0.0061, 학습 1.25초

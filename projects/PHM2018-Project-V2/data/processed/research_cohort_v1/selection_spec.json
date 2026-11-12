@@ -1,0 +1,12 @@
+{
+  "status": "RESEARCH_CANDIDATE_SPEC_ONLY",
+  "operational_approval_changed": false,
+  "current_input": "현재관측=true, 지연0~12raw, 센서6 유한, recipe/stage존재, 상태상충없음",
+  "history": "현재입력 조건 + 동일 연속 세그먼트 history_span_raw>=0/60/300/900; 밀도100% 보장 아님",
+  "target": "기존 candidate_* 재사용, 라벨 0/1, 해당 유형 TTF시점근거 일치, 어떤 유형이든 60미만이면 제외",
+  "integrated": "양성은 가장 가까운 다음고장 유형의 TTF근거, 음성은 세 유형 모두의 근거 필요",
+  "event_key": "tool + 원문 정규화 fault_name + event_time; 통합은 가장 이른 시각(동시유형 보존)",
+  "time_group": "[event-H-history,event] 중첩 연결성분; 통계적 독립/정비사이클 확인 아님",
+  "history60_features_computed": false,
+  "horizon_raw": 600
+}

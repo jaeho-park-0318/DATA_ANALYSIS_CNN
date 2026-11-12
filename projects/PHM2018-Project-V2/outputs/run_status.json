@@ -1,0 +1,12 @@
+{
+  "status": "DIAGNOSTIC_COMPLETE_RELEASE_BLOCKED",
+  "v1_files_checked": 2139,
+  "v1_metadata_changes": [],
+  "v1_integrity_scope": "실행 전후 전체 기존 파일 크기/mtime; 감사 원본60파일 SHA256 별도. V1 전체 전후 해시 검증은 아님",
+  "blockers": [
+    "물리 초 단위/변환 미검증; 현재 창은 원시시간 단위 진단용",
+    "Fault 이력의 유효 범위와 TTF Null 검열 한계 미확정",
+    "고장 후 정비 종료 시각/구간 미확정"
+  ],
+  "approved_training_rows": 0
+}

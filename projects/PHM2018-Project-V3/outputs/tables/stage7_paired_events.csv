@@ -1,0 +1,5 @@
+﻿Tool,budget,control,recorded,available,both_detected,specialist_only,control_only,neither
+03M02,5,global_frozen,27,3,0,0,0,27
+03M02,5,global_tool_threshold,27,3,0,0,0,27
+03M02,10,global_frozen,27,3,0,0,2,25
+03M02,10,global_tool_threshold,27,3,0,0,0,27

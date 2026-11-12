@@ -1,0 +1,14 @@
+{
+  "scheme": "temporal",
+  "cohort": "common",
+  "H": 600,
+  "L": 60,
+  "families": ["A", "B", "C"],
+  "models": ["logistic", "xgboost"],
+  "seed": 42,
+  "parameter_policy": "stage2와 같은 파라미터 및 조기 종료 규칙; 특징마다 새 전처리/모델 fit",
+  "comparison_budgets_per_10000_raw": [5, 10, 20],
+  "budget_meaning": "결과 확인 전에 정한 탐색용 공통 경보 부담 상한; 실제 운영 허용치 아님",
+  "paired_bootstrap": "장비 번호01~10 군집(M01/M02 함께) 2000회 seed42; 선택된 임계값 고정",
+  "holdout_scored": false
+}

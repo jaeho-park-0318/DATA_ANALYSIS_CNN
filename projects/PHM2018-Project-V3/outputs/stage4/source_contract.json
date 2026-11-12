@@ -1,0 +1,21 @@
+{
+  "experiment_sha256": "fba5836399b34531c05b45b938d4a5a1d10d50a7accb2ed93175d56321d1abbf",
+  "pretraining_manifest_sha256": "2d31bcaf67ba433c32682ca194b94ba41912b103d6253ab153c26bffe91301bd",
+  "compute_config": {
+    "training_device": "cuda:0",
+    "training_tree_method": "hist",
+    "training_cpu_threads": 12,
+    "io_threads": 4,
+    "parallel_training_trials": 1,
+    "initial_max_bin": 128,
+    "host_memory_budget_gib": 12,
+    "gpu_reserve_mib": 1024,
+    "gpu_training_smoke_test_required": true,
+    "silent_cpu_fallback_allowed": false,
+    "note": "사용자 CUDA 우선 지시 반영. GPU 실제 학습 검증은 2단계에서 수행. 드라이버/패키지 자동 변경 없음."
+  },
+  "holdout_scored": false,
+  "cohort": "common",
+  "seed_selection": "seed42에서 설정 선택, 43/44는 민감도 평가",
+  "xgboost_version": "3.2.0"
+}

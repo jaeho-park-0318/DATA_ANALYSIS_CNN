@@ -1,0 +1,2 @@
+﻿event_id,Tool,fault_type,fault_time,policy,H,feature_set,warning_anchors,label_positive_anchors,usable_positive_anchors,current_available,history_60,history_300,history_900,imminent_excluded,preserved,reason
+01M01-low-0fe23ade1e15,01M01,low,6533184.0,conservative,600,C,9,9,0,2,1,0,0,0,False,300 raw 이력 부족

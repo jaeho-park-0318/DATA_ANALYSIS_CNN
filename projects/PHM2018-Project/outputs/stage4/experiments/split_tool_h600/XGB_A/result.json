@@ -1,0 +1,180 @@
+{
+  "name": "XGB_A",
+  "scheme": "split_tool",
+  "horizon": 600,
+  "config": "A",
+  "threshold": 0.6527332663536072,
+  "details": {
+    "columns": [
+      "recipe",
+      "stage",
+      "FLOWCOOLPRESSURE__current",
+      "FLOWCOOLFLOWRATE__current",
+      "IONGAUGEPRESSURE__current",
+      "ETCHBEAMCURRENT__current",
+      "ETCHBEAMVOLTAGE__current",
+      "ETCHSUPPRESSORCURRENT__current"
+    ],
+    "parameters": {
+      "n_estimators": 500,
+      "max_depth": 4,
+      "learning_rate": 0.05,
+      "min_child_weight": 10,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 5,
+      "reg_alpha": 0.1,
+      "scale_pos_weight": 303.3231667748216,
+      "tree_method": "hist",
+      "max_bin": 128,
+      "n_jobs": 4,
+      "random_state": 42,
+      "eval_metric": "aucpr",
+      "early_stopping_rounds": 30
+    },
+    "best_iteration": 11,
+    "fit_seconds": 1.1410000000614673,
+    "threshold_policy": "검증 F1 최대화",
+    "early_stopping": "검증 aucpr만 사용",
+    "preprocessing": "대치/스케일링 없음"
+  },
+  "metrics": {
+    "train": {
+      "n": 468962,
+      "positive": 1541,
+      "negative": 467421,
+      "precision": 0.0687401986408782,
+      "recall": 0.17066839714471121,
+      "f1": 0.09800633501024782,
+      "pr_auc_ap": 0.07517000590834268,
+      "roc_auc": 0.8920689844237469,
+      "accuracy": 0.9896772019907797,
+      "tn": 463858,
+      "fp": 3563,
+      "fn": 1278,
+      "tp": 263
+    },
+    "validation": {
+      "n": 75491,
+      "positive": 363,
+      "negative": 75128,
+      "precision": 0.19607843137254902,
+      "recall": 0.027548209366391185,
+      "f1": 0.04830917874396135,
+      "pr_auc_ap": 0.011793510265811654,
+      "roc_auc": 0.5451402608968847,
+      "accuracy": 0.9947808348014995,
+      "tn": 75087,
+      "fp": 41,
+      "fn": 353,
+      "tp": 10,
+      "evaluable_events": 43,
+      "detected_events": 1,
+      "event_recall": 0.023255813953488372,
+      "recorded_events": 164,
+      "recorded_events_hit": 1,
+      "recorded_recall_with_observation_limit": 0.006097560975609756,
+      "event_coverage": 0.2621951219512195,
+      "alarm_episodes": 7,
+      "false_alarm_episodes": 6,
+      "unknown_alarm_episodes": 0,
+      "negative_exposure_raw": 4213108.0,
+      "false_alarms_per_3600raw": 0.0051268564679566725,
+      "false_alarm_time_fraction": 0.0006408570584945841,
+      "active_negative_exposure_raw": 4039226.0,
+      "active_false_alarm_episodes": 6,
+      "false_alarms_per_active_hour_seconds_interpretation": 0.005347559161086802,
+      "lead_time_median_raw": 572.0,
+      "lead_time_min_raw": 572.0,
+      "lead_time_max_raw": 572.0,
+      "lead_times": {
+        "08M02:36011192:f2": 572.0
+      },
+      "per_type": {
+        "f1": {
+          "events": 18,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "events": 18,
+          "detected": 1,
+          "recall": 0.05555555555555555
+        },
+        "f3": {
+          "events": 7,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "false_episode_ids": [
+        19835,
+        34479,
+        34481,
+        34483,
+        34484,
+        34485
+      ]
+    },
+    "evaluation": {
+      "n": 30470,
+      "positive": 345,
+      "negative": 30125,
+      "precision": 1.0,
+      "recall": 0.06956521739130435,
+      "f1": 0.13008130081300814,
+      "pr_auc_ap": 0.08517506839334484,
+      "roc_auc": 0.4573833664080822,
+      "accuracy": 0.9894650475877913,
+      "tn": 30125,
+      "fp": 0,
+      "fn": 321,
+      "tp": 24,
+      "evaluable_events": 45,
+      "detected_events": 4,
+      "event_recall": 0.08888888888888889,
+      "recorded_events": 244,
+      "recorded_events_hit": 4,
+      "recorded_recall_with_observation_limit": 0.01639344262295082,
+      "event_coverage": 0.18442622950819673,
+      "alarm_episodes": 4,
+      "false_alarm_episodes": 0,
+      "unknown_alarm_episodes": 0,
+      "negative_exposure_raw": 1738814.0,
+      "false_alarms_per_3600raw": 0.0,
+      "false_alarm_time_fraction": 0.0,
+      "active_negative_exposure_raw": 1363578.0,
+      "active_false_alarm_episodes": 0,
+      "false_alarms_per_active_hour_seconds_interpretation": 0.0,
+      "lead_time_median_raw": 344.0,
+      "lead_time_min_raw": 36.0,
+      "lead_time_max_raw": 566.0,
+      "lead_times": {
+        "09M02:36028038:f2": 138.0,
+        "09M02:36799210:f2": 550.0,
+        "09M02:37180898:f2": 36.0,
+        "09M02:45678266:f2": 566.0
+      },
+      "per_type": {
+        "f1": {
+          "events": 30,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "events": 11,
+          "detected": 4,
+          "recall": 0.36363636363636365
+        },
+        "f3": {
+          "events": 4,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "false_episode_ids": []
+    }
+  },
+  "completed": true,
+  "alarm_policy": "동일 Tool·관측 세그먼트·Stage=0/>0 상태의 연속 양성; 72 초과 간격/음성에서 분리; H마다 재발행"
+}

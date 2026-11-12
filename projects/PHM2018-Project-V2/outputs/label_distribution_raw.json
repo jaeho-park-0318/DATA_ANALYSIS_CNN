@@ -1,0 +1,74 @@
+{
+  "f1_h300": {
+    "positive": 15768,
+    "negative": 62004004,
+    "NA": 20165908,
+    "excluded_lt60": 3760
+  },
+  "f1_h600": {
+    "positive": 37468,
+    "negative": 61982304,
+    "NA": 20165908,
+    "excluded_lt60": 3760
+  },
+  "f1_h1800": {
+    "positive": 135788,
+    "negative": 61883984,
+    "NA": 20165908,
+    "excluded_lt60": 3760
+  },
+  "f2_h300": {
+    "positive": 5100,
+    "negative": 55991405,
+    "NA": 26191715,
+    "excluded_lt60": 1220
+  },
+  "f2_h600": {
+    "positive": 11225,
+    "negative": 55985280,
+    "NA": 26191715,
+    "excluded_lt60": 1220
+  },
+  "f2_h1800": {
+    "positive": 35023,
+    "negative": 55961482,
+    "NA": 26191715,
+    "excluded_lt60": 1220
+  },
+  "f3_h300": {
+    "positive": 4138,
+    "negative": 38118071,
+    "NA": 44066194,
+    "excluded_lt60": 1037
+  },
+  "f3_h600": {
+    "positive": 9444,
+    "negative": 38112765,
+    "NA": 44066194,
+    "excluded_lt60": 1037
+  },
+  "f3_h1800": {
+    "positive": 31003,
+    "negative": 38091206,
+    "NA": 44066194,
+    "excluded_lt60": 1037
+  },
+  "any_h300": {
+    "positive": 24842,
+    "negative": 29840709,
+    "NA": 52317885,
+    "excluded_lt60": 6004
+  },
+  "any_h600": {
+    "positive": 57472,
+    "negative": 29821378,
+    "NA": 52304586,
+    "excluded_lt60": 6004
+  },
+  "any_h1800": {
+    "positive": 196374,
+    "negative": 29736228,
+    "NA": 52250834,
+    "excluded_lt60": 6004
+  }
+}

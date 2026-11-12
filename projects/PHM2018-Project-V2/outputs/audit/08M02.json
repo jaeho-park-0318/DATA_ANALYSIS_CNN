@@ -1,0 +1,487 @@
+{
+  "tool": "08M02",
+  "raw_rows": 5014057,
+  "unique_times": 5002284,
+  "time_min": 3283114,
+  "time_max": 43035344,
+  "time_reversals": 0,
+  "duplicate_extra_rows": 11773,
+  "exact_duplicate_extra_rows": 757,
+  "duplicate_sensor_or_state_conflict_times": 8797,
+  "interval_counts": {
+    "0": 11773,
+    "2": 65751,
+    "4": 4855947,
+    "6": 54033,
+    "8": 137,
+    "104": 447,
+    "106": 46,
+    "108": 653,
+    "110": 42,
+    "112": 1305,
+    "114": 79,
+    "116": 1276,
+    "118": 22,
+    "120": 229,
+    "124": 35,
+    "136": 14,
+    "140": 37,
+    "142": 25,
+    "144": 1777,
+    "146": 132,
+    "148": 2438,
+    "150": 176,
+    "152": 4619,
+    "154": 255,
+    "156": 4646,
+    "158": 92,
+    "160": 811,
+    "162": 23,
+    "164": 116,
+    "196": 11,
+    "232": 27,
+    "236": 43,
+    "240": 27,
+    "244": 23,
+    "246": 30,
+    "248": 44,
+    "250": 38,
+    "252": 51,
+    "254": 43,
+    "256": 62,
+    "258": 23,
+    "260": 33,
+    "264": 46,
+    "268": 56,
+    "272": 30,
+    "276": 18,
+    "296": 47,
+    "300": 92,
+    "304": 189,
+    "306": 16,
+    "308": 233,
+    "312": 125,
+    "314": 15,
+    "316": 58,
+    "318": 11,
+    "320": 34,
+    "322": 11,
+    "324": 20,
+    "328": 12,
+    "336": 11,
+    "340": 14,
+    "344": 14,
+    "348": 30,
+    "352": 17,
+    "356": 14,
+    "360": 16,
+    "364": 18,
+    "368": 14,
+    "372": 13,
+    "376": 27,
+    "380": 65,
+    "384": 60,
+    "388": 99,
+    "392": 77,
+    "396": 38,
+    "400": 22,
+    "404": 12,
+    "728": 11,
+    "732": 18,
+    "740": 12,
+    "744": 11,
+    "748": 11,
+    "752": 15,
+    "760": 16,
+    "764": 17,
+    "768": 20,
+    "772": 20,
+    "776": 14,
+    "780": 17,
+    "784": 16,
+    "788": 18,
+    "792": 11,
+    "796": 12,
+    "800": 14,
+    "804": 12,
+    "808": 16,
+    "812": 22,
+    "816": 17,
+    "824": 18,
+    "828": 18,
+    "832": 15,
+    "836": 13,
+    "840": 18,
+    "848": 18,
+    "860": 14,
+    "864": 11,
+    "868": 14,
+    "880": 24,
+    "888": 16,
+    "892": 14,
+    "900": 11,
+    "908": 14,
+    "920": 13,
+    "932": 14,
+    "936": 12,
+    "940": 21,
+    "948": 14,
+    "952": 13,
+    "960": 14,
+    "972": 13,
+    "992": 11,
+    "1000": 13,
+    "1016": 15,
+    "1028": 15,
+    "1032": 12,
+    "1040": 11,
+    "1044": 12,
+    "1048": 11,
+    "1064": 12,
+    "1084": 14,
+    "1088": 12,
+    "1100": 15,
+    "1108": 14,
+    "1120": 15,
+    "1144": 12,
+    "1176": 11,
+    "1188": 14,
+    "1192": 11,
+    "1272": 12,
+    "1300": 11,
+    "1304": 13,
+    "1320": 12,
+    "1332": 14,
+    "1340": 13,
+    "1352": 14,
+    "1388": 12,
+    "1424": 12,
+    "1440": 11,
+    "1460": 11,
+    "1520": 11,
+    "1612": 12
+  },
+  "interval_quantiles": [
+    2.0,
+    4.0,
+    4.0,
+    6.0,
+    349344.0
+  ],
+  "long_gap_count": 26401,
+  "long_gap_total_raw": 19871498,
+  "largest_gaps": [
+    {
+      "start": 17375376,
+      "end": 17424128,
+      "gap": 48752
+    },
+    {
+      "start": 19322008,
+      "end": 19373500,
+      "gap": 51492
+    },
+    {
+      "start": 26130432,
+      "end": 26187472,
+      "gap": 57040
+    },
+    {
+      "start": 5749526,
+      "end": 5814814,
+      "gap": 65288
+    },
+    {
+      "start": 14396088,
+      "end": 14461790,
+      "gap": 65702
+    },
+    {
+      "start": 22194652,
+      "end": 22261912,
+      "gap": 67260
+    },
+    {
+      "start": 34085218,
+      "end": 34163962,
+      "gap": 78744
+    },
+    {
+      "start": 24975976,
+      "end": 25055678,
+      "gap": 79702
+    },
+    {
+      "start": 27747388,
+      "end": 27829552,
+      "gap": 82164
+    },
+    {
+      "start": 28030446,
+      "end": 28125480,
+      "gap": 95034
+    },
+    {
+      "start": 28961676,
+      "end": 29067846,
+      "gap": 106170
+    },
+    {
+      "start": 5236724,
+      "end": 5346126,
+      "gap": 109402
+    },
+    {
+      "start": 38560860,
+      "end": 38677802,
+      "gap": 116942
+    },
+    {
+      "start": 28501976,
+      "end": 28631664,
+      "gap": 129688
+    },
+    {
+      "start": 30587806,
+      "end": 30726362,
+      "gap": 138556
+    },
+    {
+      "start": 23328000,
+      "end": 23475510,
+      "gap": 147510
+    },
+    {
+      "start": 23125664,
+      "end": 23278928,
+      "gap": 153264
+    },
+    {
+      "start": 28295118,
+      "end": 28476250,
+      "gap": 181132
+    },
+    {
+      "start": 22795188,
+      "end": 23086932,
+      "gap": 291744
+    },
+    {
+      "start": 35655320,
+      "end": 36004664,
+      "gap": 349344
+    }
+  ],
+  "null_counts_all_columns": {
+    "time": 0,
+    "Tool": 0,
+    "stage": 0,
+    "Lot": 0,
+    "runnum": 0,
+    "recipe": 0,
+    "recipe_step": 125,
+    "IONGAUGEPRESSURE": 0,
+    "ETCHBEAMVOLTAGE": 0,
+    "ETCHBEAMCURRENT": 0,
+    "ETCHSUPPRESSORVOLTAGE": 0,
+    "ETCHSUPPRESSORCURRENT": 0,
+    "FLOWCOOLFLOWRATE": 0,
+    "FLOWCOOLPRESSURE": 0,
+    "ETCHGASCHANNEL1READBACK": 0,
+    "ETCHPBNGASREADBACK": 0,
+    "FIXTURETILTANGLE": 0,
+    "ROTATIONSPEED": 0,
+    "ACTUALROTATIONANGLE": 0,
+    "FIXTURESHUTTERPOSITION": 0,
+    "ETCHSOURCEUSAGE": 0,
+    "ETCHAUXSOURCETIMER": 0,
+    "ETCHAUX2SOURCETIMER": 0,
+    "ACTUALSTEPDURATION": 0
+  },
+  "nonfinite_sensor_counts": {
+    "FLOWCOOLPRESSURE": 0,
+    "FLOWCOOLFLOWRATE": 0,
+    "IONGAUGEPRESSURE": 0,
+    "ETCHBEAMCURRENT": 0,
+    "ETCHBEAMVOLTAGE": 0,
+    "ETCHSUPPRESSORCURRENT": 0
+  },
+  "fault_raw_rows": 6,
+  "fault_unique_events": 6,
+  "fault_duplicate_extra_rows": 0,
+  "tagged_unique_events": 0,
+  "event_counts": {
+    "f1": 0,
+    "f2": 6,
+    "f3": 0
+  },
+  "ttf": {
+    "f1": {
+      "null": 5014057,
+      "finite": 0,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    },
+    "f2": {
+      "null": 893465,
+      "finite": 4120592,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    },
+    "f3": {
+      "null": 5014057,
+      "finite": 0,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    }
+  },
+  "distributions_raw": {
+    "f1_h300": {
+      "positive": 0,
+      "negative": 0,
+      "NA": 5014057,
+      "excluded_lt60": 0
+    },
+    "f1_h600": {
+      "positive": 0,
+      "negative": 0,
+      "NA": 5014057,
+      "excluded_lt60": 0
+    },
+    "f1_h1800": {
+      "positive": 0,
+      "negative": 0,
+      "NA": 5014057,
+      "excluded_lt60": 0
+    },
+    "f2_h300": {
+      "positive": 181,
+      "negative": 4120366,
+      "NA": 893465,
+      "excluded_lt60": 45
+    },
+    "f2_h600": {
+      "positive": 406,
+      "negative": 4120141,
+      "NA": 893465,
+      "excluded_lt60": 45
+    },
+    "f2_h1800": {
+      "positive": 1015,
+      "negative": 4119532,
+      "NA": 893465,
+      "excluded_lt60": 45
+    },
+    "f3_h300": {
+      "positive": 0,
+      "negative": 0,
+      "NA": 5014057,
+      "excluded_lt60": 0
+    },
+    "f3_h600": {
+      "positive": 0,
+      "negative": 0,
+      "NA": 5014057,
+      "excluded_lt60": 0
+    },
+    "f3_h1800": {
+      "positive": 0,
+      "negative": 0,
+      "NA": 5014057,
+      "excluded_lt60": 0
+    },
+    "any_h300": {
+      "positive": 181,
+      "negative": 0,
+      "NA": 5013831,
+      "excluded_lt60": 45
+    },
+    "any_h600": {
+      "positive": 406,
+      "negative": 0,
+      "NA": 5013606,
+      "excluded_lt60": 45
+    },
+    "any_h1800": {
+      "positive": 1015,
+      "negative": 0,
+      "NA": 5012997,
+      "excluded_lt60": 45
+    }
+  },
+  "sensitivity_any": {
+    "h300": {
+      "positive": 181,
+      "negative": 5013795,
+      "NA": 36,
+      "excluded_lt60": 45
+    },
+    "h600": {
+      "positive": 406,
+      "negative": 5013495,
+      "NA": 111,
+      "excluded_lt60": 45
+    },
+    "h1800": {
+      "positive": 1015,
+      "negative": 5012827,
+      "NA": 170,
+      "excluded_lt60": 45
+    }
+  },
+  "v1_policy_recomputed": {
+    "h300": {
+      "positive": 225,
+      "negative": 0,
+      "NA": 5013832,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 45
+    },
+    "h600": {
+      "positive": 450,
+      "negative": 0,
+      "NA": 5013607,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 45
+    },
+    "h1800": {
+      "positive": 1025,
+      "negative": 0,
+      "NA": 5013032,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 79
+    }
+  },
+  "duplicate_state_conflict_times": 0,
+  "sha256": {
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\08_M02_DC_train.csv": "b8e08a24b88b2e74cd28477d37229517365d39748c0b6ccfe38e3a781e9567aa",
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_ttf\\08_M02_DC_train.csv": "b4de1bbb89a05d45391779c98dd250b39a5f1f7cc9ff00fb795caad78a5ffc8a",
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_faults\\08_M02_train_fault_data.csv": "8d8551b99200eac53d3cabeeb52974a48f148c3cfcd9362cbc09fc08873eee02"
+  },
+  "source_signature": {
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\08_M02_DC_train.csv": {
+      "bytes": 1796850928,
+      "mtime_ns": 1523289954000000000
+    },
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_ttf\\08_M02_DC_train.csv": {
+      "bytes": 97089417,
+      "mtime_ns": 1524151856000000000
+    },
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_faults\\08_M02_train_fault_data.csv": {
+      "bytes": 393,
+      "mtime_ns": 1524067926000000000
+    }
+  },
+  "elapsed_seconds": 6.687,
+  "config_hash": "539f0e58b6c4c2db2b3d6f15bea4eee3e62d4aa69f087ad41b7ae86352b694e2",
+  "code_hash": "cad97b5e820e2855b6f83650ed1b99c305a6885a21aae321b4924e5ebb9d25f6b6b7b0383914d091dd265deea33fb76cf6daaeff2603a583f0068fe80644f991"
+}

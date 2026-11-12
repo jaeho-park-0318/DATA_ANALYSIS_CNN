@@ -1,0 +1,14 @@
+test_batch_overlap_matches_full (test_preprocessing.PreprocessingTests.test_batch_overlap_matches_full) ... ok
+test_duplicate_boundary_and_state_conflict (test_preprocessing.PreprocessingTests.test_duplicate_boundary_and_state_conflict) ... ok
+test_event_inclusive_and_tail (test_preprocessing.PreprocessingTests.test_event_inclusive_and_tail) ... ok
+test_future_invariance_and_exact_grid_window (test_preprocessing.PreprocessingTests.test_future_invariance_and_exact_grid_window) ... ok
+test_gaps_reset_history_and_no_interpolation (test_preprocessing.PreprocessingTests.test_gaps_reset_history_and_no_interpolation) ... ok
+test_label_boundaries_and_missing (test_preprocessing.PreprocessingTests.test_label_boundaries_and_missing) ... ok
+test_release_gate (test_preprocessing.PreprocessingTests.test_release_gate) ... ok
+test_time_support_purge (test_preprocessing.PreprocessingTests.test_time_support_purge) ... ok
+test_whitelist_and_group_folds (test_preprocessing.PreprocessingTests.test_whitelist_and_group_folds) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.196s
+
+OK

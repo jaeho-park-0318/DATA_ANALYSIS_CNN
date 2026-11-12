@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "check": "A_base_maximum 그룹 장비 분리·시간 Holdout 제외·공통 행·CUDA·저장 재현",
+      "passed": true,
+      "row_hashes": {
+        "train": "c733d073830ebefa84bde5a86a1206320ef51e7b09306668dbebe164cfc280e6",
+        "validation": "ee8c4c7c03b1ebd7706d38dfb72ea60bfa07f267bcccaa2f108b0c08901cacb1"
+      }
+    },
+    {
+      "check": "B_base_maximum 그룹 장비 분리·시간 Holdout 제외·공통 행·CUDA·저장 재현",
+      "passed": true,
+      "row_hashes": {
+        "train": "d020d41e457cd11eec024fb21ffede110424dfb923f31d7d0bb50d81efc17f42",
+        "validation": "d8bd994166b7fb1cea0da01ce3922b634da5049618f813839eedfb5b295ea278"
+      }
+    },
+    {
+      "check": "A_base_common 그룹 장비 분리·시간 Holdout 제외·공통 행·CUDA·저장 재현",
+      "passed": true,
+      "row_hashes": {
+        "train": "53784e8b9b25088c4d7bd933dc7af1523bd350682e923960c3474b9fab259e62",
+        "validation": "23f6646bc5d8b0bc9087fb8235b675483b1b875bc37e9bb20c990c796f99f8a1"
+      }
+    },
+    {
+      "check": "B_base_common 그룹 장비 분리·시간 Holdout 제외·공통 행·CUDA·저장 재현",
+      "passed": true,
+      "row_hashes": {
+        "train": "53784e8b9b25088c4d7bd933dc7af1523bd350682e923960c3474b9fab259e62",
+        "validation": "23f6646bc5d8b0bc9087fb8235b675483b1b875bc37e9bb20c990c796f99f8a1"
+      }
+    },
+    {
+      "check": "A_tuned_common 그룹 장비 분리·시간 Holdout 제외·공통 행·CUDA·저장 재현",
+      "passed": true,
+      "row_hashes": {
+        "train": "53784e8b9b25088c4d7bd933dc7af1523bd350682e923960c3474b9fab259e62",
+        "validation": "23f6646bc5d8b0bc9087fb8235b675483b1b875bc37e9bb20c990c796f99f8a1"
+      }
+    },
+    {
+      "check": "C_base_common 그룹 장비 분리·시간 Holdout 제외·공통 행·CUDA·저장 재현",
+      "passed": true,
+      "row_hashes": {
+        "train": "53784e8b9b25088c4d7bd933dc7af1523bd350682e923960c3474b9fab259e62",
+        "validation": "23f6646bc5d8b0bc9087fb8235b675483b1b875bc37e9bb20c990c796f99f8a1"
+      }
+    }
+  ],
+  "protected_temporal_holdout_used": false
+}

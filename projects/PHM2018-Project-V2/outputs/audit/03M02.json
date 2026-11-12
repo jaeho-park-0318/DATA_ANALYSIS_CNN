@@ -1,0 +1,448 @@
+{
+  "tool": "03M02",
+  "raw_rows": 5060498,
+  "unique_times": 5059330,
+  "time_min": 3284714,
+  "time_max": 44029722,
+  "time_reversals": 0,
+  "duplicate_extra_rows": 1168,
+  "exact_duplicate_extra_rows": 57,
+  "duplicate_sensor_or_state_conflict_times": 1021,
+  "interval_counts": {
+    "0": 1168,
+    "2": 24845,
+    "4": 4986927,
+    "6": 23854,
+    "8": 146,
+    "10": 12,
+    "68": 17,
+    "72": 15,
+    "74": 17,
+    "76": 1331,
+    "78": 229,
+    "80": 6800,
+    "82": 202,
+    "84": 2717,
+    "86": 77,
+    "88": 1565,
+    "90": 85,
+    "92": 1614,
+    "94": 30,
+    "96": 220,
+    "100": 35,
+    "104": 32,
+    "106": 18,
+    "108": 736,
+    "110": 33,
+    "112": 856,
+    "114": 14,
+    "116": 258,
+    "118": 15,
+    "120": 341,
+    "122": 12,
+    "124": 93,
+    "140": 16,
+    "144": 14,
+    "148": 11,
+    "152": 23,
+    "156": 12,
+    "160": 20,
+    "164": 26,
+    "168": 33,
+    "172": 115,
+    "176": 94,
+    "180": 60,
+    "184": 45,
+    "188": 40,
+    "192": 107,
+    "196": 97,
+    "200": 63,
+    "204": 83,
+    "208": 34,
+    "212": 30,
+    "216": 14,
+    "220": 19,
+    "224": 22,
+    "228": 22,
+    "232": 44,
+    "236": 32,
+    "240": 31,
+    "244": 29,
+    "248": 26,
+    "252": 35,
+    "256": 29,
+    "260": 46,
+    "264": 55,
+    "268": 21,
+    "272": 15,
+    "556": 13,
+    "564": 14,
+    "580": 11,
+    "584": 12,
+    "588": 14,
+    "592": 13,
+    "596": 16,
+    "608": 15,
+    "616": 12,
+    "624": 18,
+    "628": 14,
+    "636": 12,
+    "640": 11,
+    "648": 11,
+    "656": 12,
+    "664": 16,
+    "668": 13,
+    "676": 12,
+    "680": 11,
+    "684": 13,
+    "688": 11,
+    "692": 11,
+    "696": 11,
+    "700": 11,
+    "704": 11,
+    "724": 11,
+    "736": 13,
+    "740": 13,
+    "756": 12,
+    "776": 11,
+    "780": 15,
+    "808": 11,
+    "840": 13,
+    "904": 11,
+    "936": 12,
+    "944": 12,
+    "976": 12,
+    "984": 13,
+    "1000": 11,
+    "1044": 12,
+    "1088": 12,
+    "1124": 13,
+    "1228": 12,
+    "1276": 13,
+    "1348": 13,
+    "1376": 13
+  },
+  "interval_quantiles": [
+    2.0,
+    4.0,
+    4.0,
+    4.0,
+    358128.0
+  ],
+  "long_gap_count": 23542,
+  "long_gap_total_raw": 20603162,
+  "largest_gaps": [
+    {
+      "start": 11008176,
+      "end": 11057888,
+      "gap": 49712
+    },
+    {
+      "start": 34957164,
+      "end": 35008328,
+      "gap": 51164
+    },
+    {
+      "start": 31252346,
+      "end": 31304690,
+      "gap": 52344
+    },
+    {
+      "start": 31008244,
+      "end": 31062068,
+      "gap": 53824
+    },
+    {
+      "start": 24675478,
+      "end": 24732902,
+      "gap": 57424
+    },
+    {
+      "start": 35306890,
+      "end": 35364864,
+      "gap": 57974
+    },
+    {
+      "start": 10075322,
+      "end": 10135192,
+      "gap": 59870
+    },
+    {
+      "start": 25625124,
+      "end": 25688134,
+      "gap": 63010
+    },
+    {
+      "start": 23355542,
+      "end": 23424344,
+      "gap": 68802
+    },
+    {
+      "start": 40569042,
+      "end": 40639630,
+      "gap": 70588
+    },
+    {
+      "start": 18391852,
+      "end": 18471256,
+      "gap": 79404
+    },
+    {
+      "start": 12993202,
+      "end": 13102826,
+      "gap": 109624
+    },
+    {
+      "start": 4892946,
+      "end": 5009686,
+      "gap": 116740
+    },
+    {
+      "start": 22598166,
+      "end": 22718586,
+      "gap": 120420
+    },
+    {
+      "start": 18253724,
+      "end": 18375200,
+      "gap": 121476
+    },
+    {
+      "start": 25296326,
+      "end": 25452828,
+      "gap": 156502
+    },
+    {
+      "start": 23169782,
+      "end": 23333310,
+      "gap": 163528
+    },
+    {
+      "start": 30569072,
+      "end": 30785696,
+      "gap": 216624
+    },
+    {
+      "start": 35687868,
+      "end": 35992696,
+      "gap": 304828
+    },
+    {
+      "start": 22810350,
+      "end": 23168478,
+      "gap": 358128
+    }
+  ],
+  "null_counts_all_columns": {
+    "time": 0,
+    "Tool": 0,
+    "stage": 0,
+    "Lot": 0,
+    "runnum": 0,
+    "recipe": 0,
+    "recipe_step": 0,
+    "IONGAUGEPRESSURE": 0,
+    "ETCHBEAMVOLTAGE": 0,
+    "ETCHBEAMCURRENT": 0,
+    "ETCHSUPPRESSORVOLTAGE": 0,
+    "ETCHSUPPRESSORCURRENT": 0,
+    "FLOWCOOLFLOWRATE": 0,
+    "FLOWCOOLPRESSURE": 0,
+    "ETCHGASCHANNEL1READBACK": 0,
+    "ETCHPBNGASREADBACK": 0,
+    "FIXTURETILTANGLE": 0,
+    "ROTATIONSPEED": 0,
+    "ACTUALROTATIONANGLE": 0,
+    "FIXTURESHUTTERPOSITION": 0,
+    "ETCHSOURCEUSAGE": 0,
+    "ETCHAUXSOURCETIMER": 0,
+    "ETCHAUX2SOURCETIMER": 0,
+    "ACTUALSTEPDURATION": 0
+  },
+  "nonfinite_sensor_counts": {
+    "FLOWCOOLPRESSURE": 0,
+    "FLOWCOOLFLOWRATE": 0,
+    "IONGAUGEPRESSURE": 0,
+    "ETCHBEAMCURRENT": 0,
+    "ETCHBEAMVOLTAGE": 0,
+    "ETCHSUPPRESSORCURRENT": 0
+  },
+  "fault_raw_rows": 361,
+  "fault_unique_events": 356,
+  "fault_duplicate_extra_rows": 5,
+  "tagged_unique_events": 1,
+  "event_counts": {
+    "f1": 298,
+    "f2": 48,
+    "f3": 9
+  },
+  "ttf": {
+    "f1": {
+      "null": 956895,
+      "finite": 4103603,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    },
+    "f2": {
+      "null": 6647,
+      "finite": 5053851,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 3489,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 3489
+    },
+    "f3": {
+      "null": 1872329,
+      "finite": 3188169,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    }
+  },
+  "distributions_raw": {
+    "f1_h300": {
+      "positive": 3443,
+      "negative": 4099559,
+      "NA": 956895,
+      "excluded_lt60": 601
+    },
+    "f1_h600": {
+      "positive": 9754,
+      "negative": 4093248,
+      "NA": 956895,
+      "excluded_lt60": 601
+    },
+    "f1_h1800": {
+      "positive": 48763,
+      "negative": 4054239,
+      "NA": 956895,
+      "excluded_lt60": 601
+    },
+    "f2_h300": {
+      "positive": 570,
+      "negative": 5049670,
+      "NA": 10136,
+      "excluded_lt60": 122
+    },
+    "f2_h600": {
+      "positive": 1300,
+      "negative": 5048940,
+      "NA": 10136,
+      "excluded_lt60": 122
+    },
+    "f2_h1800": {
+      "positive": 4797,
+      "negative": 5045443,
+      "NA": 10136,
+      "excluded_lt60": 122
+    },
+    "f3_h300": {
+      "positive": 183,
+      "negative": 3187941,
+      "NA": 1872329,
+      "excluded_lt60": 45
+    },
+    "f3_h600": {
+      "positive": 342,
+      "negative": 3187782,
+      "NA": 1872329,
+      "excluded_lt60": 45
+    },
+    "f3_h1800": {
+      "positive": 878,
+      "negative": 3187246,
+      "NA": 1872329,
+      "excluded_lt60": 45
+    },
+    "any_h300": {
+      "positive": 4196,
+      "negative": 3181102,
+      "NA": 1874432,
+      "excluded_lt60": 768
+    },
+    "any_h600": {
+      "positive": 11396,
+      "negative": 3175572,
+      "NA": 1872762,
+      "excluded_lt60": 768
+    },
+    "any_h1800": {
+      "positive": 54082,
+      "negative": 3142782,
+      "NA": 1862866,
+      "excluded_lt60": 768
+    }
+  },
+  "sensitivity_any": {
+    "h300": {
+      "positive": 4196,
+      "negative": 5051970,
+      "NA": 3564,
+      "excluded_lt60": 768
+    },
+    "h600": {
+      "positive": 11396,
+      "negative": 5044714,
+      "NA": 3620,
+      "excluded_lt60": 768
+    },
+    "h1800": {
+      "positive": 54082,
+      "negative": 5001748,
+      "NA": 3900,
+      "excluded_lt60": 768
+    }
+  },
+  "v1_policy_recomputed": {
+    "h300": {
+      "positive": 3713,
+      "negative": 2063208,
+      "NA": 2993577,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 1126254
+    },
+    "h600": {
+      "positive": 6925,
+      "negative": 1046928,
+      "NA": 4006645,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 2140394
+    },
+    "h1800": {
+      "positive": 12967,
+      "negative": 231558,
+      "NA": 4815973,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 2958336
+    }
+  },
+  "duplicate_state_conflict_times": 0,
+  "sha256": {
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\03_M02_DC_train.csv": "d142bd1d7a57d9a6cb19e53c82fa363afde6def009b5882c27c9978388fe2e60",
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_ttf\\03_M02_DC_train.csv": "cded1e142e925dc6ce0f15d57a35f3ff3bb49d8f04e2fbd1ec9a9d36fee7312d",
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_faults\\03_M02_train_fault_data.csv": "1d79e458295a92b15a504e2b658a1f15d78a3995abedcf12e5a6e81d7732959f"
+  },
+  "source_signature": {
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\03_M02_DC_train.csv": {
+      "bytes": 1805953355,
+      "mtime_ns": 1523246568000000000
+    },
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_ttf\\03_M02_DC_train.csv": {
+      "bytes": 161695393,
+      "mtime_ns": 1524151687000000000
+    },
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_faults\\03_M02_train_fault_data.csv": {
+      "bytes": 19366,
+      "mtime_ns": 1524067729000000000
+    }
+  },
+  "elapsed_seconds": 7.438,
+  "config_hash": "539f0e58b6c4c2db2b3d6f15bea4eee3e62d4aa69f087ad41b7ae86352b694e2",
+  "code_hash": "cad97b5e820e2855b6f83650ed1b99c305a6885a21aae321b4924e5ebb9d25f6b6b7b0383914d091dd265deea33fb76cf6daaeff2603a583f0068fe80644f991"
+}

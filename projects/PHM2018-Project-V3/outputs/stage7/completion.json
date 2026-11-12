@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "completed_at_utc": "2026-11-05T09:13:28.556441+00:00",
+  "selected_tools": [
+    "03M02"
+  ],
+  "device": "cuda:0",
+  "checks": 130,
+  "figures": 6,
+  "executed_notebook_cells": 6,
+  "notebook_errors": 0,
+  "verified_document_links": 28,
+  "independent_final_test": false,
+  "previous_final_artifacts_unchanged": true,
+  "selected_tools_limit": 3,
+  "additional_later_inference_in_notebook": 0
+}

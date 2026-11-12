@@ -1,0 +1,115 @@
+{
+  "samples": [
+    {
+      "unix_time": 1793852185.9725132,
+      "rss_gib": 0.05542755126953125,
+      "available_ram_gib": 19.920639038085938,
+      "gpu_memory_mib_and_util_percent": "1131, 7"
+    },
+    {
+      "unix_time": 1793852188.0435562,
+      "rss_gib": 0.5875968933105469,
+      "available_ram_gib": 19.375812530517578,
+      "gpu_memory_mib_and_util_percent": "1128, 0"
+    },
+    {
+      "unix_time": 1793852190.1032555,
+      "rss_gib": 0.7765960693359375,
+      "available_ram_gib": 19.21511459350586,
+      "gpu_memory_mib_and_util_percent": "1125, 5"
+    },
+    {
+      "unix_time": 1793852192.159166,
+      "rss_gib": 0.8727836608886719,
+      "available_ram_gib": 19.119884490966797,
+      "gpu_memory_mib_and_util_percent": "1127, 4"
+    },
+    {
+      "unix_time": 1793852194.2142832,
+      "rss_gib": 0.9001579284667969,
+      "available_ram_gib": 19.066631317138672,
+      "gpu_memory_mib_and_util_percent": "1121, 3"
+    },
+    {
+      "unix_time": 1793852196.285185,
+      "rss_gib": 0.8564376831054688,
+      "available_ram_gib": 19.122760772705078,
+      "gpu_memory_mib_and_util_percent": "1114, 0"
+    },
+    {
+      "unix_time": 1793852198.3417737,
+      "rss_gib": 0.9512443542480469,
+      "available_ram_gib": 19.033447265625,
+      "gpu_memory_mib_and_util_percent": "1113, 7"
+    },
+    {
+      "unix_time": 1793852200.4023993,
+      "rss_gib": 1.0871658325195312,
+      "available_ram_gib": 18.830799102783203,
+      "gpu_memory_mib_and_util_percent": "1113, 24"
+    },
+    {
+      "unix_time": 1793852202.490307,
+      "rss_gib": 1.2221717834472656,
+      "available_ram_gib": 18.718185424804688,
+      "gpu_memory_mib_and_util_percent": "1119, 37"
+    },
+    {
+      "unix_time": 1793852204.5768652,
+      "rss_gib": 0.9381790161132812,
+      "available_ram_gib": 19.009132385253906,
+      "gpu_memory_mib_and_util_percent": "1113, 27"
+    },
+    {
+      "unix_time": 1793852206.6436582,
+      "rss_gib": 0.9397926330566406,
+      "available_ram_gib": 19.01568603515625,
+      "gpu_memory_mib_and_util_percent": "1112, 6"
+    },
+    {
+      "unix_time": 1793852208.7011392,
+      "rss_gib": 1.0032615661621094,
+      "available_ram_gib": 18.954551696777344,
+      "gpu_memory_mib_and_util_percent": "1113, 0"
+    },
+    {
+      "unix_time": 1793852210.760002,
+      "rss_gib": 1.0304718017578125,
+      "available_ram_gib": 18.882492065429688,
+      "gpu_memory_mib_and_util_percent": "1113, 4"
+    },
+    {
+      "unix_time": 1793852212.8238573,
+      "rss_gib": 1.1603965759277344,
+      "available_ram_gib": 18.763565063476562,
+      "gpu_memory_mib_and_util_percent": "1113, 0"
+    },
+    {
+      "unix_time": 1793852214.8841152,
+      "rss_gib": 1.23388671875,
+      "available_ram_gib": 18.698020935058594,
+      "gpu_memory_mib_and_util_percent": "1113, 4"
+    },
+    {
+      "unix_time": 1793852216.9533699,
+      "rss_gib": 1.2743415832519531,
+      "available_ram_gib": 18.657737731933594,
+      "gpu_memory_mib_and_util_percent": "1113, 0"
+    },
+    {
+      "unix_time": 1793852219.0139515,
+      "rss_gib": 1.8838119506835938,
+      "available_ram_gib": 18.059005737304688,
+      "gpu_memory_mib_and_util_percent": "1112, 1"
+    },
+    {
+      "unix_time": 1793852221.06896,
+      "rss_gib": 1.5090103149414062,
+      "available_ram_gib": 18.281288146972656,
+      "gpu_memory_mib_and_util_percent": "1113, 0"
+    }
+  ],
+  "violation": null,
+  "peak_rss_gib": 1.8838119506835938,
+  "min_available_ram_gib": 18.059005737304688
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "repository": "YoungJang-KR/semiconductor-fault-detection",
+    "commit": "c735bffe77d05746d77439571260330ada06d936",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "01_EDA_PHM18_etching.ipynb",
+        "blob_sha": "d31275b5ef7b5b2c8e74645b3dc940496f33a0eb",
+        "size": 1029535,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/01_EDA_PHM18_etching.ipynb",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\01_EDA_PHM18_etching.ipynb.txt"
+      },
+      {
+        "path": "02_merge_sampling_5pct_PHM18_etching.ipynb",
+        "blob_sha": "9af7c509147f9c951d1bf3978a3e101b9ac404b5",
+        "size": 17770,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/02_merge_sampling_5pct_PHM18_etching.ipynb",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\02_merge_sampling_5pct_PHM18_etching.ipynb.txt"
+      },
+      {
+        "path": "02_merge_sampling_PHM18_etching.ipynb",
+        "blob_sha": "5c9f016da3cf9f34e861237810d56ff64b5e034b",
+        "size": 18784,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/02_merge_sampling_PHM18_etching.ipynb",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\02_merge_sampling_PHM18_etching.ipynb.txt"
+      },
+      {
+        "path": "03_modelling_PHM18_etching.ipynb",
+        "blob_sha": "690b3ec988043d92fad5a7f6a034d340fc446cbc",
+        "size": 125006,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/03_modelling_PHM18_etching.ipynb",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\03_modelling_PHM18_etching.ipynb.txt"
+      },
+      {
+        "path": "04_practice.ipynb",
+        "blob_sha": "c072a8e9b4176a59b7afd14f0332bc18dcfedf15",
+        "size": 17276,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/04_practice.ipynb",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\04_practice.ipynb.txt"
+      },
+      {
+        "path": "EDA_PHM18_etching.ipynb",
+        "blob_sha": "1bbd3aaa1bce7ea7292d413fcec70552cf3a27b4",
+        "size": 1090371,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/EDA_PHM18_etching.ipynb",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\EDA_PHM18_etching.ipynb.txt"
+      },
+      {
+        "path": "README.md",
+        "blob_sha": "e33c65d79662aaf3070954d2f526de4f7fc58152",
+        "size": 7156,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/README.md",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\README.md.txt"
+      },
+      {
+        "path": "from_scratch_02_PHM18_etching.ipynb",
+        "blob_sha": "41d43f4b4f55c0a66f68ba63fb7556bc7776a947",
+        "size": 343085,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/from_scratch_02_PHM18_etching.ipynb",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\from_scratch_02_PHM18_etching.ipynb.txt"
+      },
+      {
+        "path": "from_scratch_03_PHM18_etching.ipynb",
+        "blob_sha": "10a873bace3ba654e5faa3a380bb23cdafcfd750",
+        "size": 23512,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/from_scratch_03_PHM18_etching.ipynb",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\from_scratch_03_PHM18_etching.ipynb.txt"
+      },
+      {
+        "path": "from_scratch_PHM18_etching.ipynb",
+        "blob_sha": "84efb1ca3bdf2c27222ba553cfa5074f0b0fbd5a",
+        "size": 1340040,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/from_scratch_PHM18_etching.ipynb",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\from_scratch_PHM18_etching.ipynb.txt"
+      },
+      {
+        "path": "practice/01_practice.ipynb",
+        "blob_sha": "5382d5bb5400caf04928c5160a41133d4e06cd8e",
+        "size": 257714,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/practice/01_practice.ipynb",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\practice\\01_practice.ipynb.txt"
+      },
+      {
+        "path": "practice/01_practice02.ipynb",
+        "blob_sha": "4fbc56f6e193e8fb8adc6f31f375e86f2b375cea",
+        "size": 1318186,
+        "url": "https://github.com/YoungJang-KR/semiconductor-fault-detection/blob/c735bffe77d05746d77439571260330ada06d936/practice/01_practice02.ipynb",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\YoungJang-KR\\practice\\01_practice02.ipynb.txt"
+      }
+    ],
+    "external_code_executed": false
+  },
+  {
+    "repository": "ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance",
+    "commit": "6ba6b026340cd21a95f8846344c1996a02bcc97d",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "README.md",
+        "blob_sha": "2ddcbb2ed1ec027760bf5818850cc9b4cc59f549",
+        "size": 13075,
+        "url": "https://github.com/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/blob/6ba6b026340cd21a95f8846344c1996a02bcc97d/README.md",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\ki-seoultech\\README.md.txt"
+      },
+      {
+        "path": "src/01_rul_regression/v6_baseline_single_unit.py",
+        "blob_sha": "35f0dcba17ba3c7a3951dfedec48368ddf97970f",
+        "size": 9512,
+        "url": "https://github.com/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/blob/6ba6b026340cd21a95f8846344c1996a02bcc97d/src/01_rul_regression/v6_baseline_single_unit.py",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\ki-seoultech\\src\\01_rul_regression\\v6_baseline_single_unit.py.txt"
+      },
+      {
+        "path": "src/01_rul_regression/v7_1_param_sweep_f3.py",
+        "blob_sha": "8b12f2742d23b9b79bcabc3906fc717bafa3a6e4",
+        "size": 14563,
+        "url": "https://github.com/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/blob/6ba6b026340cd21a95f8846344c1996a02bcc97d/src/01_rul_regression/v7_1_param_sweep_f3.py",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\ki-seoultech\\src\\01_rul_regression\\v7_1_param_sweep_f3.py.txt"
+      },
+      {
+        "path": "src/01_rul_regression/v7_global_downsampling.py",
+        "blob_sha": "b252743fc94eea0de6a42c16690d78df23122012",
+        "size": 13207,
+        "url": "https://github.com/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/blob/6ba6b026340cd21a95f8846344c1996a02bcc97d/src/01_rul_regression/v7_global_downsampling.py",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\ki-seoultech\\src\\01_rul_regression\\v7_global_downsampling.py.txt"
+      },
+      {
+        "path": "src/01_rul_regression/v8_multi_fault_sweep_f1_f2.py",
+        "blob_sha": "878adb4e45ef9b2c964936f12cb9f552e8e08982",
+        "size": 15011,
+        "url": "https://github.com/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/blob/6ba6b026340cd21a95f8846344c1996a02bcc97d/src/01_rul_regression/v8_multi_fault_sweep_f1_f2.py",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\ki-seoultech\\src\\01_rul_regression\\v8_multi_fault_sweep_f1_f2.py.txt"
+      },
+      {
+        "path": "src/02_fault_classifier/build_v2_dataset.py",
+        "blob_sha": "e571f686ce964836ae30c1ca689142938c96e577",
+        "size": 2214,
+        "url": "https://github.com/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/blob/6ba6b026340cd21a95f8846344c1996a02bcc97d/src/02_fault_classifier/build_v2_dataset.py",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\ki-seoultech\\src\\02_fault_classifier\\build_v2_dataset.py.txt"
+      },
+      {
+        "path": "src/02_fault_classifier/classifier_threshold_search.py",
+        "blob_sha": "3ee45db4788320c9fd001f98591a262bbc8e919a",
+        "size": 9903,
+        "url": "https://github.com/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/blob/6ba6b026340cd21a95f8846344c1996a02bcc97d/src/02_fault_classifier/classifier_threshold_search.py",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\ki-seoultech\\src\\02_fault_classifier\\classifier_threshold_search.py.txt"
+      },
+      {
+        "path": "src/02_fault_classifier/train_save_classifier.py",
+        "blob_sha": "76738c4cf00f82ef8f6fb25ca0cac41fc607a767",
+        "size": 7225,
+        "url": "https://github.com/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/blob/6ba6b026340cd21a95f8846344c1996a02bcc97d/src/02_fault_classifier/train_save_classifier.py",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\ki-seoultech\\src\\02_fault_classifier\\train_save_classifier.py.txt"
+      },
+      {
+        "path": "src/03_inference_pipeline/inference_3stage.py",
+        "blob_sha": "fec39d95b136c0534c6d97574379b53f934f3486",
+        "size": 11550,
+        "url": "https://github.com/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/blob/6ba6b026340cd21a95f8846344c1996a02bcc97d/src/03_inference_pipeline/inference_3stage.py",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\ki-seoultech\\src\\03_inference_pipeline\\inference_3stage.py.txt"
+      },
+      {
+        "path": "src/03_inference_pipeline/train_save_regressor_f3.py",
+        "blob_sha": "6c47df2e56c68fcb2b79afef055f90566247b72c",
+        "size": 13841,
+        "url": "https://github.com/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/blob/6ba6b026340cd21a95f8846344c1996a02bcc97d/src/03_inference_pipeline/train_save_regressor_f3.py",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\ki-seoultech\\src\\03_inference_pipeline\\train_save_regressor_f3.py.txt"
+      },
+      {
+        "path": "src/03_inference_pipeline/train_save_regressors_f1_f2.py",
+        "blob_sha": "4aab546f130c44bf80ff24fb72ec157c757d4daf",
+        "size": 15700,
+        "url": "https://github.com/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/blob/6ba6b026340cd21a95f8846344c1996a02bcc97d/src/03_inference_pipeline/train_save_regressors_f1_f2.py",
+        "status": "read_static_only",
+        "snapshot": "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project-V2\\outputs\\github_review\\ki-seoultech\\src\\03_inference_pipeline\\train_save_regressors_f1_f2.py.txt"
+      }
+    ],
+    "external_code_executed": false
+  }
+]

@@ -1,0 +1,130 @@
+
+# ===== CELL 0 (markdown) =====
+<a href="https://colab.research.google.com/github/YoungJang-KR/semiconductor-fault-detection/blob/main/04_practice.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+# ===== CELL 1 (code) =====
+from google.colab import drive
+drive.mount('/content/drive', force_remount=True)
+
+# ===== CELL 2 (code) =====
+import pandas as pd
+
+# ===== CELL 3 (code) =====
+df_final = pd.read_csv('/content/drive/MyDrive/phm18/df_final_stratified.csv')
+
+# 잘 불러와졌나 확인
+print("행, 렬:", df_final.shape)
+print("열 목록:", df_final.columns.tolist())
+
+# ===== CELL 4 (code) =====
+df_final = df_final.rename( columns={
+    'TTF_FlowCool Pressure Dropped Below Limit': 'TTF_pressure_drop',
+    'TTF_Flowcool Pressure Too High Check Flowcool Pump': 'TTF_pressure_high',
+    'TTF_Flowcool leak': 'TTF_leak'
+})
+
+print(df_final.columns.tolist())
+
+df_final.to_csv('/content/drive/MyDrive/phm18/df_final_stratified_renamed.csv', index=False)
+# index=False 제발 까먹지 마!
+print("저장 완료!")
+
+# ===== CELL 5 (code) =====
+df_final = pd.read_csv('/content/drive/MyDrive/phm18/df_final_stratified_renamed.csv')
+
+print("행, 렬:", df_final.shape)
+print("열 항목:", df_final.columns.tolist())
+
+# ===== CELL 6 (code) =====
+sensor_cols = [
+    'IONGAUGEPRESSURE', 'ETCHSUPPRESSORCURRENT', 'FLOWCOOLPRESSURE',
+    'ACTUALROTATIONANGLE', 'ACTUALSTEPDURATION'
+]
+
+control_cols = [
+    'ETCHBEAMVOLTAGE', 'ETCHBEAMCURRENT', 'ETCHSUPPRESSORVOLTAGE',
+    'FLOWCOOLFLOWRATE', 'ETCHGASCHANNEL1READBACK', 'ETCHPBNGASREADBACK',
+    'FIXTURETILTANGLE', 'ROTATIONSPEED', 'FIXTURESHUTTERPOSITION',
+    'ETCHSOURCEUSAGE', 'ETCHAUXSOURCETIMER', 'ETCHAUX2SOURCETIMER'
+]
+
+ttf_cols = [
+    'TTF_pressure_drop', 'TTF_pressure_high', 'TTF_leak'
+]
+
+# ===== CELL 7 (code) =====
+train_cols = sensor_cols + control_cols
+
+X = df_final[train_cols]
+y = df_final['label_pressure_high']
+
+print("X의 형태:", X.shape)
+print("y의 형태:", y.shape)
+
+# ===== CELL 8 (code) =====
+# 데이터 스플릿
+
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# train, test 순서
+# test_size = 0.2
+
+print("X_train의 형태:", X_train.shape)
+print("X_test의 형태:", X_test.shape)
+print("y_train의 형태:", y_train.shape)
+print("y_test의 형태:", y_test.shape)
+
+# ===== CELL 9 (code) =====
+from sklearn.ensemble import RandomForestClassifier
+
+model_stratified = RandomForestClassifier(n_estimators=100, random_state=42)
+model_stratified.fit(X_train, y_train) # 괄호 안의 데이터를 가지고 학습하라는 뜻
+
+print("학습 완료!")
+
+# ===== CELL 10 (code) =====
+import joblib
+
+joblib.dump(model_stratified, '/content/drive/MyDrive/phm18/model_stratified.pkl')
+print("model_stratified 저장 완료")
+
+# ===== CELL 11 (code) =====
+from sklearn.metrics import classification_report
+
+y_pred = model_stratified.predict(X_test)    # 학습된 모델에 시험지(X_test)를 주고 시험을 치게 함
+print(classification_report(y_test, y_pred)) # 실제 정답(y_test)과 시험 성적(y_pred)을 비교
+
+# ===== CELL 12 (markdown) =====
+학습시킨 RandomForest model의 정확도가 100%가 나왔는데, 이는 사실상 불가능한 일이다.
+
+# ===== CELL 13 (code) =====
+# 먼저 train_cols에 정답이 섞여들어갔는지 확인해보자
+
+print(train_cols)
+
+# ===== CELL 14 (code) =====
+# 타이머 변수(ETCHAUXSOURCETIMER)가 사실상 시간의 대리변수 역할을 하여 정답률에 영향을 준 것이 아닌지 확인
+
+print(df_final[['time', 'ETCHAUXSOURCETIMER', 'ETCHSOURCEUSAGE', 'ETCHAUX2SOURCETIMER']].corr())
+
+# ===== CELL 15 (code) =====
+# 한 장비(01M01)만 따로 떼어서 확인
+
+df_01M01 = df_final[df_final['Tool'] == '01M01']
+
+print(df_01M01[['time', 'ETCHAUXSOURCETIMER', 'ETCHSOURCEUSAGE', 'ETCHAUX2SOURCETIMER', 'TTF_pressure_high']].corr())
+
+# ===== CELL 16 (code) =====
+# X_train과 X_test 사이에 완전히 똑같은 행(중복)이 있는지 확인
+
+duplicated_check = X_train.merge(X_test, how='inner')
+# how = 'inner' : train과 test 양쪽에 있는 행을 전부 골라내기
+print(f"train과 test 사이 중복된 행 개수: {len(duplicated_check):,}개")
+
+# ===== CELL 17 (markdown) =====
+범인을 발견했다. train set과 test set 사이에 중복된 행의 개수가 약 170만 개나 되어서, 사실상 모델이 패턴을 학습한 게 아니라 기억해서 베낀 셈이 된 것이다.
+
+실제 현장에서 모델을 쓸 상황을 생각해보면 '새로운 장비'나 '아직 겪어보지 못한 상황'에 대해 예측해야 하는 경우가 많다.
+
+장비 단위로 train set과 test set을 완전히 분리해두면, '우리가 만든 모델이 정말 처음 보는 장비에서도 통하는가'를 훨씬 현실적으로 검증할 수 있다. 정답률 100%는 사실상 '이미 본 문제를 다시 푼 것'이라고 해야 한다.

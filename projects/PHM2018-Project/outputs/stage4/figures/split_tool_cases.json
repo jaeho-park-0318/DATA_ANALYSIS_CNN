@@ -1,0 +1,18 @@
+{
+  "scheme": "split_tool",
+  "model": "RF_A",
+  "threshold": 0.40857434633354467,
+  "event_Tool": "09M01",
+  "event_code": "f1",
+  "event_time": 4279600.0,
+  "points": 30,
+  "score_min": 0.04291230141003638,
+  "score_max": 0.04291230141003638,
+  "score_first": 0.04291230141003638,
+  "score_last": 0.04291230141003638,
+  "last_horizon_max": 0.04291230141003638,
+  "threshold_crossed_last_horizon": false,
+  "false_alarm_Tool": "09M01",
+  "false_alarm_start": 5083322.0,
+  "false_alarm_score_max": 0.43213190640117966
+}

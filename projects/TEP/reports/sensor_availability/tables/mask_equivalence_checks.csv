@@ -1,0 +1,16 @@
+case,fault,run,valid_post_windows,surviving_inputs_exactly_identical,same_batch_predictions_exactly_identical,cached_prediction_max_probability_error,cache_error_note
+none,1,1,800,True,True,0.0,different GPU batch packing may cause small rounding; no input/model change
+none,9,1,800,True,True,0.0,different GPU batch packing may cause small rounding; no input/model change
+none,15,3,800,True,True,0.0,different GPU batch packing may cause small rounding; no input/model change
+short_gap,1,1,761,True,True,0.0,different GPU batch packing may cause small rounding; no input/model change
+short_gap,9,1,761,True,True,0.0,different GPU batch packing may cause small rounding; no input/model change
+short_gap,15,3,761,True,True,0.0,different GPU batch packing may cause small rounding; no input/model change
+full_censor,1,1,0,True,True,1.8477439880371094e-06,different GPU batch packing may cause small rounding; no input/model change
+full_censor,9,1,0,True,True,1.8477439880371094e-06,different GPU batch packing may cause small rounding; no input/model change
+full_censor,15,3,0,True,True,4.649162292480469e-06,different GPU batch packing may cause small rounding; no input/model change
+one_window,1,1,1,True,True,1.8477439880371094e-06,different GPU batch packing may cause small rounding; no input/model change
+one_window,9,1,1,True,True,1.8477439880371094e-06,different GPU batch packing may cause small rounding; no input/model change
+one_window,15,3,1,True,True,4.649162292480469e-06,different GPU batch packing may cause small rounding; no input/model change
+two_windows,1,1,2,True,True,6.556510925292969e-07,different GPU batch packing may cause small rounding; no input/model change
+two_windows,9,1,2,True,True,6.556510925292969e-07,different GPU batch packing may cause small rounding; no input/model change
+two_windows,15,3,2,True,True,3.5762786865234375e-07,different GPU batch packing may cause small rounding; no input/model change

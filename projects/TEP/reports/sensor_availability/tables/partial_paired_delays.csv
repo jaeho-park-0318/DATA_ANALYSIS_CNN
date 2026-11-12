@@ -1,0 +1,4 @@
+group,paired_detected_runs,baseline_delay_median,masked_delay_median,paired_delay_change_median
+공백 선택 실행,2471,48.0,126.0,81.0
+공백 미선택 실행,7378,48.0,48.0,0.0
+전체 실행,9849,48.0,72.0,0.0

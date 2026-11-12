@@ -1,0 +1,209 @@
+{
+  "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe",
+  "prefix": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018",
+  "python_version": "3.11.18 | packaged by Anaconda, Inc. | (main, Oct 26 2026, 18:13:29) [MSC v.1942 64 bit (AMD64)]",
+  "execution": "로컬 Windows 프로세스와 로컬 파일시스템에서 실행. Codex UI의 Local 표시 자체는 별도 확인하지 않음.",
+  "physical_cores": 8,
+  "logical_cores": 16,
+  "memory": {
+    "total": 33492262912,
+    "available": 21265887232,
+    "percent": 36.5,
+    "used": 12226375680,
+    "free": 21265887232
+  },
+  "kernels": {
+    "python3": {
+      "resource_dir": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\share\\jupyter\\kernels\\python3",
+      "spec": {
+        "argv": [
+          "python",
+          "-m",
+          "ipykernel_launcher",
+          "-f",
+          "{connection_file}"
+        ],
+        "env": {},
+        "display_name": "Python 3 (ipykernel)",
+        "language": "python",
+        "interrupt_mode": "signal",
+        "metadata": {
+          "debugger": true,
+          "supported_encryption": [
+            "curve"
+          ]
+        },
+        "kernel_protocol_version": "5.5"
+      }
+    }
+  },
+  "xgboost": "3.2.0",
+  "build": {
+    "BUILTIN_PREFETCH_PRESENT": false,
+    "CUDA_VERSION": [
+      12,
+      9
+    ],
+    "DEBUG": false,
+    "MM_PREFETCH_PRESENT": true,
+    "THRUST_VERSION": [
+      2,
+      8,
+      2
+    ],
+    "USE_CUDA": true,
+    "USE_DLOPEN_NCCL": false,
+    "USE_FEDERATED": false,
+    "USE_NCCL": false,
+    "USE_NVCOMP": false,
+    "USE_OPENMP": true,
+    "USE_RMM": false,
+    "libxgboost": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\Lib\\site-packages\\xgboost\\lib\\xgboost.dll"
+  },
+  "runs": [
+    {
+      "device": "cpu",
+      "repeat": 0,
+      "actual_device": "cpu",
+      "seconds": 1.013816500082612,
+      "peak_rss_bytes": 1919737856,
+      "min_available_bytes": 19551735808,
+      "samples": [
+        {
+          "elapsed": 0.0005574999377131462,
+          "rss": 1882619904,
+          "available": 19572297728
+        },
+        {
+          "elapsed": 0.5136649000924081,
+          "rss": 1919737856,
+          "available": 19551735808
+        }
+      ]
+    },
+    {
+      "device": "cpu",
+      "repeat": 1,
+      "actual_device": "cpu",
+      "seconds": 0.9488919000141323,
+      "peak_rss_bytes": 1920389120,
+      "min_available_bytes": 19539820544,
+      "samples": [
+        {
+          "elapsed": 0.0005532000213861465,
+          "rss": 1887166464,
+          "available": 19586215936
+        },
+        {
+          "elapsed": 0.5021977999713272,
+          "rss": 1920389120,
+          "available": 19539820544
+        }
+      ]
+    },
+    {
+      "device": "cpu",
+      "repeat": 2,
+      "actual_device": "cpu",
+      "seconds": 1.363979599904269,
+      "peak_rss_bytes": 1921101824,
+      "min_available_bytes": 19502305280,
+      "samples": [
+        {
+          "elapsed": 0.000520800007507205,
+          "rss": 1888534528,
+          "available": 19575365632
+        },
+        {
+          "elapsed": 0.5104805000592023,
+          "rss": 1921089536,
+          "available": 19529154560
+        },
+        {
+          "elapsed": 1.0117927000392228,
+          "rss": 1921101824,
+          "available": 19502305280
+        }
+      ]
+    },
+    {
+      "device": "cuda",
+      "repeat": 0,
+      "actual_device": "cuda:0",
+      "seconds": 0.7493090000934899,
+      "peak_rss_bytes": 1958989824,
+      "min_available_bytes": 19469799424,
+      "samples": [
+        {
+          "elapsed": 0.0006113001145422459,
+          "rss": 1925115904,
+          "available": 19500556288
+        },
+        {
+          "elapsed": 0.5043198999483138,
+          "rss": 1958989824,
+          "available": 19469799424
+        }
+      ]
+    },
+    {
+      "device": "cuda",
+      "repeat": 1,
+      "actual_device": "cuda:0",
+      "seconds": 0.7194431000389159,
+      "peak_rss_bytes": 1960534016,
+      "min_available_bytes": 19403591680,
+      "samples": [
+        {
+          "elapsed": 0.0006891000084578991,
+          "rss": 1927819264,
+          "available": 19490668544
+        },
+        {
+          "elapsed": 0.5082322000525892,
+          "rss": 1960534016,
+          "available": 19403591680
+        }
+      ]
+    },
+    {
+      "device": "cuda",
+      "repeat": 2,
+      "actual_device": "cuda:0",
+      "seconds": 0.7097086999565363,
+      "peak_rss_bytes": 1961000960,
+      "min_available_bytes": 19232047104,
+      "samples": [
+        {
+          "elapsed": 0.0006180000491440296,
+          "rss": 1925271552,
+          "available": 19374157824
+        },
+        {
+          "elapsed": 0.509016599971801,
+          "rss": 1961000960,
+          "available": 19232047104
+        }
+      ]
+    }
+  ],
+  "nvidia_smi": "Thu Nov  5 12:33:22 2026       \n+---------------------------------------------------------------------------------------+\n| NVIDIA-SMI 546.92                 Driver Version: 546.92       CUDA Version: 12.3     |\n|-----------------------------------------+----------------------+----------------------+\n| GPU  Name                     TCC/WDDM  | Bus-Id        Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |\n|                                         |                      |               MIG M. |\n|=========================================+======================+======================|\n|   0  NVIDIA GeForce RTX 3060 ...  WDDM  | 00000000:01:00.0  On |                  N/A |\n| N/A   49C    P8              15W / 140W |   1078MiB /  6144MiB |     10%      Default |\n|                                         |                      |                  N/A |\n+-----------------------------------------+----------------------+----------------------+\n                                                                                         \n+---------------------------------------------------------------------------------------+\n| Processes:                                                                            |\n|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |\n|        ID   ID                                                             Usage      |\n|=======================================================================================|\n|    0   N/A  N/A      1808    C+G   ...2txyewy\\StartMenuExperienceHost.exe    N/A      |\n|    0   N/A  N/A      3008    C+G   ...cw5n1h2txyewy\\CrossDeviceResume.exe    N/A      |\n|    0   N/A  N/A      3452    C+G   C:\\Windows\\explorer.exe                   N/A      |\n|    0   N/A  N/A      4928    C+G   ...m\\radeonsoftware\\RadeonSoftware.exe    N/A      |\n|    0   N/A  N/A      8276    C+G   C:\\Windows\\System32\\ShellHost.exe         N/A      |\n|    0   N/A  N/A     15684    C+G   ...nr4m\\radeonsoftware\\AMDRSSrcExt.exe    N/A      |\n|    0   N/A  N/A     18684    C+G   ...ft\\x64\\codex-computer-use-swift.exe    N/A      |\n|    0   N/A  N/A     19116    C+G   ...CBS_cw5n1h2txyewy\\TextInputHost.exe    N/A      |\n|    0   N/A  N/A     21152    C+G   ...ekyb3d8bbwe\\PhoneExperienceHost.exe    N/A      |\n|    0   N/A  N/A     21252    C+G   ...nt.CBS_cw5n1h2txyewy\\SearchHost.exe    N/A      |\n|    0   N/A  N/A     21364    C+G   ...siveControlPanel\\SystemSettings.exe    N/A      |\n|    0   N/A  N/A     21580    C+G   ...5n1h2txyewy\\ShellExperienceHost.exe    N/A      |\n|    0   N/A  N/A     21960    C+G   ...crosoft\\Edge\\Application\\msedge.exe    N/A      |\n|    0   N/A  N/A     25364    C+G   ...__8wekyb3d8bbwe\\WindowsTerminal.exe    N/A      |\n+---------------------------------------------------------------------------------------+\n",
+  "cpu_name": "",
+  "benchmark": {
+    "rows": 150000,
+    "features": 83,
+    "positive": 313,
+    "rounds": 100,
+    "repetitions": 3,
+    "threads": 4,
+    "early_stopping": false
+  },
+  "cpu_warnings": [],
+  "cuda_warnings": [],
+  "median_seconds": {
+    "cpu": 1.013816500082612,
+    "cuda": 0.7194431000389159
+  },
+  "selected_device": "cuda",
+  "speedup_cpu_over_gpu": 1.4091684248938838
+}

@@ -1,0 +1,101 @@
+
+# ===== CELL 0 (markdown) =====
+<a href="https://colab.research.google.com/github/YoungJang-KR/semiconductor-fault-detection/blob/main/02_merge_sampling_5pct_PHM18_etching.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+# ===== CELL 1 (code) =====
+from google.colab import drive
+drive.mount('/content/drive')
+
+# ===== CELL 2 (code) =====
+# 라이브러리 불러오기
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import os
+import glob
+
+# ===== CELL 3 (code) =====
+dir_train = '/content/drive/MyDrive/phm18/train'
+dir_ttf = '/content/drive/MyDrive/phm18/train_ttf'
+
+files_train = sorted( glob.glob(os.path.join(dir_train, '*csv'))) # 알파벳 순서대로 정렬
+files_ttf = sorted( glob.glob(os.path.join(dir_ttf, '*csv')))
+
+print(f"train 파일 개수: {len(files_train)}")
+print(files_train)
+print(f"ttf 파일 개수: {len(files_ttf)}")
+print(files_ttf)
+
+# ===== CELL 4 (markdown) =====
+Sorting이 제대로 안되면, merge로 train 폴더의 파일과 train_ttf 폴더의 파일을 짝지을 때 엉뚱한 파일끼리 합쳐지는 참사가 발생한다.
+
+# ===== CELL 5 (code) =====
+# 컬럼 정의하기
+sensor_cols = [
+    'IONGAUGEPRESSURE', 'ETCHSUPPRESSORCURRENT', 'FLOWCOOLPRESSURE',
+    'ACTUALROTATIONANGLE', 'ACTUALSTEPDURATION'
+]
+
+control_cols = [
+    'ETCHBEAMVOLTAGE', 'ETCHBEAMCURRENT', 'ETCHSUPPRESSORVOLTAGE',
+    'FLOWCOOLFLOWRATE', 'ETCHGASCHANNEL1READBACK', 'ETCHPBNGASREADBACK',
+    'FIXTURETILTANGLE', 'ROTATIONSPEED', 'FIXTURESHUTTERPOSITION',
+    'ETCHSOURCEUSAGE', 'ETCHAUXSOURCETIMER', 'ETCHAUX2SOURCETIMER'
+]
+
+ttf_cols = [
+    'TTF_pressure_drop', 'TTF_pressure_high', 'TTF_leak'
+]
+
+# ===== CELL 6 (code) =====
+# 데이터 확인
+df_01 = pd.read_csv(files_train[0])
+print("행, 렬:", df_01.shape)
+print("열 항목", df_01.columns.tolist())
+
+# ===== CELL 7 (code) =====
+dfs = []
+
+for file_train, file_ttf in zip(files_train, files_ttf):
+  df_train = pd.read_csv(file_train)
+  df_ttf = pd.read_csv(file_ttf)
+  df_merged = df_train.merge(df_ttf, on='time')
+  df_sampled = df_merged.sample(frac=0.05, random_state=42)
+  dfs.append(df_sampled)
+  print(f"{file_train} 처리 완료: {df_sampled.shape}")
+
+df_all_5pct = pd.concat(dfs, axis=0, ignore_index=True)
+print(df_all_5pct.shape)
+
+# ===== CELL 8 (code) =====
+df_all_5pct.to_csv('/content/drive/MyDrive/phm18/df_all_sampled_5pct.csv', index=False)
+
+print("저장 완료", df_all_5pct.shape)
+
+# ===== CELL 9 (code) =====
+df_all_5pct = pd.read_csv('/content/drive/MyDrive/phm18/df_all_sampled_5pct.csv')
+
+print("행, 렬:", df_all_5pct.shape)
+print("열 항목:", df_all_5pct.columns.tolist())
+print(df_all_5pct.isna().sum())
+
+# ===== CELL 10 (code) =====
+df_all_5pct = df_all_5pct.rename( columns={
+    'TTF_FlowCool Pressure Dropped Below Limit': 'TTF_pressure_drop',
+    'TTF_Flowcool Pressure Too High Check Flowcool Pump': 'TTF_pressure_high',
+    'TTF_Flowcool leak': 'TTF_leak'
+})
+
+print("열 항목 확인:", df_all_5pct.columns.tolist())
+
+# ===== CELL 11 (code) =====
+df_all_5pct.to_csv('/content/drive/MyDrive/phm18/df_all_sampled_5pct.csv', index=False) # 저장할 때는 index=False 잊지 않기
+print("저장 완료!")
+
+# ===== CELL 12 (code) =====
+# 샘플링이 잘 되었나 확인해보기
+threshold = 1839644
+df_all_5pct['label_pressure_high'] = ( df_all_5pct['TTF_pressure_high'] <= threshold ).astype(int)
+print(df_all_5pct['label_pressure_high'].value_counts())
+print(df_all_5pct['label_pressure_high'].value_counts(normalize=True))

@@ -1,0 +1,429 @@
+[
+  {
+    "path": "projects/PHM2018-Project/notebooks/01_data_overview.ipynb",
+    "code_cells": 5,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 271031
+  },
+  {
+    "path": "projects/PHM2018-Project/notebooks/02_EDA.ipynb",
+    "code_cells": 7,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 1075858
+  },
+  {
+    "path": "projects/PHM2018-Project/notebooks/03_fault_analysis.ipynb",
+    "code_cells": 9,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 1023925
+  },
+  {
+    "path": "projects/PHM2018-Project/notebooks/04_label_generation.ipynb",
+    "code_cells": 5,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 245714
+  },
+  {
+    "path": "projects/PHM2018-Project/notebooks/05_feature_engineering.ipynb",
+    "code_cells": 6,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 213398
+  },
+  {
+    "path": "projects/PHM2018-Project/notebooks/06_baseline_models.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 126762
+  },
+  {
+    "path": "projects/PHM2018-Project/notebooks/07_xgboost_training.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 206680
+  },
+  {
+    "path": "projects/PHM2018-Project/notebooks/08_model_comparison.ipynb",
+    "code_cells": 6,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 1766168
+  },
+  {
+    "path": "projects/PHM2018-Project/notebooks/09_dataset_audit.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 141500
+  },
+  {
+    "path": "projects/PHM2018-Project/notebooks/10_group_cross_validation.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 288358
+  },
+  {
+    "path": "projects/PHM2018-Project/notebooks/11_threshold_analysis.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 233466
+  },
+  {
+    "path": "projects/PHM2018-Project-V2/notebooks/01_raw_data_validation.ipynb",
+    "code_cells": 2,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 36470
+  },
+  {
+    "path": "projects/PHM2018-Project-V2/notebooks/02_fault_label_generation.ipynb",
+    "code_cells": 2,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 29095
+  },
+  {
+    "path": "projects/PHM2018-Project-V2/notebooks/03_feature_engineering.ipynb",
+    "code_cells": 2,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 72911
+  },
+  {
+    "path": "projects/PHM2018-Project-V2/notebooks/04_dataset_validation.ipynb",
+    "code_cells": 2,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 26949
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/00_PHM2018_종합_수행결과.ipynb",
+    "code_cells": 18,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 50546100
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/06_tool_overview.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 171968
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/07_timeline_explorer.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 454338
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/08_fault_event_explorer.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 698370
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/09_label_visualization.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 152222
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/10_feature_availability.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 149257
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/11_alarm_evaluation.ipynb",
+    "code_cells": 6,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 513735
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/12_initial_model_training.ipynb",
+    "code_cells": 7,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 1003984
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/13_common_cohort_training.ipynb",
+    "code_cells": 6,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 1180487
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/14_tuning_seed_sensitivity.ipynb",
+    "code_cells": 7,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 1348262
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/15_final_holdout.ipynb",
+    "code_cells": 7,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 1130941
+  },
+  {
+    "path": "projects/PHM2018-Project-V3/notebooks/16_equipment_specialists.ipynb",
+    "code_cells": 6,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 1056291
+  },
+  {
+    "path": "projects/TEP/experiments/fault_type_validation/15_fault_type_validation.ipynb",
+    "code_cells": 6,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 832772
+  },
+  {
+    "path": "projects/TEP/experiments/next_step_forecasting/16_next_step_forecasting.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 876867
+  },
+  {
+    "path": "projects/TEP/experiments/sensor_availability/11_availability_baseline.ipynb",
+    "code_cells": 5,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 149471
+  },
+  {
+    "path": "projects/TEP/experiments/sensor_availability/12_availability_degradation.ipynb",
+    "code_cells": 5,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 490827
+  },
+  {
+    "path": "projects/TEP/experiments/sensor_availability/13_phm_comparison.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 98204
+  },
+  {
+    "path": "projects/TEP/notebooks/00_TEP_전체_연구_과정과_결과.ipynb",
+    "code_cells": 21,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 2011971
+  },
+  {
+    "path": "projects/TEP/notebooks/01_data_inventory.ipynb",
+    "code_cells": 1,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 91751
+  },
+  {
+    "path": "projects/TEP/notebooks/02_process_understanding.ipynb",
+    "code_cells": 1,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 52119
+  },
+  {
+    "path": "projects/TEP/notebooks/03_fault_scenario_analysis.ipynb",
+    "code_cells": 1,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 24402
+  },
+  {
+    "path": "projects/TEP/notebooks/04_sensor_response_analysis.ipynb",
+    "code_cells": 2,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 7016460
+  },
+  {
+    "path": "projects/TEP/notebooks/05_dataset_compatibility.ipynb",
+    "code_cells": 1,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 11415
+  },
+  {
+    "path": "projects/TEP/notebooks/06_modeling_dataset.ipynb",
+    "code_cells": 1,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 28840
+  },
+  {
+    "path": "projects/TEP/notebooks/07_baseline_training.ipynb",
+    "code_cells": 2,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 128354
+  },
+  {
+    "path": "projects/TEP/notebooks/08_advanced_training.ipynb",
+    "code_cells": 2,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 107296
+  },
+  {
+    "path": "projects/TEP/notebooks/09_fault_diagnosis.ipynb",
+    "code_cells": 2,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 178745
+  },
+  {
+    "path": "projects/TEP/notebooks/10_explainability.ipynb",
+    "code_cells": 2,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 96853
+  },
+  {
+    "path": "projects/TEP/notebooks/14_TEP_종합_연구_노트북.ipynb",
+    "code_cells": 35,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 2765468
+  },
+  {
+    "path": "projects/TEP/notebooks/17_CNN_기능확장_종합안내.ipynb",
+    "code_cells": 13,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 1397660
+  },
+  {
+    "path": "projects/TEP/notebooks/18_TEP_PHM_전체모델_종합비교.ipynb",
+    "code_cells": 19,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 1831704
+  },
+  {
+    "path": "projects/TEP/notebooks/19_TimesFM_LSTM_공정예측_비교.ipynb",
+    "code_cells": 12,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 4905485
+  },
+  {
+    "path": "projects/TEP/timesfm_experiment/TimesFM_TEP_실험.ipynb",
+    "code_cells": 10,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 4705078
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled1.ipynb",
+    "code_cells": 36,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 3,
+    "bytes": 234372
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled11.ipynb",
+    "code_cells": 13,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 0,
+    "bytes": 7713117
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled12.ipynb",
+    "code_cells": 38,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 0,
+    "bytes": 21098946
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled13.ipynb",
+    "code_cells": 81,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 0,
+    "bytes": 8145695
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled2.ipynb",
+    "code_cells": 7,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 0,
+    "bytes": 2732487
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled3.ipynb",
+    "code_cells": 4,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 0,
+    "bytes": 64584
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled4.ipynb",
+    "code_cells": 18,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 0,
+    "bytes": 452624
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled5.ipynb",
+    "code_cells": 19,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 1,
+    "bytes": 670436
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled6.ipynb",
+    "code_cells": 15,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 1,
+    "bytes": 922786
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled7.ipynb",
+    "code_cells": 7,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 0,
+    "bytes": 756797
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled8.ipynb",
+    "code_cells": 57,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 0,
+    "bytes": 990356
+  },
+  {
+    "path": "projects/wafer-map/Jupyter_notebook/Untitled9.ipynb",
+    "code_cells": 69,
+    "unexecuted_code_cells": 1,
+    "cells_with_saved_errors": 0,
+    "bytes": 1620125
+  },
+  {
+    "path": "projects/wafer-map/spatial_boosting/Spatial_Feature_Boosting.ipynb",
+    "code_cells": 12,
+    "unexecuted_code_cells": 0,
+    "cells_with_saved_errors": 0,
+    "bytes": 217886
+  }
+]

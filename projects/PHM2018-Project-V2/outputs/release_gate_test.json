@@ -1,0 +1,5 @@
+{
+  "command": "python -m src.run_pipeline --release",
+  "returncode": 1,
+  "blocked": true
+}

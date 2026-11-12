@@ -1,0 +1,19 @@
+{
+  "scheme": "temporal",
+  "cohort": "common",
+  "H": 600,
+  "L": 60,
+  "grid_families": ["A", "B"],
+  "depths": [2, 3, 4],
+  "positive_weights": ["unit", "sqrt_train_neg_pos"],
+  "search_seed": 42,
+  "sensitivity_seeds": [42, 43, 44],
+  "comparison_budgets_per_10000_raw": [0.5, 5, 10, 20],
+  "selection_budgets": [5, 10],
+  "selection_rule": "seed42 grid 전체에서 각 상한별 검출 수 최대, 동률이면 실제 경보 부담 최소, 그 다음 낮은 깊이/단위 가중치/특징 A 순. 두 상한의 선택 설정 합집합(최대2)을 동결. 실제 운영 상한 아님.",
+  "sensitivity_reference_configs": ["A_d3_unit", "B_d3_unit", "C_d3_unit"],
+  "fixed_threshold_test": "각 설정의 seed42에서 고른 상한별 임계값을 seed43/44에 그대로 이전; seed마다 재선택한 결과와 별도 보고",
+  "reuse_stage3_baseline": true,
+  "unchanged_parameters": "eta0.05, max1000, subsample/colsample0.8, min_child_weight10, lambda5, max_bin128, aucpr early_stopping50",
+  "holdout_scored": false
+}

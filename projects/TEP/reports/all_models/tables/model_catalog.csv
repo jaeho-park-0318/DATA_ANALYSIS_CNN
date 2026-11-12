@@ -1,0 +1,18 @@
+﻿프로젝트,모델/기준선,목표,역할,입력,특징/상태
+TEP,Logistic Regression,21종 분류,선형 기준선,현재 52 / 통계 312,Validation 구성·임계값 선택
+TEP,Random Forest,21종 분류,비선형 트리 앙상블,현재 52 / 통계 312,가중치 구성 비교
+TEP,XGBoost,21종 분류,부스팅 트리,현재 52 / 통계 312,현재값과 과거 통계 비교
+TEP,LSTM 분류기,21종 분류,순환 시계열 모델,20×52,후속 LSTM 회귀기와 별개
+TEP,GRU 분류기,21종 분류,게이트 순환 모델,20×52,CNN과 동일 분할로 비교
+TEP,1D-CNN,21종 분류·이상 검출,선택된 주 모델,20×52,seed42 고정; 유형·지연 추가 평가
+TEP,Binary XGBoost,정상/고장 2종,별도 이진 기준선,통계 312,natural/balanced/under/oversample
+TEP,Unknown Binary XGBoost,미지 고장 검출 연구,Fault 3·9·15를 학습에서 제외,통계 312,미지/기지 평가 분리
+TEP,LSTM 회귀기,다음 3분 52변수 예측,별도 새 예측기,20×52 → 52,정상만 학습; CNN 연결 없음
+TEP,Persistence,다음값 예측 기준선,다음값=현재값,현재 52,학습 없는 회귀 비교 기준
+PHM V1,Dummy / 압력 임계값,고장 전 이진 경보,학습 없는/단순 기준선,당시 공통 후보,Accuracy 착시 확인
+PHM V1,Random Forest,고장 전 이진 예측,A/B/C 특징 비교,A8 / B80 / C83,"horizon300/600/1800, 장비/시간 분할"
+PHM V1,XGBoost,고장 전 이진 예측,주 비교 모델·진단 변형,A8 / B80 / C83,ID 보조진단; 4-Fold 후속 연구
+PHM V2,학습 모델 없음,원본·라벨·입력 감사,학습 전 진단 단계,A8 / B32 / C44,데이터 불확실성으로 학습 차단
+PHM V3,Logistic Regression,고장 전 이진 예측,A/B 및 공통 A/B/C 기준선,범주형 One-Hot 후 입력,시간 Validation 지표
+PHM V3,XGBoost 공통 모델,고장 전 이진 예측,A/B/C·튜닝·seed·그룹 비교,A8 / B32 / C44,stage2 B를 동결하여 최종 평가
+PHM V3,XGBoost 장비 전용,03M02 고장 전 예측,장비 한 대 파일럿,B32,기존 후반 데이터 재사용 연구

@@ -1,0 +1,22 @@
+{
+  "window": 20,
+  "horizon_samples": 1,
+  "horizon_minutes": 3,
+  "train_stride": 4,
+  "comparison_stride": 10,
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "hidden": 64,
+  "layers": 2,
+  "dropout": 0.1,
+  "epochs": 12,
+  "patience": 3,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "fit_cohort": "faultfree official Training runs assigned to Train only",
+  "selection": "lowest normal Validation normalized MSE; early stopping; primary seed42 predetermined",
+  "coupling": "standalone forecasting only; predictions are NOT fed into the existing CNN"
+}

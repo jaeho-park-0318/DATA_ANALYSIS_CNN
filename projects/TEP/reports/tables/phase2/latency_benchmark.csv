@@ -1,0 +1,5 @@
+model_id,device,batch,repeats,median_batch_ms,p95_batch_ms,median_ms_per_window,scope
+CNN1D_Temporal_balanced_s42,cpu,1,100,0.22489996626973152,0.23865005932748312,0.22489996626973152,numpy scaling + transfer + model + softmax; warmed; feature extraction/disk excluded
+CNN1D_Temporal_balanced_s42,cpu,256,100,3.290749969892204,3.4935299307107925,0.012854492069891421,numpy scaling + transfer + model + softmax; warmed; feature extraction/disk excluded
+CNN1D_Temporal_balanced_s42,cuda,1,100,0.5532499635592103,0.6953801494091748,0.5532499635592103,numpy scaling + transfer + model + softmax; warmed; feature extraction/disk excluded
+CNN1D_Temporal_balanced_s42,cuda,256,100,1.5134999994188547,1.7828701762482524,0.005912109372729901,numpy scaling + transfer + model + softmax; warmed; feature extraction/disk excluded

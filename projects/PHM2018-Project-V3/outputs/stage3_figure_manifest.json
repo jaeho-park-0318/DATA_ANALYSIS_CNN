@@ -1,0 +1,58 @@
+[
+  {
+    "file": "outputs/figures/stage3/common_cohort.png",
+    "title": "공통 코호트로 맞추면서 줄어든 학습량과 이벤트 커버리지",
+    "source": "stage2_training_summary.csv / stage3_training_summary.csv / stage3_alarm_curve.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 고장 53/232개 · holdout 미사용\n이전 최대 코호트와 현재 공통 코호트의 점수 차이를 순수 특징 효과로 해석하지 않음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage3/classification.png",
+    "title": "같은 정답 후보에서 비교한 분류 보조 지표",
+    "source": "stage3_training_summary.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 고장 53/232개 · holdout 미사용\n분류 후보 7,158개, POS 392개 · NA/EXCLUDE 제외 · 전처리 train 전용",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage3/alarm_tradeoff.png",
+    "title": "같은 입력·이벤트·관측 지지길이에서 경보 비교",
+    "source": "stage3_alarm_curve.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 고장 53/232개 · holdout 미사용\n공통 관측 지지길이 17,838,206 raw · 비지배 점 연결은 보간 성능을 뜻하지 않음 · 임계값별 비단조 허용",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage3/joint_frontier.png",
+    "title": "A/B/C를 함께 비교하면 남는 경보 운영 후보",
+    "source": "stage3_joint_frontier.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 고장 53/232개 · holdout 미사용\n전체 탐색 점에서 검출 수↑·부담↓의 비지배 후보; 무경보 제외 · 5/10/20 상한 표와 별도의 전체 곡선 해석",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage3/budget_comparison.png",
+    "title": "같은 경보 부담 상한에서 비교한 검출 수",
+    "source": "stage3_budget_points.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 고장 53/232개 · holdout 미사용\n5/10/20은 결과 확인 전에 정한 비교용 상한; 실제 운영 허용치 아님 · 괄호=선택점의 실제 경보 부담",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage3/paired_differences.png",
+    "title": "특징 추가에 따른 대응 검출률 차이와 불확실성",
+    "source": "stage3_paired_deltas.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 고장 53/232개 · holdout 미사용\n01~10 장비 번호 군집(M01/M02 함께) 재표집 2,000회 · 고정 임계값 조건부 95% 구간 · 다중 비교/선택 낙관 미보정",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage3/training_resources.png",
+    "title": "CUDA 학습 이력과 로컬 메모리 사용",
+    "source": "stage3_resource_telemetry.csv / 각 XGBoost history.json",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 고장 53/232개 · holdout 미사용\nA/B/C 실제 booster 장치 cuda:0 확인 · CPU12스레드 · 약2초 간격 19회 측정; 순간 최고치 미보장",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage3/event_matrix.png",
+    "title": "같은 고장 이벤트별 검출·미탐 대조",
+    "source": "stage3_budget_events.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 고장 53/232개 · holdout 미사용\n경보 상한10 비교용 운영점 · 행은 동일 event_id, 표시=Tool/고장 raw시각 · 입력 부재 이벤트는 이 그림에서 제외",
+    "plot_values": null
+  }
+]

@@ -1,0 +1,106 @@
+# TEP 공정 이상 탐지 및 고장 진단 최종 연구 보고서
+
+## 1. 연구 배경 및 목적
+
+TEP 시뮬레이션에서 이상 탐지,20종 고장 분류 및 모델 설명을 재현 가능한 Python 프로젝트로 구현했다. Phase1 감사 이후 사용자 승인으로 Phase2를 실행했다. 모델 예측 중요도를 실제 고장 원인으로 단정하지 않는 것을 원칙으로 했다.
+
+## 2. TEP 공정 구조
+
+Reactor·Condenser·Separator·Stripper·Compressor, 냉각수·원료 공급 및 제어밸브가 결합된 폐루프 공정이다. 주요 측정값은 유량·온도·압력·수위·조성이며 조작값은 밸브/제어입력이다. 상세 공정/변수 사전은02 보고서에 있다.
+
+## 3. 데이터셋 구성
+
+A는214개 Excel/168개 고유 시계열로 공정 이해에만 사용했다. 모델은 Harvard B의1,533만 행,52개 공정 변수와3개 메타 열에서 학습했다. 공식 Training400개 RNG family 학습·100개 검증, Test500개 family 평가다. 고장 간 공유 정상 prefix가 있어 같은 run을 함께 분할했다.21,000개 전체 궤적을 독립 난수 실험21,000개로 간주하지 않았다.
+
+## 4. 고장 유형 및 물리적 원인
+
+Fault1~20을 예측했다. Fault16~20의 공개 원인은 UNKNOWN이다. 원료·냉각·반응·밸브 시나리오와 SHAP/관측 반응은 정성적으로 대조했으나 B 구현과 직접 측정 원인 대응이 미확인인 부분이 있어 정량 원인 적중률은 계산하지 않았다.
+
+## 5. 데이터 전처리
+
+Training20/Test160까지 정상, 이후 명목 고장으로 재라벨링했다. 반응 지연을 이유로 초기 고장 구간을 제거하지 않았다. 과거20개 관측(끝점 간57분)을 이용했고19개 warm-up을 명시했다. Train에만 정규화·가중치를 fit했다. 학습은 모든8400개 궤적에서 고정 간격101,200개 창을 뽑았다. 원본을 모두 읽었지만 모든 행으로 학습한 모델은 아니다.
+
+## 6. 모델 학습 방법
+
+Current52·Statistical312·Temporal20×52를 비교했다. Logistic Regression·Random Forest·XGBoost와 LSTM·GRU·1D-CNN을 학습했다. 대표 설정은 각3개 seed를 사용했다. 별도 이진 XGBoost에서 불균형 처리4종도 비교했다. CNN/LSTM/GRU는 GPU, 기타 모델은 CPU를 사용했다.
+
+## 7. 실험 설계
+
+모델 선정 기준은 Validation 탐지F1과 고장분류Macro F1 평균의3개 seed 평균이다. threshold는 검증 정상 FAR≤1% 조건에서 정했다. Test 결과를 본 뒤 모델/임계값을 바꾸지 않았다. 모든 모델은 동일997,500개 Test 시점으로 비교했고 선택한 주 모델과 별도 이진 탐지기는 매 유효 시점9,880,500개로 재평가했다.500개 RNG family 단위 cluster bootstrap으로 불확실성을 확인했다.
+
+## 8. 모델 성능 비교
+
+**검증 기준으로 선택한 주 모델은 CNN1D_Temporal_balanced_s42다.** 대표 seed42 단일 모델이며3개 seed ensemble이 아니다. 입력은20×52, 구조는 Conv1d(52→64,k5)·ReLU·Conv1d(64→64,k3)·ReLU·시간 평균·현재52값 연결·Dense64·Dropout0.1·21출력이다. 학습 파라미터 37,909개, checkpoint 152.2KiB다.
+
+전체 유효 Test에서 탐지 Precision 99.70%, Recall 86.74%, F1 0.9277, ROC-AUC 0.9539, PR-AUC(AP) 0.9901다. 고장 조건부 분류 Macro F1은 0.9115, 탐지 실패까지 포함한21상태 end-to-end Macro F1은 0.8558다. 정상 샘플 오경보율은 1.11%다.
+
+| metric | lower_95 | upper_95 |
+| --- | --- | --- |
+| detection_f1 | 0.9273 | 0.9280 |
+| sample_false_alarm_rate | 0.0094 | 0.0129 |
+| diagnosis_macro_f1 | 0.9107 | 0.9124 |
+| end_to_end_macro_f1 | 0.8551 | 0.8565 |
+
+별도 이진 XGBoost는 F1 0.8937, Recall 80.98%, 정상 FAR 1.05%다. 고장 ID 분류 기능은 없다. 두 모델을 임의로 결합한 cascade 성능은 평가하지 않았다.
+
+| model | features | detection_f1_mean | diagnosis_macro_f1_mean | sample_FAR_mean |
+| --- | --- | --- | --- | --- |
+| CNN1D | Temporal | 0.9333 | 0.9180 | 0.0110 |
+| LSTM | Temporal | 0.9315 | 0.9159 | 0.0110 |
+| GRU | Temporal | 0.9310 | 0.9121 | 0.0096 |
+| XGBoost | Statistical | 0.9052 | 0.8940 | 0.0072 |
+| LogisticRegression | Statistical | 0.8919 | 0.8560 | 0.0085 |
+| RandomForest | Statistical | 0.8910 | 0.8608 | 0.0077 |
+| XGBoost | Current | 0.8529 | 0.8035 | 0.0110 |
+| RandomForest | Current | 0.8009 | 0.7378 | 0.0103 |
+| LogisticRegression | Current | 0.7183 | 0.5161 | 0.0105 |
+
+## 9. 고장별 원인 분석 및 조기 탐지
+
+고장 실행의3연속 경보 검출률은 98.51%다. 이는 주입 후40h 안에 한 번이라도3개 연속 경보가 나왔다는 뜻이며 올바른 Fault ID를 맞췄다는 뜻은 아니다. 검출된 실행의 지연 중앙값은 48.0분이며 미검출 실행은 이 지연 통계에서 제외했다. 고장별 검출률·미검출률·지연을 함께 봐야 한다.
+
+상대적으로 높은 end-to-end Recall 고장:
+
+| fault | post_samples | detection_recall | conditional_diagnosis_recall | end_to_end_recall |
+| --- | --- | --- | --- | --- |
+| 7 | 400000 | 0.9966 | 0.9882 | 0.9882 |
+| 14 | 400000 | 0.9943 | 0.9876 | 0.9876 |
+| 11 | 400000 | 0.9870 | 0.9840 | 0.9830 |
+| 6 | 400000 | 0.9976 | 0.9820 | 0.9820 |
+| 4 | 400000 | 0.9986 | 0.9750 | 0.9750 |
+
+낮은 end-to-end Recall 고장:
+
+| fault | post_samples | detection_recall | conditional_diagnosis_recall | end_to_end_recall |
+| --- | --- | --- | --- | --- |
+| 15 | 400000 | 0.0140 | 0.7239 | 0.0000 |
+| 9 | 400000 | 0.1649 | 0.2432 | 0.0004 |
+| 3 | 400000 | 0.6444 | 0.9605 | 0.6430 |
+| 20 | 400000 | 0.9122 | 0.9388 | 0.9107 |
+| 10 | 400000 | 0.9267 | 0.9357 | 0.9221 |
+
+SHAP은 모델이 사용한 신호의 설명이다. 관측 센서 변화는10 보고서에서 별도로 제시했다. 직접 원인 변수와 측정 열이 대응하지 않는 고장에서 물리 원인 적중을 주장하지 않았다. 미지 Fault3/9/15 제외 학습 실험도 별도의 이진 과제로 평가했다.
+
+## 10. 연구 의의와 모델 특징
+
+공유 초기 궤적이 있는 자료에서 실행 family 분할을 적용했고, 단순 현재값·통계·시계열 입력을 동일 시점으로 비교했다. 선택 CNN은 순환 연산 없이 과거 창의 국소 변화와 현재값을 함께 처리하는 작은 모델이다. 시차 패턴을 활용하면서도 고장 ID·실행번호를 입력에서 제외했다. 경보·진단·설명을 서로 다른 결과로 보고하여 높은 조건부 분류 성능이 전체 공정 경보 성능을 보장하지 않는 점을 확인했다.
+
+## 11. 한계 및 향후 개선 방향
+
+- 학습 endpoint를120분 간격으로 추출해 최초2시간 고장 과도 창이 충분히 학습되지 않았다. 현재 결과의 조기 탐지 한계에 포함된다. 다음 실험은 이 구간의 Train 창을 촘촘히 구성하되 미사용 평가 family로 재검증해야 한다.
+- Training 고장주입1h·Test8h 및25/48h 운전시간 차이가 있다. Validation FAR 조건이 Test에서 그대로 보장되지 않는다.
+- Test의 같은 run 정상 prefix는 여러 시나리오에서 공유된다. 표본 수가 독립 실험 수가 아니며 bootstrap은500개 family 단위다.
+- SHAP은15개 창/고장의 제한된 설명 cohort와 근사 GradientSHAP에 기반한다. 원인 식별 성능으로 해석할 수 없다.
+- 운전모드 변경, 센서 고장/결측, 실제 산업 설비, 반도체 공정 일반화는 검증하지 않았다. 모든 입력은 유한값을 요구한다.
+- 3개 seed와 제한된 구조/고정 하이퍼파라미터를 비교했으며 Transformer나 대규모 최적화를 수행하지 않았다. GPU seed 고정은 bitwise 재현 보장이 아니다.
+- Phase1에서 Test 데이터 품질/일부 기술통계를 이미 조사했다. Phase2 설정은 Train/Validation로 정했지만 완전히 비노출한 신규 외부 Test는 아니다.
+
+학습 모델, 고정 threshold, 정규화,52열 schema와 추론 코드는 models/phase2/TEP_final_model.zip에 제공한다. 실행 방법은 README.md와 run_phase2.ps1을 따른다. 모델을 새 데이터에 적용하기 전에 해당 운전조건에서 별도 검증이 필요하다.
+
+
+## 출처 및 재현
+
+- 데이터: Harvard Dataverse V1.0, https://doi.org/10.7910/DVN/6C3JR1 . RData 4개의 공식 MD5 일치를 Phase 1에서 확인했다.
+- 공정·공개 고장 참조: https://github.com/Blound04/tennessee-eastman-dataset . Dataset A는 학습에 사용하지 않았다. A의 물리 정의를 B 구현과 완전히 동일하다고 가정하지 않았다.
+- API: [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html), [XGBoost](https://xgboost.readthedocs.io/en/stable/gpu/index.html), [PyTorch](https://docs.pytorch.org/docs/stable/generated/torch.nn.modules.rnn.LSTM.html).
+- 실제 설정: configs/phase2.json, 모델 선택 기록: models/phase2/selection_lock.json. 표·그림은 reports/tables/phase2, reports/figures/phase2에 있다.

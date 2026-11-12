@@ -1,0 +1,9 @@
+test_alarm_single_event_time (tests.test_improvement45.ImprovementTests.test_alarm_single_event_time) ... ok
+test_future_columns (tests.test_improvement45.ImprovementTests.test_future_columns) ... ok
+test_groups (tests.test_improvement45.ImprovementTests.test_groups) ... ok
+test_unknown_alarm (tests.test_improvement45.ImprovementTests.test_unknown_alarm) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.036s
+
+OK

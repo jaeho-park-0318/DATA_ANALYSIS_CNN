@@ -1,0 +1,22 @@
+{
+  "rates": [0.0, 0.1, 0.25, 0.4, 0.531],
+  "pilot_rates": [0.0, 0.25, 0.531],
+  "seeds": [42, 43, 44],
+  "fault_types": 20,
+  "runs_per_fault": 500,
+  "raw_samples_per_run": 960,
+  "window": 20,
+  "fault_boundary_sample": 160,
+  "post_fault_samples": [161, 960],
+  "blackout_first_sample": 141,
+  "blackout_last_sample": 960,
+  "partial_control_last_sample": 180,
+  "partial_control_rate": 0.25,
+  "partial_control_seed": 42,
+  "selection": "random without replacement within every Fault; counts differ by at most one; nested rates within each seed",
+  "available_run_definition": "at least one valid 20x52 window in post-fault samples 161:960",
+  "unavailable_run_definition": "zero valid 20x52 windows throughout post-fault samples 161:960",
+  "prediction_policy": "use original frozen predictions only for valid windows; never impute missing input or prediction; invalid time steps break alarm streaks",
+  "baseline_metric_absolute_tolerance": 1e-10,
+  "phm_project": "C:/Users/fl27/Documents/ChatGPT/PHM2018-Project-V3"
+}

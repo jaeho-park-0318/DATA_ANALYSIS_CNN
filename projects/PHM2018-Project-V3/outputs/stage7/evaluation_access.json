@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "opened_at_utc": "2026-11-05T09:04:15.599192+00:00",
+  "independent_final_test": false,
+  "reference_predictions_reused": true,
+  "specialist_prediction_passes_per_tool": 1,
+  "threshold_search_on_later_partition": false,
+  "refit": false,
+  "frozen_manifest_sha256": "26953e9a71e8f7c51da8047bf1e33d17e1cdfdbcbd5ea28ef1456ecda2e1d7c7",
+  "completed_at_utc": "2026-11-05T09:04:17.012463+00:00",
+  "prediction_sha256": {
+    "03M02": "756b210aed82375f33d162043bcfb4d02c286d77aada77cc650004358a8d92ff"
+  },
+  "summary_sha256": "9e3ce56732121db9b965792233ed5f1bece3fc8576ec6a6c81b99e6127a867ed"
+}

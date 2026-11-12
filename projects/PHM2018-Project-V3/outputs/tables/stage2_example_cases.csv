@@ -1,0 +1,3 @@
+﻿event_id,Tool,status,fault_time,window_start,window_end,raw_rows,score_anchors,lead_raw,threshold
+03M02-low-8d5d3ebde91d,03M02,DETECTED,35634688.0,35633188.0,35634808.0,366,15,328.0,0.002999492222443223
+01M02-low-1e9609701f87,01M02,MISSED,25636030.0,25634530.0,25636150.0,406,27,,0.002999492222443223

@@ -1,0 +1,262 @@
+{
+  "test/01_M02_DC_test.csv": {
+    "bytes": 612811738,
+    "mtime_ns": 1523233840000000000
+  },
+  "test/02_M02_DC_test.csv": {
+    "bytes": 496104815,
+    "mtime_ns": 1523239072000000000
+  },
+  "test/03_M01_DC_test.csv": {
+    "bytes": 405758865,
+    "mtime_ns": 1523241806000000000
+  },
+  "test/04_M01_DC_test.csv": {
+    "bytes": 601247123,
+    "mtime_ns": 1523251169000000000
+  },
+  "test/06_M01_DC_test.csv": {
+    "bytes": 451894228,
+    "mtime_ns": 1523265255000000000
+  },
+  "train/01_M01_DC_train.csv": {
+    "bytes": 1107918027,
+    "mtime_ns": 1523229102000000000
+  },
+  "train/01_M02_DC_train.csv": {
+    "bytes": 1834454670,
+    "mtime_ns": 1523233781000000000
+  },
+  "train/02_M01_DC_train.csv": {
+    "bytes": 1012645089,
+    "mtime_ns": 1523235836000000000
+  },
+  "train/02_M02_DC_train.csv": {
+    "bytes": 1487585817,
+    "mtime_ns": 1523239027000000000
+  },
+  "train/03_M01_DC_train.csv": {
+    "bytes": 1210432632,
+    "mtime_ns": 1523241766000000000
+  },
+  "train/03_M02_DC_train.csv": {
+    "bytes": 1805953355,
+    "mtime_ns": 1523246568000000000
+  },
+  "train/04_M01_DC_train.csv": {
+    "bytes": 1799780895,
+    "mtime_ns": 1523251110000000000
+  },
+  "train/04_M02_DC_train.csv": {
+    "bytes": 1590098143,
+    "mtime_ns": 1523255243000000000
+  },
+  "train/05_M01_DC_train.csv": {
+    "bytes": 1709211881,
+    "mtime_ns": 1523260133000000000
+  },
+  "train/05_M02_DC_train.csv": {
+    "bytes": 680662513,
+    "mtime_ns": 1523261764000000000
+  },
+  "train/06_M01_DC_train.csv": {
+    "bytes": 1357815302,
+    "mtime_ns": 1523265210000000000
+  },
+  "train/06_M02_DC_train.csv": {
+    "bytes": 1817138050,
+    "mtime_ns": 1523270003000000000
+  },
+  "train/07_M01_DC_train.csv": {
+    "bytes": 1872457925,
+    "mtime_ns": 1523275468000000000
+  },
+  "train/07_M02_DC_train.csv": {
+    "bytes": 1799051413,
+    "mtime_ns": 1523280940000000000
+  },
+  "train/08_M01_DC_train.csv": {
+    "bytes": 1332300485,
+    "mtime_ns": 1523284942000000000
+  },
+  "train/08_M02_DC_train.csv": {
+    "bytes": 1796850928,
+    "mtime_ns": 1523289954000000000
+  },
+  "train/09_M01_DC_train.csv": {
+    "bytes": 1615745448,
+    "mtime_ns": 1523294260000000000
+  },
+  "train/09_M02_DC_train.csv": {
+    "bytes": 970614936,
+    "mtime_ns": 1523296340000000000
+  },
+  "train/10_M01_DC_train.csv": {
+    "bytes": 1128599570,
+    "mtime_ns": 1523300052000000000
+  },
+  "train/10_M02_DC_train.csv": {
+    "bytes": 1332680366,
+    "mtime_ns": 1523303205000000000
+  },
+  "train/train_faults/01_M01_train_fault_data.csv": {
+    "bytes": 1044,
+    "mtime_ns": 1524067509000000000
+  },
+  "train/train_faults/01_M02_train_fault_data.csv": {
+    "bytes": 5748,
+    "mtime_ns": 1524067524000000000
+  },
+  "train/train_faults/02_M01_train_fault_data.csv": {
+    "bytes": 960,
+    "mtime_ns": 1524067684000000000
+  },
+  "train/train_faults/02_M02_train_fault_data.csv": {
+    "bytes": 2014,
+    "mtime_ns": 1524067697000000000
+  },
+  "train/train_faults/03_M01_train_fault_data.csv": {
+    "bytes": 5375,
+    "mtime_ns": 1524067716000000000
+  },
+  "train/train_faults/03_M02_train_fault_data.csv": {
+    "bytes": 19366,
+    "mtime_ns": 1524067729000000000
+  },
+  "train/train_faults/04_M01_train_fault_data.csv": {
+    "bytes": 477,
+    "mtime_ns": 1524067740000000000
+  },
+  "train/train_faults/04_M02_train_fault_data.csv": {
+    "bytes": 1630,
+    "mtime_ns": 1524067753000000000
+  },
+  "train/train_faults/05_M01_train_fault_data.csv": {
+    "bytes": 1390,
+    "mtime_ns": 1524067763000000000
+  },
+  "train/train_faults/05_M02_train_fault_data.csv": {
+    "bytes": 1534,
+    "mtime_ns": 1524067803000000000
+  },
+  "train/train_faults/06_M01_train_fault_data.csv": {
+    "bytes": 824,
+    "mtime_ns": 1524067816000000000
+  },
+  "train/train_faults/06_M02_train_fault_data.csv": {
+    "bytes": 2585,
+    "mtime_ns": 1524067826000000000
+  },
+  "train/train_faults/07_M01_train_fault_data.csv": {
+    "bytes": 1462,
+    "mtime_ns": 1524067891000000000
+  },
+  "train/train_faults/07_M02_train_fault_data.csv": {
+    "bytes": 363,
+    "mtime_ns": 1524067904000000000
+  },
+  "train/train_faults/08_M01_train_fault_data.csv": {
+    "bytes": 6097,
+    "mtime_ns": 1524067916000000000
+  },
+  "train/train_faults/08_M02_train_fault_data.csv": {
+    "bytes": 393,
+    "mtime_ns": 1524067926000000000
+  },
+  "train/train_faults/09_M01_train_fault_data.csv": {
+    "bytes": 8234,
+    "mtime_ns": 1524067938000000000
+  },
+  "train/train_faults/09_M02_train_fault_data.csv": {
+    "bytes": 4324,
+    "mtime_ns": 1524067947000000000
+  },
+  "train/train_faults/10_M01_train_fault_data.csv": {
+    "bytes": 1467,
+    "mtime_ns": 1524067958000000000
+  },
+  "train/train_faults/10_M02_train_fault_data.csv": {
+    "bytes": 127,
+    "mtime_ns": 1524067969000000000
+  },
+  "train/train_ttf/01_M01_DC_train.csv": {
+    "bytes": 103340393,
+    "mtime_ns": 1524152291000000000
+  },
+  "train/train_ttf/01_M02_DC_train.csv": {
+    "bytes": 173837858,
+    "mtime_ns": 1524152402000000000
+  },
+  "train/train_ttf/02_M01_DC_train.csv": {
+    "bytes": 100217241,
+    "mtime_ns": 1524151950000000000
+  },
+  "train/train_ttf/02_M02_DC_train.csv": {
+    "bytes": 96459019,
+    "mtime_ns": 1524152666000000000
+  },
+  "train/train_ttf/03_M01_DC_train.csv": {
+    "bytes": 92642912,
+    "mtime_ns": 1524152622000000000
+  },
+  "train/train_ttf/03_M02_DC_train.csv": {
+    "bytes": 161695393,
+    "mtime_ns": 1524151687000000000
+  },
+  "train/train_ttf/04_M01_DC_train.csv": {
+    "bytes": 98515587,
+    "mtime_ns": 1524151821000000000
+  },
+  "train/train_ttf/04_M02_DC_train.csv": {
+    "bytes": 131165327,
+    "mtime_ns": 1524152021000000000
+  },
+  "train/train_ttf/05_M01_DC_train.csv": {
+    "bytes": 156993904,
+    "mtime_ns": 1524152130000000000
+  },
+  "train/train_ttf/05_M02_DC_train.csv": {
+    "bytes": 55753903,
+    "mtime_ns": 1524151346000000000
+  },
+  "train/train_ttf/06_M01_DC_train.csv": {
+    "bytes": 128541508,
+    "mtime_ns": 1524152082000000000
+  },
+  "train/train_ttf/06_M02_DC_train.csv": {
+    "bytes": 176828689,
+    "mtime_ns": 1524151744000000000
+  },
+  "train/train_ttf/07_M01_DC_train.csv": {
+    "bytes": 183148620,
+    "mtime_ns": 1524151924000000000
+  },
+  "train/train_ttf/07_M02_DC_train.csv": {
+    "bytes": 106390751,
+    "mtime_ns": 1524151324000000000
+  },
+  "train/train_ttf/08_M01_DC_train.csv": {
+    "bytes": 139530057,
+    "mtime_ns": 1524152263000000000
+  },
+  "train/train_ttf/08_M02_DC_train.csv": {
+    "bytes": 97089417,
+    "mtime_ns": 1524151856000000000
+  },
+  "train/train_ttf/09_M01_DC_train.csv": {
+    "bytes": 150798038,
+    "mtime_ns": 1524152562000000000
+  },
+  "train/train_ttf/09_M02_DC_train.csv": {
+    "bytes": 69837686,
+    "mtime_ns": 1524151788000000000
+  },
+  "train/train_ttf/10_M01_DC_train.csv": {
+    "bytes": 70499383,
+    "mtime_ns": 1524152154000000000
+  },
+  "train/train_ttf/10_M02_DC_train.csv": {
+    "bytes": 68390226,
+    "mtime_ns": 1524152044000000000
+  }
+}

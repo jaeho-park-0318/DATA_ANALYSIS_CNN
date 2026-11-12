@@ -1,0 +1,58 @@
+[
+  {
+    "file": "outputs/figures/stage4/search_grid.png",
+    "title": "깊이와 양성 가중치의 제한 탐색: seed42",
+    "source": "stage4_grid_budget_points.csv / stage4_training_summary.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 있는 고장53/기록232 · holdout 미사용\n깊이2/3/4 × 가중1/√(train NEG/POS) × A/B =12설정 · 같은 관측 지지길이17,838,206 raw",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage4/retuned_seed.png",
+    "title": "seed를 바꾸면 검출 수가 얼마나 달라지는가",
+    "source": "stage4_retuned_points.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 있는 고장53/기록232 · holdout 미사용\n각 seed의 validation에서 임계값을 다시 고른 탐색 결과 · 3seed는 독립 고장 이벤트를 늘리지 않음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage4/fixed_threshold.png",
+    "title": "같은 임계값을 다른 seed 모델에 옮겼을 때",
+    "source": "stage4_fixed_points.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 있는 고장53/기록232 · holdout 미사용\n숫자=seed · 임계값 재선택 없음 · 점수가 보정된 확률이 아니므로 재학습 후 경보 부담이 달라질 수 있음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage4/paired_gain.png",
+    "title": "선택된 조정의 개선이 다른 seed에서도 유지되는가",
+    "source": "stage4_paired_deltas.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 있는 고장53/기록232 · holdout 미사용\n각 seed의 임계값 재선택 결과를 대응 비교 · 10장비 번호 군집2,000회 · 선택 낙관/다중 비교 미보정",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage4/joint_frontier.png",
+    "title": "A/B 조정과 C 기준을 함께 본 비지배 후보",
+    "source": "stage4_joint_frontier.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 있는 고장53/기록232 · holdout 미사용\nseed42 탐색 점에 한정 · 무경보 제외 · C는 깊이3/가중1 기준만 포함 · 최종 운영점 아님",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage4/unknown_alarms.png",
+    "title": "튜닝 후에도 미확인 구간의 경보를 분리한다",
+    "source": "stage4_retuned_points.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 있는 고장53/기록232 · holdout 미사용\nNA에서 시작한 경보를 확정 오경보로 계산하지 않음 · 전체53개 가용 고장의 검출과 다른 분모",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage4/training_resources.png",
+    "title": "CUDA 학습과 선택 설정의 조기 종료 변동",
+    "source": "stage4_*_resource_telemetry.csv / 모델별 history.json",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 있는 고장53/기록232 · holdout 미사용\n메모리 약2초 표본이며 순간 최고치 미보장 · GPU 전체 사용량에는 다른 프로세스 포함",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage4/event_matrix.png",
+    "title": "같은 고장53개의 seed별 검출·미탐",
+    "source": "stage4_retuned_events.csv",
+    "context": "실제 temporal validation · 공통 코호트 · H600/L60 · 입력 있는 고장53/기록232 · holdout 미사용\n상한10에서 seed별 임계값 재선택 · 같은 이벤트 반복 표시이며 고장 표본 수가 늘어난 것이 아님",
+    "plot_values": null
+  }
+]

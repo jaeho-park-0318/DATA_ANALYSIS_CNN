@@ -1,0 +1,82 @@
+# 로컬 데이터 파일 목록
+
+2026-11-05 점검. 파일 내용 전체를 읽지 않고 파일시스템 메타데이터로 집계했다.
+
+원본 루트: phm_data_challenge_2018/ (data/raw/는 없음). 크기는 bytes와 MiB(2**20 bytes) 기준이다.
+
+| 상대 경로 | 형식 | bytes | MiB | 용도 |
+| --- | --- | ---: | ---: | --- |
+| test/01_M02_DC_test.csv | .csv | 612811738 | 584.423 | sensor_test |
+| test/02_M02_DC_test.csv | .csv | 496104815 | 473.122 | sensor_test |
+| test/03_M01_DC_test.csv | .csv | 405758865 | 386.962 | sensor_test |
+| test/04_M01_DC_test.csv | .csv | 601247123 | 573.394 | sensor_test |
+| test/06_M01_DC_test.csv | .csv | 451894228 | 430.96 | sensor_test |
+| train/01_M01_DC_train.csv | .csv | 1107918027 | 1056.593 | sensor_train |
+| train/01_M02_DC_train.csv | .csv | 1834454670 | 1749.472 | sensor_train |
+| train/02_M01_DC_train.csv | .csv | 1012645089 | 965.734 | sensor_train |
+| train/02_M02_DC_train.csv | .csv | 1487585817 | 1418.672 | sensor_train |
+| train/03_M01_DC_train.csv | .csv | 1210432632 | 1154.359 | sensor_train |
+| train/03_M02_DC_train.csv | .csv | 1805953355 | 1722.291 | sensor_train |
+| train/04_M01_DC_train.csv | .csv | 1799780895 | 1716.405 | sensor_train |
+| train/04_M02_DC_train.csv | .csv | 1590098143 | 1516.436 | sensor_train |
+| train/05_M01_DC_train.csv | .csv | 1709211881 | 1630.031 | sensor_train |
+| train/05_M02_DC_train.csv | .csv | 680662513 | 649.13 | sensor_train |
+| train/06_M01_DC_train.csv | .csv | 1357815302 | 1294.914 | sensor_train |
+| train/06_M02_DC_train.csv | .csv | 1817138050 | 1732.958 | sensor_train |
+| train/07_M01_DC_train.csv | .csv | 1872457925 | 1785.715 | sensor_train |
+| train/07_M02_DC_train.csv | .csv | 1799051413 | 1715.709 | sensor_train |
+| train/08_M01_DC_train.csv | .csv | 1332300485 | 1270.581 | sensor_train |
+| train/08_M02_DC_train.csv | .csv | 1796850928 | 1713.611 | sensor_train |
+| train/09_M01_DC_train.csv | .csv | 1615745448 | 1540.895 | sensor_train |
+| train/09_M02_DC_train.csv | .csv | 970614936 | 925.651 | sensor_train |
+| train/10_M01_DC_train.csv | .csv | 1128599570 | 1076.316 | sensor_train |
+| train/10_M02_DC_train.csv | .csv | 1332680366 | 1270.943 | sensor_train |
+| train/train_faults/01_M01_train_fault_data.csv | .csv | 1044 | 0.001 | fault |
+| train/train_faults/01_M02_train_fault_data.csv | .csv | 5748 | 0.005 | fault |
+| train/train_faults/02_M01_train_fault_data.csv | .csv | 960 | 0.001 | fault |
+| train/train_faults/02_M02_train_fault_data.csv | .csv | 2014 | 0.002 | fault |
+| train/train_faults/03_M01_train_fault_data.csv | .csv | 5375 | 0.005 | fault |
+| train/train_faults/03_M02_train_fault_data.csv | .csv | 19366 | 0.018 | fault |
+| train/train_faults/04_M01_train_fault_data.csv | .csv | 477 | 0.0 | fault |
+| train/train_faults/04_M02_train_fault_data.csv | .csv | 1630 | 0.002 | fault |
+| train/train_faults/05_M01_train_fault_data.csv | .csv | 1390 | 0.001 | fault |
+| train/train_faults/05_M02_train_fault_data.csv | .csv | 1534 | 0.001 | fault |
+| train/train_faults/06_M01_train_fault_data.csv | .csv | 824 | 0.001 | fault |
+| train/train_faults/06_M02_train_fault_data.csv | .csv | 2585 | 0.002 | fault |
+| train/train_faults/07_M01_train_fault_data.csv | .csv | 1462 | 0.001 | fault |
+| train/train_faults/07_M02_train_fault_data.csv | .csv | 363 | 0.0 | fault |
+| train/train_faults/08_M01_train_fault_data.csv | .csv | 6097 | 0.006 | fault |
+| train/train_faults/08_M02_train_fault_data.csv | .csv | 393 | 0.0 | fault |
+| train/train_faults/09_M01_train_fault_data.csv | .csv | 8234 | 0.008 | fault |
+| train/train_faults/09_M02_train_fault_data.csv | .csv | 4324 | 0.004 | fault |
+| train/train_faults/10_M01_train_fault_data.csv | .csv | 1467 | 0.001 | fault |
+| train/train_faults/10_M02_train_fault_data.csv | .csv | 127 | 0.0 | fault |
+| train/train_ttf/01_M01_DC_train.csv | .csv | 103340393 | 98.553 | ttf |
+| train/train_ttf/01_M02_DC_train.csv | .csv | 173837858 | 165.785 | ttf |
+| train/train_ttf/02_M01_DC_train.csv | .csv | 100217241 | 95.575 | ttf |
+| train/train_ttf/02_M02_DC_train.csv | .csv | 96459019 | 91.99 | ttf |
+| train/train_ttf/03_M01_DC_train.csv | .csv | 92642912 | 88.351 | ttf |
+| train/train_ttf/03_M02_DC_train.csv | .csv | 161695393 | 154.205 | ttf |
+| train/train_ttf/04_M01_DC_train.csv | .csv | 98515587 | 93.952 | ttf |
+| train/train_ttf/04_M02_DC_train.csv | .csv | 131165327 | 125.089 | ttf |
+| train/train_ttf/05_M01_DC_train.csv | .csv | 156993904 | 149.721 | ttf |
+| train/train_ttf/05_M02_DC_train.csv | .csv | 55753903 | 53.171 | ttf |
+| train/train_ttf/06_M01_DC_train.csv | .csv | 128541508 | 122.587 | ttf |
+| train/train_ttf/06_M02_DC_train.csv | .csv | 176828689 | 168.637 | ttf |
+| train/train_ttf/07_M01_DC_train.csv | .csv | 183148620 | 174.664 | ttf |
+| train/train_ttf/07_M02_DC_train.csv | .csv | 106390751 | 101.462 | ttf |
+| train/train_ttf/08_M01_DC_train.csv | .csv | 139530057 | 133.066 | ttf |
+| train/train_ttf/08_M02_DC_train.csv | .csv | 97089417 | 92.592 | ttf |
+| train/train_ttf/09_M01_DC_train.csv | .csv | 150798038 | 143.812 | ttf |
+| train/train_ttf/09_M02_DC_train.csv | .csv | 69837686 | 66.602 | ttf |
+| train/train_ttf/10_M01_DC_train.csv | .csv | 70499383 | 67.233 | ttf |
+| train/train_ttf/10_M02_DC_train.csv | .csv | 68390226 | 65.222 | ttf |
+
+| 용도 | 개수 | bytes | GiB |
+| --- | ---: | ---: | ---: |
+| sensor_test | 5 | 2567816769 | 2.391 |
+| sensor_train | 20 | 29261997445 | 27.252 |
+| fault | 20 | 65414 | 0.000 |
+| ttf | 20 | 2361675912 | 2.199 |
+
+총 65개, 34191555540 bytes, 31.843 GiB.

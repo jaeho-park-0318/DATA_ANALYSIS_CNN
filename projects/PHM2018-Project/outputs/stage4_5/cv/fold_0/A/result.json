@@ -1,0 +1,1164 @@
+{
+  "fold": 0,
+  "name": "A",
+  "columns": [
+    "recipe",
+    "stage",
+    "FLOWCOOLPRESSURE__current",
+    "FLOWCOOLFLOWRATE__current",
+    "IONGAUGEPRESSURE__current",
+    "ETCHBEAMCURRENT__current",
+    "ETCHBEAMVOLTAGE__current",
+    "ETCHSUPPRESSORCURRENT__current"
+  ],
+  "plan": {
+    "fold": 0,
+    "evaluation": [
+      "01M01",
+      "03M01",
+      "05M01"
+    ],
+    "early_stop": [
+      "01M02",
+      "02M01"
+    ],
+    "calibration": [
+      "02M02",
+      "03M02"
+    ],
+    "train": [
+      "04M01",
+      "04M02",
+      "05M02",
+      "06M01",
+      "06M02"
+    ]
+  },
+  "params": {
+    "n_estimators": 500,
+    "max_depth": 4,
+    "min_child_weight": 10,
+    "reg_lambda": 5,
+    "reg_alpha": 0.1,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "tree_method": "hist",
+    "max_bin": 128,
+    "device": "cuda",
+    "n_jobs": 4,
+    "random_state": 42,
+    "scale_pos_weight": 350.0108695652174,
+    "eval_metric": "aucpr",
+    "early_stopping_rounds": 30
+  },
+  "actual_device": "cuda:0",
+  "best_iteration": 73,
+  "resources": {
+    "seconds": 0.6353401001542807,
+    "peak_rss_bytes": 2070814720,
+    "min_available_bytes": 19257569280,
+    "samples": [
+      {
+        "elapsed": 0.0006117001175880432,
+        "rss": 1872805888,
+        "available": 19427020800
+      },
+      {
+        "elapsed": 0.5087874000892043,
+        "rss": 2070814720,
+        "available": 19257569280
+      }
+    ]
+  },
+  "fallback": null,
+  "warnings": [],
+  "thresholds": {
+    "f1": 0.6099517345428467,
+    "event_far": 0.8511117100715637
+  },
+  "calibration_grid": [
+    {
+      "threshold": 0.0,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.01194960384465515,
+      "recall": 1.0,
+      "f1": 0.02361699396739828,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.01194960384465515,
+      "tn": 0,
+      "fp": 22821,
+      "fn": 0,
+      "tp": 276,
+      "eligible_events": 37,
+      "detected_events": 37,
+      "event_recall": 1.0,
+      "false_episodes": 1857,
+      "active_false_episodes": 1344,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 4.94577272587883,
+      "unknown_episodes": 38915,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 175942,
+      "lead_time_median_raw": 550.0,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 25,
+          "recall": 1.0
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 10,
+          "recall": 1.0
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 2,
+          "recall": 1.0
+        }
+      },
+      "lead_times": {
+        "02M02:15048382:f2": 560.0,
+        "02M02:17449270:f2": 548.0,
+        "02M02:25485676:f2": 556.0,
+        "03M02:5128078:f2": 598.0,
+        "03M02:6187286:f1": 144.0,
+        "03M02:8147834:f1": 552.0,
+        "03M02:9188844:f2": 564.0,
+        "03M02:9639524:f2": 582.0,
+        "03M02:9836736:f2": 574.0,
+        "03M02:10056792:f2": 550.0,
+        "03M02:14448376:f1": 16.0,
+        "03M02:15265172:f1": 30.0,
+        "03M02:15662620:f1": 578.0,
+        "03M02:16949558:f1": 396.0,
+        "03M02:17188274:f1": 552.0,
+        "03M02:19120120:f1": 580.0,
+        "03M02:19435902:f1": 460.0,
+        "03M02:19535422:f3": 140.0,
+        "03M02:19537706:f1": 24.0,
+        "03M02:19641694:f1": 394.0,
+        "03M02:20013840:f1": 480.0,
+        "03M02:20059334:f1": 134.0,
+        "03M02:20791620:f1": 240.0,
+        "03M02:21662924:f1": 584.0,
+        "03M02:22248054:f1": 414.0,
+        "03M02:26048712:f3": 552.0,
+        "03M02:27520930:f1": 250.0,
+        "03M02:27954278:f1": 578.0,
+        "03M02:28980408:f1": 586.0,
+        "03M02:29615618:f2": 576.0,
+        "03M02:30142594:f1": 572.0,
+        "03M02:31559598:f1": 78.0,
+        "03M02:32624526:f1": 546.0,
+        "03M02:34874274:f2": 594.0,
+        "03M02:34902458:f1": 578.0,
+        "03M02:35634688:f1": 28.0,
+        "03M02:36618598:f1": 298.0
+      }
+    },
+    {
+      "threshold": 0.1,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.01209161174071791,
+      "recall": 0.9239130434782609,
+      "f1": 0.023870816756377252,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.09706888340477118,
+      "tn": 1987,
+      "fp": 20834,
+      "fn": 21,
+      "tp": 255,
+      "eligible_events": 37,
+      "detected_events": 35,
+      "event_recall": 0.9459459459459459,
+      "false_episodes": 1705,
+      "active_false_episodes": 1191,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 4.382749491459588,
+      "unknown_episodes": 37101,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 163196,
+      "lead_time_median_raw": 550.0,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 24,
+          "recall": 0.96
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 9,
+          "recall": 0.9
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 2,
+          "recall": 1.0
+        }
+      },
+      "lead_times": {
+        "02M02:15048382:f2": 560.0,
+        "02M02:17449270:f2": 548.0,
+        "02M02:25485676:f2": 556.0,
+        "03M02:5128078:f2": 598.0,
+        "03M02:6187286:f1": 144.0,
+        "03M02:8147834:f1": 552.0,
+        "03M02:9188844:f2": 564.0,
+        "03M02:9639524:f2": 582.0,
+        "03M02:9836736:f2": 574.0,
+        "03M02:10056792:f2": 550.0,
+        "03M02:14448376:f1": 16.0,
+        "03M02:15265172:f1": 30.0,
+        "03M02:15662620:f1": 578.0,
+        "03M02:16949558:f1": 396.0,
+        "03M02:17188274:f1": 552.0,
+        "03M02:19120120:f1": 580.0,
+        "03M02:19435902:f1": 460.0,
+        "03M02:19535422:f3": 140.0,
+        "03M02:19537706:f1": 24.0,
+        "03M02:19641694:f1": 394.0,
+        "03M02:20013840:f1": 480.0,
+        "03M02:20059334:f1": 134.0,
+        "03M02:20791620:f1": 240.0,
+        "03M02:21662924:f1": 584.0,
+        "03M02:22248054:f1": 414.0,
+        "03M02:26048712:f3": 552.0,
+        "03M02:27520930:f1": 250.0,
+        "03M02:27954278:f1": 578.0,
+        "03M02:28980408:f1": 586.0,
+        "03M02:30142594:f1": 572.0,
+        "03M02:31559598:f1": 78.0,
+        "03M02:34874274:f2": 594.0,
+        "03M02:34902458:f1": 578.0,
+        "03M02:35634688:f1": 28.0,
+        "03M02:36618598:f1": 298.0
+      }
+    },
+    {
+      "threshold": 0.25,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.025081788440567066,
+      "recall": 0.5,
+      "f1": 0.04776739356178609,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.7617872450967658,
+      "tn": 17457,
+      "fp": 5364,
+      "fn": 138,
+      "tp": 138,
+      "eligible_events": 37,
+      "detected_events": 23,
+      "event_recall": 0.6216216216216216,
+      "false_episodes": 651,
+      "active_false_episodes": 583,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 2.145376115466784,
+      "unknown_episodes": 22520,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 99797,
+      "lead_time_median_raw": 394.0,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 16,
+          "recall": 0.64
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 5,
+          "recall": 0.5
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 2,
+          "recall": 1.0
+        }
+      },
+      "lead_times": {
+        "03M02:5128078:f2": 598.0,
+        "03M02:6187286:f1": 144.0,
+        "03M02:8147834:f1": 552.0,
+        "03M02:9188844:f2": 564.0,
+        "03M02:9639524:f2": 582.0,
+        "03M02:10056792:f2": 550.0,
+        "03M02:14448376:f1": 16.0,
+        "03M02:15265172:f1": 30.0,
+        "03M02:16949558:f1": 396.0,
+        "03M02:17188274:f1": 132.0,
+        "03M02:19435902:f1": 460.0,
+        "03M02:19535422:f3": 140.0,
+        "03M02:19641694:f1": 394.0,
+        "03M02:20013840:f1": 480.0,
+        "03M02:20059334:f1": 134.0,
+        "03M02:20791620:f1": 240.0,
+        "03M02:21662924:f1": 344.0,
+        "03M02:26048712:f3": 552.0,
+        "03M02:27520930:f1": 250.0,
+        "03M02:30142594:f1": 572.0,
+        "03M02:34874274:f2": 594.0,
+        "03M02:35634688:f1": 28.0,
+        "03M02:36618598:f1": 298.0
+      }
+    },
+    {
+      "threshold": 0.2706139385700226,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.02558834516249533,
+      "recall": 0.4963768115942029,
+      "f1": 0.04866785079928952,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.7681084123479239,
+      "tn": 17604,
+      "fp": 5217,
+      "fn": 139,
+      "tp": 137,
+      "eligible_events": 37,
+      "detected_events": 22,
+      "event_recall": 0.5945945945945946,
+      "false_episodes": 573,
+      "active_false_episodes": 558,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 2.0533788549407643,
+      "unknown_episodes": 21810,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 95157,
+      "lead_time_median_raw": 395.0,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 15,
+          "recall": 0.6
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 5,
+          "recall": 0.5
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 2,
+          "recall": 1.0
+        }
+      },
+      "lead_times": {
+        "03M02:5128078:f2": 598.0,
+        "03M02:6187286:f1": 144.0,
+        "03M02:8147834:f1": 552.0,
+        "03M02:9188844:f2": 564.0,
+        "03M02:9639524:f2": 582.0,
+        "03M02:10056792:f2": 550.0,
+        "03M02:14448376:f1": 16.0,
+        "03M02:15265172:f1": 30.0,
+        "03M02:16949558:f1": 396.0,
+        "03M02:19435902:f1": 460.0,
+        "03M02:19535422:f3": 140.0,
+        "03M02:19641694:f1": 394.0,
+        "03M02:20013840:f1": 480.0,
+        "03M02:20059334:f1": 134.0,
+        "03M02:20791620:f1": 240.0,
+        "03M02:21662924:f1": 344.0,
+        "03M02:26048712:f3": 552.0,
+        "03M02:27520930:f1": 250.0,
+        "03M02:30142594:f1": 572.0,
+        "03M02:34874274:f2": 594.0,
+        "03M02:35634688:f1": 28.0,
+        "03M02:36618598:f1": 298.0
+      }
+    },
+    {
+      "threshold": 0.5,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.056865464632454926,
+      "recall": 0.2971014492753623,
+      "f1": 0.09545983701979045,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.932718534874659,
+      "tn": 21461,
+      "fp": 1360,
+      "fn": 194,
+      "tp": 82,
+      "eligible_events": 37,
+      "detected_events": 17,
+      "event_recall": 0.4594594594594595,
+      "false_episodes": 191,
+      "active_false_episodes": 187,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.6881395087346288,
+      "unknown_episodes": 19018,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 67631,
+      "lead_time_median_raw": 298.0,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 14,
+          "recall": 0.56
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 1,
+          "recall": 0.1
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 2,
+          "recall": 1.0
+        }
+      },
+      "lead_times": {
+        "03M02:6187286:f1": 24.0,
+        "03M02:8147834:f1": 552.0,
+        "03M02:14448376:f1": 16.0,
+        "03M02:15265172:f1": 30.0,
+        "03M02:16949558:f1": 396.0,
+        "03M02:19435902:f1": 460.0,
+        "03M02:19535422:f3": 140.0,
+        "03M02:19641694:f1": 274.0,
+        "03M02:20013840:f1": 480.0,
+        "03M02:20059334:f1": 134.0,
+        "03M02:20791620:f1": 240.0,
+        "03M02:21662924:f1": 344.0,
+        "03M02:26048712:f3": 552.0,
+        "03M02:30142594:f1": 572.0,
+        "03M02:34874274:f2": 594.0,
+        "03M02:35634688:f1": 28.0,
+        "03M02:36618598:f1": 298.0
+      }
+    },
+    {
+      "threshold": 0.6099517345428467,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.07351077313054499,
+      "recall": 0.21014492753623187,
+      "f1": 0.10892018779342723,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.958912412867472,
+      "tn": 22090,
+      "fp": 731,
+      "fn": 218,
+      "tp": 58,
+      "eligible_events": 37,
+      "detected_events": 13,
+      "event_recall": 0.35135135135135137,
+      "false_episodes": 74,
+      "active_false_episodes": 74,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.27231189115701887,
+      "unknown_episodes": 13891,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 49576,
+      "lead_time_median_raw": 240.0,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 10,
+          "recall": 0.4
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 1,
+          "recall": 0.1
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 2,
+          "recall": 1.0
+        }
+      },
+      "lead_times": {
+        "03M02:8147834:f1": 552.0,
+        "03M02:14448376:f1": 16.0,
+        "03M02:15265172:f1": 30.0,
+        "03M02:16949558:f1": 396.0,
+        "03M02:19435902:f1": 400.0,
+        "03M02:19535422:f3": 80.0,
+        "03M02:19641694:f1": 214.0,
+        "03M02:20013840:f1": 480.0,
+        "03M02:20059334:f1": 74.0,
+        "03M02:20791620:f1": 240.0,
+        "03M02:26048712:f3": 552.0,
+        "03M02:34874274:f2": 594.0,
+        "03M02:35634688:f1": 28.0
+      }
+    },
+    {
+      "threshold": 0.6165424585342407,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.07152145643693109,
+      "recall": 0.19927536231884058,
+      "f1": 0.10526315789473684,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.9595185521929255,
+      "tn": 22107,
+      "fp": 714,
+      "fn": 221,
+      "tp": 55,
+      "eligible_events": 37,
+      "detected_events": 13,
+      "event_recall": 0.35135135135135137,
+      "false_episodes": 89,
+      "active_false_episodes": 89,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.32751024747263086,
+      "unknown_episodes": 13853,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 49007,
+      "lead_time_median_raw": 214.0,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 10,
+          "recall": 0.4
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 1,
+          "recall": 0.1
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 2,
+          "recall": 1.0
+        }
+      },
+      "lead_times": {
+        "03M02:8147834:f1": 552.0,
+        "03M02:14448376:f1": 16.0,
+        "03M02:15265172:f1": 30.0,
+        "03M02:16949558:f1": 156.0,
+        "03M02:19435902:f1": 400.0,
+        "03M02:19535422:f3": 80.0,
+        "03M02:19641694:f1": 214.0,
+        "03M02:20013840:f1": 480.0,
+        "03M02:20059334:f1": 74.0,
+        "03M02:20791620:f1": 240.0,
+        "03M02:26048712:f3": 552.0,
+        "03M02:34874274:f2": 594.0,
+        "03M02:35634688:f1": 28.0
+      }
+    },
+    {
+      "threshold": 0.75,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.09401709401709402,
+      "recall": 0.07971014492753623,
+      "f1": 0.08627450980392157,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.9798242195956185,
+      "tn": 22609,
+      "fp": 212,
+      "fn": 254,
+      "tp": 22,
+      "eligible_events": 37,
+      "detected_events": 8,
+      "event_recall": 0.21621621621621623,
+      "false_episodes": 92,
+      "active_false_episodes": 92,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.33854991873575324,
+      "unknown_episodes": 9449,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 26515,
+      "lead_time_median_raw": 147.0,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 6,
+          "recall": 0.24
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 1,
+          "recall": 0.1
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 1,
+          "recall": 0.5
+        }
+      },
+      "lead_times": {
+        "03M02:8147834:f1": 552.0,
+        "03M02:15265172:f1": 30.0,
+        "03M02:19535422:f3": 80.0,
+        "03M02:19641694:f1": 214.0,
+        "03M02:20013840:f1": 480.0,
+        "03M02:20791620:f1": 60.0,
+        "03M02:34874274:f2": 594.0,
+        "03M02:35634688:f1": 28.0
+      }
+    },
+    {
+      "threshold": 0.7829426527023315,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.08962264150943396,
+      "recall": 0.06884057971014493,
+      "f1": 0.0778688524590164,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.9805169502532797,
+      "tn": 22628,
+      "fp": 193,
+      "fn": 257,
+      "tp": 19,
+      "eligible_events": 37,
+      "detected_events": 6,
+      "event_recall": 0.16216216216216217,
+      "false_episodes": 79,
+      "active_false_episodes": 79,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.29071134326222287,
+      "unknown_episodes": 7704,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 19807,
+      "lead_time_median_raw": 270.0,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 5,
+          "recall": 0.2
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 1,
+          "recall": 0.1
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "lead_times": {
+        "03M02:8147834:f1": 552.0,
+        "03M02:15265172:f1": 30.0,
+        "03M02:20013840:f1": 480.0,
+        "03M02:20791620:f1": 60.0,
+        "03M02:34874274:f2": 594.0,
+        "03M02:35634688:f1": 28.0
+      }
+    },
+    {
+      "threshold": 0.8511117100715637,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.16049382716049382,
+      "recall": 0.04710144927536232,
+      "f1": 0.07282913165266107,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.9856691345196346,
+      "tn": 22753,
+      "fp": 68,
+      "fn": 263,
+      "tp": 13,
+      "eligible_events": 37,
+      "detected_events": 4,
+      "event_recall": 0.10810810810810811,
+      "false_episodes": 23,
+      "active_false_episodes": 23,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.08463747968393831,
+      "unknown_episodes": 4113,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 10165,
+      "lead_time_median_raw": 306.0,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 3,
+          "recall": 0.12
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 1,
+          "recall": 0.1
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "lead_times": {
+        "03M02:8147834:f1": 552.0,
+        "03M02:15265172:f1": 30.0,
+        "03M02:20791620:f1": 60.0,
+        "03M02:34874274:f2": 594.0
+      }
+    },
+    {
+      "threshold": 0.8947805762290955,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.987271074165476,
+      "tn": 22803,
+      "fp": 18,
+      "fn": 276,
+      "tp": 0,
+      "eligible_events": 37,
+      "detected_events": 0,
+      "event_recall": 0.0,
+      "false_episodes": 3,
+      "active_false_episodes": 3,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.011039671263122388,
+      "unknown_episodes": 1990,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 3989,
+      "lead_time_median_raw": null,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "lead_times": {}
+    },
+    {
+      "threshold": 0.9,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.987271074165476,
+      "tn": 22803,
+      "fp": 18,
+      "fn": 276,
+      "tp": 0,
+      "eligible_events": 37,
+      "detected_events": 0,
+      "event_recall": 0.0,
+      "false_episodes": 3,
+      "active_false_episodes": 3,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.011039671263122388,
+      "unknown_episodes": 1930,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 3910,
+      "lead_time_median_raw": null,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "lead_times": {}
+    },
+    {
+      "threshold": 0.905200183391571,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.987271074165476,
+      "tn": 22803,
+      "fp": 18,
+      "fn": 276,
+      "tp": 0,
+      "eligible_events": 37,
+      "detected_events": 0,
+      "event_recall": 0.0,
+      "false_episodes": 3,
+      "active_false_episodes": 3,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.011039671263122388,
+      "unknown_episodes": 1698,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 2146,
+      "lead_time_median_raw": null,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "lead_times": {}
+    },
+    {
+      "threshold": 0.9052034020423889,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.987271074165476,
+      "tn": 22803,
+      "fp": 18,
+      "fn": 276,
+      "tp": 0,
+      "eligible_events": 37,
+      "detected_events": 0,
+      "event_recall": 0.0,
+      "false_episodes": 3,
+      "active_false_episodes": 3,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.011039671263122388,
+      "unknown_episodes": 933,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 1160,
+      "lead_time_median_raw": null,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "lead_times": {}
+    },
+    {
+      "threshold": 0.9139865636825562,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.9877040308265143,
+      "tn": 22813,
+      "fp": 8,
+      "fn": 276,
+      "tp": 0,
+      "eligible_events": 37,
+      "detected_events": 0,
+      "event_recall": 0.0,
+      "false_episodes": 1,
+      "active_false_episodes": 1,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.003679890421040796,
+      "unknown_episodes": 382,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 466,
+      "lead_time_median_raw": null,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "lead_times": {}
+    },
+    {
+      "threshold": 0.99,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.9880503961553448,
+      "tn": 22821,
+      "fp": 0,
+      "fn": 276,
+      "tp": 0,
+      "eligible_events": 37,
+      "detected_events": 0,
+      "event_recall": 0.0,
+      "false_episodes": 0,
+      "active_false_episodes": 0,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.0,
+      "unknown_episodes": 0,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 0,
+      "lead_time_median_raw": null,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "lead_times": {}
+    },
+    {
+      "threshold": 1.000001,
+      "n": 23097,
+      "positive": 276,
+      "negative": 22821,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_ap": 0.04771429580828542,
+      "roc_auc": 0.6992409101964946,
+      "accuracy": 0.9880503961553448,
+      "tn": 22821,
+      "fp": 0,
+      "fn": 276,
+      "tp": 0,
+      "eligible_events": 37,
+      "detected_events": 0,
+      "event_recall": 0.0,
+      "false_episodes": 0,
+      "active_false_episodes": 0,
+      "active_negative_hours": 271.7472222222222,
+      "false_alarms_per_active_hour": 0.0,
+      "unknown_episodes": 0,
+      "unknown_rows": 175942,
+      "unknown_alarm_rows": 0,
+      "lead_time_median_raw": null,
+      "per_type": {
+        "f1": {
+          "eligible": 25,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f2": {
+          "eligible": 10,
+          "detected": 0,
+          "recall": 0.0
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 0,
+          "recall": 0.0
+        }
+      },
+      "lead_times": {}
+    }
+  ],
+  "evaluation": {
+    "f1": {
+      "n": 36665,
+      "positive": 133,
+      "negative": 36532,
+      "precision": 0.0023381868423849508,
+      "recall": 0.3308270676691729,
+      "f1": 0.0046435544298453904,
+      "pr_auc_ap": 0.0029302041913325727,
+      "roc_auc": 0.3033647913169544,
+      "accuracy": 0.4855311605072958,
+      "tn": 17758,
+      "fp": 18774,
+      "fn": 89,
+      "tp": 44,
+      "eligible_events": 17,
+      "detected_events": 6,
+      "event_recall": 0.35294117647058826,
+      "false_episodes": 1640,
+      "active_false_episodes": 1333,
+      "active_negative_hours": 392.25111111111113,
+      "false_alarms_per_active_hour": 3.398333267238107,
+      "unknown_episodes": 24687,
+      "unknown_rows": 226144,
+      "unknown_alarm_rows": 92486,
+      "lead_time_median_raw": 499.0,
+      "per_type": {
+        "f1": {
+          "eligible": 8,
+          "detected": 3,
+          "recall": 0.375
+        },
+        "f2": {
+          "eligible": 7,
+          "detected": 2,
+          "recall": 0.2857142857142857
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 1,
+          "recall": 0.5
+        }
+      },
+      "lead_times": {
+        "01M01:14026692:f1": 72.0,
+        "01M01:20174938:f3": 596.0,
+        "01M01:26098948:f2": 566.0,
+        "03M01:39968588:f2": 546.0,
+        "05M01:24514288:f1": 208.0,
+        "05M01:24586892:f1": 452.0
+      }
+    },
+    "event_far": {
+      "n": 36665,
+      "positive": 133,
+      "negative": 36532,
+      "precision": 0.0020008238686517977,
+      "recall": 0.2556390977443609,
+      "f1": 0.003970571061543852,
+      "pr_auc_ap": 0.0029302041913325727,
+      "roc_auc": 0.3033647913169544,
+      "accuracy": 0.5347606709395881,
+      "tn": 19573,
+      "fp": 16959,
+      "fn": 99,
+      "tp": 34,
+      "eligible_events": 17,
+      "detected_events": 5,
+      "event_recall": 0.29411764705882354,
+      "false_episodes": 1521,
+      "active_false_episodes": 1253,
+      "active_negative_hours": 392.25111111111113,
+      "false_alarms_per_active_hour": 3.1943822834578754,
+      "unknown_episodes": 18355,
+      "unknown_rows": 226144,
+      "unknown_alarm_rows": 65160,
+      "lead_time_median_raw": 452.0,
+      "per_type": {
+        "f1": {
+          "eligible": 8,
+          "detected": 3,
+          "recall": 0.375
+        },
+        "f2": {
+          "eligible": 7,
+          "detected": 1,
+          "recall": 0.14285714285714285
+        },
+        "f3": {
+          "eligible": 2,
+          "detected": 1,
+          "recall": 0.5
+        }
+      },
+      "lead_times": {
+        "01M01:14026692:f1": 72.0,
+        "01M01:20174938:f3": 596.0,
+        "01M01:26098948:f2": 566.0,
+        "05M01:24514288:f1": 208.0,
+        "05M01:24586892:f1": 452.0
+      }
+    }
+  },
+  "training": {
+    "n": 193758,
+    "positive": 552,
+    "negative": 193206,
+    "precision": 0.04563820018365473,
+    "recall": 0.9003623188405797,
+    "f1": 0.08687292431393114,
+    "pr_auc_ap": 0.43400427780027206,
+    "roc_auc": 0.982213149342588,
+    "accuracy": 0.9460770652050496,
+    "tn": 182813,
+    "fp": 10393,
+    "fn": 55,
+    "tp": 497
+  },
+  "importance": {
+    "recipe": 0.04484553635120392,
+    "stage": 0.07689645141363144,
+    "FLOWCOOLPRESSURE__current": 0.1408415138721466,
+    "FLOWCOOLFLOWRATE__current": 0.13972413539886475,
+    "IONGAUGEPRESSURE__current": 0.09683729708194733,
+    "ETCHBEAMCURRENT__current": 0.1201392263174057,
+    "ETCHBEAMVOLTAGE__current": 0.2306739091873169,
+    "ETCHSUPPRESSORCURRENT__current": 0.15004193782806396
+  },
+  "completed": true
+}

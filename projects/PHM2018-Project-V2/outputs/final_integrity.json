@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "raw_sha256_rechecked_files": 60,
+  "raw_content_changes": [],
+  "v1_metadata_checked_files": 2139,
+  "v1_metadata_changes": [],
+  "executed_notebooks": [
+    "01_raw_data_validation.ipynb",
+    "02_fault_label_generation.ipynb",
+    "03_feature_engineering.ipynb",
+    "04_dataset_validation.ipynb"
+  ],
+  "audit_tools": 20,
+  "raw_rows": 82189440,
+  "approved_training_rows": 0
+}

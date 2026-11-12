@@ -1,0 +1,32 @@
+[
+  {
+    "notebook": "01_data_inventory.ipynb",
+    "executed": true,
+    "error_outputs": 0,
+    "code_cells": 1
+  },
+  {
+    "notebook": "02_process_understanding.ipynb",
+    "executed": true,
+    "error_outputs": 0,
+    "code_cells": 1
+  },
+  {
+    "notebook": "03_fault_scenario_analysis.ipynb",
+    "executed": true,
+    "error_outputs": 0,
+    "code_cells": 1
+  },
+  {
+    "notebook": "04_sensor_response_analysis.ipynb",
+    "executed": true,
+    "error_outputs": 0,
+    "code_cells": 2
+  },
+  {
+    "notebook": "05_dataset_compatibility.ipynb",
+    "executed": true,
+    "error_outputs": 0,
+    "code_cells": 1
+  }
+]

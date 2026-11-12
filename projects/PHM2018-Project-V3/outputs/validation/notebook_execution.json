@@ -1,0 +1,42 @@
+[
+  {
+    "notebook": "06_tool_overview",
+    "code_cells": 4,
+    "executed": 4,
+    "errors": 0,
+    "elapsed_seconds": 3.1100000001024455,
+    "python": "C:/Users/fl27/anaconda3/envs/phm2018/python.exe"
+  },
+  {
+    "notebook": "09_label_visualization",
+    "code_cells": 4,
+    "executed": 4,
+    "errors": 0,
+    "elapsed_seconds": 2.8129999998491257,
+    "python": "C:/Users/fl27/anaconda3/envs/phm2018/python.exe"
+  },
+  {
+    "notebook": "10_feature_availability",
+    "code_cells": 4,
+    "executed": 4,
+    "errors": 0,
+    "elapsed_seconds": 2.780999999959022,
+    "python": "C:/Users/fl27/anaconda3/envs/phm2018/python.exe"
+  },
+  {
+    "notebook": "07_timeline_explorer",
+    "code_cells": 4,
+    "executed": 4,
+    "errors": 0,
+    "elapsed_seconds": 3.203999999910593,
+    "python": "C:/Users/fl27/anaconda3/envs/phm2018/python.exe"
+  },
+  {
+    "notebook": "08_fault_event_explorer",
+    "code_cells": 4,
+    "executed": 4,
+    "errors": 0,
+    "elapsed_seconds": 3.9370000001508743,
+    "python": "C:/Users/fl27/anaconda3/envs/phm2018/python.exe"
+  }
+]

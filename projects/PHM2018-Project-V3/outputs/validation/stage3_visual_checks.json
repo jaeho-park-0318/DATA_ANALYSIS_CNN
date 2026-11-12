@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "file": "outputs/figures/stage3/common_cohort.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/동일 이벤트 행/저부담 확대를 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage3/classification.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/동일 이벤트 행/저부담 확대를 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage3/alarm_tradeoff.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/동일 이벤트 행/저부담 확대를 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage3/joint_frontier.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/동일 이벤트 행/저부담 확대를 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage3/budget_comparison.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/동일 이벤트 행/저부담 확대를 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage3/paired_differences.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/동일 이벤트 행/저부담 확대를 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage3/training_resources.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/동일 이벤트 행/저부담 확대를 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage3/event_matrix.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/동일 이벤트 행/저부담 확대를 직접 확인"
+    }
+  ],
+  "figure_count": 8
+}

@@ -1,0 +1,7 @@
+﻿scheme,split,condition_pairs,unseen_pairs,basis
+temporal,train,559,0,H600 / A / 정책상 확정 라벨 / 조합 수 기준
+temporal,validation,127,16,H600 / A / 정책상 확정 라벨 / 조합 수 기준
+temporal,holdout,55,7,H600 / A / 정책상 확정 라벨 / 조합 수 기준
+group,train,574,0,H600 / A / 정책상 확정 라벨 / 조합 수 기준
+group,validation,249,97,H600 / A / 정책상 확정 라벨 / 조합 수 기준
+group,holdout,208,50,H600 / A / 정책상 확정 라벨 / 조합 수 기준

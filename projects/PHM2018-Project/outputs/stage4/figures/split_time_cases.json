@@ -1,0 +1,18 @@
+{
+  "scheme": "split_time",
+  "model": "XGB_C",
+  "threshold": 0.7607826590538025,
+  "event_Tool": "02M01",
+  "event_code": "f1",
+  "event_time": 27575274.0,
+  "points": 17,
+  "score_min": 0.21007123589515686,
+  "score_max": 0.6967837810516357,
+  "score_first": 0.21007123589515686,
+  "score_last": 0.25291895866394043,
+  "last_horizon_max": 0.27110424637794495,
+  "threshold_crossed_last_horizon": false,
+  "false_alarm_Tool": "08M01",
+  "false_alarm_start": 32083500.0,
+  "false_alarm_score_max": 0.7675392031669617
+}

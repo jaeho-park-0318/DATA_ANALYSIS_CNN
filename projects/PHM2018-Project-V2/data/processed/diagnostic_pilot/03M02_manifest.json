@@ -1,0 +1,99 @@
+{
+  "tool": "03M02",
+  "raw_rows": 5060498,
+  "normalized_times": 5059330,
+  "anchors": 679083,
+  "feature_status": [
+    {
+      "feature_status": "history_lt900",
+      "len": 281821
+    },
+    {
+      "feature_status": "sensor_stale_or_gap",
+      "len": 337747
+    },
+    {
+      "feature_status": "history_span_available",
+      "len": 59515
+    }
+  ],
+  "candidate_counts": {
+    "candidate_f1_h300raw": {
+      "positive": 1204,
+      "negative": 568768,
+      "NA": 108813,
+      "excluded_lt60": 298
+    },
+    "candidate_f1_h600raw": {
+      "positive": 2694,
+      "negative": 567278,
+      "NA": 108813,
+      "excluded_lt60": 298
+    },
+    "candidate_f1_h1800raw": {
+      "positive": 8654,
+      "negative": 561318,
+      "NA": 108813,
+      "excluded_lt60": 298
+    },
+    "candidate_f2_h300raw": {
+      "positive": 193,
+      "negative": 677616,
+      "NA": 1226,
+      "excluded_lt60": 48
+    },
+    "candidate_f2_h600raw": {
+      "positive": 433,
+      "negative": 677376,
+      "NA": 1226,
+      "excluded_lt60": 48
+    },
+    "candidate_f2_h1800raw": {
+      "positive": 1393,
+      "negative": 676416,
+      "NA": 1226,
+      "excluded_lt60": 48
+    },
+    "candidate_f3_h300raw": {
+      "positive": 36,
+      "negative": 427685,
+      "NA": 251353,
+      "excluded_lt60": 9
+    },
+    "candidate_f3_h600raw": {
+      "positive": 80,
+      "negative": 427641,
+      "NA": 251353,
+      "excluded_lt60": 9
+    },
+    "candidate_f3_h1800raw": {
+      "positive": 222,
+      "negative": 427499,
+      "NA": 251353,
+      "excluded_lt60": 9
+    },
+    "candidate_any_h300raw": {
+      "positive": 1430,
+      "negative": 425839,
+      "NA": 251459,
+      "excluded_lt60": 355
+    },
+    "candidate_any_h600raw": {
+      "positive": 3199,
+      "negative": 424565,
+      "NA": 250964,
+      "excluded_lt60": 355
+    },
+    "candidate_any_h1800raw": {
+      "positive": 9964,
+      "negative": 419780,
+      "NA": 248984,
+      "excluded_lt60": 355
+    }
+  },
+  "total_unique_events": 356,
+  "events_with_raw_window": 113,
+  "events_with_positive_anchor": 355,
+  "approved_training_rows": 0,
+  "parquet_sha256": "74b078341ae9b58ab0ee8a0ae2924018f817dce2dc7dc4cbeeb278d3940561b8"
+}

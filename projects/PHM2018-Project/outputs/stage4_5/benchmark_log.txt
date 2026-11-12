@@ -1,0 +1,16 @@
+Exception in thread Thread-4 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Users\fl27\anaconda3\envs\phm2018\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Users\fl27\anaconda3\envs\phm2018\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\fl27\anaconda3\envs\phm2018\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+UnicodeDecodeError: 'cp949' codec can't decode byte 0xec in position 18: illegal multibyte sequence
+��ġ��ũ cpu 1/3: 1.014��
+��ġ��ũ cpu 2/3: 0.949��
+��ġ��ũ cpu 3/3: 1.364��
+��ġ��ũ cuda 1/3: 0.749��
+��ġ��ũ cuda 2/3: 0.719��
+��ġ��ũ cuda 3/3: 0.710��

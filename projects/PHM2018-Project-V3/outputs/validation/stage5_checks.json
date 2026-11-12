@@ -1,0 +1,4685 @@
+{
+  "checks": [
+    {
+      "check": "A_base_maximum/train 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/01M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/02M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/03M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/04M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/04M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/04M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/04M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/04M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/04M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/05M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/05M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/05M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/05M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/05M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/05M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/05M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/05M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/05M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/05M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/05M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/06M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/06M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/06M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/06M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/06M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/06M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/06M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/06M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/06M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/06M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/train/data/cache/analysis/06M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M01/anchors-0021.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/07M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/validation/data/cache/analysis/08M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum 학습/검증 장비 분리",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum AP/ROC 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum 특징 화이트리스트",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum 실제CUDA",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/01M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/02M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/03M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/04M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/04M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/04M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/04M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/04M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/04M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/05M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/05M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/05M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/05M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/05M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/05M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/05M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/05M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/05M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/05M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/05M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/06M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/06M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/06M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/06M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/06M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/06M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/06M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/06M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/06M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/train/data/cache/analysis/06M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M01/anchors-0021.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/07M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/validation/data/cache/analysis/08M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum 학습/검증 장비 분리",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum AP/ROC 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum 특징 화이트리스트",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum 실제CUDA",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/01M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/02M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/02M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/02M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/02M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/02M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/02M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/02M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/03M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/04M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/04M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/04M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/04M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/04M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/04M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/05M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/05M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/05M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/05M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/05M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/05M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/05M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/06M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/06M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/06M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/06M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/06M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/06M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/06M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/06M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/train/data/cache/analysis/06M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M01/anchors-0021.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/07M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/validation/data/cache/analysis/08M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_base_common 학습/검증 장비 분리",
+      "passed": true
+    },
+    {
+      "check": "A_base_common AP/ROC 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_base_common 특징 화이트리스트",
+      "passed": true
+    },
+    {
+      "check": "A_base_common 실제CUDA",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/01M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/02M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/02M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/02M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/02M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/02M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/02M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/02M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/03M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/04M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/04M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/04M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/04M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/04M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/04M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/05M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/05M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/05M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/05M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/05M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/05M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/05M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/06M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/06M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/06M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/06M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/06M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/06M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/06M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/06M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/train/data/cache/analysis/06M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M01/anchors-0021.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/07M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/validation/data/cache/analysis/08M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "B_base_common 학습/검증 장비 분리",
+      "passed": true
+    },
+    {
+      "check": "B_base_common AP/ROC 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_base_common 특징 화이트리스트",
+      "passed": true
+    },
+    {
+      "check": "B_base_common 실제CUDA",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/01M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/02M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/02M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/02M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/02M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/02M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/02M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/02M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/03M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/04M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/04M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/04M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/04M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/04M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/04M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/05M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/05M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/05M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/05M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/05M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/05M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/05M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/06M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/06M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/06M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/06M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/06M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/06M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/06M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/06M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/train/data/cache/analysis/06M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M01/anchors-0021.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/07M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/validation/data/cache/analysis/08M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common 학습/검증 장비 분리",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common AP/ROC 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common 특징 화이트리스트",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common 실제CUDA",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/01M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/02M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/02M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/02M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/02M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/02M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/02M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/02M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/03M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/04M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/04M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/04M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/04M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/04M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/04M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/05M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/05M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/05M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/05M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/05M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/05M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/05M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/06M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/06M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/06M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/06M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/06M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/06M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/06M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/06M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/train/data/cache/analysis/06M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation 시간Holdout 제외",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation 장비 역할",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M01/anchors-0021.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/07M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M01/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0000.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0001.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0002.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0003.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0004.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0005.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0006.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0007.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0008.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0009.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0010.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0011.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0012.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0013.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0014.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0015.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0016.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0017.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0018.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0019.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/validation/data/cache/analysis/08M02/anchors-0020.parquet temporal 라벨 근거",
+      "passed": true
+    },
+    {
+      "check": "C_base_common 학습/검증 장비 분리",
+      "passed": true
+    },
+    {
+      "check": "C_base_common AP/ROC 재계산",
+      "passed": true
+    },
+    {
+      "check": "C_base_common 특징 화이트리스트",
+      "passed": true
+    },
+    {
+      "check": "C_base_common 실제CUDA",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.0030000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.003072777297347784 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.003306675236672163 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.0035475380718708038 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.0036862029228359461 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.0041935546323657036 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.0044174576178193092 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.0071845650672912598 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.01 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.010690721683204174 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.015853125602006912 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.017288774251937866 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.017305755987763405 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.029999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.10000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.29999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.5 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.69999999999999996 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/0.90000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/1 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_maximum/1.0000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.0021035030949860811 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.0021305093541741371 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.0022202369291335344 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.0025747299659997225 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.0030000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.0033428652677685022 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.0040960800834000111 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.0054543600417673588 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.0074909371323883533 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.01 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.012648735195398331 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.023481132462620735 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.029999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.065563000738620758 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.10000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.10549147427082062 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.14164313673973083 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.16217033448814216 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.29999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.5 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.69999999999999996 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/0.90000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/1 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_maximum/1.0000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.001601414056494832 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.0020079365931451321 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.0024693121667951345 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.0028608590364456177 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.0029883773531764746 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.0030000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.0034076417796313763 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.0037911853287369013 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.0060035362839698792 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.01 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.011965095065534115 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.029999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.031028393656015396 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.10000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.19433283805847168 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.26468947529792786 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.29999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.30310633778572083 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.40701630711555481 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.42750769853591919 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.5 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.69999999999999996 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/0.90000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/1 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_base_common/1.0000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.0030000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.0030564344488084316 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.0031760851852595806 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.003724181093275547 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.0061587831005454063 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.01 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.01185259036719799 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.01704074814915657 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.0234091617166996 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.029999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.064488284289836884 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.074366159737110138 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.096042722463607788 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.10000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.10542186349630356 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.12616956233978271 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.29999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.5 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.69999999999999996 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/0.90000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/1 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "B_base_common/1.0000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.0030000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.01 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.029999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.075926430523395538 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.080446243286132812 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.088039599359035492 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.10000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.12321390956640244 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.14364339411258698 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.15830375254154205 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.17103171348571777 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.18694186210632324 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.20163984596729279 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.29999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.5 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.69999999999999996 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/0.90000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/1 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "A_tuned_common/1.0000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.0021728549618273973 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.0022380987647920847 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.0022947774268686771 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.0025037073064595461 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.0030000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.0037286954466253519 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.0073518375866115093 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.01 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.016555622220039368 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.028787719085812569 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.029999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.041714321821928024 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.072775200009346008 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.090940423309803009 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.10000000000000001 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.14083623886108398 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.23210354239494124 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.29999999999999999 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.30861058831214905 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.5 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.69999999999999996 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/0.90000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/1 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "C_base_common/1.0000000000000002 이벤트/경보 집계",
+      "passed": true
+    },
+    {
+      "check": "현재 최종Holdout 미개봉",
+      "passed": true
+    },
+    {
+      "check": "원본 크기/mtime 보존",
+      "passed": true
+    }
+  ],
+  "protected_temporal_holdout_used": false
+}

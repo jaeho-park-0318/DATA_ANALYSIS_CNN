@@ -1,0 +1,76 @@
+{
+  "scheme": "split_time",
+  "selected_name": "XGB_C",
+  "selection_rule": "검증 AP 최대; 평가 성능 미사용",
+  "threshold": 0.7607826590538025,
+  "metrics": {
+    "evaluable_events": 56,
+    "detected_events": 17,
+    "event_recall": 0.30357142857142855,
+    "recorded_events": 194,
+    "recorded_events_hit": 26,
+    "recorded_recall_with_observation_limit": 0.13402061855670103,
+    "event_coverage": 0.28865979381443296,
+    "alarm_episodes": 31472,
+    "false_alarm_episodes": 8,
+    "unknown_alarm_episodes": 31440,
+    "negative_exposure_raw": 546000.0,
+    "false_alarms_per_3600raw": 0.05274725274725275,
+    "false_alarm_time_fraction": 0.001978021978021978,
+    "active_negative_exposure_raw": 546000.0,
+    "active_false_alarm_episodes": 8,
+    "false_alarms_per_active_hour_seconds_interpretation": 0.05274725274725275,
+    "lead_time_median_raw": 298.0,
+    "lead_time_min_raw": 2.0,
+    "lead_time_max_raw": 580.0,
+    "lead_times": {
+      "01M02:35339442:f3": 40.0,
+      "01M02:35667758:f1": 396.0,
+      "01M02:36138198:f3": 78.0,
+      "01M02:36145322:f1": 2.0,
+      "01M02:36402870:f1": 270.0,
+      "01M02:36408260:f3": 80.0,
+      "01M02:36767406:f3": 546.0,
+      "03M02:36618598:f1": 298.0,
+      "04M02:37156970:f1": 110.0,
+      "04M02:38366680:f1": 580.0,
+      "04M02:38367112:f1": 172.0,
+      "04M02:40046050:f1": 428.0,
+      "04M02:40171344:f1": 562.0,
+      "04M02:40188902:f1": 540.0,
+      "09M02:45668024:f2": 224.0,
+      "09M02:45669182:f2": 542.0,
+      "09M02:45670356:f2": 576.0
+    },
+    "per_type": {
+      "f1": {
+        "events": 35,
+        "detected": 10,
+        "recall": 0.2857142857142857
+      },
+      "f2": {
+        "events": 12,
+        "detected": 3,
+        "recall": 0.25
+      },
+      "f3": {
+        "events": 9,
+        "detected": 4,
+        "recall": 0.4444444444444444
+      }
+    },
+    "false_episode_ids": [
+      315381,
+      315397,
+      319736,
+      320074,
+      322412,
+      322627,
+      327658,
+      336161
+    ],
+    "all_feature_ready_rows": 442840,
+    "unknown_label_rows": 432475,
+    "unknown_row_alarm_fraction": 0.12816232152147522
+  }
+}

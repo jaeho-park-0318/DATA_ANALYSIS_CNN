@@ -1,0 +1,128 @@
+{
+  "passed": true,
+  "preexisting_files_preserved": 435,
+  "raw_files_preserved": 65,
+  "cached_rows": 2331977,
+  "known_rows": 574923,
+  "duplicate_keys": 0,
+  "future_feature_rows": 0,
+  "changed_labels": 0,
+  "lost_known_rows": 0,
+  "models": [
+    {
+      "fold": 0,
+      "model": "A",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 36665
+    },
+    {
+      "fold": 0,
+      "model": "B",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 36665
+    },
+    {
+      "fold": 0,
+      "model": "C",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 36665
+    },
+    {
+      "fold": 0,
+      "model": "C_regularized",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 36665
+    },
+    {
+      "fold": 1,
+      "model": "A",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 197443
+    },
+    {
+      "fold": 1,
+      "model": "B",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 197443
+    },
+    {
+      "fold": 1,
+      "model": "C",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 197443
+    },
+    {
+      "fold": 1,
+      "model": "C_regularized",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 197443
+    },
+    {
+      "fold": 2,
+      "model": "A",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 58047
+    },
+    {
+      "fold": 2,
+      "model": "B",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 58047
+    },
+    {
+      "fold": 2,
+      "model": "C",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 58047
+    },
+    {
+      "fold": 2,
+      "model": "C_regularized",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 58047
+    },
+    {
+      "fold": 3,
+      "model": "A",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 176807
+    },
+    {
+      "fold": 3,
+      "model": "B",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 176807
+    },
+    {
+      "fold": 3,
+      "model": "C",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 176807
+    },
+    {
+      "fold": 3,
+      "model": "C_regularized",
+      "prediction_rows_checked": 1536,
+      "metric_rows_checked": 176807
+    }
+  ],
+  "unit_tests": 4,
+  "notebooks": [
+    {
+      "name": "09_dataset_audit.ipynb",
+      "executed_cells": 4,
+      "errors": 0
+    },
+    {
+      "name": "10_group_cross_validation.ipynb",
+      "executed_cells": 4,
+      "errors": 0
+    },
+    {
+      "name": "11_threshold_analysis.ipynb",
+      "executed_cells": 4,
+      "errors": 0
+    }
+  ],
+  "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe"
+}

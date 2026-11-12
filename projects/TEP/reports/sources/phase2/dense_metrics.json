@@ -1,0 +1,35 @@
+{
+  "joint_primary": {
+    "detection_precision": 0.9970010449576019,
+    "detection_recall": 0.86740225,
+    "detection_f1": 0.9276972980979862,
+    "detection_macro_f1": 0.8511975865106279,
+    "detection_balanced_accuracy": 0.9281512712377027,
+    "detection_roc_auc": 0.9539266359692902,
+    "detection_pr_auc": 0.9900821095190592,
+    "sample_false_alarm_rate": 0.011099707524594523,
+    "threshold": 0.9671916365623474,
+    "samples": 9880500,
+    "diagnosis_macro_precision": 0.9235703692290913,
+    "diagnosis_macro_recall": 0.91362825,
+    "diagnosis_macro_f1": 0.9115305213006835,
+    "diagnosis_balanced_accuracy": 0.91362825,
+    "end_to_end_macro_f1": 0.8558453059030707,
+    "diagnosis_roc_auc_macro_ovr": 0.9937095235690462,
+    "diagnosis_pr_auc_macro": 0.9268249156411965,
+    "normal_faultfree_FAR": 0.012397449521785335,
+    "pre_injection_FAR": 0.010666666666666666
+  },
+  "dedicated_binary": {
+    "detection_precision": 0.9969755006782924,
+    "detection_recall": 0.80978525,
+    "detection_f1": 0.8936834107753966,
+    "detection_macro_f1": 0.8004088758482569,
+    "detection_balanced_accuracy": 0.8996671530510503,
+    "detection_roc_auc": 0.9394038727570793,
+    "detection_pr_auc": 0.9866471571976743,
+    "sample_false_alarm_rate": 0.010450943897899495,
+    "threshold": 0.5490266680717468,
+    "samples": 9880500
+  }
+}

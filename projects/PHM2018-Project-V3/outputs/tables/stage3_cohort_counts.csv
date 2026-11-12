@@ -1,0 +1,3 @@
+﻿partition,rows,positive,negative,NA,EXCLUDE
+train_known,309273,1239,308034,0,0
+validation_all,309203,392,6766,302002,43

@@ -1,28 +1,40 @@
-# Local environments and Python caches
+# Environments, caches, credentials
 .venv/
 venv/
+.deps/
 .packages/
+.notebook-packages/
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
-.DS_Store
-Thumbs.db
-
-# Dataset files and generated caches; trained model is intentionally included
-*.pkl
-*.pickle
-data/*.npy
-data/*.npz
-spatial_boosting/results/features.npz
-
-# Temporary authoring files
-.build/
-.chart-data-*/
-tmp/
-*.log
-~$*
-
-# Local credentials
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+hf_cache/
+checkpoint/
+cache/
+tmp/
+ipython/
+jupyter_runtime/
+mpl_cache/
+*.log
+*.sqlite*
+# Source datasets and derived row-level caches
+*.RData
+*.rdata
+*.parquet
+*.xlsx
+*.pkl
+*.pickle
+*.npy
+*.npz
+phm_data_challenge_2018/
+tennessee-eastman-dataset-main/
+# New model artifacts; preserve already-published wafer artifacts
+projects/PHM*/**/*.joblib
+projects/PHM*/**/*.ubj
+projects/TEP/**/*.joblib
+projects/TEP/**/*.pt
+projects/TEP/**/*.safetensors

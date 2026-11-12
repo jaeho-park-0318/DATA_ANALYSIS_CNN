@@ -1,0 +1,4850 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 196
+  },
+  {
+    "path": "README.md",
+    "bytes": 7185
+  },
+  {
+    "path": "requirements-lock.txt",
+    "bytes": 1259
+  },
+  {
+    "path": "requirements.txt",
+    "bytes": 130
+  },
+  {
+    "path": "run_phase1.ps1",
+    "bytes": 944
+  },
+  {
+    "path": "run_phase2.ps1",
+    "bytes": 1182
+  },
+  {
+    "path": "TEP_FaultFree_Testing.RData",
+    "bytes": 47327663
+  },
+  {
+    "path": "TEP_FaultFree_Training.RData",
+    "bytes": 24678017
+  },
+  {
+    "path": "TEP_Faulty_Testing.RData",
+    "bytes": 836882037
+  },
+  {
+    "path": "TEP_Faulty_Training.RData",
+    "bytes": 494063194
+  },
+  {
+    "path": "configs/datasets.json",
+    "bytes": 337
+  },
+  {
+    "path": "configs/phase2.json",
+    "bytes": 1040
+  },
+  {
+    "path": "data/interim/github/mode1_10_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_10_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_10_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_10_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_10_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_10_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_10_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_10_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_10_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_10_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_11_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_11_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_11_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_11_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_11_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_11_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_11_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_11_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_11_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_11_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_12_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_12_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_12_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_12_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_12_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_12_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_12_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_12_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_12_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_12_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_13_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_13_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_13_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_13_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_13_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_13_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_13_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_13_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_13_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_13_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_14_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_14_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_14_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_14_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_14_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_14_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_14_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_14_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_14_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_14_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_15_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_15_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_15_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_15_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_15_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_15_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_15_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_15_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_15_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_15_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_16_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_16_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_16_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_16_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_16_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_16_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_16_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_16_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_16_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_16_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_17_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_17_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_17_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_17_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_17_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_17_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_17_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_17_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_17_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_17_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_18_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_18_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_18_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_18_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_18_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_18_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_18_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_18_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_18_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_18_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_19_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_19_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_19_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_19_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_19_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_19_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_19_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_19_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_19_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_19_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_1_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_1_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_1_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_1_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_1_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_1_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_1_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_1_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_1_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_1_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_20_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_20_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_20_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_20_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_20_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_20_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_20_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_20_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_20_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_20_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_21_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_21_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_21_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_21_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_21_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_21_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_21_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_21_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_21_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_21_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_2_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_2_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_2_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_2_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_2_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_2_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_2_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_2_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_2_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_2_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_3_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_3_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_3_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_3_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_3_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_3_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_3_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_3_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_3_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_3_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_4_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_4_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_4_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_4_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_4_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_4_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_4_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_4_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_4_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_4_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_5_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_5_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_5_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_5_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_5_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_5_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_5_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_5_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_5_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_5_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_6_1.npz",
+    "bytes": 346250
+  },
+  {
+    "path": "data/interim/github/mode1_6_10.npz",
+    "bytes": 346250
+  },
+  {
+    "path": "data/interim/github/mode1_6_2.npz",
+    "bytes": 344570
+  },
+  {
+    "path": "data/interim/github/mode1_6_3.npz",
+    "bytes": 346250
+  },
+  {
+    "path": "data/interim/github/mode1_6_4.npz",
+    "bytes": 346586
+  },
+  {
+    "path": "data/interim/github/mode1_6_5.npz",
+    "bytes": 345242
+  },
+  {
+    "path": "data/interim/github/mode1_6_6.npz",
+    "bytes": 346250
+  },
+  {
+    "path": "data/interim/github/mode1_6_7.npz",
+    "bytes": 345242
+  },
+  {
+    "path": "data/interim/github/mode1_6_8.npz",
+    "bytes": 346250
+  },
+  {
+    "path": "data/interim/github/mode1_6_9.npz",
+    "bytes": 344570
+  },
+  {
+    "path": "data/interim/github/mode1_7_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_7_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_7_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_7_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_7_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_7_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_7_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_7_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_7_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_7_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_8_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_8_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_8_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_8_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_8_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_8_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_8_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_8_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_8_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_8_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_9_1.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_9_10.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_9_2.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_9_3.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_9_4.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_9_5.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_9_6.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_9_7.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_9_8.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_9_9.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_normal_50.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode1_normal_500.npz",
+    "bytes": 10080842
+  },
+  {
+    "path": "data/interim/github/mode3_normal_50.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/interim/github/mode4_normal_50.npz",
+    "bytes": 1008842
+  },
+  {
+    "path": "data/processed/phase2/binary_dense_scores.npy",
+    "bytes": 39522128
+  },
+  {
+    "path": "data/processed/phase2/experiment_config.json",
+    "bytes": 1103
+  },
+  {
+    "path": "data/processed/phase2/healthy_train_reference.npz",
+    "bytes": 1332
+  },
+  {
+    "path": "data/processed/phase2/primary_dense_probabilities.npy",
+    "bytes": 829962128
+  },
+  {
+    "path": "data/processed/phase2/sensor_names.json",
+    "bytes": 584
+  },
+  {
+    "path": "data/processed/phase2/split_manifest.json",
+    "bytes": 9944
+  },
+  {
+    "path": "data/processed/phase2/TEP_FaultFree_Testing.RData.done.json",
+    "bytes": 103
+  },
+  {
+    "path": "data/processed/phase2/TEP_FaultFree_Training.RData.done.json",
+    "bytes": 104
+  },
+  {
+    "path": "data/processed/phase2/TEP_Faulty_Testing.RData.done.json",
+    "bytes": 102
+  },
+  {
+    "path": "data/processed/phase2/TEP_Faulty_Training.RData.done.json",
+    "bytes": 103
+  },
+  {
+    "path": "data/processed/phase2/testing.npy",
+    "bytes": 2096640128
+  },
+  {
+    "path": "data/processed/phase2/test_features.npz",
+    "bytes": 1264830730
+  },
+  {
+    "path": "data/processed/phase2/training.npy",
+    "bytes": 1092000128
+  },
+  {
+    "path": "data/processed/phase2/train_features.npz",
+    "bytes": 128322330
+  },
+  {
+    "path": "data/processed/phase2/validation_features.npz",
+    "bytes": 130477930
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/mode1_normal_50.xlsx",
+    "bytes": 1405037
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/mode1_normal_500.xlsx",
+    "bytes": 14121844
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_10_1.xlsx",
+    "bytes": 1405308
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_10_10.xlsx",
+    "bytes": 1405080
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_10_2.xlsx",
+    "bytes": 1405135
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_10_3.xlsx",
+    "bytes": 1404783
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_10_4.xlsx",
+    "bytes": 1406041
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_10_5.xlsx",
+    "bytes": 1405308
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_10_6.xlsx",
+    "bytes": 1405315
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_10_7.xlsx",
+    "bytes": 1404972
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_10_8.xlsx",
+    "bytes": 1405575
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_10_9.xlsx",
+    "bytes": 1404777
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_11_1.xlsx",
+    "bytes": 1406886
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_11_10.xlsx",
+    "bytes": 1406176
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_11_2.xlsx",
+    "bytes": 1406938
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_11_3.xlsx",
+    "bytes": 1406779
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_11_4.xlsx",
+    "bytes": 1406861
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_11_5.xlsx",
+    "bytes": 1407035
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_11_6.xlsx",
+    "bytes": 1407035
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_11_7.xlsx",
+    "bytes": 1406592
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_11_8.xlsx",
+    "bytes": 1407218
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_11_9.xlsx",
+    "bytes": 1406310
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_12_1.xlsx",
+    "bytes": 1405676
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_12_10.xlsx",
+    "bytes": 1406217
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_12_2.xlsx",
+    "bytes": 1406226
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_12_3.xlsx",
+    "bytes": 1406022
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_12_4.xlsx",
+    "bytes": 1406050
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_12_5.xlsx",
+    "bytes": 1406355
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_12_6.xlsx",
+    "bytes": 1406360
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_12_7.xlsx",
+    "bytes": 1405761
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_12_8.xlsx",
+    "bytes": 1406081
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_12_9.xlsx",
+    "bytes": 1406151
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_13_1.xlsx",
+    "bytes": 1406250
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_13_10.xlsx",
+    "bytes": 1406193
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_13_2.xlsx",
+    "bytes": 1406316
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_13_3.xlsx",
+    "bytes": 1406445
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_13_4.xlsx",
+    "bytes": 1406550
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_13_5.xlsx",
+    "bytes": 1405255
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_13_6.xlsx",
+    "bytes": 1405255
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_13_7.xlsx",
+    "bytes": 1406127
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_13_8.xlsx",
+    "bytes": 1406181
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_13_9.xlsx",
+    "bytes": 1406794
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_14_1.xlsx",
+    "bytes": 1406554
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_14_10.xlsx",
+    "bytes": 1407231
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_14_2.xlsx",
+    "bytes": 1407410
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_14_3.xlsx",
+    "bytes": 1406775
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_14_4.xlsx",
+    "bytes": 1407198
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_14_5.xlsx",
+    "bytes": 1407322
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_14_6.xlsx",
+    "bytes": 1407322
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_14_7.xlsx",
+    "bytes": 1407530
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_14_8.xlsx",
+    "bytes": 1407151
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_14_9.xlsx",
+    "bytes": 1407167
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_15_1.xlsx",
+    "bytes": 1405308
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_15_10.xlsx",
+    "bytes": 1405152
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_15_2.xlsx",
+    "bytes": 1405351
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_15_3.xlsx",
+    "bytes": 1405206
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_15_4.xlsx",
+    "bytes": 1405121
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_15_5.xlsx",
+    "bytes": 1405280
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_15_6.xlsx",
+    "bytes": 1405277
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_15_7.xlsx",
+    "bytes": 1405858
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_15_8.xlsx",
+    "bytes": 1405419
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_15_9.xlsx",
+    "bytes": 1405468
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_16_1.xlsx",
+    "bytes": 1404804
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_16_10.xlsx",
+    "bytes": 1405441
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_16_2.xlsx",
+    "bytes": 1405086
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_16_3.xlsx",
+    "bytes": 1404742
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_16_4.xlsx",
+    "bytes": 1405563
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_16_5.xlsx",
+    "bytes": 1405391
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_16_6.xlsx",
+    "bytes": 1405392
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_16_7.xlsx",
+    "bytes": 1405281
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_16_8.xlsx",
+    "bytes": 1405125
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_16_9.xlsx",
+    "bytes": 1405305
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_17_1.xlsx",
+    "bytes": 1406919
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_17_10.xlsx",
+    "bytes": 1406608
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_17_2.xlsx",
+    "bytes": 1407117
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_17_3.xlsx",
+    "bytes": 1406522
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_17_4.xlsx",
+    "bytes": 1407067
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_17_5.xlsx",
+    "bytes": 1407576
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_17_6.xlsx",
+    "bytes": 1407579
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_17_7.xlsx",
+    "bytes": 1406820
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_17_8.xlsx",
+    "bytes": 1406971
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_17_9.xlsx",
+    "bytes": 1406747
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_18_1.xlsx",
+    "bytes": 1406893
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_18_10.xlsx",
+    "bytes": 1406402
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_18_2.xlsx",
+    "bytes": 1406537
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_18_3.xlsx",
+    "bytes": 1406645
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_18_4.xlsx",
+    "bytes": 1405467
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_18_5.xlsx",
+    "bytes": 1406654
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_18_6.xlsx",
+    "bytes": 1406657
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_18_7.xlsx",
+    "bytes": 1406452
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_18_8.xlsx",
+    "bytes": 1406396
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_18_9.xlsx",
+    "bytes": 1406065
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_19_1.xlsx",
+    "bytes": 1405472
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_19_10.xlsx",
+    "bytes": 1406301
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_19_2.xlsx",
+    "bytes": 1405098
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_19_3.xlsx",
+    "bytes": 1406313
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_19_4.xlsx",
+    "bytes": 1405173
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_19_5.xlsx",
+    "bytes": 1405944
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_19_6.xlsx",
+    "bytes": 1405948
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_19_7.xlsx",
+    "bytes": 1406371
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_19_8.xlsx",
+    "bytes": 1406082
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_19_9.xlsx",
+    "bytes": 1405691
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_1_1.xlsx",
+    "bytes": 1404979
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_1_10.xlsx",
+    "bytes": 1404989
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_1_2.xlsx",
+    "bytes": 1404914
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_1_3.xlsx",
+    "bytes": 1404914
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_1_4.xlsx",
+    "bytes": 1405079
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_1_5.xlsx",
+    "bytes": 1405021
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_1_6.xlsx",
+    "bytes": 1405166
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_1_7.xlsx",
+    "bytes": 1404925
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_1_8.xlsx",
+    "bytes": 1404926
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_1_9.xlsx",
+    "bytes": 1405084
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_20_1.xlsx",
+    "bytes": 1407009
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_20_10.xlsx",
+    "bytes": 1407315
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_20_2.xlsx",
+    "bytes": 1407582
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_20_3.xlsx",
+    "bytes": 1406833
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_20_4.xlsx",
+    "bytes": 1407183
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_20_5.xlsx",
+    "bytes": 1406716
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_20_6.xlsx",
+    "bytes": 1407191
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_20_7.xlsx",
+    "bytes": 1406718
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_20_8.xlsx",
+    "bytes": 1407603
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_20_9.xlsx",
+    "bytes": 1407300
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_21_1.xlsx",
+    "bytes": 1405303
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_21_10.xlsx",
+    "bytes": 1405037
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_21_2.xlsx",
+    "bytes": 1404856
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_21_3.xlsx",
+    "bytes": 1405467
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_21_4.xlsx",
+    "bytes": 1405365
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_21_5.xlsx",
+    "bytes": 1405109
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_21_6.xlsx",
+    "bytes": 1405112
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_21_7.xlsx",
+    "bytes": 1404858
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_21_8.xlsx",
+    "bytes": 1405395
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_21_9.xlsx",
+    "bytes": 1405570
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_2_1.xlsx",
+    "bytes": 1406084
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_2_10.xlsx",
+    "bytes": 1406316
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_2_2.xlsx",
+    "bytes": 1406174
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_2_3.xlsx",
+    "bytes": 1406053
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_2_4.xlsx",
+    "bytes": 1406316
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_2_5.xlsx",
+    "bytes": 1405873
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_2_6.xlsx",
+    "bytes": 1406040
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_2_7.xlsx",
+    "bytes": 1406093
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_2_8.xlsx",
+    "bytes": 1406177
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_2_9.xlsx",
+    "bytes": 1406052
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_3_1.xlsx",
+    "bytes": 1405142
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_3_10.xlsx",
+    "bytes": 1404898
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_3_2.xlsx",
+    "bytes": 1405539
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_3_3.xlsx",
+    "bytes": 1405316
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_3_4.xlsx",
+    "bytes": 1404895
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_3_5.xlsx",
+    "bytes": 1405141
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_3_6.xlsx",
+    "bytes": 1404900
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_3_7.xlsx",
+    "bytes": 1405146
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_3_8.xlsx",
+    "bytes": 1405539
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_3_9.xlsx",
+    "bytes": 1405318
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_4_1.xlsx",
+    "bytes": 1405495
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_4_10.xlsx",
+    "bytes": 1405487
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_4_2.xlsx",
+    "bytes": 1405243
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_4_3.xlsx",
+    "bytes": 1405500
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_4_4.xlsx",
+    "bytes": 1405487
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_4_5.xlsx",
+    "bytes": 1405498
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_4_6.xlsx",
+    "bytes": 1405030
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_4_7.xlsx",
+    "bytes": 1405496
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_4_8.xlsx",
+    "bytes": 1405246
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_4_9.xlsx",
+    "bytes": 1405504
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_5_1.xlsx",
+    "bytes": 1404663
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_5_10.xlsx",
+    "bytes": 1405480
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_5_2.xlsx",
+    "bytes": 1405317
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_5_3.xlsx",
+    "bytes": 1405011
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_5_4.xlsx",
+    "bytes": 1405478
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_5_5.xlsx",
+    "bytes": 1404857
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_5_6.xlsx",
+    "bytes": 1404922
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_5_7.xlsx",
+    "bytes": 1404665
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_5_8.xlsx",
+    "bytes": 1405320
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_5_9.xlsx",
+    "bytes": 1405016
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_6_1.xlsx",
+    "bytes": 486749
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_6_10.xlsx",
+    "bytes": 486325
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_6_2.xlsx",
+    "bytes": 483931
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_6_3.xlsx",
+    "bytes": 486328
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_6_4.xlsx",
+    "bytes": 487073
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_6_5.xlsx",
+    "bytes": 484983
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_6_6.xlsx",
+    "bytes": 486861
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_6_7.xlsx",
+    "bytes": 484884
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_6_8.xlsx",
+    "bytes": 486750
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_6_9.xlsx",
+    "bytes": 483930
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_7_1.xlsx",
+    "bytes": 1405237
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_7_10.xlsx",
+    "bytes": 1405846
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_7_2.xlsx",
+    "bytes": 1405506
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_7_3.xlsx",
+    "bytes": 1405847
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_7_4.xlsx",
+    "bytes": 1405653
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_7_5.xlsx",
+    "bytes": 1405351
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_7_6.xlsx",
+    "bytes": 1405127
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_7_7.xlsx",
+    "bytes": 1405113
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_7_8.xlsx",
+    "bytes": 1405236
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_7_9.xlsx",
+    "bytes": 1405506
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_8_1.xlsx",
+    "bytes": 1406066
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_8_10.xlsx",
+    "bytes": 1407174
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_8_2.xlsx",
+    "bytes": 1405836
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_8_3.xlsx",
+    "bytes": 1407171
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_8_4.xlsx",
+    "bytes": 1406545
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_8_5.xlsx",
+    "bytes": 1406157
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_8_6.xlsx",
+    "bytes": 1407099
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_8_7.xlsx",
+    "bytes": 1405967
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_8_8.xlsx",
+    "bytes": 1406070
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_8_9.xlsx",
+    "bytes": 1405840
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_9_1.xlsx",
+    "bytes": 1405083
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_9_10.xlsx",
+    "bytes": 1405461
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_9_2.xlsx",
+    "bytes": 1404867
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_9_3.xlsx",
+    "bytes": 1405463
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_9_4.xlsx",
+    "bytes": 1405102
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_9_5.xlsx",
+    "bytes": 1405130
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_9_6.xlsx",
+    "bytes": 1404958
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_9_7.xlsx",
+    "bytes": 1405055
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_9_8.xlsx",
+    "bytes": 1405087
+  },
+  {
+    "path": "data/raw/github/simulations/mode_1/faults/mode1_9_9.xlsx",
+    "bytes": 1404872
+  },
+  {
+    "path": "data/raw/github/simulations/mode_3/mode3_normal_50.xlsx",
+    "bytes": 1405031
+  },
+  {
+    "path": "data/raw/github/simulations/mode_4/mode4_normal_50.xlsx",
+    "bytes": 1404154
+  },
+  {
+    "path": "experiments/fault_type_validation/.gitignore",
+    "bytes": 20
+  },
+  {
+    "path": "experiments/fault_type_validation/15_fault_type_validation.ipynb",
+    "bytes": 832772
+  },
+  {
+    "path": "experiments/fault_type_validation/checks.py",
+    "bytes": 2347
+  },
+  {
+    "path": "experiments/fault_type_validation/evaluate.py",
+    "bytes": 13586
+  },
+  {
+    "path": "experiments/fault_type_validation/execute_notebooks.py",
+    "bytes": 2015
+  },
+  {
+    "path": "experiments/fault_type_validation/README.md",
+    "bytes": 1739
+  },
+  {
+    "path": "experiments/fault_type_validation/report.py",
+    "bytes": 19068
+  },
+  {
+    "path": "experiments/fault_type_validation/cache/per_run_confusions.npz",
+    "bytes": 144733272
+  },
+  {
+    "path": "experiments/fault_type_validation/cache/notebook_runtime/.ipython/profile_default/history.sqlite",
+    "bytes": 40960
+  },
+  {
+    "path": "experiments/fault_type_validation/cache/notebook_runtime/.ipython/profile_default/startup/README",
+    "bytes": 371
+  },
+  {
+    "path": "experiments/fault_type_validation/references/NOTEBOOK_LOGIC_EXPLAINED.md",
+    "bytes": 41269
+  },
+  {
+    "path": "experiments/fault_type_validation/references/README.md",
+    "bytes": 9131
+  },
+  {
+    "path": "experiments/fault_type_validation/references/streamlit_app.py",
+    "bytes": 23275
+  },
+  {
+    "path": "experiments/next_step_forecasting/.gitignore",
+    "bytes": 48
+  },
+  {
+    "path": "experiments/next_step_forecasting/16_next_step_forecasting.ipynb",
+    "bytes": 876867
+  },
+  {
+    "path": "experiments/next_step_forecasting/checks.py",
+    "bytes": 2573
+  },
+  {
+    "path": "experiments/next_step_forecasting/config.json",
+    "bytes": 577
+  },
+  {
+    "path": "experiments/next_step_forecasting/predict.py",
+    "bytes": 2316
+  },
+  {
+    "path": "experiments/next_step_forecasting/README.md",
+    "bytes": 1654
+  },
+  {
+    "path": "experiments/next_step_forecasting/report.py",
+    "bytes": 12632
+  },
+  {
+    "path": "experiments/next_step_forecasting/run.py",
+    "bytes": 9299
+  },
+  {
+    "path": "experiments/next_step_forecasting/models/lstm_s2026.pt",
+    "bytes": 271906
+  },
+  {
+    "path": "experiments/next_step_forecasting/models/lstm_s42.pt",
+    "bytes": 271878
+  },
+  {
+    "path": "experiments/next_step_forecasting/models/lstm_s7.pt",
+    "bytes": 271288
+  },
+  {
+    "path": "experiments/next_step_forecasting/models/scaler.joblib",
+    "bytes": 1831
+  },
+  {
+    "path": "experiments/sensor_availability/.gitignore",
+    "bytes": 30
+  },
+  {
+    "path": "experiments/sensor_availability/11_availability_baseline.ipynb",
+    "bytes": 149471
+  },
+  {
+    "path": "experiments/sensor_availability/12_availability_degradation.ipynb",
+    "bytes": 490827
+  },
+  {
+    "path": "experiments/sensor_availability/13_phm_comparison.ipynb",
+    "bytes": 98204
+  },
+  {
+    "path": "experiments/sensor_availability/baseline.py",
+    "bytes": 5006
+  },
+  {
+    "path": "experiments/sensor_availability/build_complete_notebook.py",
+    "bytes": 16097
+  },
+  {
+    "path": "experiments/sensor_availability/common.py",
+    "bytes": 4120
+  },
+  {
+    "path": "experiments/sensor_availability/config.json",
+    "bytes": 1028
+  },
+  {
+    "path": "experiments/sensor_availability/degradation.py",
+    "bytes": 8476
+  },
+  {
+    "path": "experiments/sensor_availability/finalize.py",
+    "bytes": 2870
+  },
+  {
+    "path": "experiments/sensor_availability/notebooks.py",
+    "bytes": 18584
+  },
+  {
+    "path": "experiments/sensor_availability/phm_audit.py",
+    "bytes": 2979
+  },
+  {
+    "path": "experiments/sensor_availability/README.md",
+    "bytes": 2229
+  },
+  {
+    "path": "experiments/sensor_availability/report.py",
+    "bytes": 23456
+  },
+  {
+    "path": "experiments/sensor_availability/run.ps1",
+    "bytes": 1054
+  },
+  {
+    "path": "experiments/sensor_availability/validate_masks.py",
+    "bytes": 4065
+  },
+  {
+    "path": "experiments/sensor_availability/cache/fresh_baseline_scores.npy",
+    "bytes": 39522128
+  },
+  {
+    "path": "experiments/sensor_availability/cache/.ipython/profile_default/history.sqlite",
+    "bytes": 73728
+  },
+  {
+    "path": "experiments/sensor_availability/cache/.ipython/profile_default/startup/README",
+    "bytes": 371
+  },
+  {
+    "path": "experiments/sensor_availability/cache/complete_notebook/.ipython/profile_default/history.sqlite",
+    "bytes": 139264
+  },
+  {
+    "path": "experiments/sensor_availability/cache/complete_notebook/.ipython/profile_default/startup/README",
+    "bytes": 371
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_balanced_s2026.joblib",
+    "bytes": 46356
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_balanced_s2026.json",
+    "bytes": 637
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_balanced_s42.joblib",
+    "bytes": 46345
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_balanced_s42.json",
+    "bytes": 639
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_balanced_s7.joblib",
+    "bytes": 45935
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_balanced_s7.json",
+    "bytes": 615
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_natural_s2026.joblib",
+    "bytes": 43466
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_natural_s2026.json",
+    "bytes": 634
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_natural_s42.joblib",
+    "bytes": 44209
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_natural_s42.json",
+    "bytes": 624
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_natural_s7.joblib",
+    "bytes": 43071
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_natural_s7.json",
+    "bytes": 629
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_oversample_s42.joblib",
+    "bytes": 46286
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_oversample_s42.json",
+    "bytes": 621
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_undersample_s42.joblib",
+    "bytes": 45656
+  },
+  {
+    "path": "models/phase2/BinaryXGBoost_Statistical_undersample_s42.json",
+    "bytes": 640
+  },
+  {
+    "path": "models/phase2/CNN1D_Temporal_balanced_s2026.json",
+    "bytes": 994
+  },
+  {
+    "path": "models/phase2/CNN1D_Temporal_balanced_s2026.pt",
+    "bytes": 155912
+  },
+  {
+    "path": "models/phase2/CNN1D_Temporal_balanced_s42.json",
+    "bytes": 975
+  },
+  {
+    "path": "models/phase2/CNN1D_Temporal_balanced_s42.pt",
+    "bytes": 155824
+  },
+  {
+    "path": "models/phase2/CNN1D_Temporal_balanced_s7.json",
+    "bytes": 1005
+  },
+  {
+    "path": "models/phase2/CNN1D_Temporal_balanced_s7.pt",
+    "bytes": 155812
+  },
+  {
+    "path": "models/phase2/GRU_Temporal_balanced_s2026.json",
+    "bytes": 991
+  },
+  {
+    "path": "models/phase2/GRU_Temporal_balanced_s2026.pt",
+    "bytes": 130288
+  },
+  {
+    "path": "models/phase2/GRU_Temporal_balanced_s42.json",
+    "bytes": 988
+  },
+  {
+    "path": "models/phase2/GRU_Temporal_balanced_s42.pt",
+    "bytes": 130264
+  },
+  {
+    "path": "models/phase2/GRU_Temporal_balanced_s7.json",
+    "bytes": 970
+  },
+  {
+    "path": "models/phase2/GRU_Temporal_balanced_s7.pt",
+    "bytes": 130188
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Current_balanced_s42.joblib",
+    "bytes": 6836
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Current_balanced_s42.json",
+    "bytes": 999
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Current_natural_s2026.joblib",
+    "bytes": 6854
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Current_natural_s2026.json",
+    "bytes": 999
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Current_natural_s42.joblib",
+    "bytes": 6851
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Current_natural_s42.json",
+    "bytes": 994
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Current_natural_s7.joblib",
+    "bytes": 6850
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Current_natural_s7.json",
+    "bytes": 992
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Statistical_balanced_s2026.joblib",
+    "bytes": 33713
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Statistical_balanced_s2026.json",
+    "bytes": 993
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Statistical_balanced_s42.joblib",
+    "bytes": 33709
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Statistical_balanced_s42.json",
+    "bytes": 989
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Statistical_balanced_s7.joblib",
+    "bytes": 33708
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Statistical_balanced_s7.json",
+    "bytes": 987
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Statistical_natural_s42.joblib",
+    "bytes": 33692
+  },
+  {
+    "path": "models/phase2/LogisticRegression_Statistical_natural_s42.json",
+    "bytes": 1004
+  },
+  {
+    "path": "models/phase2/LSTM_Temporal_balanced_s2026.json",
+    "bytes": 995
+  },
+  {
+    "path": "models/phase2/LSTM_Temporal_balanced_s2026.pt",
+    "bytes": 160508
+  },
+  {
+    "path": "models/phase2/LSTM_Temporal_balanced_s42.json",
+    "bytes": 990
+  },
+  {
+    "path": "models/phase2/LSTM_Temporal_balanced_s42.pt",
+    "bytes": 160484
+  },
+  {
+    "path": "models/phase2/LSTM_Temporal_balanced_s7.json",
+    "bytes": 980
+  },
+  {
+    "path": "models/phase2/LSTM_Temporal_balanced_s7.pt",
+    "bytes": 160472
+  },
+  {
+    "path": "models/phase2/RandomForest_Current_balanced_s42.joblib",
+    "bytes": 9729813
+  },
+  {
+    "path": "models/phase2/RandomForest_Current_balanced_s42.json",
+    "bytes": 952
+  },
+  {
+    "path": "models/phase2/RandomForest_Current_natural_s2026.joblib",
+    "bytes": 9822340
+  },
+  {
+    "path": "models/phase2/RandomForest_Current_natural_s2026.json",
+    "bytes": 974
+  },
+  {
+    "path": "models/phase2/RandomForest_Current_natural_s42.joblib",
+    "bytes": 9754318
+  },
+  {
+    "path": "models/phase2/RandomForest_Current_natural_s42.json",
+    "bytes": 970
+  },
+  {
+    "path": "models/phase2/RandomForest_Current_natural_s7.joblib",
+    "bytes": 9474296
+  },
+  {
+    "path": "models/phase2/RandomForest_Current_natural_s7.json",
+    "bytes": 967
+  },
+  {
+    "path": "models/phase2/RandomForest_Statistical_balanced_s42.joblib",
+    "bytes": 5882253
+  },
+  {
+    "path": "models/phase2/RandomForest_Statistical_balanced_s42.json",
+    "bytes": 982
+  },
+  {
+    "path": "models/phase2/RandomForest_Statistical_natural_s2026.joblib",
+    "bytes": 5822698
+  },
+  {
+    "path": "models/phase2/RandomForest_Statistical_natural_s2026.json",
+    "bytes": 998
+  },
+  {
+    "path": "models/phase2/RandomForest_Statistical_natural_s42.joblib",
+    "bytes": 5894148
+  },
+  {
+    "path": "models/phase2/RandomForest_Statistical_natural_s42.json",
+    "bytes": 993
+  },
+  {
+    "path": "models/phase2/RandomForest_Statistical_natural_s7.joblib",
+    "bytes": 5981731
+  },
+  {
+    "path": "models/phase2/RandomForest_Statistical_natural_s7.json",
+    "bytes": 975
+  },
+  {
+    "path": "models/phase2/selection_lock.json",
+    "bytes": 3514
+  },
+  {
+    "path": "models/phase2/temporal_scaler.joblib",
+    "bytes": 1831
+  },
+  {
+    "path": "models/phase2/TEP_final_model.zip",
+    "bytes": 197347
+  },
+  {
+    "path": "models/phase2/UnknownBinaryXGBoost_Statistical_balanced_s2026.joblib",
+    "bytes": 46468
+  },
+  {
+    "path": "models/phase2/UnknownBinaryXGBoost_Statistical_balanced_s2026.json",
+    "bytes": 408
+  },
+  {
+    "path": "models/phase2/UnknownBinaryXGBoost_Statistical_balanced_s42.joblib",
+    "bytes": 47613
+  },
+  {
+    "path": "models/phase2/UnknownBinaryXGBoost_Statistical_balanced_s42.json",
+    "bytes": 404
+  },
+  {
+    "path": "models/phase2/UnknownBinaryXGBoost_Statistical_balanced_s7.joblib",
+    "bytes": 46743
+  },
+  {
+    "path": "models/phase2/UnknownBinaryXGBoost_Statistical_balanced_s7.json",
+    "bytes": 400
+  },
+  {
+    "path": "models/phase2/XGBoost_Current_balanced_s2026.joblib",
+    "bytes": 797377
+  },
+  {
+    "path": "models/phase2/XGBoost_Current_balanced_s2026.json",
+    "bytes": 939
+  },
+  {
+    "path": "models/phase2/XGBoost_Current_balanced_s42.joblib",
+    "bytes": 794404
+  },
+  {
+    "path": "models/phase2/XGBoost_Current_balanced_s42.json",
+    "bytes": 960
+  },
+  {
+    "path": "models/phase2/XGBoost_Current_balanced_s7.joblib",
+    "bytes": 794688
+  },
+  {
+    "path": "models/phase2/XGBoost_Current_balanced_s7.json",
+    "bytes": 974
+  },
+  {
+    "path": "models/phase2/XGBoost_Current_natural_s42.joblib",
+    "bytes": 795548
+  },
+  {
+    "path": "models/phase2/XGBoost_Current_natural_s42.json",
+    "bytes": 948
+  },
+  {
+    "path": "models/phase2/XGBoost_Statistical_balanced_s42.joblib",
+    "bytes": 715616
+  },
+  {
+    "path": "models/phase2/XGBoost_Statistical_balanced_s42.json",
+    "bytes": 983
+  },
+  {
+    "path": "models/phase2/XGBoost_Statistical_natural_s2026.joblib",
+    "bytes": 721365
+  },
+  {
+    "path": "models/phase2/XGBoost_Statistical_natural_s2026.json",
+    "bytes": 985
+  },
+  {
+    "path": "models/phase2/XGBoost_Statistical_natural_s42.joblib",
+    "bytes": 717612
+  },
+  {
+    "path": "models/phase2/XGBoost_Statistical_natural_s42.json",
+    "bytes": 983
+  },
+  {
+    "path": "models/phase2/XGBoost_Statistical_natural_s7.joblib",
+    "bytes": 719181
+  },
+  {
+    "path": "models/phase2/XGBoost_Statistical_natural_s7.json",
+    "bytes": 980
+  },
+  {
+    "path": "models/phase2/final_model/binary_detector.joblib",
+    "bytes": 46345
+  },
+  {
+    "path": "models/phase2/final_model/inference.py",
+    "bytes": 4505
+  },
+  {
+    "path": "models/phase2/final_model/manifest.json",
+    "bytes": 723
+  },
+  {
+    "path": "models/phase2/final_model/model.pt",
+    "bytes": 155824
+  },
+  {
+    "path": "models/phase2/final_model/README.md",
+    "bytes": 1538
+  },
+  {
+    "path": "models/phase2/final_model/scaler.joblib",
+    "bytes": 1831
+  },
+  {
+    "path": "models/phase2/final_model/selection_lock.json",
+    "bytes": 3514
+  },
+  {
+    "path": "models/phase2/final_model/sensor_names.json",
+    "bytes": 584
+  },
+  {
+    "path": "models/phase2/final_model/training_config.json",
+    "bytes": 1040
+  },
+  {
+    "path": "notebooks/00_TEP_전체_연구_과정과_결과.ipynb",
+    "bytes": 2011971
+  },
+  {
+    "path": "notebooks/01_data_inventory.ipynb",
+    "bytes": 91751
+  },
+  {
+    "path": "notebooks/02_process_understanding.ipynb",
+    "bytes": 52119
+  },
+  {
+    "path": "notebooks/03_fault_scenario_analysis.ipynb",
+    "bytes": 24402
+  },
+  {
+    "path": "notebooks/04_sensor_response_analysis.ipynb",
+    "bytes": 7016460
+  },
+  {
+    "path": "notebooks/05_dataset_compatibility.ipynb",
+    "bytes": 11415
+  },
+  {
+    "path": "notebooks/06_modeling_dataset.ipynb",
+    "bytes": 28840
+  },
+  {
+    "path": "notebooks/07_baseline_training.ipynb",
+    "bytes": 128354
+  },
+  {
+    "path": "notebooks/08_advanced_training.ipynb",
+    "bytes": 107296
+  },
+  {
+    "path": "notebooks/09_fault_diagnosis.ipynb",
+    "bytes": 178745
+  },
+  {
+    "path": "notebooks/10_explainability.ipynb",
+    "bytes": 96853
+  },
+  {
+    "path": "notebooks/14_TEP_종합_연구_노트북.ipynb",
+    "bytes": 2765468
+  },
+  {
+    "path": "notebooks/17_CNN_기능확장_종합안내.ipynb",
+    "bytes": 1397660
+  },
+  {
+    "path": "notebooks/18_TEP_PHM_전체모델_종합비교.ipynb",
+    "bytes": 1831704
+  },
+  {
+    "path": "reports/all_models/preview_0.png",
+    "bytes": 58074
+  },
+  {
+    "path": "reports/all_models/preview_4.png",
+    "bytes": 36011
+  },
+  {
+    "path": "reports/all_models/source_manifest.json",
+    "bytes": 18288
+  },
+  {
+    "path": "reports/all_models/validation.json",
+    "bytes": 287
+  },
+  {
+    "path": "reports/all_models/runtime/ipython/profile_default/history.sqlite",
+    "bytes": 1425408
+  },
+  {
+    "path": "reports/all_models/runtime/ipython/profile_default/startup/README",
+    "bytes": 371
+  },
+  {
+    "path": "reports/all_models/runtime/jupyter/kernels/tep-catalog/kernel.json",
+    "bytes": 571
+  },
+  {
+    "path": "reports/all_models/runtime/matplotlib/fontlist-v3.11.0.json",
+    "bytes": 149166
+  },
+  {
+    "path": "reports/all_models/tables/availability.csv",
+    "bytes": 1089
+  },
+  {
+    "path": "reports/all_models/tables/diagnosis_classes.csv",
+    "bytes": 300
+  },
+  {
+    "path": "reports/all_models/tables/diagnosis_faults.csv",
+    "bytes": 1076
+  },
+  {
+    "path": "reports/all_models/tables/forecast_test.csv",
+    "bytes": 3093
+  },
+  {
+    "path": "reports/all_models/tables/forecast_train.csv",
+    "bytes": 365
+  },
+  {
+    "path": "reports/all_models/tables/model_catalog.csv",
+    "bytes": 2094
+  },
+  {
+    "path": "reports/all_models/tables/phm_holdout.csv",
+    "bytes": 823
+  },
+  {
+    "path": "reports/all_models/tables/phm_holdout_accuracy.csv",
+    "bytes": 390
+  },
+  {
+    "path": "reports/all_models/tables/phm_specialist.csv",
+    "bytes": 663
+  },
+  {
+    "path": "reports/all_models/tables/phm_stage2_points.csv",
+    "bytes": 3047
+  },
+  {
+    "path": "reports/all_models/tables/phm_stage2_train.csv",
+    "bytes": 808
+  },
+  {
+    "path": "reports/all_models/tables/phm_stage3_points.csv",
+    "bytes": 3978
+  },
+  {
+    "path": "reports/all_models/tables/phm_stage3_train.csv",
+    "bytes": 1090
+  },
+  {
+    "path": "reports/all_models/tables/phm_stage4_ranges.csv",
+    "bytes": 3111
+  },
+  {
+    "path": "reports/all_models/tables/phm_stage4_train.csv",
+    "bytes": 4596
+  },
+  {
+    "path": "reports/all_models/tables/phm_stage5_points.csv",
+    "bytes": 4998
+  },
+  {
+    "path": "reports/all_models/tables/phm_stage5_train.csv",
+    "bytes": 1193
+  },
+  {
+    "path": "reports/all_models/tables/phm_stage7_train.csv",
+    "bytes": 285
+  },
+  {
+    "path": "reports/all_models/tables/tep_accuracy.csv",
+    "bytes": 1091
+  },
+  {
+    "path": "reports/all_models/tables/tep_all_results.csv",
+    "bytes": 21102
+  },
+  {
+    "path": "reports/all_models/tables/tep_imbalance.csv",
+    "bytes": 1034
+  },
+  {
+    "path": "reports/all_models/tables/tep_means.csv",
+    "bytes": 2006
+  },
+  {
+    "path": "reports/all_models/tables/tep_test.csv",
+    "bytes": 18678
+  },
+  {
+    "path": "reports/all_models/tables/v1_cv.csv",
+    "bytes": 9960
+  },
+  {
+    "path": "reports/all_models/tables/v1_cv_means.csv",
+    "bytes": 2381
+  },
+  {
+    "path": "reports/all_models/tables/v1_metrics.csv",
+    "bytes": 55918
+  },
+  {
+    "path": "reports/fault_type_validation/final_report.md",
+    "bytes": 8884
+  },
+  {
+    "path": "reports/fault_type_validation/notebook_validation.json",
+    "bytes": 331
+  },
+  {
+    "path": "reports/fault_type_validation/validation.json",
+    "bytes": 1589
+  },
+  {
+    "path": "reports/fault_type_validation/figures/availability_detection_vs_diagnosis.png",
+    "bytes": 82204
+  },
+  {
+    "path": "reports/fault_type_validation/figures/availability_per_fault_diagnosis.png",
+    "bytes": 41656
+  },
+  {
+    "path": "reports/fault_type_validation/figures/confusions_three_definitions.png",
+    "bytes": 82942
+  },
+  {
+    "path": "reports/fault_type_validation/figures/detection_vs_diagnosis_time.png",
+    "bytes": 131782
+  },
+  {
+    "path": "reports/fault_type_validation/figures/early_correct_diagnosis.png",
+    "bytes": 53293
+  },
+  {
+    "path": "reports/fault_type_validation/figures/per_fault_classification.png",
+    "bytes": 140027
+  },
+  {
+    "path": "reports/fault_type_validation/sources/protected_before.json",
+    "bytes": 7501
+  },
+  {
+    "path": "reports/fault_type_validation/sources/test_results.json",
+    "bytes": 529
+  },
+  {
+    "path": "reports/fault_type_validation/tables/argmax21_confusion.csv",
+    "bytes": 1497
+  },
+  {
+    "path": "reports/fault_type_validation/tables/argmax21_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/fault_type_validation/tables/availability_detection_vs_diagnosis.csv",
+    "bytes": 2104
+  },
+  {
+    "path": "reports/fault_type_validation/tables/availability_mean.csv",
+    "bytes": 1101
+  },
+  {
+    "path": "reports/fault_type_validation/tables/availability_per_class_metrics.csv",
+    "bytes": 21704
+  },
+  {
+    "path": "reports/fault_type_validation/tables/availability_per_fault.csv",
+    "bytes": 12734
+  },
+  {
+    "path": "reports/fault_type_validation/tables/classification_summary.csv",
+    "bytes": 297
+  },
+  {
+    "path": "reports/fault_type_validation/tables/conditional20_confusion.csv",
+    "bytes": 1335
+  },
+  {
+    "path": "reports/fault_type_validation/tables/conditional20_confusion.npy",
+    "bytes": 3328
+  },
+  {
+    "path": "reports/fault_type_validation/tables/confusion_pairs.csv",
+    "bytes": 19501
+  },
+  {
+    "path": "reports/fault_type_validation/tables/early_diagnosis_horizons.csv",
+    "bytes": 1869
+  },
+  {
+    "path": "reports/fault_type_validation/tables/gated21_confusion.csv",
+    "bytes": 1349
+  },
+  {
+    "path": "reports/fault_type_validation/tables/gated21_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/fault_type_validation/tables/partial_run_type_results.csv",
+    "bytes": 575765
+  },
+  {
+    "path": "reports/fault_type_validation/tables/partial_selected_diagnosis.csv",
+    "bytes": 630150
+  },
+  {
+    "path": "reports/fault_type_validation/tables/per_class_metrics.csv",
+    "bytes": 4191
+  },
+  {
+    "path": "reports/fault_type_validation/tables/per_fault_diagnosis_time.csv",
+    "bytes": 1073
+  },
+  {
+    "path": "reports/fault_type_validation/tables/prediction_examples.csv",
+    "bytes": 3865
+  },
+  {
+    "path": "reports/fault_type_validation/tables/reference_comparison.csv",
+    "bytes": 533
+  },
+  {
+    "path": "reports/fault_type_validation/tables/run_summary.csv",
+    "bytes": 384
+  },
+  {
+    "path": "reports/fault_type_validation/tables/run_type_results.csv",
+    "bytes": 571588
+  },
+  {
+    "path": "reports/figures/fault_01_analysis.png",
+    "bytes": 190706
+  },
+  {
+    "path": "reports/figures/fault_02_analysis.png",
+    "bytes": 217802
+  },
+  {
+    "path": "reports/figures/fault_03_analysis.png",
+    "bytes": 254844
+  },
+  {
+    "path": "reports/figures/fault_04_analysis.png",
+    "bytes": 276391
+  },
+  {
+    "path": "reports/figures/fault_05_analysis.png",
+    "bytes": 246252
+  },
+  {
+    "path": "reports/figures/fault_06_analysis.png",
+    "bytes": 188200
+  },
+  {
+    "path": "reports/figures/fault_07_analysis.png",
+    "bytes": 259729
+  },
+  {
+    "path": "reports/figures/fault_08_analysis.png",
+    "bytes": 214128
+  },
+  {
+    "path": "reports/figures/fault_09_analysis.png",
+    "bytes": 271442
+  },
+  {
+    "path": "reports/figures/fault_10_analysis.png",
+    "bytes": 223884
+  },
+  {
+    "path": "reports/figures/fault_11_analysis.png",
+    "bytes": 279190
+  },
+  {
+    "path": "reports/figures/fault_12_analysis.png",
+    "bytes": 259647
+  },
+  {
+    "path": "reports/figures/fault_13_analysis.png",
+    "bytes": 217336
+  },
+  {
+    "path": "reports/figures/fault_14_analysis.png",
+    "bytes": 269323
+  },
+  {
+    "path": "reports/figures/fault_15_analysis.png",
+    "bytes": 268895
+  },
+  {
+    "path": "reports/figures/fault_16_analysis.png",
+    "bytes": 265274
+  },
+  {
+    "path": "reports/figures/fault_17_analysis.png",
+    "bytes": 236497
+  },
+  {
+    "path": "reports/figures/fault_18_analysis.png",
+    "bytes": 240390
+  },
+  {
+    "path": "reports/figures/fault_19_analysis.png",
+    "bytes": 250585
+  },
+  {
+    "path": "reports/figures/fault_20_analysis.png",
+    "bytes": 273487
+  },
+  {
+    "path": "reports/figures/fault_21_analysis.png",
+    "bytes": 257053
+  },
+  {
+    "path": "reports/figures/fault_response_overview.png",
+    "bytes": 63544
+  },
+  {
+    "path": "reports/figures/overview/preview_00.png",
+    "bytes": 50436
+  },
+  {
+    "path": "reports/figures/overview/preview_01.png",
+    "bytes": 52352
+  },
+  {
+    "path": "reports/figures/overview/preview_04.png",
+    "bytes": 94858
+  },
+  {
+    "path": "reports/figures/overview/preview_06.png",
+    "bytes": 40924
+  },
+  {
+    "path": "reports/figures/overview/preview_10.png",
+    "bytes": 130763
+  },
+  {
+    "path": "reports/figures/overview/preview_14.png",
+    "bytes": 22481
+  },
+  {
+    "path": "reports/figures/phase2/fault_01_shap_response.png",
+    "bytes": 253039
+  },
+  {
+    "path": "reports/figures/phase2/fault_02_shap_response.png",
+    "bytes": 194102
+  },
+  {
+    "path": "reports/figures/phase2/fault_03_shap_response.png",
+    "bytes": 472502
+  },
+  {
+    "path": "reports/figures/phase2/fault_04_shap_response.png",
+    "bytes": 422997
+  },
+  {
+    "path": "reports/figures/phase2/fault_05_shap_response.png",
+    "bytes": 464051
+  },
+  {
+    "path": "reports/figures/phase2/fault_06_shap_response.png",
+    "bytes": 137995
+  },
+  {
+    "path": "reports/figures/phase2/fault_07_shap_response.png",
+    "bytes": 258091
+  },
+  {
+    "path": "reports/figures/phase2/fault_08_shap_response.png",
+    "bytes": 294845
+  },
+  {
+    "path": "reports/figures/phase2/fault_09_shap_response.png",
+    "bytes": 494064
+  },
+  {
+    "path": "reports/figures/phase2/fault_10_shap_response.png",
+    "bytes": 355590
+  },
+  {
+    "path": "reports/figures/phase2/fault_11_shap_response.png",
+    "bytes": 320780
+  },
+  {
+    "path": "reports/figures/phase2/fault_12_shap_response.png",
+    "bytes": 358853
+  },
+  {
+    "path": "reports/figures/phase2/fault_13_shap_response.png",
+    "bytes": 248135
+  },
+  {
+    "path": "reports/figures/phase2/fault_14_shap_response.png",
+    "bytes": 447804
+  },
+  {
+    "path": "reports/figures/phase2/fault_15_shap_response.png",
+    "bytes": 477572
+  },
+  {
+    "path": "reports/figures/phase2/fault_16_shap_response.png",
+    "bytes": 402764
+  },
+  {
+    "path": "reports/figures/phase2/fault_17_shap_response.png",
+    "bytes": 222765
+  },
+  {
+    "path": "reports/figures/phase2/fault_18_shap_response.png",
+    "bytes": 124802
+  },
+  {
+    "path": "reports/figures/phase2/fault_19_shap_response.png",
+    "bytes": 514671
+  },
+  {
+    "path": "reports/figures/phase2/fault_20_shap_response.png",
+    "bytes": 310164
+  },
+  {
+    "path": "reports/figures/phase2/fault_performance_delay.png",
+    "bytes": 120174
+  },
+  {
+    "path": "reports/figures/phase2/model_comparison.png",
+    "bytes": 63586
+  },
+  {
+    "path": "reports/figures/phase2/primary_confusion.png",
+    "bytes": 75391
+  },
+  {
+    "path": "reports/figures/phase2/primary_shap.png",
+    "bytes": 55972
+  },
+  {
+    "path": "reports/markdown/01_dataset_audit.md",
+    "bytes": 5605
+  },
+  {
+    "path": "reports/markdown/02_process_variables.md",
+    "bytes": 11580
+  },
+  {
+    "path": "reports/markdown/03_fault_catalog.md",
+    "bytes": 5444
+  },
+  {
+    "path": "reports/markdown/04_fault_sensor_response.md",
+    "bytes": 6682
+  },
+  {
+    "path": "reports/markdown/05_compatibility_report.md",
+    "bytes": 3956
+  },
+  {
+    "path": "reports/markdown/06_phase1_summary.md",
+    "bytes": 6569
+  },
+  {
+    "path": "reports/markdown/07_phase2_experiment_design.md",
+    "bytes": 6431
+  },
+  {
+    "path": "reports/markdown/08_model_performance.md",
+    "bytes": 5666
+  },
+  {
+    "path": "reports/markdown/09_fault_diagnosis_and_delay.md",
+    "bytes": 6264
+  },
+  {
+    "path": "reports/markdown/10_explainability_and_unknown_faults.md",
+    "bytes": 9786
+  },
+  {
+    "path": "reports/markdown/11_final_research_report.md",
+    "bytes": 9106
+  },
+  {
+    "path": "reports/markdown/12_model_card.md",
+    "bytes": 3263
+  },
+  {
+    "path": "reports/markdown/13_research_questions.md",
+    "bytes": 2546
+  },
+  {
+    "path": "reports/model_extension_overview/accuracy_by_model_seed.csv",
+    "bytes": 2169
+  },
+  {
+    "path": "reports/model_extension_overview/accuracy_model_summary.csv",
+    "bytes": 1124
+  },
+  {
+    "path": "reports/model_extension_overview/structure_preview.png",
+    "bytes": 55280
+  },
+  {
+    "path": "reports/model_extension_overview/validation.json",
+    "bytes": 248
+  },
+  {
+    "path": "reports/model_extension_overview/runtime/ipython/profile_default/history.sqlite",
+    "bytes": 98304
+  },
+  {
+    "path": "reports/model_extension_overview/runtime/ipython/profile_default/startup/README",
+    "bytes": 371
+  },
+  {
+    "path": "reports/model_extension_overview/runtime/jupyter/kernels/tep-overview/kernel.json",
+    "bytes": 596
+  },
+  {
+    "path": "reports/model_extension_overview/runtime/matplotlib/fontlist-v3.11.0.json",
+    "bytes": 149166
+  },
+  {
+    "path": "reports/next_step_forecasting/api_checks.json",
+    "bytes": 401
+  },
+  {
+    "path": "reports/next_step_forecasting/final_report.md",
+    "bytes": 5616
+  },
+  {
+    "path": "reports/next_step_forecasting/validation.json",
+    "bytes": 361
+  },
+  {
+    "path": "reports/next_step_forecasting/figures/forecast_examples.png",
+    "bytes": 315021
+  },
+  {
+    "path": "reports/next_step_forecasting/figures/lstm_vs_persistence.png",
+    "bytes": 63305
+  },
+  {
+    "path": "reports/next_step_forecasting/figures/per_variable_forecast_error.png",
+    "bytes": 135802
+  },
+  {
+    "path": "reports/next_step_forecasting/figures/validation_learning.png",
+    "bytes": 58105
+  },
+  {
+    "path": "reports/next_step_forecasting/tables/common_seed_summary.csv",
+    "bytes": 722
+  },
+  {
+    "path": "reports/next_step_forecasting/tables/forecast_examples.csv",
+    "bytes": 2267233
+  },
+  {
+    "path": "reports/next_step_forecasting/tables/per_variable_metrics.csv",
+    "bytes": 68720
+  },
+  {
+    "path": "reports/next_step_forecasting/tables/test_summary.csv",
+    "bytes": 3094
+  },
+  {
+    "path": "reports/next_step_forecasting/tables/training_history.csv",
+    "bytes": 2338
+  },
+  {
+    "path": "reports/next_step_forecasting/tables/validation_summary.csv",
+    "bytes": 362
+  },
+  {
+    "path": "reports/sensor_availability/baseline.json",
+    "bytes": 1161
+  },
+  {
+    "path": "reports/sensor_availability/final_report.md",
+    "bytes": 12614
+  },
+  {
+    "path": "reports/sensor_availability/figures/availability_masks.png",
+    "bytes": 73761
+  },
+  {
+    "path": "reports/sensor_availability/figures/coverage_and_detection.png",
+    "bytes": 84020
+  },
+  {
+    "path": "reports/sensor_availability/figures/delay_comparison.png",
+    "bytes": 81151
+  },
+  {
+    "path": "reports/sensor_availability/figures/fault_detection_heatmap.png",
+    "bytes": 151387
+  },
+  {
+    "path": "reports/sensor_availability/figures/phm_tep_availability.png",
+    "bytes": 53226
+  },
+  {
+    "path": "reports/sensor_availability/sources/baseline_gate.json",
+    "bytes": 89
+  },
+  {
+    "path": "reports/sensor_availability/sources/complete_notebook_validation.json",
+    "bytes": 927
+  },
+  {
+    "path": "reports/sensor_availability/sources/experiment_code_checksums.json",
+    "bytes": 784
+  },
+  {
+    "path": "reports/sensor_availability/sources/final_validation.json",
+    "bytes": 2939
+  },
+  {
+    "path": "reports/sensor_availability/sources/mask_validation.json",
+    "bytes": 7010
+  },
+  {
+    "path": "reports/sensor_availability/sources/notebook_validation.json",
+    "bytes": 416
+  },
+  {
+    "path": "reports/sensor_availability/sources/phm_definition_audit.json",
+    "bytes": 3148
+  },
+  {
+    "path": "reports/sensor_availability/sources/pilot_gate.json",
+    "bytes": 277
+  },
+  {
+    "path": "reports/sensor_availability/sources/preservation_check.json",
+    "bytes": 152
+  },
+  {
+    "path": "reports/sensor_availability/sources/protected_files_before.json",
+    "bytes": 24127
+  },
+  {
+    "path": "reports/sensor_availability/tables/baseline_events.csv",
+    "bytes": 414525
+  },
+  {
+    "path": "reports/sensor_availability/tables/baseline_reproduction.csv",
+    "bytes": 778
+  },
+  {
+    "path": "reports/sensor_availability/tables/compact_results.csv",
+    "bytes": 610
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.000_s42.csv",
+    "bytes": 668777
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.000_s43.csv",
+    "bytes": 668777
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.000_s44.csv",
+    "bytes": 668777
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.100_s42.csv",
+    "bytes": 667468
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.100_s43.csv",
+    "bytes": 667403
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.100_s44.csv",
+    "bytes": 667471
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.250_s42.csv",
+    "bytes": 665482
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.250_s43.csv",
+    "bytes": 665422
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.250_s44.csv",
+    "bytes": 665471
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.400_s42.csv",
+    "bytes": 663454
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.400_s43.csv",
+    "bytes": 663417
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.400_s44.csv",
+    "bytes": 663443
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.531_s42.csv",
+    "bytes": 661689
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.531_s43.csv",
+    "bytes": 661667
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_full_censor_r0.531_s44.csv",
+    "bytes": 661620
+  },
+  {
+    "path": "reports/sensor_availability/tables/events_partial_control_r0.250_s42.csv",
+    "bytes": 685733
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.000_s42.csv",
+    "bytes": 1178
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.000_s43.csv",
+    "bytes": 1178
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.000_s44.csv",
+    "bytes": 1178
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.100_s42.csv",
+    "bytes": 1211
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.100_s43.csv",
+    "bytes": 1211
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.100_s44.csv",
+    "bytes": 1211
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.250_s42.csv",
+    "bytes": 1270
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.250_s43.csv",
+    "bytes": 1257
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.250_s44.csv",
+    "bytes": 1270
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.400_s42.csv",
+    "bytes": 1217
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.400_s43.csv",
+    "bytes": 1217
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.400_s44.csv",
+    "bytes": 1231
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.531_s42.csv",
+    "bytes": 1299
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.531_s43.csv",
+    "bytes": 1300
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_full_censor_r0.531_s44.csv",
+    "bytes": 1300
+  },
+  {
+    "path": "reports/sensor_availability/tables/faults_partial_control_r0.250_s42.csv",
+    "bytes": 1320
+  },
+  {
+    "path": "reports/sensor_availability/tables/fault_results.csv",
+    "bytes": 16596
+  },
+  {
+    "path": "reports/sensor_availability/tables/full_summary.csv",
+    "bytes": 5897
+  },
+  {
+    "path": "reports/sensor_availability/tables/mask_equivalence_checks.csv",
+    "bytes": 1957
+  },
+  {
+    "path": "reports/sensor_availability/tables/partial_paired_delays.csv",
+    "bytes": 218
+  },
+  {
+    "path": "reports/sensor_availability/tables/phm_tep_comparison.csv",
+    "bytes": 667
+  },
+  {
+    "path": "reports/sensor_availability/tables/phm_verified_events.csv",
+    "bytes": 11083
+  },
+  {
+    "path": "reports/sensor_availability/tables/pilot_summary.csv",
+    "bytes": 3858
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.000_s42.json",
+    "bytes": 1485
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.000_s43.json",
+    "bytes": 1485
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.000_s44.json",
+    "bytes": 1485
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.100_s42.json",
+    "bytes": 1532
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.100_s43.json",
+    "bytes": 1532
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.100_s44.json",
+    "bytes": 1532
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.250_s42.json",
+    "bytes": 1539
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.250_s43.json",
+    "bytes": 1527
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.250_s44.json",
+    "bytes": 1539
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.400_s42.json",
+    "bytes": 1532
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.400_s43.json",
+    "bytes": 1530
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.400_s44.json",
+    "bytes": 1533
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.531_s42.json",
+    "bytes": 1539
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.531_s43.json",
+    "bytes": 1541
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_full_censor_r0.531_s44.json",
+    "bytes": 1541
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_mean_sd.csv",
+    "bytes": 1841
+  },
+  {
+    "path": "reports/sensor_availability/tables/summary_partial_control_r0.250_s42.json",
+    "bytes": 1542
+  },
+  {
+    "path": "reports/sources/environment.json",
+    "bytes": 336
+  },
+  {
+    "path": "reports/sources/github_download.json",
+    "bytes": 43570
+  },
+  {
+    "path": "reports/sources/harvard_metadata.json",
+    "bytes": 11206
+  },
+  {
+    "path": "reports/sources/notebook_validation.json",
+    "bytes": 656
+  },
+  {
+    "path": "reports/sources/overview_notebook_validation.json",
+    "bytes": 230
+  },
+  {
+    "path": "reports/sources/phase2_split_manifest.json",
+    "bytes": 9944
+  },
+  {
+    "path": "reports/sources/test_validation.txt",
+    "bytes": 829
+  },
+  {
+    "path": "reports/sources/phase2/artifact_validation.json",
+    "bytes": 452
+  },
+  {
+    "path": "reports/sources/phase2/code_manifest.json",
+    "bytes": 1686
+  },
+  {
+    "path": "reports/sources/phase2/dense_complete.json",
+    "bytes": 167
+  },
+  {
+    "path": "reports/sources/phase2/dense_metrics.json",
+    "bytes": 1380
+  },
+  {
+    "path": "reports/sources/phase2/environment.json",
+    "bytes": 456
+  },
+  {
+    "path": "reports/sources/phase2/explainability.json",
+    "bytes": 572
+  },
+  {
+    "path": "reports/sources/phase2/notebook_validation.json",
+    "bytes": 632
+  },
+  {
+    "path": "reports/sources/phase2/test_validation.txt",
+    "bytes": 1780
+  },
+  {
+    "path": "reports/tables/a_class_counts.csv",
+    "bytes": 431
+  },
+  {
+    "path": "reports/tables/a_deviation_onsets.csv",
+    "bytes": 123048
+  },
+  {
+    "path": "reports/tables/a_duplicate_series.csv",
+    "bytes": 14290
+  },
+  {
+    "path": "reports/tables/a_fault_response.csv",
+    "bytes": 94688
+  },
+  {
+    "path": "reports/tables/a_inventory.csv",
+    "bytes": 156827
+  },
+  {
+    "path": "reports/tables/a_mode1_reference.csv",
+    "bytes": 2012
+  },
+  {
+    "path": "reports/tables/a_normal_mode_statistics.csv",
+    "bytes": 16729
+  },
+  {
+    "path": "reports/tables/a_partial_overlaps.csv",
+    "bytes": 31
+  },
+  {
+    "path": "reports/tables/a_run_hashes.csv",
+    "bytes": 33369
+  },
+  {
+    "path": "reports/tables/a_variable_statistics.csv",
+    "bytes": 979247
+  },
+  {
+    "path": "reports/tables/b_all_runs.csv",
+    "bytes": 6656519
+  },
+  {
+    "path": "reports/tables/b_class_counts.csv",
+    "bytes": 1900
+  },
+  {
+    "path": "reports/tables/b_duplicate_series.csv",
+    "bytes": 181
+  },
+  {
+    "path": "reports/tables/b_inventory.csv",
+    "bytes": 253
+  },
+  {
+    "path": "reports/tables/b_prefix_groups.csv",
+    "bytes": 182053
+  },
+  {
+    "path": "reports/tables/candidate_normal_distribution_comparison.csv",
+    "bytes": 4036
+  },
+  {
+    "path": "reports/tables/compatibility.csv",
+    "bytes": 926
+  },
+  {
+    "path": "reports/tables/cross_dataset_downsample_checks.csv",
+    "bytes": 36538
+  },
+  {
+    "path": "reports/tables/cross_dataset_exact_matches.csv",
+    "bytes": 247
+  },
+  {
+    "path": "reports/tables/fault_catalog.csv",
+    "bytes": 3272
+  },
+  {
+    "path": "reports/tables/supplied_checkout_inventory.csv",
+    "bytes": 37191
+  },
+  {
+    "path": "reports/tables/TEP_FaultFree_Testing_audit.json",
+    "bytes": 1353
+  },
+  {
+    "path": "reports/tables/TEP_FaultFree_Testing_run1_statistics.csv",
+    "bytes": 4836
+  },
+  {
+    "path": "reports/tables/TEP_FaultFree_Testing_runs.csv",
+    "bytes": 159573
+  },
+  {
+    "path": "reports/tables/TEP_FaultFree_Training_audit.json",
+    "bytes": 1357
+  },
+  {
+    "path": "reports/tables/TEP_FaultFree_Training_run1_statistics.csv",
+    "bytes": 4654
+  },
+  {
+    "path": "reports/tables/TEP_FaultFree_Training_runs.csv",
+    "bytes": 160073
+  },
+  {
+    "path": "reports/tables/TEP_Faulty_Testing_audit.json",
+    "bytes": 1513
+  },
+  {
+    "path": "reports/tables/TEP_Faulty_Testing_run1_statistics.csv",
+    "bytes": 93028
+  },
+  {
+    "path": "reports/tables/TEP_Faulty_Testing_runs.csv",
+    "bytes": 3163832
+  },
+  {
+    "path": "reports/tables/TEP_Faulty_Training_audit.json",
+    "bytes": 1515
+  },
+  {
+    "path": "reports/tables/TEP_Faulty_Training_run1_statistics.csv",
+    "bytes": 90034
+  },
+  {
+    "path": "reports/tables/TEP_Faulty_Training_runs.csv",
+    "bytes": 3173584
+  },
+  {
+    "path": "reports/tables/variable_dictionary.csv",
+    "bytes": 8672
+  },
+  {
+    "path": "reports/tables/phase2/b_fault_sensor_response.csv",
+    "bytes": 69195
+  },
+  {
+    "path": "reports/tables/phase2/CNN1D_Temporal_balanced_s2026_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/CNN1D_Temporal_balanced_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/CNN1D_Temporal_balanced_s7_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/dense_alarm_episodes.csv",
+    "bytes": 1077614
+  },
+  {
+    "path": "reports/tables/phase2/dense_detection_delays.csv",
+    "bytes": 2362
+  },
+  {
+    "path": "reports/tables/phase2/fault_cause_comparison.csv",
+    "bytes": 4498
+  },
+  {
+    "path": "reports/tables/phase2/GRU_Temporal_balanced_s2026_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/GRU_Temporal_balanced_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/GRU_Temporal_balanced_s7_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/imbalance_comparison.csv",
+    "bytes": 1031
+  },
+  {
+    "path": "reports/tables/phase2/latency_benchmark.csv",
+    "bytes": 823
+  },
+  {
+    "path": "reports/tables/phase2/LogisticRegression_Current_balanced_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/LogisticRegression_Current_natural_s2026_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/LogisticRegression_Current_natural_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/LogisticRegression_Current_natural_s7_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/LogisticRegression_Statistical_balanced_s2026_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/LogisticRegression_Statistical_balanced_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/LogisticRegression_Statistical_balanced_s7_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/LogisticRegression_Statistical_natural_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/LSTM_Temporal_balanced_s2026_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/LSTM_Temporal_balanced_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/LSTM_Temporal_balanced_s7_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/model_performance_summary.csv",
+    "bytes": 2052
+  },
+  {
+    "path": "reports/tables/phase2/primary_cluster_bootstrap_ci.csv",
+    "bytes": 259
+  },
+  {
+    "path": "reports/tables/phase2/primary_conditional_diagnosis_confusion.csv",
+    "bytes": 1588
+  },
+  {
+    "path": "reports/tables/phase2/primary_conditional_diagnosis_confusion.npy",
+    "bytes": 3328
+  },
+  {
+    "path": "reports/tables/phase2/primary_dense_classification_report.csv",
+    "bytes": 1211
+  },
+  {
+    "path": "reports/tables/phase2/primary_dense_confusion.csv",
+    "bytes": 1613
+  },
+  {
+    "path": "reports/tables/phase2/primary_dense_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/primary_dense_per_fault.csv",
+    "bytes": 840
+  },
+  {
+    "path": "reports/tables/phase2/RandomForest_Current_balanced_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/RandomForest_Current_natural_s2026_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/RandomForest_Current_natural_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/RandomForest_Current_natural_s7_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/RandomForest_Statistical_balanced_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/RandomForest_Statistical_natural_s2026_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/RandomForest_Statistical_natural_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/RandomForest_Statistical_natural_s7_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/shap_sensor_rankings.csv",
+    "bytes": 233590
+  },
+  {
+    "path": "reports/tables/phase2/temporal_history.csv",
+    "bytes": 23482
+  },
+  {
+    "path": "reports/tables/phase2/test_comparison.csv",
+    "bytes": 18882
+  },
+  {
+    "path": "reports/tables/phase2/test_comparison_per_fault.csv",
+    "bytes": 57382
+  },
+  {
+    "path": "reports/tables/phase2/validation_baselines.csv",
+    "bytes": 9552
+  },
+  {
+    "path": "reports/tables/phase2/validation_binary.csv",
+    "bytes": 2342
+  },
+  {
+    "path": "reports/tables/phase2/validation_temporal.csv",
+    "bytes": 3792
+  },
+  {
+    "path": "reports/tables/phase2/XGBoost_Current_balanced_s2026_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/XGBoost_Current_balanced_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/XGBoost_Current_balanced_s7_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/XGBoost_Current_natural_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/XGBoost_Statistical_balanced_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/XGBoost_Statistical_natural_s2026_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/XGBoost_Statistical_natural_s42_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "reports/tables/phase2/XGBoost_Statistical_natural_s7_confusion.npy",
+    "bytes": 3656
+  },
+  {
+    "path": "src/data/audit.py",
+    "bytes": 5645
+  },
+  {
+    "path": "src/data/phase2.py",
+    "bytes": 3350
+  },
+  {
+    "path": "src/evaluation/phase2.py",
+    "bytes": 2624
+  },
+  {
+    "path": "src/evaluation/run_phase2.py",
+    "bytes": 11767
+  },
+  {
+    "path": "src/features/phase2.py",
+    "bytes": 2092
+  },
+  {
+    "path": "src/models/inference.py",
+    "bytes": 4505
+  },
+  {
+    "path": "src/models/phase2.py",
+    "bytes": 6558
+  },
+  {
+    "path": "src/models/temporal.py",
+    "bytes": 5119
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/.gitattributes",
+    "bytes": 109
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/.gitignore",
+    "bytes": 3078
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/LICENSE",
+    "bytes": 1080
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/README.md",
+    "bytes": 4684
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/mode1_normal_50.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/mode1_normal_500.xlsx",
+    "bytes": 133
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/README.md",
+    "bytes": 3689
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_10_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_11_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_11_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_11_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_11_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_11_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_11_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_11_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_11_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_11_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_11_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_12_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_12_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_12_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_12_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_12_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_12_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_12_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_12_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_12_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_12_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_13_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_13_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_13_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_13_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_13_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_13_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_13_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_13_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_13_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_13_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_14_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_14_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_14_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_14_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_14_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_14_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_14_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_14_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_14_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_14_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_15_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_15_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_15_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_15_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_15_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_15_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_15_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_15_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_15_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_15_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_16_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_16_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_16_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_16_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_16_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_16_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_16_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_16_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_16_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_16_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_17_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_17_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_17_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_17_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_17_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_17_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_17_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_17_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_17_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_17_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_18_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_18_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_18_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_18_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_18_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_18_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_18_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_18_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_18_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_18_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_19_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_19_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_19_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_19_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_19_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_19_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_19_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_19_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_19_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_19_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_1_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_1_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_1_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_1_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_1_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_1_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_1_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_1_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_1_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_1_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_20_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_20_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_20_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_20_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_20_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_20_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_20_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_20_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_20_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_20_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_21_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_21_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_21_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_21_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_21_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_21_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_21_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_21_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_21_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_21_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_2_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_2_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_2_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_2_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_2_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_2_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_2_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_2_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_2_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_2_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_3_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_3_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_3_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_3_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_3_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_3_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_3_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_3_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_3_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_3_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_4_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_4_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_4_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_4_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_4_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_4_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_4_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_4_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_4_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_4_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_5_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_5_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_5_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_5_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_5_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_5_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_5_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_5_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_5_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_5_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_6_1.xlsx",
+    "bytes": 131
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_6_10.xlsx",
+    "bytes": 131
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_6_2.xlsx",
+    "bytes": 131
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_6_3.xlsx",
+    "bytes": 131
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_6_4.xlsx",
+    "bytes": 131
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_6_5.xlsx",
+    "bytes": 131
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_6_6.xlsx",
+    "bytes": 131
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_6_7.xlsx",
+    "bytes": 131
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_6_8.xlsx",
+    "bytes": 131
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_6_9.xlsx",
+    "bytes": 131
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_7_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_7_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_7_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_7_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_7_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_7_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_7_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_7_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_7_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_7_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_8_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_8_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_8_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_8_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_8_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_8_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_8_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_8_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_8_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_8_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_9_1.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_9_10.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_9_2.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_9_3.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_9_4.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_9_5.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_9_6.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_9_7.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_9_8.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_1/faults/mode1_9_9.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_3/mode3_normal_50.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulations/mode_4/mode4_normal_50.xlsx",
+    "bytes": 132
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/ADCHEM15_0010_MS.pdf",
+    "bytes": 513559
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/auto_run.m",
+    "bytes": 1165
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/Mode1SkogeInit.mat",
+    "bytes": 13944
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/Mode1xInitial.mat",
+    "bytes": 13592
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/Mode3xInitial.mat",
+    "bytes": 1884
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/Mode4xInitial.mat",
+    "bytes": 1824
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/Mode_1_Init.m",
+    "bytes": 2270
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/Mode_3_Init.m",
+    "bytes": 1200
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/Mode_4_Init.m",
+    "bytes": 1480
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/MultiLoop_mode1.mdl",
+    "bytes": 186660
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/MultiLoop_mode1.slxc",
+    "bytes": 7785
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/MultiLoop_mode3.mdl",
+    "bytes": 178448
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/MultiLoop_mode3.slxc",
+    "bytes": 5288
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/MultiLoop_mode4.mdl",
+    "bytes": 178216
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/MultiLoop_mode4.slxc",
+    "bytes": 5292
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/MultiLoop_Skoge_mode1.mdl",
+    "bytes": 114899
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/MultiLoop_Skoge_mode1.slxc",
+    "bytes": 5303
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/R12_ExampleScript.m",
+    "bytes": 1680
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/README.txt",
+    "bytes": 5462
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/Skoge_Mode1_Init.m",
+    "bytes": 1482
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/TElib.mdl",
+    "bytes": 12702
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/temexd_mod.c",
+    "bytes": 195118
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/temexd_mod.mexw64",
+    "bytes": 72192
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/TEplot.m",
+    "bytes": 4871
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/teprob_mod.h",
+    "bytes": 6907
+  },
+  {
+    "path": "tennessee-eastman-dataset-main/simulator/tesys.mdl",
+    "bytes": 26586
+  },
+  {
+    "path": "tests/test_phase1.py",
+    "bytes": 3482
+  },
+  {
+    "path": "tests/test_phase2.py",
+    "bytes": 3306
+  },
+  {
+    "path": "tools/build_model_extension_overview.py",
+    "bytes": 30680
+  },
+  {
+    "path": "tools/build_overview_notebook.py",
+    "bytes": 45498
+  },
+  {
+    "path": "tools/build_phase1.py",
+    "bytes": 35690
+  },
+  {
+    "path": "tools/build_phase2_report.py",
+    "bytes": 38282
+  },
+  {
+    "path": "tools/build_tep_phm_model_catalog.py",
+    "bytes": 36962
+  },
+  {
+    "path": "tools/execute_notebooks.py",
+    "bytes": 1676
+  },
+  {
+    "path": "tools/execute_overview_notebook.py",
+    "bytes": 1671
+  },
+  {
+    "path": "tools/fetch_dataset_a.py",
+    "bytes": 1752
+  },
+  {
+    "path": "tools/package_phase2.py",
+    "bytes": 2683
+  },
+  {
+    "path": "tools/phase2_explain.py",
+    "bytes": 5208
+  },
+  {
+    "path": "tools/validate_phase2.py",
+    "bytes": 3713
+  }
+]

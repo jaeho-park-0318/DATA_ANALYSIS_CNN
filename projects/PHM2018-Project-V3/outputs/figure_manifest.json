@@ -1,0 +1,431 @@
+[
+  {
+    "file": "outputs/figures/tool_overview/raw_rows.png",
+    "title": "장비별 원본 데이터 규모",
+    "source": "tool_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw",
+    "plot_values": {
+      "Tool": [
+        "01M01",
+        "01M02",
+        "02M01",
+        "02M02",
+        "03M01",
+        "03M02",
+        "04M01",
+        "04M02",
+        "05M01",
+        "05M02",
+        "06M01",
+        "06M02",
+        "07M01",
+        "07M02",
+        "08M01",
+        "08M02",
+        "09M01",
+        "09M02",
+        "10M01",
+        "10M02"
+      ],
+      "raw_rows": [
+        3124704,
+        5110542,
+        2865625,
+        4143973,
+        3432217,
+        5060498,
+        5097901,
+        4450348,
+        4779554,
+        1907102,
+        3812209,
+        5102932,
+        5301166,
+        5029138,
+        3716092,
+        5014057,
+        4565604,
+        2754216,
+        3166038,
+        3755524
+      ]
+    }
+  },
+  {
+    "file": "outputs/figures/tool_overview/fault_types.png",
+    "title": "장비별 고장 유형 분포",
+    "source": "events.csv / tool_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw",
+    "plot_values": {
+      "fault_events": [
+        19,
+        109,
+        17,
+        32,
+        91,
+        356,
+        9,
+        37,
+        28,
+        27,
+        16,
+        59,
+        35,
+        6,
+        117,
+        6,
+        150,
+        65,
+        30,
+        2
+      ],
+      "Tool": [
+        "01M01",
+        "01M02",
+        "02M01",
+        "02M02",
+        "03M01",
+        "03M02",
+        "04M01",
+        "04M02",
+        "05M01",
+        "05M02",
+        "06M01",
+        "06M02",
+        "07M01",
+        "07M02",
+        "08M01",
+        "08M02",
+        "09M01",
+        "09M02",
+        "10M01",
+        "10M02"
+      ]
+    }
+  },
+  {
+    "file": "outputs/figures/tool_overview/ttf_null.png",
+    "title": "장비·고장 유형별 TTF Null",
+    "source": "tool_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/timeline/all_tools.png",
+    "title": "전체 장비 관측·공백·고장 타임라인",
+    "source": "time_segment_summary.csv / events.csv / gaps.parquet",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/timeline/density.png",
+    "title": "고정 구간별 관측 밀도",
+    "source": "time_segment_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · 구간 폭 100,000 raw · 미관측=0, 범위 밖=빈칸",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/timeline/gap_distribution.png",
+    "title": "장비별 공백 길이 Histogram과 누적분포",
+    "source": "원본 시간 간격 전체 집계",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · 분모: 4 raw 초과 간격",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/timeline/duplicates_conflicts.png",
+    "title": "중복과 공정 충돌 발생 위치",
+    "source": "장비별 duplicates.parquet",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · recipe/stage/recipe_step/Lot/runnum 검사",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/label_analysis/conservative.png",
+    "title": "H=600 · 보수적 통합 라벨",
+    "source": "label_status_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · L=60 · 가정 음성은 정상 확정이 아님",
+    "plot_values": {
+      "policy": "conservative",
+      "status_totals": {
+        "positive": 57472,
+        "negative": 29821378,
+        "NA": 52304571,
+        "excluded": 6019
+      }
+    }
+  },
+  {
+    "file": "outputs/figures/label_analysis/research.png",
+    "title": "H=600 · 제한 연구용 통합 라벨",
+    "source": "label_status_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · L=60 · 가정 음성은 정상 확정이 아님",
+    "plot_values": {
+      "policy": "research",
+      "status_totals": {
+        "positive": 57472,
+        "negative": 46428048,
+        "NA": 35697901,
+        "excluded": 6019
+      }
+    }
+  },
+  {
+    "file": "outputs/figures/label_analysis/sensitivity.png",
+    "title": "H=600 · 완전 이력 가정 통합 라벨",
+    "source": "label_status_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · L=60 · 가정 음성은 정상 확정이 아님",
+    "plot_values": {
+      "policy": "sensitivity",
+      "status_totals": {
+        "positive": 57472,
+        "negative": 82119696,
+        "NA": 6253,
+        "excluded": 6019
+      }
+    }
+  },
+  {
+    "file": "outputs/figures/label_analysis/horizon_policies.png",
+    "title": "H와 정책에 따른 통합 라벨 변화",
+    "source": "label_status_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · 분모: 고정 격자 Anchor",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/label_analysis/fault_types.png",
+    "title": "고장 유형별 보수적 라벨 상태",
+    "source": "label_status_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · H=600, L=60 · Anchor 기준",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/label_analysis/ttf_null_relation.png",
+    "title": "TTF Null과 라벨 NA는 같은 개념이 아니다",
+    "source": "ttf_label_relationship.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · Anchor TTF는 검증된 이벤트에서 재구성 · 보수적 H600",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/feature_availability/tool_heatmap.png",
+    "title": "장비별 A/B/C 특징 가용성",
+    "source": "tool_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · A8 / B32 / C44 · 독립 분기",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/feature_availability/cohorts.png",
+    "title": "동일 코호트와 최대 가용 코호트 비교",
+    "source": "feature_availability_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · 보수적 H600 · 동일 이벤트는 장비 내 1회만 계산",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/event_preservation/tool_policy_heatmap.png",
+    "title": "정책·특징별 고유 이벤트 보존률",
+    "source": "event_exclusion_reasons.csv / tool_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · 분모: 태그 포함 원본 고유 이벤트",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/event_preservation/exclusion_reasons.png",
+    "title": "C 특징에서 이벤트가 제외되는 이유",
+    "source": "event_exclusion_reasons.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · 보수적 H600 · 이벤트별 배타적 요약 이유",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/feature_availability/process_conditions.png",
+    "title": "공정 조건별 특징 가용성 차이",
+    "source": "process_feature_summary.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · 표시: Anchor 수 상위 20개 공정 조건; 전체 조건은 표 보존",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/event_preservation/stage_rows.png",
+    "title": "전처리 단계별 행·시각·Anchor 수",
+    "source": "preprocessing_preservation.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · 분모가 바뀌는 단계는 제외율 계산 안 함",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/event_preservation/stage_events.png",
+    "title": "전처리 단계별 고유 이벤트 보존",
+    "source": "preprocessing_preservation.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · 보수적 H600 · 앞 단계: 경보 구간 센서 존재; 특징 단계: 같은 Anchor에서 조건 충족; 마지막: 사용 가능 양성 Anchor 존재",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/event_preservation/history_length.png",
+    "title": "요구 과거 이력에 따른 이벤트 보존",
+    "source": "events.csv / event_exclusion_reasons.csv",
+    "context": "전체 20대 · 원본 82,189,440행 · 고유 이벤트 1,211개 · 샘플링 없음 · 시간 단위 raw · 보수적 H600 · A/B/C를 독립 비교",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/01M01-01.png",
+    "title": "01M01 · 긴 센서 공백",
+    "source": "원본 01_M01_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 6424124~6426824 raw · 원본 200행 / 관측 200개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/01M01-02.png",
+    "title": "01M01 · 동일 시각 공정 충돌",
+    "source": "원본 01_M01_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 9165668~9166268 raw · 원본 151행 / 관측 147개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/01M01-03.png",
+    "title": "01M01 · 고장 직전 센서 존재",
+    "source": "원본 01_M01_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "01M01-low-a4b195c2ad63 · 저압 · 14024892~14026812 raw · 원본 394행 / 관측 394개 / 범위 내 이벤트 1개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/01M01-03_changes.png",
+    "title": "01M01 · 센서 변화 진단",
+    "source": "원본 01_M01_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "01M01-low-a4b195c2ad63 · 저압 · 14024892~14026812 raw · 원본 394행 / 관측 394개 / 범위 내 이벤트 1개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/01M01-03_conditions.png",
+    "title": "01M01 · 구간 내 공정 상태별 센서 분포",
+    "source": "원본 01_M01_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "01M01-low-a4b195c2ad63 · 저압 · 14024892~14026812 raw · 원본 394행 / 관측 394개 / 범위 내 이벤트 1개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라 · 상위 6개 Recipe/Stage · 상자그림 이상점 표시는 생략, 값 삭제 없음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/01M01-04.png",
+    "title": "01M01 · 고장은 있으나 장기 이력 부족",
+    "source": "원본 01_M01_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "01M01-low-0fe23ade1e15 · 저압 · 6531384~6533304 raw · 원본 250행 / 관측 250개 / 범위 내 이벤트 1개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/01M01-05.png",
+    "title": "01M01 · 공정 전환과 센서 변화",
+    "source": "원본 01_M01_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 3283838~3284738 raw · 원본 199행 / 관측 199개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/01M01-05_changes.png",
+    "title": "01M01 · 센서 변화 진단",
+    "source": "원본 01_M01_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 3283838~3284738 raw · 원본 199행 / 관측 199개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/01M01-05_conditions.png",
+    "title": "01M01 · 구간 내 공정 상태별 센서 분포",
+    "source": "원본 01_M01_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 3283838~3284738 raw · 원본 199행 / 관측 199개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라 · 상위 6개 Recipe/Stage · 상자그림 이상점 표시는 생략, 값 삭제 없음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/01M01-06.png",
+    "title": "01M01 · TTF Null 집중",
+    "source": "원본 01_M01_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 40872386~40874186 raw · 원본 422행 / 관측 422개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/03M02-07.png",
+    "title": "03M02 · 긴 센서 공백",
+    "source": "원본 03_M02_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 23166678~23169378 raw · 원본 205행 / 관측 205개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/03M02-08.png",
+    "title": "03M02 · 동일 시각 공정 충돌",
+    "source": "원본 03_M02_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 24656838~24657438 raw · 원본 124행 / 관측 123개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/03M02-09.png",
+    "title": "03M02 · 고장 직전 센서 존재",
+    "source": "원본 03_M02_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "03M02-high-30905f1e029f · 고압 · 5126278~5128198 raw · 원본 480행 / 관측 480개 / 범위 내 이벤트 1개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/03M02-09_changes.png",
+    "title": "03M02 · 센서 변화 진단",
+    "source": "원본 03_M02_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "03M02-high-30905f1e029f · 고압 · 5126278~5128198 raw · 원본 480행 / 관측 480개 / 범위 내 이벤트 1개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/03M02-09_conditions.png",
+    "title": "03M02 · 구간 내 공정 상태별 센서 분포",
+    "source": "원본 03_M02_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "03M02-high-30905f1e029f · 고압 · 5126278~5128198 raw · 원본 480행 / 관측 480개 / 범위 내 이벤트 1개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라 · 상위 6개 Recipe/Stage · 상자그림 이상점 표시는 생략, 값 삭제 없음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/03M02-10.png",
+    "title": "03M02 · 고장은 있으나 장기 이력 부족",
+    "source": "원본 03_M02_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "03M02-low-d58f88774e8e · 저압 · 5118800~5120720 raw · 원본 278행 / 관측 278개 / 범위 내 이벤트 1개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/03M02-11.png",
+    "title": "03M02 · 공정 전환과 센서 변화",
+    "source": "원본 03_M02_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 3285358~3286258 raw · 원본 188행 / 관측 188개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/03M02-11_changes.png",
+    "title": "03M02 · 센서 변화 진단",
+    "source": "원본 03_M02_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 3285358~3286258 raw · 원본 188행 / 관측 188개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/03M02-11_conditions.png",
+    "title": "03M02 · 구간 내 공정 상태별 센서 분포",
+    "source": "원본 03_M02_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 3285358~3286258 raw · 원본 188행 / 관측 188개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라 · 상위 6개 Recipe/Stage · 상자그림 이상점 표시는 생략, 값 삭제 없음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/03M02-12.png",
+    "title": "03M02 · TTF Null 집중",
+    "source": "원본 03_M02_DC_train.csv → V3 시간 인덱스 Parquet",
+    "context": "관련 고장 이벤트 없음 · 선택 고장 없음 · 37811728~37813528 raw · 원본 411행 / 관측 411개 / 범위 내 이벤트 0개\n원본 해상도 100% · 회색=공백, 주황 음영=[tf−600,tf−60], 점선=선행시간/공정 전환 · 라벨: 양성 주황 / 음성 파랑 / NA 회색 / 제외 보라",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/relative_01M01_low_1_1_1.png",
+    "title": "01M01 · 저압 · Recipe=1, Stage=1, Step=1 · 이벤트 정렬",
+    "source": "relative_event_profiles.csv",
+    "context": "고유 이벤트 5개 · 60 raw 구간 내 이벤트별 중앙값을 먼저 계산 후 이벤트 간 중앙값/10~90% · 보간 없음\n같은 Tool/고장/Recipe/Stage/Step만 비교 · 상대시간 0=기록된 정지 시각 · 고장 -60 raw 이후는 입력 비교 제외 · 전조/원인 입증 아님",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/relative_03M02_low_143_14_3.png",
+    "title": "03M02 · 저압 · Recipe=143, Stage=14, Step=3 · 이벤트 정렬",
+    "source": "relative_event_profiles.csv",
+    "context": "고유 이벤트 4개 · 60 raw 구간 내 이벤트별 중앙값을 먼저 계산 후 이벤트 간 중앙값/10~90% · 보간 없음\n같은 Tool/고장/Recipe/Stage/Step만 비교 · 상대시간 0=기록된 정지 시각 · 고장 -60 raw 이후는 입력 비교 제외 · 전조/원인 입증 아님",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/relative_03M02_low_255_264_11.png",
+    "title": "03M02 · 저압 · Recipe=255, Stage=264, Step=11 · 이벤트 정렬",
+    "source": "relative_event_profiles.csv",
+    "context": "고유 이벤트 3개 · 60 raw 구간 내 이벤트별 중앙값을 먼저 계산 후 이벤트 간 중앙값/10~90% · 보간 없음\n같은 Tool/고장/Recipe/Stage/Step만 비교 · 상대시간 0=기록된 정지 시각 · 고장 -60 raw 이후는 입력 비교 제외 · 전조/원인 입증 아님",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/fault_events/relative_03M02_high_249_1_1.png",
+    "title": "03M02 · 고압 · Recipe=249, Stage=1, Step=1 · 이벤트 정렬",
+    "source": "relative_event_profiles.csv",
+    "context": "고유 이벤트 3개 · 60 raw 구간 내 이벤트별 중앙값을 먼저 계산 후 이벤트 간 중앙값/10~90% · 보간 없음\n같은 Tool/고장/Recipe/Stage/Step만 비교 · 상대시간 0=기록된 정지 시각 · 고장 -60 raw 이후는 입력 비교 제외 · 전조/원인 입증 아님",
+    "plot_values": null
+  }
+]

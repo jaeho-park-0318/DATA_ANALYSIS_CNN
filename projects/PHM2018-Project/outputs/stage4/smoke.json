@@ -1,0 +1,11 @@
+{
+  "rows": 197439,
+  "positive": 560,
+  "equipment": [
+    "01M01",
+    "01M02"
+  ],
+  "rf_fit": true,
+  "xgb_fit": true,
+  "evaluation_used": false
+}

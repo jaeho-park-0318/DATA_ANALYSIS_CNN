@@ -1,0 +1,48 @@
+{
+  "frozen_at_utc": "2026-11-05T08:26:52.742779+00:00",
+  "family": "B",
+  "model_source": "outputs/stage2/B_xgboost.joblib",
+  "cohort": "maximum",
+  "seed": 42,
+  "H": 600,
+  "L": 60,
+  "operating_points": [
+    {
+      "operating_point": "validation_budget_5",
+      "validation_budget_per_10000_raw": 5,
+      "threshold": 0.0032673857640475035,
+      "validation_detected": 6,
+      "validation_recorded": 232,
+      "validation_available": 95,
+      "validation_actual_burden": 0.9907186530559822
+    },
+    {
+      "operating_point": "validation_budget_10",
+      "validation_budget_per_10000_raw": 10,
+      "threshold": 0.002999492222443223,
+      "validation_detected": 34,
+      "validation_recorded": 232,
+      "validation_available": 95,
+      "validation_actual_burden": 9.305627866402089
+    }
+  ],
+  "selection_rule": "상한5/10 각각에서 temporal validation과 보호된 group validation의 기록고장 검출률 중 작은 값을 취해 두 상한 평균 최대. 동률이면 네 검증점 검출률 평균 최대, 경보 부담 평균 최소, A 우선. 하나의 특징/저장 모델만 선정",
+  "refit_after_selection": false,
+  "holdout_scored_at_freeze": false,
+  "sha256": {
+    "outputs/stage6/frozen_model.joblib": "7603601d4549d8b6b16c24a315525e7e791717c5b2db889d209e7ed27553f979",
+    "outputs/stage6/frozen_model.ubj": "371689f6cbee6eb4090916cc97bf850676a1ad495a215250d7e40c4df57c06f7",
+    "outputs/stage6/frozen_preprocessor.joblib": "b994d4979ebb9e8bca5c2da0c85da16792697c40253b9ec5410bf4217208287d",
+    "config/stage5_final_protocol.json": "2f082824a09563ef2a86c35b616f229f06b6b40f28cd429974733a2700b33576",
+    "config/pretraining.json": "bc873ed1189eb3d4c0f0d09399718b57046a9e81de33fe20f68d3514ff712f12",
+    "config/preprocessing.json": "32d03ddf73d577724efec381492e60104b9d42fc7177dd1646230b88509c8be2",
+    "scripts/evaluate_stage6.py": "fe2c422406078389a396957b38c7a43bffff6f2cd99184c754d3a3d76e026c7e",
+    "src/alarm_evaluation.py": "27f12ab27081d7eccc86128146485c33e8cf89b820b6ee8fdef0ec6e094a4527",
+    "src/final_evaluation.py": "4042f45bdd7bd15ccb1f54a558d4abaf0861daf6fc76b0163bb90c3099fc102f",
+    "src/pretraining.py": "227b6478c26211dedaaa21923ceebebea4687b6f7cb2bd47a49a784b20321972",
+    "src/features.py": "8365e66a464fb222892f9583f756489d60a5c8252cc1a8c33b9d1de2d82043b7",
+    "data/pretraining/manifest.json": "2d31bcaf67ba433c32682ca194b94ba41912b103d6253ab153c26bffe91301bd",
+    "outputs/tables/stage6_selection_evidence.parquet": "f9af1816b1ca40f9c525a888afe9ba84aaf1419b1fc800991326412dbc447bae"
+  },
+  "independence_scope": "예측점수/모델·임계값 선택에서 보류한 미래 구간. 원본과 전처리 품질 진단은 이미 확인했으므로 완전 맹검 외부 검증은 아님"
+}

@@ -1,0 +1,221 @@
+{
+  "checks": [
+    {
+      "Tool": "01M01",
+      "rule": "zero",
+      "threshold": 0.1,
+      "anchors": 15000,
+      "episodes": 0,
+      "passed": true
+    },
+    {
+      "Tool": "01M01",
+      "rule": "zero",
+      "threshold": 0.5,
+      "anchors": 15000,
+      "episodes": 0,
+      "passed": true
+    },
+    {
+      "Tool": "01M01",
+      "rule": "zero",
+      "threshold": 0.9,
+      "anchors": 15000,
+      "episodes": 0,
+      "passed": true
+    },
+    {
+      "Tool": "01M01",
+      "rule": "one",
+      "threshold": 0.1,
+      "anchors": 15000,
+      "episodes": 983,
+      "passed": true
+    },
+    {
+      "Tool": "01M01",
+      "rule": "one",
+      "threshold": 0.5,
+      "anchors": 15000,
+      "episodes": 983,
+      "passed": true
+    },
+    {
+      "Tool": "01M01",
+      "rule": "one",
+      "threshold": 0.9,
+      "anchors": 15000,
+      "episodes": 983,
+      "passed": true
+    },
+    {
+      "Tool": "01M01",
+      "rule": "cyclic",
+      "threshold": 0.1,
+      "anchors": 15000,
+      "episodes": 1701,
+      "passed": true
+    },
+    {
+      "Tool": "01M01",
+      "rule": "cyclic",
+      "threshold": 0.5,
+      "anchors": 15000,
+      "episodes": 1352,
+      "passed": true
+    },
+    {
+      "Tool": "01M01",
+      "rule": "cyclic",
+      "threshold": 0.9,
+      "anchors": 15000,
+      "episodes": 940,
+      "passed": true
+    },
+    {
+      "Tool": "03M02",
+      "rule": "zero",
+      "threshold": 0.1,
+      "anchors": 15000,
+      "episodes": 0,
+      "passed": true
+    },
+    {
+      "Tool": "03M02",
+      "rule": "zero",
+      "threshold": 0.5,
+      "anchors": 15000,
+      "episodes": 0,
+      "passed": true
+    },
+    {
+      "Tool": "03M02",
+      "rule": "zero",
+      "threshold": 0.9,
+      "anchors": 15000,
+      "episodes": 0,
+      "passed": true
+    },
+    {
+      "Tool": "03M02",
+      "rule": "one",
+      "threshold": 0.1,
+      "anchors": 15000,
+      "episodes": 804,
+      "passed": true
+    },
+    {
+      "Tool": "03M02",
+      "rule": "one",
+      "threshold": 0.5,
+      "anchors": 15000,
+      "episodes": 804,
+      "passed": true
+    },
+    {
+      "Tool": "03M02",
+      "rule": "one",
+      "threshold": 0.9,
+      "anchors": 15000,
+      "episodes": 804,
+      "passed": true
+    },
+    {
+      "Tool": "03M02",
+      "rule": "cyclic",
+      "threshold": 0.1,
+      "anchors": 15000,
+      "episodes": 1545,
+      "passed": true
+    },
+    {
+      "Tool": "03M02",
+      "rule": "cyclic",
+      "threshold": 0.5,
+      "anchors": 15000,
+      "episodes": 1272,
+      "passed": true
+    },
+    {
+      "Tool": "03M02",
+      "rule": "cyclic",
+      "threshold": 0.9,
+      "anchors": 15000,
+      "episodes": 943,
+      "passed": true
+    },
+    {
+      "Tool": "10M02",
+      "rule": "zero",
+      "threshold": 0.1,
+      "anchors": 15000,
+      "episodes": 0,
+      "passed": true
+    },
+    {
+      "Tool": "10M02",
+      "rule": "zero",
+      "threshold": 0.5,
+      "anchors": 15000,
+      "episodes": 0,
+      "passed": true
+    },
+    {
+      "Tool": "10M02",
+      "rule": "zero",
+      "threshold": 0.9,
+      "anchors": 15000,
+      "episodes": 0,
+      "passed": true
+    },
+    {
+      "Tool": "10M02",
+      "rule": "one",
+      "threshold": 0.1,
+      "anchors": 15000,
+      "episodes": 1020,
+      "passed": true
+    },
+    {
+      "Tool": "10M02",
+      "rule": "one",
+      "threshold": 0.5,
+      "anchors": 15000,
+      "episodes": 1020,
+      "passed": true
+    },
+    {
+      "Tool": "10M02",
+      "rule": "one",
+      "threshold": 0.9,
+      "anchors": 15000,
+      "episodes": 1020,
+      "passed": true
+    },
+    {
+      "Tool": "10M02",
+      "rule": "cyclic",
+      "threshold": 0.1,
+      "anchors": 15000,
+      "episodes": 1708,
+      "passed": true
+    },
+    {
+      "Tool": "10M02",
+      "rule": "cyclic",
+      "threshold": 0.5,
+      "anchors": 15000,
+      "episodes": 1354,
+      "passed": true
+    },
+    {
+      "Tool": "10M02",
+      "rule": "cyclic",
+      "threshold": 0.9,
+      "anchors": 15000,
+      "episodes": 946,
+      "passed": true
+    }
+  ],
+  "test_scores_are_not_model_predictions": true
+}

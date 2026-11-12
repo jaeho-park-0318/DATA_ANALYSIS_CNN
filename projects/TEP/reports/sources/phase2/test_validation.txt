@@ -1,0 +1,19 @@
+test_a_schema_time_and_labels (test_phase1.Phase1Validation.test_a_schema_time_and_labels) ... ok
+test_all_lfs_objects_verified (test_phase1.Phase1Validation.test_all_lfs_objects_verified) ... ok
+test_b_official_checksums_and_sample_integrity (test_phase1.Phase1Validation.test_b_official_checksums_and_sample_integrity) ... ok
+test_duplicate_and_shared_prefix_risks_are_exposed (test_phase1.Phase1Validation.test_duplicate_and_shared_prefix_risks_are_exposed) ... ok
+test_nominal_injection_is_supported_by_model_wiring (test_phase1.Phase1Validation.test_nominal_injection_is_supported_by_model_wiring) ... ok
+test_unknown_causes_and_phase2_gate (test_phase1.Phase1Validation.test_unknown_causes_and_phase2_gate) ... ok
+test_alarm_confirmation_and_episode_merging (test_phase2.LeakageTests.test_alarm_confirmation_and_episode_merging) ... ok
+test_boundary_labels (test_phase2.LeakageTests.test_boundary_labels) ... ok
+test_held_out_faults_never_enter_unknown_model_training (test_phase2.LeakageTests.test_held_out_faults_never_enter_unknown_model_training) ... ok
+test_metadata_and_shared_training_prefix (test_phase2.LeakageTests.test_metadata_and_shared_training_prefix) ... ok
+test_real_future_changes_do_not_change_past_features (test_phase2.LeakageTests.test_real_future_changes_do_not_change_past_features) ... ok
+test_scaler_is_fitted_only_to_training (test_phase2.LeakageTests.test_scaler_is_fitted_only_to_training) ... ok
+test_simulation_families_are_disjoint (test_phase2.LeakageTests.test_simulation_families_are_disjoint) ... ok
+test_windows_cannot_cross_run_start_or_end (test_phase2.LeakageTests.test_windows_cannot_cross_run_start_or_end) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.531s
+
+OK

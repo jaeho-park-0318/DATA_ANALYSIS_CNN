@@ -1,0 +1,284 @@
+{
+  "checks": {
+    "experiments": 58,
+    "core_experiments": 48,
+    "identity_experiments": 10,
+    "all_prediction_metrics_checked": true,
+    "prior_files_unchanged": true,
+    "prior_files_checked": 24,
+    "original_metadata_unchanged": true,
+    "features": {
+      "A": 8,
+      "B": 80,
+      "C": 83
+    },
+    "passed": true
+  },
+  "selected_per_family": [
+    {
+      "scheme": "split_tool",
+      "selected_by_validation_AP": "RF_A",
+      "validation_AP": 0.01367733062009371,
+      "precision": 0.1702127659574468,
+      "recall": 0.06956521739130435,
+      "f1": 0.09876543209876543,
+      "pr_auc_ap": 0.047112520712574525,
+      "roc_auc": 0.5838164652113776,
+      "tn": 30008,
+      "fp": 117,
+      "fn": 321,
+      "tp": 24
+    },
+    {
+      "scheme": "split_tool",
+      "selected_by_validation_AP": "XGB_A",
+      "validation_AP": 0.011793510265811654,
+      "precision": 1.0,
+      "recall": 0.06956521739130435,
+      "f1": 0.13008130081300814,
+      "pr_auc_ap": 0.08517506839334484,
+      "roc_auc": 0.4573833664080822,
+      "tn": 30125,
+      "fp": 0,
+      "fn": 321,
+      "tp": 24
+    },
+    {
+      "scheme": "split_time",
+      "selected_by_validation_AP": "RF_B",
+      "validation_AP": 0.02816789179695513,
+      "precision": 0.41566265060240964,
+      "recall": 0.14526315789473684,
+      "f1": 0.21528861154446177,
+      "pr_auc_ap": 0.19118336219634957,
+      "roc_auc": 0.636708849981374,
+      "tn": 9793,
+      "fp": 97,
+      "fn": 406,
+      "tp": 69
+    },
+    {
+      "scheme": "split_time",
+      "selected_by_validation_AP": "XGB_C",
+      "validation_AP": 0.050872802695648464,
+      "precision": 0.8809523809523809,
+      "recall": 0.15578947368421053,
+      "f1": 0.26475849731663686,
+      "pr_auc_ap": 0.27880462903589676,
+      "roc_auc": 0.6436861263370763,
+      "tn": 9880,
+      "fp": 10,
+      "fn": 401,
+      "tp": 74
+    }
+  ],
+  "event_metrics": [
+    {
+      "scheme": "split_tool",
+      "model": "RF_A",
+      "events": 45,
+      "detected": 4,
+      "event_recall": 0.08888888888888889,
+      "Wilson95_low": 0.035111116726370226,
+      "Wilson95_high": 0.20733575334289356,
+      "active_negative_hours": 378.77166666666665,
+      "false_alarm_episodes": 17,
+      "false_per_active_hour": 0.0448819209462165,
+      "median_lead_raw": 344.0
+    },
+    {
+      "scheme": "split_tool",
+      "model": "XGB_A",
+      "events": 45,
+      "detected": 4,
+      "event_recall": 0.08888888888888889,
+      "Wilson95_low": 0.035111116726370226,
+      "Wilson95_high": 0.20733575334289356,
+      "active_negative_hours": 378.77166666666665,
+      "false_alarm_episodes": 0,
+      "false_per_active_hour": 0.0,
+      "median_lead_raw": 344.0
+    },
+    {
+      "scheme": "split_time",
+      "model": "RF_B",
+      "events": 56,
+      "detected": 10,
+      "event_recall": 0.17857142857142858,
+      "Wilson95_low": 0.09999856752412305,
+      "Wilson95_high": 0.2984118203665106,
+      "active_negative_hours": 151.66666666666666,
+      "false_alarm_episodes": 88,
+      "false_per_active_hour": 0.5802197802197803,
+      "median_lead_raw": 552.0
+    },
+    {
+      "scheme": "split_time",
+      "model": "XGB_C",
+      "events": 56,
+      "detected": 17,
+      "event_recall": 0.30357142857142855,
+      "Wilson95_low": 0.19900325085369447,
+      "Wilson95_high": 0.43335865285724834,
+      "active_negative_hours": 151.66666666666666,
+      "false_alarm_episodes": 8,
+      "false_per_active_hour": 0.05274725274725275,
+      "median_lead_raw": 298.0
+    }
+  ],
+  "per_type": [
+    {
+      "scheme": "split_tool",
+      "model": "RF_A",
+      "type": "f1",
+      "events": 30,
+      "detected": 0,
+      "recall": 0.0
+    },
+    {
+      "scheme": "split_tool",
+      "model": "RF_A",
+      "type": "f2",
+      "events": 11,
+      "detected": 4,
+      "recall": 0.36363636363636365
+    },
+    {
+      "scheme": "split_tool",
+      "model": "RF_A",
+      "type": "f3",
+      "events": 4,
+      "detected": 0,
+      "recall": 0.0
+    },
+    {
+      "scheme": "split_tool",
+      "model": "XGB_A",
+      "type": "f1",
+      "events": 30,
+      "detected": 0,
+      "recall": 0.0
+    },
+    {
+      "scheme": "split_tool",
+      "model": "XGB_A",
+      "type": "f2",
+      "events": 11,
+      "detected": 4,
+      "recall": 0.36363636363636365
+    },
+    {
+      "scheme": "split_tool",
+      "model": "XGB_A",
+      "type": "f3",
+      "events": 4,
+      "detected": 0,
+      "recall": 0.0
+    },
+    {
+      "scheme": "split_time",
+      "model": "RF_B",
+      "type": "f1",
+      "events": 35,
+      "detected": 3,
+      "recall": 0.08571428571428572
+    },
+    {
+      "scheme": "split_time",
+      "model": "RF_B",
+      "type": "f2",
+      "events": 12,
+      "detected": 3,
+      "recall": 0.25
+    },
+    {
+      "scheme": "split_time",
+      "model": "RF_B",
+      "type": "f3",
+      "events": 9,
+      "detected": 4,
+      "recall": 0.4444444444444444
+    },
+    {
+      "scheme": "split_time",
+      "model": "XGB_C",
+      "type": "f1",
+      "events": 35,
+      "detected": 10,
+      "recall": 0.2857142857142857
+    },
+    {
+      "scheme": "split_time",
+      "model": "XGB_C",
+      "type": "f2",
+      "events": 12,
+      "detected": 3,
+      "recall": 0.25
+    },
+    {
+      "scheme": "split_time",
+      "model": "XGB_C",
+      "type": "f3",
+      "events": 9,
+      "detected": 4,
+      "recall": 0.4444444444444444
+    }
+  ],
+  "prospective": [
+    {
+      "scheme": "split_time",
+      "selected_RF_XGB": "XGB_C",
+      "all_feature_ready_rows": 442840,
+      "unknown_label_rows": 432475,
+      "unknown_row_alarm_fraction": 0.12816232152147522,
+      "recorded_events": 194,
+      "evaluable_events": 56,
+      "event_coverage": 0.28865979381443296,
+      "recorded_events_hit": 26,
+      "recorded_recall_with_observation_limit": 0.13402061855670103,
+      "unknown_alarm_episodes": 31440,
+      "false_alarm_episodes": 8
+    },
+    {
+      "scheme": "split_tool",
+      "selected_RF_XGB": "RF_A",
+      "all_feature_ready_rows": 335124,
+      "unknown_label_rows": 304654,
+      "unknown_row_alarm_fraction": 0.2608598606944271,
+      "recorded_events": 244,
+      "evaluable_events": 45,
+      "event_coverage": 0.18442622950819673,
+      "recorded_events_hit": 8,
+      "recorded_recall_with_observation_limit": 0.03278688524590164,
+      "unknown_alarm_episodes": 23747,
+      "false_alarm_episodes": 17
+    }
+  ],
+  "notebooks": [
+    {
+      "notebook": "06_baseline_models.ipynb",
+      "code_cells": 4,
+      "executed": 4,
+      "errors": 0,
+      "elapsed_seconds": 7.530999999959022,
+      "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe"
+    },
+    {
+      "notebook": "07_xgboost_training.ipynb",
+      "code_cells": 4,
+      "executed": 4,
+      "errors": 0,
+      "elapsed_seconds": 7.109000000171363,
+      "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe"
+    },
+    {
+      "notebook": "08_model_comparison.ipynb",
+      "code_cells": 6,
+      "executed": 6,
+      "errors": 0,
+      "elapsed_seconds": 29.812000000150874,
+      "python": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\python.exe"
+    }
+  ],
+  "interpretation": "장비 일반화와 임계값 전달이 불안정하며 조건부 성능을 현장 전체 성능으로 일반화하지 않음"
+}

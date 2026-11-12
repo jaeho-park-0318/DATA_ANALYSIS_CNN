@@ -1,0 +1,26 @@
+{
+  "protected_holdout": "기존 temporal holdout: 장비별 마지막20%. 그룹 실험에서도 제외",
+  "group_train_tool_prefixes": ["01", "02", "03", "04", "05", "06"],
+  "group_validation_tool_prefixes": ["07", "08"],
+  "allowed_temporal_partitions": ["train", "validation"],
+  "label_policy": "기존 temporal 분할별 보수적 라벨과900/1800 guard를 그대로 유지. group 전체이력 라벨 사용 금지",
+  "H": 600,
+  "L": 60,
+  "seed": 42,
+  "group_runs": [
+    {"run_id":"A_base_maximum", "family":"A", "cohort":"maximum", "depth":3, "weight_mode":"unit"},
+    {"run_id":"B_base_maximum", "family":"B", "cohort":"maximum", "depth":3, "weight_mode":"unit"},
+    {"run_id":"A_base_common", "family":"A", "cohort":"common", "depth":3, "weight_mode":"unit"},
+    {"run_id":"B_base_common", "family":"B", "cohort":"common", "depth":3, "weight_mode":"unit"},
+    {"run_id":"A_tuned_common", "family":"A", "cohort":"common", "depth":2, "weight_mode":"sqrt_train_neg_pos"},
+    {"run_id":"C_base_common", "family":"C", "cohort":"common", "depth":3, "weight_mode":"unit"}
+  ],
+  "diagnostic_budgets": [0.5, 5, 10, 20],
+  "final_budgets": [5, 10],
+  "final_candidates": ["A", "B"],
+  "final_model_scope": "기존 stage2 A/B 최대가용 코호트, 깊이3/가중1/seed42. train+validation 재학습 없음",
+  "family_selection_rule": "상한5/10 각각에서 temporal validation과 보호된 group validation의 기록고장 검출률 중 작은 값을 취해 두 상한 평균 최대. 동률이면 네 검증점 검출률 평균 최대, 경보 부담 평균 최소, A 우선. 하나의 특징/저장 모델만 선정",
+  "threshold_selection_rule": "선정된 stage2 모델의 temporal validation에서 상한5/10 각각 탐색 후보 중 검출 최대, 동률 실제부담 최소, 그 다음 높은 임계값. 두 수치를 동결하여 Holdout 한 번 추론 후 함께 보고. 실제 운영 예산 아님",
+  "holdout_rule": "동결 모델과 두 임계값으로 단일 평가. Holdout에서 threshold sweep/최고seed 선택/추가fit 금지. 결과 불량도 그대로 보고",
+  "independence_scope": "예측점수/모델·임계값 선택에서 보류한 미래 구간. 원본과 전처리 품질 진단은 이미 확인했으므로 완전 맹검 외부 검증은 아님"
+}

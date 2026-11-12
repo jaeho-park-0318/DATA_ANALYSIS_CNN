@@ -1,0 +1,32 @@
+{
+  "model": "CNN1D_Temporal_balanced_s42",
+  "threshold": 0.9671916365623474,
+  "device": "cuda",
+  "fresh_full_test_inference_seconds": 67.16918019996956,
+  "maximum_absolute_probability_difference": 0.0,
+  "detection_metrics": {
+    "detection_precision": 0.9970010449576019,
+    "detection_recall": 0.86740225,
+    "detection_f1": 0.9276972980979862,
+    "detection_macro_f1": 0.8511975865106279,
+    "detection_balanced_accuracy": 0.9281512712377027,
+    "detection_roc_auc": 0.9539266359692902,
+    "detection_pr_auc": 0.9900821095190592,
+    "sample_false_alarm_rate": 0.011099707524594523,
+    "threshold": 0.9671916365623474,
+    "samples": 9880500
+  },
+  "total_fault_runs": 10000,
+  "detected_fault_runs": 9851,
+  "run_detection_rate": 0.9851,
+  "median_delay_minutes": 48.0,
+  "mean_delay_minutes": 101.59648766622678,
+  "p90_delay_minutes": 174.0,
+  "normal_runs": 500,
+  "normal_valid_windows": 470500,
+  "normal_alarm_episodes": 705,
+  "normal_exposure_hours": 23525.0,
+  "normal_alarm_episodes_per_hour": 0.029968119022316685,
+  "normal_sample_false_alarm_rate": 0.012397449521785335,
+  "all_checks_passed": true
+}

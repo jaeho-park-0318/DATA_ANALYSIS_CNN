@@ -1,0 +1,19 @@
+# 연구 질문별 결론
+
+| 연구 질문 | 이번 실험의 답 |
+| --- | --- |
+| 현재값만으로 탐지할 수 있는가? | 가능하나 현재값 모델의 고장별 성능 차이가 크다.08 비교표의 Current 결과를 확인한다. |
+| 과거 정보를 추가하면 개선되는가? | 동일 Test 시점의 Statistical/Temporal과 Current 차이로 확인했다. 구조와 특징이 함께 달라진 비교에서는 순수 시차 효과로 단정하지 않는다. |
+| XGBoost와 LSTM 중 무엇이 적합한가? | 이번 설정에서는 시계열 LSTM의 공통 Test 탐지/진단 점수가 통계 XGBoost보다 높았다. 주 모델은 Validation으로 선택한 CNN이며 계산비용도 별도 표로 제공한다. |
+| 불균형 처리가 개선하는가? | 이진 문제의 natural/balanced/over/under 결과는 imbalance_comparison.csv에 있다. seed42 한 번인 resampling을 통계적 우위로 단정하지 않는다. |
+| 고장마다 난도가 다른가? | 고장별 Recall·실행 검출률·지연이 크게 달랐다.09 보고서에 전체20개 고장을 유지했다. |
+| 모델 설명이 실제 원인과 일치하는가? | 예측 기여와 센서 변화는 대조했지만 직접 원인 대응과 B 구현이 불명확하여 정량 원인 적중은 미평가다. |
+| 탐지와 원인 진단 성능은 다른가? | 샘플 탐지F1, 고장 조건부 분류Macro F1, 탐지 실패를 포함한 end-to-end Macro F1이 서로 달랐다. 원인 적중률은 이 분류 점수가 아니다. |
+| 제외한 고장을 새로운 이상으로 검출하는가? | Fault3/9/15 제외 학습에서 평균 Recall은 0.0260였다. 이 실험은 미지 고장 탐지에 한계를 보였다. |
+
+## 출처 및 재현
+
+- 데이터: Harvard Dataverse V1.0, https://doi.org/10.7910/DVN/6C3JR1 . RData 4개의 공식 MD5 일치를 Phase 1에서 확인했다.
+- 공정·공개 고장 참조: https://github.com/Blound04/tennessee-eastman-dataset . Dataset A는 학습에 사용하지 않았다. A의 물리 정의를 B 구현과 완전히 동일하다고 가정하지 않았다.
+- API: [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html), [XGBoost](https://xgboost.readthedocs.io/en/stable/gpu/index.html), [PyTorch](https://docs.pytorch.org/docs/stable/generated/torch.nn.modules.rnn.LSTM.html).
+- 실제 설정: configs/phase2.json, 모델 선택 기록: models/phase2/selection_lock.json. 표·그림은 reports/tables/phase2, reports/figures/phase2에 있다.

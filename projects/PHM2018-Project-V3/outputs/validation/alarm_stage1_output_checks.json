@@ -1,0 +1,1331 @@
+{
+  "checks": [
+    {
+      "check": "temporal/validation/01M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/01M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/01M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/01M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/01M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/01M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/01M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/01M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/01M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/01M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/01M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/01M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/02M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/03M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/04M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/05M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/06M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/07M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/08M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/09M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "temporal/validation/10M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/07M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M01/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M01/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M01/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M01/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M01/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M01/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M02/A/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M02/A/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M02/B/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M02/B/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M02/C/no_alarm",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "group/validation/08M02/C/always_alarm",
+      "passed": true
+    },
+    {
+      "check": "실제 매칭 경계와 선행시간",
+      "passed": true
+    },
+    {
+      "check": "경보 부담 분모 재계산",
+      "passed": true
+    },
+    {
+      "check": "holdout 점수화 없음",
+      "passed": true
+    },
+    {
+      "check": "outputs/figures/alarm_stage1/event_coverage.png",
+      "passed": true
+    },
+    {
+      "check": "outputs/figures/alarm_stage1/scoring_population.png",
+      "passed": true
+    },
+    {
+      "check": "outputs/figures/alarm_stage1/baseline_checks.png",
+      "passed": true
+    },
+    {
+      "check": "outputs/figures/alarm_stage1/alarm_categories.png",
+      "passed": true
+    },
+    {
+      "check": "outputs/figures/alarm_stage1/actual_event.png",
+      "passed": true
+    },
+    {
+      "check": "Notebook 모든 코드 실제 실행",
+      "passed": true
+    },
+    {
+      "check": "Notebook 오류 없음",
+      "passed": true
+    },
+    {
+      "check": "Notebook 실제 그림5개 포함",
+      "passed": true
+    },
+    {
+      "check": "원본 메타데이터 유지",
+      "passed": true
+    }
+  ],
+  "figures": 5,
+  "notebook_code_cells": 6,
+  "model_training_performed": false
+}

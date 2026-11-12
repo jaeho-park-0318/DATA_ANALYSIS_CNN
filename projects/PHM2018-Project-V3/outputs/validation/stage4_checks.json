@@ -1,0 +1,5726 @@
+{
+  "checks": [
+    {
+      "check": "설정 동결 전 seed42 grid만 사용",
+      "passed": true
+    },
+    {
+      "check": "동결 설정 규칙 5",
+      "passed": true
+    },
+    {
+      "check": "동결 설정 규칙 10",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42 기준 모델 재사용 점수 일치",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42 기준 모델 재사용 점수 일치",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42 기준 모델 재사용 점수 일치",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44 동일 행·유한 위험 점수",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44 분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44 실제 CUDA 장치",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44 경보 캐시 입력/코드 해시",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44 양성 가중치 train 근거",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0012351106852293015 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0012351106852293015 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0016162344254553318 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0016162344254553318 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0018917411798611283 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0018917411798611283 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0029840415809303522 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0029840415809303522 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0044203652068972588 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0044203652068972588 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0066630304791033268 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.0066630304791033268 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.012215967290103436 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.012215967290103436 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.017784871160984039 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.017784871160984039 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.020333083346486092 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.020333083346486092 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.021192159503698349 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.021192159503698349 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.024726765230298042 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.024726765230298042 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_unit_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.01883259229362011 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.01883259229362011 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.019635200500488281 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.019635200500488281 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.019702492281794548 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.019702492281794548 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.023820521309971809 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.023820521309971809 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.029766036197543144 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.029766036197543144 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.046019453555345535 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.046019453555345535 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.065700516104698181 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.065700516104698181 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.089156031608581543 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.089156031608581543 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.11508744955062866 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.11508744955062866 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.15936765074729919 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.15936765074729919 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.19971559941768646 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.19971559941768646 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.30564641952514648 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.30564641952514648 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.66086608171463013 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.66086608171463013 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.6651298999786377 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.6651298999786377 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0010509314015507698 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0010509314015507698 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0014076150255277753 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0014076150255277753 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0018521256279200315 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0018521256279200315 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0029374829027801752 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0029374829027801752 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0045553417876362801 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0045553417876362801 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0069070328027009964 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0069070328027009964 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.013406799174845219 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.013406799174845219 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.019167358055710793 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.019167358055710793 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.025851907208561897 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.025851907208561897 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.032221682369709015 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.032221682369709015 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0405135378241539 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.0405135378241539 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.040987536311149597 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.040987536311149597 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.02723325602710247 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.02723325602710247 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.033127006143331528 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.033127006143331528 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.040555592626333237 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.040555592626333237 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.056452516466379166 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.056452516466379166 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.079731926321983337 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.079731926321983337 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.09629569947719574 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.09629569947719574 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.11692938953638077 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.11692938953638077 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.19947052001953125 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.19947052001953125 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.23190097510814667 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.23190097510814667 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.30291804671287537 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.30291804671287537 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.59602117538452148 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.59602117538452148 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.62872731281525662 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.62872731281525662 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_sqrt_train_neg_pos_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0031902610789984465 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0031902610789984465 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0031978243496268988 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0031978243496268988 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0032979743555188179 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0032979743555188179 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0036723644006997347 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0036723644006997347 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0041404333896934986 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0041404333896934986 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0052588512189686298 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0052588512189686298 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0074031748808920383 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0074031748808920383 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0081363143399357796 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0081363143399357796 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0086052948608994484 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.0086052948608994484 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_unit_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.14150999486446381 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.14150999486446381 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.14384089410305023 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.14384089410305023 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.14472942054271698 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.14472942054271698 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.16647493839263916 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.16647493839263916 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.18312153220176697 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.18312153220176697 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.19033846259117126 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.19033846259117126 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d4_sqrt_train_neg_pos_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0029187607578933239 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0029187607578933239 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0030156045686453581 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0030156045686453581 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0036585687194019556 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0036585687194019556 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0041044936515390873 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0041044936515390873 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0049552386626601219 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0049552386626601219 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0069231926463544369 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0069231926463544369 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0080892639234662056 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0080892639234662056 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.010923800989985466 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.010923800989985466 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.013321699574589729 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.013321699574589729 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.017395256087183952 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.017395256087183952 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0178879015147686 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.0178879015147686 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.019866503775119781 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.019866503775119781 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_unit_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.033527236431837082 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.033527236431837082 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.033798910677433014 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.033798910677433014 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.034232743084430695 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.034232743084430695 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.039699293673038483 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.039699293673038483 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.043122466653585434 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.043122466653585434 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.054463978856801987 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.054463978856801987 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.067671328783035278 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.067671328783035278 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.089233450591564178 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.089233450591564178 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.1157379150390625 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.1157379150390625 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.15127676725387573 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.15127676725387573 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.19858993589878082 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.19858993589878082 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.25806626677513123 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.25806626677513123 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.45376896858215332 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.45376896858215332 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.50563442707061768 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.50563442707061768 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.51260179281234741 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.51260179281234741 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d2_sqrt_train_neg_pos_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0013084722450003028 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0013084722450003028 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.00141893420368433 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.00141893420368433 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0018087814096361399 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0018087814096361399 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0021881339605897667 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0021881339605897667 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0031031228136271238 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0031031228136271238 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0047024255618453026 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0047024255618453026 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0067493477836251259 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.0067493477836251259 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.012543928809463978 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.012543928809463978 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.016344083473086357 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.016344083473086357 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.02351006492972374 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.02351006492972374 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.027236634865403175 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.027236634865403175 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.036124680191278458 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.036124680191278458 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.038316071033477783 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.038316071033477783 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.045467879623174667 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.045467879623174667 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.13677325844764709 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.13677325844764709 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.1393333226442337 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.1393333226442337 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.14259940385818481 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.14259940385818481 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.1479199081659317 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.1479199081659317 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.17741598188877106 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.17741598188877106 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.17863684892654419 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.17863684892654419 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.22976690530776978 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.22976690530776978 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_sqrt_train_neg_pos_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0028174235485494137 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0028174235485494137 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0028940248303115368 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0028940248303115368 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0030601315665990114 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0030601315665990114 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.003348139114677906 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.003348139114677906 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0046986374072730541 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0046986374072730541 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0056899897754192352 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0056899897754192352 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0078415852040052414 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.0078415852040052414 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.010632860474288464 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.010632860474288464 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.01473639253526926 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.01473639253526926 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.016513239592313766 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.016513239592313766 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.019883278757333755 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.019883278757333755 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.020265044644474983 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.020265044644474983 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.022487472742795944 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.022487472742795944 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_unit_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.13497970998287201 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.13497970998287201 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.13825492560863495 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.13825492560863495 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.13890644907951355 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.13890644907951355 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.14068934321403503 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.14068934321403503 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.15091520547866821 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.15091520547866821 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.17863088846206665 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.17863088846206665 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.18138980865478516 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.18138980865478516 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.22976690530776978 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.22976690530776978 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d4_sqrt_train_neg_pos_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.034895129501819611 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.034895129501819611 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.036937899887561798 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.036937899887561798 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.043681267648935318 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.043681267648935318 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.055518064647912979 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.055518064647912979 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.066724672913551331 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.066724672913551331 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.092152111232280731 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.092152111232280731 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.10558933764696121 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.10558933764696121 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.15296770632266998 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.15296770632266998 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.17049947381019592 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.17049947381019592 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.23291595280170441 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.23291595280170441 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.50753724575042725 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.50753724575042725 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s43/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.020337410271167755 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.020337410271167755 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.021293798461556435 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.021293798461556435 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.02463717944920063 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.02463717944920063 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.030687954276800156 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.030687954276800156 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.044914498925209045 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.044914498925209045 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.065151587128639221 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.065151587128639221 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.088046781718730927 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.088046781718730927 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.11096366494894028 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.11096366494894028 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.17680725455284119 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.17680725455284119 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.27632537484169006 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.27632537484169006 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.32692891359329224 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.32692891359329224 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.73125892877578735 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.73125892877578735 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.78274804353713989 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.78274804353713989 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d2_sqrt_train_neg_pos_s44/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.00077570282155647874 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.00077570282155647874 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0011921336408704519 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0011921336408704519 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0015287043061107397 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0015287043061107397 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0028158430941402912 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0028158430941402912 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0048002325929701328 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0048002325929701328 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0076471841894090176 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.0076471841894090176 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.016115443781018257 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.016115443781018257 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.024244498461484909 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.024244498461484909 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.034116175025701523 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.034116175025701523 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.039202619343996048 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.039202619343996048 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.059403065592050552 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.059403065592050552 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.069865293800830841 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.069865293800830841 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s43/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0012302217073738575 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0012302217073738575 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0012612213613465428 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0012612213613465428 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.001643303781747818 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.001643303781747818 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0020573667716234922 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0020573667716234922 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.003056773217394948 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.003056773217394948 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0047614346258342266 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0047614346258342266 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0067555559799075127 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.0067555559799075127 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.010678252205252647 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.010678252205252647 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.014892983250319958 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.014892983250319958 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.02170816995203495 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.02170816995203495 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.023431038483977318 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.023431038483977318 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "A_d3_unit_s44/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0037980694323778152 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0037980694323778152 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0039183171465992928 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0039183171465992928 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0040483218617737293 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0040483218617737293 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0045266691595315933 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0045266691595315933 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.005434203427284956 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.005434203427284956 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0063347360119223595 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.0063347360119223595 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s43/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0021291582379490137 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0021291582379490137 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0023952275514602661 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0023952275514602661 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0026082922704517841 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0026082922704517841 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0034037528093904257 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0034037528093904257 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0045075733214616776 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0045075733214616776 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0057732844725251198 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0057732844725251198 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0099134501069784164 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.0099134501069784164 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.013261889107525349 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.013261889107525349 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.018538026139140129 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.018538026139140129 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.022109907120466232 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.022109907120466232 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.028090203091503566 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.028090203091503566 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.031211037188768387 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.031211037188768387 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.041142702102661133 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.041142702102661133 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "B_d3_unit_s44/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0026062054093927145 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0026062054093927145 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.002759566530585289 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.002759566530585289 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0027776290662586689 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0027776290662586689 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.00285868882201612 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.00285868882201612 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0034220288507640362 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0034220288507640362 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0043511711992323399 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0043511711992323399 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0052526313811540604 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0052526313811540604 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0080158291384577751 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0080158291384577751 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0093173431232571602 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.0093173431232571602 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.014470826834440231 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.014470826834440231 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.017239497974514961 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.017239497974514961 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.021731011569499969 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.021731011569499969 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.024640552699565887 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.024640552699565887 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.033449672162532806 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.033449672162532806 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s42/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0035411908756941557 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0035411908756941557 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0036533332895487547 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0036533332895487547 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0038479848299175501 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0038479848299175501 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0042138807475566864 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0042138807475566864 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0043114135041832924 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0043114135041832924 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0051094391383230686 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0051094391383230686 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0054655484855175018 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0054655484855175018 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0068604862317442894 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0068604862317442894 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.00761078717187047 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.00761078717187047 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0084834732115268707 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0084834732115268707 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0085039017722010612 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.0085039017722010612 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.010219848714768887 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.010219848714768887 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s43/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0013514927122741938 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0013514927122741938 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0014096790691837668 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0014096790691837668 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0019413769477978349 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0019413769477978349 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0023402182850986719 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0023402182850986719 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0030000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0030000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0030775663908571005 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0030775663908571005 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0046130851842463017 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0046130851842463017 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0064837378449738026 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.0064837378449738026 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.01 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.01 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.011113677173852921 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.011113677173852921 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.014765707775950432 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.014765707775950432 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.023968806490302086 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.023968806490302086 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.027840292081236839 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.027840292081236839 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.029999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.029999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.038443960472941491 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.038443960472941491 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.046562821246683754 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.046562821246683754 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.072761140009767591 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.072761140009767591 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.10000000000000001 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.10000000000000001 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.29999999999999999 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.29999999999999999 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.5 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.69999999999999996 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.69999999999999996 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.90000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/0.90000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/1 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/1 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/1.0000000000000002 이벤트 집계",
+      "passed": true
+    },
+    {
+      "check": "C_d3_unit_s44/1.0000000000000002 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s42:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s420.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s42:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s425.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s42:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s4210.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s42:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s4220.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s42:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s420.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s42:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s425.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s42:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s4210.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s42:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s4220.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s42:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s420.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s42:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s425.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s42:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s4210.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s42:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s4220.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s43:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s430.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s43:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s435.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s43:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s4310.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s43:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s4320.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s44:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s440.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s44:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s445.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s44:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s4410.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d2_sqrt_train_neg_pos_s44:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d2_sqrt_train_neg_pos_s4420.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s43:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s430.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s43:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s435.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s43:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s4310.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s43:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s4320.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s44:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s440.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s44:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s445.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s44:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s4410.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:A_d3_unit_s44:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 A_d3_unit_s4420.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s43:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s430.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s43:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s435.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s43:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s4310.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s43:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s4320.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s44:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s440.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s44:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s445.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s44:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s4410.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:B_d3_unit_s44:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 B_d3_unit_s4420.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s42:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s420.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s42:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s425.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s42:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s4210.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s42:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s4220.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s43:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s430.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s43:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s435.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s43:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s4310.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s43:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s4320.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s44:0.5",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s440.5",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s44:5.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s445.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s44:10.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s4410.0",
+      "passed": true
+    },
+    {
+      "check": "retuned:C_d3_unit_s44:20.0",
+      "passed": true
+    },
+    {
+      "check": "상한내 최대 검출 C_d3_unit_s4420.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s42:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s420.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s42:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s425.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s42:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s4210.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s42:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s4220.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s43:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s430.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s43:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s435.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s43:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s4310.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s43:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s4320.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s44:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s440.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s44:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s445.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s44:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s4410.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d2_sqrt_train_neg_pos_s44:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d2_sqrt_train_neg_pos_s4420.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s42:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s420.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s42:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s425.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s42:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s4210.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s42:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s4220.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s43:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s430.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s43:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s435.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s43:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s4310.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s43:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s4320.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s44:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s440.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s44:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s445.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s44:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s4410.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:A_d3_unit_s44:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 A_d3_unit_s4420.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s42:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s420.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s42:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s425.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s42:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s4210.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s42:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s4220.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s43:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s430.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s43:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s435.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s43:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s4310.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s43:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s4320.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s44:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s440.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s44:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s445.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s44:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s4410.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:B_d3_unit_s44:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 B_d3_unit_s4420.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s42:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s420.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s42:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s425.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s42:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s4210.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s42:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s4220.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s43:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s430.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s43:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s435.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s43:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s4310.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s43:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s4320.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s44:0.5",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s440.5",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s44:5.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s445.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s44:10.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s4410.0",
+      "passed": true
+    },
+    {
+      "check": "fixed:C_d3_unit_s44:20.0",
+      "passed": true
+    },
+    {
+      "check": "seed42 임계값 불변 C_d3_unit_s4420.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d2_sqrt_train_neg_posretuned0.5",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d2_sqrt_train_neg_posretuned5.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d2_sqrt_train_neg_posretuned10.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d2_sqrt_train_neg_posretuned20.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d3_unitretuned0.5",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d3_unitretuned5.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d3_unitretuned10.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d3_unitretuned20.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 B_d3_unitretuned0.5",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 B_d3_unitretuned5.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 B_d3_unitretuned10.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 B_d3_unitretuned20.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 C_d3_unitretuned0.5",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 C_d3_unitretuned5.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 C_d3_unitretuned10.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 C_d3_unitretuned20.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d2_sqrt_train_neg_posfixed_seed42_threshold0.5",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d2_sqrt_train_neg_posfixed_seed42_threshold5.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d2_sqrt_train_neg_posfixed_seed42_threshold10.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d2_sqrt_train_neg_posfixed_seed42_threshold20.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d3_unitfixed_seed42_threshold0.5",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d3_unitfixed_seed42_threshold5.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d3_unitfixed_seed42_threshold10.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 A_d3_unitfixed_seed42_threshold20.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 B_d3_unitfixed_seed42_threshold0.5",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 B_d3_unitfixed_seed42_threshold5.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 B_d3_unitfixed_seed42_threshold10.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 B_d3_unitfixed_seed42_threshold20.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 C_d3_unitfixed_seed42_threshold0.5",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 C_d3_unitfixed_seed42_threshold5.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 C_d3_unitfixed_seed42_threshold10.0",
+      "passed": true
+    },
+    {
+      "check": "3seed 범위 C_d3_unitfixed_seed42_threshold20.0",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s43.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s43.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s43_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s43_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s43_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s44.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s44.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s44_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s44_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_sqrt_train_neg_pos_s44_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_unit_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_unit_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_unit_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_unit_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d2_unit_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_sqrt_train_neg_pos_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_sqrt_train_neg_pos_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_sqrt_train_neg_pos_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_sqrt_train_neg_pos_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_sqrt_train_neg_pos_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s43.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s43.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s43_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s43_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s43_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s44.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s44.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s44_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s44_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d3_unit_s44_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d4_sqrt_train_neg_pos_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d4_sqrt_train_neg_pos_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d4_sqrt_train_neg_pos_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d4_sqrt_train_neg_pos_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d4_sqrt_train_neg_pos_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d4_unit_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d4_unit_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d4_unit_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d4_unit_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_d4_unit_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/A_preprocessor.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d2_sqrt_train_neg_pos_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d2_sqrt_train_neg_pos_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d2_sqrt_train_neg_pos_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d2_sqrt_train_neg_pos_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d2_sqrt_train_neg_pos_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d2_unit_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d2_unit_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d2_unit_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d2_unit_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d2_unit_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_sqrt_train_neg_pos_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_sqrt_train_neg_pos_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_sqrt_train_neg_pos_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_sqrt_train_neg_pos_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_sqrt_train_neg_pos_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s43.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s43.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s43_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s43_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s43_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s44.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s44.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s44_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s44_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d3_unit_s44_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d4_sqrt_train_neg_pos_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d4_sqrt_train_neg_pos_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d4_sqrt_train_neg_pos_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d4_sqrt_train_neg_pos_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d4_sqrt_train_neg_pos_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d4_unit_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d4_unit_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d4_unit_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d4_unit_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_d4_unit_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/B_preprocessor.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s42.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s42.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s42_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s42_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s42_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s43.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s43.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s43_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s43_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s43_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s44.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s44.ubj",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s44_booster_config.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s44_history.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_d3_unit_s44_validation.parquet",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/C_preprocessor.joblib",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/selection.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/source_contract.json",
+      "passed": true
+    },
+    {
+      "check": "아티팩트 SHA256 outputs/stage4/training_runs.json",
+      "passed": true
+    },
+    {
+      "check": "원본 크기/mtime 보존",
+      "passed": true
+    },
+    {
+      "check": "holdout 미사용 계약",
+      "passed": true
+    }
+  ],
+  "training_performed": true,
+  "holdout_scored": false
+}

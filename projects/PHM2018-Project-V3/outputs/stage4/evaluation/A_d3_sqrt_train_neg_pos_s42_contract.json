@@ -1,0 +1,15 @@
+{
+  "fingerprint": {
+    "outputs\\stage4\\A_d3_sqrt_train_neg_pos_s42_validation.parquet": "2c39cd8806a0bfe7608a7234d73392d1cab496d11e9304469a8b330475946347",
+    "scripts\\evaluate_stage4.py": "063738b4e5efdb2063f2be07eb35fab982da5051b35f956728b3814f5fcee8ca",
+    "src\\alarm_evaluation.py": "27f12ab27081d7eccc86128146485c33e8cf89b820b6ee8fdef0ec6e094a4527",
+    "outputs\\tables\\events.parquet": "695ffd1b02a631166cba154316e7cc67ebb785cf75a6c501d27498bdaf053df5",
+    "outputs\\tables\\pretraining_split_boundaries.parquet": "2a7f4c514fc7dc351f09e725c7377b8a4d397bcb9b57657ce83169b2dae402dd",
+    "outputs\\tables\\alarm_stage1_summary.parquet": "63818737a06f9c240d1d2e4fe083c4360d371228434da75a7c60a1a90b74f0f7"
+  },
+  "run_id": "A_d3_sqrt_train_neg_pos_s42",
+  "rows": 309203,
+  "thresholds": 24,
+  "holdout_scored": false,
+  "reused_stage3": false
+}

@@ -1,0 +1,19 @@
+{
+  "model_id": "BinaryXGBoost_Statistical_balanced_s42",
+  "family": "BinaryXGBoost",
+  "feature": "Statistical",
+  "weight": "balanced",
+  "seed": 42,
+  "training_seconds": 2.1956572998315096,
+  "train_rows": 101200,
+  "detection_precision": 0.999114329625674,
+  "detection_recall": 0.7990625,
+  "detection_f1": 0.8879602727199065,
+  "detection_macro_f1": 0.6508725111404027,
+  "detection_balanced_accuracy": 0.894603713768116,
+  "detection_roc_auc": 0.937349787892512,
+  "detection_pr_auc": 0.9953805830799062,
+  "sample_false_alarm_rate": 0.009855072463768115,
+  "threshold": 0.5490266680717468,
+  "samples": 102900
+}

@@ -1,0 +1,13 @@
+{
+  "notebooks": 61,
+  "invalid_notebooks": [],
+  "historical_notebooks_with_saved_errors": 3,
+  "historical_saved_error_cells": 5,
+  "files": 1496,
+  "total_bytes": 250214743,
+  "largest_file_mib": 48.20451736450195,
+  "high_confidence_credential_findings": [],
+  "original_wafer_files_retained": 40,
+  "full_timesfm_test_run": false,
+  "fresh_historical_model_training": false
+}

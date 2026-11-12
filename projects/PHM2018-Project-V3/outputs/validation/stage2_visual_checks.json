@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "file": "outputs/figures/stage2/classification.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/사례 공백을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage2/alarm_tradeoff.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/사례 공백을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage2/alarm_uncertainty.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/사례 공백을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage2/learning_history.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/사례 공백을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage2/local_resources.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/사례 공백을 직접 확인"
+    },
+    {
+      "file": "outputs/figures/stage2/event_examples.png",
+      "passed": true,
+      "visual_inspection": "한국어 표기/축/출처/사례 공백을 직접 확인"
+    }
+  ],
+  "figure_count": 6
+}

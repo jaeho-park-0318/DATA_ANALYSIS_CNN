@@ -1,0 +1,500 @@
+{
+  "checks": [
+    {
+      "check": "동결 후 단일 Holdout 추론",
+      "passed": true
+    },
+    {
+      "check": "동결 manifest 보존",
+      "passed": true
+    },
+    {
+      "check": "단일 예측 결과 보존",
+      "passed": true
+    },
+    {
+      "check": "모든 예측은 최종 시간 Holdout 내부",
+      "passed": true
+    },
+    {
+      "check": "중복/비유한 예측 없음",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/01M01/anchors-0013.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/01M01/anchors-0014.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/01M01/anchors-0015.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/01M02/anchors-0019.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/01M02/anchors-0020.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/01M02/anchors-0021.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/01M02/anchors-0022.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/01M02/anchors-0023.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/01M02/anchors-0024.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/01M02/anchors-0025.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/02M01/anchors-0011.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/02M01/anchors-0012.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/02M01/anchors-0013.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/02M01/anchors-0014.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/02M02/anchors-0016.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/02M02/anchors-0017.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/02M02/anchors-0018.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/02M02/anchors-0019.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/02M02/anchors-0020.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M01/anchors-0013.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M01/anchors-0014.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M01/anchors-0015.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M01/anchors-0016.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M01/anchors-0017.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M02/anchors-0019.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M02/anchors-0020.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M02/anchors-0021.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M02/anchors-0022.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M02/anchors-0023.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M02/anchors-0024.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/03M02/anchors-0025.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M01/anchors-0020.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M01/anchors-0021.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M01/anchors-0022.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M01/anchors-0023.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M01/anchors-0024.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M01/anchors-0025.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M02/anchors-0017.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M02/anchors-0018.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M02/anchors-0019.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M02/anchors-0020.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M02/anchors-0021.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/04M02/anchors-0022.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/05M01/anchors-0019.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/05M01/anchors-0020.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/05M01/anchors-0021.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/05M01/anchors-0022.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/05M01/anchors-0023.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/05M02/anchors-0008.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/05M02/anchors-0009.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/06M01/anchors-0015.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/06M01/anchors-0016.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/06M01/anchors-0017.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/06M01/anchors-0018.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/06M01/anchors-0019.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/06M02/anchors-0020.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/06M02/anchors-0021.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/06M02/anchors-0022.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/06M02/anchors-0023.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/06M02/anchors-0024.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/06M02/anchors-0025.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M01/anchors-0021.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M01/anchors-0022.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M01/anchors-0023.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M01/anchors-0024.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M01/anchors-0025.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M01/anchors-0026.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M02/anchors-0020.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M02/anchors-0021.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M02/anchors-0022.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M02/anchors-0023.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M02/anchors-0024.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/07M02/anchors-0025.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/08M01/anchors-0014.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/08M01/anchors-0015.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/08M01/anchors-0016.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/08M01/anchors-0017.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/08M01/anchors-0018.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/08M02/anchors-0020.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/08M02/anchors-0021.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/08M02/anchors-0022.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/08M02/anchors-0023.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/08M02/anchors-0024.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/08M02/anchors-0025.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/09M01/anchors-0018.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/09M01/anchors-0019.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/09M01/anchors-0020.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/09M01/anchors-0021.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/09M01/anchors-0022.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/09M02/anchors-0010.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/09M02/anchors-0011.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/09M02/anchors-0012.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/09M02/anchors-0013.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/10M01/anchors-0013.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/10M01/anchors-0014.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/10M01/anchors-0015.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/10M02/anchors-0015.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/10M02/anchors-0016.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/10M02/anchors-0017.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "data/cache/analysis/10M02/anchors-0018.parquet Holdout 시각/라벨/분할 원장",
+      "passed": true
+    },
+    {
+      "check": "동결한 두 운영점만 평가",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_5 임계값 불변",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_5 이벤트 분모/검출",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_5 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_5 발화 Anchor 보존",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_5 실제 경보 시작점",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_5 시작 이전 연속 발화 없음",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_5 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_10 임계값 불변",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_10 이벤트 분모/검출",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_10 경보 분류/부담",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_10 발화 Anchor 보존",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_10 실제 경보 시작점",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_10 시작 이전 연속 발화 없음",
+      "passed": true
+    },
+    {
+      "check": "validation_budget_10 매칭 원시각 독립 대조",
+      "passed": true
+    },
+    {
+      "check": "분류 분모",
+      "passed": true
+    },
+    {
+      "check": "분류 지표 재계산",
+      "passed": true
+    },
+    {
+      "check": "원본 크기/mtime 보존",
+      "passed": true
+    }
+  ],
+  "holdout_scored": true,
+  "full_prediction_passes": 1,
+  "frozen_files_unchanged": true,
+  "no_reselection": true
+}

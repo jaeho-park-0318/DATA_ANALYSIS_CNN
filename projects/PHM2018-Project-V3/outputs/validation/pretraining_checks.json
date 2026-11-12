@@ -1,0 +1,1736 @@
+{
+  "checks": [
+    {
+      "check": "temporal H300 동일 양성 이벤트의 분할 중복 없음",
+      "passed": true
+    },
+    {
+      "check": "temporal H600 동일 양성 이벤트의 분할 중복 없음",
+      "passed": true
+    },
+    {
+      "check": "temporal H1800 동일 양성 이벤트의 분할 중복 없음",
+      "passed": true
+    },
+    {
+      "check": "group H300 동일 양성 이벤트의 분할 중복 없음",
+      "passed": true
+    },
+    {
+      "check": "group H600 동일 양성 이벤트의 분할 중복 없음",
+      "passed": true
+    },
+    {
+      "check": "group H1800 동일 양성 이벤트의 분할 중복 없음",
+      "passed": true
+    }
+  ],
+  "finite_available_features_checked": true,
+  "source_anchor_hashes": [
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0000.parquet",
+      "sha256": "92f71a90b003aff4bc12699ce5f7bd952cd1d38c549c93bf1783362b06540d48"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0001.parquet",
+      "sha256": "16ec796abf881fcde434632de0b26255928769599d587612d1106a8018de8733"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0002.parquet",
+      "sha256": "e4be328cb501fe2d4a2360c1f1ff7547a32dfc2482d7877b4c0e2f6147fdf4d3"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0003.parquet",
+      "sha256": "94582003b335d2f55437103e875597eee4d7483a9ed5d3cd124e0018879d2e85"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0004.parquet",
+      "sha256": "67ae93dc7c6cbc5709c62a495b0011012a49c6f2a676b62dbc399b70b1aaf964"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0005.parquet",
+      "sha256": "a917b6fa5fc195217333b2455d1eea2d66479f5e1d8f086aec37951e5e27b36f"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0006.parquet",
+      "sha256": "87c92af614167facbb3d8ccb5f3c5c2fb5027cabc6d75c8c0de43893238e8f65"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0007.parquet",
+      "sha256": "bd7c22be06b3cd986d81eede3f5bfa012652c39c12587695156fea53703b15b6"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0008.parquet",
+      "sha256": "bf107c225f58aba34d9a536e2421762d932814a2347145d26373159ca49508de"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0009.parquet",
+      "sha256": "39a57776fcd6422811f2e40f722d6a8055a0c63a6ed666773e50a036b9a8bf65"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0010.parquet",
+      "sha256": "8194188505faec0c15870fd8f239b700a9e812d1261234a9d232108d0ec65b3e"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0011.parquet",
+      "sha256": "c3c36fd125cbb46af6e194e9ba6858fb14dd2b17acdd33e21978546d9a07b7d8"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0012.parquet",
+      "sha256": "1006f67f5c21b7201362ab64439b70cd3db68a99d3adb4a61e5d40f57595edb6"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0013.parquet",
+      "sha256": "622497bd752d545afde070a91d74ce08e1014585fe4504c60c292516ead5dac6"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0014.parquet",
+      "sha256": "9ff9369c503d74bf9e1d148e1932eb3008015eb51fcb0a60d83972579db4e201"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M01\\anchors-0015.parquet",
+      "sha256": "3261810c9926c2887fc3a2a2fe5dcd35eb634d5c4e42dc816ad71793fd2dbc98"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0000.parquet",
+      "sha256": "3b521dbe17dcba6540c15238b57c4108e6a10c66f4016085d1452f2cdf0e6279"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0001.parquet",
+      "sha256": "7b36bf6118eeb634c63fbd75bc622e6cdbfd12fc31852d32702eb30757ccdd50"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0002.parquet",
+      "sha256": "e59901fddb70f49363060e8623c6db71565b4e52816b681d9a17e8cbe490cf43"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0003.parquet",
+      "sha256": "ec29adcf903d4c23231d3aa23901d057405e68be325e80a59f215c24067caea0"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0004.parquet",
+      "sha256": "0a4f82c0344f054b145d8171dfb6f9cebaaa76c521d8806de4e15afbd02ad618"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0005.parquet",
+      "sha256": "4715f0d43ca69d0efa370ae3913a817ca75c703de06740cb0bb113ee3c05b480"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0006.parquet",
+      "sha256": "706d2d8058d0320cba1b63d4b88919d04b7846477fffaa930982e4f1b9b1586b"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0007.parquet",
+      "sha256": "d95456e29478571d3f719d64a561bb6d434076e211301aaf78da180bf758d17a"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0008.parquet",
+      "sha256": "22da589bebf194d8420ed1238fffe9da2c0987250d03ac45bc9d0dd66b9827f8"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0009.parquet",
+      "sha256": "d2cf9bd932ed798f42838ac3618015a4afe64eba6646c2aac464c4a24c4c1c1e"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0010.parquet",
+      "sha256": "65b824778a69a6f416de4106d176e4e257002fece18e7732cfcefbe3be092e13"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0011.parquet",
+      "sha256": "7da8d34d8fd0162461fe4c65327957a358f61ca40bb267a927ad6f77faec13f2"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0012.parquet",
+      "sha256": "cf0bfe38ecde1f4f4025ccb1849497b42847d8afafdd2f67d9f7583c751c6159"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0013.parquet",
+      "sha256": "c0e0ed3e795eb29d265023d565f6ca5dfe762d7824a4a2e9e4c8009d50fb1200"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0014.parquet",
+      "sha256": "841331161a6a75f19828954243dd4ad34a8e52f9ea708b8dee260c6ae91e9bd1"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0015.parquet",
+      "sha256": "c461ba73ae843a6c986bcb1ffb9cad4ff4041166dd28826c00f499ecdc8d200e"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0016.parquet",
+      "sha256": "c181745c45cd8917f538ce289c1c6896ea48afa7d297e910728286ac8a66cd26"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0017.parquet",
+      "sha256": "174d5036faf5f771f8989e7fd557debdf421cd995b8749daf12d32653a4b2362"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0018.parquet",
+      "sha256": "9a659199adff0f699952a373e3965468999f68eec98cf95aeda126bf0ef33dbd"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0019.parquet",
+      "sha256": "ad24048f7935986e880f23570eb98364b3354f30222e633311e757c8df637c43"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0020.parquet",
+      "sha256": "74181b41ad2fab3de623af349752d7b36f1c2dcc791979b7d9c525cb572ee5a1"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0021.parquet",
+      "sha256": "2c9a28103ac1d926970e773545e469a7d7b0fba181bc2631b344a962b011c08d"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0022.parquet",
+      "sha256": "f9729b062b51419b7f7187b50e9c6f11d971b7404f39844fd2958b62796c0e76"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0023.parquet",
+      "sha256": "77c88422aeb3e4548e48e2cbcb26a81782217330b96f1c7a23b0007148d56adb"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0024.parquet",
+      "sha256": "3318e16c1525fe33e25ed16d87ea91898e4db8ba673f08c0272d2897d1a49f2a"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0025.parquet",
+      "sha256": "e6f97fa0a842642b5d77f4444862b90012d5833c84041eeccf09308a2d4cc5ba"
+    },
+    {
+      "file": "data\\cache\\analysis\\01M02\\anchors-0026.parquet",
+      "sha256": "e3af0b098f97bc60c0f7a81fe9ff3d3a1c63ab8036e82622ea13ca6dae5b0069"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0000.parquet",
+      "sha256": "9faa47a9af2c45e7b552f1ba584fb7286ee02265921733547820aef66df2d77b"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0001.parquet",
+      "sha256": "d3e3a9b3c4fc5f4b6130596330329acd16f7f39f6c2dcca3ab32517b3968ef1c"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0002.parquet",
+      "sha256": "7afceead0c2ecd1ed0eed3c244907b1d3473783ecb8f48255a3e926c71cd7f7b"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0003.parquet",
+      "sha256": "8b76a9508be3f112bed12a8d75db54bbfbd6d744a2b5867e83be3723e8e9574f"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0004.parquet",
+      "sha256": "a2d2c956db3dd34cca550dc0355b541a2bbad07353187e116b7b5c3db868c178"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0005.parquet",
+      "sha256": "aa1fde5999f06f44bfd3791d5558127d776f641d85cf7670108b72cda98096df"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0006.parquet",
+      "sha256": "e9b3f822d59074c200ece9dc6164af9ee801b381821da552fe71afbd4b863fe4"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0007.parquet",
+      "sha256": "bf1e98c641b3dc30b33ae4b473449ae62743642eb523398d6230b89cdac54c2e"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0008.parquet",
+      "sha256": "f83e74e8f6ccdbcbcbedfe9222a7e0ce14d71afabd28bbeb096f243195ea05ba"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0009.parquet",
+      "sha256": "17f92c10a79386e51f2aec80b1cf59dbf4e9cb6841b7edd6880a9a5abbb6c75e"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0010.parquet",
+      "sha256": "183376cb6d2bc8e71d10f1eb380ad9d9414ea1bc4621f99ce76bbd8129ad362b"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0011.parquet",
+      "sha256": "af612ae0b3ee5e855f7e62e67ed3ecfb85a2653bf1c96978d11c60d5bdb65f15"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0012.parquet",
+      "sha256": "be24fdc9c6e2509917771b31d5ea5dd494fda36030bdef040eec6081e5c84914"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0013.parquet",
+      "sha256": "1119fb8eff9232e623a368a096e4030c654b9ba3ad2420bca84abf67667cfc06"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M01\\anchors-0014.parquet",
+      "sha256": "df3d668c35046572a015139fef318386b04c2d9925422ed6265508f5810d6406"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0000.parquet",
+      "sha256": "6c9b6d3723486fff112a599fbe40eafa1787f2371c45b4d22ee0acf092326ce6"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0001.parquet",
+      "sha256": "45c712f27c389ecebb83d69e1d249c12fad7aba48ea2f2b64fdf34533c70bf7f"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0002.parquet",
+      "sha256": "e99a2413f3735fe37cd33d22708e3b92214e2734d325d7778c72b0f313b74f6a"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0003.parquet",
+      "sha256": "a9a8a0acd8f5aff4f281aaa131a0fe70024f9eb29e67252222eca8c4c3c8b5ed"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0004.parquet",
+      "sha256": "afc09038ab496c3c280eaba0d1038f63c6f9c6e1fb6a8be945a42df4e06a0cc5"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0005.parquet",
+      "sha256": "ee757dcd3b09508a0eb1a5aafd9f1c3581103d43fdab96108c7526baa868a7a8"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0006.parquet",
+      "sha256": "d3d3d2d649a3e59d51bf59ad7d9e427507638198cc850cd14dd5c1dbee1abbe2"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0007.parquet",
+      "sha256": "c05d30bb2eabcd1b5c0ff5aa69d9eb3a3a00b860b7449da840e66bde39c20690"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0008.parquet",
+      "sha256": "7bb22ec6a06717e78f70c28f159e873514eb17b263811a08a2e0c3cd197b6b76"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0009.parquet",
+      "sha256": "077b5e5bfceb5ea79c3908c76513637d5f2f9e97953041c0aa3f704635540628"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0010.parquet",
+      "sha256": "638214e34186ea80a68520d44dbfea821f4ebd58a799e746e55937c3c40160f3"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0011.parquet",
+      "sha256": "81478d9bdfac260e461293f365df7491b25b27ac1bc9a3887cb95f9369bd362c"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0012.parquet",
+      "sha256": "469b60ed7943c184604fdec6bc00bc9564949f51c0c7238c4db0d7f752385efd"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0013.parquet",
+      "sha256": "710000d8673bed522330f8504f14b8cd2757f7c79c9816d272236cd822b5ea8d"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0014.parquet",
+      "sha256": "774470a8c7fb75610783a18069a92933e42ffba1477bcb9792146be5edbcf795"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0015.parquet",
+      "sha256": "50ef1b650fabae3cc110d90733c9b12d35f8fd001865ddc66b2da4105fd8563e"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0016.parquet",
+      "sha256": "0c3a6af0fcd185ce8a52a53dc7d231c335fe506888de759fb89c1aebde61ca31"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0017.parquet",
+      "sha256": "9296093f556578759e3c64c8599f871978112e52afc74d69da9c7c6d7ea3f8c6"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0018.parquet",
+      "sha256": "167c093f5b81d249810003f22af019434bdbac122324aaf5cfef0d0f88bf027a"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0019.parquet",
+      "sha256": "26df5e7f992fb74ad7f22815a49e863bc9cbcb798f7144e9d4e6691486e6bbdf"
+    },
+    {
+      "file": "data\\cache\\analysis\\02M02\\anchors-0020.parquet",
+      "sha256": "108bb49f74ec669b237ba949282238b772f89c58f09bd33cbd8945e83ec57fbe"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0000.parquet",
+      "sha256": "fc8300008bc8077a5c399543af53a4cb138cc6918dbb7c91bce5207d5d43596a"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0001.parquet",
+      "sha256": "6405e855aad16e133cbd346079dd4428df0954fa78bc4aaf49aaf4f3c569f7ea"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0002.parquet",
+      "sha256": "832ca0968935767dca67ed645b288a42ec87bc239e61a7d1c08fde25d63999a7"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0003.parquet",
+      "sha256": "0e2830047725c7e65e3a8001f7d64715c94e6558049475c2e8b3d76207641d8a"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0004.parquet",
+      "sha256": "91e661c63a091935db268d33cfb07734be5a68f642d364ae574a2d16aa58ff5f"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0005.parquet",
+      "sha256": "cb6602d2a297edc2e3a86fe72ecb2d826dc6f5d43ab33119f5d62eaea1e21865"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0006.parquet",
+      "sha256": "42bdae37211559139bc4ae4ed294f9fabc77c28b2b4e9acd3da4ea80cf01edf5"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0007.parquet",
+      "sha256": "df1137d87c39ba86d754b55da09b4e30605c8dd96be9bf844324fae7ca566219"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0008.parquet",
+      "sha256": "f3a9a9557c339d5cc2849b64fbad3057968829e835c9d538917a5696f90c5f01"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0009.parquet",
+      "sha256": "202312243e3a54eeba1fe4436a425e86ff3683c34e869c3d8fd7b2aca80c2155"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0010.parquet",
+      "sha256": "a37fbdb9747d926bc66d51f866a7feb4e354d1e4a9a01c81c17ceb3a43b75122"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0011.parquet",
+      "sha256": "33d4d9bdf9a87103cda56fb60d7c2019413a51b951e1fa808b0e76c2f0db85c9"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0012.parquet",
+      "sha256": "11fc5022ff6ff16aba3222f826364b9179656f407151ffd52660dc8b97e584ac"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0013.parquet",
+      "sha256": "8bb4bd0eda3e1d9a9da9753a0ec6cf7f3841c24e870bea4368febe5bfd6e3879"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0014.parquet",
+      "sha256": "37754ccb1fa89435bddb0ce7bef7bc10f33ed93f2403ba2f6c2b0f005cdcfec1"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0015.parquet",
+      "sha256": "c7bd5e637d31be0d70d42bb15b0b1cd18e12c814eb15f0d65fee915f5db39ad0"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0016.parquet",
+      "sha256": "d3631994cb1af96e83e419680829f44be3cbeaf07324aca0d8fe68456449cf89"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M01\\anchors-0017.parquet",
+      "sha256": "db555646f2c9a8edb5f368121ee0e2d4e19867a021b5bb1279f1fdb203b71b83"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0000.parquet",
+      "sha256": "f40516597a47d46d74731bdbd6e85de67229ab3c9e2f1b19eaacad72341f0fe5"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0001.parquet",
+      "sha256": "a7d64c07a3b8218a66c5115bec0e2b535fd4e52a512d579729f571b259cb24d4"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0002.parquet",
+      "sha256": "984ec448395aba413a6d4d6311e4b01459b2730bb74ecc5b6ffdd2fe570a66cc"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0003.parquet",
+      "sha256": "80112bc9505ecf5c89224b16e88088857cfc6d94e3c40b0c89d947c3ba48f5be"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0004.parquet",
+      "sha256": "03a22dd97a995f880618febddaaf5d20be2fbe2ab89b3cab2468331d82df3c31"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0005.parquet",
+      "sha256": "68ac1b7a2102e608cee9f9db5db710ad1796fc2e8673db3440d9ab68547c862c"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0006.parquet",
+      "sha256": "bc271b8058e361bee72947f227df5ebcc2d567ba1db47caca9a7ffc2430662d8"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0007.parquet",
+      "sha256": "c70cca2192c998fea81b74744290513f441c16d8bfca85610749885e9a9c84d5"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0008.parquet",
+      "sha256": "2c373114a7d92319bc86a0dd8760b137c8ad420bb09955ee9746e1e665e9b2d7"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0009.parquet",
+      "sha256": "5cefa02efb0a8f32594451648f21a284538a77793b399bb02e8e399a759af552"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0010.parquet",
+      "sha256": "075185c5ca770840cfa9acb929d9881cb9b57d3a87739718a613bfe25fd7713b"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0011.parquet",
+      "sha256": "69597338d469e482207e25a69983f9697fdbe6d74ff2a04b179b95424f5a21a7"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0012.parquet",
+      "sha256": "e4e60124c77d7a38644983443158a41555f8954cf9093abb7bdda0b449aca54b"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0013.parquet",
+      "sha256": "8a6dddef78e955aaaadc1127b1e680c77c6a5551fff19357ac794dfb4b505121"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0014.parquet",
+      "sha256": "b7b04204e43ac81b293acba27214df379cf3ca61a504dacae491a4792d57e2c3"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0015.parquet",
+      "sha256": "b942c86a882d45abc1b7931459dbf91b1aad1da42aa40485d23c379d7d9c5baa"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0016.parquet",
+      "sha256": "95dfc7556f716ee2be80d3055cf79bd7590913acb819044fbf7a9ae60ce40fd3"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0017.parquet",
+      "sha256": "a6f0c69bb9e26e207d3412b015594522d41eb3439e7eb4cd673f8efbb68e7937"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0018.parquet",
+      "sha256": "9e2771e5a7f20e06fabc3bf3e1e36db0e59fa0949b2fa1a43a8e3b05eed5a67d"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0019.parquet",
+      "sha256": "5229f1d21363275f9c78be9328d720f031a1afe8bed494812be1d89dc583f191"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0020.parquet",
+      "sha256": "da5e5986a5aecd72539de2741d5fd257b217f991a766ecae83cd3b25d6204441"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0021.parquet",
+      "sha256": "779eb0ec9e9606b018812696f02024209e6863aa371065c91579cbe4d968a64e"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0022.parquet",
+      "sha256": "1ca572bc124fd51d8dc8c654cb4c880ab3931f0eb5ba157cefdbdd215319925e"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0023.parquet",
+      "sha256": "a2fb54b9c919925d5e6a016905972e169e5f287c9930e7999ac8cf5f506fbfcf"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0024.parquet",
+      "sha256": "348057ef6eea170b6b774753986b21fee290f252439c6f3e1d232fd092fe0324"
+    },
+    {
+      "file": "data\\cache\\analysis\\03M02\\anchors-0025.parquet",
+      "sha256": "f45153e3f846f05bfc9992c4a850c4e11ead2cf56e31946f13c46c8f11c16f64"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0000.parquet",
+      "sha256": "2d8529c76572d68c7c47a0bc3bc17e054dbcad5d61f2315590b4c283d100e982"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0001.parquet",
+      "sha256": "a78cdbd9da85ee266e236e364baf604748dbd557b7bb5ff1916768b2323a279f"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0002.parquet",
+      "sha256": "52862d36093dadca71a30ab17e3a6491859dffa611fd03eeb90c6c6233027550"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0003.parquet",
+      "sha256": "b3983939a9fc3b28d01acba99a76ccc13422539ce0d56322a35b153bc6a68dd6"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0004.parquet",
+      "sha256": "18847276b84db42c4dafcf603721e215d555c1f92ea03231f765ed283c779692"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0005.parquet",
+      "sha256": "e917492ebba60d848b0bb91bf461206c29a1512a559a4ae26d0a51a8d4fcdc65"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0006.parquet",
+      "sha256": "31d6e4ea1195ea2306fcd2ff679f351abb04da4beae24772eacf466404b0bae4"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0007.parquet",
+      "sha256": "201109a5fd6dc868e70bb3dfa1b5c82b6587c7ccfe22633a1f16d414e6ce9db2"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0008.parquet",
+      "sha256": "d699eea1b676032227227323bd0bfb7aa4efa0a9aa5175af20e9bb941f0e1f09"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0009.parquet",
+      "sha256": "a217ed01046f0012a16a9e23fe6cd19393ed937b3ee8ee9d21af22ecbddf8b31"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0010.parquet",
+      "sha256": "f30f1f3d3a3a05965d76ce890b67db0faae7c2ffa0593523028119b8f561dfea"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0011.parquet",
+      "sha256": "859a64ad5591a0eb548ea7a89d05e4d8184d764669bfa2d390a9df27b2004d77"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0012.parquet",
+      "sha256": "e7ae78bf9035f55e8a1663d5ed3f5852d06754fa0eb259d1d1eb48784509b911"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0013.parquet",
+      "sha256": "c8db4f36866dd26be4b85699112fca498390a0aaf0b22aa0afe6e96babf2a8dc"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0014.parquet",
+      "sha256": "cd878505bdd9f98ee48c0cc39c894bf4df20a020c38687cc97c4910c3df38c14"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0015.parquet",
+      "sha256": "705c4f3cb67ead5440ad4c836cca423226ccb7ec9bd01a8025fe28405985ca60"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0016.parquet",
+      "sha256": "8a7b158a76c89874f2ce3ad00031c9797311bea9c33c25d39c7d3390012bc5eb"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0017.parquet",
+      "sha256": "02f9132218c4be66e3456ca189f4f6f932f3fc5a603871e9a490dd78eb0a6aed"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0018.parquet",
+      "sha256": "431c9cb431cc518cf5c597b11d8f71891d58213704b887789c763a422f5d957d"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0019.parquet",
+      "sha256": "320716f7baa49bbb24ec4a8659b6b012bc7330e508d37cd3a9e047c96222c55c"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0020.parquet",
+      "sha256": "3025d040960327ac77ad120f19ea4116dd794415b082b5d85e7edca4aab2c831"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0021.parquet",
+      "sha256": "28929a8d8f20ff58e5e61461421560fb973a3c4a19c6c4b6a067a91354e6f92e"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0022.parquet",
+      "sha256": "d6cda151fc16eb436efc73356123eb78e9ece01955e17585f10eaa49a21e0b93"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0023.parquet",
+      "sha256": "f32432bd8c2953a0b37bfc489a3cf516919c1ba15c4f2fde1c614664023d29af"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0024.parquet",
+      "sha256": "7209176f039fdd025cdf6c801243fff511ceeb649bbe0b3e0c9cd361d042d1ac"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M01\\anchors-0025.parquet",
+      "sha256": "4ba1dcdd2b5a4527f5d4eb8ab66c4f27654cc1efd061bbd1ee3ed5e2eb07d609"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0000.parquet",
+      "sha256": "0b57f566869a8d1320d6af2aa2a378a92ca37b63bf3a2a5423b061c02cbb381d"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0001.parquet",
+      "sha256": "004742c31a6227fafa3adb562d1a2b6640491f9a9f7195fe71e60b7a18a4a60b"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0002.parquet",
+      "sha256": "57de61fe54fbd10f59e11d3d96728bfa4c1b17295cee5ab2e903f590f961c161"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0003.parquet",
+      "sha256": "122db2ec8785026a13bc3b741d6cf724f1eacfee89ce879c090ddd0bfa713db1"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0004.parquet",
+      "sha256": "fcd724e72b7075704d4aad07e7d8773d5e98fa537d4f8714235215ee65c7db72"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0005.parquet",
+      "sha256": "f807e81e5a6af68fb5f1a5fe6e98166bb269a9a142117b44f5e46af13f4506ae"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0006.parquet",
+      "sha256": "881489292a9610b6ce0fedf1c7c1e1a0d4d4af3ef8d22aae46b9864516474324"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0007.parquet",
+      "sha256": "022b25840065158ffc3d0b002f84cb2c05476415586b442ed05ab385b8641204"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0008.parquet",
+      "sha256": "748872abfe34876ee2e90214146bf56d63846426ab77e77273b4203f25d1dc7e"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0009.parquet",
+      "sha256": "dc957b5379bfae9d6ea6f9e7a3f2bb633a4ba0b90d47c6d4c06744d15bd7f1db"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0010.parquet",
+      "sha256": "dd9f8e8de1e88cdc7eab0504e82382b8343df4228ec7e25770f091287ba6d651"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0011.parquet",
+      "sha256": "81a31779caf5fb372f4aba79a564185fffea32d36ceb08cda7588921230842cc"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0012.parquet",
+      "sha256": "accc937067ff082e1f08c08ea1f22e749205bfd1ac70659ced3d495436a4b450"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0013.parquet",
+      "sha256": "ca6b56ab0f7a10aeefa6e756879c25f63f878612ec17539924fee7e274bc47da"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0014.parquet",
+      "sha256": "8a71436905264df3eb71eaa09541ea4fe20a4da0b13a08ff21d9b6281a11519b"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0015.parquet",
+      "sha256": "c1a21af0ae4382aae4ba7c161cc0cb6c3876a52cc0ba0038b8e2580840ed6492"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0016.parquet",
+      "sha256": "8dd1ac9f18cd0c12d0f6f525c1bbb4d35f9307ee913a16b444eac49f609847ff"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0017.parquet",
+      "sha256": "93a252b815449e433028bb6524b5ec2fa673594b5ae9b0ce9a1644762f8d69f1"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0018.parquet",
+      "sha256": "812e5705283ff593226f11e178b27102f74797124c7d536bd5c58ac79a8bdbf2"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0019.parquet",
+      "sha256": "30e9935c7a598f8f8c9c57d746793810c37433c3e1f7f1a69b6b5860d6354318"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0020.parquet",
+      "sha256": "abc53c0417e42a49e9a8604769512a27e5ddb880e9d0ae6303fb9727a5feb967"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0021.parquet",
+      "sha256": "37ab4eb14eb5374944257fc8050e9ee950b153d58abd686fd6e72eff5dfbffd0"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0022.parquet",
+      "sha256": "dac276eb5ecc249f7f282878f356fe552937f7b4075761e158a46bf6bfa75f03"
+    },
+    {
+      "file": "data\\cache\\analysis\\04M02\\anchors-0023.parquet",
+      "sha256": "2b9ce47df4eda8330e23ab05574ed77004b2b6d05b3551629979292792aa409b"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0000.parquet",
+      "sha256": "10d7d286233ae417838ee025cacc6720d588e264cf72edd5523ca78aa82846ef"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0001.parquet",
+      "sha256": "b3b1b157601c2c9a9effbb31c32deecdf096c7b6fe530683dfa874d30060cded"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0002.parquet",
+      "sha256": "5823450805985fd97e897b4bd20b59e7f0ebe4f916d297e304c5ffd2b489d695"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0003.parquet",
+      "sha256": "7279d360e11dd16e0885a268389f6edc012031a9cebc6c4c07a448cff91c6ba8"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0004.parquet",
+      "sha256": "f8c959ed623cb16e10fb7d3da13fefda1d69091bcb689ed7b0bb79f3c5ad3d6f"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0005.parquet",
+      "sha256": "019bc8023f07c1d02edd5bd7fa0e32c1c08a5361684244a14c30865797a6c61c"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0006.parquet",
+      "sha256": "6234df7590da5ad4c9087e88ff5470528cae492b8fc6a9455c219c7437a0c6c2"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0007.parquet",
+      "sha256": "990c3dd56104616303fc800beded2311ba50aa41ca51073263a2d5d97194e4cc"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0008.parquet",
+      "sha256": "b45f978a25aec77e21312cd939216834db25941320d429a8b2fe83111a10cc3d"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0009.parquet",
+      "sha256": "c2f8c21b5ee0402b90dd148c9ebc4bf4a44be1daf7c562894da6b8781bded99c"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0010.parquet",
+      "sha256": "be1d76574e976f8056fd10e730e17bfc5808420673705465047951198fa66f54"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0011.parquet",
+      "sha256": "b3aff1bed12247ece22714f0aec3f99c781f1d201e617c72f150e7c25945be53"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0012.parquet",
+      "sha256": "397c73a54d5364766e05113afe140c43dfaf61cf7d59cc5290cf772678d4fcb5"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0013.parquet",
+      "sha256": "c9db643c80ab60f8e13cec62a115f86c27d4117222f46397f6fafc77b3cba377"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0014.parquet",
+      "sha256": "c8613821b9c143d37a51f2720f287a93f36f704af4dbee1c55fa695aa0de9a6b"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0015.parquet",
+      "sha256": "0589049e35ed7e1f1f5aa305a77c4dd2c87768ba948cdad600fe90ca6d122abe"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0016.parquet",
+      "sha256": "5eb68c4411ec8b7b276c0581f80806896019f99f07251025166c4902a12b6702"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0017.parquet",
+      "sha256": "409293a51d341ada68ddd15b62699a99128770721255292a96100c4261958c98"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0018.parquet",
+      "sha256": "41fd835d28957a37ce742149fc9442577430d8f9a09e58968a9f62113e86ded0"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0019.parquet",
+      "sha256": "748022756b41dfdf5350b1b2d8dc937560333f1a389aa30b903b7d96780d0c90"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0020.parquet",
+      "sha256": "a7c4c36afedcb6633281e22ef2ca743c82f02ec25ddbe4f085ed1683fe402ffc"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0021.parquet",
+      "sha256": "e9cd1c6fb15b2ca77eb5806110c8eea3e113ed3e819251e5d0f6507755554109"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0022.parquet",
+      "sha256": "978dbf19c66e6e6fabaa1a1c0fe8675b6e8866d444bd13feaa00e2a59e2ca716"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0023.parquet",
+      "sha256": "c7c1ab71031e9750fcf2269f86b423f9d241c170c8227be2159a9f0e03cd6819"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M01\\anchors-0024.parquet",
+      "sha256": "2c4057ac334b4fcbccf6764c0f174b17506a59befbd3d7da61898b411579ff84"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M02\\anchors-0000.parquet",
+      "sha256": "9a8b1b135e5665567d1aa41bb4c62c7ce3865742030d76663ab3ea4ccca7b571"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M02\\anchors-0001.parquet",
+      "sha256": "a089fff93dbb0fb31a8f4224e4b7e7e48cba74f79fb1b67f59d85573c4ff1114"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M02\\anchors-0002.parquet",
+      "sha256": "87400845975eb54de13c72043dbf4c7d53a4df8db0fedbcb92ea2a3939aac550"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M02\\anchors-0003.parquet",
+      "sha256": "d8f71920862ae024d496a25a8b1323fe0d9c4f755b8ddba9056ca9f6f9e7c13d"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M02\\anchors-0004.parquet",
+      "sha256": "d46ae7fb3b1c29f5fa0e01a5333dde241e6a1d7023831f2f7170dd70e4a32347"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M02\\anchors-0005.parquet",
+      "sha256": "14a8c1fe7d40220885ba83fc30d2a8b1da2f070961fe2776f536511432b162b9"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M02\\anchors-0006.parquet",
+      "sha256": "ca044209cab6305cf925d34ac12ee5a09fe5a6246dbe1479777b0bbc4c8e0e11"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M02\\anchors-0007.parquet",
+      "sha256": "7ef00cf22aac97553ede4046eb490dc353813a8b92280a46eb6ef1188bf4eedc"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M02\\anchors-0008.parquet",
+      "sha256": "301301c983e4e0f6db52a74a06435cadb22c9f6b78348405037a3a99abec1f72"
+    },
+    {
+      "file": "data\\cache\\analysis\\05M02\\anchors-0009.parquet",
+      "sha256": "b96fb441f5ff1721b977ed0d24dcc803682c539f945ddfb8cb7c322c1df80ad1"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0000.parquet",
+      "sha256": "0e0555d0e87d86e4f53b3cd2117816e2b0cf2e1ebb7c38ac704fe4e538025c01"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0001.parquet",
+      "sha256": "c723c707821dc81b36b0fbb7ba59d3f27370e0090b87b75167f0e2c5062d9f98"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0002.parquet",
+      "sha256": "8de913f05ca6b0ae15eb575e17aad5eb8865aa303fb6bc92b4f8c31f25dc67ca"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0003.parquet",
+      "sha256": "9a408985c4a78b9dff491a6b492a38944b958bc3903e92d8c836f68ff680d785"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0004.parquet",
+      "sha256": "388f42a3eec8c4fcc0dd0e74af9fbc81af923524b1b8264666aec0de8d3475f5"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0005.parquet",
+      "sha256": "69d839dd1cce02b94eef57ac2f5815f737768fe63cfd38d1c3e5f08f434014cd"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0006.parquet",
+      "sha256": "b1a2692014c2f4c857b2f096b177396118c6a6e5d1d62a3c28f0267cf06abafc"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0007.parquet",
+      "sha256": "8cb9cf8fb33d35259bae77fe0cb248c281223a333c0912fd4b24de504002f03b"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0008.parquet",
+      "sha256": "5cda5730466ad03714c06dac6a6f8fb4e1ef6ab9dea06a0135cf4383b1740563"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0009.parquet",
+      "sha256": "b8e7049b5b889b2cf11fa29a2266c97afc66f1b62d52a5457390eaf2091a2ca7"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0010.parquet",
+      "sha256": "f5f29edd9c2033edc3b23a2b3d99c59ef4d3b1ce74904aff4bc6def47541feba"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0011.parquet",
+      "sha256": "b8c19ea10a01933e7477eaae6b40b072bbee0e31982adaf41e9bbb6d3e3406dd"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0012.parquet",
+      "sha256": "629c1cc4fed32ac6623854e20bfdfc1fdcc5f1d3ee4d8bf2e58467bb9ee37d25"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0013.parquet",
+      "sha256": "db8938c89370d6c9007d04884fec87126b873b4cb7d05fb58f111beda68f87b4"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0014.parquet",
+      "sha256": "645e58a7155987c648a7003a43c70ed377d9c90b0648873514199704adcf9f7e"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0015.parquet",
+      "sha256": "9e9f2fb0e38f77a6ded8ac32778baffe39b3456d68f201fc3f75ef7eadf21e20"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0016.parquet",
+      "sha256": "bae3a8e9e028acff98290ffc0af576773b917626b1c40a145fb9d54afeebc682"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0017.parquet",
+      "sha256": "75584888ef073892e627d0da28ad1a9926e8c189fc63a6b8a8113c4e2c10cf48"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0018.parquet",
+      "sha256": "bdf7452ffe8c876c8c09d0d064dea0cecc041e2ac8d77b1f3b01a6d5af81499d"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M01\\anchors-0019.parquet",
+      "sha256": "d96791feee9b100e9f9db6f636c390a051ab7c93400f2474fe7673f7fa13b0b8"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0000.parquet",
+      "sha256": "bbc2971b08d490b4b5b131ff435b4f470318e41f118744d93ac2a67ad6ec79f0"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0001.parquet",
+      "sha256": "603211c4a750942379f385ff010be6a6eaf77471cf847d6f6616d5ef52425bc3"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0002.parquet",
+      "sha256": "e43bf51063de316c87e2b95f20480a128f20f9aafc90db8d1b1f9b568e33a808"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0003.parquet",
+      "sha256": "9281b6db4bed93288f9f6e5d30aefa4a572165d4bda88c904f08b1de418ff59d"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0004.parquet",
+      "sha256": "774ead300a8fb8b64b0d0d0f8388b30ad8932cb55ffc360b61657f5fb4dc3014"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0005.parquet",
+      "sha256": "ba5803c2e9cc70ea88737cd67434af1e2ed1d851bea14c90618286890f42ca21"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0006.parquet",
+      "sha256": "2829d2fcdd0bca3ac83c51df60007ae7337a42ddbaa060be9e34322721718e4f"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0007.parquet",
+      "sha256": "062ad8516b775f235b542897339c7964bd733598941cff260ffd1b3b94c91c38"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0008.parquet",
+      "sha256": "4097b95419aad47dd1fedf8bd8287f984ca35f33218c90e7cdb02a071ccfac5f"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0009.parquet",
+      "sha256": "89893dd7229637d1be0718668a5c60afaf57bfb17504151631d9f5bd4c078ff2"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0010.parquet",
+      "sha256": "e63b3e4e3c80f3b726330252de81e9ae8b445e529b7711bc94514a6c27aa1bc5"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0011.parquet",
+      "sha256": "62e0a349868012b54809ecd0a00ba3b76fad4d9f5e06410d9198bfea06b47684"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0012.parquet",
+      "sha256": "144d20bd5f29f42d6e1babf2d52dae4d133bda6340740c5eb59771d23112fb62"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0013.parquet",
+      "sha256": "0d518c26ee3dcc0e3f0467b840eef2ebf43447a55c4fb05311beeea5d82d2b0c"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0014.parquet",
+      "sha256": "242751e5680c5399cc31d656680dcd227882db4da1fd069ccacdc8838ca5d85f"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0015.parquet",
+      "sha256": "855f78dae9991ff04a891070f4462fdf49ec01c897c0975f3b98b9652854e25f"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0016.parquet",
+      "sha256": "03cfeca853554f31287b37340eabdf4c97cf84bcd32e51be045e8178adc04131"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0017.parquet",
+      "sha256": "02322dbabf22d8dd65959b48e16f86dd91513f239db266bdfab6ff0494821aa9"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0018.parquet",
+      "sha256": "fbc82dcb8b8cbe4cc3effbaa3f50c5b1e8ccefa13c4fddd82efc51535c589fee"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0019.parquet",
+      "sha256": "4e515e3fe125753c16b1543cf4ed1a8e7123b15a65d74f983a273da14f1041c4"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0020.parquet",
+      "sha256": "d71b659f4c2c8c920ec66e1eb2f725c527c512073b9682796ec63db3f420ded2"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0021.parquet",
+      "sha256": "1def2c248287449d81b164950378a4393595649e2cccbd4c6b2792eac5dfbd6f"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0022.parquet",
+      "sha256": "3314e6bbb7412e9f9207f81772adb00e74159ef2c243f1f87561903dd891306d"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0023.parquet",
+      "sha256": "5eaed8c2f85a521ee472b711018a8824307c93b6c3f01334ac20a3f742144c8c"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0024.parquet",
+      "sha256": "5b977aeadee81ecd5ef0f2c9aa231b1eca3e141efa3b360070a7ad6142cdec65"
+    },
+    {
+      "file": "data\\cache\\analysis\\06M02\\anchors-0025.parquet",
+      "sha256": "6d84a56b51c2a4d84fe6fa4b5056e9e9f73cf15a1d9cbdf5c2aca28e17ed79f8"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0000.parquet",
+      "sha256": "01a6d8078b9aeaaa8e2caacc7b91b5c8c2db55a5db07b909e9297290c4d20741"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0001.parquet",
+      "sha256": "c6b645c6ae6f733a3dc27ac2467cbc47f16c5d0abdc8fdd639b234f47183073a"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0002.parquet",
+      "sha256": "f5ac71716bbb9fa6ba9ca5d647e2615ec61beb9053f85ba96bca121b184bf88b"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0003.parquet",
+      "sha256": "143b851c3acb3b1322b4e9d37381814deccb11eaa4c699987edbd7aaf1457616"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0004.parquet",
+      "sha256": "c512e0dfc2be49f7d34a1e938188a085753b0a317f87a9a3af649848cfd705b0"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0005.parquet",
+      "sha256": "8907e6a047f10c869ffdd2fb947122e8d3c83eb923238716dca30a6f0a001937"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0006.parquet",
+      "sha256": "436ca2304819c4ef1542586d0dc1ba11d0bb31380f0e4830cf44a5f93bc5913a"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0007.parquet",
+      "sha256": "07fb28a7a42652908958c09b3402030b3cebf84fe550e038b1f4c86fef35ed74"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0008.parquet",
+      "sha256": "3aa67512a7dcab5f5ea82a0f7eae106c47f665c5d81837e1c981363922de74a4"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0009.parquet",
+      "sha256": "323a9413533e9623df89d071a44701e0139627a97d7ed4bd61291f113d66dc2e"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0010.parquet",
+      "sha256": "d23054da4b8b686512e709bfc1ef0a10557fab71729a400aad6641ea3c3dbd5f"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0011.parquet",
+      "sha256": "b15db7511799064efa755f82f8c6d877735a153a8206f5c4d014fc24af63d0fd"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0012.parquet",
+      "sha256": "2fe81144136954b0616f13833fab94dc2914dc71625a77f4e104c3bb3cccae71"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0013.parquet",
+      "sha256": "8da88d17891702a326575ed66861c9370586ac1d136a054b5e4137440f0bf57e"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0014.parquet",
+      "sha256": "7c8d607602c7c061de9733efdb2553fc3338bfac4145c129215744486bcf81df"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0015.parquet",
+      "sha256": "a155cb69bd2c8197a9d6346ddd9c9837d7c47b06cbf148b34247760fb40047e7"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0016.parquet",
+      "sha256": "245fa892b7780f3e61e5575c6caea6564916908bffa2142232dfe646bda28a85"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0017.parquet",
+      "sha256": "7a4cfd873e941c4c4f7cfb56f12e123a5d96b5139aa3071b54bd7f132f06fe68"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0018.parquet",
+      "sha256": "9b0a08e624ad3d7e22dc7414d4823f9bca3af79343fb9788f2473ecd741a59d0"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0019.parquet",
+      "sha256": "5757fe8948cba901c6a808283bf8cd3f4bfe037add8d9a8351621f537b5108e2"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0020.parquet",
+      "sha256": "edfe7979d0c950776cb7762b2fa6c393124fbefad9ae82d2924ab64c98a7eaa0"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0021.parquet",
+      "sha256": "aa2ceff8797f504cce0889014f5be457616603cceda6dfefbdb79da3889b6cf7"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0022.parquet",
+      "sha256": "4fdccb72739534cb0d4757807de50c8172977d5cabedc2299a6252b692af8533"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0023.parquet",
+      "sha256": "924baaedf378289b2e36d9af99352f07ff6dedb0f9491feb55151a6984d9bb65"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0024.parquet",
+      "sha256": "b9ecce3223056cd45338f6ab7a9271b9cda08c4a36dbcbe332962aff7c4c24d2"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0025.parquet",
+      "sha256": "acc28f36091ae0cf46013013ced4f136705eee0783b4fa995be335c6194fb7df"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M01\\anchors-0026.parquet",
+      "sha256": "ce4d26e54a68b92e912a65059f5468b2243898890066f19da3a1545d3eb4d77e"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0000.parquet",
+      "sha256": "83295c6089501bafcc93f22b83b20f9b73617c0900d58f35b2204bd9e1247e6e"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0001.parquet",
+      "sha256": "2d7c3743ad2fa0ef73c2b88fce2f7c2787b683401090c9ebc3912db702cd2ac4"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0002.parquet",
+      "sha256": "31b07386337efb9daa0def71eeb689aa65ee1beb2741b6156db8fead63287f90"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0003.parquet",
+      "sha256": "008e17741c7248fa8c09b5fa663583b6539c7c29020477568e072eb83c089bc5"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0004.parquet",
+      "sha256": "e7054db91118b3082ea95da92147a18d27583061e07b327ac748b345a5a61156"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0005.parquet",
+      "sha256": "43d906259ee9fc3014b96686d75c0b2de00d5d663c7eda56031871634a317555"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0006.parquet",
+      "sha256": "52b58ccff0ea4dceea041a4765c3b9f64e8c36c4ad5599e46b4b6c2f97d04890"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0007.parquet",
+      "sha256": "e5eaa227f6f77e1466f33e9a6c68696794dbc9e851eed59d9d5dfa8139b3f091"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0008.parquet",
+      "sha256": "94a0120c78203954c206b46cf79ea7da95903b7c7b4dfa37bf320c70b94a6950"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0009.parquet",
+      "sha256": "c3f60707c1e1e85382ac1f8baff299ae9b73ae53d865763a37c9ebb728d93a20"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0010.parquet",
+      "sha256": "99ce4f39094ab5e9ef8a8d87bf5efcbb8a9bc8464588895eb0de5a153b802b38"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0011.parquet",
+      "sha256": "4f254face79bd10fab97f3947241af30838e29a8fa4491d28da5bc53f2be0d56"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0012.parquet",
+      "sha256": "f81c8de0bad411169fb671b0e76fa628971195878d586a7ac36b2a8ef9cbbf6a"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0013.parquet",
+      "sha256": "4ad39ccc3f9866860c0470104c9302973524b74c07cd20f766a63234545918ad"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0014.parquet",
+      "sha256": "22b2e0d69aa807d814269ea9959c06a2f135062626588b89b7a960b9fc813647"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0015.parquet",
+      "sha256": "a02aa34fb3c144ec289230a19f7326010dfadb7b409130fde8202dbfd8802654"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0016.parquet",
+      "sha256": "aa0ef84ab63f371ba15722231883d7a16bc05a2ca5693db7b3d622838db326c1"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0017.parquet",
+      "sha256": "146b4cc2bd60cfaee0a832edfc1107a1408ce0af5ec65969d181a6b3683570e9"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0018.parquet",
+      "sha256": "41f551282f800549ceccfbf9ed5d20be9be80e9cc348f27cbded63a79976f5a8"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0019.parquet",
+      "sha256": "3e7a7a3c9db9a171e2f477847793e6056bdfbc22437b79bca205b14fee079b1e"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0020.parquet",
+      "sha256": "e688ae17191886a268333d92205d11759c5c43f50679d78daee773ca3d8a3473"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0021.parquet",
+      "sha256": "bab13908238dbd16527ff3029b83dbc2e250508908b6aa033a5976bd919eb854"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0022.parquet",
+      "sha256": "9c8b03a5cdbefcaed9e9b258e9136dd993fd720933949bac9d7a986a4379c3a9"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0023.parquet",
+      "sha256": "1b8301d1415226233b579d37210a53bc9616aabe8b1cec90a28adfd81e2e19b2"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0024.parquet",
+      "sha256": "a2676c774de60150c20fd9f251c4f1c6d99c923d4b8ac3d735a1db382a7ae079"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0025.parquet",
+      "sha256": "98206b636f1271c018a52f2928db9dd08ccaed4f2805567241ab227b8c6afb1b"
+    },
+    {
+      "file": "data\\cache\\analysis\\07M02\\anchors-0026.parquet",
+      "sha256": "6f7d49ba26cc05bea004c1ca8cb0c36973b52d7477a9426bdda8fbc16ba0fc81"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0000.parquet",
+      "sha256": "ca6466927346e446f5d79bcf1dd3f02b51fd20975f98e214cf1fc24205bbf0e2"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0001.parquet",
+      "sha256": "dfc644d5a8c3d892f0fbd5d2e99a592206b7b7b1657994a5b19b967df9310c71"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0002.parquet",
+      "sha256": "17f41d5096698506f029717bd2211c8f4f4d213a5c57fea95b8b7a7c9d64203b"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0003.parquet",
+      "sha256": "f4efa391671a1d99c1a7a882d0a2653067828a5af32c05e44a02cec0a9bdde15"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0004.parquet",
+      "sha256": "d1ff436c1c8c36aa6804bbe15cb3fb9293b019c3ee113b03d1e002c358bb3ac4"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0005.parquet",
+      "sha256": "25a446ec7d755eb24574352c115d50bd0f2c1ac8cf6882e752989110671e5d29"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0006.parquet",
+      "sha256": "7bf3b3a904e6ab7153bdd9fdc1b6e1e6421ea8467d370557d6b405278c3118a7"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0007.parquet",
+      "sha256": "175d5d8c27e4a55fb8ee070489da3770f80264445291c58bad7567ba31fea1c3"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0008.parquet",
+      "sha256": "642a0c2b999b75692b011f402a6204d796825416d13affafd8f1751c63f3f414"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0009.parquet",
+      "sha256": "e4a5e123eb0f214ee784fa19f43f8f2c8a1c5cd18410ad0bef46ccf56f13f03f"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0010.parquet",
+      "sha256": "38aabbe25a8449bf81a0f0edce0f62aa3e3718b55b78e80c900fa48c0d9a2386"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0011.parquet",
+      "sha256": "023ad12308824a0a124ec717cf29bd639ec82abb645029bb6478a1f78447b487"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0012.parquet",
+      "sha256": "c8b602c626de28ffd64579087c829c083a82fcde262f008661952c9e2b639f99"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0013.parquet",
+      "sha256": "50b8e28029f4eee675886247bf699f769909b1e77c24135c3875ccee1e0eabc1"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0014.parquet",
+      "sha256": "7b500785844440ec23fe24d1dc4e20f70f93f59f922b757cd814652d62460782"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0015.parquet",
+      "sha256": "539d1a95c821c30486e8f34811f20ba24175e7bd96fce6cb197584f640195e71"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0016.parquet",
+      "sha256": "86c8718a7c0c8d547ef0d1f6f409cad10e10fd0388be6cea75729ded11ed76c1"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0017.parquet",
+      "sha256": "a95519eff7f15fa1be0b2329789be4a36e9a19bc690bd64949b880e377c2e687"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0018.parquet",
+      "sha256": "37a15fc41601497fd7a247723fe8308d83eda7c343936c010e488e4b55db41cd"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M01\\anchors-0019.parquet",
+      "sha256": "0871cc595ab841991fee76637a281fa69e7aca3ca6e4d64ea4a8caab2c04f7e1"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0000.parquet",
+      "sha256": "faf89773e95b65e6a78a412a7ff4b1b1066d9a823382ef4dd179b520ae8c613a"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0001.parquet",
+      "sha256": "83ab56261f05b1e062d269d19399a20d4badc7c88b03d6dacc3a4e69cfe2cafc"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0002.parquet",
+      "sha256": "46d30f4855c09fd18a463a5b1fff42bdd3d09126345d83f7403bad484e54ce46"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0003.parquet",
+      "sha256": "e0de36bc774a7ea7140b9d8396b424bc6b04e3cd099aabcf773e0d29be126afd"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0004.parquet",
+      "sha256": "2f282853ff95f067405d26a0e63b7a03f4cb5cf57d32a6ecad07778deb72e6f5"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0005.parquet",
+      "sha256": "01cb28a3ab7c4a07cb74539a343054644543829a0fff3fba09ee5e8576018deb"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0006.parquet",
+      "sha256": "b24bca91337cfb5abcb728c48a44b63ac1773983d1ee10658a8f6bacc8afac37"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0007.parquet",
+      "sha256": "64858b1528963d22b90b71d3e27252d50be410a2d650b1fcbd82010ad7a872a3"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0008.parquet",
+      "sha256": "85b4d2b2c00dddb94033d4ce8b73e1a70c4d627ad8ad935c113c59f4f5d4451b"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0009.parquet",
+      "sha256": "a207c99632f78227eec5c5879f5207c3fc4674fea3f8243aebf95780b7a6deac"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0010.parquet",
+      "sha256": "477531c15e2b8f8e1b17de896a30594ed3f96bbac52e5798766948eea6ca4716"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0011.parquet",
+      "sha256": "b27c4655d723ad8735d6797d3eaf289128f786d1c6862be0cf770b33ba009cdc"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0012.parquet",
+      "sha256": "992beb08513938834e6e65057fd4c9bbf3987046785930ba2ebac20a1b71e4b5"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0013.parquet",
+      "sha256": "12285c24602f2f6c52499c3e3e7bfdd31f1d1411bf6a241329d3a7d5d57fb7d2"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0014.parquet",
+      "sha256": "f4f8263d91629f0f942290459141cb5b26c3262c4298878d57ea05108d941b66"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0015.parquet",
+      "sha256": "a9f99a8ec33bd4a3048ce28e7044f4c9bf6a24cb45227bc06faa46c651400553"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0016.parquet",
+      "sha256": "abc97978bce687ac0bf6443066d97b80a03ae7a3e37bda23f029647942b7e123"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0017.parquet",
+      "sha256": "7d6de10710e9d2ca933922c412b4d42468db9a588bb5985b6f6b5109005eb6ef"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0018.parquet",
+      "sha256": "d4ccce892a9266a59cea9664853f1e0f64f62763823adc4dcd3708dc99258ee9"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0019.parquet",
+      "sha256": "26717597273ab4a2f5832a9ac787821de750a3c3ceb9f0f08350234999191331"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0020.parquet",
+      "sha256": "213edc61aee364ecdb1b2a844caf9ad6305b0b07e24fb78ede162c57282f758e"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0021.parquet",
+      "sha256": "6284699fd23385a457789a1dd18fa5116bdd85dae8cf07a6751952f474e68960"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0022.parquet",
+      "sha256": "c3cf48321e638b0978ef0a8f1033a877fd4b48acd852e6572e92d803ddbbab1a"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0023.parquet",
+      "sha256": "7b8a83c25b05eb93a4d446bee666e80c37195248c5d053b03d3f2c8eb2c8cb1a"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0024.parquet",
+      "sha256": "5b644ac72ec187a6ac80c772f0fec6cc7fa2e86406f6a8f7c7d8df45a76cb67d"
+    },
+    {
+      "file": "data\\cache\\analysis\\08M02\\anchors-0025.parquet",
+      "sha256": "3935e0211306e17d5d8de0a9ce050251b6314e58abf630b568f4b4daf7641ddc"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0000.parquet",
+      "sha256": "10fb7531b097bc26cd20e5e3e2cdd2e4f80cf5341b365c240a0428833ccb7f7c"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0001.parquet",
+      "sha256": "4aecfea4b351f5f3eeca1e9bedda6765d787ac8adaab92c0d9796a5660413f68"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0002.parquet",
+      "sha256": "fb4612a01159a0c9333aef48b9c15c6ee75c57467674ec7aacec8fa9313a142e"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0003.parquet",
+      "sha256": "997080a36087fb7ea552466e36dcc60c598df38221b8d09f7b7111ba444ed34e"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0004.parquet",
+      "sha256": "98e3ebe4f19d58cd7fdbe59dfe789f5452ac443d836d22ceb9fd684701f22fdf"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0005.parquet",
+      "sha256": "b339b983515f01a8711ace6a093dc9e38c285b68bfcbf0c2ae44d43f27647772"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0006.parquet",
+      "sha256": "b6e0653c71f1d02ad60f9320ad1e50accee5ef651cb2d03c41236a55a7a7c6c8"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0007.parquet",
+      "sha256": "ffbc540ce85a8ca56faf778e48cf8d2e055f22f1019b3ee21b26df1454133959"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0008.parquet",
+      "sha256": "4a17302b5f7a9cad39645929c98ca1f9067338c0e511c0a65f40ab57d9011460"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0009.parquet",
+      "sha256": "c8ef86723e0c564688ec7505c871708632cd884544ea63940eb7afe6da3df86a"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0010.parquet",
+      "sha256": "96168a3af8ae7a91f59811b1566ce1d3d56bb2d2f702cf0872c82843efcd4dd1"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0011.parquet",
+      "sha256": "2770b26a28c09b3c184bcdb5d80a738794403d655587ffdc4f7d6ac6d4d42e23"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0012.parquet",
+      "sha256": "c237e7b82708e7b0e9e72e50fce3f1332c2e9efdd839b29c208d1710c2052091"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0013.parquet",
+      "sha256": "bcd728fd4ab120e742c69b97c69aaec03f64f4b9f40eb73835a8da74da9a5172"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0014.parquet",
+      "sha256": "e35166e051a211ef6b943a0d701f3d8e385df8069d350ec71bef9b81f4aeb88e"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0015.parquet",
+      "sha256": "28b8dd0f3e9a55f57ab04c3a1839c924daa080c5dad99c6648989ea975abe359"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0016.parquet",
+      "sha256": "f37e5f72ef6c2b4bc3ec6849e948f0dd05e39673edfd739df03a314ce773d50e"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0017.parquet",
+      "sha256": "dbe9a509c4356e89e3a706d0d265f0ee1f0d39ef1c01daa3c9cd0869d9016b33"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0018.parquet",
+      "sha256": "a11cf444572f097c509529bfa1efa513956bd408132a4f823aaf72f1d84d678b"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0019.parquet",
+      "sha256": "c17492e73a3533c2ac550c9198ee78ae1f3c431f0907e948a747d8f19ec91735"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0020.parquet",
+      "sha256": "dabd7f8ceae84912a036969f163a4178036ea73e3573b35261db676f80b3746f"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0021.parquet",
+      "sha256": "f9d9dcd4e1f4e31fff84a42b6c7c863d226ba84bc7b8b3c92c620321239469a4"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M01\\anchors-0022.parquet",
+      "sha256": "b60e98e09b6689015ecdef6c852101080e051307b39326d19bcedaa8545d8791"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0000.parquet",
+      "sha256": "d6317401121b49e479be191561558770b8e832bd39cad0dffe8f55b98c18e782"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0001.parquet",
+      "sha256": "014a676140c03f16ca7e41abdbdde693dcf3096973f52c3378e1b69a19b142bf"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0002.parquet",
+      "sha256": "ddd50978d5c9506b1b7c40a3d0725c3d3961e83d148c12421550f52a158f44d0"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0003.parquet",
+      "sha256": "aa9b17fee6e0017a35a6865b88e9f463c448e2cd6849e975bcca7a224aa0b0ee"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0004.parquet",
+      "sha256": "b1e991a971bc43ea32774f0c9e725e0423dae272c4334e2e8b4dffabaf329956"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0005.parquet",
+      "sha256": "86bce0017960a6f750c944965070936b9705270767ab6a7f2bec613c8890fdb0"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0006.parquet",
+      "sha256": "6d2daf87372f0f7f0cc3a801d2ade0d81467b2caa42a3b4cbf4c3ab8bb1ebaab"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0007.parquet",
+      "sha256": "ba130cc04121b47cab1d51f0bdb3918aee44f2fa16fddcba57e10fcecf28b736"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0008.parquet",
+      "sha256": "9902fc07e1c760ba9f7b6b2177d73201fbfe755ad5d1c91f265da58965c23e15"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0009.parquet",
+      "sha256": "5799ec5ababae0c1f3162464601dfc6687964719580fe3382375e65bf171de6b"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0010.parquet",
+      "sha256": "b36404065aa0dd8544ef9c72c7f765a4638969a333551e8dd442de8c2e44c47d"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0011.parquet",
+      "sha256": "2e4f75971b40242a39439f1624688e18340ff195d853eb9a8862ec0b69fc768d"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0012.parquet",
+      "sha256": "e48ffe5836417ba2ad9f393de462e3cd3bbb96c89926c1a17d261ad2ce030e08"
+    },
+    {
+      "file": "data\\cache\\analysis\\09M02\\anchors-0013.parquet",
+      "sha256": "7a389c457dbf2240eee9e35b612b8efaea5454fb9e2b3367a6b298b19eb87c2f"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0000.parquet",
+      "sha256": "7c96f0aee8c53adbb9d07ac3d6dd518ae33b0b4825521c48f5db8a23a9e68e46"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0001.parquet",
+      "sha256": "53efb7b140678401125d78dc62198abb6b6f3f1d37663c27da17b9758eebcfe4"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0002.parquet",
+      "sha256": "6820470ae08ab132940228f6d32d0d1c08a47c0818703268138d673f0ed9bc7c"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0003.parquet",
+      "sha256": "3c647a056fea67800087540d2f499f37d6a46b72a6a580b9733269c691aa5b72"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0004.parquet",
+      "sha256": "5b7087187b17933d0c4bd08f25c9a65917e475426ad2a58db44ebd3c8c04c7a9"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0005.parquet",
+      "sha256": "ce011101f3102d2651fb7c34572ee3836e35b3580ca470316972ba382f0650f8"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0006.parquet",
+      "sha256": "799c4303df6ba78186378390e4fe5dcc193fb2407473146a2ed92ad629fc0e74"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0007.parquet",
+      "sha256": "9c22d130500bf36fb9c082586a3e9dc9fa074c880c73f105025f338ef6153423"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0008.parquet",
+      "sha256": "b610bd00b149bc14ffc555cbe03755adce1d9649ce55aa08cca397227049f046"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0009.parquet",
+      "sha256": "3faba1a3645a3461425f8313e78879dea108abb0d59e0907bd79c6d06f9f88d3"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0010.parquet",
+      "sha256": "ca5c296337f7e716241981891d338b5771d7f79c6495871e2b0ad60ba93a07b6"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0011.parquet",
+      "sha256": "587f3c2607fdf24a08efa0bf39e11de30d8ea810da545164292a60d53eacf584"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0012.parquet",
+      "sha256": "4e279944533acfdb3eadf9546abbf30c48d09f4fbb0e731e967fd0b689746c2f"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0013.parquet",
+      "sha256": "ada779afa0589e315f7074db8aa9ba4649c9054a28d0103507712f32532b93f6"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0014.parquet",
+      "sha256": "d5560552e8aaf1bbcecb864ff7dfb130fc4609e3765a24663cccf34ab51b1479"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M01\\anchors-0015.parquet",
+      "sha256": "69c47e1748b1f5a2495531b6f9eab8355dc4b42fcbd720b66e9ebe3bc65d1e4a"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0000.parquet",
+      "sha256": "7449c49b287f54ce9df8842c46c24a756ce5755c3eb80e3f91effa61a654beee"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0001.parquet",
+      "sha256": "3e92fb24f4bcf76425bac72d030e0b62e7b5e7a28bf98d27bdc8cb90e757544f"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0002.parquet",
+      "sha256": "e689ec226093701f576b9b27b54ac60d882b4ffe3451f85f622eb3d865474df5"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0003.parquet",
+      "sha256": "068ab4659d92eab6cd429b7ee171b1428d1c6fb5ea5160bc01ba5d5ba4a98ad4"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0004.parquet",
+      "sha256": "6963ff46b3ff2f2e277844f8e75075a8e0bb1a3ddf450d1f548becff222cc88e"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0005.parquet",
+      "sha256": "b521a69a6db8d3716968686eb647ee3959bb5a140fd031c1bc54bd75c597f881"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0006.parquet",
+      "sha256": "6e8826395174d677f0b203e6c9d72e72feba281b72725809cc52642b0cd9ec88"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0007.parquet",
+      "sha256": "93b50c3c42d308ffa446a93664056094798360addb2c1ec562da260475303fbf"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0008.parquet",
+      "sha256": "13004b98bb80057839035ccc5f199fcf5b2ea4c86afdb4ec722ffcc763c5c3ad"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0009.parquet",
+      "sha256": "dbf6433aac52b92bd2256aeddbf7dfe2adc788529b89528eb452f9704582f63b"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0010.parquet",
+      "sha256": "078ecfd732a2d6bd7274c3041b10f7f3437648c3c4341f1c1c9c563756d0b080"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0011.parquet",
+      "sha256": "501cf8d90cee4a5f05911299ba8dba2fecdc449d2ff4cc83dcee8cadc257ae89"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0012.parquet",
+      "sha256": "465b69e7c486d24e9d2432eb3434464bf84a84ec7bd8ef3d5afeed5db75a1956"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0013.parquet",
+      "sha256": "165e43c96e039550633c5b67dcdf1a7b8e455dc0107650badb5d10db6197ba2c"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0014.parquet",
+      "sha256": "4002053f0e80ae3d922afdc5d6970d90314b30733179faa8d3010171b7f234d1"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0015.parquet",
+      "sha256": "c210b08862abe74c9d031f72f2971e6617c5e29cbf16a9c2e98ae3444a6d252d"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0016.parquet",
+      "sha256": "10348aa08f62690a58131d0c4702585cb7cc65780d0838bbdcec00a7ec427f56"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0017.parquet",
+      "sha256": "fc580061f27ca0b8c44f49163aa34ba897c04eedf2da8f86d8620b6bf324ba5e"
+    },
+    {
+      "file": "data\\cache\\analysis\\10M02\\anchors-0018.parquet",
+      "sha256": "2083c4cf4a9751ed92aaab9a82e6dbb452d43654f10e34e1660fd5f4cc73ae3d"
+    }
+  ],
+  "model_trained": false
+}

@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-11-05T08:35:22.106962+00:00",
+  "reason": "빈 장비 이벤트 표를 concat한 후 tagged가 object bool이 되어 ~ 연산 실패",
+  "correction": "집계 이벤트 tagged/available/detected 열을 bool로 명시 변환",
+  "postprocessing_only": true,
+  "additional_prediction_passes": 0,
+  "model_refit": false,
+  "threshold_search": false,
+  "input_prediction_sha256": "cc6cb44efcafb6441c677fff2f0abf8cf0348bf6fdd462ee10e04fee79565221",
+  "frozen_manifest_sha256": "c211518ae97a6dcc93aa0198caf8ea368fef85efac5386cb3eecaced5ee9b3c1",
+  "original_failure_log_sha256": "0cb7a4413a0cba809dbaf89fe8b87c7002a3b7446885be059e758b9f1d4a4e31",
+  "recovery_script_sha256": "4dcdd4fb23b6f94ada90813bae360e03cc95e6f0bb0c7b305a4ac09e0bd8149c",
+  "completed_at_utc": "2026-11-05T08:35:26.554334+00:00",
+  "prediction_unchanged": true,
+  "frozen_files_unchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "notebook": "notebooks/00_PHM2018_종합_수행결과.ipynb",
+  "created_date": "2026-11-12",
+  "code_cells": 18,
+  "executed": 18,
+  "errors": 0,
+  "embedded_tables": 104,
+  "embedded_figures": 123,
+  "archived_reports": 24,
+  "previous_notebooks": 26,
+  "execution_seconds": 13.547000000020489,
+  "notebook_bytes": 50546100,
+  "notebook_sha256": "54d4567da8aa5915f210948576743aa44e0e42ff68b2b38803c942b4967bc42a",
+  "standalone_execution_in_empty_directory": true,
+  "new_training": 0,
+  "new_model_inference": 0,
+  "protected_previous_artifacts_unchanged": true
+}

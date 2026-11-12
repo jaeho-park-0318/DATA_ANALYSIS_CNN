@@ -1,0 +1,44 @@
+[
+  {
+    "event_id": "01M02-low-77f4f5b40eea",
+    "Tool": "01M02",
+    "fault_time": 35672222.0,
+    "detected": true,
+    "lead_raw": 362.0,
+    "selection": "검출 사례: 선행시간 중앙값에 가장 가까움",
+    "query": {
+      "Tool": "01M02",
+      "kind": "normalized",
+      "requested_start": 35671022.0,
+      "requested_end": 35672342.0,
+      "files_total": 27,
+      "files_selected": 1,
+      "row_groups_selected": 1,
+      "physical_row_group_rows": 25000,
+      "rows_returned": 312,
+      "filter": "start <= time <= end",
+      "note": "압축 row group 단위 읽기 후 요청 시각으로 필터. 관련 없는 파일/row group은 제외."
+    }
+  },
+  {
+    "event_id": "01M01-low-7fa51a916920",
+    "Tool": "01M01",
+    "fault_time": 42056638.0,
+    "detected": false,
+    "lead_raw": null,
+    "selection": "미검출 사례: Tool·시각 정렬의 첫 가용 고장",
+    "query": {
+      "Tool": "01M01",
+      "kind": "normalized",
+      "requested_start": 42055438.0,
+      "requested_end": 42056758.0,
+      "files_total": 17,
+      "files_selected": 1,
+      "row_groups_selected": 1,
+      "physical_row_group_rows": 25000,
+      "rows_returned": 168,
+      "filter": "start <= time <= end",
+      "note": "압축 row group 단위 읽기 후 요청 시각으로 필터. 관련 없는 파일/row group은 제외."
+    }
+  }
+]

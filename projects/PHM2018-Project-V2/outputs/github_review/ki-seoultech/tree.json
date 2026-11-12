@@ -1,0 +1,186 @@
+{
+  "sha": "6ba6b026340cd21a95f8846344c1996a02bcc97d",
+  "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/trees/6ba6b026340cd21a95f8846344c1996a02bcc97d",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7faf403d915ca307532bb0eb9cceaf0214e8e5b",
+      "size": 4688,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/b7faf403d915ca307532bb0eb9cceaf0214e8e5b"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef4e1d09b2ef18c6e75a352de91983a669c01e0d",
+      "size": 1069,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/ef4e1d09b2ef18c6e75a352de91983a669c01e0d"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ddcbb2ed1ec027760bf5818850cc9b4cc59f549",
+      "size": 13075,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/2ddcbb2ed1ec027760bf5818850cc9b4cc59f549"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ab37c7089d1d991486913ebb5a7854916878149e",
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/trees/ab37c7089d1d991486913ebb5a7854916878149e"
+    },
+    {
+      "path": "docs/PHM2018_3Stage_RUL_Presentation.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f4de7a474f4010bd1177741584dab56df1f136e",
+      "size": 4327601,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/8f4de7a474f4010bd1177741584dab56df1f136e"
+    },
+    {
+      "path": "docs/PHM2018_3Stage_RUL_Presentation.pptx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9443a3e242daf2d03b053f362ba2a4721aabfbf",
+      "size": 21021702,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/f9443a3e242daf2d03b053f362ba2a4721aabfbf"
+    },
+    {
+      "path": "docs/architecture.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fb04131b788a4ccb753a99a978689b446c28d31",
+      "size": 176867,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/5fb04131b788a4ccb753a99a978689b446c28d31"
+    },
+    {
+      "path": "docs/inference_demo.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cd5f8c8ec3a52a5944dadfb75af7197b29657a9",
+      "size": 258414,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/9cd5f8c8ec3a52a5944dadfb75af7197b29657a9"
+    },
+    {
+      "path": "docs/inference_demo.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4bac8470b591f56f8e90a16d403558a16c9308c",
+      "size": 535684,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/f4bac8470b591f56f8e90a16d403558a16c9308c"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae15e569861cac7df03ce3fd5cc59c2e9751929b",
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/trees/ae15e569861cac7df03ce3fd5cc59c2e9751929b"
+    },
+    {
+      "path": "src/01_rul_regression",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "48fb92e1b5bcc2d0aadd86e6131d8ba63b6c52ee",
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/trees/48fb92e1b5bcc2d0aadd86e6131d8ba63b6c52ee"
+    },
+    {
+      "path": "src/01_rul_regression/v6_baseline_single_unit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35f0dcba17ba3c7a3951dfedec48368ddf97970f",
+      "size": 9512,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/35f0dcba17ba3c7a3951dfedec48368ddf97970f"
+    },
+    {
+      "path": "src/01_rul_regression/v7_1_param_sweep_f3.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b12f2742d23b9b79bcabc3906fc717bafa3a6e4",
+      "size": 14563,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/8b12f2742d23b9b79bcabc3906fc717bafa3a6e4"
+    },
+    {
+      "path": "src/01_rul_regression/v7_global_downsampling.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b252743fc94eea0de6a42c16690d78df23122012",
+      "size": 13207,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/b252743fc94eea0de6a42c16690d78df23122012"
+    },
+    {
+      "path": "src/01_rul_regression/v8_multi_fault_sweep_f1_f2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "878adb4e45ef9b2c964936f12cb9f552e8e08982",
+      "size": 15011,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/878adb4e45ef9b2c964936f12cb9f552e8e08982"
+    },
+    {
+      "path": "src/02_fault_classifier",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fffcd4ddbfa6bcd11c8a985253195cf9e2838108",
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/trees/fffcd4ddbfa6bcd11c8a985253195cf9e2838108"
+    },
+    {
+      "path": "src/02_fault_classifier/build_v2_dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e571f686ce964836ae30c1ca689142938c96e577",
+      "size": 2214,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/e571f686ce964836ae30c1ca689142938c96e577"
+    },
+    {
+      "path": "src/02_fault_classifier/classifier_threshold_search.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ee45db4788320c9fd001f98591a262bbc8e919a",
+      "size": 9903,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/3ee45db4788320c9fd001f98591a262bbc8e919a"
+    },
+    {
+      "path": "src/02_fault_classifier/train_save_classifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76738c4cf00f82ef8f6fb25ca0cac41fc607a767",
+      "size": 7225,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/76738c4cf00f82ef8f6fb25ca0cac41fc607a767"
+    },
+    {
+      "path": "src/03_inference_pipeline",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c78ffd7684c1b27c26dbad25aa88f8d1a7b86a6",
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/trees/5c78ffd7684c1b27c26dbad25aa88f8d1a7b86a6"
+    },
+    {
+      "path": "src/03_inference_pipeline/inference_3stage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fec39d95b136c0534c6d97574379b53f934f3486",
+      "size": 11550,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/fec39d95b136c0534c6d97574379b53f934f3486"
+    },
+    {
+      "path": "src/03_inference_pipeline/train_save_regressor_f3.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c47df2e56c68fcb2b79afef055f90566247b72c",
+      "size": 13841,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/6c47df2e56c68fcb2b79afef055f90566247b72c"
+    },
+    {
+      "path": "src/03_inference_pipeline/train_save_regressors_f1_f2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4aab546f130c44bf80ff24fb72ec157c757d4daf",
+      "size": 15700,
+      "url": "https://api.github.com/repos/ki-seoultech/PHM2018-Ion-Mill-Etch-3Stage-Predictive-Maintenance/git/blobs/4aab546f130c44bf80ff24fb72ec157c757d4daf"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,510 @@
+# 4.5단계 데이터 신뢰성·장비 일반화·경보 개선 결과
+
+## 실행 범위와 결론
+
+로컬 phm2018에서 CUDA 파일럿 1개와 본 실험 XGBoost 16개(4-Fold × A/B/C/C_regularized)를 실행했다. 각 본 모델에서 F1 최대화와 Event Recall/FAR 제약의 두 경보 정책을 비교했다. 기존 4단계 모델·데이터·Notebook은 보존했고 AGENTS.md만 요청된 실행 정책을 추가했다. LSTM, SHAP, 패키지·드라이버 업데이트, 외부 업로드는 하지 않았다.
+
+**미확인 라벨을 정상으로 바꾸는 개선은 수행하지 않았다. 일반화 성능의 확실한 개선을 입증하지 못했으며 현장 배포와 LSTM 확대를 권고하지 않는다.** 이번 결과는 기존 개발 장비의 후향적 그룹 교차검증이다. 이미 수행한 시간 분할 평가와 장비 일부가 겹치므로 완전히 새로운 미관측 데이터 성능이 아니다. 기존 장비 평가 09/10 계열은 새 모델 학습·튜닝·선택에서 제외했다.
+
+## 1. 하드웨어 및 실행 효율
+
+AMD Ryzen 7 6800H with Radeon Graphics, 8코어/16스레드, RAM 31.19GiB, RTX 3060 Laptop 6GB. 실제 CUDA 학습 성공 및 Booster cuda:0 확인. 동일 조건 CPU 1.0138초 / GPU 0.7194초, 약 1.41배. 속도 비교와 예측 성능 비교는 별개다. 상세는 `04_5_hardware_benchmark.md`에 있다.
+
+## 2. NA 원인 및 라벨 정책
+
+전체 정규화 시각 82,071,907행을 DuckDB의 필요한 컬럼 집계로 다시 확인했다. 아래 NA 사유는 우선순위로 배타적 분류했으므로 후속 이벤트 부재와 공백이 동시에 있는 경우 전자를 우선한다. 유형별 상세 `na_audit.parquet`에는 공백 전 고장(gap_before_event), 전체 horizon 미확보(incomplete_horizon), 후속 유형 이벤트 부재 등이 분리되어 있다.
+
+| reason | rows | unknown |
+| --- | --- | --- |
+| at_fault_timestamp | 211 | 211 |
+| gap_or_unverified | 15408270 | 15408270 |
+| known | 14426740 | 0 |
+| one_or_more_type_history_ended | 52236686 | 52236686 |
+
+| fault_code | rows | positive | negative | unknown | na_rate |
+| --- | --- | --- | --- | --- | --- |
+| any | 82071907 | 49268 | 14377472 | 67645167 | 0.82422 |
+| f1 | 82071907 | 30026 | 27822831 | 54219050 | 0.66063 |
+| f2 | 82071907 | 10827 | 23882260 | 58178820 | 0.70888 |
+| f3 | 82071907 | 9088 | 19563070 | 62499749 | 0.76152 |
+
+| state | rows | positive | negative | unknown | na_rate |
+| --- | --- | --- | --- | --- | --- |
+| Stage=0 | 2531264 | 1951 | 589313 | 1940000 | 0.76642 |
+| Stage>0 | 79540643 | 47317 | 13788159 | 65705167 | 0.82606 |
+
+| Tool | rows | positive | negative | unknown | na_rate |
+| --- | --- | --- | --- | --- | --- |
+| 01M01 | 3119431 | 861 | 631732 | 2486838 | 0.79721 |
+| 01M02 | 5103087 | 9207 | 3133672 | 1960208 | 0.38412 |
+| 02M01 | 2864055 | 1162 | 1053282 | 1809611 | 0.63184 |
+| 02M02 | 4141715 | 663 | 0 | 4141052 | 0.99984 |
+| 03M01 | 3431191 | 1932 | 0 | 3429259 | 0.99944 |
+| 03M02 | 5059330 | 6925 | 1046680 | 4005725 | 0.79175 |
+| 04M01 | 5096263 | 838 | 23008 | 5072417 | 0.99532 |
+| 04M02 | 4449140 | 3349 | 0 | 4445791 | 0.99925 |
+| 05M01 | 4759318 | 960 | 751147 | 4007211 | 0.84197 |
+| 05M02 | 1897629 | 285 | 166295 | 1731049 | 0.91222 |
+| 06M01 | 3809575 | 298 | 521625 | 3287652 | 0.86300 |
+| 06M02 | 5100692 | 5138 | 3202216 | 1893338 | 0.37119 |
+| 07M01 | 5290282 | 896 | 987387 | 4301999 | 0.81319 |
+| 07M02 | 5019157 | 7 | 0 | 5019150 | 1.00000 |
+| 08M01 | 3706832 | 6182 | 1860238 | 1840412 | 0.49649 |
+| 08M02 | 5002284 | 450 | 0 | 5001834 | 0.99991 |
+| 09M01 | 4557613 | 6263 | 832017 | 3719333 | 0.81607 |
+| 09M02 | 2748280 | 1974 | 0 | 2746306 | 0.99928 |
+| 10M01 | 3163433 | 1854 | 168173 | 2993406 | 0.94625 |
+| 10M02 | 3752600 | 24 | 0 | 3752576 | 0.99999 |
+
+TTF Null은 제공된 기록 안에서 이후 같은 유형의 이벤트가 없다는 사실과 부합한다. 장비별 처음/마지막 최대 4096 시각을 별도로 대조한 불일치는 0건이며 전체 원본 대조는 기존 3단계 검증을 재사용했다. 이것이 미래에 고장이 없다는 증명은 아니다. `[NoWaferID]` 제외, 중복 이벤트 제거, 고장 시각 NA, 공백을 넘는 라벨 보류를 유지했다. 기존 ml_v1 라벨 변경 0행, ml_v2 미생성. 라벨을 완화할 외부 완전성 근거가 없어 새 버전 생성이 불필요했다.
+
+개선한 것은 **평가 범위의 투명성**이다. 12개 타깃 중 하나가 알려졌다는 기존 training 파일 포함 조건을 추론에서는 제거하고, 모든 feature_ready 2,331,977개 anchor를 float32 Parquet 캐시로 보존했다. NA도 경보량에는 포함하고 학습과 샘플 성능에는 제외했다. 알려진 타깃은 기존과 동일하며 표본의 시간 순서를 유지했다. 고장 공백을 해소하거나 새로운 정상 정답을 확보한 것은 아니다.
+
+| Tool | rows | positive | negative | unknown |
+| --- | --- | --- | --- | --- |
+| 01M01 | 95813 | 23 | 25603 | 70187 |
+| 01M02 | 284516 | 537 | 171276 | 112703 |
+| 02M01 | 96418 | 43 | 43586 | 52789 |
+| 02M02 | 85672 | 30 | 0 | 85642 |
+| 03M01 | 82739 | 88 | 0 | 82651 |
+| 03M02 | 113367 | 246 | 22821 | 90300 |
+| 04M01 | 106061 | 23 | 929 | 105109 |
+| 04M02 | 247652 | 209 | 0 | 247443 |
+| 05M01 | 84257 | 22 | 10929 | 73306 |
+| 05M02 | 27384 | 10 | 2553 | 24821 |
+| 06M01 | 84308 | 10 | 13456 | 70842 |
+| 06M02 | 287389 | 300 | 176268 | 110821 |
+| 07M01 | 97646 | 24 | 12633 | 84989 |
+| 07M02 | 91803 | 0 | 0 | 91803 |
+| 08M01 | 126290 | 309 | 62495 | 63486 |
+| 08M02 | 85538 | 30 | 0 | 85508 |
+| 09M01 | 94070 | 182 | 25269 | 68619 |
+| 09M02 | 87491 | 62 | 0 | 87429 |
+| 10M01 | 70566 | 101 | 4856 | 65609 |
+| 10M02 | 82997 | 0 | 0 | 82997 |
+
+확인 음성이 없는 장비 7대: 02M02, 03M01, 04M02, 07M02, 08M02, 09M02, 10M02. 분할별 클래스 비율과 장비 정체성이 얽혀 있다. TTF가 없는 후반부·공백 주변은 평가에서 과소대표되어 낮은 FAR를 전체 운영 FAR로 해석할 수 없다.
+
+## 3. 그룹 교차검증 설계와 분할
+
+01~06 계열 12대만 사용, 장비명으로 사전 고정한 4-Fold이며 각 외부 평가에 3대씩 한 번 등장한다. 나머지 9대 중 5대 학습, 2대 Early Stopping, 2대 임계값 보정으로 구분한다. A/B/C와 정규화 강화 C를 사전 지정하여 모두 보고하며 외부 Fold 성능으로 모델을 다시 튜닝하지 않았다. Fold 상세 장비 목록은 `fold_plan.json`이다. 장비 그룹이 완전히 분리되어 동일 이벤트, 과거 특징 구간, 중첩 윈도가 역할을 넘지 않는다. 대치·스케일링·오버샘플링 없음. 원본 특징의 source_max_time≤time를 검사하고 83개 허용 컬럼만 입력한다.
+
+| fold | role | rows | positive | negative | unknown | f1 | f2 | f3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | calibration | 199039 | 276 | 22821 | 175942 | 25 | 10 | 2 |
+| 0 | early_stop | 380934 | 580 | 214862 | 165492 | 46 | 8 | 12 |
+| 0 | evaluation | 262809 | 133 | 36532 | 226144 | 8 | 7 | 2 |
+| 0 | train | 752794 | 552 | 193206 | 559036 | 29 | 5 | 27 |
+| 1 | calibration | 353713 | 232 | 929 | 352552 | 16 | 1 | 9 |
+| 1 | early_stop | 168411 | 118 | 0 | 168293 | 5 | 9 | 0 |
+| 1 | evaluation | 425267 | 793 | 196650 | 227824 | 68 | 13 | 14 |
+| 1 | train | 648185 | 398 | 269842 | 377945 | 19 | 7 | 20 |
+| 2 | calibration | 111641 | 32 | 13482 | 98127 | 2 | 1 | 1 |
+| 2 | early_stop | 361019 | 455 | 22821 | 337743 | 39 | 7 | 10 |
+| 2 | evaluation | 286787 | 76 | 57971 | 228740 | 6 | 4 | 1 |
+| 2 | train | 836129 | 978 | 373147 | 462004 | 61 | 18 | 31 |
+| 3 | calibration | 180121 | 33 | 39059 | 141029 | 2 | 1 | 1 |
+| 3 | early_stop | 111641 | 32 | 13482 | 98127 | 2 | 1 | 1 |
+| 3 | evaluation | 620713 | 539 | 176268 | 443906 | 26 | 6 | 26 |
+| 3 | train | 683101 | 937 | 238612 | 443552 | 78 | 22 | 15 |
+
+고장 수 f1/f2/f3은 해당 유형의 검증된 양성 anchor를 가진 고유 이벤트 수다. 고장 표에 기록된 전체 수와 다르다. Fold별 희소 이벤트와 음성 부족은 재분할로 숨기지 않았다. 이 단일 고정 4-Fold는 반복 그룹 CV나 완전한 nested 하이퍼파라미터 탐색이 아니다.
+
+## 4. 특징 및 모델 설정
+
+A 현재 센서·공정 8개, B 과거 센서 통계 포함 80개, C 공정 이력 포함 83개. C_regularized는 같은 83개에 depth 3, min_child_weight 30, reg_lambda 20을 적용한 사전 지정 후보다. 기본 후보는 기존 depth 4, min_child_weight 10, lambda 5를 유지했다. 500회 상한, Early Stopping 30, learning_rate .05, 학습 음성/양성 비율 scale_pos_weight, seed 42, hist/max_bin 128. 학습과 CPU 호스트 행렬 추론 장치를 구분했다. 모든 실험별 입력 컬럼·설정·학습시간·경고·Booster 설정을 저장했다.
+
+입력 구성 전체:
+
+```json
+{
+  "A": [
+    "recipe",
+    "stage",
+    "FLOWCOOLPRESSURE__current",
+    "FLOWCOOLFLOWRATE__current",
+    "IONGAUGEPRESSURE__current",
+    "ETCHBEAMCURRENT__current",
+    "ETCHBEAMVOLTAGE__current",
+    "ETCHSUPPRESSORCURRENT__current"
+  ],
+  "B": [
+    "recipe",
+    "stage",
+    "FLOWCOOLPRESSURE__current",
+    "FLOWCOOLPRESSURE__mean_60raw",
+    "FLOWCOOLPRESSURE__std_60raw",
+    "FLOWCOOLPRESSURE__min_60raw",
+    "FLOWCOOLPRESSURE__max_60raw",
+    "FLOWCOOLPRESSURE__delta_mean_60raw",
+    "FLOWCOOLPRESSURE__rate_mean_60raw",
+    "FLOWCOOLPRESSURE__mean_300raw",
+    "FLOWCOOLPRESSURE__std_300raw",
+    "FLOWCOOLPRESSURE__min_300raw",
+    "FLOWCOOLPRESSURE__max_300raw",
+    "FLOWCOOLPRESSURE__delta_mean_300raw",
+    "FLOWCOOLPRESSURE__rate_mean_300raw",
+    "FLOWCOOLFLOWRATE__current",
+    "FLOWCOOLFLOWRATE__mean_60raw",
+    "FLOWCOOLFLOWRATE__std_60raw",
+    "FLOWCOOLFLOWRATE__min_60raw",
+    "FLOWCOOLFLOWRATE__max_60raw",
+    "FLOWCOOLFLOWRATE__delta_mean_60raw",
+    "FLOWCOOLFLOWRATE__rate_mean_60raw",
+    "FLOWCOOLFLOWRATE__mean_300raw",
+    "FLOWCOOLFLOWRATE__std_300raw",
+    "FLOWCOOLFLOWRATE__min_300raw",
+    "FLOWCOOLFLOWRATE__max_300raw",
+    "FLOWCOOLFLOWRATE__delta_mean_300raw",
+    "FLOWCOOLFLOWRATE__rate_mean_300raw",
+    "IONGAUGEPRESSURE__current",
+    "IONGAUGEPRESSURE__mean_60raw",
+    "IONGAUGEPRESSURE__std_60raw",
+    "IONGAUGEPRESSURE__min_60raw",
+    "IONGAUGEPRESSURE__max_60raw",
+    "IONGAUGEPRESSURE__delta_mean_60raw",
+    "IONGAUGEPRESSURE__rate_mean_60raw",
+    "IONGAUGEPRESSURE__mean_300raw",
+    "IONGAUGEPRESSURE__std_300raw",
+    "IONGAUGEPRESSURE__min_300raw",
+    "IONGAUGEPRESSURE__max_300raw",
+    "IONGAUGEPRESSURE__delta_mean_300raw",
+    "IONGAUGEPRESSURE__rate_mean_300raw",
+    "ETCHBEAMCURRENT__current",
+    "ETCHBEAMCURRENT__mean_60raw",
+    "ETCHBEAMCURRENT__std_60raw",
+    "ETCHBEAMCURRENT__min_60raw",
+    "ETCHBEAMCURRENT__max_60raw",
+    "ETCHBEAMCURRENT__delta_mean_60raw",
+    "ETCHBEAMCURRENT__rate_mean_60raw",
+    "ETCHBEAMCURRENT__mean_300raw",
+    "ETCHBEAMCURRENT__std_300raw",
+    "ETCHBEAMCURRENT__min_300raw",
+    "ETCHBEAMCURRENT__max_300raw",
+    "ETCHBEAMCURRENT__delta_mean_300raw",
+    "ETCHBEAMCURRENT__rate_mean_300raw",
+    "ETCHBEAMVOLTAGE__current",
+    "ETCHBEAMVOLTAGE__mean_60raw",
+    "ETCHBEAMVOLTAGE__std_60raw",
+    "ETCHBEAMVOLTAGE__min_60raw",
+    "ETCHBEAMVOLTAGE__max_60raw",
+    "ETCHBEAMVOLTAGE__delta_mean_60raw",
+    "ETCHBEAMVOLTAGE__rate_mean_60raw",
+    "ETCHBEAMVOLTAGE__mean_300raw",
+    "ETCHBEAMVOLTAGE__std_300raw",
+    "ETCHBEAMVOLTAGE__min_300raw",
+    "ETCHBEAMVOLTAGE__max_300raw",
+    "ETCHBEAMVOLTAGE__delta_mean_300raw",
+    "ETCHBEAMVOLTAGE__rate_mean_300raw",
+    "ETCHSUPPRESSORCURRENT__current",
+    "ETCHSUPPRESSORCURRENT__mean_60raw",
+    "ETCHSUPPRESSORCURRENT__std_60raw",
+    "ETCHSUPPRESSORCURRENT__min_60raw",
+    "ETCHSUPPRESSORCURRENT__max_60raw",
+    "ETCHSUPPRESSORCURRENT__delta_mean_60raw",
+    "ETCHSUPPRESSORCURRENT__rate_mean_60raw",
+    "ETCHSUPPRESSORCURRENT__mean_300raw",
+    "ETCHSUPPRESSORCURRENT__std_300raw",
+    "ETCHSUPPRESSORCURRENT__min_300raw",
+    "ETCHSUPPRESSORCURRENT__max_300raw",
+    "ETCHSUPPRESSORCURRENT__delta_mean_300raw",
+    "ETCHSUPPRESSORCURRENT__rate_mean_300raw"
+  ],
+  "C": [
+    "recipe",
+    "stage",
+    "FLOWCOOLPRESSURE__current",
+    "FLOWCOOLPRESSURE__mean_60raw",
+    "FLOWCOOLPRESSURE__std_60raw",
+    "FLOWCOOLPRESSURE__min_60raw",
+    "FLOWCOOLPRESSURE__max_60raw",
+    "FLOWCOOLPRESSURE__delta_mean_60raw",
+    "FLOWCOOLPRESSURE__rate_mean_60raw",
+    "FLOWCOOLPRESSURE__mean_300raw",
+    "FLOWCOOLPRESSURE__std_300raw",
+    "FLOWCOOLPRESSURE__min_300raw",
+    "FLOWCOOLPRESSURE__max_300raw",
+    "FLOWCOOLPRESSURE__delta_mean_300raw",
+    "FLOWCOOLPRESSURE__rate_mean_300raw",
+    "FLOWCOOLFLOWRATE__current",
+    "FLOWCOOLFLOWRATE__mean_60raw",
+    "FLOWCOOLFLOWRATE__std_60raw",
+    "FLOWCOOLFLOWRATE__min_60raw",
+    "FLOWCOOLFLOWRATE__max_60raw",
+    "FLOWCOOLFLOWRATE__delta_mean_60raw",
+    "FLOWCOOLFLOWRATE__rate_mean_60raw",
+    "FLOWCOOLFLOWRATE__mean_300raw",
+    "FLOWCOOLFLOWRATE__std_300raw",
+    "FLOWCOOLFLOWRATE__min_300raw",
+    "FLOWCOOLFLOWRATE__max_300raw",
+    "FLOWCOOLFLOWRATE__delta_mean_300raw",
+    "FLOWCOOLFLOWRATE__rate_mean_300raw",
+    "IONGAUGEPRESSURE__current",
+    "IONGAUGEPRESSURE__mean_60raw",
+    "IONGAUGEPRESSURE__std_60raw",
+    "IONGAUGEPRESSURE__min_60raw",
+    "IONGAUGEPRESSURE__max_60raw",
+    "IONGAUGEPRESSURE__delta_mean_60raw",
+    "IONGAUGEPRESSURE__rate_mean_60raw",
+    "IONGAUGEPRESSURE__mean_300raw",
+    "IONGAUGEPRESSURE__std_300raw",
+    "IONGAUGEPRESSURE__min_300raw",
+    "IONGAUGEPRESSURE__max_300raw",
+    "IONGAUGEPRESSURE__delta_mean_300raw",
+    "IONGAUGEPRESSURE__rate_mean_300raw",
+    "ETCHBEAMCURRENT__current",
+    "ETCHBEAMCURRENT__mean_60raw",
+    "ETCHBEAMCURRENT__std_60raw",
+    "ETCHBEAMCURRENT__min_60raw",
+    "ETCHBEAMCURRENT__max_60raw",
+    "ETCHBEAMCURRENT__delta_mean_60raw",
+    "ETCHBEAMCURRENT__rate_mean_60raw",
+    "ETCHBEAMCURRENT__mean_300raw",
+    "ETCHBEAMCURRENT__std_300raw",
+    "ETCHBEAMCURRENT__min_300raw",
+    "ETCHBEAMCURRENT__max_300raw",
+    "ETCHBEAMCURRENT__delta_mean_300raw",
+    "ETCHBEAMCURRENT__rate_mean_300raw",
+    "ETCHBEAMVOLTAGE__current",
+    "ETCHBEAMVOLTAGE__mean_60raw",
+    "ETCHBEAMVOLTAGE__std_60raw",
+    "ETCHBEAMVOLTAGE__min_60raw",
+    "ETCHBEAMVOLTAGE__max_60raw",
+    "ETCHBEAMVOLTAGE__delta_mean_60raw",
+    "ETCHBEAMVOLTAGE__rate_mean_60raw",
+    "ETCHBEAMVOLTAGE__mean_300raw",
+    "ETCHBEAMVOLTAGE__std_300raw",
+    "ETCHBEAMVOLTAGE__min_300raw",
+    "ETCHBEAMVOLTAGE__max_300raw",
+    "ETCHBEAMVOLTAGE__delta_mean_300raw",
+    "ETCHBEAMVOLTAGE__rate_mean_300raw",
+    "ETCHSUPPRESSORCURRENT__current",
+    "ETCHSUPPRESSORCURRENT__mean_60raw",
+    "ETCHSUPPRESSORCURRENT__std_60raw",
+    "ETCHSUPPRESSORCURRENT__min_60raw",
+    "ETCHSUPPRESSORCURRENT__max_60raw",
+    "ETCHSUPPRESSORCURRENT__delta_mean_60raw",
+    "ETCHSUPPRESSORCURRENT__rate_mean_60raw",
+    "ETCHSUPPRESSORCURRENT__mean_300raw",
+    "ETCHSUPPRESSORCURRENT__std_300raw",
+    "ETCHSUPPRESSORCURRENT__min_300raw",
+    "ETCHSUPPRESSORCURRENT__max_300raw",
+    "ETCHSUPPRESSORCURRENT__delta_mean_300raw",
+    "ETCHSUPPRESSORCURRENT__rate_mean_300raw",
+    "stage_zero_fraction_300raw",
+    "stage_change_count_300raw",
+    "recipe_change_count_300raw"
+  ]
+}
+```
+
+TTF/라벨/next_event/Tool/time/Lot/사용량은 입력에서 제외한다. 추론 캐시에 포함된 정답 메타데이터는 평가에만 쓴다. 센서 물리 단위는 익명화 상태이고 time의 초 해석은 4단계 근거를 유지한다.
+
+## 5. Fold별 성능 및 변동성
+
+F1 정책은 보정 장비의 F1 최대화다. event_far 정책은 보정 장비에서 확인된 가동 음성 구간 FAR≤0.1/h를 만족하는 후보 중 Event Recall 최대화, 동률 시 미확인 경보가 적고 Precision/임계값이 큰 순서다. 0.1/h는 사전 지정한 실험 제약이며 사용자가 확정한 운영 허용치가 아니다. 이 제약은 외부 장비의 FAR를 보장하지 않는다.
+
+| model | policy | precision_mean | precision_std | recall_mean | recall_std | f1_mean | f1_std | pr_auc_ap_mean | pr_auc_ap_std | event_recall_mean | event_recall_std | false_alarms_per_active_hour_mean | false_alarms_per_active_hour_std |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| A | event_far | 0.08400 | 0.14376 | 0.06517 | 0.12700 | 0.00346 | 0.00467 | 0.01226 | 0.01482 | 0.07879 | 0.14389 | 0.79933 | 1.59670 |
+| A | f1 | 0.00247 | 0.00356 | 0.22047 | 0.26999 | 0.00488 | 0.00701 | 0.01226 | 0.01482 | 0.26718 | 0.34224 | 1.48756 | 1.75074 |
+| B | event_far | 0.02900 | 0.03868 | 0.02362 | 0.03789 | 0.01723 | 0.03250 | 0.00933 | 0.00710 | 0.08839 | 0.14033 | 0.14321 | 0.19391 |
+| B | f1 | 0.01692 | 0.02631 | 0.31779 | 0.45840 | 0.02192 | 0.02944 | 0.00933 | 0.00710 | 0.40701 | 0.37338 | 1.61766 | 2.57093 |
+| C | event_far | 0.02929 | 0.03826 | 0.02362 | 0.03789 | 0.01746 | 0.03237 | 0.00949 | 0.00746 | 0.08839 | 0.14033 | 0.14257 | 0.19274 |
+| C | f1 | 0.01715 | 0.02641 | 0.29430 | 0.47238 | 0.02220 | 0.02997 | 0.00949 | 0.00746 | 0.35487 | 0.41373 | 1.53921 | 2.61873 |
+| C_regularized | event_far | 0.02593 | 0.03278 | 0.09146 | 0.10562 | 0.02077 | 0.03801 | 0.00586 | 0.00525 | 0.17461 | 0.22205 | 0.75685 | 1.32625 |
+| C_regularized | f1 | 0.01050 | 0.01708 | 0.38188 | 0.41229 | 0.01810 | 0.02841 | 0.00586 | 0.00525 | 0.45714 | 0.34941 | 2.99319 | 1.98729 |
+
+표는 4개 Fold의 단순 평균과 표본 표준편차다. 정의 불가능한 Precision 등은 NA를 유지하며 평균에서 제외한다. 원자료 `cv_metrics.parquet`에서 Fold별 유효 지표 수를 확인할 수 있다. PR-AUC는 average precision이다.
+
+| model | policy | precision | recall | f1 | pr_auc_ap | event_recall | false_alarms_per_active_hour | lead_time_median_raw |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| A | event_far | 3 | 4 | 4 | 4 | 4 | 4 | 2 |
+| A | f1 | 4 | 4 | 4 | 4 | 4 | 4 | 2 |
+| B | event_far | 2 | 4 | 4 | 4 | 4 | 4 | 2 |
+| B | f1 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
+| C | event_far | 2 | 4 | 4 | 4 | 4 | 4 | 2 |
+| C | f1 | 4 | 4 | 4 | 4 | 4 | 4 | 3 |
+| C_regularized | event_far | 2 | 4 | 4 | 4 | 4 | 4 | 2 |
+| C_regularized | f1 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
+
+| fold | model | policy | n | positive | negative | precision | recall | f1 | pr_auc_ap | eligible_events | detected_events | event_recall | false_alarms_per_active_hour | lead_time_median_raw | unknown_episodes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | A | f1 | 36665 | 133 | 36532 | 0.00234 | 0.33083 | 0.00464 | 0.00293 | 17 | 6 | 0.35294 | 3.39833 | 499.00000 | 24687 |
+| 0 | A | event_far | 36665 | 133 | 36532 | 0.00200 | 0.25564 | 0.00397 | 0.00293 | 17 | 5 | 0.29412 | 3.19438 | 452.00000 | 18355 |
+| 0 | B | f1 | 36665 | 133 | 36532 | 0.00547 | 0.16541 | 0.01058 | 0.00688 | 17 | 5 | 0.29412 | 0.70108 | 120.00000 | 33680 |
+| 0 | B | event_far | 36665 | 133 | 36532 | 0.00165 | 0.01504 | 0.00298 | 0.00688 | 17 | 1 | 0.05882 | 0.41045 | 72.00000 | 25471 |
+| 0 | C | f1 | 36665 | 133 | 36532 | 0.00919 | 0.09774 | 0.01680 | 0.00759 | 17 | 3 | 0.17647 | 0.51753 | 120.00000 | 27619 |
+| 0 | C | event_far | 36665 | 133 | 36532 | 0.00224 | 0.01504 | 0.00389 | 0.00759 | 17 | 1 | 0.05882 | 0.40790 | 72.00000 | 25191 |
+| 0 | C_regularized | f1 | 36665 | 133 | 36532 | 0.00246 | 0.18045 | 0.00486 | 0.00360 | 17 | 4 | 0.23529 | 2.66156 | 343.00000 | 34409 |
+| 0 | C_regularized | event_far | 36665 | 133 | 36532 | 0.00275 | 0.18045 | 0.00542 | 0.00360 | 17 | 4 | 0.23529 | 2.73549 | 343.00000 | 33715 |
+| 1 | A | f1 | 197443 | 793 | 196650 | 0.00754 | 0.55107 | 0.01488 | 0.01167 | 95 | 68 | 0.71579 | 2.54912 | 452.00000 | 21842 |
+| 1 | A | event_far | 197443 | 793 | 196650 | 0.25000 | 0.00504 | 0.00989 | 0.01167 | 95 | 2 | 0.02105 | 0.00258 | 320.00000 | 21 |
+| 1 | B | f1 | 197443 | 793 | 196650 | 0.05635 | 0.07945 | 0.06593 | 0.01987 | 95 | 28 | 0.29474 | 0.16238 | 73.00000 | 10244 |
+| 1 | B | event_far | 197443 | 793 | 196650 | 0.05635 | 0.07945 | 0.06593 | 0.01987 | 95 | 28 | 0.29474 | 0.16238 | 73.00000 | 10244 |
+| 1 | C | f1 | 197443 | 793 | 196650 | 0.05635 | 0.07945 | 0.06593 | 0.01987 | 95 | 28 | 0.29474 | 0.16238 | 73.00000 | 10244 |
+| 1 | C | event_far | 197443 | 793 | 196650 | 0.05635 | 0.07945 | 0.06593 | 0.01987 | 95 | 28 | 0.29474 | 0.16238 | 73.00000 | 10244 |
+| 1 | C_regularized | f1 | 197443 | 793 | 196650 | 0.03607 | 0.18916 | 0.06058 | 0.01323 | 95 | 44 | 0.46316 | 0.62246 | 138.00000 | 17372 |
+| 1 | C_regularized | event_far | 197443 | 793 | 196650 | 0.04911 | 0.18537 | 0.07765 | 0.01323 | 95 | 44 | 0.46316 | 0.29190 | 135.00000 | 16384 |
+| 2 | A | f1 | 58047 | 76 | 57971 | 0.00000 | 0.00000 | 0.00000 | 0.00106 | 11 | 0 | 0.00000 | 0.00246 | NA | 738 |
+| 2 | A | event_far | 58047 | 76 | 57971 | NA | 0.00000 | 0.00000 | 0.00106 | 11 | 0 | 0.00000 | 0.00000 | NA | 0 |
+| 2 | B | f1 | 58047 | 76 | 57971 | 0.00282 | 0.02632 | 0.00510 | 0.00444 | 11 | 1 | 0.09091 | 0.15236 | 106.00000 | 15712 |
+| 2 | B | event_far | 58047 | 76 | 57971 | NA | 0.00000 | 0.00000 | 0.00444 | 11 | 0 | 0.00000 | 0.00000 | NA | 0 |
+| 2 | C | f1 | 58047 | 76 | 57971 | 0.00000 | 0.00000 | 0.00000 | 0.00210 | 11 | 0 | 0.00000 | 0.02212 | NA | 19952 |
+| 2 | C | event_far | 58047 | 76 | 57971 | NA | 0.00000 | 0.00000 | 0.00210 | 11 | 0 | 0.00000 | 0.00000 | NA | 0 |
+| 2 | C_regularized | f1 | 58047 | 76 | 57971 | 0.00044 | 0.15789 | 0.00087 | 0.00105 | 11 | 2 | 0.18182 | 3.23388 | 352.00000 | 37731 |
+| 2 | C_regularized | event_far | 58047 | 76 | 57971 | NA | 0.00000 | 0.00000 | 0.00105 | 11 | 0 | 0.00000 | 0.00000 | NA | 0 |
+| 3 | A | f1 | 176807 | 539 | 176268 | 0.00000 | 0.00000 | 0.00000 | 0.03337 | 58 | 0 | 0.00000 | 0.00035 | NA | 1 |
+| 3 | A | event_far | 176807 | 539 | 176268 | 0.00000 | 0.00000 | 0.00000 | 0.03337 | 58 | 0 | 0.00000 | 0.00035 | NA | 1 |
+| 3 | B | f1 | 176807 | 539 | 176268 | 0.00305 | 1.00000 | 0.00608 | 0.00612 | 58 | 55 | 0.94828 | 5.45484 | 568.00000 | 60790 |
+| 3 | B | event_far | 176807 | 539 | 176268 | NA | 0.00000 | 0.00000 | 0.00612 | 58 | 0 | 0.00000 | 0.00000 | NA | 0 |
+| 3 | C | f1 | 176807 | 539 | 176268 | 0.00305 | 1.00000 | 0.00608 | 0.00841 | 58 | 55 | 0.94828 | 5.45484 | 568.00000 | 60790 |
+| 3 | C | event_far | 176807 | 539 | 176268 | NA | 0.00000 | 0.00000 | 0.00841 | 58 | 0 | 0.00000 | 0.00000 | NA | 0 |
+| 3 | C_regularized | f1 | 176807 | 539 | 176268 | 0.00305 | 1.00000 | 0.00608 | 0.00557 | 58 | 55 | 0.94828 | 5.45484 | 568.00000 | 60790 |
+| 3 | C_regularized | event_far | 176807 | 539 | 176268 | NA | 0.00000 | 0.00000 | 0.00557 | 58 | 0 | 0.00000 | 0.00000 | NA | 0 |
+
+유형별 이벤트 탐지:
+
+| model | policy | fault_code | eligible | detected |
+| --- | --- | --- | --- | --- |
+| A | event_far | f1 | 108 | 4 |
+| A | event_far | f2 | 30 | 1 |
+| A | event_far | f3 | 43 | 2 |
+| A | f1 | f1 | 108 | 56 |
+| A | f1 | f2 | 30 | 4 |
+| A | f1 | f3 | 43 | 14 |
+| B | event_far | f1 | 108 | 20 |
+| B | event_far | f2 | 30 | 2 |
+| B | event_far | f3 | 43 | 7 |
+| B | f1 | f1 | 108 | 47 |
+| B | f1 | f2 | 30 | 8 |
+| B | f1 | f3 | 43 | 34 |
+| C | event_far | f1 | 108 | 20 |
+| C | event_far | f2 | 30 | 2 |
+| C | event_far | f3 | 43 | 7 |
+| C | f1 | f1 | 108 | 45 |
+| C | f1 | f2 | 30 | 8 |
+| C | f1 | f3 | 43 | 33 |
+| C_regularized | event_far | f1 | 108 | 34 |
+| C_regularized | event_far | f2 | 30 | 4 |
+| C_regularized | event_far | f3 | 43 | 10 |
+| C_regularized | f1 | f1 | 108 | 59 |
+| C_regularized | f1 | f2 | 30 | 9 |
+| C_regularized | f1 | f3 | 43 | 37 |
+
+연속 경보는 같은 장비·관측 세그먼트·가동 상태에서 합치며, 72초 초과 공백·음성 예측·상태 변화 때 끊고 600초마다 재발행한다. 한 경보는 가장 이른 미래 이벤트 시각에만 매칭한다. 같은 시각의 다중 유형은 함께 기록하고 순차 이벤트 중복 공로를 막는다. 정답을 예측 특징에 사용하지 않고 점수 생성 후 매칭한다. Lead Time은 탐지 이벤트에만 정의한다. NA가 포함된 미매칭 경보는 false로 세지 않고 unknown으로 분리한다. FAR 분모는 같은 세그먼트의 인접 확인 음성 anchor(간격≤72)의 Stage>0 시간이다. **전체 운영 시간당 실제 FAR가 아니다.**
+
+## 6. A/B/C 차이와 과적합
+
+기존 4단계의 검증·평가 AP:
+
+| scheme | features | validation_ap | evaluation_ap |
+| --- | --- | --- | --- |
+| split_tool | A | 0.01179 | 0.08518 |
+| split_tool | B | 0.00968 | 0.01721 |
+| split_tool | C | 0.00904 | 0.01537 |
+| split_time | A | 0.03569 | 0.31511 |
+| split_time | B | 0.04561 | 0.29251 |
+| split_time | C | 0.05087 | 0.27880 |
+
+시간 분할에서 A의 평가 AP가 더 높았지만 당시 선택 기준은 검증 AP였으므로 C 선택 자체가 오류는 아니다. 검증/평가의 장비·시간·공정 분포 및 클래스 비율이 달라 순위가 뒤바뀐 관찰이다. 원인을 하나로 확정할 수 없다. 이번 장비 분리 CV에서 B−A는 과거 센서 특징의 효과, C−B는 공정 이력 3개의 추가 효과를 같은 Fold에서 비교한다. 모델별 학습 AP와 외부 AP 차이, Fold 변동성이 크면 과적합/분포 이동 가능성을 함께 본다. 단일 seed와 서로 다른 구성의 early stopping 결과이므로 인과적 특징 효과로 단정하지 않는다.
+
+실제 평균 AP는 A 0.01226, B 0.00933, C 0.00949로 과거 특징 추가가 AP를 높이지 못했다. 반면 F1 정책의 평균 F1은 A 0.00488에서 B 0.02193, C 0.02220으로 달라져 순위 지표와 경보 지표의 목적이 다름을 확인했다. 학습 AP는 A 0.16776/B 0.17396/C 0.20082로 외부 AP보다 훨씬 높다. 정규화 강화 C도 AP 0.00586으로 일반화를 개선하지 못했다.
+
+| metric | comparison | mean_difference | std_difference | positive_difference_folds |
+| --- | --- | --- | --- | --- |
+| pr_auc_ap | B - A | -0.00293 | 0.01636 | 3 |
+| pr_auc_ap | C - B | 0.00016 | 0.00193 | 2 |
+| pr_auc_ap | C_regularized - C | -0.00363 | 0.00234 | 0 |
+| f1 | B - A | 0.01704 | 0.02268 | 4 |
+| f1 | C - B | 0.00028 | 0.00463 | 1 |
+| f1 | C_regularized - C | -0.00410 | 0.00590 | 1 |
+| event_recall | B - A | 0.13983 | 0.58024 | 2 |
+| event_recall | C - B | -0.05214 | 0.06119 | 0 |
+| event_recall | C_regularized - C | 0.10227 | 0.08766 | 3 |
+| false_alarms_per_active_hour | B - A | 0.13010 | 3.77173 | 2 |
+| false_alarms_per_active_hour | C - B | -0.07845 | 0.09316 | 0 |
+| false_alarms_per_active_hour | C_regularized - C | 1.45397 | 1.49085 | 3 |
+
+C의 공정 이력 특징 gain 비율(모델 내 상대값, 인과 중요도 아님):
+
+| fold | feature | gain_fraction |
+| --- | --- | --- |
+| 0 | stage_zero_fraction_300raw | 0.00000 |
+| 0 | stage_change_count_300raw | 0.00000 |
+| 0 | recipe_change_count_300raw | 0.00000 |
+| 1 | stage_zero_fraction_300raw | 0.00000 |
+| 1 | stage_change_count_300raw | 0.00000 |
+| 1 | recipe_change_count_300raw | 0.00000 |
+| 2 | stage_zero_fraction_300raw | 0.00000 |
+| 2 | stage_change_count_300raw | 0.00000 |
+| 2 | recipe_change_count_300raw | 0.00000 |
+| 3 | stage_zero_fraction_300raw | 0.00000 |
+| 3 | stage_change_count_300raw | 0.00000 |
+| 3 | recipe_change_count_300raw | 0.00000 |
+
+| fold | model | train_ap | pr_auc_ap | best_iteration | fit_seconds | peak_rss_gib |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0 | A | 0.43400 | 0.00293 | 73 | 0.63534 | 1.92860 |
+| 0 | B | 0.48107 | 0.00688 | 31 | 1.38481 | 1.76930 |
+| 0 | C | 0.48133 | 0.00759 | 31 | 1.27314 | 1.76226 |
+| 0 | C_regularized | 0.64373 | 0.00360 | 206 | 1.89537 | 1.77269 |
+| 1 | A | 0.00955 | 0.01167 | 0 | 0.49175 | 1.89891 |
+| 1 | B | 0.01669 | 0.01987 | 0 | 1.08061 | 1.64473 |
+| 1 | C | 0.01669 | 0.01987 | 0 | 1.26119 | 1.64227 |
+| 1 | C_regularized | 0.00950 | 0.01323 | 0 | 1.29536 | 1.65133 |
+| 2 | A | 0.14089 | 0.00106 | 44 | 0.72400 | 2.02938 |
+| 2 | B | 0.08607 | 0.00444 | 18 | 1.68714 | 1.80804 |
+| 2 | C | 0.16821 | 0.00210 | 46 | 1.87467 | 1.80785 |
+| 2 | C_regularized | 0.01782 | 0.00105 | 1 | 1.57198 | 1.80989 |
+| 3 | A | 0.08660 | 0.03337 | 7 | 0.52538 | 2.12398 |
+| 3 | B | 0.11202 | 0.00612 | 12 | 1.20805 | 1.77355 |
+| 3 | C | 0.13704 | 0.00841 | 17 | 1.26034 | 1.78201 |
+| 3 | C_regularized | 0.06709 | 0.00557 | 7 | 1.25109 | 1.79023 |
+
+Stage=0에서도 고장이 존재하므로 제거하지 않았다. `tool_state_distribution.parquet`은 장비·Stage별 클래스와 센서 중앙값을, `fault_sensor_contrasts.parquet`은 유형별 양성/음성 센서 중앙값 및 IQR 대비 차이를 제공한다. 이는 물리 단위 복원이나 공정 교란 제거가 아닌 기술 통계다. 장비·공정 중앙값 차이 그림은 분포 이동을 보여주지만 고장의 원인이라고 단정하지 않는다. 모델별 gain 중요도는 result.json에 저장했고 SHAP 상세 분석은 수행하지 않았다.
+
+개발 12대의 유형별 `(양성 중앙값 - 음성 중앙값)/음성 IQR`을 장비 간 중앙값으로 집계하면 f1은 ETCHBEAMVOLTAGE 약 +0.492, ETCHBEAMCURRENT +0.451, f2는 FLOWCOOLFLOWRATE -0.503, f3는 IONGAUGEPRESSURE -0.839가 상대적으로 컸다. 장비에 두 클래스가 없거나 음성 IQR이 0이면 제외하므로 유효 장비 수를 함께 제시한다. 특히 f1의 FLOWCOOLPRESSURE 차이는 -0.011로 작았지만 이것만으로 전조 부재를 결론짓지 않는다. Recipe/Stage 구성과 센서 상호작용을 통제하지 않았기 때문이다.
+
+| fault_code | sensor | median | count |
+| --- | --- | --- | --- |
+| f1 | ETCHBEAMCURRENT__current | 0.45123 | 10 |
+| f1 | ETCHBEAMVOLTAGE__current | 0.49161 | 10 |
+| f1 | ETCHSUPPRESSORCURRENT__current | 0.23067 | 10 |
+| f1 | FLOWCOOLFLOWRATE__current | 0.00082 | 10 |
+| f1 | FLOWCOOLPRESSURE__current | -0.01080 | 10 |
+| f1 | IONGAUGEPRESSURE__current | 0.03801 | 10 |
+| f2 | ETCHBEAMCURRENT__current | -0.01115 | 9 |
+| f2 | ETCHBEAMVOLTAGE__current | -0.01553 | 9 |
+| f2 | ETCHSUPPRESSORCURRENT__current | -0.15943 | 9 |
+| f2 | FLOWCOOLFLOWRATE__current | -0.50286 | 8 |
+| f2 | FLOWCOOLPRESSURE__current | 0.09680 | 9 |
+| f2 | IONGAUGEPRESSURE__current | -0.00401 | 9 |
+| f3 | ETCHBEAMCURRENT__current | 0.00312 | 7 |
+| f3 | ETCHBEAMVOLTAGE__current | 0.00015 | 7 |
+| f3 | ETCHSUPPRESSORCURRENT__current | -0.00745 | 7 |
+| f3 | FLOWCOOLFLOWRATE__current | -0.00576 | 7 |
+| f3 | FLOWCOOLPRESSURE__current | -0.09470 | 7 |
+| f3 | IONGAUGEPRESSURE__current | -0.83935 | 7 |
+
+## 7. 압력 저하 30건 미탐지 및 임계값 진단
+
+| fault_code | rows | events | score_q50 | score_q95 | score_max | threshold | alarm_rows |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f1 | 242 | 30 | 0.38209 | 0.57165 | 0.62040 | 0.65273 | 0 |
+| f2 | 71 | 11 | 0.49066 | 0.68455 | 0.68455 | 0.65273 | 24 |
+| f3 | 35 | 4 | 0.57165 | 0.57409 | 0.57409 | 0.65273 | 0 |
+
+기존 XGB_A의 f1 양성 242개 시점/30개 이벤트에서 최대 점수는 0.62040이고 검증 임계값은 0.65273이므로 경보가 0개였다. 누출 f3 역시 임계값 아래다. 이는 직접 확인한 임계값 미통과 원인이며, 센서에 전조가 없다는 증명은 아니다. 기존 평가 점수에 맞춰 임계값을 낮추거나 재평가하여 개선 성능으로 제시하지 않았다. 기존 검증 장비 07/08 계열의 임계값별 Precision/Recall/F1/AP/Event Recall/FAR/Lead Time/unknown 경보는 `old_validation_threshold_grid.json`에만 기록했다. 새 Fold별 보정 결과는 `threshold_metrics.parquet`에 있다.
+
+## 8. 기존 대비 개선 여부 및 다음 단계
+
+기존 장비 XGB AP 0.08518/F1 0.13008/이벤트 4/45, 시간 XGB AP 0.27880/F1 0.26476/17/56은 그대로 보존했다. 새 그룹 CV는 장비·학습량·분할이 다르므로 수치의 직접 증감을 독립 평가 개선으로 주장하지 않는다. 완료한 개선은 CUDA 속도 검증, NA 범위 공개, 별도 Early Stopping/보정 장비, 전체 준비 anchor의 미확인 경보 추적, 재개 가능한 캐시와 자원 기록이다. 확실한 예측 성능 향상은 아직 미입증이다.
+
+우선 고장 이력 완전성·관측 공백·TTF 종료의 외부 근거를 확보하고 장비별 검증 음성 부족을 해결해야 한다. 그다음 공정 상태별 보정 및 유형별 목표, 운영 FAR/Lead Time 요구사항을 사전 합의하고 새로운 장비/기간에서 고정 모델을 평가하는 순서가 적절하다. **현재는 LSTM 학습을 권고하지 않는다.** 라벨 범위 문제와 장비 일반화 불안정성을 먼저 해결해야 하며 복잡한 시계열 모델이 불완전한 정답을 보완하지 못한다.
+
+## 9. 재현·실행 상태
+
+`python -m src.hardware_benchmark`, `python -m src.dataset_audit45`, `python -m src.ttf_audit45`, `python -m src.group_validation45 --pilot`, `python scripts/run_improvement45.py`, `python -m src.improvement_diagnostics`, `python -m src.improvement_report`, `python scripts/build_improvement_notebooks.py` 순서로 같은 phm2018 절대 실행 파일을 사용한다. 캐시/완료 실험은 재사용한다. 새 정책·코드로 변경할 경우 기존 경로 대신 새 버전 디렉터리를 사용해야 한다.
+
+생성 Notebook은 09_dataset_audit, 10_group_cross_validation, 11_threshold_analysis이며 학습 재실행 대신 저장된 실제 결과를 읽어 표·그림·한국어 해석을 재현한다. Notebook 실행 상태와 보존·테스트 검증은 `delivery_checks.json`에 기록한다. 반복 seed·완전 nested 탐색·새 독립 평가·LSTM은 미실행이다.

@@ -1,0 +1,162 @@
+[
+  {
+    "path": "notebooks\\17_CNN_기능확장_종합안내.ipynb",
+    "cells": [
+      {
+        "cell_index": 0,
+        "cell_type": "markdown",
+        "source": "# 기존 CNN에서 무엇이 추가되었나? — TEP 기능 확장 종합 안내\n\n**이 노트북의 목적은 기존 모델과 추가 연구의 차이를 쉽게 설명하는 것입니다.**\n기존 CNN은 원래 정상(0)·Fault 1~20의 **21개 클래스 확률**을 출력했습니다. 이번 작업은 그 출력을 재사용하여 유형별 진단을 독립적으로 검증하고, 센서 입력 가용성 저하에 따른 검출·진단의 차이를 분석했습니다. 여기에 **별도의 LSTM 다음 시점 공정 변수 예측기**를 추가했습니다.\n\n기존 CNN의 구조·가중치·입력·경보 임계값과 기존 노트북은 유지했습니다. LSTM만 새로 학습했으며 LSTM 예측값을 CNN에 연결하지 않았습니다.\n\n작성 기준: 2026-11-12. 아래 표와 그림은 저장된 실제 평가 산출물을 읽습니다. **이 노트북을 다시 실행해도 모델 학습이나 대규모 Test 추론을 하지 않습니다.** 실행 결과와 그림은 노트북 안에도 포함됩니다.\n\n읽는 순서: **기능 비교 → 전체 구조 → 기존 성능 → 유형 진단 → 입력 가용성 → LSTM → 사용 방법과 한계**."
+      },
+      {
+        "cell_index": 1,
+        "cell_type": "code",
+        "source": "from pathlib import Path\nimport json\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom IPython.display import display, Image, Markdown\n\nROOT = next((p for p in [Path.cwd(), *Path.cwd().parents]\n             if (p / 'reports/fault_type_validation/validation.json').exists()), None)\nassert ROOT is not None, 'TEP 프로젝트 안에서 실행하세요.'\nD = ROOT / 'reports/fault_type_validation'\nF = ROOT / 'reports/next_step_forecasting'\nA = ROOT / 'reports/sensor_availability'\ndef read(folder, filename): return pd.read_csv(folder / 'tables' / filename)\ndef picture(folder, filename): display(Image(filename=str(folder / 'figures' / filename)))\nv = json.loads((D / 'validation.json').read_text(encoding='utf-8'))\npd.set_option('display.max_columns', 20)\npd.set_option('display.max_rows', 30)\nplt.rcParams.update({'font.family': 'Malgun Gothic', 'axes.unicode_minus': False})\ndisplay(Markdown('**데이터 준비 완료:** 기존 평가표와 그림을 읽었습니다.'))"
+      },
+      {
+        "cell_index": 3,
+        "cell_type": "code",
+        "source": "features = pd.DataFrame([\n ['정상 / 고장 판단', '기존 기능', '유지', '고정 CNN·기존 경보 임계값 재사용'],\n ['정상 0 / Fault 1~20 확률', '기존 21개 출력에 포함', '기존 출력 재사용', '21개 확률에서 정상 여부와 유형 후보 산출'],\n ['유형별 Precision / Recall / F1', '기존 출력으로 계산 가능', '독립 평가 추가', 'Fault별 성능표·혼동행렬·오분류 확인'],\n ['실행 단위 유형 진단', '기존 검출 지연 분석을 확장', '평가 규칙·결과 추가', '동일 유형 3연속 확정·최초 유형 정확도·정답 진단 지연'],\n ['입력 가용성 영향', '검출 영향 연구 수행', '진단까지 비교 확장', '전체 / 가용 실행 분모로 검출과 정답 진단 비교'],\n ['다음 시점 공정 변수 예측', '별도 기능 없음', '새 LSTM 모델 추가', '과거 20×52 → 3분 뒤 52개 변수'],\n ['LSTM 예측으로 CNN 성능 개선', '없음', '이번 구현 범위에 포함되지 않음', '두 모델은 별도 경로로 동작']\n], columns=['기능', '기존 상태', '이번 변경', '제공 결과'])\ndisplay(features.style.hide(axis='index'))"
+      },
+      {
+        "cell_index": 4,
+        "cell_type": "markdown",
+        "source": "## 2. 현재 시스템의 전체 구조\n\n입력은 동일한 52개 센서 변수의 연속 관측입니다. **CNN은 현재 상태를 판단**하고, **LSTM은 다음 관측값을 예측**합니다. 고장 유형 진단은 미래에 어떤 고장이 날지 맞히는 기능과 다릅니다. 센서 입력이 없는 시점에는 임의의 정상·고장 예측을 만들지 않습니다."
+      },
+      {
+        "cell_index": 5,
+        "cell_type": "code",
+        "source": "from matplotlib.patches import FancyBboxPatch\nfig, ax = plt.subplots(figsize=(13, 6.4), layout='constrained')\nax.set(xlim=(0, 13), ylim=(0, 6.4)); ax.axis('off')\ndef box(x, y, w, h, text, color):\n    ax.add_patch(FancyBboxPatch((x,y),w,h,boxstyle='round,pad=0.12',\n                               facecolor=color,edgecolor='#536475'))\n    ax.text(x+w/2,y+h/2,text,ha='center',va='center',fontsize=10)\ndef arrow(x1,y1,x2,y2):\n    ax.annotate('',xy=(x2,y2),xytext=(x1,y1),arrowprops=dict(arrowstyle='->',color='#536475',lw=1.6))\nbox(.2,2.5,2.3,1.3,'실제 센서 관측\\n과거 20시점 × 52변수','#eef2f6')\nbox(3.3,4.4,3.0,1.25,'기존 CNN · 그대로 유지\\n정상 0 / Fault 1~20 확률','#dceef1')\nbox(7.1,4.4,5.4,1.25,'기존: 정상 / 고장 검출\\n추가 검증: 유형별 분류·확정 진단·지연','#dceef1')\nbox(3.3,2.1,3.0,1.25,'추가 연구: 입력 유효성 마스크\\n유효한 20시점 창만 평가','#fff0d9')\nbox(7.1,2.1,5.4,1.25,'전체 실행 vs 가용 실행\\n검출률 / 올바른 유형 진단률 비교','#fff0d9')\nbox(3.3,.1,3.0,1.15,'새 LSTM · 별도 학습\\n정상 Training 데이터 사용','#e5e0f3')\nbox(7.1,.1,5.4,1.15,'3분 뒤 공정 변수 52개 예측\\n실제값·직전 값 유지 기준과 오차 비교','#e5e0f3')\narrow(2.5,3.55,3.3,5); arrow(2.5,3.1,3.3,2.7); arrow(2.5,2.6,3.3,.7)\narrow(6.3,5,7.1,5); arrow(6.3,2.7,7.1,2.7); arrow(6.3,.7,7.1,.7)\nax.set_title('기존 CNN 보존 + 진단 평가 확장 + 독립 LSTM 예측',fontsize=15,pad=12)\nplt.show()"
+      },
+      {
+        "cell_index": 6,
+        "cell_type": "markdown",
+        "source": "## 3. 재사용한 데이터와 기존 CNN\n\nHarvard TEP의 52개 변수(측정 변수 41개·조작 변수 11개), 관측 간격 3분을 사용했습니다. 원래의 실행 family 기준 Train 400 / Validation 100 / Test 500 분할을 유지했습니다. CNN의 입력은 20×52이며, 과거 관측만 사용하고 실행 경계를 넘지 않습니다.\n\n고정 모델은 `CNN1D_Temporal_balanced_s42`입니다. 기존 Test 결과 재현을 확인한 뒤 추가 평가를 수행했습니다. **아래의 시점 단위 지표와 실행 단위 검출률은 분모가 다릅니다.** 정상 실행에서의 경보 부담도 정상 시점의 오탐 비율과 구분합니다."
+      },
+      {
+        "cell_index": 15,
+        "cell_type": "markdown",
+        "source": "## 6. 추가 검증 ③ — 입력 가용성이 검출과 진단에 미치는 영향\n\n0%, 10%, 25%, 40%, 53.1%는 **전체 센서 샘플의 삭제 비율이 아니라, 고장 실행 중 입력 부족으로 평가 불가능하게 만드는 실행 비율**입니다. 고장 유형별로 균형을 맞추고 누락 seed 42·43·44를 반복했습니다.\n\n선택 실행에서 원본 sample 141~960의 연속 센서 구간을 누락시켜 고장 이후 유효한 20시점 입력 창이 하나도 남지 않게 했습니다. 미래값 보간이나 임의 예측은 사용하지 않았습니다. 원본 확률 중 유효한 창만 선택하는 방법과 실제 누락 입력의 유효 창 평가가 동등한지도 검증했습니다.\n\n| 지표 | 분모 |\n|---|---|\n| 전체 검출률 / 전체 정답 진단률 | 전체 고장 실행 10,000개 |\n| 조건부 검출률 / 조건부 정답 진단률 | 유효한 고장 이후 입력이 하나라도 있는 실행 |\n\n아래 값은 세 누락 seed의 **실제 측정 평균**입니다. 실행 수의 소수점은 반복 평균이므로 생기며, 개별 실험에서 실행을 소수 개 사용한 것이 아닙니다."
+      },
+      {
+        "cell_index": 20,
+        "cell_type": "markdown",
+        "source": "### PHM 2018과 연결해서 읽기\n\nPHM V3에서 194개 고장 이벤트 중 103개가 입력 부족으로 평가 불가능했던 현상을 TEP에 모사했습니다. 그러나 PHM은 **고장 전 조기 예측**, TEP는 **고장 주입 후 이상 탐지**입니다. 아래는 입력 가용성과 전체 검출 범위를 비교하는 표이며, 두 모델의 과제가 같다는 의미의 순위 비교가 아닙니다. 유형 진단은 이 TEP 연구에서 별도로 평가했습니다."
+      },
+      {
+        "cell_index": 22,
+        "cell_type": "markdown",
+        "source": "## 7. 새 기능 — LSTM의 다음 시점 공정 변수 예측\n\n이 부분은 평가만 추가한 CNN 연구와 달리 **새 모델을 학습한 작업**입니다. 입력은 과거 20개 관측×52변수, 출력은 다음 한 관측(3분 뒤)의 52변수입니다. 고장 ID를 출력하는 분류기가 아니며 고장 발생 시점을 예측하는 모델도 아닙니다.\n\n정상 Train 400개 실행만으로 scaler와 LSTM을 학습하고 정상 Validation 100개 실행에서 epoch를 선택했습니다. LSTM 2층·hidden 64·dropout 0.1이며 현재값에 예측 변화량을 더하는 구조입니다. 대표 seed 42와 보조 seed 7·2026을 사용했습니다. **LSTM 예측을 센서 결측 복원이나 CNN 입력에 사용하지 않았습니다.**\n\n비교 기준 Persistence는 ‘다음값=현재값’입니다. 아래는 대표 seed 42의 전체 유효 시점 평가입니다. 서로 단위가 다른 변수의 오차를 모으기 위해 정상 Train의 채널별 표준편차로 정규화했습니다. 값이 낮을수록 좋습니다."
+      },
+      {
+        "cell_index": 23,
+        "cell_type": "code",
+        "source": "forecasts = read(F, 'test_summary.csv')\ndense = forecasts[(forecasts.seed==42)&(forecasts['mode']=='dense')]\ndisplay(dense[['model','cohort','target_rows','normalized_rmse','normalized_mae']]\n        .rename(columns={'model':'모델','cohort':'평가 구간','target_rows':'예측 정답 시점 수',\n                         'normalized_rmse':'정규화 RMSE','normalized_mae':'정규화 MAE'}))\npicture(F, 'lstm_vs_persistence.png')\npicture(F, 'forecast_examples.png')"
+      },
+      {
+        "cell_index": 24,
+        "cell_type": "markdown",
+        "source": "**결과를 한쪽 지표로만 판단하지 않습니다.** 전체 Test의 정규화 RMSE는 1.6301→1.4943으로 감소했지만 MAE는 0.6905→0.7378로 증가했습니다. 정상 전용 실행에서는 두 오차가 개선됐고, 고장 이후 구간에서는 MAE가 악화됐습니다. 정상만 학습한 모델의 고장 구간 예측은 학습 분포 밖의 성격이 있습니다.\n\nLSTM 평가의 정답 시점은 9,870,000개입니다. 마지막 관측의 다음 정답이 없어서 제외하므로 CNN 분류 평가 9,880,500개와 다릅니다. 10시점 간격의 공통 평가(987,000개)와 전체 평가도 구분했습니다. 공통 시점에서는 MAE 개선 방향까지 달라져, 일부 표본만으로 전체 성능을 주장하면 안 됩니다. 상세 노트북에는 seed별 결과와 변수별 오차도 있습니다."
+      },
+      {
+        "cell_index": 25,
+        "cell_type": "markdown",
+        "source": "## 8. 실제로 무엇을 사용할 수 있나?\n\n| 목적 | 사용 대상 | 입력 → 결과 |\n|---|---|---|\n| 정상인지 고장인지 판단 | 기존 CNN + 고정 경보 임계값 | 연속 20×52 → 정상/고장 확률·경보 |\n| 어떤 고장인지 분석 | 기존 CNN의 21개 출력 + 추가 진단 평가 코드 | 클래스 확률 → 유형 후보·3연속 확정 유형·성능표 |\n| 센서 입력 손실 영향을 연구 | 입력 유효성 마스크 평가 | 누락 조건 → 전체/조건부 검출률·진단률 |\n| 다음 센서값을 예측 | 별도 LSTM `predict.py` | 연속 관측 20개 이상 → 다음 시점의 52변수 |\n\nLSTM 사용 예(TEP 프로젝트 루트에서 실행, 여기서는 실행하지 않음):\n\n```powershell\npython experiments/next_step_forecasting/predict.py --input one_run.csv --output next_step_predictions.csv\n```\n\nCSV에는 52개 원 센서 열이 필요합니다. 한 번에 한 실행·한 시나리오의 연속 관측을 전달하며, 결측값·부족한 이력·끊어진 sample 번호는 거부합니다. 실제 사용 환경에는 프로젝트 의존성을 설치해야 합니다. 이 종합 노트북은 결과 열람용이며 배포용 실시간 화면이나 통합 하이브리드 모델을 새로 만드는 작업은 포함하지 않습니다."
+      },
+      {
+        "cell_index": 26,
+        "cell_type": "markdown",
+        "source": "### 8-1. 모델별 Accuracy는 어디서 확인하나?\n\nAccuracy는 **정답과 예측이 일치하는 시점 수 / 평가한 전체 시점 수**입니다. 혼동행렬에서는 `np.trace(cm) / cm.sum()`으로 계산합니다. 정상/고장 2종 정확도와 정상 포함 21종 정확도는 서로 다른 지표입니다. 98.51%는 실행 단위 검출률이며 시점 단위 Accuracy가 아닙니다.\n\n아래 첫 표는 최종 CNN의 **전체 유효 Test 시점** 결과입니다. 두 번째 표는 과거 모델 비교에서 저장한 **10시점 간격 공통 평가 집합**의 혼동행렬을 읽어 계산합니다. 모델별 Validation 선택 구성과 학습 seed 3개의 평균±표준편차입니다. 공통 평가와 전체 평가의 숫자는 평가 시점이 다르므로 직접 섞지 않습니다.\n\n고장 조건부 20종 Accuracy는 실제 고장 구간에서 정상 여부를 알고 유형만 구분한 값입니다. 별도 LSTM 다음값 예측은 연속값 회귀이므로 분류 Accuracy를 적용하지 않고 RMSE·MAE로 확인합니다. 아래의 LSTM 분류기는 초기 모델 비교의 분류 모델이며 새 LSTM 공정 변수 예측기와 다릅니다."
+      },
+      {
+        "cell_index": 28,
+        "cell_type": "markdown",
+        "source": "## 9. 검증과 연구의 한계\n\n- 기존 CNN의 시점별 결과와 이벤트 검출을 재현했고, 21개 클래스의 기존 Precision/Recall/F1/support와도 대조했습니다.\n- 잘못된 초기 유형 후 정답 진단, 유형이 바뀌는 3연속 고장 검출, 입력 불가 시 진단 금지 등을 검사했습니다.\n- LSTM은 정상 Train만으로 scaler를 맞췄으며 미래 관측을 바꿔도 과거 예측이 바뀌지 않는지 확인했습니다.\n- 원래의 모델과 노트북 파일 보존 검사를 통과했습니다. 두 상세 노트북은 오류 없이 실행됐습니다.\n- 기존에 사용한 Test의 후속 분석입니다. 독립적인 새 외부 검증 데이터로 일반화 성능을 검증한 결과는 아닙니다.\n- 센서 누락 중 재학습하지 않았으므로 결측이 학습에 미치는 영향은 다루지 않습니다. 원본 예측의 마스크 필터링은 적용 범위 손실 연구입니다.\n- 진단 성공은 관측 기간 내 한 번의 정답 확정을 뜻합니다. 최초 정확도와 제한 시간 내 진단률을 함께 읽어야 합니다.\n- CNN은 그대로이므로 ‘새 CNN이 더 좋아졌다’고 결론내릴 수 없습니다. LSTM도 전체 RMSE 개선과 MAE 악화가 함께 나타났습니다."
+      },
+      {
+        "cell_index": 29,
+        "cell_type": "code",
+        "source": "diagnosis_checks = json.loads((D/'sources/test_results.json').read_text(encoding='utf-8'))\nforecast_checks = json.loads((F/'api_checks.json').read_text(encoding='utf-8'))\nassert v['all_reference_results_match'] and v['no_retraining'] and v['no_threshold_selection']\nassert diagnosis_checks['passed'] and forecast_checks['passed']\nassert not diagnosis_checks['changed_files']\ndisplay(pd.DataFrame([\n ['CNN 기존 결과 재현', v['all_reference_results_match']],\n ['CNN 재학습 없음', v['no_retraining']],\n ['경보 임계값 재선정 없음', v['no_threshold_selection']],\n ['진단 평가 로직 검사', diagnosis_checks['passed']],\n ['LSTM 입력·미래 정보 누출 검사', forecast_checks['passed']],\n ['보호 대상 기존 파일 변경', len(diagnosis_checks['changed_files'])]\n], columns=['검증 항목','결과']).style.hide(axis='index'))"
+      },
+      {
+        "cell_index": 30,
+        "cell_type": "markdown",
+        "source": "## 10. 상세 산출물 찾아보기\n\n| 자료 | 프로젝트 루트 기준 경로 |\n|---|---|\n| 이전 전체 연구 과정 | `notebooks/14_TEP_종합_연구_노트북.ipynb` |\n| 고장 유형·가용성 상세 분석 | `experiments/fault_type_validation/15_fault_type_validation.ipynb` |\n| LSTM 학습·예측 상세 분석 | `experiments/next_step_forecasting/16_next_step_forecasting.ipynb` |\n| 진단 평가 코드 / 설명 | `experiments/fault_type_validation/evaluate.py`, `README.md` |\n| LSTM 추론 코드 / 설명 | `experiments/next_step_forecasting/predict.py`, `README.md` |\n| 유형·가용성 분석 보고서 | `reports/fault_type_validation/final_report.md` |\n| LSTM 예측 보고서 | `reports/next_step_forecasting/final_report.md` |\n| 입력 가용성 원 실험 | `experiments/sensor_availability/11~13번 노트북`, `reports/sensor_availability/final_report.md` |\n\n[참고 GitHub](https://github.com/min3237/tep-fault-diagnosis-dl)의 유형별 평가와 다음 시점 예측 아이디어를 참고했습니다. 데이터 구성과 평가 과제가 달라 해당 저장소의 점수와 직접 우열을 비교하지 않았으며, 예측값을 분류 입력에 넣는 구조를 동일하게 재현한 것도 아닙니다.\n\n**현재 제공하는 변화는 ‘기존 CNN의 유형 진단을 더 명확하게 평가할 수 있게 된 것’, ‘입력 가용성과 진단 범위의 관계를 확인할 수 있게 된 것’, ‘독립 LSTM으로 다음 공정 변수값을 예측할 수 있게 된 것’입니다.**"
+      }
+    ]
+  },
+  {
+    "path": "notebooks\\18_TEP_PHM_전체모델_종합비교.ipynb",
+    "cells": [
+      {
+        "cell_index": 0,
+        "cell_type": "markdown",
+        "source": "# 지금까지 만든 모델 전체 정리 — TEP와 PHM 2018\n\n**모델이 어떤 문제를 풀고, 무엇을 비교했으며, 어느 결과까지 믿을 수 있는지**를 한 파일에 정리했습니다. 확인 범위는 로컬 TEP, PHM2018-Project(V1), V2, V3 및 V1 재분석 폴더입니다. 다른 프로젝트(SRAM·WM811K 등)는 이번 범위에 포함하지 않았습니다.\n\nTEP는 **고장 주입 후 검출·유형 진단**, PHM은 **기록된 고장 정지 이전 조기 예측**, 새 TEP LSTM은 **다음 시점 센서값 회귀**입니다. 과제가 다르므로 Accuracy나 검출률로 서로 순위를 매기지 않습니다.\n\n기준일: 2026-11-12. 원본 데이터·기존 모델·노트북을 변경하지 않았습니다. 기존 평가표와 저장 예측을 읽었으며 **새 학습·새 모델 추론·임계값 선택은 하지 않았습니다.** PHM은 읽기 전용으로 확인했습니다.\n\n아래 표·그림은 **내장 스냅샷**으로 표시됩니다. 다른 폴더로 옮겨도 기존 출력으로 열람할 수 있고, Python·pandas·NumPy·matplotlib·IPython 환경에서 원 프로젝트 없이 재실행할 수 있습니다. 내장 자료는 원 센서 데이터나 모델 바이너리를 포함하지 않습니다."
+      },
+      {
+        "cell_index": 2,
+        "cell_type": "markdown",
+        "source": "## 1. 먼저 보는 전체 모델 지도\n\n‘모델 종류’, ‘학습 실행 수’, ‘평가 행 수’는 다릅니다. 같은 XGBoost를 특징·seed·분할별로 학습하면 여러 실행이 됩니다. 임계값만 달리 평가한 것은 새 학습 모델로 세지 않습니다. 아래는 기준선을 포함한 역할별 목록입니다."
+      },
+      {
+        "cell_index": 5,
+        "cell_type": "code",
+        "source": "coverage=pd.DataFrame([\n ['TEP Phase2',len(T['tep_test']),'공통 Test 평가 model_id 수; seed·구성 변형 포함'],\n ['TEP 별도 LSTM 예측',len(T['forecast_train']),'학습 seed 수; Persistence는 학습하지 않음'],\n ['PHM V1 stage4',len(T['v1_metrics'].query(\"split == 'evaluation'\")),'48개 본/확장 + 10개 ID 보조진단; 단순 기준선 포함'],\n ['PHM V1 stage4.5',E['v1_cv_summary']['experiments'],'4-Fold × 4설정; 정책 2개 평가이므로 성능표 32행'],\n ['PHM V2',0,'감사·대표 2대 후보 생성; 학습 없음'],\n ['PHM V3 stage2',len(T['phm_stage2_train']),'A/B × Logistic/XGBoost 최대가용 코호트'],\n ['PHM V3 stage3',len(T['phm_stage3_train']),'A/B/C × Logistic/XGBoost 공통 코호트'],\n ['PHM V3 stage4',len(T['phm_stage4_train']),'21개 보존 실행 중 신규 18개·stage3 재사용 3개'],\n ['PHM V3 stage5',len(T['phm_stage5_train']),'보호된 장비 그룹 검증용 XGBoost'],\n ['PHM V3 stage6',0,'기존 stage2 B를 동결; 새 학습 없이 최종 Holdout 1회'],\n ['PHM V3 stage7',len(T['phm_stage7_train']),'03M02 장비 전용 신규 학습 1개']\n],columns=['단계','실행/모델 수','분모 및 의미'])\ndisplay(coverage.style.hide(axis='index'))"
+      },
+      {
+        "cell_index": 6,
+        "cell_type": "markdown",
+        "source": "## 3. 지표를 읽는 공통 기준\n\n| 지표 | 질문 | 주의점 |\n|---|---|---|\n| Accuracy | 시점별 정답을 얼마나 맞혔나? | 정상 비중이 높으면 고장을 전부 놓쳐도 높음 |\n| Precision / Recall / F1 | 경보의 정확성과 고장 포착이 어떤가? | 임계값과 평가 라벨 집합을 확인 |\n| Macro-F1 | 각 클래스의 F1을 동등하게 평균하면? | 고장 유형 불균형을 보완 |\n| ROC-AUC / AP | 점수의 순위 구분 능력은? | 임계값 적용 Accuracy와 다름; AP는 양성 비율 영향 |\n| 전체 이벤트 검출률 | 기록된 전체 고장을 얼마나 검출했나? | 입력 없는 고장도 분모에 포함 |\n| 조건부 이벤트 검출률 | 입력이 있었던 고장 중 얼마나 검출했나? | 입력 부족으로 평가 불가한 사건을 숨길 수 있음 |\n| 지연 / 선행시간 | 고장 후 얼마나 늦게 / 고장 전 얼마나 일찍? | 성공한 사건만의 통계인지 확인 |\n| RMSE / MAE | 연속값 예측 오차는? | LSTM 센서 예측에 사용; 분류 Accuracy를 적용하지 않음 |\n\n이번에 추가 계산한 Accuracy는 저장 혼동행렬 또는 저장 예측·고정 임계값으로 계산했습니다. 이미 보고된 원 지표와 구분해 설명합니다. PHM V1은 당시 보고서가 초 해석을 지지했지만 V3는 raw 단위를 유지합니다. 통합 비교에서는 PHM 시간을 임의로 분/시간으로 변환하지 않습니다."
+      },
+      {
+        "cell_index": 7,
+        "cell_type": "markdown",
+        "source": "## 4. TEP — 모델 구성과 비교 조건\n\nHarvard TEP, 52변수, 3분 간격, 실행 family 기준 Train400 / Validation100 / 공식 Test500 분할입니다. 현재 특징은52개, 통계 특징은312개, 시계열 특징은20×52입니다. 같은 run family의 정상·고장 시나리오를 같은 분할에 두었습니다.\n\nLogistic/RF/XGBoost의 현재·통계 특징과 class weight를 비교했고, LSTM·GRU·CNN은 같은 시계열 입력으로 비교했습니다. Binary XGBoost는 정상/고장 전용이며 Unknown Binary는 Fault 3·9·15를 학습에서 제외한 별도 실험입니다. 주 CNN은 Validation으로 선택한 **seed42 단일 모델**이며 ensemble이 아닙니다."
+      },
+      {
+        "cell_index": 14,
+        "cell_type": "markdown",
+        "source": "## 5. TEP — 입력 가용성 저하와 PHM 취약점 모사\n\n전체 고장 실행 중0/10/25/40/53.1%를 입력 부족으로 평가 불가능하게 만들었습니다. 샘플 삭제율이 아닙니다. 고장별 균형 선정, seed42·43·44 반복, 모델·임계값·라벨은 고정입니다. 유효20시점 창만 남겨 평가하고 임의 예측이나 미래 보간은 하지 않았습니다. 짧은 누락 뒤 유효 입력이 남으면 부분 가용 실행으로 집계했습니다."
+      },
+      {
+        "cell_index": 17,
+        "cell_type": "markdown",
+        "source": "## 6. TEP — 별도 LSTM 공정 변수 예측\n\n이 LSTM은 앞의 21종 LSTM 분류기와 다릅니다. 정상 Train400실행으로20×52→다음3분52변수를 학습했습니다. 2층hidden64, 현재값+예측 변화량 구조이며, seed42/7/2026을 비교했습니다. Validation으로 epoch를 선택하고 대표seed42의 전체9,870,000개 정답 시점을 평가했습니다. CNN에 연결하거나 결측 복원에 쓰지 않았습니다.\n\n정상 Train 표준편차로 정규화한 오차입니다. 전체 RMSE는 개선됐지만 MAE는 악화됐으므로 전반적으로 항상 더 좋은 예측기라고 말할 수 없습니다."
+      },
+      {
+        "cell_index": 18,
+        "cell_type": "code",
+        "source": "show('forecast_train')\nf=T['forecast_test'];display(f[(f.seed==42)&(f['mode']=='dense')][['model','cohort','target_rows','normalized_rmse','normalized_mae']].style.hide(axis='index'))\npicture('forecast')"
+      },
+      {
+        "cell_index": 19,
+        "cell_type": "markdown",
+        "source": "## 7. PHM V1 — 최초 모델 비교\n\nDummy·압력 임계값·Random Forest·XGBoost를 비교했습니다. A8=현재 센서6개+recipe/stage, B80=현재+과거60/300통계, C83=공정 전환 등 추가입니다. 이는 **V3의 A8/B32/C44와 다른 정의**입니다.\n\nhorizon300/600/1800, 장비 분할·시간 분할, A/B/C를 비교한48실험과 Tool/time/Lot/사용량을 넣어 의존성을 보는10진단 실험을 보존했습니다. ID 진단 모델은 주 모델과 분리합니다. 알려진 라벨·충분한 이력이 있는 관측만의 결과이며 미확인 라벨을 정상으로 바꾸지 않았습니다."
+      },
+      {
+        "cell_index": 25,
+        "cell_type": "markdown",
+        "source": "## 9. PHM V2 — 모델 성능을 제시하지 않는 이유\n\nV2는 전체20대 원본 감사와 대표2대 후보 특징·라벨·분할 진단 단계입니다. 시간 단위·고장 이력 완전성·정비 종료가 확정되지 않아 정식 학습 데이터 배포와 모델 학습을 차단했습니다. A8/B32/C44 후보가 있다는 것은 모델이 학습됐다는 뜻이 아닙니다. Accuracy·F1은 **미산출**입니다. V1 재분석 폴더도 모델 재학습 결과가 확인되지 않아 별도 모델로 세지 않았습니다."
+      },
+      {
+        "cell_index": 32,
+        "cell_type": "markdown",
+        "source": "## 11. PHM V3 — 최종 동결 모델과 Holdout\n\n최종 artifact는 stage2의 B XGBoost(seed42, depth3, 선택tree2)와 Train 전용 전처리입니다. train+validation 재학습 없이 모델과 두 임계값을 동결했습니다. 각 장비 마지막20%를 한 번 추론한 뒤 저장 예측만 재사용했습니다.\n\n고장 전 `[t_fault-600, t_fault-60]` raw 구간에 시작한 유효 경보를 평가합니다. 기록194개 중91개만 입력이 있었고103개는 평가 불가능했습니다. 아래 두 운영점은 모두 사전에 동결됐으며 최종 결과를 보고 재선택하지 않았습니다."
+      },
+      {
+        "cell_index": 34,
+        "cell_type": "markdown",
+        "source": "### PHM 최종 모델의 Accuracy도 계산할 수 있나?\n\n저장된 Holdout 예측의 `audit_label`이0/1인 **정답 확인32,645개 시점**에서 고정 임계값별 Accuracy를 추가 계산했습니다. 나머지 미확인/제외 입력을 임의 정상으로 바꾸지 않았습니다. 이는 입력736,646개 전체의 Accuracy나 고장194개 전체의 검출률이 아닙니다. 아래의 ‘항상 정상 Accuracy’는 라벨 불균형을 보여주는 **학습 없는 계산 기준**입니다.\n\n고정 모델의 알려진 라벨 AP=0.0654, ROC-AUC=0.5012였습니다. 높은 Accuracy가 나오더라도 실제 고장 조기 예측이 충분하다는 뜻은 아닙니다."
+      },
+      {
+        "cell_index": 38,
+        "cell_type": "markdown",
+        "source": "## 13. TEP와 PHM에서 배운 차이\n\n| 항목 | TEP | PHM2018 V3 |\n|---|---|---|\n| 목적 | 주입 후 검출·유형 진단 | 정지 이벤트 이전 조기 예측 |\n| 데이터 | 규칙적3분 간격 시뮬레이션52변수 | 실제 장비 센서·공정, 공백·라벨 미확인 존재 |\n| 최종 주 모델 | 1D-CNN 21클래스 | B XGBoost 이진 위험점수 |\n| 사건 단위 | 고장 실행10,000개 | 기록 고장194개 |\n| 원본 평가 입력 가용성 | 모든 실행에 고장 이후 유효 입력 | 91개 가용 /103개 불가 |\n| 입력53.1% 손실 비교 | 전체 검출46.17%, 조건부98.45% | 전체17.01%, 조건부36.26% (고정 상한10 운영점) |\n| 해석 | 적용 범위 손실과 유형 혼동 분리 | 입력·라벨·공정 분포·장비 일반화 제약 |\n\n표의 검출률은 같은 과제의 우열 비교가 아닙니다. PHM의 실제 pre-fault 입력조건과 TEP의20시점 창 조건도 다릅니다. TEP에서는 ‘기회가0이면 평가 불가’라는 의미를 모사했습니다.\n\n실행이 입력 불가하면 모델 교체만으로 해결되지 않습니다. 입력이 있어도 검출/정답 진단에 실패할 수 있으므로 전체와 조건부 성공률을 함께 봐야 합니다. 학습하지 않은 기준선·튜닝 변형·평가 후속 분석을 새로운 모델 성능 향상으로 표현하지 않았습니다."
+      },
+      {
+        "cell_index": 41,
+        "cell_type": "markdown",
+        "source": "## 15. 자료 위치와 재확인 방법\n\n| 자료 | 위치 |\n|---|---|\n| TEP 기능 확장 안내 | `TEP/notebooks/17_CNN_기능확장_종합안내.ipynb` |\n| TEP 모든 model_id 원 평가 | `TEP/reports/tables/phase2/test_comparison.csv` |\n| PHM V1 최초 모델 비교 | `PHM2018-Project/reports/04_model_training_summary.md` |\n| PHM V1 4-Fold 개선 | `PHM2018-Project/reports/04_5_model_improvement_summary.md` |\n| PHM V2 학습 전 진단 | `PHM2018-Project-V2/README.md` |\n| PHM 전체 기존 수행 결과 | `PHM2018-Project-V3/notebooks/00_PHM2018_종합_수행결과.ipynb` |\n| PHM 최종 모델·평가 | `PHM2018-Project-V3/reports/19_group_and_holdout.md` |\n| PHM 장비 전용 후속 | `PHM2018-Project-V3/reports/20_equipment_specialists.md` |\n| 이번 내장 자료 CSV | `TEP/reports/all_models/tables/` |\n| 이번 자료 해시·출처 | `TEP/reports/all_models/source_manifest.json` |\n\n노트북의 `T` 사전에서 원 평가표를 다시 확인할 수 있습니다. 예를 들어 `T['tep_all_results']`는 TEP 전체 모델, `T['v1_metrics']`는 V1 전체 분할 결과, `T['phm_stage4_train']`은 V3 튜닝 실행입니다. 원본 결과를 바꾸거나 새 학습을 시작할 필요가 없습니다.\n\n공란은 미산출/해당 없음입니다. PHM 미확인 시작 경보는 확정 오경보가 아니며, raw당 전체 경보 부담을 TEP 정상 시간당 오경보와 직접 비교하지 않습니다. 이 노트북은 로컬에서 확인된 실험을 정리한 것이며 별도의 외부 검증이나 배포 검증을 추가하지 않았습니다."
+      }
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "file": "outputs/figures/stage2/classification.png",
+    "title": "분류 점수만으로 경보 모델을 선정할 수 없음",
+    "source": "stage2_training_summary.csv",
+    "context": "실제 temporal validation · H600/L60 · 최대 가용 코호트 · raw 단위 · holdout 미사용\nA: 25,266개 중 POS776 · B: 17,398개 중 POS627 · NA/EXCLUDE는 분류 지표에서 제외",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage2/alarm_tradeoff.png",
+    "title": "검출률과 경보 부담의 동시 비교",
+    "source": "stage2_alarm_curve.csv",
+    "context": "실제 temporal validation · H600/L60 · 최대 가용 코호트 · raw 단위 · holdout 미사용\n진한 선: 탐색한 점의 비지배 후보 연결(보간 성능 아님) · A/B 분모·학습 코호트가 달라 순수 특징 효과는 아님",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage2/alarm_uncertainty.png",
+    "title": "경보 대부분은 정답 미확인 구간에서 시작",
+    "source": "stage2_operating_points.csv / stage2_uncertainty.csv",
+    "context": "실제 temporal validation · H600/L60 · 최대 가용 코호트 · raw 단위 · holdout 미사용\n20 Tool 재표집 2,000회 · 선택 임계값 고정 조건부 구간 · 선택 낙관·장비쌍 의존성·이력 불완전성 미보정",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage2/learning_history.png",
+    "title": "검증 성능 기준 조기 종료 이력",
+    "source": "A_xgboost_history.json / B_xgboost_history.json",
+    "context": "실제 temporal validation · H600/L60 · 최대 가용 코호트 · raw 단위 · holdout 미사용\naucpr은 XGBoost 내부 지표이며 sklearn AP와 다른 계산 · 학습 손실 곡선은 수집하지 않음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage2/local_resources.png",
+    "title": "RTX3060 Laptop CUDA 실제 학습과 로컬 자원 사용",
+    "source": "stage2_resource_telemetry.csv / cuda_training_smoke.json",
+    "context": "CUDA smoke 및 A/B XGBoost device=cuda:0 확인 · CPU 최대12스레드 설정\n약2초 간격 16회 관측; 짧은 GPU 학습의 순간 최대 사용량/이용률을 보장하지 않음",
+    "plot_values": null
+  },
+  {
+    "file": "outputs/figures/stage2/event_examples.png",
+    "title": "B XGBoost의 실제 검출·미탐 구간",
+    "source": "원본 선택 구간 / B_xgboost_validation.parquet / stage2_selected_episodes.csv",
+    "context": "실제 temporal validation · H600/L60 · 최대 가용 코호트 · raw 단위 · holdout 미사용\n좌: 검출 사례 선행시간 중앙 순위 · 우: Tool/시각 순 첫 미탐 · 회색 선=고장 · 음영=유효 예측 창 · 공백 연결 없음",
+    "plot_values": null
+  }
+]

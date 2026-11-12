@@ -1,0 +1,319 @@
+# 3단계: 머신러닝용 학습 데이터 구축 결과
+
+2026-11-05 / 로컬 Windows, Conda `phm2018`, Python 3.11.18. 모델 학습은 수행하지 않았다.
+
+## 처리 범위와 시간·이벤트 정책
+
+기존 `03_fault_analysis.ipynb`, `src/eda_common.py`, `src/eda_detail.py`, EDA 정합성 결과를 먼저 확인하고 공통 센서/고장 목록·이력 로더·스냅샷 함수를 재사용했다. **기존 코드·Notebook·EDA 결과는 변경하지 않았다.** 새 결과는 `data/processed/ml_v1/`, `reports/local/dataset_v1/`에 분리했다.
+
+- 전체 학습 센서/TTF 20개 장비, 원본 82,189,440행을 200,000행 청크로 대조했다. 물리 메모리에 전체 원본을 적재하지 않았다.
+- 공식 문서의 단위 미공개·초 예시와 실제 기록의 간격 4, TTF 차이의 일치를 재확인했다. **실제 물리 초는 확정하지 못했다.** 300/600/1800 원시시간 타깃이며 각각 5/10/30분이라는 해석은 초라는 가정에서만 가능하다. 문서 원본 PDF 재조회는 시간 초과였으며 공식 웹 설명과 기존 확인 결과를 근거로 사용했다.
+- [PHM Society 공식 데이터 설명](https://phmsociety.org/conference/annual-conference-of-the-phm-society/annual-conference-of-the-prognostics-and-health-management-society-2018-b/phm-data-challenge-6/)은 고장 기록을 정비를 위한 정지 시점으로 설명한다. 실제 이상 시작 시각은 알 수 없다.
+- 동일 Tool·time·원문 유형의 중복 Fault 25행을 집계상 제외하여 1,211개 고유 이벤트로 처리했다. 기본 타깃은 `[NoWaferID]` 1건을 제외한 **1,210건: 저압(f1) 741, 고압(f2) 332, 누출(f3) 137건**이다. 원본은 변경하지 않았다.
+- 기본 태그 제외 정책으로 전체 센서/TTF 시각열과 유한/결측 TTF를 다시 대조한 불일치는 0행이다. 태그 포함 기준에서 03M02의 원본 3,489행이 어긋난다는 기존 결과와 일치한다.
+- 동시각 센서 행은 동일 시각 배치의 6개 센서 평균으로 집계했다. 중복 117,533행이 합쳐져 **82,071,907개 관측 시각**이다. Recipe/Stage가 서로 다른 동시각은 상태 모순으로 격리했다(총 0개 시각). 시간 간격 12 초과와 상태 모순에서 연속 세그먼트를 끊는다. 실제 현장 적용 시 동시각 배치 도착 순서는 추가 확인이 필요하다.
+
+## 1. 유형별 양성·음성·미확인 수 / 2. 예측 구간별 분포
+
+아래는 **모든 정규화 관측 시각**의 기본 라벨 수다. 이벤트 수와 혼동하지 않는다. h300raw/h600raw/h1800raw는 물리 분으로 검증된 이름이 아니다.
+
+| fault_code | horizon_raw | positive | negative | unknown |
+| --- | --- | --- | --- | --- |
+| any | 300 | 27104 | 21586913 | 60457890 |
+| any | 600 | 49268 | 14377472 | 67645167 |
+| any | 1800 | 105747 | 6485450 | 75480710 |
+| f1 | 300 | 16611 | 43894566 | 38160730 |
+| f1 | 600 | 30026 | 27822831 | 54219050 |
+| f1 | 1800 | 62746 | 11639721 | 70369440 |
+| f2 | 300 | 5815 | 38866349 | 43199743 |
+| f2 | 600 | 10827 | 23882260 | 58178820 |
+| f2 | 1800 | 24277 | 9404732 | 72642898 |
+| f3 | 300 | 4854 | 28242453 | 53824600 |
+| f3 | 600 | 9088 | 19563070 | 62499749 |
+| f3 | 1800 | 22410 | 9473153 | 72576344 |
+
+양성은 검증된 유한 TTF가 H 이내이고 확인된 이벤트까지 연속 관측이 유지되는 경우다. 마지막 센서 시각에서 이벤트까지 최대 12 원시단위 허용 간격을 둔다. 음성은 검증된 유한 TTF가 H보다 크고 H 전체가 연속 관측 세그먼트 안에 있는 경우만 부여했다. 이는 제공된 고장/TTF 기록에 대한 음성 근거이며 기록의 절대적 완전성을 증명하지 않는다.
+
+TTF 결측·모순, 추적 종료·공백, 공정 상태 모순, 고장 시각 자체는 NA다. TTF 결측을 0으로 바꾸지 않았다. 통합 any는 하나라도 1이면 1, 세 유형 모두 0일 때만 0, 나머지는 NA다. 개별 유형 9개와 통합 3개로 총 12개 타깃을 보존했다.
+
+### `[NoWaferID]` 정책 영향
+
+| horizon_raw | rows | changed_rows | conflict_rows | include_positive | include_negative | include_unknown | quarantine_extra_unknown |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 300 | 82071907 | 75 | 3482 | 5890 | 38866274 | 43199743 | 3181 |
+| 600 | 82071907 | 150 | 3482 | 10977 | 23882110 | 58178820 | 2882 |
+| 1800 | 82071907 | 364 | 3482 | 24641 | 9404368 | 72642898 | 2241 |
+
+`changed_rows`는 태그 제외 기본 라벨과 태그 포함·fault 이력 우선 대안이 달라지는 정규화 관측 수다. `conflict_rows`는 제공 TTF와의 충돌 관측 수이며 원본 중복 집계 때문에 3,489 원본 행과 다를 수 있다. `quarantine_extra_unknown`은 충돌 관측을 격리하면 기본의 알려진 라벨 중 추가로 NA가 되는 수다. 대안 `alt_` 컬럼은 비교용이며 훈련 데이터의 타깃 목록에 포함하지 않았다. 태그 포함 학습을 하려면 정답 재정의·TTF 재생성 정책을 별도로 확정해야 한다.
+
+## 3. 장비별 학습 후보 분포
+
+라벨과 무관하게 60 원시시간 단위 bin의 **첫 실제 관측**을 anchor로 선택했다. 총 anchor 5,777,042개 중 충분한 과거 이력을 가진 행은 2,331,977개다. 그중 12개 타깃 중 적어도 하나가 알려진 1,466,770행을 `training/`에 저장했다. 아래 양성·음성·NA는 이 공통 학습 파일에서의 통합 h1800raw 기준이다.
+
+| Tool | split_tool | rows | positive | negative | unknown |
+| --- | --- | --- | --- | --- | --- |
+| 01M01 | train | 66421 | 61 | 18993 | 47367 |
+| 01M02 | train | 233502 | 1356 | 107042 | 125104 |
+| 02M01 | train | 73194 | 83 | 22183 | 50928 |
+| 02M02 | train | 34046 | 65 | 0 | 33981 |
+| 03M01 | train | 47263 | 200 | 0 | 47063 |
+| 03M02 | train | 58549 | 523 | 11527 | 46499 |
+| 04M01 | train | 32686 | 43 | 754 | 31889 |
+| 04M02 | train | 220068 | 550 | 0 | 219518 |
+| 05M01 | train | 29462 | 42 | 5644 | 23776 |
+| 05M02 | train | 10094 | 30 | 1176 | 8888 |
+| 06M01 | train | 45170 | 30 | 7579 | 37561 |
+| 06M02 | train | 259462 | 804 | 110371 | 148287 |
+| 07M01 | validation | 34970 | 51 | 7080 | 27839 |
+| 07M02 | validation | 32916 | 0 | 0 | 32916 |
+| 08M01 | validation | 85066 | 645 | 31936 | 52485 |
+| 08M02 | validation | 32168 | 58 | 0 | 32110 |
+| 09M01 | evaluation | 54820 | 451 | 16442 | 37927 |
+| 09M02 | evaluation | 57424 | 122 | 0 | 57302 |
+| 10M01 | evaluation | 31540 | 216 | 2988 | 28336 |
+| 10M02 | evaluation | 27949 | 0 | 0 | 27949 |
+
+검증/평가에서 클래스 비율을 인위적으로 조정하지 않았다. 전 장비에 같은 라벨 독립 anchor 규칙을 적용했다. 센서 기록 전체와 비교한 시간 해상도는 낮아졌으며, 전체 시각 라벨은 `labels/`에 유지한다. 짧은 이벤트를 놓치는지 Event Recall 평가에서 별도로 확인해야 한다.
+
+## 4. Stage에 따른 데이터 차이
+
+| state_group | fault_code | horizon_raw | positive | negative | unknown |
+| --- | --- | --- | --- | --- | --- |
+| stage0 | any | 300 | 59 | 36038 | 85970 |
+| stage0 | any | 600 | 104 | 32832 | 89131 |
+| stage0 | any | 1800 | 233 | 20410 | 101424 |
+| stage0 | f1 | 300 | 54 | 100820 | 21193 |
+| stage0 | f1 | 600 | 94 | 92362 | 29611 |
+| stage0 | f1 | 1800 | 203 | 59162 | 62702 |
+| stage0 | f2 | 300 | 5 | 93754 | 28308 |
+| stage0 | f2 | 600 | 10 | 86001 | 36056 |
+| stage0 | f2 | 1800 | 30 | 55676 | 66361 |
+| stage0 | f3 | 300 | 0 | 42721 | 79346 |
+| stage0 | f3 | 600 | 0 | 38945 | 83122 |
+| stage0 | f3 | 1800 | 0 | 24213 | 97854 |
+| stage_positive | any | 300 | 1171 | 660704 | 682828 |
+| stage_positive | any | 600 | 2145 | 539842 | 802716 |
+| stage_positive | any | 1800 | 5097 | 323305 | 1016301 |
+| stage_positive | f1 | 300 | 653 | 1181472 | 162578 |
+| stage_positive | f1 | 600 | 1170 | 942775 | 400758 |
+| stage_positive | f1 | 1800 | 2791 | 553134 | 788778 |
+| stage_positive | f2 | 300 | 272 | 978484 | 365947 |
+| stage_positive | f2 | 600 | 520 | 763880 | 580303 |
+| stage_positive | f2 | 1800 | 1253 | 442720 | 900730 |
+| stage_positive | f3 | 300 | 256 | 940227 | 404220 |
+| stage_positive | f3 | 600 | 487 | 785866 | 558350 |
+| stage_positive | f3 | 1800 | 1245 | 470140 | 873318 |
+
+아래는 기본 타깃 고유 이벤트의 Stage 분포다. 고장 시각 이하 가장 가까운 센서와 12 원시단위 이내에서만 상태를 붙였고, 공백이 길면 unknown으로 남겼다. 미래 센서로 상태를 채우지 않았다.
+
+| fault_code | stage0 | stage_positive | unknown |
+| --- | --- | --- | --- |
+| f1 | 12 | 235 | 494 |
+| f2 | 1 | 81 | 250 |
+| f3 | 0 | 71 | 66 |
+
+Stage=0을 정상 또는 고장으로 임의 해석하지 않았다. 전체 상태 모델은 전체 후보, 가동 상태 모델은 `stage>0` 필터로 같은 분할에서 비교할 수 있다. Recipe별 전체 분포와 시각화는 04 Notebook에 있다.
+
+## 5. 생성 특징
+
+입력 특징은 **83개**로 `feature_columns.json`과 `training_schema.json`에 정확한 목록을 기록했다.
+
+- 센서 6종: FLOWCOOLPRESSURE, FLOWCOOLFLOWRATE, IONGAUGEPRESSURE, ETCHBEAMCURRENT, ETCHBEAMVOLTAGE, ETCHSUPPRESSORCURRENT.
+- 센서마다 현재값 1개, w=60/300 원시단위 각각 mean/std/min/max/delta_mean/rate_mean 6개로 센서 특징 78개.
+- 현재 recipe/stage 2개와 과거 300 원시단위의 stage_zero_fraction, stage_change_count, recipe_change_count 3개.
+- 현재 구간 `(t-w,t]`, 이전 구간 `(t-2w,t-w]`. std는 ddof=0이다. delta_mean은 두 구간 평균 차이이며 rate_mean은 차이/w로 백분율이 아니다.
+- 최대 600 원시단위 과거 이력과 각 현재/이전 윈도 관측 수가 기대치의 90% 이상인 행만 feature_ready로 둔다. 이력 부족을 보간·대치하지 않았다.
+- `TTF`, Fault, 라벨, next_event 키, 미래 segment_end, split 및 Tool/time/row_id 메타데이터는 입력 특징 화이트리스트에 없다. 전처리 스케일링·대치·클리핑·클래스 재표본화는 아직 하지 않았다.
+
+## 6. 데이터 분할과 누수 검증
+
+장비 독립 분할은 접두어 01~06 학습, 07~08 검증, 09~10 평가다. 같은 번호의 M01/M02도 같은 분할에 배치했다. 성능이나 이벤트 수에 맞춰 분할을 다시 선택하지 않았다.
+
+| split_tool | horizon_raw | positive | negative | unknown |
+| --- | --- | --- | --- | --- |
+| evaluation | 300 | 192 | 39900 | 131641 |
+| evaluation | 600 | 345 | 30125 | 141263 |
+| evaluation | 1800 | 789 | 19430 | 151514 |
+| train | 300 | 838 | 549711 | 559368 |
+| train | 600 | 1541 | 467421 | 640955 |
+| train | 1800 | 3787 | 285269 | 820861 |
+| validation | 300 | 200 | 107131 | 77789 |
+| validation | 600 | 363 | 75128 | 109629 |
+| validation | 1800 | 754 | 39016 | 145350 |
+
+별도 시간 순서 분할은 장비별 원시 측정 범위의 60/20/20%다. 최대 과거 이력과 최대 미래 타깃 1800 원시단위가 경계를 넘으면 purged다. 실제 특징 출처 최소 시각이 경계를 넘는지도 추가 확인했다. 두 분할은 서로 다른 평가 실험용으로 섞어 쓰지 않는다.
+
+| split_time | horizon_raw | positive | negative | unknown |
+| --- | --- | --- | --- | --- |
+| evaluation | 300 | 261 | 14137 | 199116 |
+| evaluation | 600 | 475 | 9890 | 203149 |
+| evaluation | 1800 | 1171 | 4074 | 208269 |
+| purged | 300 | 0 | 87 | 149 |
+| purged | 600 | 0 | 67 | 169 |
+| purged | 1800 | 0 | 20 | 216 |
+| train | 300 | 731 | 584132 | 373025 |
+| train | 600 | 1332 | 479035 | 477521 |
+| train | 1800 | 3103 | 291648 | 663137 |
+| validation | 300 | 238 | 98386 | 196508 |
+| validation | 600 | 442 | 83682 | 211008 |
+| validation | 1800 | 1056 | 47973 | 246103 |
+
+장비 분할에 배정된 원래 고유 이벤트 수:
+
+| split_tool | fault_code | events |
+| --- | --- | --- |
+| evaluation | f1 | 152 |
+| evaluation | f2 | 77 |
+| evaluation | f3 | 18 |
+| train | f1 | 503 |
+| train | f2 | 212 |
+| train | f3 | 84 |
+| validation | f1 | 86 |
+| validation | f2 | 43 |
+| validation | f3 | 35 |
+
+실제 준비된 양성 anchor로 관측된 고유 이벤트 수(공백 때문에 이력의 모든 이벤트가 대표되지는 않음):
+
+| scheme | split | fault_code | horizon_raw | represented_events |
+| --- | --- | --- | --- | --- |
+| split_time | evaluation | f1 | 300 | 35 |
+| split_time | evaluation | f1 | 600 | 35 |
+| split_time | evaluation | f1 | 1800 | 35 |
+| split_time | evaluation | f2 | 300 | 12 |
+| split_time | evaluation | f2 | 600 | 12 |
+| split_time | evaluation | f2 | 1800 | 12 |
+| split_time | evaluation | f3 | 300 | 9 |
+| split_time | evaluation | f3 | 600 | 9 |
+| split_time | evaluation | f3 | 1800 | 9 |
+| split_time | train | f1 | 300 | 85 |
+| split_time | train | f1 | 600 | 85 |
+| split_time | train | f1 | 1800 | 85 |
+| split_time | train | f2 | 300 | 34 |
+| split_time | train | f2 | 600 | 34 |
+| split_time | train | f2 | 1800 | 34 |
+| split_time | train | f3 | 300 | 38 |
+| split_time | train | f3 | 600 | 38 |
+| split_time | train | f3 | 1800 | 38 |
+| split_time | validation | f1 | 300 | 36 |
+| split_time | validation | f1 | 600 | 36 |
+| split_time | validation | f1 | 1800 | 36 |
+| split_time | validation | f2 | 300 | 13 |
+| split_time | validation | f2 | 600 | 13 |
+| split_time | validation | f2 | 1800 | 13 |
+| split_time | validation | f3 | 300 | 7 |
+| split_time | validation | f3 | 600 | 7 |
+| split_time | validation | f3 | 1800 | 7 |
+| split_tool | evaluation | f1 | 300 | 30 |
+| split_tool | evaluation | f1 | 600 | 30 |
+| split_tool | evaluation | f1 | 1800 | 30 |
+| split_tool | evaluation | f2 | 300 | 11 |
+| split_tool | evaluation | f2 | 600 | 11 |
+| split_tool | evaluation | f2 | 1800 | 11 |
+| split_tool | evaluation | f3 | 300 | 4 |
+| split_tool | evaluation | f3 | 600 | 4 |
+| split_tool | evaluation | f3 | 1800 | 4 |
+| split_tool | train | f1 | 300 | 108 |
+| split_tool | train | f1 | 600 | 108 |
+| split_tool | train | f1 | 1800 | 108 |
+| split_tool | train | f2 | 300 | 30 |
+| split_tool | train | f2 | 600 | 30 |
+| split_tool | train | f2 | 1800 | 30 |
+| split_tool | train | f3 | 300 | 43 |
+| split_tool | train | f3 | 600 | 43 |
+| split_tool | train | f3 | 1800 | 43 |
+| split_tool | validation | f1 | 300 | 18 |
+| split_tool | validation | f1 | 600 | 18 |
+| split_tool | validation | f1 | 1800 | 18 |
+| split_tool | validation | f2 | 300 | 18 |
+| split_tool | validation | f2 | 600 | 18 |
+| split_tool | validation | f2 | 1800 | 18 |
+| split_tool | validation | f3 | 300 | 7 |
+| split_tool | validation | f3 | 600 | 7 |
+| split_tool | validation | f3 | 1800 | 7 |
+
+검증 결과:
+
+- 전체 센서/TTF 행·시각·이벤트 차이 검증 통과. 기본 정책 불일치 0.
+- 라벨 근거와 통합 3값 논리, 키 유일성, 유한 특징, 특징-라벨 시각 연결 검증 통과.
+- 미래 관측값을 변경해도 이전 특징이 변하지 않는 테스트, 137행 청크와 일괄 계산의 일치 테스트 통과.
+- TTF 입력 거부, 공백/결측/고장 시각/예측 경계 테스트 통과.
+- 서로 다른 분할이 공유하는 양성 이벤트 **0건**. 예측 구간 전체를 통틀어서도 공유 없음.
+- 시간 분할 간 특징/타깃 관측 범위 중첩 **0건**.
+- 초기 점검 대비 원본 65개 파일의 크기·수정 시각 유지. 전체 파일 내용 해시는 계산하지 않았다.
+- 공식 test에는 로컬 정답이 없어 학습·검증·내부 평가에 사용하지 않았다. 현재 평가는 내부 장비/시간 분할로 설계했다.
+
+## 7. 실제 학습에 사용 가능한 크기
+
+| fault_code | horizon_raw | positive | negative | unknown | usable |
+| --- | --- | --- | --- | --- | --- |
+| any | 300 | 1230 | 696742 | 768798 | 697972 |
+| any | 600 | 2249 | 572674 | 891847 | 574923 |
+| any | 1800 | 5330 | 343715 | 1117725 | 349045 |
+| f1 | 300 | 707 | 1282292 | 183771 | 1282999 |
+| f1 | 600 | 1264 | 1035137 | 430369 | 1036401 |
+| f1 | 1800 | 2994 | 612296 | 851480 | 615290 |
+| f2 | 300 | 277 | 1072238 | 394255 | 1072515 |
+| f2 | 600 | 530 | 849881 | 616359 | 850411 |
+| f2 | 1800 | 1283 | 498396 | 967091 | 499679 |
+| f3 | 300 | 256 | 982948 | 483566 | 983204 |
+| f3 | 600 | 487 | 824811 | 641472 | 825298 |
+| f3 | 1800 | 1245 | 494353 | 971172 | 495598 |
+
+`usable`은 해당 타깃의 positive+negative 수다. 공통 학습 파일의 모든 행이 모든 타깃에 사용 가능한 것은 아니다. 반드시 해당 target의 NA를 제외하고 원하는 split을 선택한다. 시간 평가에서 purged는 제외한다. Stage>0 모델은 같은 분할에서 추가 필터링한다.
+
+| 출력 | bytes | GiB |
+| --- | ---: | ---: |
+| observations | 1557496108 | 1.451 |
+| segments | 4127486 | 0.004 |
+| labels | 509209702 | 0.474 |
+| features | 2453976054 | 2.285 |
+| training | 419098031 | 0.390 |
+
+라벨/특징/학습 파일은 장비별 Parquet이며 별도 파일로 보존한다. 실제 학습 파일은 **1,466,770행, 0.390 GiB**다. 현재 학습 가능한 것은 원시시간 기반 과제이며 검증된 물리적 5/10/30분 예측이라는 주장은 보류한다.
+
+## 8. 남은 데이터 품질 문제
+
+1. 물리 시간 단위가 확정되지 않았다. 단위 확인 시 horizon/window/stride와 전체 파이프라인 설정을 재검토한다.
+2. fault 시각은 정지 시점이며 이상 시작은 불명이다. 기록의 절대적 완전성과 Stage>0의 실제 정상 가동 의미는 확인되지 않았다.
+3. TTF 결측과 관측 공백·짧은 이력으로 많은 NA/이벤트 제외가 발생했다. 선택 편향과 대표되지 않는 이벤트를 평가 때 공개해야 한다.
+4. 동시각 평균은 명시적 초기 정책이다. Recipe/Stage 모순은 격리했지만 현장 도착 순서와 적절한 센서 집계 의미는 추가 검증이 필요하다.
+5. `[NoWaferID]` 포함 타깃은 제공 TTF와 다른 정의다. 두 정책을 혼합하지 않는다.
+6. 장비·공정·고장 유형의 불균형이 남아 있다. 검증/평가 분포를 유지하고 학습 분할에서만 가중치 등의 처리를 검토한다.
+7. 스케일링·대치·통계적 특징 선택·모델 학습·성능 평가는 하지 않았다. 향후 F1-score 외 Event Recall, False Alarm Rate, Lead Time을 평가한다.
+
+## 파일 및 재실행
+
+- notebooks/04_label_generation.ipynb
+- notebooks/05_feature_engineering.ipynb
+- src/build_labels.py, src/build_features.py, src/validate_dataset.py
+- src/dataset_common.py
+- src/dataset_loader.py: 명시적 특징 목록과 하나의 알려진 타깃만 반환하는 배치 로더
+- scripts/build_ml_dataset.py, scripts/build_dataset_notebooks.py, scripts/write_dataset_report.py
+- tests/test_dataset_pipeline.py
+- data/processed/ml_v1/: observations, segments, labels, features, training, 정책/스키마 manifest
+- reports/local/dataset_v1/: 실제 집계·검증·실행 기록과 그래프 (Git 제외)
+
+```powershell
+conda activate phm2018
+python -m unittest discover -s tests -v
+python scripts/build_ml_dataset.py
+python src/validate_dataset.py
+python scripts/build_dataset_notebooks.py
+python scripts/write_dataset_report.py
+```
+
+첫 실행에서는 대표 장비를 먼저 구축해야 하므로 새 환경에서는 아래를 먼저 실행한 뒤 테스트한다.
+
+```powershell
+python src/build_labels.py --tools 01M01
+python src/build_features.py --tools 01M01
+```
+
+완료 마커가 있는 장비는 재사용한다. 원본 또는 정책·코드가 바뀌면 기존 파생 경로를 재사용하지 않고 새 버전 경로에서 구축해야 한다. 원본과 기존 EDA 파일은 수정하지 않는다. 외부 업로드·GitHub push·모델 학습은 수행하지 않았다.
+
+Notebook 실제 실행 상태:
+
+| notebook | code_cells | executed | errors | elapsed_seconds | python |
+| --- | --- | --- | --- | --- | --- |
+| 04_label_generation.ipynb | 5 | 5 | 0 | 4.547 | C:\Users\fl27\anaconda3\envs\phm2018\python.exe |
+| 05_feature_engineering.ipynb | 6 | 6 | 0 | 5.094 | C:\Users\fl27\anaconda3\envs\phm2018\python.exe |

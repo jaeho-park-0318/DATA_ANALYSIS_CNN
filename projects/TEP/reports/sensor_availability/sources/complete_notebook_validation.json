@@ -1,0 +1,18 @@
+{
+  "notebook": "notebooks\\14_TEP_종합_연구_노트북.ipynb",
+  "cells": 75,
+  "executed_code_cells": 35,
+  "rendered_tables": 48,
+  "embedded_images": 20,
+  "error_outputs": 0,
+  "protected_original_notebooks_and_model_files": 114,
+  "changed_original_files": [],
+  "source_notebooks": {
+    "notebooks\\00_TEP_전체_연구_과정과_결과.ipynb": "8c02af0d50b7418e2bd159f72a209fb8f402936325942aa11cbb878c4de42db5",
+    "experiments\\sensor_availability\\11_availability_baseline.ipynb": "7f1365974b8cca3145ce07ddcde77d65e735fa41d9a3818c5121e9ff32740562",
+    "experiments\\sensor_availability\\12_availability_degradation.ipynb": "bb8f3889117ec90c93429170a525f17da017b440541f2ad061a55ef64e1961fe",
+    "experiments\\sensor_availability\\13_phm_comparison.ipynb": "2e3c580b8c270c40ac644816eb33a636c782d1dad1c5a54bf90d1307c208221f"
+  },
+  "bytes": 2765468,
+  "no_training_or_threshold_selection": true
+}

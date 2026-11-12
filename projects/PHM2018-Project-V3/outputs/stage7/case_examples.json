@@ -1,0 +1,38 @@
+[
+  {
+    "event_id": "03M02-low-82dacf8b63d3",
+    "fault_time": 36618598.0,
+    "selection": "공통 모델만 검출한 첫 사례",
+    "query": {
+      "Tool": "03M02",
+      "kind": "normalized",
+      "requested_start": 36617398.0,
+      "requested_end": 36618718.0,
+      "files_total": 27,
+      "files_selected": 1,
+      "row_groups_selected": 1,
+      "physical_row_group_rows": 25000,
+      "rows_returned": 310,
+      "filter": "start <= time <= end",
+      "note": "압축 row group 단위 읽기 후 요청 시각으로 필터. 관련 없는 파일/row group은 제외."
+    }
+  },
+  {
+    "event_id": "03M02-high-e2143bdac86a",
+    "fault_time": 37568158.0,
+    "selection": "두 모델 모두 놓친 입력 가용 사례",
+    "query": {
+      "Tool": "03M02",
+      "kind": "normalized",
+      "requested_start": 37566958.0,
+      "requested_end": 37568278.0,
+      "files_total": 27,
+      "files_selected": 1,
+      "row_groups_selected": 1,
+      "physical_row_group_rows": 25000,
+      "rows_returned": 287,
+      "filter": "start <= time <= end",
+      "note": "압축 row group 단위 읽기 후 요청 시각으로 필터. 관련 없는 파일/row group은 제외."
+    }
+  }
+]

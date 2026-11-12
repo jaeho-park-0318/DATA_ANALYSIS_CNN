@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "notebook": "C:\\Users\\fl27\\Documents\\ChatGPT\\TEP\\notebooks\\19_TimesFM_LSTM_공정예측_비교.ipynb",
+  "cells": 38,
+  "executed_code_cells": 12,
+  "embedded_figures": 6,
+  "source_sha256": {
+    "model_comparison.csv": "b03457a52d9369f84c613edcf1000e0a91aa73f76a39fee9d265d4492a8890b7",
+    "variable_metrics.csv": "87783da1e4da6d5cfa8a08495875fa2af416f5d1939d17e25e2c33e41be45153",
+    "sampling_manifest.json": "5276f167a6ca69059ebcc021cf7dd04b29c3a2e5a487ad9fcc1b19cbf0a43087",
+    "environment.json": "7b1190effb9adc25abb8536fd82ebe26fb638ea28b302a04954320a2689a580e",
+    "pilot_fp32_validation.json": "1c24f5234d9cfa81016bcac9dfc62b717c0615c906389098ac20a698a1bfa308",
+    "throughput_benchmark.csv": "b2ecc8138831dd162b830771bc118ab403df00a38350bea900e01c4108bd2c8d",
+    "result_validation.json": "f41f0af3706ecc0b43bf7a1fbcfef9c94a328f2e44c6c3236261777cf2602b97",
+    "preservation_check.json": "68caeee577ad297ff7a955d4cd0c2e88c4c1391fb9e080986faada99ed3fd7d5",
+    "progress.json": "d973bb4cbff169a987f764c91dd5dba4fb9910557c2071d7dac2af26c36156c9"
+  },
+  "notebook_sha256": "253c730e37f646146f460776930dc7d1267f4d7dc2650487680be6df29eb75bb"
+}

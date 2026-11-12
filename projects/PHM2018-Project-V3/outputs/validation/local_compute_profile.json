@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-05",
+  "gpu_query": "NVIDIA GeForce RTX 3060 Laptop GPU, 6144 MiB, 4631 MiB, 546.92",
+  "ram_total_bytes": 33492262912,
+  "ram_available_bytes": 20451991552,
+  "physical_cpu_cores": 8,
+  "logical_cpu_cores": 16,
+  "xgboost_version": "3.2.0",
+  "xgboost_build": {
+    "BUILTIN_PREFETCH_PRESENT": false,
+    "CUDA_VERSION": [
+      12,
+      9
+    ],
+    "DEBUG": false,
+    "MM_PREFETCH_PRESENT": true,
+    "THRUST_VERSION": [
+      2,
+      8,
+      2
+    ],
+    "USE_CUDA": true,
+    "USE_DLOPEN_NCCL": false,
+    "USE_FEDERATED": false,
+    "USE_NCCL": false,
+    "USE_NVCOMP": false,
+    "USE_OPENMP": true,
+    "USE_RMM": false,
+    "libxgboost": "C:\\Users\\fl27\\anaconda3\\envs\\phm2018\\Lib\\site-packages\\xgboost\\lib\\xgboost.dll"
+  },
+  "cuInit_status": 0,
+  "cuDeviceGetCount_status": 0,
+  "cuda_devices": 1,
+  "cuDriverGetVersion_status": 0,
+  "cuda_driver_api_version": 12030,
+  "training_smoke_test_performed": false,
+  "note": "장치/드라이버 탐지와 CUDA 빌드 확인. 실제 XGBoost CUDA 학습 및 VRAM 요구량은 다음 단계에서 검증."
+}

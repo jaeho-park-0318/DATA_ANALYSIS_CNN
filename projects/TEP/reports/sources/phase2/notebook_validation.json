@@ -1,0 +1,32 @@
+[
+  {
+    "notebook": "06_modeling_dataset.ipynb",
+    "executed": true,
+    "error_outputs": 0,
+    "code_cells": 1
+  },
+  {
+    "notebook": "07_baseline_training.ipynb",
+    "executed": true,
+    "error_outputs": 0,
+    "code_cells": 2
+  },
+  {
+    "notebook": "08_advanced_training.ipynb",
+    "executed": true,
+    "error_outputs": 0,
+    "code_cells": 2
+  },
+  {
+    "notebook": "09_fault_diagnosis.ipynb",
+    "executed": true,
+    "error_outputs": 0,
+    "code_cells": 2
+  },
+  {
+    "notebook": "10_explainability.ipynb",
+    "executed": true,
+    "error_outputs": 0,
+    "code_cells": 2
+  }
+]

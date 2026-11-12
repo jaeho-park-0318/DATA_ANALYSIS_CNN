@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "conditions": [
+    0.0,
+    0.25,
+    0.531
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "partial_control_evaluable_runs": 10000,
+  "partial_control_partial_runs": 2500,
+  "sklearn_auc_difference": 0.0,
+  "sklearn_f1_difference": 0.0
+}

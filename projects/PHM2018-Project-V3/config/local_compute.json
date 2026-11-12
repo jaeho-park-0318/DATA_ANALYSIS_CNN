@@ -1,0 +1,13 @@
+{
+  "training_device": "cuda:0",
+  "training_tree_method": "hist",
+  "training_cpu_threads": 12,
+  "io_threads": 4,
+  "parallel_training_trials": 1,
+  "initial_max_bin": 128,
+  "host_memory_budget_gib": 12,
+  "gpu_reserve_mib": 1024,
+  "gpu_training_smoke_test_required": true,
+  "silent_cpu_fallback_allowed": false,
+  "note": "사용자 CUDA 우선 지시 반영. GPU 실제 학습 검증은 2단계에서 수행. 드라이버/패키지 자동 변경 없음."
+}

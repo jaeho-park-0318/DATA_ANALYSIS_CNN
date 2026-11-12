@@ -1,0 +1,296 @@
+{
+  "checks": [
+    {
+      "check": "temporal/01M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/01M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/01M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/01M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/01M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/01M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/02M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/02M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/02M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/02M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/02M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/02M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/03M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/03M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/03M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/03M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/03M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/03M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/04M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/04M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/04M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/04M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/04M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/04M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/05M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/05M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/05M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/05M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/05M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/05M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/06M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/06M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/06M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/06M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/06M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/06M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/07M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/07M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/07M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/07M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/07M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/07M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/08M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/08M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/08M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/08M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/08M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/08M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/09M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/09M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/09M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/09M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/09M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/09M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/10M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/10M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/10M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/10M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/10M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "temporal/10M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/07M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/07M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/07M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/07M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/07M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/07M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/08M01/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/08M01/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/08M01/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/08M02/A 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/08M02/B 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    },
+    {
+      "check": "group/08M02/C 전체 가용/분류 분모·경계·스키마",
+      "passed": true
+    }
+  ],
+  "holdout_scored": false,
+  "scores": "고정 기준0/1; 학습 모델 점수 아님",
+  "raw_metadata_unchanged": true,
+  "exposure_definition": "가용 Anchor의 [t,t+60) 점수 유지 구간과 같은 segment의 관측 [s,s+4) 지원 구간 교집합. 4는 nominal raw. 실제 가동시간 아님."
+}

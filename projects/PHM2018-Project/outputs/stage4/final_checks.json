@@ -1,0 +1,15 @@
+{
+  "experiments": 58,
+  "core_experiments": 48,
+  "identity_experiments": 10,
+  "all_prediction_metrics_checked": true,
+  "prior_files_unchanged": true,
+  "prior_files_checked": 24,
+  "original_metadata_unchanged": true,
+  "features": {
+    "A": 8,
+    "B": 80,
+    "C": 83
+  },
+  "passed": true
+}

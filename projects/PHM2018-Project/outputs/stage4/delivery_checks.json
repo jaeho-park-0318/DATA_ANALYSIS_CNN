@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "notebooks": [
+    {
+      "notebook": "06_baseline_models.ipynb",
+      "executed_cells": 4,
+      "errors": 0,
+      "figures": 1
+    },
+    {
+      "notebook": "07_xgboost_training.ipynb",
+      "executed_cells": 4,
+      "errors": 0,
+      "figures": 1
+    },
+    {
+      "notebook": "08_model_comparison.ipynb",
+      "executed_cells": 6,
+      "errors": 0,
+      "figures": 14
+    }
+  ],
+  "models_checked": 58,
+  "existing_files_unchanged": 24,
+  "raw_metadata_unchanged": true,
+  "figures": 16
+}

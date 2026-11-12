@@ -1,0 +1,17 @@
+[
+  {
+    "Tool": "03M02",
+    "device": "cuda:0",
+    "train_rows": 123796,
+    "train_positive": 500,
+    "validation_all_rows": 41467,
+    "validation_known_rows": 6115,
+    "validation_positive": 133,
+    "iterations": 1,
+    "train_seconds": 0.5184288024902344,
+    "AP_known": 0.034911371705051354,
+    "ROC_AUC_known": 0.5488149913399346,
+    "log_loss_known": 0.12363900244235992,
+    "warnings": []
+  }
+]

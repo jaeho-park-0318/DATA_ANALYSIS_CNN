@@ -1,0 +1,365 @@
+{
+  "tool": "10M01",
+  "raw_rows": 3166038,
+  "unique_times": 3163433,
+  "time_min": 3286310,
+  "time_max": 43422200,
+  "time_reversals": 0,
+  "duplicate_extra_rows": 2605,
+  "exact_duplicate_extra_rows": 28,
+  "duplicate_sensor_or_state_conflict_times": 2546,
+  "interval_counts": {
+    "0": 2605,
+    "2": 24188,
+    "4": 3103981,
+    "6": 20651,
+    "8": 76,
+    "152": 13,
+    "156": 217,
+    "158": 17,
+    "160": 1579,
+    "162": 71,
+    "164": 2803,
+    "166": 67,
+    "168": 2756,
+    "170": 84,
+    "172": 2288,
+    "174": 47,
+    "176": 906,
+    "178": 17,
+    "180": 193,
+    "184": 16,
+    "246": 11,
+    "248": 27,
+    "252": 61,
+    "256": 86,
+    "260": 88,
+    "264": 108,
+    "268": 73,
+    "272": 61,
+    "276": 26
+  },
+  "interval_quantiles": [
+    2.0,
+    4.0,
+    4.0,
+    6.0,
+    412126.0
+  ],
+  "long_gap_count": 14532,
+  "long_gap_total_raw": 27547030,
+  "largest_gaps": [
+    {
+      "start": 30640488,
+      "end": 30720312,
+      "gap": 79824
+    },
+    {
+      "start": 27749996,
+      "end": 27832782,
+      "gap": 82786
+    },
+    {
+      "start": 15356430,
+      "end": 15440882,
+      "gap": 84452
+    },
+    {
+      "start": 25834388,
+      "end": 25920396,
+      "gap": 86008
+    },
+    {
+      "start": 29679148,
+      "end": 29766906,
+      "gap": 87758
+    },
+    {
+      "start": 16634634,
+      "end": 16728324,
+      "gap": 93690
+    },
+    {
+      "start": 36844296,
+      "end": 36939524,
+      "gap": 95228
+    },
+    {
+      "start": 27547768,
+      "end": 27649464,
+      "gap": 101696
+    },
+    {
+      "start": 39619900,
+      "end": 39726082,
+      "gap": 106182
+    },
+    {
+      "start": 27854678,
+      "end": 27964840,
+      "gap": 110162
+    },
+    {
+      "start": 6994576,
+      "end": 7136864,
+      "gap": 142288
+    },
+    {
+      "start": 6750234,
+      "end": 6904172,
+      "gap": 153938
+    },
+    {
+      "start": 36951652,
+      "end": 37118224,
+      "gap": 166572
+    },
+    {
+      "start": 30905216,
+      "end": 31085412,
+      "gap": 180196
+    },
+    {
+      "start": 8616600,
+      "end": 8847846,
+      "gap": 231246
+    },
+    {
+      "start": 36022506,
+      "end": 36260236,
+      "gap": 237730
+    },
+    {
+      "start": 23872888,
+      "end": 24121962,
+      "gap": 249074
+    },
+    {
+      "start": 23143164,
+      "end": 23394308,
+      "gap": 251144
+    },
+    {
+      "start": 35659172,
+      "end": 36019362,
+      "gap": 360190
+    },
+    {
+      "start": 22707156,
+      "end": 23119282,
+      "gap": 412126
+    }
+  ],
+  "null_counts_all_columns": {
+    "time": 0,
+    "Tool": 0,
+    "stage": 0,
+    "Lot": 0,
+    "runnum": 0,
+    "recipe": 0,
+    "recipe_step": 0,
+    "IONGAUGEPRESSURE": 0,
+    "ETCHBEAMVOLTAGE": 0,
+    "ETCHBEAMCURRENT": 0,
+    "ETCHSUPPRESSORVOLTAGE": 0,
+    "ETCHSUPPRESSORCURRENT": 0,
+    "FLOWCOOLFLOWRATE": 0,
+    "FLOWCOOLPRESSURE": 0,
+    "ETCHGASCHANNEL1READBACK": 0,
+    "ETCHPBNGASREADBACK": 0,
+    "FIXTURETILTANGLE": 0,
+    "ROTATIONSPEED": 0,
+    "ACTUALROTATIONANGLE": 0,
+    "FIXTURESHUTTERPOSITION": 1132,
+    "ETCHSOURCEUSAGE": 0,
+    "ETCHAUXSOURCETIMER": 0,
+    "ETCHAUX2SOURCETIMER": 0,
+    "ACTUALSTEPDURATION": 0
+  },
+  "nonfinite_sensor_counts": {
+    "FLOWCOOLPRESSURE": 0,
+    "FLOWCOOLFLOWRATE": 0,
+    "IONGAUGEPRESSURE": 0,
+    "ETCHBEAMCURRENT": 0,
+    "ETCHBEAMVOLTAGE": 0,
+    "ETCHSUPPRESSORCURRENT": 0
+  },
+  "fault_raw_rows": 35,
+  "fault_unique_events": 30,
+  "fault_duplicate_extra_rows": 5,
+  "tagged_unique_events": 0,
+  "event_counts": {
+    "f1": 13,
+    "f2": 1,
+    "f3": 16
+  },
+  "ttf": {
+    "f1": {
+      "null": 494352,
+      "finite": 2671686,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    },
+    "f2": {
+      "null": 2701103,
+      "finite": 464935,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    },
+    "f3": {
+      "null": 2701103,
+      "finite": 464935,
+      "negative": 0,
+      "exclude_tag_mismatch": 0,
+      "include_tag_mismatch": 0,
+      "missing_with_future_event": 0,
+      "tag_policy_conflict_rows": 0
+    }
+  },
+  "distributions_raw": {
+    "f1_h300": {
+      "positive": 496,
+      "negative": 2671055,
+      "NA": 494352,
+      "excluded_lt60": 135
+    },
+    "f1_h600": {
+      "positive": 1082,
+      "negative": 2670469,
+      "NA": 494352,
+      "excluded_lt60": 135
+    },
+    "f1_h1800": {
+      "positive": 3650,
+      "negative": 2667901,
+      "NA": 494352,
+      "excluded_lt60": 135
+    },
+    "f2_h300": {
+      "positive": 0,
+      "negative": 464935,
+      "NA": 2701103,
+      "excluded_lt60": 0
+    },
+    "f2_h600": {
+      "positive": 0,
+      "negative": 464935,
+      "NA": 2701103,
+      "excluded_lt60": 0
+    },
+    "f2_h1800": {
+      "positive": 0,
+      "negative": 464935,
+      "NA": 2701103,
+      "excluded_lt60": 0
+    },
+    "f3_h300": {
+      "positive": 302,
+      "negative": 464558,
+      "NA": 2701103,
+      "excluded_lt60": 75
+    },
+    "f3_h600": {
+      "positive": 650,
+      "negative": 464210,
+      "NA": 2701103,
+      "excluded_lt60": 75
+    },
+    "f3_h1800": {
+      "positive": 1829,
+      "negative": 463031,
+      "NA": 2701103,
+      "excluded_lt60": 75
+    },
+    "any_h300": {
+      "positive": 798,
+      "negative": 464002,
+      "NA": 2701028,
+      "excluded_lt60": 210
+    },
+    "any_h600": {
+      "positive": 1680,
+      "negative": 463195,
+      "NA": 2700953,
+      "excluded_lt60": 210
+    },
+    "any_h1800": {
+      "positive": 4964,
+      "negative": 460211,
+      "NA": 2700653,
+      "excluded_lt60": 210
+    }
+  },
+  "sensitivity_any": {
+    "h300": {
+      "positive": 798,
+      "negative": 3164955,
+      "NA": 75,
+      "excluded_lt60": 210
+    },
+    "h600": {
+      "positive": 1680,
+      "negative": 3163998,
+      "NA": 150,
+      "excluded_lt60": 210
+    },
+    "h1800": {
+      "positive": 4964,
+      "negative": 3160709,
+      "NA": 155,
+      "excluded_lt60": 210
+    }
+  },
+  "v1_policy_recomputed": {
+    "h300": {
+      "positive": 1003,
+      "negative": 310439,
+      "NA": 2854596,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 153773
+    },
+    "h600": {
+      "positive": 1854,
+      "negative": 168379,
+      "NA": 2995805,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 295057
+    },
+    "h1800": {
+      "positive": 4423,
+      "negative": 52371,
+      "NA": 3109244,
+      "excluded_lt60": 0,
+      "changed_raw_rows": 408796
+    }
+  },
+  "duplicate_state_conflict_times": 0,
+  "sha256": {
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\10_M01_DC_train.csv": "9be413e7a00e57622a53b8e972822474ea1d440e4b01871d44cde36621c91327",
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_ttf\\10_M01_DC_train.csv": "783554d99ba3a426e46859e04efeb7ae99611230f318878cd090509d841b4530",
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_faults\\10_M01_train_fault_data.csv": "cf2bb3b8ac003fd4acea0fcaba4bdc19509190729b3e46770475ff9ef8b8f82d"
+  },
+  "source_signature": {
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\10_M01_DC_train.csv": {
+      "bytes": 1128599570,
+      "mtime_ns": 1523300052000000000
+    },
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_ttf\\10_M01_DC_train.csv": {
+      "bytes": 70499383,
+      "mtime_ns": 1524152154000000000
+    },
+    "C:\\Users\\fl27\\Documents\\ChatGPT\\PHM2018-Project\\phm_data_challenge_2018\\train\\train_faults\\10_M01_train_fault_data.csv": {
+      "bytes": 1467,
+      "mtime_ns": 1524067958000000000
+    }
+  },
+  "elapsed_seconds": 4.421,
+  "config_hash": "539f0e58b6c4c2db2b3d6f15bea4eee3e62d4aa69f087ad41b7ae86352b694e2",
+  "code_hash": "cad97b5e820e2855b6f83650ed1b99c305a6885a21aae321b4924e5ebb9d25f6b6b7b0383914d091dd265deea33fb76cf6daaeff2603a583f0068fe80644f991"
+}
